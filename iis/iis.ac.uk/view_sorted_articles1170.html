@@ -1,0 +1,645 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+<!-- Mirrored from iis.ac.uk/view_sorted_articles.asp?catid=94&orderby=Author&ordertype=text&dir=ascending&l by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:52:55 GMT -->
+<HEAD>
+<title>The Institute of Ismaili Studies : Academic Articles</title>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies - Academic Articles">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+var _lngCatID = 94;
+$(document).ready(function() {
+$('#content a[xmlns\\:dt]').each(function() {
+    var link = $(this).attr('href');
+    if (link.indexOf('id=') > -1) {
+        if (link.substring(link.indexOf('id=') + 3, link.indexOf('id=') + 9).indexOf('%') != -1) {
+            var id = link.substring(link.indexOf('id=') + 3, link.indexOf('id=') + 10);
+            $(this).attr('href', $(this).attr('href').replace(id, id.replace('%', '')));
+        }
+    }
+});
+});
+</script>
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr">
+
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="779" class="banner" alt="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" src="WebAssets/Site_Images/header/Research%20And%20Publications.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Research%20And%20Publications.jpg','WebAssets/Site_Images/header/ResearchandPublication_2.jpg');
+				var descriptions = new Array('An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat','The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	
+	
+    <div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyb9be.html?s=%2Fview%5Fsorted%5Farticles%2Easp%3Fcatid%3D94%26orderby%3DAuthor%26ordertype%3Dtext%26dir%3Dascending%26l">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A class="aTool" href="view_sorted_articles5767.html?l=fr&amp;lang=fr&amp;catid=94&amp;ordertype=text&amp;orderby=Author&amp;dir=ascending">Français</A></li><li><A class="aTool" href="view_sorted_articles98c0.html?l=ar&amp;lang=ar&amp;catid=94&amp;ordertype=text&amp;orderby=Author&amp;dir=ascending">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A class="aTool" href="view_sorted_articlesbc4f.html?l=fa&amp;lang=fa&amp;catid=94&amp;ordertype=text&amp;orderby=Author&amp;dir=ascending">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A class="aTool" href="view_sorted_articles7400.html?l=ru&amp;lang=ru&amp;catid=94&amp;ordertype=text&amp;orderby=Author&amp;dir=ascending">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3>
+
+					<strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Function of Asbab al-Nuzul in Qur&#8217;anic Exegesis</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that originally appeared in the <I>Bulletin of the School of Oriental and African Studies</I>, University of London, Vol. 51, No. 1 (1988), pp. 1-20. <A href="view_article0d51.html?type=cont&amp;id=114782" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Governing Diverse Communities: A Medieval Muslim Illustration</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><div><b><a href="../www.iis.ac.uk/view_persona642.html?Page=1&amp;PerPage=5&amp;type=auth&amp;id=5">Dr Shainool Jiwa</a></b></div>This is an edited version of an article which first appeared on 8<sup>th</sup> March 2011 in <i><a onclick="return fnExtLinkWarning();" href="http://www.theperspective.org/" target="_blank">The Perspective</a></i>, an article-based website providing a forum for the discussion of critical issues in the world of politics, culture and the arts. <A href="view_article06b3.html?type=cont&amp;id=112442" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Historical representations of a Fatimid Imam-caliph: Exploring al-Maqrizi&#8217;s and Idris&#8217; writings on al-Mu&#8216;izz Li Din Allah</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><div><b><a href="../www.iis.ac.uk/view_persona642.html?Page=1&amp;PerPage=5&amp;type=auth&amp;id=5">Dr Shainool Jiwa</a></b></div>This is an edited version of an article that originally appeared in <i>Alifba: Studi Arabo-Islamici e Mediterranei</i>, Vol XXII - the published proceedings of the <i>International Conference on the Fatimids and the Mediterranean</i> held at the University of Palermo, Italy in December 2008. <A href="view_articledf06.html?type=cont&amp;id=113647" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Religious Pluralism in Egypt: The Ahl al-kitab in Early Fatimid Times</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><div><b><a href="../www.iis.ac.uk/view_persona642.html?Page=1&amp;PerPage=5&amp;type=auth&amp;id=5">Dr Shainool Jiwa</a></b></div>Based on <a href="view_articleb498.html?type=cont.currentlang&amp;id=104038">a paper</a> delivered at the annual meeting of the <a href="view_articlec8e6.html?type=cont.currentlang&amp;id=103988">Middle Eastern Studies Association of North America on November 19, 2001</a>. <A href="view_articleb411.html?type=cont&amp;id=101208" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Fatimid-Buyid Diplomacy During the Reign of Al-&#8216;Aziz billah (365/975-386/996)*</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><div><span xmlns="http://www.w3.org/1999/xhtml"><b><a href="../www.iis.ac.uk/view_persona642.html?Page=1&amp;PerPage=5&amp;type=auth&amp;id=5">Dr Shainool Jiwa</a></b></span></div><i xmlns="http://www.w3.org/1999/xhtml">Journal of Islamic Studies</i> 3:1 (1992), pp. 57-71. <A href="view_articlebb64.html?type=cont&amp;id=101296" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Initial Destination of the Fatimid caliphate: The Yemen or The Maghrib?</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><div><b><a href="../www.iis.ac.uk/view_person81a4.html?Page=2&amp;PerPage=5&amp;type=auth&amp;id=5">Dr Shainool Jiwa</a></b></div><i xmlns="http://www.w3.org/1999/xhtml">British Society of Middle Eastern Studies Bulletin 1,</i> 13, 1986, pp. 15-26. <A href="view_articlebd9c.html?type=cont&amp;id=101310" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personebe7.html?type=authors&amp;id=14">Professor Mohammed  Arkoun</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Present-Day Islam Between its Tradition and Globalisation</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that originally appeared in <A href="view_person19c6.html?type=auth&amp;id=8">Farhad Daftary</A>&nbsp;(ed.) <EM>Intellectual Traditions in Islam</EM>,&nbsp;London: I. B. Tauris in association with The Institute of Ismaili Studies, 2000, pp. 179-221. <A href="view_article9214.html?type=cont&amp;id=101216" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person7951.html?type=authors&amp;id=62">Professor Ali S Asani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Muslim Literatures in South Asia</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The article was modified by the author in 2006 from a version originally published in <I>The</I> <I>Muslim Almanac</I> (Gale Research, Inc.Detroit, MI: 1996), p.355-364, ed. A. Nanji.&nbsp; <A href="view_articlebd8a.html?type=cont&amp;id=106397" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persond749.html?type=authors&amp;id=198">Dr Stephen R Burge</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Al-Suyuti on the Merits of Imam &#8216;Ali</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><ALIGN="LEFT"></ALIGN="LEFT">This article was specially written for The Institute of Ismaili Studies&#8217; Website in 2010. <A href="view_article0cf1.html?type=cont&amp;id=111675" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Cyclical Time and Sacred History in Medieval Ismaili Thought</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <I>Orientalia Lovaniensia Analecta</I>, eds. K. D&#8217;Hulster and J. Van Steenbergen, Uitgeverij Peeters en Department Oosterse Studies Leuven- Paris- Dudley, MA 2008, Vol. 171, pp.151-158. <A href="view_articlef356.html?type=cont&amp;id=109987" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim       Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Ismailis and their Role in the History of Medieval Syria and the Near East</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article which was originally published in <EM>Syria Medieval Citadels Between East and West</EM>, ed. Stefano Bianca (Geneva: The Aga Khan Trust for Culture, 2007), pp. 37-50 <A href="view_articlef872.html?type=cont&amp;id=109097" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim          Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">What is Shi&#8216;a Islam?</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This article was originally published in <I>Voices of Islam, Volume 1: Voices of Tradition</I>, pp. 217-244, Ed. Vincent J.Cornell published by Praeger in&nbsp;2006. <A href="view_article375b.html?type=cont&amp;id=108482" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Sectarian and National Movements in Iran, Khurasan and Transoxania During Umayyad and Early 'Abbasid Times</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">In <I>History of Civilizations of Central Asia,</I> vol. IV, part One, ed. M. S. Asimov and C. E. Bosworth. Paris: UNESCO Publishing, pp. 41-60. <A href="view_article8e16.html?type=cont&amp;id=101275" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Ismaili da&#703;wa Outside the Fatimid dawla</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Printed&nbsp;in Marianne Barrucand (ed.) <I>L'Egypte Fatimide: Son Art et Son Histoire</I>,&nbsp; Paris: Presses de l'Universite de Paris-Sorbonne, pp. 29 - 43. <A href="view_article55cc.html?type=cont&amp;id=104468" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Ismaili Studies: Medieval Antecedents and Modern Developments</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">2000. <A href="view_article688e.html?type=cont&amp;id=101252" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Sayyida Hurra: The Isma&#8216;ili Sulayhid Queen of Yemen</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Originally published in Gavin R. G. Hambly (ed.) <EM>Women in the Medieval Islamic World: Power, Patronage and Piety</EM>; reprinted in <EM>The New Middle Ages 6</EM>, New York: St .Martin&#8217;s Press, 1998, pp. 117-130; reprinted with corrections, 1999. <A href="view_article2f4e.html?type=cont&amp;id=105728" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">&#8220;Diversity in Islam: Communities of Interpretation&#8221;</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">An edited version of an article originally published in <I>The Muslim Almanac</I> (Gale Research Inc, Detroit, MI: 1996), pp.161-173, ed. A. Nanji. <A href="view_article6586.html?type=cont&amp;id=106472" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personaec8.html?type=authors&amp;id=220">Dr Maria  De Cillis</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Avicenna on Matter, The Disobedience of Matter and Evil: Reconciling Metaphysical Stances and Qur&#8217;anic Perspective</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV>This is an edited version of an article originally published in <I>Transcendent Philosophy: An International Journal of Comparative Philosophy and Mysticism</I>, Vol. 12, Dec 2011, pp. 147-168. The journal is a publication of <U>London Academy of Iranian Studies</U> .</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>Image: Engraving of Avicenna. Naples : Azriel ben Joseph de Gunzenhausen, 1491 CE.</DIV>
+<DIV>Source: &#8220;Engraving of Avicenna,&#8221; <EM><A onclick="return fnExtLinkWarning();" href="http://collections.countway.harvard.edu/onview/items/show/16" target=_blank>Center for the History of Medicine: OnView</A>.</EM></DIV> <A href="view_article0aa7.html?type=cont&amp;id=114202" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persond573.html?type=authors&amp;id=152">Dr Alnoor   Dhanani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Muslim Philosophy and the Sciences</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Originally published in <I>The</I> <I>Muslim Almanac</I> (Gale Research Inc, Detroit, MI: 1996), p. 189 - 204, ed. A. Nanji; reprinted with corrections. <A href="view_articleeddd.html?type=cont&amp;id=106391" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person413a.html?type=authors&amp;id=164">Dr Nader  El-Bizri</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Mathematics vs. Physics: Ibn al-Haytham&#8217;s Geometrical Conception of Space and the Refutation of Aristotle&#8217;s Physical Definition of Place</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This article was specially written for The Institute of Ismaili Studies website&nbsp;in 2009. <A href="view_article66ce.html?type=cont&amp;id=111063" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person413a.html?type=authors&amp;id=164">Dr Nader  El-Bizri</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Optics</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <A name=OLE_LINK2></A><I>Medieval Islamic Civilization, An Encyclopaedia</I>, Vol. I, p. 578-579, ed. <A href="view_personfc9b.html?type=auth&amp;id=10">Josef W. Meri</A>, Routledge (New York-London, 2006). <A href="view_article41e5.html?type=cont&amp;id=106792" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person413a.html?type=authors&amp;id=164">Dr Nader  El-Bizri</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Plato, Platonism, and Neo-platonism</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This article was originally published in <I>Medieval Islamic Civilization, An Encyclopaedia</I>, Vol. II, p. 614-616, ed. <U><A href="view_personbdbf.html?type=user&amp;id=100119">Josef W. Meri</A></U>, Routledge (New York-London, 2006). <A href="view_articled2c1.html?type=cont&amp;id=106602" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person413a.html?type=authors&amp;id=164">Dr Nader  El-Bizri</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Brethren of Purity</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article which was originally published in <I>Medieval Islamic Civilization, an Encyclopedia</I>, Vol. I, p. 118-119, ed. <A href="view_personbdbf.html?type=user&amp;id=100119">Josef W. Meri</A>, Routledge (New York-London, 2006) <A href="view_articleba4d.html?type=cont&amp;id=106577" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_personad3f.html?type=authors&amp;id=16">Dr Aziz  Esmail</A></DIV><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim          Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Ismailis in History</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <I style="mso-bidi-font-style: normal">Ismaili Contributions to Islamic Culture</I>, ed. Seyyed Hossein Nasr (Imperial Iranian, Academy of Philosophy, Tehran, 1977), pp. 227-265. <A href="view_articleae1a.html?type=cont&amp;id=108992" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_personad3f.html?type=authors&amp;id=16">Dr Aziz  Esmail</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Towards New Horizons in Islamic Studies</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">An edited version of &#8220;Publications from the Institute of Ismaili Studies: Towards New Horizons in Islamic Studies,&#8221; originally published in <I>The Ismaili United Kingdom,</I> July 1996, Supplement 3. <A href="view_article084c.html?type=cont&amp;id=101282" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_personad3f.html?type=authors&amp;id=16">Dr Aziz  Esmail</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Islam and Modernity: Intellectual Horizons</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><EM>The Muslim Almanac: The Reference Work on History, Faith and Culture, and Peoples of Islam</EM>. Detroit: Gale Research, 1995, pp. 453-457. <A href="view_article48ec.html?type=cont&amp;id=101289" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persona13e.html?type=authors&amp;id=92">Professor Oleg  Grabar</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Fatimid Art, Precursor or Culmination</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in Ismaili Contributions to Islamic Culture, eds. Seyyed Hossein Nasr (1977), Imperial Iranian Academy of Philosophy, pp: 207-224. <A href="view_article610b.html?type=cont&amp;id=111298" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persondec8.html?type=authors&amp;id=134">Dr Tazim R Kassam</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Representing Islam: A Critique of Language and Reality&#8221;</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">presented at &#8220;Perspectives in Islamic Studies&#8221; Conference, August 22-24, 1998, The Institute of Ismaili Studies. <A href="view_articleeee8.html?type=cont&amp;id=101268" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_person0fc5.html?type=authors&amp;id=17">Dr Mohamed  Keshavjee</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Mediator as a Humanising Agent: Some Critical Questions for ADR Today</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">A keynote address presented to the Dutch Association of Family Law Advocates and Family Law Mediators, Annual Congress in St. Michielsgestel, Holland, on 6<SUP>th</SUP> April 2006. <A href="view_article3dd7.html?type=cont&amp;id=106457" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person17f7.html?type=authors&amp;id=25">Dr Dominique-Sila  Khan</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Muslim Saints and Hindu Rulers: The Development of Sufi and Ismaili Mysticism in the Non-Muslim States of India</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Published in 2003 and&nbsp;1981 with the Literature &amp; Publication Department of His Highness Prince Aga Khan Shia Imami Ismailia Association for the United Kingdom; and in 1980 His Highness Prince Aga Khan Shia Imami Ismailia Association for Kenya. <A href="view_article8c5e.html?type=cont&amp;id=105018" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personf3ef.html?type=authors&amp;id=136">Dr Leonard  Lewisohn</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Sacred Music of Islam: Sama&#8216; in the Persian Sufi tradition</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that originally appeared in the <I>British Journal of Enthomusicology, </I>Vol. 6, <U><A onclick="return fnExtLinkWarning();" href="http://www.bfe.org.uk/" target=_blank>British Forum for Ethnomusicology</A></U>, 1997, pp 1-33. <A href="view_article1b71.html?type=cont&amp;id=113592" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person6412.html?type=authors&amp;id=54">Mr Wilferd  Madelung</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Nasir al-Din Tusi&#8217;s Ethics: Between Philosophy, Shi&#8216;ism and Sufism</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an essay which first appeared in <I>Ethics in Islam</I> in 1985 edited by Richard G. Hovannisian (<A onclick="return fnExtLinkWarning();" href="http://www.undena.com/" target=_blank>Undena Publications</A>).</A> <A href="view_articlea1ca.html?type=cont&amp;id=112677" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person6412.html?type=authors&amp;id=54">Professor Wilferd  Madelung</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Aspects of Ismaili Theology: The Prophetic Chain and the God Beyond Being</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><ALIGN="LEFT"></ALIGN="LEFT">This is an edited version of an article that was originally published in <I>Ismaili Contributions to Islamic Culture</I>, eds. Seyyed Hossein Nasr (1977), Imperial Iranian, Academy of Philosophy, Tehran, pp: 53-65. <A href="view_articlead12.html?type=cont&amp;id=111308" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person6412.html?type=authors&amp;id=54">Professor Wilferd  Madelung</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Sources of Ismaili Law</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><P>This is an edited version of an article that originally appeared in the <I><A onclick="return fnExtLinkWarning();" href="http://www.jstor.org/action/showPublication?journalCode=jneareaststud" target=_blank>Journal of Near Eastern Studies</A> </I>35 No.1, <U><A onclick="return fnExtLinkWarning();" href="http://press.uchicago.edu/index.html" target=_blank>University of Chicago Press</A>, </U>1976, pp 29-40.</P> <A href="view_articlef7e4.html?type=cont&amp;id=113172" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person47b0.html?type=authors&amp;id=74">Dr Toby  Mayer</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Shahrastani&#8217;s &#8216;Mafatih al-asrar&#8217;
+Introduction</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This article was specially written for The Institute of Ismaili Studies website in 2009. <A href="view_article4f30.html?type=cont&amp;id=110287" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim      Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Between Metaphor and Context: The Nature of the Fatimid Ismaili Discourse on Justice and Injustice</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><I xmlns="http://www.w3.org/1999/xhtml">Arabica</I> Tome XXXVIII, 1990, pp. 234-239. <A href="view_articlec179.html?type=cont&amp;id=101303" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim       Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Transcendence and Distinction: Metaphoric Process in Isma&#8216;ili Muslim Thought</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <I>God and Creation: An Ecumenical Symposium </I>edited by David B. Burrell and Bernard McGinn, University of Notre Dame, 1990, pp 304-315. <A href="view_articlebc26.html?type=cont&amp;id=109742" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim          Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Divine Law / Divine Command: The Ground of Ethics in the Western Tradition-Muslim Perspectives</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that originally appeared in Studies in Christian Ethics, Vol. 23, No. 1 in Feb. 2010 by <A onclick="return fnExtLinkWarning();" href="http://www.sagepublications.com/" target=_blank>SAGE Publications Ltd</A>. The article was prepared from a plenary address presented to the Annual Conference of the Society for the Study of Christian Ethics at Westcott House, Cambridge, in September 2009. <A href="view_articled02c.html?type=cont&amp;id=113027" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim          Nanji</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Ethical Tradition in Islam</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This article was originally published in the <I>Muslim Almanac</I> (Gale Research Inc, Detroit, MI: 1996), p.205-211, ed. A. Nanji. <A href="view_article4671.html?type=cont&amp;id=106487" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personf186.html?type=authors&amp;id=166">Dr Gordon  Newby</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Muslim, Jews and Christians - Relations and Interactions</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This article was originally published in <I>The</I> <I>Muslim Almanac</I> (Gale Research Inc, Detroit, MI: 1996), p.423-429, ed. A. Nanji. <A href="view_articlea799-2.html?type=cont&amp;id=106331" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person1076.html?type=authors&amp;id=188">Professor Eric L Ormsby</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Creation in Time in Islamic Thought with Special Reference to Al-Ghazali</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <I>God and Creation: An Ecumenical Symposium </I>edited by David B. Burrell and Bernard McGinn, University of Notre Dame, 1990, pp 246-265. <A href="view_articleed24.html?type=cont&amp;id=110242" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persondbf9.html?type=authors&amp;id=177">Dr Farid  Panjwani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">A Destructive Vacuum: The Marginalisation of Local Knowledge and the Reassertion of Local Identities</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of a chapter that first appeared in <I>Multiple Modernities in Muslim Societies</I>, pp. 123-126, 2009. <A href="view_article0fe5.html?type=cont&amp;id=112402" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persondbf9.html?type=authors&amp;id=177">Mr Farid   Panjwani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Agreed Syllabi and Un-agreed Values: Religious Education and Missed Opportunities for Fostering Social Cohesion</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in the British Journal of Educational Studies, ISSN 0007-1005<I>,</I> September 2005, pp. 376-393<B></B> <A href="view_article47aa.html?type=cont&amp;id=109847" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persondbf9.html?type=authors&amp;id=177">Mr Farid   Panjwani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The &#8216;Islamic&#8217; in Islamic Education: Assessing the Discourse</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article which was originally published in <I>Current Issues in Comparative Education</I>,<I> </I>Teacher College,<I> </I>Columbia University, Vol. 7(1), online at: <A onclick="return fnExtLinkWarning();" href="http://www.tc.columbia.edu/cice/issues/07.01/71panjawani.pdf" target=_blank>columbia.edu/cice/Archives</A>. <A href="view_articlef5be.html?type=cont&amp;id=109172" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person9f61.html?type=authors&amp;id=57">Dr Amyn B Sajoo</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Toward A Post-Secular Modernity</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This essay draws upon the author&#8217;s introduction in <I><A href="view_articlef10f.html?type=cont.currentlang&amp;id=109572">Muslim Modernities: Expressions of the Civil Imagination</A></I>, ed. Amyn B. Sajoo, London, 2008. <A href="view_articlea7b0.html?type=cont&amp;id=109582" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person9f61.html?type=authors&amp;id=57">Dr Amyn B Sajoo</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Ethics of the Public Square: A Preliminary Muslim Critique</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article which was originally published in <I>polylog: Forum for Intercultural Philosophy</I>, Issue 3 (2001), online at: <A href="http://them.polylog.org/3/asa-en.htm">http://them.polylog.org/3/asa-en.htm</A> <A href="view_article5ad5.html?type=cont&amp;id=108977" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person2c11.html?type=authors&amp;id=135">Dr Reza  Shah-Kazemi</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Loving Compassion in Islam and Buddhism: Rahma and Karuna</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that originally appeared in <I style="mso-bidi-font-style: normal"><U><A onclick="return fnExtLinkWarning();" href="http://www.dicid.org/english/newsletters1.php" target=_blank>Religions: A Scholarly Journal</A></U></I>. No.1, 2010, pp.43-56. <U><A onclick="return fnExtLinkWarning();" href="http://www.dicid.org/english/index.php" target=_blank>Doha International Centre for Interfaith Dialogue</A>.</U> <A href="view_articlecc30.html?type=cont&amp;id=112532" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person2c11.html?type=authors&amp;id=135">Dr Reza  Shah-Kazemi</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Beyond Polemics and Pluralism: The Universal Message of the Qur&#8217;an</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of a paper delivered at the Conference: Al-Azhar and the West,&nbsp;Bridges of Dialogue, Cairo, 5 January 2009. <A href="view_articleccd7.html?type=cont&amp;id=111650" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person2c11.html?type=authors&amp;id=135">Dr Reza  Shah-Kazemi</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">&#8216;Ali ibn Abi Talib</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <I>Medieval Islamic Civilization, An Encyclopaedia</I>, Vol. II, p. 36-37, ed. <A href="view_personbdbf.html?type=user&amp;id=100119">Josef W. Meri</A>, Routledge (New York-London, 2006). <A href="view_articlea4ad-2.html?type=cont&amp;id=106697" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person2c11.html?type=authors&amp;id=135">Dr Reza  Shah-Kazemi</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Metaphysics of Interfaith Dialogue: A Qur&#8217;anic Perspective</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Presented at &#8220;Paths to the Heart: Sufism and the Christian East&#8221; Conference, October 18-20, 2001, University of South Carolina, USA. <A href="view_articled3ee.html?type=cont&amp;id=101259" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personae5e.html?type=authors&amp;id=155">Dr Samira  Sheikh</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">Religious Traditions and Early Ismaili History in South Asia: Some Historical Perspectives on Satpanthi Literature and the Ginans</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that&nbsp;originally appears in Tazim R. Kassam and Fran&#231;oise Mallison (editors), <EM><I>Ginans:Texts and Contexts: Essays on Ismaili Hymns from South Asia in honour of Zawahir Moir</I></EM>, Matrix (New Delhi), 2007, pp. 149-168. <A href="view_article361c.html?type=cont&amp;id=109472" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person1dfc.html?type=authors&amp;id=20">Dr Suha  Taji-Farouki</A></DIV><DIV><A href="view_persone24a.html?type=authors&amp;id=194">Dr Basheer   Nafi</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+
+Why Study Islamic Thought in the Twentieth Century? (Introduction)
+
+
+</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV>This is an edited version of an article that was originally published in <I><A href="../www.iis.ac.uk/view_articleff68.html?type=cont.currentlang&amp;id=104963">Islamic Thought in the Twentieth Century</A>,</I> eds. Suha Taji-Faroukhi and Basheer M. Nafi (2004)<I>,</I> I. B. Tauris, pp. 1-27</DIV> <A href="view_article429d.html?type=cont&amp;id=110497" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personfa63.html?type=authors&amp;id=187">Dr Shiraz  Thobani </A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Dilemma of Islam as School Knowledge in Muslim Education</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an electronic version of an article that was originally published in <I>Asia Pacific Journal of Education</I> (2007), vol. 27 no.1, March 2007, pp. 11-25. Copyright Informa; Asia Pacific Journal of Education is available online at <A href="http://www.informaworld.com/smpp/content~content=a773303039~db=all~order=page">http://www.informaworld.com/</A> <A href="view_articlef183.html?type=cont&amp;id=110192" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person1a80.html?type=authors&amp;id=141">Mr Shafique N Virani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Days of Creation in the Thought of Nasir Khusraw</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article originally published in <I>Nasir Khusraw: Yesterday, Today, Tomorrow</I>, Khujand, 2005, Publishing House &#8220;Noshir&#8221;, pp.74-83. <A href="view_articlee291.html?type=cont&amp;id=106747" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person1a80.html?type=authors&amp;id=141">Mr Shafique N Virani</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Eagle Returns: Evidence of Continued Isma&#8216;ili Activity at Alamut and in the South Caspian Region following the Mongol Conquests</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in the <I>Journal of the American Oriental Society</I> 123.2 (2003)<I>,</I> pp. 351-370<B></B> <A href="view_articlea907.html?type=cont&amp;id=109002" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_persone72a.html?type=authors&amp;id=21">Professor Paul E Walker</A></DIV><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">The Ismaili Vocabulary of Creation</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><P>This is an edited version of an article that originally appeared in <I>Studia Islamica</I> No 40, pp. 75-85 in 1974. It is reprinted here with the permission of the author.</P> <A href="view_article710e.html?type=cont&amp;id=113347" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">More</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+                	
+                	<P style="clear:both;"><A href="#">Top of Page</A></P>
+					
+			
+
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+		</div>
+	</div>
+
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_sorted_articles.asp?catid=94&orderby=Author&ordertype=text&dir=ascending&l by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:52:56 GMT -->
+</HTML>
+

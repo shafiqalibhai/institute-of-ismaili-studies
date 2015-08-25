@@ -1,0 +1,98 @@
+
+&nbsp;
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from cms.iis.ac.uk/default.asp by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 21:45:13 GMT -->
+<head>
+<title>Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/LayoutMain.css" rel="stylesheet" type="text/css"> 
+<link href="css/IsmailiStudies.css" rel="stylesheet" type="text/css"> 
+</head>
+<script language="JavaScript" type="text/javascript">
+
+var version;
+
+if (navigator.appVersion.indexOf("MSIE")!=-1){
+
+temp=navigator.appVersion.split("MSIE")
+
+version=parseFloat(temp[1])
+
+}
+
+
+na = navigator.appName != "Microsoft Internet Explorer"
+nu = navigator.userAgent.toLowerCase();
+op = (nu.indexOf("opera") != -1);
+isIE5 = !na && !op && version >= 5.5
+
+ 
+if (isIE5) 
+{}
+else {warnNonIE()}
+ 
+
+function warnNonIE() {
+
+if (!(isIE5)) {
+/*
+	alert("Sorry this application will only work in Microsoft Internet Explorer 5.5 or above")
+	document.location.href="ExplorerError.asp";
+*/
+}
+					}
+
+</script>
+
+<body onload="warnNonIE(); document.login.password.focus()" bgcolor="#FFFFFF" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+<table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+	<tr>
+		<td align="center" valign="middle"><table width="525" height="280" border="0" cellpadding="1">
+				<tr>
+					<td width="519" background="images/login_background.gif" bgcolor="#FFFFFF">
+								
+								
+
+<form name="login" id="login" method="post" action="http://cms.iis.ac.uk/default.asp?pg=">
+
+<DIV style="padding: 16px;">
+
+	<DIV style="padding-bottom: 10px;"><span class="FormField">Please enter your username and password to enter the CMS</span><br /></DIV>
+
+	<DIV style="padding-bottom: 10px;">
+		<span class="FormField">Username (email)</span> <br />
+		<input name="username" type="text" class="FormFieldBlack" id="username" value="" size="60" />
+	</DIV>
+
+	<DIV style="padding-bottom: 10px;">
+		<span class="FormField">Password</span><br />
+		<input name="password" type="password" class="FormFieldBlack" id="password22" size="60" />
+		<input name="login" type="submit" class="formfieldblack" id="login23" value="login" />
+		<input name="submit" type="hidden" id="submit" value="true" />
+	</DIV>
+
+
+	<DIV>
+		<span class="FormField">Remember Me</span>
+		<input name="CMS" type="checkbox" id="nflukCMS22" value="1" checked="checked" />
+	</DIV>
+
+	<DIV><a href="ForgotPassword.html"><span class="FormField"><u>Forgotten your password?</u></span></a></DIV>
+
+</DIV>
+
+</form>
+
+
+					</td>
+				</tr>
+			</table></td>
+	</tr>
+</table>
+</body>
+
+<!-- Mirrored from cms.iis.ac.uk/default.asp by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 21:45:15 GMT -->
+</html>

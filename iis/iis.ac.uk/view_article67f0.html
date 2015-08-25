@@ -1,0 +1,635 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106737 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:26:13 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 106737;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only34b9.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D106737">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article74c0.html?ContentID=106739">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></p><p><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103467&amp;l=en">His Highness the <br/>Aga Khan</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articlefc33.html?type=cont.currentlang&amp;id=110993&amp;l=en" >Ismaili Imamat</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article93a7.html?type=cont.currentlang&amp;id=104388&amp;l=en" >Ismaili Imamat: History</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article118d.html?type=cont.currentlang&amp;id=104393&amp;l=en" >Ismaili Imamat: Contemporary Period</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en" >Speeches: Aga Khan III</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en" >Speeches: Aga Khan IV</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesff0a.html?type=cat&amp;id=25&amp;t=midlist&amp;g=date&amp;l=en" >Related News</A></p><p><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></p><p><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>&#8216;Attar and the Persian Sufi Tradition: The Art of Spiritual Flight</strong><strong><br/></strong><strong><DIV><A href="view_personf3ef.html?type=authors&amp;id=136">Dr Leonard  Lewisohn</A></DIV><DIV><A href="view_personddfd.html?type=authors&amp;id=171">Dr Christopher  Shackle</A></DIV></strong><br/><br/>London: I.B. Tauris in association with The Institute of Ismaili Studies, 2007.<span><br/><br/>ISBN (Hardback): 9781845111489</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/attar01-200711617718_7055.jpg" align="left" alt="" style="padding: 0px;" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><IMG height=18 alt="" src="WebAssets/Large/googlebooks.jpg" width=18 align=baseline border=0> <A onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=9yhkAAAAMAAJ&amp;q=Attar+and+the+Persian+Sufi+Tradition:+The+Art+of+Spiritual+Flight&amp;dq=Attar+and+the+Persian+Sufi+Tradition:+The+Art+of+Spiritual+Flight&amp;cd=2" target=_blank>Publication page on Google Books</A></P>
+<P>This collection of papers comprises selected papers from the proceedings of the international conference entitled &#8216;Farid al-Din &#8216;Attar and the Persian Sufi Tradition&#8217; organised in 2002 in collaboration with <U><A onclick="return fnExtLinkWarning();" href="http://www.iranheritage.com/" target=_blank>The Iran Heritage Foundation</A></U>, The Institute of Ismaili Studies and <U><A onclick="return fnExtLinkWarning();" href="http://www.lmei.soas.ac.uk/" target=_blank>The Centre of Near and Middle Eastern Studies</A></U> (now incorporated into The London Middle East Institute) at The School of Oriental and African Studies (SOAS), The University of London. The conference, convened by Leonard Lewisohn and Christopher Shackle, was the centrepiece of a number of musical, poetic and artistic events in London to celebrate Persian mysticism and the literary contributions of Farid al-Din &#8216;Attar. </P>
+<P>Farid al-Din &#8216;Attar (d. 1221 CE) was the principal Muslim mystic poet of the second half of the 12th century, whose formative influence was acknowledged by his great successor Jalal al-Din Rumi. Best known for his often-translated masterpiece <I>Mantiq al-tayr </I>or <I>The Conference of the Birds</I>, his verse is still considered to be the finest example of Sufi poetry in the Persian language after that of Rumi. Distinguished for his provocative and radical theology of love, many lines of &#8216;Attar&#8217;s epics and lyrics are cited independently of their poems as maxims in their own right. These pithy, paradoxical statements are still known by heart and sung by minstrels throughout Iran, Afghanistan, Tajikistan and wherever Persian is spoken or understood, such as in the lands of the Indo-Pakistani Subcontinent.</P>
+<P>&#8216;Attar composed six important works of poetry and one major prose work. His great prose work comprises the monumental compendium in Persian of biographies of famous Sufis, called <I>Tadhkirat al-awliya&#8217;</I>, or <I>Memoirs of the Saints</I>. If his least known poem is the <I>Book of Mysteries (Asrar-namah)</I>, which strings together a series of unconnected episodic stories, his most famous epic poem is the <I>Conference of the Birds</I> (<I>Mantiq al-tayr</I>), which is consecrated to the tale of the spiritual quest of thirty birds to find their supreme sovereign, the Simurgh. This work was modelled on the <I>Treatise on the Birds </I>composed half a century earlier by another Sufi master, Ahmad Ghazali (d. 1126 CE), founder of the &#8216;school of love&#8217; in <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufism</A>. This epic masterpiece (to which five essays in chapter two of the present volume are devoted) has also enjoyed several musical and theatrical adaptations in the West, while its stories are common subjects of illustration in Persian miniature painting. &#8216;Attar&#8217;s <I>Book of Adversity </I>(<I>Musibat-namah</I>) recounts the Sufi path in other terms, following the voyage of the contemplative wayfarer or &#8216;Pilgrim of Thought&#8217; (<I>salik-i fikrat</I>) through the mineral, vegetable, animal, human, and angelic realms. Asking questions along the way, he appeals in turn to forty different cosmic or mythical beings for help, until at last he is directed to the Prophet Muhammad, who gives him the answers he needs to set him on the right road.</P>
+<P>&#8216;Attar&#8217;s<I> Divine Book</I> (<I>Ilahi-namah</I>) relates the story of a king who asks his six sons what they most desire. They all ask for worldly things, and the king exposes their vanity in a series of anecdotes. The <I>Book of Selections</I> (<I>Mukhtar-namah</I>)<I> </I>is a collection of over 2,000 quatrains (<I>ruba&#8216;i</I>) arranged in 50 chapters according to various mystical themes, and his <I>Collected Poems</I> (<I>Diwan</I>) contains some 10,000 couplets which are notable for their depiction of visionary landscapes and heart-rending evocations of the agonies and ecstasies of the <I>via mystica</I>. These poems are notable not only for their thematic unity, with usually just one mystical idea, or a series of related concepts from first verse to last line being elaborated progressively, but also for their esoteric hermeticism and unconventional religious values. The attribution of the<I> Book of Khusraw </I>(<I>Khusraw-namah</I>, a romance of the love between a Byzantine princess and a Persian prince, with almost no mystical content) to the poet has been rejected, on convincing stylistic, linguistic and historical grounds, as spurious.</P>
+<P>&#8216;Attar&#8217;s works had such an impact on both the Sufi community and the literate public at large that his fame soared soon after his death. He became rapidly imitated, so that today there are some twenty-three works falsely attributed to &#8216;Attar, proven by modern scholars to be spurious or of doubtful authenticity. If we take merely the works that are unquestionably his, comprising a good 45,000 lines, the achievement is monumental.</P>
+<P>However, the most important aspect of &#8216;Attar&#8217;s thought lies in the fact that all of his works are devoted to Sufism (<I>tasawwuf</I>) and throughout all of his genuine collected works, there does not exist even one single verse without a mystical colouring; in fact, &#8216;Attar dedicated his entire literary existence to Sufism. The wide range of papers included in this collection is itself testimony to the stature of &#8216;Attar as one of the greatest figures in the glorious tradition of Persian Sufi poetry. Bringing together for the first time the work of both senior and younger scholars from three continents, the volume offers a stimulating overview of &#8216;Attar and his extraordinarily varied literary creations from a whole series of different viewpoints, which build on the findings of earlier scholarship to offer many novel perspectives.</P>
+<P>Designed to take its place alongside <I>The Ocean of the Soul</I>, the classic study of &#8216;Attar by Hellmut Ritter, this volume is a comprehensive survey and study of &#8216;Attar&#8217;s literary works and mystical doctrine to date, situating his poetry and prose within the wider context of the Persian Sufi tradition, upon which his writings wielded such a tremendous formative influence. The essays in this volume, grouped in three sections which deal respectively with &#8216;Attar and the Persian Sufi tradition, with <I>The Conference of the Birds</I>, and with &#8216;Attar&#8217;s lyrical and epic poetry, feature contributions by sixteen scholars from North America, Europe and Iran written from a variety of critical perspectives that attempt to illustrate the full range of &#8216;Attar&#8217;s monumental achievement. </P><br><br></div><div id="pubsContents"><strong>Contents</strong><br><P><I>List of Plates<BR></I><I>List of Contributors <BR></I><I>List of Abbreviations</I></P>
+<P><I>Editors&#8217; Introduction and Acknowledgements </I></P>
+<P>I. <B>Prose of the Spirit: &#8216;Attar and the Persian Sufi Tradition </B></P>
+<OL type=1>
+<LI>&#8216;Attar, Sufism and Ismailism <BR><A href="view_personff9a.html?type=auth&amp;id=51">Hermann Landolt</A> 
+<LI>Of Scent and Sweetness: &#8216;Attar and his Legacy in Rumi, Shabistari and Hafiz<BR>Husayn ilahi-Ghomshei 
+<LI>Narratology and Realities in the Work of &#8216;Attar<BR>Muhammad Este&#8216;lami 
+<LI>Sufi Saints and Sainthood in &#8216;Attar&#8217;s <EM>Tadhkirat al-awliya</EM>&#8217;<BR>Shahram Pazouki 
+<LI>Words and Deeds: Message and Structure in &#8216;Attar&#8217;s Tadhkirat al-awliya&#8217;<BR>Paul Losensky</LI></OL>
+<DIV>II. <B>Flight of the Soul-bird: &#8216;Attar&#8217;s Conference of the Birds</B> </DIV>
+<DIV>
+<OL type=1 start=7>
+<LI>
+<DIV>Blessed Perplexity: The Topos of <EM>Hayrat</EM> in &#8216;Attar&#8217;s <EM>Mantiq al-tayr</EM><BR>Lucian Stone</DIV>
+<LI>Flight of the Birds: The Poetic Animating the Spiritual in &#8216;Attar&#8217;s <EM>Mantiq al-tayr</EM> <BR>Fatemeh Keshavarz 
+<LI>Illustrating &#8216;Attar: A Pictorial Meditation by Master Habiballah of Mashhad in the Tradition of Master Bihzad of Heart<BR>Michael Barry 
+<LI>Representations of &#8216;Attar in the West and in the East: Translations of the <EM>Mantiq al-tayr</EM> and the Tale of Shaykh San&#8217;an<BR><A href="view_personddfd.html?type=auth&amp;id=171">Christopher Shackle</A></LI></OL>
+<P><B>III. </B><B>The Poetics of Passion: &#8216;Attar&#8217;s Lyric and Epic Poetry</B></P>
+<P><B></B></P>
+<OL type=1 start=10>
+<LI>Some Remarks on Forms and Functions of Repetitive Structures in the Epic Poetry of &#8216;Attar Johann<BR>Christoph B&#252;rgel 
+<LI>Didactic Style and Self-criticism in &#8216;Attar<BR>Muhammad Isa Waley 
+<LI>
+<DIV>&#8216;Without Us, from Us We&#8217;re Safe&#8217;: Self and Selflessness in the <EM>Diwan</EM> of &#8216;Attar<BR>Leili Anvar-Chenderoff </DIV>
+<LI>Sufi Symbolism in the Persian Hermeneutic Tradition: Reconstructing the Pagoda of &#8216;Attar&#8217;s Esoteric Poetics<BR><A href="view_personf3ef.html?type=auth&amp;id=136">Leonard Lewisohn</A> 
+<LI>Mystical Quest and Oneness in the <EM>Mukhtar-nama</EM> Attributed to Farid al-Din &#8216;Attar<BR>Eve Feuillebois-Pierunek 
+<LI>On Losing One&#8217;s Head: Hallajian Motifs and Authorial Identity in Poems Ascribed to &#8216;Attar<BR><A href="view_personb8e0.html?type=user&amp;id=100461">Carl W. Ernst</A></LI></OL>
+<P><I>Bibliography<BR></I><I>Index</I></P></DIV><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><P><STRONG>Persian Texts and Translations of Farid al-Din &#8216;Attar </STRONG></P>
+<P><I>Asrar-nama, </I>ed. Sadiq Gawharin. Tehran, 1338 Sh./1959. </P>
+<P><I>Asrar-nama, </I>ed. Muhammad Ibrahim. Tehran, 1376 Sh./1997. </P>
+<P><I>Asrar-nama, </I>tr. C. Tortel, as <I>Le Livre des Secrets</I>, <I>pr&#233;sent&#233; et traduit du persan</I>. Paris, 1985. </P>
+<P><I>Diwan-i &#8216;Att</I><I>ar, </I>ed. Sa&#8216;id Nafisi. Tehran, 1339 Sh./1961. </P>
+<P><I>Diwan-i &#8216;Att</I><I>ar, </I>ed<I>. </I>Taqi Tafadduli. Tehran, 1345 Sh./1967. </P>
+<P><I>Haylaj-nama</I>, ed. Ahmad Khwushniwis. Tehran, n.d. </P>
+<P><I>Ilahi-Name: Die Gespr&#228;che des K&#246;nigs mit seinen sechs S&#246;hnen. Eine mystische Dichtung von Faridaddin &#8216;A</I><I>ttar</I>, ed. Hellmut Ritter. Istanbul, 1940; repr. Tehran, 1359 Sh./1980. </P>
+<P><I>Ilahi-nama-i Shaykh Farid al-Din &#8216;Att</I><I>ar-i Nishapuri, </I>ed<I>. </I>Fu&#8217;ad Ruhani. Tehran, 1339 Sh./1960.</P>
+<P><I>Ilahi-nama, </I>tr. John Andrew Boyle as <I>The Ilahi-nama or Book of God of Farid al-Din </I><I>&#8216;Att</I><I>ar. </I>Manchester, 1976. </P>
+<P><I>Jawhar al-dhat</I>, ed. Muhammad Mir Kamali. Tehran, 1936. </P>
+<P><I>Jawhar al-dhat</I>. Tehran, n.d.; repr. Tehran, 1380 Sh./2001. </P>
+<P><I>Mant</I><I>iq al-t</I><I>ayr</I>, ed. Garcin de Tassy. <I>Mantic utta&#239;r ou le langue des oiseaux, po&#235;me de philosophie religieuse par Farid-Uddin Attar</I>. Paris, 1857. </P>
+<P><I>Mant</I><I>iq al-t</I><I>ayr, </I>ed. Muhammad Javad Mashkur. 3rd ed., Tehran, 1968. </P>
+<P><I>Mant</I><I>iq al-t</I><I>ayr</I>, ed. Sadiq Gawharin. 10th repr., Tehran, 1374 Sh./1995. </P>
+<P><I>Mant</I><I>iq al-t</I><I>ayr</I>, <I>Guzida, </I>ed. Husayn Ilahi Qumsha&#8217;i. 2nd ed., Tehran, 1377 Sh./1998. </P>
+<P><I>Mant</I><I>iq al-t</I><I>ayr</I>, ed. Muhammad Rida Shafi&#8216;i-Kadkani. Tehran, 1383 Sh./2004. </P>
+<DIV><I>Mant</I><I>iq al-t</I><I>ayr, </I>tr. Afkham Darbandi and Dick Davis as <I>The Conference of the Birds</I>. Harmondsworth and New York, 1984; tr. Peter Avery as <I>The Speech of the Birds, Concerning Migration to the Real, The Man</I><I>t</I><I>iqu&#8217;t</I><I>-T</I><I>air. </I>Cambridge, 1998; tr. Margaret Smith as <I>The Persian Mystics: </I><I>&#8216;A</I><I>ttar</I>. London, 1932; tr. R.P. Masani as <I>The Conference </I><I>of the Birds, a Sufi Allegory, being an abridged version of Farid-ud-Din Attar&#8217;s </I>Mantiq-ut-Tayr<I>. </I>London, 1924; tr. C.S. Nott as <I>The Conference of the Birds, </I>Mantiq ut-Tair, <I>A Philosophical Religious Poem in Prose, Rendered into English from the Literal and Complete French Translation of Garcin de Tassy</I>. London, 1954; French tr. Garcin de Tassy as <I>Mantic utta&#239;r ou le langage des oiseaux, po&#235;me de philosophie religieuse</I>. Paris, 1863; Swedish tr. Erik Hermelin as <I>Mantiq-ut-tayir</I>. 2 vols., Stockholm, 1929, critically reviewed by Rypka in <I>Archiv Orientalni, </I>4, (1932), pp. 149&#8211;160; Urdu tr. Agha Muhammad Ashraf, as <I>Lisan al-</I><I>t</I><I>ayr. </I>Lahore, 1933; Turkish tr. Abd&#252;lbaki G&#246;lpinarl&#305; as <I>Mant&#305;ku&#8217;l-tayr</I>. 2 vols. Istanbul, 1944&#8211;1945; Arabic tr. Badi&#8216; Muhammad Jum&#8216;a, as <I>Man</I><I>t</I><I>iq al-t</I><I>ayr li-Farid al-Din &#8216;Att</I><I>ar al-Naysaburi</I>. Beirut, 1980; Indonesian tr. Hartigo Andangdjaja, as <I>Musyawasah burung. </I>Jakarta, 1983. </DIV>
+<DIV>&nbsp;</DIV><A class=topofpage href="#">Top of page</A> 
+<P><I>Maz</I><I>har al-&#8216;aja&#8217;ib</I>, ed. Taqi Hatimi Nishapuri. Tehran, 1966. </P>
+<P><I>Maz</I><I>har al-&#8216;aja&#8217;ib wa Maz</I><I>har al-asrar</I>, ed. Ahmad Khwushniwis. Tehran, 1370 Sh./1991. </P>
+<P><I>Mukhtar-nama: majm&#8216;a-i r<EM>ruba&#8216;iyyat</EM></I><I> athar-i Farid al-Din-i &#8216;Att</I><I>ar-i Nishapuri</I>, ed. M.R. Shafi&#8216;i-Kadkani. 2nd ed., Tehran, 1375 Sh./1996. </P>
+<P><I>Mus</I><I>ibat-nama</I>, ed. Nurani Wisal. Tehran, 1354 Sh./1975. </P>
+<P><I>Mus</I><I>ibat-nama</I>, tr. Isabelle de Gastines as <I>Le livre de l&#8217;&#233;preuve </I>(Musibat-nama). Paris, 1981. </P>
+<P><I>Pand-nama, </I>tr<I>. </I>J.H. Hindley as <I>Pendeh-i-Attar: The Counsels of Attar</I>. London, 1809; tr. Erachsha F. Karani and Mahumed Gows Abdul Kadir Aga as <I>Pund Nameh Fariddodin Attar</I>. Bombay, 1912; French tr. A.I. Silvestre de Sacy as <I>Pend-nam&#232;h, ou, Le livre des conseils de F&#233;rid-eddin Attar</I>. Paris, 1819; Urdu tr. &#8216;Abd al-Ghaffur Nassakh, as <I>Chashma-i fay</I><I>d</I><I>. </I>Calcutta, 1862. </P>
+<P><I>Tadhkirat al-awliya&#8217;</I>, ed. R.A. Nicholson. 2 vols. London and Leiden, 1905&#8211;1907; repr. Tehran, 1361 Sh./1982. </P>
+<P><I>Tadhkirat al-awliya&#8217;</I>, ed. M. Isti&#8216;lami. 6th ed., Tehran, 1370 Sh./1991. </P>
+<P><I>Tadhkirat al-awliya&#8217;</I>, <I>Guzida, </I>ed. M. Isti&#8216;lami. 3rd ed., Tehran, 1370 Sh./1991. </P>
+<P><I>Tadhkirat al-awliya&#8217;</I>, <I>Guzida&#8217;ha az, </I>ed. Faridun Badra&#8217;i. Collected by A.J. Arberry. Tehran, 1377 Sh./1998. </P>
+<P><I>Tadhkirat al-awliya&#8217;</I>, tr. A.J. Arberry, as <I>Muslim Saints and Mystics: Episodes from the </I>Tadhkirat al-Auliya&#8217; <I>(Memorial of the Saints) by Farid al-Din Attar. </I>London, 1966; Italian tr. L. Pirinoli as <I>Farid ad-Din al-&#8217;A</I><I>tt</I><I>ar: Parole di S</I><I>ufi. Tadhkirat al-awliya&#8217;</I>. Intr. Pietro Nutrizio. Milan, 2001. </P>
+<DIV>Ushtur-nama, ed. Mahdi Muhaqqiq. Tehran, 1960; repr., Tehran, 1979.<BR>Waslat-nama. Tehran, 1957. </DIV>
+<DIV><BR>&#8216;Attar Apocrypha: <I>Majmu&#8216;a&#8217;i az athar-i Farid al-Din Muhammad ibn Ibrahim &#8216;Attar <BR>Nishapuri: Bisar-nama, Bulbul-nama, Si fasl, Pand-nama, <EM>Nuz&#8217;hat</EM> al-ahbab, Bayan-i irshad</I>, ed. Ahmad Khwushniwis. Tehran, 1984. </DIV>
+<DIV>&nbsp;</DIV><A class=topofpage href="#">Top of page</A> 
+<P><B>Selected Critical Studies of &#8216;Att</B><B>ar </B></P>
+<P>Akhtar, Muhammad Salim. &#8216;Ta&#8217;thir-i &#8216;Attar-i Nishapuri dar shibh-qarra-yi Hind&#8217;, in <I>Haft guftar darbara-i Sana&#8217;i wa </I><I>&#8216;Att</I><I>ar wa <EM>&#8216;Iraqi</EM></I>. Tehran, 1375 Sh./1996, pp. 129&#8211;142. </P>
+<P>Anvar-Chenderoff, Leili. &#8216;Le genre hagiographique &#224; travers le <I>Tadhkerat al-Awliya </I>de &#8216;Attar&#8217; in de Boccard, ed., <I>Saints Orientaux: Hagiographies m&#233;di&#233;vales compar&#233;es</I>. Paris, 1996, pp. 39&#8211;54. </P>
+<P>Ansari, &#8216;Ali Mir. <I>Kitabshinasi-yi Shaykh Farid al-Din </I><I>&#8216;Att</I><I>ar Nishapuri</I>. 2nd ed., Tehran, 1372 Sh./1993. </P>
+<P>Argyriou, Ast&#233;rios. &#8216;La conversion comme motif litt&#233;raire dans l&#8217;&#233;pop&#233;e byzantine de Dig&#233;nis Akritas et dans <I>La Conf&#233;rence des Oiseaux </I>de Farid Uddin Attar&#8217;, <I>Byzantinische Forschungen</I>, 25 (1999), pp. 143&#8211;151. </P>
+<P>Ashrafzada, R. <I>H</I><I>ikayat-i Shaykh-i S</I><I>an&#8216;an</I>. Tehran, 1373 Sh./1994.<BR>--<I>Tajalli-yi ramz wa riwayat dar shi&#8216;r-i &#8216;Att</I><I>ar-i Nishapuri. </I>Tehran, 1373 Sh./1994.<BR>--<I>Farhang-i karburd-i ayat wa riwayat dar ash&#8216;ar-i Shaykh Farid al-Din &#8216;Att</I><I>a</I><I>r </I><I>Nishapuri. </I>1373 Sh./1994. </P>
+<P>Avery, Kenneth. &#8216;The Theme of the Sufi Master and the Tavern in the Lyric Poetry of &#8216;Attar&#8217;, <I>Sufi, </I>48 (2000&#8211;2001), pp. 8&#8211;13. </P>
+<P>Bausani, Alessandro. &#8216;Considerazioni sulla <I>Tadhkiratu l&#8217;auliya&#8217; </I>di &#8216;Attar&#8217;, in, <I>Colloquio italo-iraniano sul poeta mistico Fariduddin </I><I>&#8216;Att</I><I>ar</I>. Rome, 1977, pp. 71&#8211;88. </P>
+<P>Bertels, E.E. &#8216;Neva&#8217;i i &#8216;Attar&#8217;, in V.V. Bartold, ed., <I>Mir-Ali-Shir. </I>Leningrad, 1928, pp. 24&#8211;82; Persian tr. S. Izadi as &#8216;Nawayi wa &#8216;Attar&#8217; in Bertels, <I>Ta</I><I>s</I><I>awwuf wa adabiyat-i tas</I><I>awwuf. </I>Tehran, 1979, pp. 519&#8211;589. </P>
+<P>&#8211;&#8212;&#8216;Darbara-i sharhi bar ghazal-i &#8216;Attar&#8217;, in his <I>Ta</I><I>s</I><I>awwuf wa adabiyat-i tas</I><I>awwuf, </I>tr. S. Izadi. Tehran, 1979, pp. 483&#8211;491. </P>
+<P>de Blois, Francois. &#8216;Farid al-Din &#8216;Attar&#8217;, in his <I>Persian Literature: A Bio-bibliographical Survey</I>, vol. 5, Part 2: <I>Poetry ca A.D. 1100&#8211;1225</I>. London, 1994, pp. 270&#8211;318. </P>
+<P>de Bruijn, J.T.P. &#8216;Comparative Notes on Sana&#8217;i and &#8216;Attar&#8217;, in <A href="view_personf3ef.html?type=auth&amp;id=136">Leonard Lewisohn</A>, ed., <I>The Heritage of Sufism, </I>I, <I>Classical Persian Sufism from its Origins to Rumi. </I>Oxford, 1999, pp. 361&#8211;379. </P>
+<P>Chalisova, Natalia. &#8216;Hallaj az nigah-i &#8216;Attar&#8217;, <I>Kayhan-i Farhangi</I>, 12 (1374 Sh./1995), pp. 34&#8211;35. </P>
+<P>Correale, Daniela Meneghini and Valentina Zanoll. <I>&#8216;Att</I><I>ar: Concordance and Lexical Repertories of 1000 Lines. </I>Venice, 1993. </P>
+<P>Davis, Dick. &#8216;The Journey as Paradigm: Literal and Metaphorical Travel in &#8216;Attar&#8217;s <I>Mantiq al-Tayr</I>&#8217;, <I>Edebiyat, </I>4 (1993), pp. 173&#8211;183. </P>
+<P>Diyanati, Muhammad. <I>Yik tapish-i dirang: Shinakht-i mutanaqi</I><I>d</I><I>-nama (paradox) wa s</I><I>uwar-i khiyal-i paraduksi dar shi&#8216;r</I><I>-i Mawlawi wa &#8216;Att</I><I>ar</I>. Tehran, 1381 Sh./2002. </P>
+<P>Fadili, Qadir. <I>Farhang-i <EM>mawdu&#8216;i </EM></I><I>adab-i parsi, <EM>mawdu&#8216;</EM></I><I>bandi wa naqd wa barrasi, </I>1&#8211;2: <I>Man</I><I>t</I><I>iq al-t</I><I>ayr wa Pand-nama</I>; 3&#8211;4: <I>Asrar-nama wa Haylaj-nama</I>; 5&#8211;6: <I>Mu</I><I>s</I><I>ibat-nama wa Maz</I><I>har al-&#8216;aja&#8217;ib</I>. Tehran, 1374 Sh./1995. </P>
+<P>--<I>Andisha-i </I><I>&#8216;Att</I><I>ar: tah</I><I>lil-i afaq-i andisha-i Shaykh Farid al-Din &#8216;Att</I><I>ar Nishapuri</I>. Tehran, 1374 Sh./1995. </P>
+<P>Faydizada, T. <I>Darbara-i dastan-i </I><I>&#8216;a</I><I>rifana-i Shaykh S</I><I>ana&#8216;an: gustardigi-yi damina-i nufudh-i an dar adabiyat-i jahan ba-vizha dar adabiyat-i farsi, turki wa kurdi (dar hama lahajat)</I>. Tabriz, 1365 Sh./1986. </P>
+<DIV>Furuzanfar, B. <I>Shar</I><I>h</I><I>-i ah</I><I>wal wa naqd-u tah</I><I>lil-i athar-i Shaykh Farid al-Din Muh</I><I>ammad &#8216;Att</I><I>ar-i Nishapuri</I>. 2nd ed., Tehran, 1374 Sh./1995 (several editions). </DIV>
+<DIV>&nbsp;</DIV><A class=topofpage href="#">Top of page</A> 
+<P>Garcin de Tassy, J.H. &#8216;Episode de la vie de San&#8217;an, d&#8217;apr&#232;s le po&#235;me persan de Fariduddin Attar, intitul&#233; Mantic utta&#239;r&#8217;, <I>Revue de l&#8217;Orient, </I>N.S. 2 (1856) pp. 362&#8211;367. </P>
+<P>--<I>La po&#233;sie philosophique et religieuse chez les Persans d&#8217;apr&#232;s le Mantic utta&#239;r ou le langage des oiseaux de Farid-Uddin Attar et pour servir d&#8217;introduction &#224; cet ouvrage. </I>Paris, 1856. </P>
+<P>Hadidi, J. &#8216;&#8216;Attar et les poetes francais&#8217;, in H. Beikbagan, ed., <I>Actes de deaux colloques internationaux sur: &#8216;Abd al-Ra</I><I>h</I><I>man Jami, Farid al-Din &#8216;Att</I><I>ar et Omar Khayyam</I>. Tehran, 2002, pp. 97&#8211;111. </P>
+<P>Haydarkhani, Husayn. <I>Andishaha-yi </I><I>&#8216;Att</I><I>ar dar </I>Lisan al-ghayb <I>wa </I>Waslat-nama <I>wa </I>Miftah al-irada. Tehran, 1997. </P>
+<P>Knapp, Bettina L. &#8216;&#8216;Attar (1120&#8211;1230): The Conference of the Birds &#8211; A Sufi&#8217;s Mystical Experience and Dehumanization Process&#8217;, in her <I>A Jungian Approach to Literature</I>. Carbondale and Edwardsville SC, 1984. </P>
+<P>Meier, F. &#8216;Der Geistmensch bei dem persischen Dichter &#8216;Attar&#8217;. <I>Eranos-Jahrbuch</I>, 13 (1945) pp. 283&#8211;353; tr. R. Manheim as &#8216;The Spiritual Man in the Persian Poet &#8216;Attar&#8217;, in Joseph Campbell, ed., <I>Spiritual Disciplines: Papers from the Eranos Yearbooks</I>. Princeton, NJ, 1985, pp. 267&#8211;304. </P>
+<P>Mir-Afdali, Sayyid &#8216;Ali. &#8216;&#8216;Aya <I>Mukhtar-nama </I>az &#8216;Attar ast?&#8217;, <I>Nashr-i Danish</I>, 17 (1379 Sh./2000), pp. 32&#8211;43. </P>
+<P>Moayyad, Heshmat. &#8216;Sar-gudhasht-i zan-i parsa-yi &#8216;Attar&#8217;, <I>Iranshinasi, </I>9 (1376 Sh./1997), pp. 427&#8211;442. </P>
+<P><U><A href="view_person31df.html?type=auth&amp;id=121">Morris, James Winston</A></U>. &#8216;The Basic Structure of &#8216;Attar&#8217;s <I>Conference of the Birds</I>: An Introduction&#8217;. <I>Sufi: A Journal of Sufism, </I>7 (1990) pp. 10&#8211;13. </P>
+<P>Nafisi, Sa&#8216;id. <I>Justuju dar a</I><I>h</I><I>wal wa athar-i Farid al-Din &#8216;Att</I><I>ar-i Nishapuri</I>. Tehran, 1320 Sh./1941. </P>
+<P>Nasr, S.H. &#8216;The Flight of Birds to Union: Meditations upon &#8216;Attar&#8217;s <I>Man</I><I>t</I><I>iq al-t</I><I>ayr</I>&#8217; in his <I>Islamic Art and Spirituality. </I>Ipswich, 1987, pp. 98&#8211;113. </P>
+<P>Nawbar, Ahmad Shawqi. <I>Guft: An Yar &#8230; Shakh</I><I>s</I><I>iyyat-i H</I><I>allaj wa baztab-i an dar ash&#8216;ar-i panj s<EM>ha&#8216;ir</EM></I><I>-i buzurg (Sana&#8217;i, &#8216;Att</I><I>ar, Mawlawi, H</I><I>afiz</I><I> wa S</I><I>a&#8217;ib)</I>. Tabriz, 1377 Sh./1998, pp. 72&#8211;75. </P>
+<P>Purjavadi, Nasru&#8217;llah. <I>Bu-yi jan: maqalaha-yi darbara-i <EM>shi&#8216;r-i </EM></I><I>irfani-yi farsi. </I>Tehran, 1372 Sh./1993. </P>
+<P>Purnamdariyan, Taqi. <I>Didar ba Simurgh: haft maqala dar </I><I><EM>&#8216;irfan </EM></I><I>wa shi&#8216;r</I><I> wa andisha-i &#8216;Att</I><I>ar. </I>Tehran, 1374 Sh./1995. </P>
+<P>Reinert, B. &#8216;&#8216;Attar, Shaykh Farid al-Din&#8217;, <I>Encyclopaedia Iranica</I>, vol. 2, pp. 20&#8211;25. </P>
+<P>Reisner, Marina. &#8216;Ma&#8216;ani-yi qissa-i Hallaj dar ghazaliyyat-i &#8216;Attar&#8217;, <I>Kayhan-i Farhangi</I>, 12 (1374 Sh./1995) pp. 32&#8211;33. </P>
+<P>Ritter, Hellmut. &#8216;Philologika 14&#8217;, <I>Oriens, </I>11 (1958), pp. 36&#8211;60. </P>
+<DIV>--&#8216;Philologika 16&#8217;, <I>Oriens, </I>13 (1961), pp. 195&#8211;238. </DIV>
+<DIV>&nbsp;</DIV>
+<DIV>--&#8216;&#8216;Attar, Farid al-Din Muhammad ibn Ibrahim&#8217;, <I>EI<SUP>2</SUP></I>, vol. 1, pp. 752b&#8211;755a. </DIV>
+<DIV>&nbsp;</DIV>
+<DIV>--<I>Das Meer der Seele: Mensch, Welt und Gott in den Geschichten des Fariduddin &#8216;Attar</I>. 2nd ed., Leiden, 1978; ed. and English tr. John O&#8217;Kane with Bernd Radtke, as <I>The Ocean of the Soul: Men, the World and God in the Stories of Farid al-Din &#8216;Attar</I>. Leiden, 2003; Persian tr. &#8216;Abbas Zaryab-khu&#8217;i, Mihr-afaq Baybardi as <I>Darya-yi jan: sayri dar ara&#8217; wa ahwal-i Shaykh Farid al-Din &#8216;Attar Nishapuri</I>. Tehran, 1377 Sh./1998. </DIV>
+<P>Sabzawari, Rida Mustafawi. &#8216;&#8216;Attar dar shibh-qarra-yi Hind (Pazhuhishi dar nuskhahayi khatti wa chapi wa sharhha-yi athar-i &#8216;Attar)&#8217;, <I>Qand-i Parsi, </I>8 (1373 Sh./1994) pp. 1&#8211;126. </P>
+<P>Sarimi, Suhayla. <I>Mu</I><I>st</I><I>alahat-i <EM>irfani</EM></I><I> wa mafahim-i barjasta dar zaban-i &#8216;Att</I><I>ar</I>. Tehran, 1373 Sh./1994. </P>
+<P>--<I>Sima-yi jam&#8216;a dar athar-i </I><I>&#8216;Att</I><I>ar. </I>Tehran, 1382 Sh./2003. </P>
+<P>Sattari, Jalal. <I>Pazhuhishi dar qi</I><I>ss</I><I>a-i Shaykh S</I><I>an&#8217;A</I><I>n wa dukhtar-i tarsa. </I>Tehran, 1381 Sh./2002. </P>
+<P>Shafi&#8216;i-Kadkani, M.R. <I>Zabur-i Parsi: nigahi bi zindagi wa ghazalha-yi </I><I>&#8216;Att</I><I>ar</I>. Tehran, 1378 Sh./1999. </P>
+<P>Shaji&#8216;i, Puran. <I>Jahanbini-yi </I><I>&#8216;Att</I><I>ar. </I>Tehran, 1994. </P>
+<DIV>Zarrinkub, &#8216;Abd al-Husayn. <I>S</I><I>ada-yi bal-i Simurgh: darbara-i zindagi wa andisha-i &#8216;Att</I><I>ar</I>. 3rd ed., Tehran, 1380 Sh./2001&#8211;2002. </DIV>
+<DIV>&nbsp;</DIV></div><p>Content Date: January 2007</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - &#8216;Attar and the Persian Sufi Tradition: The Art of Spiritual Flight</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 10 Jan 2017 11:25:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 28/05/2010&nbsp;17:16&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106737 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:26:14 GMT -->
+</HTML>

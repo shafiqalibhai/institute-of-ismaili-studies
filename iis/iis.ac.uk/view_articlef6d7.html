@@ -1,0 +1,1165 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109922 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:02:37 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 109922;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only18d6.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D109922">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Encyclopaedia Islamica: Volume 1</strong><strong><br/></strong><strong></strong><br/><br/><DIV><A href="view_person19c6.html?type=auth&amp;id=8">Dr Farhad Daftary</A></DIV>
+<DIV><A href="view_person6412.html?type=auth&amp;id=54">Professor Wilferd Madelung</A></DIV>
+<DIV>Brill in association with The Institute of Ismaili Studies, London, 2008</DIV><span><br/><br/>ISBN (Hardback): 978 90 04 16860 2<br/>ISBN (Softback): </span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><A href="javascript:void(0)" onclick="LaunchPreviewFull('WebAssets/Large/Publications/encyclopaedia_islamica01-200891812442_7055.jpg');" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publications/encyclopaedia_islamica01-200891812442_7055.jpg" align="left" alt="" style="padding: 0px;"></A></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li style="COLOR: gray; TEXT-DECORATION: underline">Bibliography</li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><IMG height=16 alt="" src="SiteAssets/video/wmvicon.jpg" width=16 align=middle border=0> <A href="view_article0dbc.html?type=cont.currentlang&amp;id=110617">Author Interview with Dr Farhad Daftary </A></P>
+<P>Volume 1 covers Aba to Abu Hanifa </P>
+<P><STRONG>The book's introduction has been reproduced here:</STRONG></P>
+<P>The Islamic faith spread at a far greater speed than could ever have been anticipated, over an expanse of land stretching from the coast of the Atlantic Ocean across North Africa and the Iranian plateau to the threshold of China and India. This phenomenon resulted in the birth of a civilisation which encompassed a considerable portion of the creative and intellectual achievements of the human race to date. The extraordinary impact of Islam derived from a remarkable capacity to assimilate and further develop other cultures and civilisations, and this same capacity also accounted for the speed with which the new faith generated new, synthetic expressions of culture throughout the lands of Islam and beyond. </P>
+<P>The teachings of the Prophet, at once simple and profound, gave rise to a spiritual and intellectual culture which was inclusive and humane, affirming a mode of society compatible with the immutable prerogatives of human dignity, and also capable of adapting to the ever-changing needs of different communities and their traditions. Muslim scholars, scientists and writers were able to travel in search of learning and employment throughout the Islamic world, nurturing a tradition of learning and creativity which served to further stimulate and unite the varied societies in which they lived. </P>
+<P>The intellectual activity in the Islamic world in turn aroused the curiosity of scholars in the Christian world when they came into contact with it and, as a result, numerous works of Islamic philosophy, science and other disciplines were translated. In this way, classics of Islamic scholarship by al-Razi, Ibn Sina, al-Biruni, Ibn Rushd, and many others, became integral to the thought of scholars and writers in Mediaeval and Renaissance Europe, generating thereby a deep and enduring influence. </P>
+<P>Thus, the vast diversity of the Islamic legacy has become an integral characteristic of world heritage, and amongst all the works that are available to us from the rich sources of Islamic literature, encyclopaedic compilations enjoy a special importance. For instance, there are particular specialist works such as al-Razi&#8217;s <I>al-Hawi</I>, Ibn Sina&#8217;s <I>al-Qanun</I>, al-Biruni&#8217;s <I>al-athar al-baqiya</I>, al-Faraghani&#8217;s <I>Jawami &#8216;ilm al-nujum</I> and &#8216;Abd al-Rahman al-Khazini&#8217;s <I>Mizan al-hikma</I>, which deal with medicine, philosophy, astronomy or physics; and there are general works like Ibn al-Nadim&#8217;s <I>al-Fihrist</I>, al-Farabi&#8217;s <I>Ihsa&#8217; al-&#8216;ulum</I>, al-Khwarazmi&#8217;s <I>Mafatih al-&#8216;ulum</I>, Qutb al-Din al-Shirazi&#8217;s <I>Durrat al-taj</I>, Zakariyya&#8217; al-Qazwini&#8217;s <I>&#8216;Aja&#8217;ib al-makhluqat</I> and the <I>Rasa&#8217;il</I> of the Ikhwan al-Safa&#8217;, which belong to diverse genres of collections and can properly be regarded as the precursors of the modern encyclopaedia. </P>
+<P>With the establishment of new maritime routes, the forging of political and mercantile relations between the East and Europe in the early modern age and the increasing military and political dominance of the European powers, numerous travellers flocked to the &#8216;Orient&#8217; in search of insights into these exotic lands and their cultures. Centres of Orientalist learning and Islamic studies came to be established at European universities, encouraging a structured and systematic approach to the new fields of studies, along with a flood of publications. A major advance in the study of Islam appeared in 1697, with the posthumous publication of Barth&#233;lemy d&#8217;Herbelot&#8217;s encyclopaedic work <EM>Biblioth&#232;que Orientale</EM>. This pioneering work of Western Orientalism, which covered many aspects of the Muslim East, was to remain the standard reference work in Europe until the nineteenth century. This renowned French Orientalist had read and utilised a variety of Arabic, Persian and Turkish sources and provided details on the history and religion of Islam hitherto unknown to Europeans. The study of Islam received further stimulus a century later as a result, firstly, of the establishment of the &#201;cole des Langues Orientales Vivantes in Paris under the tutelage of Baron Antoine Isaac Silvestre de Sacy in 1795, and secondly, the Napoleonic expedition of 1798-799 to Egypt and Syria. The foundation of learned societies and the publication of specialised periodicals and journals in the field throughout the nineteenth century greatly increased the information available for the expanding discipline. In fact, the sheer volume of these published or unpublished materials, treatises, monographs and scholarly works, was such that quick and easy access to them become an increasingly difficult task. It was this state of affairs that, in the early part of the twentieth century, led some of the most distinguished Orientalists to compile a collective work of the most important aspects of Islamic culture and civilisation, under the title of <I>The Encyclopaedia of Islam</I>.</P>
+<P>The preparation and publication of this four-volume work, as well as its Supplement, in English, French and German, published from 1913 to 1938 in Leiden, under the supervision of scholars such as Houtsma, Baset, Hartmann, Wensinck, Gibb and L&#233;vi-Proven&#231;al. The enthusiasm with which this publication was received led to a 12-volume second edition in 1954, that was finally completed in 2004. Most volumes of the first and second editions of this encyclopaedia were variously translated into Arabic, Persian, Turkish, Urdu and Dari in Egypt, Iran, Turkey, Pakistan and Afghanistan. </P>
+<P>Notwithstanding the profile and status it deserved and rapidly gained, <I>The Encyclopaedia of Islam</I> nevertheless failed to cover many cultural aspects of various Islamic schools and traditions, in particular that of Persian Shi&#8216;ism, one of Islam&#8217;s most important and influential schools of thought. It was for this reason that when the decision was taken in Iran to translate it into Persian, local researchers under the guidance of Professor Ehsan Yarshater provided numerous additional articles aimed at filling the lacunae. This appeared as a supplement to the Persian-language edition under the new title of <I>The Encyclopaedia of Iran and Islam</I>. Not long after, Professor Yarshater with the support of Columbia University, embarked on the now well-known <I>Encyclopaedia Iranica</I>, which comprehensively addresses all aspects of pre-Islamic and Islamic Iranian history, literature, arts and culture. Simultaneous with the appearance of Fascicles VII and VIII of The <I>Encyclopaedia of Iran and Islam</I> in 1978, a general encyclopaedia in Persian was also published which was of particularly high quality - originally in two parts and three volumes, and entitled <I>Da&#8217;irat al-ma&#8216;arif-i Farsi</I> (&#8216;The Persian Encyclopaedia&#8217;) by Ghulam Husayn Musahib. It eventually produced a great number of additional articles on Iran and Islam by eminent scholars, such that it was expanded to three times its original size. This, too, has been further edited and translated with the final result appearing in 1995. </P>
+<P>Despite the significance and role of the <I>Encyclopaedia of Islam</I>, and the laudable efforts of Orientalist scholars in furthering an understanding of Islamic texts by providing extensive information on Islamic cultures and civilisation, and introducing sources and countless manuscripts in the field, thereby encouraging research, it has to be said that a number of new challenges had emerged which called out for new responses. Advances in education, rising standards of knowledge and information amongst Muslims and developments in Shi&#8216;i studies resulting from the establishment of an Islamic republic in Iran provoked a host of fresh queries and debates in every field, from ideology to spirituality, from the sciences to the arts. For the student of Islam, hunting for information amongst a multitude of different sources within each of these areas is a challenging task. Also, it is a well-known fact that when encyclopaedic compilations are undertaken with the necessary academic rigour and appropriate research methods, they can prove of great value in promoting a better understanding between civilisations. </P>
+<P>Such were the most significant driving factors underlying the rationale for the establishment of the Centre for the Great Islamic Encyclopaedia in 1983 in Tehran, dedicated to the production of a far-reaching, comprehensive and accurate encyclopaedia entitled <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I> (&#8216;The Great Islamic Encyclopaedia&#8217;), written by a prominent group of scholars and researchers in the field, with Kazem Musavi Bojnurdi as its editor-in-chief. The first steps proved arduous: defining the goals, identifying the audience, appointing the researchers and authors, providing research tools and a specialised library took several years, so that the first volume only appeared in 1989. To date (2008), 15 volumes have been completed, and the entire set is projected to consist of over 40 volumes. This encyclopaedia has been managed in a carefully systematic and structured manner, with special attention given to the selection of each entry, which follows a particular set of criteria filtered through a pyramid of editors, sub-editors and proof-readers, reporting to an editorial board. In a short span of time, this publication has grown from an information resource to a veritable research facility serving all manner of historians and students. Reviews and comments suggest that in the twenty years since its inception, <I>The Great Islamic Encyclopaedia</I> and its parallel ongoing Arabic translation have sparked a revolution in the methodology of such research projects, opening up new horizons and inspiring fresh topics of inquiry, dealing with manuscripts, publications, coins, archaeological remains, artefacts, and the like. </P>
+<P><I>The Great Islamic Encyclopaedia</I> project is sustained by a number of primary and secondary research departments, focusing upon specific subjects, such as the literature of Persian and other Islamic cultures, Arabic literature, Qur&#8217;anic sciences,<EM> fiqh</EM>, <I>usul</I> and <I>hadith</I>, history, geography, mysticism, comparative religion, philosophy, anthropology, the arts, and so on. These departments deal with research and editing, selection of entries, scientific categorisation and reference-verification, as well as printing. Each of these departments is managed by an editor with the help of assistants, and in the course of their work, extensive contributions are made by associate and affiliated editors. A highly-structured process of selection, cross-checking and final approval via several stages of editing ensures that the final product is the result of extensive deliberation and monitoring by a team of highly qualified experts and their assistants.</P>
+<P>Following the enthusiasm with which the Persian version of <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I> was received, it was decided that an Arabic translation would also be undertaken in Tehran. The first volume of the Arabic edition appeared in 1991 and, to date, seven volumes have been published. Given that this version is based upon the Persian, an equal number of volumes in Arabic will follow in due course. The success of the Arabic edition prompted the decision to produce an English translation in order to make this work available to an even wider audience. The Institute of Ismaili Studies in London was therefore approached because of its high standards of academic excellence; the present publication is the fruit of an agreement between the two bodies. </P>
+<P>The English translation of <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I>, named Encyclopaedia Islamica, will differ in some respects from its Persian original. The English version will not exceed 16 core volumes with supplementary volumes, given that senior consultants and editors have decided to omit a number of entries which would have been of limited interest or relevance to a Western readership. However, the integrity of the more important, lengthier entries has been preserved. A number of articles in English will be modified or abridged; many will need to be updated, given that since the publication of the original, new information, analysis or evidence has surfaced. Differences in the sequence of the letters of the alphabet between English and Persian also mean that entries beginning with, for example, &#8216;d&#8217;, and &#8216;ch&#8217; in English precede the corresponding entries in the Persian edition. Also, those entries that begin with the letter &#8216;ayn, which will appear in the English edition under the letter &#8216;a&#8217;, will be published earlier than in the Persian edition. In addition, some entries will be specifically commissioned for the new English edition which will not have appeared in the Persian. </P>
+<P>A professional team of consultants, editors and translators was assembled under the auspices of the Department of Academic Research and Publications at the Institute of Ismaili Studies; the head of this department, Dr Farhad Daftary, together with Professor Wilferd Madelung, Senior Research Fellow at the IIS, are the editors-in-chief of the <I>Encyclopaedia Islamica</I>. Under their supervision, each translated article was subjected to several stages of editing. Given the weighty demands of editing a work such as this, the final version of the entries presented here is the fruit of the efforts of both the editors and translators.</P>
+<P><I>Encyclopaedia Islamica</I>, like its Persian counterpart, <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I>, is to be considered a specialist encyclopaedia. Its central contribution to Islamic studies is its coverage of specifically Shi&#8216;i themes, personalities, culture and history &#226;&#226;&#8218;&#172;&#8220; those aspects, precisely, which were either given scant attention in earlier encyclopaedias or ignored altogether, as a result of the Arabo-centric and Sunni-centric tendencies which have, until recently, prevailed in Orientialist academic circles in the West. At the same time, a major strength of the present encyclopaedia lies in its very comprehensiveness. It successfully covers an extraordinary range of themes and regions, seeking to do justice to the global nature of Islamic civilisation: it is far from being simply an encyclopaedia of &#8216;Shi&#8216;i Islam&#8217;. While offering an objective and in-depth study of hitherto neglected fields of Shi&#8216;i culture and history, it also presents biographies of political, military and cultural personalities, with accounts of events throughout the Muslim world; scientific, artistic, literary and philosophical themes; the disciplines of jurisprudence, Qur&#8217;anic studies, history and geography, logic and linguistics, faith and philosophy, and such sciences as medicine and mathematics. In this manner, scholarly attention to the specifics of the Shi&#8216;i traditions of Islam is combined with an appropriate sensitivity to the global matrix of Islamic civilisation within which these traditions have emerged; a civilisation to which Shi&#8216;ism has made such a creative and inspiring contribution, and of which it is itself an indisputably major manifestation.</P><br><br></div><div id="pubsContents"><strong>Contents</strong><br><P>&nbsp; 
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid"><STRONG>Article</STRONG></TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid"><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><STRONG>Author (translator)</STRONG></SPAN></TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Aba&#8217; </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yadollah Gholami (Jawad Qasemi) </TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ababil</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abadah</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Hassan Ganji (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abadan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Majdoddin Kayvani (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Aban b. &#8216;Abd al-Hamid al-Lahiqi </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Nacim Pak)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Aban b. Taghlib </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Zia&#8217;i (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abaqa Khan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abbas Zaryab (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abarquh</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Rafi&#8216;i (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abasa</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&nbsp;Mahdi Muti&#8216; (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abaskun </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ja&#8216;far Shi&#8216;ar and Sadeq Sajjadi (John Cooper)&nbsp;</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbadids</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Manouchehr Pezeshk (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbadi, Abu &#8216;Asim </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Faramarz Haj Manouchehri (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbadi, Muzaffar</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Javad Shams (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas I, Shah</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yusof Rahimlu (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas II, Shah</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yusof Rahimlu (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbas b. &#8216;Abd al-Mattalib</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas b. Abi al-Futuh</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sadeq Sajjadi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbas b. al-Ahnaf </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbas b. &#8216;Ali</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian and Ali A. Bulookbashi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbas b. &#8216;Amr al-Ghanawi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas b. Firnas</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Hussein Ahmadi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas Hilmi II</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Nooshin Saheb (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbas b. Mirdas</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Mohammad Seyyedi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas Mirza</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of History (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbas Pasha</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Nooshin Saheb (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbasa (a woman of the &#8216;Abbasid court)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sadeq Sajjadi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbasa (a city in eastern Egypt)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Reza Naji (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abbasi, &#8216;Abd al-Rahim</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Rezvan Massah (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbasids</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian and Sadeq Sajjadi (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abbasiyya </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of History (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. &#8216;Abd al-Muttalib</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Babak Farzaneh (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Ahmad b. Hanbal</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. &#8216;Ali</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. &#8216;Amir b. Kurayz</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Shadi Da&#8216;i Reza&#8217;i Muqaddam (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. &#8216;Amr b. al-&#8216;As</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies<BR>(Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah Bukhari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yadollah Gholami (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Dhakwan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies<BR>(Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Hanzala</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Hasan, Abu Muhammad</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Ja&#8216;far</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Farhang Mehrvash (Azar Rabbani)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Jahsh</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&nbsp;Babak Farzaneh (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. al-Kawwa&#8217;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Khazim</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ruzbeh Zarrinkoub (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Lahi&#8216;a</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies<BR>(Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Maymun al-Qaddah</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Farhad Daftary (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Mu&#8216;awiya</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sadeq Sajjadi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Musa b. Nusayr</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Babak Farzaneh (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Muskan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Ansari (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Muti&#8216;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Rawaha</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Sa&#8216;d</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Salam</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Faramarz Haj Manouchehri (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Sinan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mahdi Ghaffari (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah Shirazi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yadollah Gholami (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Ubayy</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. &#8216;Umar</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. Wahb al-Rasibi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Allah b. al-Zubayr</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-&#8216;Azim al-Hasani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sara Haji Husseini Mesgar and Sadeq Sajjadi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Aziz b. Abi Rawwad</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Aziz &#8216;Uthmani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Dianat (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Dar, Banu</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Manouchehr Pezeshk (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Ghani al-Azdi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Ghani al-Maqdisi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Hakam</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Nurollah Kasa&#8217;i (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Hamid I (Abdulhamid)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Dianat (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Hamid b. Yahya (al-Katib)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Haqq Amanat Khan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mahbanoo Alizadeh (Roxane Zand)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Karim Khwarazmi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yadollah Gholami (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Karim Munshi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Ali Al-i Davud (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Latif</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ruzbeh Zarrinkoub (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Majid I&nbsp; (Abdulmecit)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Dianat (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Malik b. Marwan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Manouchehr Pezeshk and Isabel Miller (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Malik I</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ruzbeh Zarrinkoub (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Manaf</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Babak Farzaneh (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Muttalib b. Hashim</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Nabi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Marjan Afsharian (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Quddus Ganguhi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Marjan Afsharian and Reza Shah-Kazemi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Qadir b. Muhyi al-Din al-Jaza&#8217;iri</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Reza Shah-Kazemi</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Rahim Khan-i Khanan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Huda Seyyed Hussein-zadeh (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Rahim Khwarazmi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yadollah Gholami (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Rahman b. Abi Layla</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hasan Yusofi Ishkevari (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Rahman b. &#8216;Awf</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Rahman Khwarazmi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yadollah Gholami (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Rahman b. Mahdi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Samad Shirazi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Fariba Eftekhar (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd Shams</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abd al-Wahid b. Zayd al-Basri</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Javad Shams (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abda b. al-Tabib</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ezzat Molla-Ebrahimi (Hasan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdal</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hussein La-Shay&#8217; (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdal Beg</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Ali Al-i Davud (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdal Chishti</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hussein La-Shay&#8217; (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdali</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of History (Nacim Pak)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abdan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mas&#8216;ud Habibi Mazaheri (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-&#8216;Abdari, Abu &#8216;Abd Allah Muhammad</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Nooshin Saheb (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abdi Pasha (Abdi Pasa) 1 </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Dianat (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&#8216;Abdi Pasha (Abdi Pasa) 2</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Dianat (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abhar</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohsen Ahmadi (Maryam Rezaee)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-Abi, Abu al-Mahasin Nasir al-Din</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Maryam Falahati Movahhed (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-Abi, Abu Sa&#8216;d Mansur b. al-Husayn</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Mansur Sana&#8216;i)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abiward</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Reza (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-Abiwardi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad (Saleh Nejad)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abjad</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abjadi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Literature (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abkhazia (Abkhaz)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Reza (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-Ablah al-Baghdadi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Maryam Rezaee)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abna&#8217;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Kazem Bargnisi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abr </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yahya Dhoka&#8217; (Roxane Zand)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abraha</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Kazem Bargnisi (Maryam Rezaee)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abraham</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sadeq Sajjadi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abrang</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Yahya Dhoka&#8217; (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-Abrar</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Rasul Shayesteh (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abri</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Hassan Semsar (Roxane Zand)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Al-Abtah</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Rafi&#8216;i (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Abbas al-Isfarayini</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abolfazl Khatibi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Abbas al-Mursi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Fathollah Mojtaba&#8217;i (Nacim Pak)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Abbas al Saffah</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Bahramian (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Abbas al Sayyari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Mysticism (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Abd Allah al-&#8216;Alawi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hussein Farhang Ansari (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Abd Allah al-Basri</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Javad Anvari (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Abd Allah al Shi&#8216;i</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mas&#8216;ud Habibi Mazaheri (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Abd Allah al-Zanjani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Ja&#8216;far Sajjadi (Nacim Pak)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Abd al-Rahman al Sulami</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies (Nacim Pak)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Ahmad al-&#8216;Askari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Ala&#8217; &#8216;Ata&#8217; b. Ya&#8216;qub Ghaznawi Razi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Habibeh Danesh-amuz (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Ala&#8217; Bihishti</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Muhammad Ali Mowlavi (Nacim Pak)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Ala&#8217; al-Ma&#8216;arri</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sharafoddin Khorasani (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ali Ardistani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Ali Al-i Davud (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ali Balkhi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abolfazl Khatibi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ali al-Daqqaq</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hussein La-Shay&#8217; (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Alial-Farmadi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Naser Gozashteh (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ali al-Farisi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ali Miskawayh</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu&#8217;l-Qassem Emami (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ali Simjur</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abolfazl Khatibi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Aliya</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdol-Amir Salim (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Alqama</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Rezvan Massah (Saleh Nejad)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Ammar</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Amr b. al-&#8216;Ala&#8217;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Fatemeh Teimuri)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Amr al-Dani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Ali Lesani Fesharaki (Saeed Saeedpoor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Amr b. Nujayd</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Najib Mayel Heravi (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Amr al-Shaybani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Arabic Literature &#226;&#226;&#8218;&#172;&#8221; Abu Muhammad Vakili (Maryam Rezaee)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;As</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu&#8217;l Hasan Dianat (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Aswad al-Du&#8217;ali</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Aswar Shawur</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abolfazl Khatibi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Atahiya</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mehran Arzandeh (Azar Rabbani)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Awana</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Reza Naji (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu &#8216;Awn</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Ali Kazem Beigi (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-&#8216;Ayna&#8217;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Ali Lesani Fesharaki (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Ayyub al-Ansari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Ansari (Fatemeh Teimuri)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Ayyub al-Muriyani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Mahdi Mu&#8217;azzin Jami (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hadi Alemzadeh, Ahmad Pakatchi and Fatemeh Lajevardi<BR>(Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakra</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Asef Fekrat (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr b. Ahmad al-Marwazi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Hassan Semsar (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr b. &#8216;Ayyash</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Maryam Sadeghi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr Hasiri </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Mir-Ansari (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr b. Hazm</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies (Suheyl Umar)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr al-Khwarazmi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&nbsp;Maryam Sadeghi (Hamid Tehrani)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr Quhistani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ruzbeh Zarrinkoub (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr al-Sijistani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr Tihrani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Reza Rezazadeh Langaroodi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Bakr al-Warraq</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Gholam-Ali Arya (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Baqa&#8217; al-Kaffawi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Mahdi Mu&#8217;azzin Jami (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Baqa&#8217; al-&#8216;Ukbari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Maryam Sadeghi (Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Barakat</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Samad Movahhed (Maryam Rezaee and Jawad Qasemi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Barza</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Younes Karamati (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Basir</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Hamid Tehrani)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Bayan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mina Hafizi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dahbal al-Jumai</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad and Rahmat Pur Mohammad Shir Ju Posht (Saeed Saeedpoor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Darda&#8217;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdol-Amir Salim (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dawud al-Sijistani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dharr al-Ghifari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Naser Gozashteh (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dharr al-Harawi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Asef Fekrat (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dhu&#8217;ayb al-Hudhali</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Mohammad Seyyedi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Du&#8217;ad al-Iyadi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Azartash Azarnoosh (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dulaf al-&#8216;Ijli</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Fatehi-nezhad (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dulaf (Mosque)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Nushin-dukht Nafisi (Saleh Nejad)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Dulaf, Mis&#8216;ar b. Muhalhil</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Reza (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Dunya</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Roxane Zand)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fadl &#8216;Allami</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Asef Fekrat (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fadl al-Sarakhsi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Najib Mayel Heravi (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fadl Sawaji</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Hassan Semsar (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fadl al-Tamimi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Maryam Rezaee)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Faraj al-Isfahani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Sadeq Sajjadi (IIS Translation Team)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Faraj b. Mas&#8216;ud al-Runi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Abd Ali (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Faraj b. al-Tayyib </TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Science (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fath al-Busti</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mehran Arzandeh and Azartash Azarnoosh (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fath al-Daylami</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Simin Muhaqqeq (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fath Gilani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Younes Karamati (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fath-i Husayni</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Habibeh Danesh-amuz (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fath al-Isfahani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Younes Karamati (Rahim Gholami)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al Fath Khan-i Bakhtiyari</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Alireza Ala&#8217;oddini (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fath Khan Jawanshir</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Ali Al-i Davud (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Fida&#8217;</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Reza (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Firas</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Seyyed Mohammad Seyyedi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Fudayk</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Futuh al-&#8216;Ijli</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abdol-Amir Salim (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Futuh al-Razi</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Department of Islamic Law and Qur&#8217;an and Hadith Studies <BR>(Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Ghanim al-Khurasani</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Pakatchi (Saleh Nejad)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Ghayth al-Qashash</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Faramarz Haj Manouchehri (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu al-Ghazi Bahadur Khan</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ali Akbar Dianat (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hafs al-Haddad</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Hussein La-Shay&#8217; (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hafs &#8216;Umar al-Balluti</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Ahmad Tavakkoli Bid-hendi (Saleh Nejad)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hamid Gharnati</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Enayatollah Reza (Simin Rahimi)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hamid al-Isfarayini</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mahdi Salmasi (John Cooper)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hamza al-Khariji</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Mohammad Ali Kazem Beigi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hamza al-Thumali (the Du&#8216;a&#8217; of)</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Farhang Mehrvash (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hamza al-Thumali</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&nbsp;Hussein Farhang Ansari (Farzin Negahban)</TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">Abu Hanifa</TD>
+<TD style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: black 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid">&nbsp;Ahmad Pakatchi (Suheyl Umar)</TD></TR></TBODY></TABLE></P><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br></div><p>Content Date: September 2008</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Encyclopaedia Islamica: Volume 1</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 18 Sep 2018 12:36:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 12/03/2010&nbsp;17:12&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109922 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:02:39 GMT -->
+</HTML>

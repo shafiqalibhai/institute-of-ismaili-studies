@@ -1,0 +1,738 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106347 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:59:55 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 106347;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning.jpg','WebAssets/Site_Images/header/Learning_1.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only2da7.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D106347">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article0568.html?ContentID=106346">English<li><A href="view_article8a30.html?ContentID=106348">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></p><p><A href="view_sorted_articles21da.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=fr">Formation continue</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4c49.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=fr" >Par Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles72ab.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=fr" >Par Auteur</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles695b.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=fr" >Par Titre</A></p><p><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></p><p><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></p><p><A href="view_article7ecf.html?type=cont.currentlang&amp;id=104553&amp;l=fr">Liste de Lecture </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p><p><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Formation Continue</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Lieux de pi&#233;t&#233; et de culte musulmans</strong><br/><strong><DIV><A href="view_person2c43.html?type=authors&amp;id=167">Mr Karim  Jiwani</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>Cet article avait &#233;t&#233; publi&#233; dans sa version originale dans <B><I>Ismaili UK </I></B>en<B><I> </I></B>mars 2006. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning_%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Résumé<br/></strong><P>L&#8217;une des caract&#233;ristiques universelles de toutes cultures et soci&#233;t&#233;s humaines, c&#8217;est de diff&#233;rencier l'espace et lui attribuer une signification particuli&#232;re. Les lieux de rassemblement et de culte jouent un r&#244;le important dans la vie sociale, culturelle, intellectuelle et spirituelle des membres d'une communaut&#233; ou d'une tradition. </P>
+<P>Ceci est particuli&#232;rement vrai dans le cas de l&#8217;Islam et du r&#244;le jou&#233; par de tels espaces dans l'histoire, la vie religieuse et l'identit&#233; musulmanes. Cet essai explore la nature et les carat&#233;ristiques de ces lieux de congr&#233;gation dans le contexte musulman. Il met l&#8217;accent sur l'&#233;volution de ces divers espaces institutionnels dans leurs formes et leurs fonctions tels qu&#8217;ils ont &#233;merg&#233;s et tels qu&#8217;ils se sont d&#233;velopp&#233;s au cours des civilisations musulmanes. </P>
+<DIV></DIV></div><div> </div><div><DIV><A href="SiteAssets/pdf/Muslim%20Spaces%20of%20Piety%20and%20Worship%20-%20K%20Jiwani%20-%202006.pdf"><IMG style="MARGIN-BOTTOM: 10px; MARGIN-RIGHT: 10px" height=25 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=25 align=left border=0> T&#233;l&#233;chargez l&#8217;article en PDF (68 KB) </A></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><B></B></DIV>
+<DIV><B></B></DIV>
+<DIV><B></B>&nbsp;</DIV>
+<DIV><B>Mots cl&#233;s </B></DIV>
+<P><I>Masjid </I>, <I>ribat </I>, <I>khanaqah </I>, <I>zawiyah </I>, <I>tekke </I>, <I>husayniyah </I>, <I>jamatkhana </I>, <I>imambarah </I>, <I>maqbara </I>, <I>ziyarah </I>, <I>madrasa </I>, <I>dargah, </I><A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))"><U>Shi'a </U></A>, <U><A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni </A></U>, <U><A href="javascript:void(LaunchGlossary('GlossaryItembb3e.html?type=glossary&amp;id=56'))">Ummah </A></U>, <I>qisas </I>, <A href="javascript:void(LaunchGlossary('GlossaryItemfa04.html?type=glossary&amp;id=194'))"><I><U>khutbas </U></I></A>, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemef79.html?type=glossary&amp;id=279'))">dhikr </A></U></I>, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufism </A></U></I>, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))">shaykh </A></U></I>, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemcc07.html?type=glossary&amp;id=143'))">pir</A> </U></I>, <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))"><I><U>tariqah </U></I></A>, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemcb61.html?type=glossary&amp;id=160'))">murshid </A></U></I>, Ismaili, Musta'li, <U><A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari</A></U>, centre ismaili, <U><A href="javascript:void(LaunchGlossary('GlossaryItem2a9a.html?type=glossary&amp;id=344'))">Aga Khan</A>,</U> pluralisme, diversit&#233;, culture pluraliste, lieux de rassemblement, pi&#233;t&#233;, culte. </P>
+<P><B>Table des mati&#232;res </B></P>
+<UL>
+<LI><A href="#Variety Spaces">Diversit&#233; de lieux de rassemblement </A>
+<LI><A href="#Masjid">La Mosqu&#233;e </A>
+<LI><A href="#Ribat, Khanaqah, Zawiyah and Tekke">Le Ribat, le Khanaqah, le Zawiyah et le Tekke </A>
+<LI><A href="#Husanyniyah and Imambarah">L&#8217;Husayniyah et l'Imambarah </A>
+<LI><A href="#Jamatkhana">Le Jamatkhana </A></LI></UL>
+<DIV align=center><I></I></DIV>
+<DIV align=center>&nbsp;</DIV>
+<DIV align=center>&#8220;<EM>Cette lampe se trouve dans les maisons que Dieu a permis d&#8217;&#233;lever, o&#249; son nom est invoqu&#233;, o&#249; des hommes c&#233;l&#232;brent ses louanges &#224; l&#8217;aube et au cr&#233;puscule</EM>.&#8221; <BR>(Qur&#8217;an, 24:36)</DIV>
+<DIV><B></B></DIV>
+<DIV><B></B></DIV>
+<DIV><B></B></DIV>
+<DIV><B><A name="Variety Spaces">Diversit&#233; de lieux de rassemblement </A></B><BR></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>La r&#233;v&#233;lation du Qur'an au Proph&#232;te Muhammad (<I>Salla-llahu 'alayhi wa</I> <I>alihi wa-sallam</I>)<I> </I>a permis un large &#233;ventail d'interpr&#233;tations &#224; travers le temps, les contr&#233;es, et les contextes culturels. Cela a entrain&#233; une pluralit&#233; de groupes d'interpr&#233;tations, juridiques, th&#233;ologiques et doctrinales, aussi bien dans les formes et les expressions de d&#233;votion et de pi&#233;t&#233; que dans les pratique du rituel. </DIV>
+<P>Cette diversit&#233; se r&#233;fl&#232;te &#233;galement dans les lieux de rassemblement, et d'interaction du culte. La pr&#233;sence de diverses confessions et d&#8217;&#233;coles de pens&#233;e en Islam a men&#233; &#224; la coexistence d'un &#233;ventail de lieux de culte. En plus <I>du masjid,</I> on trouve <I>le ribat,</I> <I>le khanaqah, le zawiyah, le tekke, l&#8217;husayniyah </I>et <I>le jamatkhana. </I>Dans leur totalit&#233;, ces endroits ont jou&#233; un r&#244;le important et continuent d&#8217;occuper une place essentielle et diverse dans la vie religieuse et sociale de leurs membres; toutes ces institutions repr&#233;sentent un &#233;l&#233;ment important de l'histoire et l'&#233;volution des expressions de culte dans les soci&#233;t&#233;s musulmanes. </P>
+<P><B><A name=Masjid>La Mosqu&#233;e </A></B></P>
+<P><I>Le masjid </I>(la mosqu&#233;e; pluriel: <I>masajid</I>)<I> </I>repr&#233;sente un des symboles les plus &#233;vidents et les plus marquant de la pr&#233;sence musulmane et on peut le trouver dans presque toutes les r&#233;gions du monde. 'Lieu de prosternation' est le sens litt&#233;ral de <I>masjid</I>, et c&#8217;&#233;tait l'espace institutionnel formellement &#233;tabli pour l'ex&#233;cution collective de la pri&#232;re et du rituel et pour satisfaire les besoins sociaux de la <I>Ummah</I> naissante<I> </I>(la communaut&#233;). </P>
+<P><I>A l&#8217;Origine </I></P>
+<P>La plupart des historiens conviennent qu'&#224; l&#8217;aube de l'Islam (c.-&#224;-d. dans la Mecque du 7<SUP>&#232;me</SUP> si&#232;cle) la communaut&#233; musulmane &#224; l&#8217;origine n'avait aucun lieu sp&#233;cifique ou particulier pour la pri&#232;re et les arrangements pour le culte en congr&#233;gation &#233;taient informels.</P>
+<P><I></I></P>
+<P>Selon un c&#233;l&#232;bre dire (<I>hadith</I>)<I> </I>du Proph&#232;te, " le monde entier est <I>un masjid</I>"<SUP><A href="#endnote 1">1</A></SUP>. Ce n&#8217;est qu&#8217; apr&#232;s <I>le hijra </I>(&#8216;l&#8217;h&#233;gire&#8217;) &#224; M&#233;dine, qu'une maison sp&#233;cifique (un espace) &#233;mergea et &#233;volua, pour permettre aux musulmans d&#8217;effectuer ensemble les pri&#232;res rituelles en congr&#233;gation et de g&#233;rer les affaires de l'Etat. </P>
+<P>D&#232;s lors, partout o&#249; la communaut&#233; musulmane naissante s&#8217;&#233;tablissait de mani&#232;re permanente dans de nombreuses villes (telles que Basra, Kufa, Damas, Al-Fustat), la mosqu&#233;e devenait un centre important de sa vie religieuse et sociale. Dans ces 'nouveaux' pays musulmans, il y avait une tentative &#224; l&#8217;origine, de reproduire le premier <I>masjid </I>de M&#233;dine, dans sa forme (conception) et sa fonction. Cependant, comme l'empire musulman s&#8217;&#233;tendait g&#233;ographiquement, il entra en contact avec diff&#233;rentes cultures et traditions qui avaient leurs propres types d&#8217;espaces et d'institutions.</P>
+<P>En outre, des facteurs internes, tels que la disponibilit&#233; croissante de la richesse et du m&#233;c&#233;nat, l'afflux de nouveaux convertis, la diversit&#233; dans les formes de d&#233;votion, et les besoins correspondants des communaut&#233;s de croyants, collectivement ont contribu&#233;es &#224; un changement et &#224; une &#233;volution rapide dans la conception et l'utilisation de la mosqu&#233;e. </P>
+<P><I>&#201;volution dans la forme et la fonction</I></P>
+<P>Le premier <I>masjid </I>&#224; M&#233;dine &#233;tait utilis&#233; &#224; la fois comme lieu de pri&#232;re communale et comme centre social et culturel. Ses fonctions incluaient : les pri&#232;res communales et individuelles, les r&#233;citations du Qur'an, la diss&#233;mination de pr&#234;ches (<I>qisas</I>), de sermons (<I>khutbas) </I>le vendredi, la r&#233;citation <I>de dhikr</I>,<I> </I>un lieu de recueillement (<I>i'tikaf</I>)<I> </I>et de veill&#233;es &#8211; particuli&#232;rement pendant le mois de Ramadhan - et de c&#233;l&#233;bration des festivals. </P>
+<P>Les mosqu&#233;es ont &#233;galement servi de centres de collecte et de distribution de l&#8217;aum&#244;ne (<I><A href="javascript:void(LaunchGlossary('GlossaryItem48a9.html?type=glossary&amp;id=43'))">zakat</A></I>). Les pauvres, les sans-abris et les voyageurs y ont souvent trouv&#233; refuge et soutien. On pouvait &#233;galement signer l&#224;, les contrats de mariage et d'affaires<SUP><A href="#endnote 2">2</A></SUP> . Un d&#233;veloppement important concernant l&#8217;&#233;volution dans la forme et la fonction des mosqu&#233;es est li&#233;e &#224; l'apparition de pratiques relatives &#224; la construction de mausol&#233;es (tombeaux appel&#233;s <I>maqbara, </I><I>mashhad ou maqam</I>)<I> </I>d&#233;di&#233;s aux membres de la famille du Proph&#232;te (y compris Hazrat <U><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A></U> <U><A href="javascript:void(LaunchGlossary('GlossaryItembe59.html?type=glossary&amp;id=335'))">Ali</A></U><I> 'alayhi salam </I>et Hazrat <U><A href="javascript:void(LaunchGlossary('GlossaryItemdc4d.html?type=glossary&amp;id=270'))">Fatima</A></U> <I>'alayha salam</I>)<I> </I>ainsi qu&#8217;&#224; ses premiers compagnons.</P>
+<P>Plus tard, avec la croissance et l'influence du Soufisme, l&#8217;&#233;tablissement et la visite de mausol&#233;es (<I>ziyarah</I>) consacr&#233;s aux sheikhs, aux pirs ou aux sages soufis, afin de recevoir <I>la barakah </I>et l'intercession, devinrent une forme tout &#224; fait normale, de pi&#233;t&#233; et de d&#233;votion, faisant partie du paysage religieux musulman<SUP><A href="#endnote 3">3</A></SUP> . </P>
+<P>Il est &#233;galement important de noter que m&#234;me pendant cette p&#233;riode de formation de l'histoire musulmane, avec les mosqu&#233;es principales (situ&#233;es au centre de la ville, qui incluait la r&#233;sidence du commandant en chef), d'autres formes de mosqu&#233;es ont commenc&#233; &#224; appara&#238;tre. Il y avait une tendance pour les communaut&#233;s appartenant &#224; diff&#233;rentes &#233;coles de pens&#233;e et d'interpr&#233;tation d&#8217;&#233;tablir leurs propres mosqu&#233;es respectives. Ainsi sont apparues, des mosqu&#233;es qui &#233;taient fr&#233;quent&#233;es en grande partie par des communaut&#233;s Shi'a ou Sunni, associ&#233;es &#224; des &#233;coles juridiques sp&#233;cifiques telles que <U><A href="javascript:void(LaunchGlossary('GlossaryItem96f5.html?type=glossary&amp;id=104'))">Shafi</A></U>, Maliki, etc...</P>
+<P>En plus des fonctions et des utilisations dans le domaine religieux, <I>du masjid </I>mentionn&#233;es ci-dessus, on assiste &#224; un d&#233;veloppement important dans l'utilisation de la mosqu&#233;e &#224; des fins intellectuelles et &#233;ducatives. Les mosqu&#233;es comme centres d'&#233;tudes religieuses et morales prirent un r&#244;le &#233;ducatif plus formel avec des cercles d&#8217;&#233;rudits religieux et d&#8217;&#233;tudiants se r&#233;unissant dans les mosqu&#233;es pour &#233;tudier le Qur'an, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">les hadith</A></U></I>, la loi, etc... Par exemple, les Imam-<U><A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Califes</A></U> <U><A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimides</A></U> ont &#233;tabli <U><A href="javascript:void(LaunchGlossary('GlossaryItem0eef.html?type=glossary&amp;id=318'))">Al-Azhar</A></U>, &#224; la fois mosqu&#233;e et centre d&#8217;enseignement. Quelques mosqu&#233;es de ce type, comme celle de Baghdad, d&#8217;Ispahan, de Mashhad, de Khoum, de Damas et du Caire, sont devenus d&#8217;importants centres d'&#233;tude pour tous les &#233;tudiants du monde musulman. </P>
+<P>Inutile de dire, que ce d&#233;veloppement et cette utilisation &#233;largie des mosqu&#233;es mentionn&#233;e ci-dessus,<B> </B>ont influen&#231;&#233; la forme<B> </B>ou la conception physique (l&#8217;architecture) des mosqu&#233;es. Rapidement, des b&#226;timents auxiliaires furent d&#233;velopp&#233;s, comme <I>les madrasas, </I>les biblioth&#232;ques (scolaires), les quartiers r&#233;sidentiels, les bains, etc., qui souvent faisaient partie du complexe de la mosqu&#233;e. </P>
+<P>La multiplicit&#233; de fonctions de la mosqu&#233;e (d&#233;j&#224; &#233;vidente dans la premi&#232;re mosqu&#233;e de l&#8217;&#233;poque du Proph&#232;te) atteignit son apog&#233;e dans le complexe Ottoman connu sous le nom de <I>Kulliye</I>. Le majestueux Sulemaniye <I>Kulliye </I>(16<SUP>&#232;me </SUP>si&#232;cle) &#224; Istanbul, construit par le c&#233;l&#232;bre architecte Sinan, par exemple, &#233;tait compos&#233; d'une tr&#232;s grande mosqu&#233;e pour la pri&#232;re en congr&#233;gation, de cinq <I>madrasas, </I>de deux &#233;coles, d'un h&#244;pital et d'une &#233;cole de m&#233;dicine, d&#8217;un centre soufi, d'une auberge ou d'un caravans&#233;rail, de bains publics et d&#8217;une fontaine, d&#8217;une cuisine publique, de logements pour les enseignants et les gardiens de la mosqu&#233;e, d&#8217;un terrain de lutte, de caf&#233;s, de magasins, de mausol&#233;es imp&#233;riaux, et d&#8217;un cimeti&#232;re.<SUP><A href="#endnote 4">4</A></SUP> </P>
+<P>Il est int&#233;ressant de mentionner ici que dans le contexte de l'&#233;volution dans les "formes", de nombreuses caract&#233;ristiques architecturales d'une mosqu&#233;e telles que les d&#244;mes, les minarets, le <I>minbar </I>(pupitre), etc., qui sont interpr&#233;t&#233;s comme &#233;tant des normes fondamentales et des &#233;l&#233;ments 'essentielles' et immuables dans la construction d'une mosqu&#233;e, &#233;taient &#233;galement un produit de l'&#233;volution historique et n'&#233;taient pas pr&#233;sents dans la mosqu&#233;e 'mod&#232;le' de M&#233;dine. </P>
+<P>En fait, au d&#233;but, il n'y avait aucune forme sp&#233;cifique d&#233;termin&#233;e par des prescriptions religieuses, autre que l'indication de la direction de la pri&#232;re (<I>qibla)</I>. Les formes architecturales &#233;taient plut&#244;t d&#233;finies par des facteurs extra religieux, tels que l'influence des diff&#233;rentes cultures, traditions, environnements, m&#233;c&#232;nes, mat&#233;riaux, technologie, etc.<SUP><A href="#endnote 5">5</A></SUP> </P>
+<P>Les transformations dues au colonialisme, &#224; l'ind&#233;pendance et la modernisation des soci&#233;t&#233;s musulmanes ont provoqu&#233; quelques variations et changements dans l&#8217;utilisation de la mosqu&#233;e aujourd'hui. Comme dans le pass&#233;, la mosqu&#233;e demeure le centre et le symbole d&#8217;une activit&#233; sociale et culturelle intense, que les musulmans soient une majorit&#233; ou une minorit&#233; dans une r&#233;gion particuli&#232;re.<SUP><A href="#endnote 6">6</A></SUP> </P>
+<P>Dans les soci&#233;t&#233;s musulmanes, la mosqu&#233;e, en particulier la grande mosqu&#233;e nationale ou &#233;tatique demeure le symbole le plus &#233;vident pour proclamer leur identit&#233; 'islamique', alors que dans les pays non-musulmans, o&#249; vivent et travaillent aujourd&#8217;hui, des millions de musulmans, elle marque la pr&#233;sence musulmane aux non-musulmans et signifie pour le fid&#232;le qu&#8217;il est dans sa &#8216;demeure&#8217;.<SUP><A href="#endnote 7">7</A></SUP> </P>
+<P>La discussion ci-dessus sur l'&#233;volution des fonctions et des formes <I>du masjid </I>et de sa relation aux besoins changeants de la communaut&#233; peut &#233;galement s'appliquer, en partie, &#224; d'autres endroits musulmans de culte (tels que <I>les zawiyahs, les khanaqahs, les jamatkhanas, </I>etc..).</P>
+<DIV>
+<P><B><A name="Ribat, Khanaqah, Zawiyah and Tekke">Le Ribat, le Khanaqah, le Zawiyah et le Tekke </A></B></P>
+<P>Ces lieux de rassemblement, g&#233;n&#233;ralement associ&#233;s &#224; la mont&#233;e et au d&#233;veloppement institutionnel du Soufisme, sont un &#233;l&#233;ment important dans l'histoire et l&#8217;&#233;volution des soci&#233;t&#233;s musulmanes. Au cours des ann&#233;es, ces &#233;tablissements et institutions ont jou&#233; (comme <I>le masjid)</I> des r&#244;les religieux et sociaux vari&#233;s et importants dans la vie des musulmans. </P>
+<P>Au cours de plusieurs si&#232;cles, les tariqahs <I>soufis </I>(ordres) se sont multipli&#233;s et se sont r&#233;pandus partout &#224; travers le monde musulman, d'Afrique du Nord au Sous-continent Indien. La propagation de ces <I>tariqahs </I>a &#233;t&#233; accompagn&#233;e de la construction d&#8217;espaces de rassemblement sp&#233;cifiques, avec leurs formes et expressions particuli&#232;res du rituel. L&#8217;appellation de ces centres ou &#8216;confr&#233;ries&#8217; changeait selon l'endroit: <I>le zawiya </I>et <I>le ribat </I>ont &#233;t&#233; employ&#233;s en grande partie (cependant pas exclusivement) dans le Maghreb, le <I>khanaqah </I>en Egypte, le <I>khanagah </I>d'Iran &#224; l'Inde (ou le terme de dargah est &#233;galement employ&#233;); et le <I>tekke </I>dans les r&#233;gions de langue turque.</P>
+<P>Le soutien de ces institutions par les &#233;lites au pouvoir s&#8217;est graduellement accrue, ce qui a entrain&#233; une protection significative dans leur constuction et la donation d&#8217;allocations pour les Soufis vivants l&#224;. Par cons&#233;quent, ces &#233;tablissements similaires <I>au masjid </I>se sont r&#233;pandus et aujourd'hui, dans beaucoup de pays musulmans, on trouve de tels institutions dans toutes les villes principales et m&#234;me dans des villages recul&#233;s. <SUP><A href="#endnote 8">8</A></SUP> </P>
+<P>Dans ces divers centres d&#8217;enseignement r&#233;sidentiels, les Soufis se r&#233;unissent pour pratiquer des actes de d&#233;votion, de pi&#233;t&#233; et de m&#233;ditation. La pratique la plus importante &#233;tait la r&#233;citation <I>du dhikr </I>(rem&#233;moration, invocation) et <I>sama </I>(r&#233;citation de po&#233;sie accompagn&#233; de musique). En outre, des professeurs (d&#233;sign&#233;s sous le nom de shaykh, pir <I>ou </I>murshid) et des disciples, enseignaient aux gens &#224; apprendre le Qur'an et sa signification spirituelle, &#224; cultiver une vie int&#233;rieure et &#224; lire les grands po&#232;tes et auteurs de la tradition Soufie. <SUP><A href="#endnote 9">9</A></SUP> Des rites initiatiques &#233;labor&#233;s se sont d&#233;velopp&#233;s au cours desquels le disciple devait prononcer <I>le bay'ah </I>(serment d'all&#233;geance) <I>au murshid </I>et &#234;tre investi des symboles de son entr&#233;e dans l'ordre (par exemple, manteau, chapeau, etc.). Comme il arrivait que beaucoup de shaykhs soufis avaient &#233;t&#233; enterr&#233;s dans le lieu de leur 'domicile' (le <I>khanaqah </I>, ces endroits sont devenus des lieux de p&#232;lerinage populaire (<I>ziyarat) </I>pour recevoir <I>la barakah </I>et <I>la shafa'a </I>(intercession). </P>
+<P>L'acc&#232;s &#224; de tels espaces est habituellement ouvert &#224; tous, mais ce n'est pas toujours vrai. Par exemple, <A name=OLE_LINK1><I>les khanaqah</I>s </A>de l'ordre Surhawardi en Inde sont connus pour limiter l&#8217;acc&#232;s &#224; ceux qui ont donn&#233; leur <I>bay'ah, </I>leur serment d'all&#233;geance <I>au pir </I>ou <I>au shaykh </I>de l'ordre Soufi. <SUP><A href="#endnote 10">10</A></SUP> En ce qui concerne la question de l'exclusivit&#233; d&#8217;acc&#232;s &#224; de tels espaces, les juristes Sunni ont consid&#233;r&#233; que cela d&#233;pendait des traditions. <B><U></U></B></P>
+<P>Pour le <I>masjid</I> tout comme les<I> </I>autres lieux de rassemblement, ces institutions essentiellement soufies ont non seulement jou&#233; des r&#244;les religieux, mais ont &#233;galement eu des fonctions socio-&#233;conomiques. Par exemple, <I>les zawiyah</I>s et les <I>khanaqah</I>s qui &#233;taient des lieux o&#249; les gens venaient faire des offrandes, contribuaient &#233;galement &#224; la redistribution de la richesse sociale. Les n&#233;cessiteux et les handicap&#233;s y &#233;taient pris en charge et avaient l&#8217;assurance d&#8217;y &#234;tre nourris et log&#233;s. Les activit&#233;s et les festivit&#233;s socio-religieux, comme l'anniversaire de la naissance du Proph&#232;te Muhammad (<I>mawlid)</I> &#233;taient &#233;galement c&#233;l&#233;br&#233;s dans ces &#233;tablissements<I> </I>&#224;<I> </I>des<I> </I>p&#233;riodes sp&#233;cifiques de l'ann&#233;e. </P>
+<P>Alors que les noms et les fonctions de ces espaces institutionnels soufis se ressemblaient, il y avait une diversit&#233; consid&#233;rable en termes d'endroit, de structure, de taille et d&#8217;organisation. Parfois ces b&#226;timents &#233;taient isol&#233;s mais plus fr&#233;quemment ils &#233;taient reli&#233;s &#224; une mosqu&#233;e. </P>
+<P>Dans certains <I>khanaqah</I>s les dervishes vivaient en petites cellules tandis que d'autres confr&#233;ries avaient une grande pi&#232;ce unique dans laquelle tous les dervishes vivaient, &#233;tudiaient et travaillaient ensemble. L'architecture variait &#233;galement en taille, en disposition, et dans le choix des mat&#233;riaux utilis&#233;s et r&#233;fl&#233;tait les &#233;l&#233;ments culturels locaux et leurs manifestations. M&#234;me l'organisation de ces &#233;tablissements n'&#233;tait pas partout identique. Certaines <I>tariqah</I>s vivaient sur <I>le futuh </I>(les cadeaux non sollicit&#233;s ou les dons) alors que d'autres jouissaient du m&#233;c&#233;nat g&#233;n&#233;reux des gouverneurs et d&#8217;allocations r&#233;guli&#232;res de d'autres bienfaiteurs. <SUP><A href="#endnote 11">11</A></SUP> </P>
+<P><I>Fonction actuelle </I></P>
+<P>On peut affirmer que <I>le zawiyah, </I><I>le khanaqah</I> et <I>le ribat </I>sont devenus moins importants dans la vie sociale d&#8217;aujourd&#8217;hui qu&#8217;ils ne l&#8217;&#233;taient au dix-neuvi&#232;me si&#232;cle. Dans les pays musulmans, les transformations &#233;conomiques et sociales qui ont accompagn&#233; l'apparition des &#233;tats centralis&#233;s, l'urbanisation massive, et l'expansion des syst&#232;mes de communication ont conduit &#224; l'apparition d&#8217;institutions sociales comp&#233;titives.</P>
+<P>L'apparition des Etats nations qui r&#233;gulent les fonctions historiquement li&#233;es aux institutions sociales musulmanes traditionnelles (telles que la mosqu&#233;e, le <I>zawiyah, le</I> <I>khanaqah </I>et <I>le</I> <I>ribat</I>) a contribu&#233; &#224; l&#8217;affaiblissement de ces derniers. D'autres forces, telles que la confiscation (sous le r&#232;gne fran&#231;ais), des dotations religieuses (<I>waqf, </I>pl. <I>awqaf </I>) accord&#233;es aux institutions tels que <I>le zawiyah</I> comme en Alg&#233;rie, au Maroc, en Tunisie et en Libye, a rigoureusement contribu&#233; &#224; l'&#233;rosion du r&#244;le social de ces &#233;tablissements. </P>
+<P>Enfin, il y a &#233;galement certaines forces 'internes' qui ont contribu&#233; au d&#233;clin ou &#224; la destruction de ces institutions soufies. Parmis la plus importante on trouve, certains mouvements 'r&#233;formistes' intol&#233;rants qui, de temps &#224; autres, ont interpr&#233;t&#233; que ces pratiques et expressions de pi&#233;t&#233;, riches et diverses associ&#233;es &#224; ces institutions, en particulier la visite de mausol&#233;es de saints ou <I>de awliyas</I> &#233;taient une <I>bid'a </I>(innovation) et consid&#233;r&#233;es comme 'non-islamique', de ce fait, ils ont d&#233;cid&#233; de les affaiblir, sinon de les d&#233;truire purement et simplement - tout &#231;a dans un but id&#233;ologique d'imposer un Islam imaginaire pur et original. De telles accusations refl&#232;tent clairement une tentative, de la part d'un groupe dominant qui clame haut et fort, l&#8217;id&#233;e d'imposer sa propre interpr&#233;tation particuli&#232;re de l'Islam qui en r&#233;alit&#233;, est une diversit&#233; riche de formes et d&#8217;interpr&#233;tations. </P>
+<P>De toute fa&#231;on, les ordres et les institutions soufis continuent &#224; survivre, en d&#233;pit des restrictions de quelques gouvernements modernes et de l'opposition de groupes extr&#233;mistes. Ils op&#232;rent sous forme de fili&#232;res pour pr&#233;server &#224; la fois l'influence des Saints du pass&#233; et encourager la discipline spirituelle. En outre, dans certaines villes europ&#233;ennes et am&#233;ricaines o&#249; les <I>tariqah</I> <I>Soufi </I>sont en train d&#8217;&#233;merger et de s&#8217;accroitre, on peut trouver des institutions semblables (tels que <I>le zawiyah </I>et <I>le khanaqah </I>, souvent priv&#233;, o&#249; les disciples se r&#233;unissent r&#233;guli&#232;rement pour ex&#233;cuter les actes de d&#233;votion qui ressemblent &#233;troitement aux pratiques<I> </I>religieuses des <I>tariqah</I>.</P>
+<P><B><A name="Husanyniyah and Imambarah">L&#8217;Husayniyah et l'Imambarah </A></B></P>
+<P><I>L&#8217; Husayniyah </I>et <I>l'Imambarah </I>se r&#233;f&#232;rent aux espaces de recueillement o&#249; ont lieu des c&#233;r&#233;monies rituelles comm&#233;morant la vie et le martyr de Hazrat Imam <U><A href="javascript:void(LaunchGlossary('GlossaryItemfcde.html?type=glossary&amp;id=239'))">Husayn</A></U> <I>'alayhi salam&#8217;</I> <SUP><A href="#endnote 12">12</A></SUP> <I>.</I> <I>Husayniyah </I>peut &#234;tre une tente provisoire dress&#233;e sp&#233;cialement pour les c&#233;r&#233;monies de deuil du <I><A href="javascript:void(LaunchGlossary('GlossaryItem79cd.html?type=glossary&amp;id=167'))">muharam</A> </I>ou un b&#226;timent permanent qui est &#233;galement utilis&#233; pour d&#8217;autres occasions religieuses, tout au long de l'ann&#233;e. </P>
+<P><I></I></P>
+<P>On trouve les<I> husayniyahs </I>dans toutes les communaut&#233;s Shi&#8217;a <U><A href="javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))">Ithna'ashari</A> </U>(Duod&#233;cimains), &#224; travers le monde et sont connus en tant que tels en Iran, en Irak et au Liban. En Iran, l&#8217;husayniyah et<I> </I>le takiyah sont des termes interchangeables dont le choix est d&#233;termin&#233; selon les coutumes locales. Les Shi'a de Bahrain et d'Oman, utilisent le terme de <I>ma'tam </I>pour d&#233;signer de tels lieux alors que les Shi'a Ithna'asharis de l'Inde utilisent les termes de <I>Imambarah</I> (litt&#233;ralement &#8216;clo&#238;tre des Imams&#8217;) et <I>ashur-khana</I>.</P>
+<P>Dans les cit&#233;s, les villes et les villages musulmans o&#249; la communaut&#233; Shi'a Ithna'asharis est importante, <I>les husayniyahs </I>sont aussi r&#233;pandus que les mosqu&#233;es pour la pratique religieuse populaire. Il y a des endroits sp&#233;cifiques pour les incantations intens&#233;ment &#233;motionnels (<I>rawzah-khvani)</I> sur les circonstances tragiques entourant le martyr de Hazrat Imam Husayn (A.S.) ainsi que l'ex&#233;cution <I>du ta'ziyah </I>(flagellations passionels). Les<I> husayniyah </I>sont &#233;galement utilis&#233;s comme point de d&#233;part et d&#8217;arriv&#233;e de &#8216;<I>ashura dastah&#8217; </I>(les cort&#232;ges de deuil). </P>
+<P><I>L'imambarah, </I>dans le Sous-continent indien a acquis des formes et des significations complexes au dix-huiti&#232;me si&#232;cle, sous le r&#232;gne des Nawabs de Oudh. Tout en symbolisant le mausol&#233;e de Hazrat Imam Husayn (A.S.) avec son <I>zareeh </I>(sarcophage) comme &#233;l&#233;ment central, il a &#233;t&#233; &#233;galement utilis&#233; comme tombe du Nawab. A Lucknow, qui est un des centres du Chiisme duod&#233;cimains en Inde, il y a des centaines de <I>imambarahs. </I>Les familles peuvent avoir leur propre <I>imambarah, </I>normalement juste une partie d&#8217;une pi&#232;ce. Les familles les plus riches, poss&#232;dent des pi&#232;ces r&#233;serv&#233;es et richement d&#233;cor&#233;es, comme <I>imambarah</I>. En outre, chaque quartier a son propre <I>imambarah</I> <SUP><A href="#endnote 13">13</A></SUP> <I></I>.</P>
+<P>Les<I> Imambarahs</I>, comme tout autres lieux de cultes musulmans identiques, sont multifonctionnels. Utilis&#233;s pour le rituel et les pratiques d&#233;votionnelles, ce sont &#233;galement des endroits r&#233;serves &#224; l'&#233;ducation et aux pratiques rituelles de la communaut&#233; pour diff&#233;rents rites de passage (c.-&#224;-d. mariage ou fun&#233;rail). Les structures (architecture) de ces lieux varient selon le contexte g&#233;ographique et culturel, la taille de la communaut&#233; et les intentions sp&#233;cifiques des fondateurs. </P>
+<P><B><A name=Jamatkhana>Le Jamatkhana </A></B></P>
+<P>Le terme <I>&#8216;Jamatkhana&#8217; </I>signifie litt&#233;ralement &#8216;maison de rassemblement ou de r&#233;union&#8217;. Sp&#233;cifiquement, il d&#233;signe le lieu de rassemblement pour les activit&#233;s de la communaut&#233; et pour la pratique de la d&#233;votion, pour diff&#233;rents groupes musulmans tels que les Must&#233;aliens et les Ismailis Nizari, dans certaines r&#233;gions du monde. </P>
+<P>Pour l'ordre Chishti, pr&#233;dominant en Asie du sud, le lieu utilis&#233; pour l'activit&#233; Soufi s&#8217;appelait <I>le jamatkhana </I>et il &#233;tait situ&#233; dans la r&#233;sidence du shaykh <SUP><A href="#endnote 14">14</A></SUP> . Les Shi'a <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem8e59.html?type=glossary&amp;id=303'))">Bohra</A></U></I> et les<I> </I>communaut&#233;s musulmanes Sunni <I>Memon </I>de l'Inde ont &#233;galement des lieux priv&#233;s de rassemblement appel&#233;s <I>jamatkhana</I>.</P>
+<P>La coutume de se r&#233;unir en sessions closes, dans des endroits sp&#233;cialement d&#233;sign&#233;s pour apprendre et pratiquer selon leur propre interpr&#233;tation de la foi, a fait partie de la tradition des Ismailis depuis la p&#233;riode pr&#233;-Fatimides. Pendant la p&#233;riode Fatimide, les Ismailis participaient <I>aux <U><A href="javascript:void(LaunchGlossary('GlossaryItem7f69.html?type=glossary&amp;id=180'))">majalis</A></U></I> de <I>al-<A href="javascript:void(LaunchGlossary('GlossaryItem2bd2.html?type=glossary&amp;id=247'))">hikma</A> </I>(sessions de sagesse), qui &#233;taient accessibles uniquement &#224; ceux qui avaient pr&#234;t&#233; serment &#224; l'Imam du temps.</P>
+<P>La tradition de la Communaut&#233;, bas&#233;e sur des passages de <U><A href="javascript:void(LaunchGlossary('GlossaryItem6af6.html?type=glossary&amp;id=261'))">ginans</A></U> ismailis, sugg&#232;re que les premiers jamatkhanas <I>ismailis </I>avaient &#233;t&#233; &#233;tablis dans le Sous-continent Indo-Pakistanais durant le 14<SUP> i&#232;me </SUP>et le15 <SUP>i&#232;me </SUP>si&#232;cles.</P>
+<P>Situant <I>le jamatkhana </I>dans la tradition de culte musulman, <U><A href="javascript:void(LaunchGlossary('GlossaryItemab36.html?type=glossary&amp;id=245'))">son Altesse l&#8217;Aga Khan</A></U> a fait les <A href="view_articlea517.html?type=cont.currentlang&amp;id=101004">remarques</A> suivantes &#224; l'occasion de la c&#233;r&#233;monie de la pose de la premi&#232;re pierre du Centre Ismaili de Dubai : </P>
+<P><I>" Pendant plusieurs si&#232;cles, le trait distinctif du paysage religieux musulman a &#233;t&#233; la diversit&#233; de lieux de rassemblement co-existant harmonieusement avec </I>le masjid <I>qui en soi a concili&#233; une gamme d&#8217;espaces institutionnels divers pour des buts &#233;ducatifs, sociaux et m</I>&#233;<I>ditatif</I><I>. Historiquement, au service de communaut&#233;s d&#8217;interpr&#233;tations et d'affiliations spirituelles diverses, ces espaces ont conserv&#233; leurs structures et caract&#233;ristiques culturelles, </I>de ribat et<I> du </I>zawiyya, du khanaqa<I> et </I>du jamatkhana. <I>Le lieu de congr&#233;gation inclus dans le centre Ismaili appartient &#224; la cat&#233;gorie historique </I>du jamatkhana, <I>une cat&#233;gorie institutionnelle au service &#233;galement d&#8217;un certain nombre de communaut&#233;s s&#339;urs Sunni et Shi`a, dans leurs contextes respectifs, dans de nombreuses r&#233;gions du monde. Ici, ce sera l'espace r&#233;serv&#233; pour les traditions et les pratiques sp&#233;cifiques de la tariqah Shi&#8217;a Ismaili de l&#8217;Islam.</I> <SUP><A href="#endnote 15">15</A></SUP> <I></I></P>
+<P><I>Fonction Contemporaine </I></P>
+<P>Dans la communaut&#233; Shia Ismaili d&#8217;aujourd'hui, <I>le jamatkhana </I>repr&#233;sente l'espace physique dans lequel la communaut&#233; se r&#233;unit pour le culte en congr&#233;gation et l'expression du rituel. La constitution Ismailie d&#233;finit <I>le jamatkhana </I>comme &#233;tant un endroit d&#233;sign&#233; par l'Imam-du-temps pour les pratiques <I>de la tariqah</I> ismailie. </P>
+<P>En accord avec l&#8217;&#233;thique de l'Islam, qui consid&#232;re que le mat&#233;rielet le spirituel sont indissociables, <I>les jamatkhana</I>s (comme d'autres espaces musulmans de pi&#233;t&#233; et de culte) sont multifonctionnels et servent en tant que centres religieux, &#233;ducatifs et sociaux pour la communaut&#233; ismailie. </P>
+<P>Ces fonctions (et formes) ont &#233;volu&#233;, comme dans le cas de tous les autres espaces et institutions de culte musulmans, r&#233;fl&#233;tant aussi bien les changements de contextes historiques et culturels de ces institutions que l&#8217;&#233;volution des besoins de leurs utilisateurs. Dans son discours, &#224; l'occasion de la c&#233;r&#233;monie de la pose de la premi&#232;re pierre du Centre Ismaili de Lisbonne, son altesse l'Aga Khan a sugg&#233;r&#233; que le Centre Ismaili sera entre autre, utilis&#233; pour les programmes suivants: <I>"s&#233;minaires, pr&#233;sentations, conf&#233;rences, r&#233;citals et expositions d'art et d'architecture." </I><SUP><A href="#endnote 16">16</A></SUP> <I></I></P>
+<P><I></I></P>
+<P>Les jamatkhanas et Centre Ismailis &#8216;haut-profil&#8217; r&#233;cemment construits<I> </I>sont des b&#226;timents qui &#8216;repr&#233;sentent&#8217; la communaut&#233;. Comme son Altesse l'Aga Khan l&#8217;a mentionn&#233; &#224; la c&#233;r&#233;monie de la pose de premi&#232;re pierre du Centre Ismaili de Doushambe: </P>
+<P><I>"Ces centres servent &#224; refl&#233;ter, illustrer et repr&#233;senter la compr&#233;hension intellectuelle et spirituelle de l'Islam au sein de la communaut&#233;, sa conscience sociale, son organisation, ses perspectives futures et son attitude positive envers les soci&#233;t&#233;s dans lesquelles elle vit... comme ces &#233;difices construits ailleurs, le Centre Ismaili de Doushambe repr&#233;sentera l'&#233;thique qui sous-tend l&#8217;homme dans sa destin&#233;e en tant que cr&#233;ation la plus noble. Elle r&#233;duira les murs qui divisent et construira les ponts qui unissent... C&#8217;est ma pri&#232;re qu&#8217;une fois construit, le Centre Ismaili de Doushambe sera un endroit d'ordre, de paix, d'espoir, d&#8217;humilit&#233; et de fraternit&#233;, en rayonnant les pens&#233;es, et attitudes qui nous unissent dans la recherche d&#8217;une vie meilleure."</I> <SUP><A href="#endnote 17">17</A></SUP> <I></I></P>
+<P>En termes de forme ou d&#8217;architecture, pour les jamatkhanas <I>Ismaili </I>comme pour d'autres lieux de rassemblement musulmans, il n'y a pas un seul type ' monolithique ' ou une norme requise. Les formes changent plut&#244;t selon le contexte culturel, la g&#233;ographie, les mat&#233;riaux disponibles, la technologie et, naturellement, les vari&#233;t&#233;s de fonctions exig&#233;es. Refl&#233;tant ce dernier crit&#232;re (de fonction), les <I>jamatkhanas</I> les plus grands contiennent non seulement des halls de pri&#232;re, mais &#233;galement des lieux de rencontre, des salles de classe, des biblioth&#232;ques, des espaces r&#233;cr&#233;atifs et sociaux, etc.</P>
+<P>Pour conclure, la vie d&#233;votionnelle des musulmans, qui a commen&#231;&#233; avec la r&#233;v&#233;lation du Saint Qur'an et qui s&#8217;est poursuivie avec les exp&#233;riences historiques des musulmans sur 1400 ans ( toutes traditions confondues), s'est compos&#233;e d'une vari&#233;t&#233; riche d'expressions, de formes, d'interpr&#233;tations et de lieux. Par cons&#233;quent, une culture multiforme plut&#244;t qu&#8217;uniforme a caract&#233;ris&#233;e la r&#233;alit&#233; des soci&#233;t&#233;s musulmanes &#224; travers l' histoire. D'ailleurs, ce pluralisme culturel, plut&#244;t que d'&#234;tre per&#231;u comme une faiblesse, reste une source de force et d&#8217;inspiration pour des millions de musulmans &#224; travers le monde.</P>
+<DIV><STRONG>Endnotes</STRONG></DIV>
+<DIV><BR clear=all><SUP><A name="endnote 1">1</A></SUP> <I>Sahih Muslim</I>, trans. by A. Saddiqi (Lahore, 1976), vol. I, section on &#8216;Masajid&#8217;</DIV>
+<DIV id=ftn2>
+<P><SUP><A name="endnote 2">2</A> </SUP>J. Pedersen, &#8216;Masdjid&#8217;, in <I>The Shorter Encyclopaedia of Islam</I> (Leiden, 1974), pp. 337-8</P></DIV>
+<DIV id=ftn3>
+<P><SUP><A name="endnote 3">3</A> </SUP>&#8216;Mosque&#8217;, in <I>The Oxford Encyclopedia of Modern Islamic world</I>, ed. John Esposito, Vol. 3, 1995, p.134.</P></DIV>
+<DIV id=ftn4>
+<P><SUP><A name="endnote 4">4</A></SUP> <A href="view_personb8a8.html?type=auth&amp;id=35">R Hillenbrand</A><I>, Islamic Architecture: Form, Function and Meaning</I> (Edinburgh, 1994)<I> </I></P></DIV>
+<DIV id=ftn5>
+<P><SUP><A name="endnote 5">5</A> </SUP>Dogan Kuban, <I>Muslim Religious Architecture.</I> Part I (Leiden, 1974), pp 2-10</P></DIV>
+<DIV id=ftn6>
+<P><SUP><A name="endnote 6">6</A> </SUP><A href="view_personebe7.html?type=auth&amp;id=14">Mohammed Arkoun</A>, &#8216;The Metamorphosis of the Sacred&#8217;, in <I>The Mosque: History, Architectural Development and Regional Diversity,</I> eds. M. Frishman and H. Khan (London, 1994), p. 271</P></DIV>
+<DIV id=ftn7>
+<P><SUP><A name="endnote 7">7</A> </SUP>Oleg Grabar, &#8216;The Mosque in Islamic Society Today&#8217;, in <I>The Mosque</I>, p. 244</P></DIV>
+<DIV id=ftn8>
+<P><SUP><A name="endnote 8">8</A> </SUP><EM>Oxford Encyclopedia of Modern Islamic World,</EM> p. 371</P></DIV>
+<DIV id=ftn9>
+<P><SUP><A name="endnote 9">9</A> </SUP><A href="../www.iis.ac.uk/view_persone2be.html?type=auth&amp;id=19">Azim Nanji</A>, ed., <I>The Muslim Almanac</I> (Detroit, 1996), p. 413</P></DIV>
+<DIV id=ftn10>
+<P><SUP><A name="endnote 10">10</A> </SUP>Khaliq Ahmad Nizami (Aligarh), &#8216;Some Aspects of Khanaqah Life in Medieval India&#8217;, <I>Studia Islamica</I>, 1952.</P></DIV>
+<DIV id=ftn11>
+<P><SUP><A name="endnote 11">11</A> </SUP><A href="view_person00fa.html?type=auth&amp;id=66">Annemarie Schimmel</A>, <I>Mystical Dimensions of Islam</I> (North Carolina, 1975), p.232</P></DIV>
+<DIV id=ftn12>
+<P><SUP><A name="endnote 12">12</A> </SUP>Gustav Thaiss, &#8216;Husayniyah&#8217;, in <I>The Oxford Encyclopedia of Modern Islamic World, </I>vol.2, p.153</P></DIV>
+<DIV id=ftn13>
+<P><SUP><A name="endnote 13">13</A> </SUP><EM>The Encyclopaedia of Islam</EM>. volume 3 (Leiden, 1979), p.1163 </P></DIV>
+<DIV id=ftn14>
+<P><SUP><A name="endnote 14">14</A> </SUP><EM>Muslim Almanac</EM>, p.498.</P></DIV>
+<DIV id=ftn15>
+<P><SUP><A name="endnote 15">15</A> </SUP>Except of speech made by His Highness the Aga Khan at the foundation stone laying ceremony of the Ismaili Centre in Dubai, UAE, December 13<SUP>th</SUP>, 2003.</P></DIV>
+<DIV id=ftn16>
+<P><SUP><A name="endnote 16">16</A> </SUP>Except of speech made by His Highness the Aga Khan at the foundation stone laying ceremony of the Ismaili Centre in Lisbon, Portugal, December 18<SUP>th</SUP>, 1996.</P></DIV>
+<DIV id=ftn17>
+<P><SUP><A name="endnote 17">17</A> </SUP>Excerpt of speech made by His Highness the Aga Khan at the foundation stone laying ceremony of the Ismaili Center in Dushanbe, Tajikistan, August 30<SUP>th</SUP>, 2003.</P></DIV></DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Lieux de pi&#233;t&#233; et de culte musulmans</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 22 Dec 2019 12:42:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 13/07/2011&nbsp;17:48&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106347 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:59:55 GMT -->
+</HTML>

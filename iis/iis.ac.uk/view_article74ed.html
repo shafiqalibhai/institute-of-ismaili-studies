@@ -1,0 +1,657 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=108762 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:03 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 108762;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only6c80.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D108762">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlea182.html?ContentID=108764">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article8887.html?ContentID=108766">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>On Pluralism, Intolerance, and the Qur&#8217;an</strong><br/><strong><DIV><A href="view_person7951.html?type=authors&amp;id=62">Professor Ali S Asani</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that appeared in <I>The American Scholar</I>, Volume 71, no.&nbsp;1, pp. 52-60 in&nbsp;2002. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning_%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><P align=left>The paradox of a religious tradition that promotes harmony and tolerance being used to justify war and intolerance is not unique to Islam. History shows that all religions, particularly their scriptures, have been interpreted by believers to justify a wide range of contradictory political, social, and cultural goals. The Qur&#8217;an, the scripture believed by Muslims to have been revealed by God to Prophet Muhammad, is no exception. With regard to the issue of peace and violence, the author&#8217;s contention is that the Qur&#8217;an essentially espouses a pluralist worldview, one that promotes peace and harmony among nations and peoples. Through the centuries, however, it has been subjected to anti-pluralist, or exclusivist, interpretations in order to advance hegemonic goals, both political and religious. It is within the framework of this dichotomy between a pluralist Qur&#8217;an and anti-pluralist interpretations that we can best understand the conflicting and contradictory uses of Qur&#8217;anic texts.<A href="#f1">[1]</A></P></div><div> </div><div><P><B><IMG height=25 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=25 align=left border=0> <A href="../cms.iis.ac.uk/SiteAssets/pdf/on%20pluralism_logo.pdf">Download PDF version of article</A><BR><BR></B><BR></P>
+<P><B>Key Words</B></P>
+<P>Muslims, non-Muslims, Qur&#8217;an, exclusivist, imperialism, religious diversity, Hindus, Sikhs, Jains, <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;a</A>, <A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni</A>, multi-religious, Wahhabi movement, Judaeo-Christian tradition, <I><A href="javascript:void(LaunchGlossary('GlossaryItemb54c.html?type=glossary&amp;id=209'))">jihad</A></I>, <I>ahl al-kitab</I>, <I>zakat</I>,<I> dar al-harb</I>, fundamentalist, <I><A href="javascript:void(LaunchGlossary('GlossaryItem7104.html?type=glossary&amp;id=288'))">dar al-islam</A></I></P>
+<P><B>Table of Contents</B><B> </B></P>
+<UL type=disc>
+<LI><A href="#pluralism">Pluralism in Qur&#8217;an</A> 
+<LI><A href="#quranic">Qur&#8217;anic view of Christianity and Judaism</A> 
+<LI><A href="#exclusivist">Exclusivist Interpretations of the Qur&#8217;an</A> </LI></UL><BR>
+<P><B><A name=pluralism>Pluralism in Qur&#8217;an</A></B></P>
+<P>&#8220;Infuse your heart with mercy, love and kindness for your subjects ... either they are your brothers in religion or your equals in creation.&#8221;</P>
+<P><I>Excerpt from a letter by the Muslim Caliph-imam &#8216;Ali b. Abi Talib (d. 661) </I><I>to Malik al-Ashtar on the latter&#8217;s appointment as governor of Egypt</I></P>
+<P><B></B></P>
+<P>As a Muslim involved in teaching and scholarship on the Islamic tradition, I have received many invitations over the past several weeks to speak about the role that religion and religious ideas may or may not have played in the horrific events of September 11, 2001. Non-Muslim audiences have wanted to know how Islam, a religion whose very name signifies peace to many Muslims, could be used to promote violence and hatred for America and the &#8220;West&#8221;? Why, many in these audiences, wonder are some Muslims and some governments in Muslim nations anti-American, antagonistic to America and the &#8220;West,&#8221; willing to condone or even applaud the loss of innocent American lives? For their part, Muslims I have spoken to have similar concerns. Why, many of them wonder, are some Americans and Europeans and some American and &#8220;Western&#8221; policies anti-Islamic, antagonistic to Muslim interests, and heedless to the loss of innocent Muslim lives? In an atmosphere rampant with stereotypes about the &#8220;other,&#8221; I have been engaged in providing audiences with historical and religious perspectives on the complex factors that have created such deep and profound misunderstandings among Muslims and non-Muslims alike. While I have participated in many public forums, this has also been a time of reflection for me personally as, indeed, for many Muslims who are bewildered by the bizarre and repugnant behaviour of individuals who committed these acts allegedly in the name of God.</P>
+<P align=left>First, I would like to provide some sense of how I became aware of the Qur&#8217;an&#8217;s teachings on pluralism. I was born and raised in Kenya, East Africa, in a devout Muslim family of South Asian ancestry. My ancestors had migrated to Africa from India over 200 years before. The society in which I grew up was a colonial one, under British rule. It was marked by racial and religious diversity, but also by strict racial segregation. The idiom of British imperialism in this part of Africa was racial, dividing society into three distinct classes: the European, or &#8220;white,&#8221; ruling class; the Asian, or trading and clerical class (in Kenya, the term &#8220;Asian&#8221; denotes a person of South Asian ancestry); and the African, or &#8220;black,&#8221; class which mostly provided labour. Thus, I grew up in an environment deeply aware of racial differences as well as tensions between classes. I was also keenly aware of religious diversity. Among the Asians, I knew that not all followed the same religion: there were Hindus, Sikhs, Jains, Muslims, all of whom were further divided into subgroups, such as the Arya Samaj, the Visha Oshwal, the Shi&#8216;a, and the Sunni. Among the Africans, I knew that there were many different tribes who spoke different languages and that were on occasion antagonistic to one another. I was also aware that some Africans were Muslims, others were Christians of various persuasions, and still others practiced what were termed &#8220;traditional African religions.&#8221; About the Europeans I knew very little, since they mostly kept to themselves and I had no occasion to interact with them.</P>
+<P>When I was nine or ten years old and wondering about racial and religious diversity, I recall asking my father, a devout Muslim, &#8220;Why didn&#8217;t Allah make human beings all the same? Why did Allah make us all different?&#8221; In response to my question, he quoted a verse from the Qur&#8217;an: &#8220;O humankind, We [God] have created you male and female, and made you into communities and tribes, so that you may know one another. Surely the noblest amongst you in the sight of God is the most God-fearing of you. God is All-knowing and All-Aware&#8221; (Qur&#8217;an 49:13). This verse from the Qur&#8217;an formed the first teaching I received as a child on the subject of pluralism. Now, many years later, as I reflect on it and its meaning, I believe it is clear that from the perspective of the Qur&#8217;an, which forms the core of the Islamic tradition, the divine purpose underlying human diversity is to foster knowledge and understanding, to promote harmony and co-operation among peoples. God did not create diversity for it to become a source of tensions, divisions and polarisation in society. Indeed, whether humans recognise it or not, human diversity is a sign of divine genius. The verse also envisages a world in which people, regardless of their differences, are united by their devotion to God. These sentiments are, in fact, echoed in another Qur&#8217;anic verse, in which God addresses humankind and affirms the principle of unity in diversity: &#8220;Surely this community of yours is one community, and I am your Lord; so worship me&#8221; (Qur&#8217;an 21:92). The emphasis on the universality of God&#8217;s message is emphasised in the Qur&#8217;an&#8217;s fundamental teaching that God has revealed His message to all peoples and to all cultures; not a single people or nation has been forgotten (Qur&#8217;an 35:24). Although humans may have misinterpreted that message to suit their needs in creating conflicting traditions, all religions, at their core, have sprung from the same divine source and inspiration.</P>
+<P><B><A name=quranic>Qur&#8217;anic view of Christianity and Judaism</A></B></P>
+<P>The idea that God&#8217;s message is universal, but its manifestations plural, provides the basic underpinning to the manner in which the Qur&#8217;an relates itself and the faith that it preaches with the religious traditions that preceded it in the Middle East, namely Judaism and Christianity. Far from denying the validity of these predecessor traditions, the Qur&#8217;an repeatedly affirms their essential truth, acknowledging that their message comes from one and the same God, and that it (the Qur&#8217;an) is only the latest of God&#8217;s revelations to affirm and confirm the revelations that preceded it. Characteristic of this affirmative and pluralistic stance is the following command to believers: &#8220;Say: we believe in God and what has been revealed to us and what was revealed to Abraham, Ismail, Isaac, Jacob, and the tribes, and in what was given to Moses, Jesus, and the prophets from their Lord. We make no distinction between one and another among them and to Him [God] do we submit&#8221; (Qur&#8217;an, 3:84). </P>
+<P>Qur&#8217;anic beliefs in the truth of the Judaic and Christian traditions are also encapsulated in another term: the <I>ahl al-kitab</I> or People of the Book. This is the umbrella term in the Qur&#8217;an to refer to communities, or peoples, who have received revelation in the form of scripture. It is commonly used to refer to the Jews, Christians, and Muslims. The pluralistic nature of this term is evident in the use of the noun Book in the singular rather than in plural, meant to emphasise that the Jews, Christians and Muslims follow one and the same Book, not various conflicting scriptures. The Old and New Testaments and the Qur&#8217;an are seen as being plural, earthly manifestations of the one heavenly Scripture in which God has inscribed the Divine word. Significantly, the Qur&#8217;an does not claim that it abrogates the scriptures revealed before it. On the contrary, it affirms their validity. In one verse addressed to the Prophet Muhammad, God advises him &#8220;And if you [Muhammad] are in doubt concerning that which We [God] reveal to you, then question those who read the scripture [that was revealed] before you&#8221; (Qur&#8217;an 10:94). Another verse addressed to the Muslim faithful says, &#8220;And argue not with the People of the Book unless it be in a way that is better, save with such of them as do wrong; and say we believe in that which has been revealed to us and to you; and our God and your God is one and unto Him we submit&#8221; (Qur&#8217;an 29:46). </P>
+<P>While the concept of the People of the Book was originally coined to refer to the major monotheistic traditions in the Arabian milieu, there were attempts to expand the term theologically to include other groups such as the Zoroastrians in Iran and Hindus and Buddhists in India as the Islamic tradition spread outside the Middle East and Muslims encountered other religious traditions. In seventeenth century India, Dara Shikoh, a prince from the ruling Mughal dynasty, who was strongly influenced by the pluralistic teachings within Muslim traditions of mysticism, considered the Hindu scriptures, the Upanishads, to be the &#8220;storehouse of monotheism&#8221; and claimed that they were the <I>kitab maknun</I>, or &#8220;hidden scripture,&#8221; referred to in the Qur&#8217;an (Qur&#8217;an 56:77-80). Hence, he personally translated these Sanskrit texts into Persian and urged that it was the duty of every faithful Muslim to read them. Admittedly, not all Muslims were comfortable with the broadening of the term &#8220;People of the Book&#8221; to include religious scriptures and traditions not mentioned specifically by name in the Qur&#8217;an, but the fact remains that these types of interpretations were made possible by the pluralistic nature of the Qur&#8217;anic worldview. </P>
+<P>With such a universalist perspective, it goes without saying that the Qur&#8217;an does not deny the salvific value of the Judaic or the Christian traditions. Salvation, according to the Qur&#8217;an, will be granted to any person who submits to the one God, to anyone who is a submitter to Divine Will (the literal meaning of the word <I>muslim</I>). Indeed, Islamic scripture regards Abraham, the patriarch, and all the other prophets of the Judaeo-Christian tradition, including Moses and Jesus, as being <I>muslim</I> in the true sense of the word. Typically, the third chapter of the Qur&#8217;an contains the following verses: &#8220;Some of the People of the Book are a nation upstanding: they recite the Signs of God all night long, and they prostrate themselves in adoration. They believe in God and the Last Day; they enjoin what is right and forbid what is wrong and they hasten to do good works. They are in the ranks of the righteous.&#8221; (Qur&#8217;an 3:113-114). Repeatedly, the Qur&#8217;an declares that on the Day of Judgment all human beings will be judged on their moral performance, irrespective of their formal religious affiliation.<A href="#f2">[2]</A> </P>
+<P>The Qur&#8217;an&#8217;s endorsement of religiously and culturally plural societies and the recognition of the salvific value of other monotheistic religions greatly affected the treatment of religious minorities in Muslim lands throughout history. While there have been instances when religious minorities were grudgingly tolerated in Muslim societies, rather than being respected in the true spirit of pluralism, the Qur&#8217;anic endorsement of a pluralistic ethos explains why violent forms of anti-Semitism generated by exclusivist Christian theology in medieval and modern Europe, and the associated harsh treatment of Jewish populations culminating eventually in the Holocaust, never occurred in regions under Muslim rule. </P>
+<P>From the earliest periods of Muslim history, we have examples of a great deal of respect for the rights of non-Muslims under Muslim rule. For instance, the fourth Caliph-imam &#8216;Ali ibn Abi Talib (d. 661) instructed his governor in Egypt to show mercy, love and kindness for all subjects under his rule, including non-Muslims whom he declared to be &#8220;your equals in creation.&#8221; Such tolerance is later reflected in the policies of the Arab dynasties of Spain, the Fatimids in North Africa, and the Turkish Ottomans in the Middle East, granting maximum individual and group autonomy to those adhering to a religious tradition other than Islam. We can also cite the example of the Mughal Emperor Akbar (d. 1605), who - much to the dismay of the religious right wing of his time - promoted tolerance among the various traditions that compose the Indian religious landscape. </P>
+<P>How can a scripture that celebrates pluralism be the source of the intolerance and hatred that a few contemporary Muslim groups show towards the West? How can a scripture that declares &#8220;Let there be no compulsion in religion&#8221; be invoked by those who wish to forcibly enforce their religious views onto others, Muslim and non-Muslim alike? How can a scripture that instructs Muslims to regard the People of the Book as among the righteous be used to declare that Christians and Jews are infidels? The answers to these questions can be traced to the emergence of an unfortunate mode of Qur&#8217;anic interpretation that is exclusivist in nature. </P>
+<P><B><A name=exclusivist>Exclusivist Interpretations of the Qur&#8217;an</A></B></P>
+<P>A complex and intricately connected set of factors have given rise to this exclusivist discourse. Here I would briefly like to mention two: the doctrine of supersession and the religious legitimation of political hegemony. Supersession is the idea that Islam, as the latest of the monotheistic revelations, supersedes all revelations that preceded it. It postulates that since Islam is the successor to the Judaic and Christian traditions, it is the latest and most complete form of revelation. Moreover, since Muhammad was the last of approximately 124,000 prophets sent to humanity by God, he was, therefore, the bearer of the God&#8217;s revelation in its most perfect form. According to this doctrine, the Qur&#8217;anic revelation superseded, or abrogated, all preceding scriptures. As God&#8217;s last revelation, the Qur&#8217;an alone had validity until the end of time. Thus, the possibility of attaining salvation through religions other than Islam, if admitted at all, was at best limited. Such exclusivist conceptions were helpful in fostering a sense of communal identity among adherents of a new religious community, eventually becoming an important means of forging solidarity among various Arab tribes who had previously been engaged in petty rivalries and wars. In the eighth and ninth centuries, this social and political solidarity became the backbone of the early Arab Muslim empire, for it provided &#8220;an effective basis for aggression against those who did not share this solidarity with the community of believers."<A href="#f3">[3]</A> It is within this context that political concepts such as <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem7104.html?type=glossary&amp;id=288'))">dar al-islam</A></U></I> (territories under Muslim suzeranity) and <I>dar al-harb</I> (territories under non-Muslim control) became prominent, although they have no real basis in the Qur&#8217;an. In the same vein, the notion of <I><A href="javascript:void(LaunchGlossary('GlossaryItemb54c.html?type=glossary&amp;id=209'))">jihad</A></I> was reinterpreted to justify imperial goals. Literally, this term, which is fraught with definitional ambiguities, means &#8220;struggle&#8221; in the Arabic language. It was initially interpreted at the time of Prophet Muhammad to be an ethical and moral struggle against an individual&#8217;s base instincts, or a defensive struggle by the early Muslims against religious persecution: &#8220;Leave is given to those who fight because they are wronged -- surely God is able to help them -- who were expelled from their habitations without right, except that they say &#8220;Our Lord is God.&#8221; (Qur&#8217;an 22:39-40) &#8220;And fight (struggle) in the way of God with those who fight with you, but aggress not: God loves not the aggressors.&#8221; (Qur&#8217;an 2:190). Under the influence of the political realities of later centuries, which witnessed an expansion of Arab rule, what was clearly a reference in the Qur&#8217;an to a moral struggle, or an armed struggle in the face of provocation and aggression, came to be interpreted as a general military offensive against non-believers and as a means of legitimising political dominion.<A href="#f4">[4]</A> </P>
+<P>To be sure, the religious justification for promoting imperialistic interests had to be sought in the Qur&#8217;an, the very text that forbade compulsion in religious matters and contained verses of an ecumenical nature recognising not only the authenticity of other monotheistic traditions, but the essential equality of all prophets sent by God. For this purpose, as Abdulaziz Sachedina has so ably demonstrated, several Muslim exegetes devised terminological and methodological strategies to mould the exegesis of the sacred text to provide a convincing prop for absolutist ends. The principal means by which the exclusivists were able to promote their view was through the declaration that the many verses calling for pluralism, commanding Muslims to build bridges of understanding with non-Muslims, had been abrogated by other verses that call for fighting the infidel. The verses in question were revealed after war broke out in the seventh century between the small, beleaguered Muslim community and its powerful pagan Arab, Christian, and Jewish adversaries. Typical of these verses is the following: &#8220;Then when the sacred months are drawn away, slay the idolators wherever you find them, and take them, and confine them, and lie in wait for them at every place of ambush. But if they repent and perform the prayer and pay <I><A href="javascript:void(LaunchGlossary('GlossaryItem48a9.html?type=glossary&amp;id=43'))">zakat</A></I> [the alms tax], let them go their way. Surely God is forgiving and merciful&#8221; (Qur&#8217;an 9:5). Another verse, revealed when certain Jewish and Christian groups betrayed the Muslim cause and joined in the military assault by the pagan Arabs against Prophet Muhammad and the Muslim community, cautioned against taking Jews and Christians as close political allies (Qur&#8217;an 5:51). It is only by completely disregarding the original historical contexts of revelation of such verses and using them to engage in a large-scale abrogation of contradictory verses that the exclusivist Muslim exegetes have been able to counteract the pluralist ethos that so thoroughly pervades the Qur&#8217;an. </P>
+<P>Historically, exclusivist interpretations of the Qur&#8217;an have been used to justify dominion over other Muslims, specifically those whose interpretation of the faith and religious practices were perceived as deviating from the norms established by exclusivists. During the seventeenth and eighteenth centuries, several areas of the Muslim world witnessed the rise of movements which, in response to what was perceived as general moral laxity and decline, attempted to &#8220;purify&#8221; Islam. The leaders of these movements targeted a whole range of practices and beliefs among fellow Muslims which, in their eyes, constituted evidence of religious backsliding. In particular, Sufi forms of Islam were attacked as not deriving from &#8220;authentic&#8221; Islam. In certain cases, these attacks took on a military character and &#8220;<I>jihad</I>s&#8221; were launched against fellow Muslims with the intention of forcibly imposing upon them those interpretations of Islam favoured by the exclusivists. </P>
+<P>The most dramatic and influential of these movements was the so-called Wahhabi movement in Arabia. Named after the reformer, Abd al-Wahhab, who died in 1791, this puritanical movement acquired an explosive energy after its founder allied himself with a petty Arab chieftain, Muhammad Ibn Saud. Abd al-Wahhab was influenced in his thought by the writings of a controversial fourteenth century thinker, Ibn Taymiyyah (d. 1328), whose exclusivist and literalist interpretations of the Qur&#8217;an led him to declare that the descendants of the Mongols were infidels, notwithstanding their public profession of belief in Islam. To propagate their particular brand of Islam, the Wahhabis attacked fellow Muslims whose practices they considered &#8220;un-Islamic.&#8221; Targetting in particular popular expressions of Sufi practice as well as <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;i</A> Muslims, the Wahhabis steadily expanded their power over Central and Western Arabia until they were able to effect the political unification of the peninsula into the kingdom of Saudi Arabia. Once established, the Wahhabi authorities instituted a religious police force, which, among its other functions, compels Muslims to perform ritual prayer at the appropriate times of the day in direct contradiction to the Qur&#8217;an&#8217;s commandment, &#8220;Let there be no compulsion in religion.&#8221; Not surprisingly, this movement considered Jews and Christians to be infidels. To this day, Saudi Arabia&#8217;s state version of Islam is founded on an exclusivist interpretation of the Qur&#8217;an, intolerant of both inter-religious and intra-religious plurality. Through the use of millions of petrodollars, the Saudis&#8217; exclusivist interpretation of Islam has been exported all over the Muslim world, much to the dismay of the pluralists. </P>
+<P>In recent times, the exclusivist views have also been heavily promoted by the so-called fundamentalist groups in the Muslim world.<A href="#f5">[5]</A> The reasons for the rise of such groups are complex. Broadly speaking, these movements are a reaction against modernity, westernisation, economic deprivation, global domination by western powers, and support by such powers for repressive regimes in predominantly Muslim lands. The failure of borrowed ideologies, such as capitalism, communism, or socialism, to deliver economic and social justice in many Muslim countries has created exclusivist groups seeking a &#8220;pure&#8221; and &#8220;authentic&#8221; language in which to criticise the failed modern Muslim state, a state which has marginalised, or displaced, traditional religious authorities in a bid to maximise political power. The search for a solution to the myriad of political, social, and economic problems confronting Muslims has led these exclusivist groups to use Islam as a political ideology for the state: &#8220;Islam is the solution.&#8221; The commitment of such groups to understand Islam in a &#8220;pure&#8221; monolithic form, to engage in revisionist history, and to read religious texts in an exclusivist manner that denies any plurality of interpretations, has unleashed a struggle in the Muslim world between them and those who uphold the pluralist teachings of the Qur&#8217;an. An important dimension of the struggle between the exclusivists and the pluralists is the debate over the role and status of women in Muslim societies, for exclusivists tend to be anti-egalitarian in their interpretations of gender roles. </P>
+<P>For Muslims to participate in a multi-religious and multicultural world of the twenty-first century, it is essential that they fully embrace Qur&#8217;anic teachings on pluralism. Exclusivist interpretations of the Qur&#8217;an that are premised on the hegemony of Islam over non-Islam and promote the use of a rhetoric of hate and violence to attain such goals are outdated in a global society in which relations between different peoples are best fostered on the basis of equality and mutual respect - a basic principle underlying the Qur&#8217;anic worldview. Since in several key Muslim nations, the exclusivist message has been propagated by <I>madrasa</I>s, or religious schools, sponsored by exclusivist groups or the state itself, a key to the outcome of the struggle between pluralism and exclusivism in the Islamic tradition lies in the re-education of Muslim peoples about the pluralism which lies at the heart of the Qur&#8217;an. Without this pluralist education, they will continue to rely on the monolithic interpretations of scholars and demagogues to access the Qur&#8217;an. Only by raising levels of religious literacy in the Islamic world will Muslims become aware of the centrality of Qur&#8217;anic teachings concerning &#8220;religious and cultural pluralism as a divinely ordained principle of coexistence among human societies.&#8221;<A href="#f6">[6]</A> </P>
+<P><B>Notes</B></P>
+<P><B></B></P>
+<P><A name=f1>1.</A> My understanding of the conflict between pluralist and exclusivist strands within the Islamic tradition has been greatly influenced by Abdulaziz Sachedina&#8217;s pioneering study, <I>The Islamic Roots of Democratic Pluralism</I> (Oxford, 2001). I am indebted to my colleague Roy Mottahedeh whose article &#8220;Towards an Islamic Theology of Toleration,&#8221; <I>Islamic Law Reform and Human Rights</I>, ed. T. Lindholm and K. Vogt (Oslo, 1992) I found helpful. I would also like to thank Michael Currier and Wayne Eastman for their comments on various drafts of this essay. </P>
+<P><A name=f2>2.</A> Abdulaziz Sachedina, <I>The Islamic Roots of Democratic Pluralism</I>, p. 28. </P>
+<P><A name=f3>3.</A> Abdulaziz Sachedina, <I>The Islamic Roots of Democratic Pluralism</I>, p. 29. </P>
+<P><A name=f4>4. </A>For the theological debates on the term <I>jihad</I> in early Islam, see Roy Mottahedeh and Ridwan Al-Sayyid, &#8220;The Idea of Jihad in Islam before the Crusades,&#8221; <I>The Crusades from the Perspective of Byzantium and the Muslim World</I>, ed. A. Laiou and R. Mottahedeh (Washington, DC 2001). </P>
+<P><A name=f5>5.</A> Although I recognise that the term &#8220;fundamentalist&#8221; is academically not an accurate term to describe these groups, nevertheless I use it here because of its broad acceptance in popular discourse. </P>
+<P><A name=f6>6.</A> Abdulaziz Sachedina, <I>The Islamic Roots of Democratic Pluralism</I>, p. 13. </P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - On Pluralism, Intolerance, and the Qur&#8217;an</TITLE><META HTTP-EQUIV="Expires" CONTENT="Thu, 10 Aug 2017 14:36:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 27/06/2011&nbsp;15:26&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=108762 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:04 GMT -->
+</HTML>

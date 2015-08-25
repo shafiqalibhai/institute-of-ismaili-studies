@@ -1,0 +1,296 @@
+BODY
+{
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+BODY, TD, DIV, SPAN, P, H1, H2, H3, H4
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+TH
+{
+	text-align: left;
+}
+
+#divRoot
+{
+	text-align: center;
+	margin: 0px;
+	margin-top: 15px;
+}
+
+#divPopupRoot
+{
+	text-align: left;
+	margin: 2px;
+}
+
+#divBdr
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 630px;
+}
+
+#divNoBdr
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 510px;
+}
+
+/* hack to force IE to use the CORRECT width */
+* html #divBdr
+{
+	width: 624px;
+}
+
+#divBdrGlossay
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#divMenuL
+{
+	/* inline prevents ie from affecting the margin width*/
+	display: inline;
+	width: 100px;
+	margin-top: 0px;
+	margin-left: 4px;
+	margin-right: 0px;
+	float: left;
+}
+
+#divHead
+{
+	display: block;
+	margin: 0px;
+}
+
+#divLogo
+{
+	padding-left: 62px;
+	text-align: left;
+	height: 40px;
+	line-height: 40px;
+}
+
+#divPopLogo
+{
+	height: 40px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+#divBody
+{
+	text-align: left;
+	margin: 2px;
+	margin-top: 15px;
+	height: auto;
+	overflow: visible;
+}
+
+#divToolBar
+{
+	direction: ltr;
+	text-align: right;
+	margin-bottom: 6px;
+}
+
+#divContent
+{
+	min-height: 400px;
+	margin-top: 0px;
+	margin-left: 114px;
+	margin-right: 4px;
+	margin-bottom: 40px;
+	padding-left: 20px;
+	border-style: solid;
+	border-width: 0px;
+	border-left-width: 1px;
+}
+
+#divFriend
+{
+	text-align: right;
+}
+
+/*
+#divFootLinks, #divFootLang, #divFootCopy { margin-left: 2px; }
+*/
+
+#divFootLang
+{
+	margin-top: 19px;
+	text-align: center;
+}
+
+#divFootLinks, #divFootLang
+{
+
+	word-spacing: 1px;
+}
+
+#divFootLinks
+{
+	margin-top: 11px;
+	text-align: center;
+}
+
+#divFootCopy
+{
+	margin-top: 12px;
+	text-align: center;
+}
+
+#divFootPadding
+{
+	border: 1px solid red;
+	height: 30px;
+}
+
+/* START - First Menu within Head region */
+
+table#headerMenu {
+	text-align: center;	
+	width: 100%;
+	height: 91px;
+	background-image: url(../images/header_bg.jpg);
+	background-repeat: no-repeat;
+}
+
+
+.Menu1
+{
+	direction: ltr;
+	line-height: 13px;
+}
+
+#TopMenu
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.aMenu1, .aMenu1:hover { /*white-space: nowrap; */}
+
+.aMenu1 { text-decoration: none; }
+
+.aMenu1:hover { text-decoration: underline; }
+/* END - First Menu within Head region */
+
+/* START - Second Menu within Head region */
+
+.Menu2
+{
+	direction: ltr;
+}
+
+#TopSubMenu
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	line-height: 12px;
+}
+
+
+/* END - Second Menu within Head region */
+/* START - LH Menu */
+.Menu3
+{
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.Menu3 div.Root
+{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.Menu3 div.Sub
+{
+	margin-top: 4px;
+	margin-left: 6px;
+}
+
+.Menu3 div.Item
+{
+	text-indent: -2px;
+	padding-left: 0px;
+	margin-left: 10px;
+}
+
+/* HACK - to counter the negative indent of the previous style (req. for IE) */
+.Menu3 div.Item:before
+{
+	content: '\00A0';
+}
+
+.Menu3 div.Pre
+{
+	display: block;
+	line-height: 14px;
+	float: left;
+}
+
+
+#LeftMenu
+{
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+/* END - LH Menu */
+.tdPadded
+{
+	padding-top: 4px;
+}
+
+/* START - Glossary */
+.divGlosItem
+{
+	margin-bottom: 20px;
+}
+
+.divGlosHead
+{
+	
+}
+
+#divHighlightArea 
+{
+	width: 475px;
+}
+
+.divGlosBody
+{
+	margin-left: 30px;
+}
+
+/* START - Contact */
+
+#divMapRoot
+{
+	margin-right: 50px;
+}
+
+#divSmallMap
+{
+	width: 201px;
+	height: 261px;
+	float: right;
+}
+#divLgeMap
+{
+	width: 402px; height: 522px;
+}

@@ -1,0 +1,1062 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=111248 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:30:06 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 111248;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlybebc.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D111248">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article0233.html?ContentID=111250">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articlefa1b.html?ContentID=111252">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" border="0" cellSpacing="0" cellPadding="0" width="450" background="#" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Living in Historic Cairo: Past and Present in an Islamic City</strong><strong><br/></strong><strong><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim          Nanji</A></DIV><DIV><A href="view_person07bd.html?type=authors&amp;id=197">Professor Elizabeth  Fernea</A></DIV></strong><br/><br/>Azimuth Editions in association with The Institute of Ismaili Studies and University of Washington Press.<span><br/><br/>ISBN (Hardback): 9781898592280<br/>ISBN (Paperback): </span></td><td align="middle" background="#" vAlign="top"><div align="center"><table style="HEIGHT: 230px" border="0" cellSpacing="5" cellPadding="5" width="125" background="#" bgColor="#ffffcc" align="center"><tbody><tr><td background="#" height="150"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/Cairo%20cover_m_final_yell-201022614418_7055.jpg" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table border="0" cellSpacing="0" cellPadding="0" width="450" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><DIV><IMG border=0 alt="" align=absBottom src="WebAssets/Large/googlebooks.jpg" width=16 height=16><A title="Google Books" onclick="return fnExtLinkWarning();" href="http://books.google.com/books?id=QD_MQgAACAAJ&amp;dq=Living%20in%20Historic%20Cairo:%20Past%20and%20Present%20in%20an%20Islamic%20City&amp;cd=1" target=_blank> Publication page on Google Books</A></DIV>
+<P><IMG border=0 alt="" align=baseline src="SiteAssets/video/wmvicon.jpg" width=16 height=16> <A href="view_articleddb3.html?type=cont.currentlang&amp;id=111900">Author Interview with Professor Azim Nanji </A></P>
+<DIV>&nbsp;</DIV>
+<DIV>The city of Cairo was in founded in 358 AH/ 969 CE as the new royal capital of the Fatimids, an Ismaili Shi&#8217;i dynasty that ruled over a flourishing empire for 262 years until its demise in 567 AH/ 1171 CE. Subsequently, Cairo maintained its status as a major metropolis under the Ayyubids and the Mamluks, who established their own states over extensive parts of the Muslim world. In the course of its history up to the end of the Ottoman rule over Egypt, Cairo rivalled, and at times surpassed, in its urban and cultural development, the achievements of other Muslim cities of the region: Baghdad, Damascus and Cordoba. With the dramatic changes in political fortunes and demographic shifts, these cities entered the modern era in various stages of decline. Subsequently, a host of developmental problems, notably population growth and a vicious cycle of poverty and regional conflict led to a neglect of the historic city of Cairo as attention tended to focus on the promotion of ancient Pharaonic monuments. </DIV>
+<P>A window of opportunity was provided in more recent times for a part of Cairo known locally as al-Darb al-Ahmar, through the activities of the Aga Khan Trust for Culture (AKTC) in collaboration with a variety of other agencies. The aim of this collaborative undertaking was not only to restore the historic monuments of al-Darb al-Ahmar, but also to improve the socio-economic fabric of the area so as to enhance the living conditions of its artisans and other inhabitants. </P>
+<DIV>In 2001, an educational film was produced, in English and Arabic, focusing on the al-Darb al-Ahmar neighbourhood. Entitled<I> Living with the Past: Historic Cairo</I>, it sought to present the city in both the past and the present. This book, originally conceived as a companion to the film, aims to capture the full story of the collaborative project in al-Darb al-Ahmar within the broader context of the history of the city of Cairo. It is an effort to cut across the conventional linear understanding of the historical process and examines Cairo from its earliest beginnings until the present, in terms of the connection between its physical layout, its historic buildings and its economic, social, cultural and religious life. It reflects on the vital links between past and the present.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>Part one opens with an historical overview of the development of the city, written by Ayman Fu'ad Sayyid; Nasser Rabbat follows with an introduction to processes of reconstruction in the specific neighbourhood of al-Darb al-Ahmar. A discussion of Nasir-i Khusraw's travelogue describing 11<SUP>th</SUP> century Cairo sets the stage for essays with more specific subject matter examining different facets of life in the setting - economic institutions (Kassem A. Kassem, Pascale Ghazaleh and Kristen Stilt), education (<A href="view_person8bd7.html?type=auth&amp;id=64">Heinz Halm</A>), marriage and the family (Amira Sonbol), faith and practice (<A href="view_person0b75.html?type=user&amp;id=100253">Roy Mottahedeh</A>, Norman A. Stillman and Febe Armanios), art and architecture (Caroline Williams and <A href="view_personf84e.html?type=auth&amp;id=168">Fahmida Suleman</A>), and music (Jonathan Shannon). Part one closes with Randa Abou-bakr's observations on how the old city reverberates through the modern literary works of Naguib Mahfouz and Gamal al-Ghitani, and Elizabeth Bishop's discussion of the work of &#8216;Ali Mubarak Pasha, one of the famous reformers of 19th century Egypt.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>Part two looks at the present, but always in relation to the past. Two of the team of the Aga Khan Cultural Services (Egypt), Karim Ibrahim and Seif El-Rashidi, record their own traveller's observations &#8216;on visiting al-Darb al-Ahmar for the first time in the 20<SUP>th</SUP> century&#8217;. Kamran Asdar &#8216;Ali and Martina Rieker present the background for the understanding of the &#8216;Ali Mubarak Pasha blueprint and the subsequent changes in modern plans for improving Cairo. Ragui Assaad points out the connections between the historic guilds and the expectations and practices of Egypt&#8217;s contemporary labour market. Then follows a group of essays about specific monument preservation in Historic Cairo:</DIV>
+<P>Robert K. Vincent Jr., Nairy Hampikian and Agnieszka Dobrowolska, describe institutional efforts. Salah Zaky Said discusses the cooperative renovation of old houses and Hisham and &#8216;Ali Mahmoud outline the successful local community undertaking to restore the Qijmas Mosque.</P>
+<P>Descriptions of the restoration of the social and economic fabric of al-Darb al-Ahmar by the Aga Khan Development Network, which the observers view as a possible role model for other depressed urban areas, fill the next section, written by Stefano Bianca of the AKTC, Mohamed El-Mikawi, General Manager of the Cairo Project Administration, and Mohamed Abdul Hafiz, whose work focuses specifically on the social and economic aspects.</P>
+<P>Two quite different essays conclude the volume. Dina Shehayeb and Ahmed Sedky offer a new way of looking at these now depressed, but formerly glorious, neighbourhoods as repositories of cultural and social values and national heritage, and Maysoon Pachachi, who directed the documentary film <I>Living with the Past, </I>describes the challenges of representing al-Darb al-Ahmar on film.</P>
+<P>It is hoped that the ambitious undertaking that this volume represents will lead to further interdisciplinary research into society and life in the setting of structural formations in historically important areas of the world&#8217;s great cities. </P>
+<P>Related pages on the IIS website:</P>
+<UL type=disc>
+<LI><A href="view_articlea12d.html?type=cont.currentlang&amp;id=111640">Living in Historic Cairo: A New Interdisciplinary Publication </A></LI></UL><br><br></div><div id="pubsContents"><strong>Contents</strong><br><TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=45>
+<P>9 </P></TD>
+<TD vAlign=top width=350>
+<P>Foreword </P></TD>
+<TD vAlign=top width=151>
+<P><I>Farhad Daftary and Azim Nanji</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>10</P></TD>
+<TD vAlign=top width=350>
+<P>Introduction </P></TD>
+<TD vAlign=top width=151>
+<P><I>Elizabeth Fernea</I></P></TD></TR></TBODY></TABLE>
+<P><I></I></P>
+<P>PART ONE: AL-DARB AL-AHMAR IN EGYPTIAN HISTORY</P>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=45>
+<P>14</P></TD>
+<TD vAlign=top width=350>
+<P>1. The historical development of Cairo 20-923/642-1517: an overview </P></TD>
+<TD vAlign=top width=151>
+<P><I>Ayman Fu'ad Sayyid</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>28</P></TD>
+<TD vAlign=top width=350>
+<P>2. The urban character of al-Darb al-Ahmar</P></TD>
+<TD vAlign=top width=151>
+<P><I>Nasser Rabbat</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>36 </P></TD>
+<TD vAlign=top width=350>
+<P>3. A traveller's account: Nasir-i Khusraw in 5th/11th-century Cairo </P></TD>
+<TD vAlign=top width=151>
+<P><I>Alice </I>C. <I>Hunsberger</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>42</P></TD>
+<TD vAlign=top width=350>
+<P>4. The economy of Historic Cairo: a case study of the markets of Mamluk Cairo </P></TD>
+<TD vAlign=top width=151>
+<P><I>Kassem Abdou Kassem</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>52</P></TD>
+<TD vAlign=top width=350>
+<P>5. The question of guilds </P></TD>
+<TD vAlign=top width=151>
+<P><I>Pascale Ghazaleh</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>62</P></TD>
+<TD vAlign=top width=350>
+<P>6. Regulating medieval Cairo </P></TD>
+<TD vAlign=top width=151>
+<P><I>Kristen Stilt</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>71 </P></TD>
+<TD vAlign=top width=350>
+<P>7. Women and family life in the darb </P></TD>
+<TD vAlign=top width=151>
+<P><I>Amira Sonbol</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>79 </P></TD>
+<TD vAlign=top width=350>
+<P>8. Learning and science in Historic Cairo</P></TD>
+<TD vAlign=top width=151>
+<P><I>Heinz Halm</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>86 </P></TD>
+<TD vAlign=top width=350>
+<P>9. Coptic Christians: faith and practice in Egyptian contexts</P></TD>
+<TD vAlign=top width=151>
+<P><I>Febe Armanios</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>93 </P></TD>
+<TD vAlign=top width=350>
+<P>10. The Jewish presence in medieval Cairo </P></TD>
+<TD vAlign=top width=151>
+<P><I>Norman A. Stillman</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>104 </P></TD>
+<TD vAlign=top width=350>
+<P>11. Faith and practice: Muslims in Historic Cairo</P></TD>
+<TD vAlign=top width=151>
+<P><I>Roy Mottahedeh</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>118</P></TD>
+<TD vAlign=top width=350>
+<P>12. The architectural heritage of al-Darb al-Ahmar</P></TD>
+<TD vAlign=top width=151>
+<P><I>Caroline Williams</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>133</P></TD>
+<TD vAlign=top width=350>
+<P>13. From shards to bards: pottery-making in Historic Cairo</P></TD>
+<TD vAlign=top width=151>
+<P><I>Fahmida Suleman</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>145 </P></TD>
+<TD vAlign=top width=350>
+<P>14. Music in Historic Cairo: a sonic excavation</P></TD>
+<TD vAlign=top width=151>
+<P><I>Jonathan </I>H. <I>Shannon</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>154 </P></TD>
+<TD vAlign=top width=350>
+<P>15. The representation of medieval Cairo in modern Arabic literature </P></TD>
+<TD vAlign=top width=151>
+<P><I>Randa </I>Abou-bakr</P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>160 </P></TD>
+<TD vAlign=top width=350>
+<P>16. Transition, colonialism, modernisation; living with &#8216;Ali Mubarak Pasha: state and civil society in Egypt</P></TD>
+<TD vAlign=top width=151>
+<P><I>Elizabeth Bishop</I></P></TD></TR></TBODY></TABLE>
+<P>PART TWO: AL-DARB AL-AHMAR IN THE 21ST CENTURY</P>
+<TABLE border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=45>
+<P>172</P></TD>
+<TD vAlign=top width=350>
+<P>17. Contemporary observations of al-Darb al-Ahmar</P></TD>
+<TD vAlign=top width=151>
+<P><I>Karlin Ibrahim and Seif El-Rashidi</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>180</P></TD>
+<TD vAlign=top width=350>
+<P>18. Remaking Cairo, revisioning al-Darb al-Ahmar</P></TD>
+<TD vAlign=top width=151>
+<P><I>Kamran Asdar &#8216;Ali and Martina Rieker</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>192</P></TD>
+<TD vAlign=top width=350>
+<P>19. The contemporary labour market in Egypt: formal and informal institutions in the construction sector</P></TD>
+<TD vAlign=top width=151>
+<P><I>Ragui Assaad</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>207</P></TD>
+<TD vAlign=top width=350>
+<P>20. Restoration processes for historic monuments: an introduction </P></TD>
+<TD vAlign=top width=151>
+<P><I>Robert K. Vincent Jr.</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>220</P></TD>
+<TD vAlign=top width=350>
+<P>21, Urban conservation: the inevitable task during single monument conservation in practice in Historic Cairo</P></TD>
+<TD vAlign=top width=151>
+<P><I>Nairy Hampikian</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>228</P></TD>
+<TD vAlign=top width=350>
+<P>22. The Sam Ibn Nuh Mosque: a community support project, Cairo 2000-2001 </P></TD>
+<TD vAlign=top width=151>
+<P><I>Agnieszka Dobrowolska</I> <I>(with material supplied by Barbara Drieskens)</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>223</P></TD>
+<TD vAlign=top width=350>
+<P>23. Cooperative renovation of old houses in al-Darb al-Ahmar: a case study </P></TD>
+<TD vAlign=top width=151>
+<P><I>Salah Zaky Said</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>237</P></TD>
+<TD vAlign=top width=350>
+<P>24. Restoring the Qjjmas Mosque: a community undertaking by the residents of al-Darb al-Ahmar</P></TD>
+<TD vAlign=top width=151>
+<P><I>Interviews with Hisham and 'Ali Mahmoud</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>242 </P></TD>
+<TD vAlign=top width=350>
+<P>25. The Projects of the Aga Khan Trust for Culture in al-Darb al-Ahmar area of Historic Cairo</P></TD>
+<TD vAlign=top width=151>
+<P><I>Stefano Bianca, Francesco Siravo, Cameron Rashti and Frank Matero</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>264 </P></TD>
+<TD vAlign=top width=350>
+<P>26. Background: starting up the Aga Khan Project</P></TD>
+<TD vAlign=top width=151>
+<P><I>Mohamed El-Mikawi</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>272 </P></TD>
+<TD vAlign=top width=350>
+<P>27. Combatting urban poverty in al-Darb al-Ahmar: interventions and strategies for poverty reduction in Historic Cairo</P></TD>
+<TD vAlign=top width=151>
+<P><I>Mohamed Abdel Hafiz Kotb</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>283 </P></TD>
+<TD vAlign=top width=350>
+<P>28. Heritage protection against what? A model to explain adverse change in historic districts</P></TD>
+<TD vAlign=top width=151>
+<P><I>Dina </I>K. <I>Shehayeb and Ahmed Sedky</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>290 </P></TD>
+<TD vAlign=top width=350>
+<P>29. Representing al-Darb al-Ahmar on film </P></TD>
+<TD vAlign=top width=151>
+<P><I>Maysoon Pachachi</I></P></TD></TR>
+<TR>
+<TD vAlign=top width=45></TD>
+<TD vAlign=top width=350></TD>
+<TD vAlign=top width=151></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>295</P></TD>
+<TD vAlign=top width=350>
+<P>Bibliography</P></TD>
+<TD vAlign=top width=151></TD></TR>
+<TR>
+<TD vAlign=top width=45>
+<P>300 </P></TD>
+<TD vAlign=top width=350>
+<P>Photocredits</P></TD>
+<TD vAlign=top width=151></TD></TR></TBODY></TABLE><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><P>Abdul Rahim, 'Abdul Rahim 'Abdul Rahman. 'The Documents of the Egyptian Religious Courts (al-mahakim al-shari&#8217;iyya) as a Source for the Study of Ottoman Provincial Administration in Egypt <I>(923/1517-1213/1798)', Journal of the Economic and Social History of the Orient, </I>34 (1991), pp. 88-97&#183;</P>
+<P>Abrahams, Israel. 'An Eighth-Century Genizah Document', <I>Jewish Quarterly Review; </I>17(1905), pp. 426-430.</P>
+<P>Abu-Lughod, Janet. <I>Cairo; 1001 Years ojtheCityVictorious. </I>Princeton, NJ, 1974.<I></I></P>
+<P>Abu Salih the Armenian. <I>The Churches and Monasteries of Egypt and Some Neighbouring Countries, </I>tr. B. T. A.<I> </I>Evetts. 2nd. ed., Oxford, 1969.</P>
+<P><I></I></P>
+<P>Adler, Marcus Nathan, ed. and tr. <I>The Itinerary of Benjamin of Tudela. </I>London, 1907; repr.,New York,n.d.<I></I></P>
+<P>Akerlof, G. 'The Market for "Lemons": Quality, Uncertainty and the Market Mechanism', <I>Quarterly</I> <I>Journal of Economics, </I>84(1970), pp. 488-500.</P>
+<P>AlSayyad, Nezar, Bierman, Irene A. and Nasser Rabbat. <I>Making Cairo Medieval. </I>Oxford, 2005.</P>
+<P>Altmann, Alexander and Samuel M. Stern. <I>Isaac Israeli: A Neoplatonic Philosopher of the Early Eleventh Century. </I>London, 1958.<I></I></P>
+<P>Armbrust, Walter. <I>Mass Culture and Mordernism in Egypt. </I>Cambridge, 1996.<I></I></P>
+<P>Ashtor, E. 'Prolegomena to the Medieval History of Oriental Jewry', <I>Jewish Quarterly Review, </I>50 (1959), pp. 56-57.</P>
+<P>- <I>Social and Economic History of the Near East in the Middle Ages. </I>London, 1976.<I></I></P>
+<P>Bacharach, Jere L., ed. <I>Fustat Finds: Beads, Coins, Medical Instruments, Textiles, and Other Artifacts from the Awad</I></P>
+<P><I>Collection. </I>Cairo and New York, 2002.</P>
+<P>Baer, Gabriel. <I>Egyptian Guilds in Modern Times. </I>Jerusalem, 1964.<I></I></P>
+<P>- "Ali Mubarak's Khitat as a Source for the History of Modern Egypt', in P.M. Holt, ed, <I>Political and</I></P>
+<P><I>Social Change in Modern Egypt: Historical Studies from the Ottoman Conquest to the United Arab Republic. </I>London,<I> </I>1968, PP.13-22.</P>
+<P>- 'Guilds in Middle Eastern History,' in M.A. Cook, ed. <I>Studies in the Economic History of the Middle East From the Rise of Islam to the Present Day. </I>London, 1970, pp. 11-30.</P>
+<P>- <I>Fellah and Townsman in the Middle East: Studies in Social History. </I>London, 1982.<I></I></P>
+<P>Bagnall, Roger S., ed. <I>Egypt in the Byzantine World,300-700. </I>Cambridge, 2007.<I></I></P>
+<P>Bardhan, P. K. 'The New Institutional Economics and Development Theory: A Brief Critical Assessment', <I>Word Development, </I>17(1989), PP&#183;1389-1395&#183;</P>
+<P>Barrucand, Marianne, ed. <I>L'Egypte Fatimide, son art et son histoire. </I>Paris, 1999.</P>
+<P><I></I></P>
+<P>Behrens-Abouseif, Doris, ed. <I>The Cairo Heritage: Essays in Honor of Laila Ali lbrahim. </I>Cairo, 2000.</P>
+<P>- <I>Cairo of the Mamluks: A History of the Architecture and its Culture. </I>London, 2007.<I></I></P>
+<P>Belgin, Tekce, Oldham, Linda and Frederic Shorter. <I>A Place to Live. </I>Cairo, 1994.</P>
+<P>Belleface, J-F. 'Turat, classicisme er vari&#233;t&#233;s: les avatars de l&#8217;ochestre oriental au Caire au d&#233;but du xxe siecle', <I>Bulletin d'Etudes Orientales, </I>39-40</P>
+<P>(1987-1988), [pp. 39-65], pp. 54-55&#183;</P>
+<P>Berkey, Jonathan. 'Women and Islamic Education in the Mamluk Period', in Nikki R. Keddie and Beth Baron, ed. <I>Women in Middle Eastern History</I></P>
+<P>(New Haven, CT, 1991), pp.144-145.</P>
+<P>Bianca, Stefano. <I>Urban Form in the Arab World: Past and Present. </I>London, 2000.<I></I></P>
+<P>- and Philip Jodidio. <I>Cairo: Revitalising a Historic Metropolis. </I>Turin, 2004.<I></I></P>
+<P><I></I></P>
+<P>Bierman, Irene. <I>Writing Signs: The Fatimid Public Text. </I>Berkeley, CA, 1998.</P>
+<P><I></I></P>
+<P>Bloom, Jonathan. <I>Arts of the City Victorious: lslamic Art and Architecture in Fatimid North </I><I>Africa</I> <I>and Egypt.</I>New Haven, CT and London, 2007.</P>
+<P><I></I></P>
+<P>Bloom, Jonathan M. and Sheila Blair. <I>Islamic Arts. </I>London, 1997.</P>
+<P><I></I></P>
+<P>Bromley, R., ed. <I>Planning for Small Enterprise in Third World Cities. </I>Oxford, 1985.</P>
+<P><I></I></P>
+<P>Bromley, R. and C. Gerry, ed. <I>Casual Work and Poverty in Third World Cities. </I>Chichester, 1979.</P>
+<P><I></I></P>
+<P>Bulliet, Richard W. <I>The Case for Islamo-Christian Civilization. </I>New York, 2004.<I></I></P>
+<P>Burckhardt, John Lewis, tr. <I>Arabic Proverbs; or the Manners and Customs of the Modern Egyptians, Illustrated from their Proverbial Sayings Current Cairo, </I>ed. William Ouseley. London, 1830.</P>
+<P><I></I></P>
+<P>Butler, Alfred. <I>The Ancient Coptic Churches of Egypt. </I>Oxford, 1884.</P>
+<P><I></I></P>
+<P>Caiger-Smith, Alan. <I>Lustre Pottery: Technique, Tradition and Innovation in Islam and the Western World. </I>London, 1985.<I></I></P>
+<P>Calverley, E. E. <I>Worship in Islam, Being</I> <I>a</I> <I>Translation with Commentary and Introduction </I><I>of al~Ghazzali</I>.<I> </I>Cairo, 1957.<I></I></P>
+<P>Canby, Sheila R. 'Islamic Lustreware', in Ian Freestone and David Gaimster, ed. <I>Pottery in the Making:</I> <I>World Ceramic Traditions. </I>London, 1997, pp. 110-115.</P>
+<P><I>The Cambridge History of Egypt, </I>vol. 1 'Islamic Egypt, 640-1517', ed. Carl F. Petry; vol. 2, 'Modern Egypt, from 1517 to the end of 20th Century', ed. M. W. Daly. Cambridge, 1998.</P>
+<P>Celik, Zeynip, <I>Displaying the Orient. </I>Berkeley, CA, 1992.</P>
+<P>Chatterjee, Partha. <I>Nationalist Though and the Colonial World: A Derivative Discourse. </I>Minneapolis, IN, 1986.</P>
+<P>Cohen, Mark <I>R.]ewish Self-Government in Medieval Egypt: The Origins of the Office of Head of the Jews, ca. 1065-1126. </I>Princeton, NJ, 1980.<I></I></P>
+<P>- <I>The Voice of the Poor in the Middle Ages; An Anthology of Documents from the Cairo Geniza. </I>Princeton, NJ<I>, </I>2005<I>.</I></P>
+<P><I></I></P>
+<P>Cole, Juan R. I. <I>Napoleon&#8217;s Egypt: Invading the Middle East. </I>Basingstoke, 2007.</P>
+<P>Contadini, Anna. <I>Fatimid Art at the Victoria Albert Museum. </I>London, 1998.</P>
+<P>Cook, Michael. <I>Commanding Right and Forbidding Wrong in Islamic Thought. </I>Cambridge, 2000.</P>
+<P>Crowe, Yolande. 'Early Islamic Pottery and China', <I>Transactions of the Oriental Ceramics Society, </I>41 (1975-1977), pp. 263-278.</P>
+<P>Cuno, Kenneth. <I>The Pasha&#8217;s Peasants: Land, Society, and Economy in Lower Egypt, 1740-1858. </I>Cambridge, 1992.</P>
+<P><I></I></P>
+<P>Dafrary, Farhad. 'Intellectual Life among the Ismailis: An Overview', in F.Daftary, ed. <I>Intellectual Traditions in Islam.</I>London,2000, pp. 87-111.</P>
+<P>- <I>The Isma'ilis: Their History and Doctrines. </I>2<SUP>nd</SUP> ed. Cambridge, 2007.</P>
+<P>Danielson, V. &#8216;Min al-mashaylkh: A View of Egyptian Musical Tradition', Asian <I>Music, </I>22 (1990-1991),pp. 113-127&#183;</P>
+<P>- <I>The Voice of Egypt: Umm Kulthum, ArabicSong and Egyptian Society in the Twentieth Century. </I>Chicago, IL, 1997.</P>
+<P>Dashti, Ali. <I>In Search of Omar Khayyam, </I>tr. L. P. Elwell-Sutton. London, 1971.</P>
+<P>Davis, Stephen. <I>The Cult of Saint Thecla: A Tradition of Women's Piety in Late Antiquity. </I>Oxford, 2001.</P>
+<P>- 'Ancient Sources for the Coptic Tradition', in Gawdat Gabra, ed. <I>Be Thou There: The Holy Family's Journey in</I></P>
+<P><I>Egypt. </I>Cairo, 2001.</P>
+<P>Denoix, Sylvie. <I>D&#233;crire le Caire Fustat-Misr d'apr&#232;s Ibn </I><I>Duqmaq et Maqrizi: I'histoire d'une partie de1a ville du Caire d'apr&#232;s deux historiens egyptiens des XIVe-XVe si&#232;cles. </I>Cairo,1992.</P>
+<P><I></I></P>
+<P>Dobrowolska, Agnieszka. <I>The Building Crafts of Cairo</I>: <I>A Living Tradition. </I>Cairo, 2005.</P>
+<P>Dols, Michael. <I>TheBlack Death in the Middle East. </I>Princeton, NJ,1977.</P>
+<P>Dopp, P. H. <I>L'Egypte au commencement du quinzi&#232;me si&#232;cle. </I>Cairo, 1930.<I></I></P>
+<P>van Doorn-Harder, Nelly and Kari vogt, ed <I>.Between Desert and City: The Coptic Orthodox Church Today. </I>Oslo, 1997.<I></I></P>
+<P>Dykstra, Darrell. 'Pyramids, Prophets, and Progress: Ancient Egypt in the Writings of All Mubarak', <I>Joumal of the American Oriental Society, </I>114(1994), pp.54-65.</P>
+<P>EI-Kodsi, Mourad. <I>The Karaite Jews ofEgypt, </I><I>1882-1986</I>. Lyons, NY, 1987.</P>
+<P>EI-Nahal, Galal. <I>Judicial Administration of Ottoman Egypt in the Seventeenth Century. </I>Minneapolis, MN, 1979.</P>
+<P><I></I></P>
+<P><I>Encyclopaedia of Islam, </I>ed. H.A. R. Gibb et al. New ed., Leiden and London, 1960-2004.</P>
+<P>Fahmy, Khaled. <I>All the Pasha's Men: Mehmed Ali, his Army, and the Making of Modern Egypt. </I>Cambridge, 1997.</P>
+<P>Farmer, Henry George. <I>A History of Arabian Music to the XIIIth century. </I>London, 1929.</P>
+<P><I></I></P>
+<P>Feldman, Walter<I>. Music of the Ottoman Court: Makam Composition and the Early Ottoman</I> <I>Musical Repertoire. </I>Berlin, 1996.</P>
+<P>Fischel, Walter J.<I> Jews in the Economic and Political Life of Mediaeval Islam. </I>Rev. ed., New York, 1969.</P>
+<P>Frishkopf, Michael. 'Inshad Dini and Aghani Diniyya in Twentieth Century Egypt: A Review of Styles,Genres, and Available Recordings'<I>, Middle East Studies Association Bulletin, </I>33 (2000), pp.167-183.</P>
+<P>Fuchs. H. and F. de Jong, 'Mawlid', <I>E12</I>, vol. 6.</P>
+<P>Gabra, Gawdat and Gertrud J. M. Van Loon. <I>The Churches of Egypt</I>: <I>From the Journey of the Holy Family to the Present Day. </I>Cairo, 2007.</P>
+<P>General Organisation for Housing Building and Planning Research (GOHBPR) and The World Bank. <I>Construction/Contracting Industry Study, </I>Final Report, 3 volumes and appendices. Cairo.Egypt: Ministry of Housing, Reconstruction, and New Communities, 1981.</P>
+<P>Ghannam, Farha. <I>Remaking the Modem: Space, Relocation and the Politics of Identity in Global Cairo. </I>Berkeley, CA, 2002.<I></I></P>
+<P>Ghazaleh, Pascale. 'The Guilds Between Tradition and Modernity', In Nelly Hanna, ed. <I>The State and its Servants: Administration in Egypt from Ottoman Times to the Present. </I>Cairo, 1995.</P>
+<P>Gil, Moshe. <I>Documents of the Jewish Pious Foundations from Cairo Geniza. </I>Leiden, 1976.<I></I></P>
+<P>- <I>TheTustaris: Family and Sect. </I>Tel Aviv,1981.</P>
+<P>Gostein, S. D. <I>A Mediterranean Society: The Jewish Communities of the Arab World as Portrayed in the documents of the Cairo Geniza. </I>Berkeley, CA,1967-1993.</P>
+<P>- <I>Letters of Medieval Jewish Traders. </I>Princeton, NJ,1973.</P>
+<P>Golb, Norman. 'The Topography of the Jews of Medieval Egypt'<I>, Journal of Near Eastern Studies, </I>24(1965), pp. 252-270, and 3 (1974), pp.116-149.</P>
+<P>Golombek, Lisa et a1.<I>Tamerlane's Tableware: A New Approach to Chinoiserie Ceramics of Fifteenth-and-Sixteenth-Century Iran. </I>Costa Mesa, CA,1996.</P>
+<P>Grabar, Oleg. 'Reflections on Mamluk Art', <I>Muqarnas, </I>2(1984), pp.1-12.</P>
+<P>Graham, William A. 'Islam in the Mirror of Ritual', in Richard G. Hovannisian and Speros Vyronis Jr., ed.<I> Islam's Understand of Itself. </I>Malibu, CA,1983.</P>
+<P>Gran, Peter. 'Late 18th-Century - Early 19th-Century Egypt: Merchant Capitalism or Modern Capitalism in <I>L'Egypte au</I> <I>XIXe si&#232;cle </I>(Colloque, Aix-en-Provence 4-7 juin 1979/Groupe de Recherches et d'Etudes sur le Proche-Orient). Paris, 1982.</P>
+<P>Gray, Basil. 'The Export of Chinese Porcelain to the Islamic World: Some Reflections on its Significance for Islamic Art, Before 1400', <I>Transactions of the Oriental Ceramic Society, </I>41(1975-1977), pp. 231-261</P>
+<P>Grube, Ernst J., ed. <I>Cobalt and Lustre: The First Centuries of Islamic Pottery. TheNasser D. Khalili Collection Art</I>, vol. IX. London, 1994.</P>
+<P>Gruber, Mark. <I>Sacrifice in the Desert:A Study of an Egyptian Minority through the Prism of Coptic Monasticism. </I>Lanham, MD, 2003.</P>
+<P><I></I></P>
+<P>von Grunebaum, G. E. <I>Muhammadan Festivals. </I>Ottawa, 1976.</P>
+<P><I></I></P>
+<P>Hallet, Jessica. 'Trade and Innovation: The Rise of a Pottery Industry in Abbasid Basra'. DPhil, University of Oxford, Faculty of Oriental Studies, 2000.</P>
+<P>Halm, Heinz. <I>The Fatimids and their Traditions of Learning. </I>London, 1997.</P>
+<P>Hanna.Milad M. 'Real Estate Rights in Urban Egypt: The Changing Sociopolitical Winds', in Ann Elizabeth Mayer, ed. <I>Property, Social Structure and Law in the Modern Middle East. </I>Albany, NY, 1985,pp.189-211</P>
+<P>Hanna, Nelly. <I>Habiter au Caire: IaMaison moyenne et ses habitants aux XVIIe et XVIIIe si&#232;cles. </I>Institut Fran&#231;ais d'Archeologie Orientale du Caire, 1991.</P>
+<P>- ed. <I>The State and its Servants: Administration in Egypt from Ottoman Times to the Present. </I>Cairo, 1995<I>.</I></P>
+<P>- and Raouf Abbas, <I>ed. Society and Economy in</I> <I>Egypt and the Eastern Mediterranean, </I><I>1600-1900</I>: <I>Essays in Honor of Andr&#233; Raymond. </I>Cairo, 2005.<I></I></P>
+<P><I></I></P>
+<P>Hampikian, N. <I>al-Salihiyya Complex through Time. </I>Heidelberg, 2004.<I></I></P>
+<P>- 'Challenges Facing Conservation Projects in Historical Cairo - Historical Buildings versus the Urban Fabric around them'<I>, Proceedings of the 9<SUP>th</SUP> Conference of the Union of Egyptian Architects &#8211; Architectural Heritage and Urban Development. </I>Cairo, 1999.</P>
+<P>- And M. al-Ibrashy. 'Filling in the Gaps Between a "Monument" and another "Monument" in Historic Cairo - Case Study: Urban Conservation Project &#8211; Proposal for the Rehabilitation of the Area around the Southern Gate and Walls of Historic Cairo', <I>Proccedings of the 5<SUP>th</SUP> International Symposium of OWHC. </I>Santiago de Compostella, 1999. <I></I></P>
+<P>Haridi, Salah. <I>al-Hidraf wal-sina'at fi 'ahd Muhammad </I><I>'Ali</I>. Cairo, 1985.</P>
+<P>Hart, G., 'Interlocking Transactions: Obstacles, Precursors or Instruments of Agrarian Capitalism?' <I>Journal of Development Economics, </I>23(1986), pp.177-203.</P>
+<P>Henein, Nessim Henry. <I>Poteries et proverbes d'Egypte, </I>Cairo, 1992.</P>
+<P>Heyworth-Dunne, J. <I>An Introduction to the History of Education in Modern Egypt. </I>London, 1968.</P>
+<P>Hoffman, Valerie. <I>Sufism, Mystics, and Saints in Modem </I><I>Egypt</I>. Columbia, SC, 1995.</P>
+<P>Holt, P.M. <I>Egypt and the Fertile Crescent </I><I>1516-1922</I>: <I>A Political History. </I>London, 1966.</P>
+<P>Hopkins, Nicholas, ed. 'The New Arab Family', <I>Cairo Papers in Social Science, </I>24 (2001), p. 275.</P>
+<P>Hulsman, C. "Tracing the Route of the Holy Family Today', in Gawdat Gabra, ed, <I>Be Thou There: The Holy Family's Journey inEgypt. </I>Cairo, 2001.</P>
+<P>Hunsberger, Alice C. <I>Nasir Khusraw, TheRuby of Badakhshan: A Portrait of the Persian Poet, Traveller and Philosopher. </I>London, 2000.</P>
+<P>- 'Nasir Khusraw: Fatimid Intellectual', in F.Daftary, ed. <I>Intellectual Traditions in Islam. </I>London, 2000 pp.l12-129.</P>
+<P>- 'The Esoteric World Vision of Nasir Khusraw', <I>Sacred Web, </I>9 (2002), pp, 89-100.</P>
+<P>- </P>
+<P>al-Hitta, Ahmad. <I>Ta'rikh Misr al-iqtisadi fi'l-qarn al-tasi&#8217; 'ashr. </I>Cairo, 1955.</P>
+<P>Hunter, F. Robert. <I>Egypt under the Khedives: From Household Government to Modern Bureaucracy, 1805-1879. </I>Pittsburgh, PA, 1984.</P>
+<P>- 'The Cairo Archives for the Study of Elites in Modern&#8217;, <I>International Journal of Middle East Studies, </I>4 (1973), pp. 476-488.</P>
+<P>Ibn 'Abd al-Hakm. <I>Futuh Misr, </I>ed. Charles C. Torrey. New Haven, CT,1922.</P>
+<P>Ibn Bassam, 'Abd Allah b. <I>Ahmad. </I><I>Nihayat al-rutba fi talab al-hisba, </I>ed, Husam al-Din Samarra'i.Baghdad, 1968.</P>
+<P>Ibn Battuta, Muhammad b. 'Abd Allah. <I>al-Rihla, </I>ed.Mahmud Sharqawi. Beirut, 1968.</P>
+<P><I></I></P>
+<P>Ibn al-Dawadari, Abu Bakr b. 'Abd Allah. <I>Kaazal-durar wa jami'al-ghurar, </I>vol. 9, ed. Hans Robert Roemer. Cairo, 1960.</P>
+<P>Ibn Duqmaq, Ibrahim b. Muhammad<I>. Description de l'Egypte, par lbn Doukmak, al-juz al-rabi'wa'l-khami min</I> <I>Kitab al-intsar li-wasitat 'iqd al-amsar. </I>Cairo, 1313-1314 [1896-1897].</P>
+<P>Ibn Habib, al-Hasan b. 'Umar. <I>Tadhikirat al&#183;nabih fi ayyam al-Mansur wa banih, </I>ed. Muhammad M. Amin. Cairo, 1976-1986.</P>
+<P>Ibn ai-Hajj, Muhammad b. Muhammad. <I>al-Madkhal. </I>Cairo, 1960.</P>
+<P>Ibn Hawqal, Abu'l-Qasim Muhammad b. 'Ali. <I>Kitab surat al-ard, </I>French tr. By J. H. Kramer and Gaston Wiet as <I>Configuration de la Terre. </I>Paris and</P>
+<P>Beirut,1964. </P>
+<P>Ibn al-Haytham, Abu &#8216;Ali al-Hasan ibn al-Hasan. <I>The Optics of lbn al-Haytham, </I>tr. A.I. Sabra, vol. 1. London, 1989.</P>
+<P>Ibn al-Haytham.Abu 'Abd Allah Ja'far ibn Ahmad. <I>Kitab al-munazarat, </I>ed. and tr. Wilferd Madelung and Pau I E. Walker as <I>The Advent of the Fatimids: A Contemporary Shi'i Witness. </I>London, 2000.</P>
+<P>Ibn Iyas, Muhamrnad b. Ahmad. <I>Bada'i' al-zuhur fi waqa'i'al-duhur, </I>ed.<I> </I>Muhammad Mustafa, Cairo, 1982-1984.</P>
+<P>Ibn al-Ma'mum al-Bara'ihi, Jamal al-Din. <I>Nusus min akhbar Misr, </I>ed. Ayrnan F. Sayyid. Cairo, 1983.</P>
+<P>Ibn Muyassar, Taj al-Din Muhammad b. 'Ali. <I>Akhbar Misr, </I>ed H. Mass&#233;. Cairo, 1919; ed. A. F. Sayyid, 1981.</P>
+<P>Ibn al-Sayrafi, 'Ali b. Dawud al-Jawhari. <I>Inba' al-hasr bi-abna' al-'asr, </I>ed. Hasan Habashi. Cairo, 1970.</P>
+<P>Ibn Shaddad, 'Izz al-Din. <I>Ta'rikh al&#183;Malik al-Zahir, </I>ed. A. Hutayt. Wiesbaden, 1983.</P>
+<P>Ibn Taghribirdi, Jamal al-Din Abu'l-Mahasin Yusuf. <I>al-Nujum al-zahira fi muluk Misr wa'l-Qahira. </I>Cairo, 1348-1391/1929-1972.</P>
+<P>Ibn al-Ukhuwwa, <I>The Ma'alim al-Qurba fi Ahkam al-Hisba of Diya</I>&#8217; <I>al-Din Muhammad ibn Muhammad al-Qurashi al-Shafi'i known as Ibn al-Ukhuwwa (d.729/1329), </I>ed. with partial trans. Reuben Levy. Cambridge, 1938.</P>
+<P>Ibn al-Zubayr, Ahmad b. al-Rashid.<I> Kitab al-dhaka&#8217;ir wa&#8217;l-tuhaf li'l-Qadi al-Rashid b. al-Zubayr, </I>ed. Muhammad Hamid Allah. Kuwait, 1959; tr. Ghada al-Qaddumi as <I>Book of Gifts and Rarit</I><I>ies (Kitab al-hadaya wa al-tuhaf): Selections Compiled in the Fifteenth Century from an Eleventh-Century Manuscript on Gifts and Treasures. </I>Cambridge, MA, 1996.</P>
+<P>Ibsen al-Faruqi, Lois. <I>The Nature of the Musical Art of Islamic Culture. </I>Ann Arbor, MI, 1975.</P>
+<P>Idris 'Imad al-Din b. al-Hasan. <I>'Uyun al-akhbnrwa-funun al-athar, </I>ed. M. Ghalib, vols. 4-6. Beirut, 1973-1978.</P>
+<P>- <I>'Uyun al-akhbar, </I>ed. A. Chleilat et a1.Damascus and London, 2007-2009.</P>
+<P>- </P>
+<P>International Labour Office (ILO), <I>Employment, Income and Equality: A Strategy for Increasing Productive Employment in Kenya. </I>Geneva, 1972.</P>
+<P>Islamoglu-Inan, Huri. 'Introduction: Oriental Despotism in World-System Perspective', in Islamoglu-Inan, ed. <I>The Ottoman Empire and the World Economy. </I>Cambridge, 1987, pp.l-2.</P>
+<P>Jenkins, Marilyn. 'Safid: Content and Context&#8217; in P. Soucek, ed. <I>Content and Context of Visual Arts </I><I>in the Islamic World. </I>Pennsylvania and London, 1988, pp. 67-75.</P>
+<P>- &#8216;Muslim: An Early Fatimid Ceramist&#8217;, <I>Bulletin of the Metropolitan Museum of Art</I>, 26 (New York, 1968), pp. 359-369.</P>
+<P>Al-Jiritli, &#8216;Ali. <I>Ta&#8217;rikh al-sina&#8217;a fi Misr fi&#8217;l-nisf al-awwal min al-qarn al-tasi&#8217; &#8216;ashr. </I>Cairo, 1952.</P>
+<P>Joinville, Jean de. <I>Memoirs of John Lord de Joinville, </I>tr. T. Johnes. Hafod, 1807.</P>
+<P>Juwayni, 'Ala' al-Din 'Ata-Malik. <I>Ta'rikh-i jahan-gusha, </I>ed.<I> </I>M. Qazvini. Leiden-London, 1912-1937. English trans. John A. Boyle as <I>The History of the World-Conqueror. </I>Cambridge, MA, 1958.</P>
+<P>Kassem, 'Abdou Kassem. <I>Fi</I> <I>ta'rikh al-Ayyubiyyin wa'l-Mamluk. </I>Cairo, 2001.</P>
+<P>- <I>Dirasat fi ta'rikh Misr al-ijtima'i'asr salatin al-mamalik. </I>Cairo, 1994.</P>
+<P>Kerr, C. 'The Balkanization of Labor Markets', in <I>Labor, Mobility and Economic Opportunity. </I>Cambridge, MA, 1954.</P>
+<P>Kessler, Cristal. <I>The Carved Domes of Cairo. </I>Cairo, 1976.</P>
+<P>Lagrange, F. <I>Musiques d'Egypte. </I>Arles, 1996.</P>
+<P>- 'Shaykh Sayyid Darwish', <I>Mediterraneenes, </I>8 (1996), pp. 155-177.</P>
+<P>Landau, Jacob. <I>Studies in Arab Theatre and Music</I>. Philadelphia, PA, 1958.</P>
+<P>Lane, E. W. <I>The Manners and Customs of the Modern Egyptians. </I>London, 1837; repr., Cairo, 1991.</P>
+<P>Laurens, Henri, et al, <I>L'Expedition d'Egypte. </I>Paris, 1989.</P>
+<P>Lewis, Bernard. 'The Islamic Guilds', <I>Economic History Review, </I>8 (1936-1938), pp. 20-37.</P>
+<P>Little, Donald P. 'Coptic Converts to Islam during the Bahri Mamluk Period', in Michael Gervers and Ramzi Jibran Bikazi, ed. <I>Conversion and Continuity. </I>Toronto, 1991,pp. 263-288.</P>
+<P>Lutfi, Huda, 'Coptic Festivals of the Nile', in Thomas Philipp and Ulrich Haarmann, ed. <I>Their Mamluks in Egyptian Politics and Society. </I>Cambridge, 1998.</P>
+<P>- 'Manners and Customs of Fourteenth-Century Cairene Women: Female Anarchy versus Male Shar&#8217;i Order in Muslim Prescriptive Treatises&#8217;, in Nikki R. Keddie and Beth Baron, ed. <I>Women in Middle Eastern History. </I>New Haven, CT, 1991, pp. 99-121.</P>
+<P>Malter, Henry. <I>Saadia Gaon: His Life and Works. </I>Philadelphia, PA, 1921.</P>
+<P>Mann, Jacob. <I>The Jews in Egypt and in Palestine under the Fatimid Caliphs, </I>Preface and Reader's Guide by S. D. Goitein. New York, 1970.</P>
+<P>al-Maqrizi, Taqi al-Din Ahmad b. 'Ali. <I>Kitab al-suluk, </I>partial French trans. E. Blochet as <I>Histoire d'Egypte, </I>in <I>Revue de l'Orient Latin, </I>6-11 (1898-1908). Partial English trans. Ronald J. C. Broadhurst, <I>A</I> <I>History of the Ayyubid Sultans of Egypt. </I>Boston, MA, 1980.</P>
+<P>- <I>Itti'az al-hunafa' bi-akhbar al-a'imma al-Fatimiyyin al-khulafa'. </I>Cairo, 1967-1973.</P>
+<P>- <I>Kitab al-mawa'iz wa'l-i'tibar bi-dhikr al-khitat wa'l-thar, </I>ed. Muhammad ibn 'Abd al-Rahman Quttah al-'Adaw. Bulaq, 1270/1853-1854.</P>
+<P>- <I>Ighathat al-umma bi-kashf al-ghumma, </I>ed. Muhammad Mustafa Ziyada and Jamal al-Din Muhammad al-Shayyal, 2nd rev. ed. Cairo, 1957.</P>
+<P>Marcais, Georges. <I>Les Faiences &#224;</I> <I>reflets </I><I>m&#233;talliques</I> <I>d</I><I>e la Grande Mosqu&#233;e de Kairouan. </I>Paris, 1928.</P>
+<P>Marcus, Abraham. <I>The Middle East on the Eve of Modernity. </I>New York,1989.</P>
+<P>al-Masri, Iris. 'Harit al-Rum', in Aziz S. Atiya, ed. <I>The Coptic Encyclopedia. </I>New York, 1991, vol. 4.</P>
+<P>Massignon, Louis. <I>Opera Minora, </I>ed. Y. Moubarac. Helrut, 1963.</P>
+<P>- &#8216;Sinf&#8217;,EI2.</P>
+<P>al-Mawardi. <I>al-Akham al-sultaniyya w'al-wilayat al-diniyya, </I>tr. Wafaa Wahba as <I>The Ordinances of Government, </I>Reading, 1996.</P>
+<P>McPherson, J. W. <I>The Mowlids of Egypt (Egyptian Saints-Days). </I>Cairo, 1941.</P>
+<P>Mehrez, Samya. <I>Egyptian Writers between History and Fiction: Essays on Naguib Mahfouz, Son'allah Ibrahim, and Gamal al-Ghitani. </I>Cairo, 1994.</P>
+<P>Meinardus, Otto. <I>Christian Egypt: Ancient and Modern. </I>Cairo,1977.</P>
+<P>- <I>Coptic Saints and Pilgrimages. </I>Cairo, 2002.</P>
+<P>Meinecke, M., ed. <I>Isla</I><I>mic Cairo, Architectural Conservation and Urban Development of the Historic Center, </I>Proceedings of a Seminar Organised by the Goethe Institute Cairo (1-5 October, 1978). Cairo, 1980.</P>
+<P>Meinecke-Berg, Viktoria. 'Le tr&#233;sor des califes', <I>Tr&#233;sors Fatimides du Caire: exposition present&#233;e</I> <I>l'Institut du monde arabe du 28 avril au 30 aout 1998, </I>exh. cat. Paris, 1998, pp. 96-142.</P>
+<P>- Das Giraffenbild des fatimidschen Keramikmalers Muslim', <I>DamaszenerMitteilungen, </I>11(1999), pp.331-344.</P>
+<P>- 'Fatimid Painting on Tradition and Style: The Workshop of Muslim', in M. Barrucand, ed. <I>L'Egypte Fatimide, son art et son histoire. </I>Paris, 1999. pp.349-358.</P>
+<P>Milwright, Marcus. 'Pottery in the Written Sources of the Ayyubid-Mamluk Period (c. 567-923/1171-1517<I>)', Bulletin of the school of Oriental and African Studies, </I>62(1999), pp. 504-518.</P>
+<P>- 'Gazetteer of Archaeological Sites in the Levant Reporting on Pottery of the Middle Islamic Period <I>(circa </I>1100-1600)', <I>Islamic Art, </I>5 (2001), pp. 3-39.</P>
+<P>Mitchell, Timothy. <I>Colonising Egypt. </I>Berkeley, CA, 1988.</P>
+<P>Mondal, Anshuman. 'Between Turban and Tarbush: Modernity and the Anxieties of Transition in Hadith 'Isa ibn Hisham', <I>Alif</I>, 17(1997), pp. 201-221.</P>
+<P>Mottahedeh, Roy and K. Stilt. 'Public and Private as Viewed Through the Work of the <I>Muhtasib', Social Research, </I>70(2003), pp. 735-748.</P>
+<P>Mubarak, 'Ali<I>. al-Khitat al-tawfqiyya al-jadida li Misr al-Qahira wa muduniha wa biladiha al-qadima wa'l-shhira. </I>Cairo, 1969.</P>
+<P>al-Musabbihi, Muhammad b. 'Ubayd Allah. <I>Akhbar Misr, </I>ed. Ayman F. Sayyid et al. Cairo, 1978-1984; ed. W.G. Millward. Cairo, 1980.</P>
+<P>Naddaf, Sandra. 'Mirrored Images: Rifa'ah al-Tahtawi and the West'<I>, Alif (1986), </I>pp. 73-83.</P>
+<P>Nadim, A.'Documentation, Restoration, Conservation, and Development of Bayt al-Suhaymi Area', in <I>Historic Cairo, </I>Supreme Council of Antiquities. Cairo, 2002, pp 199-212.</P>
+<P>Nasir-i Khusraw, <I>Safar-nama, </I>ed. M. Dabir Siyaqi, 5<SUP>th</SUP> ed., Tehran, 1356/1977. English trans. W.M. Thackston, Jr. as <I>Naser-e Khossraw's Book of</I></P>
+<P><I>Travels (Safarnama). </I>Albany, NY, 1986.</P>
+<P>Nelson, Kristen. <I>The Art of Reciting the Qur'an. </I>Austin, TX,1985.</P>
+<P>van Nieuwkerk, Karin. <I>A Trade Like any Other: Female Singers and Dancers in Egypt. </I>Austin, TX, 1995<I>.</I></P>
+<P>O'Kane, Bernard, ed. <I>The Treasures of Islamic Art in the Museums of Cairo. </I>Cairo, 2006.</P>
+<P>O'Leary, De Lacy Evans. <I>The Saints of Egypt. </I>London, 1937.</P>
+<P>Pacini, Andrea, ed. <I>Christian Communities in the Arab Middle East. </I>Oxford, 1998.</P>
+<P>Partrick, Theodore Hall. <I>Traditional Egyptian Christianity. </I>Greensboro, NC, 1996.</P>
+<P>Philon, Helen. <I>Early Islamic Ceramics: Ninth to Late Twelfth Centuries, </I>Athens Benaki Museum Collection. London, 1980.</P>
+<P>al- Qadi, Wadad. 'East and West in 'Ali Mubarak's 'Alamuddin', in Marwan Buheiry, ed. <I>Intellectual Life in the Arab East, 1890-1939. </I>Beirut, 1981, pp. 21-37.</P>
+<P>al-Qalqashandi, Ahmad b. 'Ali<I>. Subh al-a'sha fi sina'at al-insha', </I>ed. M. A. Ibrahim. Cairo, 1331-1338/1913-1920.</P>
+<P>al-Qurashi, Muhammad b. Muhammad b. Ahmad. <I>Kitab ma'alim al-qurba fi ahkam al-hisba. </I>Cairo, 1976; <I>The Ma'alim al-qurba fi ahkam al-hisba of Diya' al-Din Muhammad Ibn Muhammad al-Qurashi al-Shafi'i, </I>ed. with partial trans. by Reuben Levy. London, 1938.</P>
+<P>Racy, A.J. <I>Making Music in the Arab World: The Culture and Artistry of Tarab. </I>New York, 2003.</P>
+<P>- 'The Waslah: A Compound-Form Principle in Egyptian Music', <I>Arab Studies Quarterly, </I>5(1983), pp.396-403.</P>
+<P>Rapoport, Yossef. 'Marriage and Divorce in the Muslim Near East, 1250-1517'. PhD, Princeton University, 2002, pp. 67-79</P>
+<P>Raymond, Andre. <I>Artisans et commercants au Caire au CVIIIe si&#232;cle. </I>Damascus, 1973-1974.</P>
+<P>- 'L'Impact de la p&#233;n&#233;tration Europ&#233;enne sur l'&#233;conomie de l'Egypte au XVIlle <I>si&#232;cle ', Annales Islamologiques, </I>18(1982), pp. 217-235.</P>
+<P>- <I>Cairo: City of History </I>tr. Willard Wood. Cairo, 2001.</P>
+<P>- 'The Role of the Communities (<I>Tawa&#8217;if</I>) in the Administration of Cairo in the Ottoman Period', in Nelly Hanna, ed. <I>The State and its Servants: Administration in Egypt from Ottoman Times to the Present. </I>Cairo, 1995, pp. 32-43.</P>
+<P>Richardson, H. W. 'The Role of the Urban Informal Sector: An Overview', <I>Regional Development Review, </I>5(1985), pp. 3-54.</P>
+<P>Reid, Donald. M. 'Cultural Imperialism and Nationalism: The Struggle to Define and Control the Heritage of Arab Art in Egypt', <I>International Journal of Middle East Studies, </I>24, 1(1992), pp. 56-72.</P>
+<P>Reif, Stefan C. <I>A Jewish Archive from Old Cairo: The History of Cambridge University's Genizah Collection. </I>Richmond, 2000.</P>
+<P>Reimer, Michael. <I>Colonizing Bridgehead, Government and Society in Alexandria </I><I>1807-1882</I>. Boulder, CL, 1997.</P>
+<P>Rieker, Martina and Maureen O'Malley. 'Museum Effects: Politics and Practices of Heritage Inscription in the Southern Mediterranean', in Kamran Asdar Ali and Martina Rieker, ed. <I>TransActions: Tourism in the Southern Mediterranean </I>(forthcoming).</P>
+<P>Rodenbeck, John. 'The Present Situation of the Historic Cairo: A Road not Taken', in Doris Behrens-Abouseif, ed. <I>The Cairo Heritage. </I>Cairo,</P>
+<P>2000, pp. 328-340.</P>
+<P>Rodenbeck, Max. <I>Cairo:The City Victorious. </I>New York, 1998.</P>
+<P>Rubery, J. 'Structured Labor Markets, Worker Organization and Low Pay', <I>Cambridge Journal of Economics, </I>2 (1978). pp.17-36.</P>
+<P>Runciman, Stephen.<I> A History of the Crusades. </I>Cambridge 1951-1954.</P>
+<P>Sabra, Adam. <I>Poverty and Charity in Medieval Islam: Mamluk Egypt, 1250-1517. </I>Cambridge, 2000.</P>
+<P>Said, Dr Salah Zaky and Associates (United Consultants). 'Rehabilitation with People's Participation', <I>Final Report </I>for Egyptian Antiquities Project of the American Research Center. November, 2005.</P>
+<P>al-Sakhawi, Muhammad ibn 'Abd al-Rahman. <I>al-Tibr al-masbuk fi dhayl al-suluk. </I>Cairo, 1896.</P>
+<P><I></I></P>
+<P>Sanders, Paula. <I>Ritual, Politics, and the City in Fatimid Cairo. </I>Albany, NY, 1994.</P>
+<P>- <I>Creating Medieval Cairo. </I>Cairo, 2008.</P>
+<P>Sauvaget, Jean, 'Introduction &#224; l'&#233;tude de la c&#233;ramique Musulmane', <I>Revue des Etudes Islamiques</I>, 33 (1965), pp. 44-50.</P>
+<P>Sayyid, Ayrnan Fu'ad, <I>La capitale de l'Egypte jusqu'&#224; l'&#233;poque Fatimide: essai de reconstruction topographique. </I>Beirut, 1998.</P>
+<P><I></I></P>
+<P>al-Sayyid Marsot, Afaf Lutfi. <I>Egypt in the Reign of Muhammad 'Ali. </I>Cambridge, 1984.</P>
+<P>Scanlon, George T. <I>Fustat Expedition Final Report: Volume One, Catalogue of Filters, </I>A.R.C.E Reports 8. Lake Winona, IN,1986.</P>
+<P>- and W.B. Kubiak. <I>Fustat Expedition Final Report: Volume Two, Fustat-C. </I>Lake Winona, IN,1988.</P>
+<P>- '1965- Fustat Expedition Preliminary Report', <I>Journal of the American Research Center in Egypt, </I>8 (1966), pp. 65-84.</P>
+<P>- 'Egypt and China: Trade and Imitation', in D.S. Richards, ed. <I>Islam and the Trade of Asia. </I>Oxford, 1970, pp. 81-96.</P>
+<P>- 'Fustat Fatimid Sgraffiato: Less Than Lustre', in Marianne Barrucand, ed. <I>L'Egypte Fatimide, son art et son histoire. </I>Paris,<I> </I>1999, pp. 265-283.</P>
+<P>Schrieke, B. et al. 'Mi'radj',EI2, vol. 7.</P>
+<P>Scott, James C.<I> Seeing Like a State: How Certain Schemes to Improve the Human Condition have Failed. </I>New Haven, CT, 1998.</P>
+<P>Serageldin, Ismail. <I>Very Special Places: The Architecture and Economics of Intervening in Historic Cities. Culture in Sustainable Development. </I>Washington, DC, 1999.</P>
+<P>Shannon, J. 'Emotion, Performance and Temporality in Arab Music: Reflections on Tarab&#8217;, <I>Cultural Anthropology, </I>18(2003), pp. 72-98.</P>
+<P>al-Shayzari, 'Abd al-Rahman b. Nasr. <I>Nihayat al-rutba fi talab al-hisba. </I>Cairo, 1946; tr. R. P. Buckley as <I>The Book of the Islamic Market Inspector. </I>Oxford, 1999.</P>
+<P>Shoshan, Boaz. 'Grain Riots and the "Moral Economy", Cairo, 1450-1517'<I>, Journal of Interdisciplinary History, </I>10(1980), pp. 462-463.</P>
+<P>Singermann, Diane and Paul Amal, ed. <I>Cairo Cosmopolitan: Politics, Culture and Urban Space in the New Globalised Middle East. </I>Cairo, 2006.</P>
+<P>Stern, Samuel M. 'Cairo as the Centre of the Isma'ili Movement', in <I>Colloque International sur l'histoir du </I><I>Caire. </I>Cairo, 1972, pp. 437-450.</P>
+<P>Stillman, Norman A. <I>The Jews of Arab Land: A History and Source Book. </I>Philadelphia, FA, 1979.</P>
+<P>- 'Quelques renseignements biographiques sur Yosef Ibn 'Awkal, m&#233;diateur entre les communaut&#233;s juives du Maghreb et les Acad&#233;mies d'Irak', <I>Revue des Etudes Juives, </I>132(1973), pp. 529-542.</P>
+<P>- 'The Eleventh-Century Merchant House of Ibn 'Awkal (A Geniza Study<I>)', Journal of the Economic and Social History of the Orient, </I>16(1973),pp. 15-88.</P>
+<P>- 'Charity and Social Service in Medieval Islam', <I>Societas, </I>5 (1975), pp. 105-115.</P>
+<P>- 'Subordinance and Dominance: Non-Muslim Minorities and the Traditional Islamic State as Perceived from Above and Below', in Farhad Kazemi and R. D. McChesney, ed. <I>A Way Prepared: Essays </I><I>on Islamic Culture in Honor of Richard Bayly Winder. </I>New York and London, 1988, pp. 132-141.</P>
+<P>- 'The Jew in the Medieval Islamic City', in Daniel Prank, ed. <I>The Jews of Medieval Islam: Community, Society, and Identity</I>, Leiden 1995, pp. 3-13.</P>
+<P>Stillman, Yedida Kalfon. <I>Arab Dress: A Short History from the Dawn of Islam to Modern Times. </I>Leiden, 2000.</P>
+<P>Suleman, Fahmida. 'Ceramics', in Josef W. Meri, ed. <I>A Medieval</I> <I>Islamic Civilization: An Encyclopedia. </I>New York and London, 2006, vol. 1S, pp.143-144.</P>
+<P>al-Suyuti. <I>Husn al-muhadara fi ta'rikh Misr wa'l-Qahira, </I>ed. Muhammad 'Abd al-Padil Ibrahim. Cairo, 1967-1968.</P>
+<P>Swedenburg, T. 'Saida Sultan/Danna International: Transgender Pop and the Polysemiotics of Sex, Nation, and Ethnicity on the Israeli-Egyptian Border', in Walter Armbrust, ed. <I>Mass Mediations: New Approaches to Popular Culture </I><I>in</I> <I>the Middle East and Beyond. </I>Berkeley, CA, 2000, pp. 88-119.</P>
+<P>al-Tabari, Abu Ja'far Muhammad b. Jarir. <I>Ta'rik al- rusul wa'l-muluk, </I>ed. M. J. de Goeje et al. Series I-III. Leiden, 1879-1901. English trans. by various</P>
+<P>scholars. <I>The History of al-Tabari. </I>Albany, NY, 1985-1999.</P>
+<P>al-Tha'alibi, Abu Mansur. <I>Kitab Lata&#8217;if al-ma&#8217;arif, </I>ed. P. de Jong. Leiden, 1867; tr. C. E. Bosworth as <I>The</I> <I>Book of Curious and Entertaining Information, the Lata'if al-ma'arif of al-Tha'alibi. </I>Edinburgh, 1968.</P>
+<P><I>Tr&#233;sors fatimides du </I><I>Caire</I>: <I>exposition present&#233;e &#224; l'institut du monde arabe du 28 avril au 30 aout </I><I>1998</I>,exh. cat. Paris, 1998.</P>
+<P>Turner, Bryan. <I>Orientalism, Postmodernism and Globalism. </I>London and New York,1994.</P>
+<P>Tyan, Emile. <I>Histoire de l'organisation judiciaire en pays d'Islam. </I>Paris, 1943.</P>
+<P>United Nations Development Programme, Supreme Council of Antiquities, <I>Rehabilitation of Historic Cairo, </I>Final Report. December, 1997.</P>
+<P>'Uthman, Muhammad 'Abd al-Sattar. <I>al-Madina al-Islamiyya. </I>Kuwait, 1988.</P>
+<P>Vatikiotis, P.J. <I>The History of Egypt. </I>London, 1969; repr.1985.</P>
+<P>Walker, Paul E. <I>Exploring an lslamic Empire: Fatimid History and its Sources. </I>London, 2002.</P>
+<P>Warner, Nicholas. <I>The Monuments of Historic Cairo. </I>Cairo,2002.</P>
+<P>Watson, John H.<I> Among the Copts. </I>Portland, OR, 2000.</P>
+<P>Watson, Oliver. <I>Cera</I><I>mics from Islamic Lands. </I>London, 2004.</P>
+<P>- 'Fritware: Fatimid Egyptor Saljuq Iran?', in Marianne Barrucand, ed. <I>L'Egypte Fatimide, son art et son histoire. </I>Paris, 1999, pp. 299-307.</P>
+<P>Williams, Caroline. <I>Islamic Monuments in Cairo: The Practical Guide. </I>Cairo, 2008.</P>
+<P>- 'Transforming the Old: Cairo's New Medieval City', <I>The Middle East Journal, </I>56 (2002), pp. 457-475.</P>
+<P>- 'Islamic Cairo: Endangered Legacy', <I>The Middle East Journal, </I>39 (1985),<I> </I>pp. 231-246.</P>
+<P>Worman, E. J. &#8216;Notes on the Jews in Fustat', <I>Jewish Quarterly Review, </I>18(1905), pp.1-39.</P>
+<P>Wustenfeld, F. <I>Die Geographie und Verwaltun von Agypten nach den Arabischen des Abul-'Abbas Ahmed ben Ali el-Calcashandi, </I>Gottingen, 1879.</P>
+<P>Yeomans, Richard. <I>The Art and Architecture of Islamic Cairo. </I>Reading, 2006.</P></div><p>Content Date: February 2010</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Living in Historic Cairo: Past and Present in an Islamic City</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 24 Feb 2020 12:19:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 17/09/2010&nbsp;11:32&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=111248 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:30:06 GMT -->
+</HTML>

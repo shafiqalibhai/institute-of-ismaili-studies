@@ -1,0 +1,687 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109742 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:11:17 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 109742;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" height="115" width="779" class="banner" alt="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" src="WebAssets/Site_Images/header/ResearchandPublication_2.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/ResearchandPublication_2.jpg','WebAssets/Site_Images/header/Research%20And%20Publications.jpg');
+				var descriptions = new Array('The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies','An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only09cf.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D109742">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article9fdb-2.html?ContentID=109744">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article297b.html?ContentID=109746">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Transcendence and Distinction: Metaphoric Process in Isma&#8216;ili Muslim Thought</strong><br/><strong><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim       Nanji</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that was originally published in <I>God and Creation: An Ecumenical Symposium </I>edited by David B. Burrell and Bernard McGinn, University of Notre Dame, 1990, pp 304-315. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong>This essay explores how writers of the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid </A>period of Isma&#8216;ili history, during the tenth and eleventh centuries<SUP>1</SUP>, developed an approach that sought to reconcile an understanding of the transcendent and unique nature of God - embodied in the Qur&#8217;anic concept of <I><A href="javascript:void(LaunchGlossary('GlossaryItem76ac.html?type=glossary&amp;id=64'))">tawhid </A>- </I>with<I> </I>a view of creation as both produced by, and yet distinct from, God. Such an approach, in common with the general discourse among certain other Muslim schools of thought, was concerned with developing rational tools of comprehension that could be applied to scriptural statements. The set of problems they dealt with had dimensions similar to those faced by other Muslim philosophers and theologians, as well as their Jewish and Christian counterparts, in developing various syntheses with philosophy, particularly in its Platonic, Aristotelian, and Neoplatonic versions. The access to tools of inquiry afforded by the philosophical heritage of antiquity became, for those Muslims committed to rational discourse, a resource and an ally that they willingly co-opted in their quest to decipher truths they believed to be embedded in revelation. The reflexive process engendered by the interaction of the two allowed various Muslim groups to articulate distinctive stances towards the relationship of reason and revelation that in turn led to them being identified with various developing theological orientations. Though in time historical and other factors led to the emergence of one or the other orientation as dominant, it is important to note, during this period, the shared intellectual climate, the commonality of issues, and the existence of a plurality of discourses, which provided the overall context of &#8220;exchange&#8221; amongst Muslims, and also between them, the &#8220;People of the Book&#8221; and the classical heritage. The &#8220;exchange&#8221; also enabled the discussion to take place within a common linguistic framework that had adapted the intellectual tools of discourse and which came to represent, as in the Isma&#8216;ili case, a point of departure for the expression and elaboration of the received monotheistic doctrine of God.<SUP>2</SUP></div><div> </div><div><DIV><B><IMG border=0 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=25 height=25> <A href="SiteAssets/pdf/Transcendence%20and%20Distinction-%20Metaphoric%20Process%20in%20Isma%e2%80%98ili%20Muslim%20Thought%20-IIS%20logo.pdf">Download PDF version of article (52 KB)</A> </B></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><B>Key Words: </B></DIV>
+<P><B></B></P>
+<P><I><A href="javascript:void(LaunchGlossary('GlossaryItemc06d.html?type=glossary&amp;id=80'))">Ta&#8217;wil</A></I>, Qur&#8217;an, Isma&#8216;ili,<EM> tafsir</EM>, hermeneutics, al-Kirmani, al-Sijistani, <A href="javascript:void(LaunchGlossary('GlossaryItem10d5.html?type=glossary&amp;id=155'))">Mu&#8216;tazilite</A>, <I>ays</I>, <I>lays</I>,<I> <A href="javascript:void(LaunchGlossary('GlossaryItem76ac.html?type=glossary&amp;id=64'))">tawhid</A></I>,<I> al-khalq</I>, cosmology, Neoplatonic thought,<I> Rahat al-<A href="javascript:void(LaunchGlossary('GlossaryItemd078.html?type=glossary&amp;id=328'))">Aql</A></I>, First Intellect, <I>taqdis</I>, <I>kathrah</I>,<I> </I>and <I>tafawut</I>.<B></B></P>
+<P><B></B></P>
+<P><B>Table of Contents</B></P>
+<P><B></B></P>
+<UL type=disc>
+<LI><A href="#undern trans">Understanding Transcendence: The Tools of Interpretation</A> 
+<LI><A href="#artic trans">Articulating Transcendence: God Beyond Being and Non-being </A>
+<LI><A href="#man trans">Manifesting Transcendence: Creation and Knowledge</A> </LI></UL>
+<P>He originates creation; then refashions it - for Him an easy task. His is the most Sublime Symbol in the heavens and the earth. (Qur&#8217;an 30:27)</P>
+<P>Do you not perceive how God coins a metaphor? A Good Word, like a Good Tree, whose roots are deep, and whose branches reach into Heaven. (Qur&#8217;an 14:24-26)</P>
+<P><B><A name="undern trans">Understanding Transcendence: The Tools of Interpretation</A></B></P>
+<P>Among the tools of interpretation of scripture that are associated particularly with <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;i</A> and Isma&#8216;ili thought is that of <I><A href="javascript:void(LaunchGlossary('GlossaryItemc06d.html?type=glossary&amp;id=80'))">ta&#8217;wil</A></I>. This Qur&#8217;anic term, literally &#8220;going back to the first or beginning,&#8221; came to have the connotation of a form of hermeneutical discourse. Jean Pepin, in analysing the original Greek word <I>hermeneuein, </I>concludes that</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>as used generally, the word has come to signify interpretation, and that hermeneutics today, commonly has as its synonym &#8216;exegesis&#8217;. However, the original meaning of <I>hermeneuein, </I>and other related words - or in any case their principal meaning - was not that at all, and was not far from being its exact contrary, if we grant that exegesis is a movement of penetration into the intention of a text or message.<SUP><A href="#3">3</A></SUP></P></BLOCKQUOTE>
+<P>As set forth in Isma&#8216;ili writings, the purpose and goal of <I>ta&#8217;wil </I>is to arrive at such an original understanding of scriptural texts<I> </I>by going beyond the formal, literal meaning of the text, neither limiting the total significance nor rejecting entirely the validity of such a formal reading, but affirming that the ultimate significance and totality of any text could only be grasped by the application of <I>ta&#8217;wil</I>.<I> </I>Such hermeneutics, in their view, complemented <I>tafsir</I>,<I> </I>the mode of formal interpretation in Muslim thought, and did not reflect a dichotomised way of viewing scripture. Rather, it attested to the divine use of language in multiple ways, particularly as exemplified in the Qur&#8217;anic verses cited above, through the use of &#8220;symbol&#8221; and figurative language. Hermeneutical discourse in Isma&#8216;ili thought thus extends the meaning of scripture, like branches reaching into Heaven, to identify the visible which glorifies Him, but it also seeks to penetrate to the roots, to retrieve and disclose that which appears invisible.</P>
+<P>In his works, <I>al-Risalah al Durriyah </I>and <I>Rahat al-&#8216;Aql</I>,<I> </I>the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> philosopher Hamid al-Din al-Kirmani (d. 1021) juxtaposes a discussion of speech and language to his exposition of the concept of God and <I><A href="javascript:void(LaunchGlossary('GlossaryItem76ac.html?type=glossary&amp;id=64'))">tawhid</A>. </I>He argues that languages grow out of words which are composed of letters which allow words to signify specific meanings. But words as well as languages are contingent and relative. Since God is not contingent but absolute, language, by its very nature, cannot appropriately define Him in a non-contingent way and take account of that which makes God different from all that is contingent. Thus, language in itself fails to define God as befitting His glory. Language, however, is a beginning, because it is the foremost tool for signifying and representing the possibility of what God is. The fact of being human and possessed of an intellect compels one to speak of and inquire about the agent from whom existentiation (or origination) comes forth. Thus, when one speaks of God, one does not necessarily describe Him as He is, but one has affirmed that He is indeed the originator of all that we employ to understand and describe His creation.</P>
+<P>The appropriate mode of language which serves us best in this task is, according to al-Kirmani, figurative language. Such language, which employs analogy, metaphor and symbols, allows one to make distinctions and to establish differences in ways that a literal usage of language does not permit. It can also impel thought to seek new meanings and to develop the necessary tools of discourse to characterise these new meanings. <I>Ta&#8217;wil, </I>understood as metaphoric process, has the capacity to relate meaning to its beginnings - for that is not only the root sense of the word <I>ta&#8217;wil</I> itself, but also expresses the religious purpose for which such a metaphoric process is to be employed - as a journey to understanding God. This understanding starts as the<I> ta&#8217;wil</I> of the words used in the Qur&#8217;an , where God is indeed referred to as the &#8220;Sublime Symbol&#8221; thus legitimating the use of figurative language. In this sense, metaphoric language employs a special system of signs, the ultimate meaning of which is unveiled by the proper application of <I>ta&#8217;wil</I>.<SUP><A href="#4">4</A></SUP></P>
+<P><I></I></P>
+<P><B><A name="artic trans">Articulating Transcendence: God Beyond Being and Non-being</A></B></P>
+<P>The articulation of what David Burrell has referred to as the &#8220;grammar of divinity&#8221;<SUP><A href="#5">5</A></SUP>, that is, securing the distinction of God from the world, is also the shared starting point for the Isma&#8216;ili formulation of <I>tawhid</I>,<I> </I>the Islamic belief in one God alone, who has no partner.</P>
+<P>Among al-Kirmani&#8217;s predecessors, perhaps the most well-known Isma&#8216;ili theologian was Abu Yaqub al-Sijistani (d. ca. 971). His works, building on previous Isma&#8216;ili writings, enable us to see the formulation of a position in the context of the larger debate in the tenth century among Muslim theologians and philosophers. While discounting those outside the pale of monotheistic faith, whose beliefs, according to him, are polytheistic or anthropomorphic, he classifies others under several broad categories - those who ascribe to God the attributes He ascribes to Himself in the Book, but who do not wish to speculate unduly about these attributes; and those who argue in favour of speculation and wish to negate the attribution of human like qualities to God and therefore maintain that God can neither be defined, described, characterised, nor seen, nor be anywhere. He concludes that none of these positions allow one to accord to God the correct worship due to Him, nor do they allow for the articulation of transcendence in an appropriate manner. He states:</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>Whoever removes from his Creator descriptions, definitions and characteristics, falls into a hidden anthropomorphism, just as one who describes Him and characterises Him falls into overt anthropomorphism. (Sijistani, <I>al-Maqalid</I>,<I> </I>trans. Hunzai, p. 69)</P></BLOCKQUOTE>
+<P>In particular, he seeks to refute those who follow the <A href="javascript:void(LaunchGlossary('GlossaryItem10d5.html?type=glossary&amp;id=155'))">Mu&#8216;tazilite </A>and descriptive attributes and argues that the ascribing of essential attributes, by perpetuating a duality between essence and attribute, would also lead to a plurality of eternal attributes. He argues further that the negation of specific attributes (knowledge, power, life, etc.) cannot be maintained, since human beings also have a share in such attributes. If these were to be denied, the negation would be incomplete, since the denial takes account only of characteristics of material creations (<I>makhluqat</I>)<I> </I>and not of spiritual entities (<I>mubda&#8217;at</I>).<I> </I>If one is to adopt the path of negation, he argues, then it must be a complete negation, denying that God has either material attributes or spiritual ones, thereby rendering him beyond existence (<I>ays</I>)<I> </I>and non-existence (<I>lays</I>)<I>.</I></P>
+<P>In formulating such a sweeping concept of <I>tawhid</I>, Sijistani assumes three possible relations between God and His Creation: God can either resemble His creation entirely, in part, or not at all. In order to affirm the total distinction implied in <I>tawhid, </I>the third relation is the most appropriate, involving a total distinction from all forms of creation. Basing himself on a Qur&#8217;anic verse, &#8220;To Him belong the <I>Creation </I>(<I>al-khalq</I>) and the <I>Command </I>(<I>al-amr</I>)&#8221;<I> </I>(7:54), he divides all originated beings into (1) those that can be located in time and space, i.e., those that are formed (<I>makhluqat</I>),<I> </I>and (2) those that were originated through the act of command, all at once (<I>daf&#8217;atan wahidah</I>)<I>, </I>and which are beyond time and space and are called (<I>mubda&#8217;at</I>).<I> </I>The former possess attributes, while the latter are entirely self-subsistent. The establishing and articulation of true transcendence (<I>tanzih</I>) must therefore deny both:</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>There does not exist a <I>tanzih </I>more brilliant and more noble than the one by which we establish the <I>tanzih </I>of our Mubdi&#8217; (Originator) by using these words in which two negations, negation and a negation of negation (<I>nafyun wa-nafyu nafyin</I>),<I> </I>oppose each other. (Sijistani,<I> al-Maqalid, </I>trans. Hunzai, p.70)</P></BLOCKQUOTE>
+<P>Thus, the first negation disassociates God from all that can possess attributes, the second, from all who are &#8220;artributeless.&#8221; He is careful to avoid suggesting that even that which is without attributes, defined and non-defined, is God - in his schema God is beyond both, rendering Him absolutely unknowable and without any predicates.</P>
+<P>Such a concept of <I>tawhid </I>immediately presents two problems for a Muslim: the first concerns how one might worship such a God; and the second, if He indeed so transcends His Creation, how is it that they came into existence? The &#8220;grammar of divinity&#8221; affirming distinction now leads in Isma&#8216;ili thought to the &#8220;ladder of meaning&#8221; by which transcendence manifested through creation becomes &#8220;knowable.&#8221;</P>
+<P><B><A name="man trans">Manifesting Transcendence: Creation and Knowledge</A></B></P>
+<P>Among the most serious charges laid against a doctrine of &#8220;creationism&#8221; - i.e., the assumption of a Creator as the ultimate cause, through a special act of creation - is that it assumes in the form of a complex deity the very thing that one wishes to explain, organised complexity. It is this relationship between Creator and creation, and the transformation that is implied in the former by the very occurrence of change, that constitutes the greatest intellectual knot that a rational theology must tackle.</P>
+<P>It has been argued that Isma&#8216;ili theology, particularly as expressed in the work of al-Sijistani, integrates a manifestational cosmology (analogous to some aspects of Stoic thought) within a Neoplatonic framework to create an alternative synthesis. The starting point of such a synthesis is the doctrine of <I><A href="javascript:void(LaunchGlossary('GlossaryItemcfcc.html?type=glossary&amp;id=236'))">ibda</A> </I>(derived from Qur&#8217;an 2:117). In its verbal form, it is taken to mean &#8220;originating instantaneously,&#8221; representing, as the late Henry Corbin has it, &#8220;l&#8217;instauration creatrice primordiale&#8221; to explain the notion in the Qur&#8217;an of God&#8217;s timeless command (<I>Kun: </I>&#8220;Be!&#8221;). <I>Ibda </I>therefore connotes, not a specific act of creation, but the dialogical mode through which a relationship between God and His creation can be affirmed - it articulates the process of beginning and sets the stage for developing a theology of the manifestation of transcendence in creation. By making creation emerge as a result of a process of origination (<I>ibda</I>), Sijistani hopes to maintain his distinction between God and creation by making <I>Amr</I>,<I> </I>God&#8217;s eternal expression of His will, the ultimate point of origin. In this sense, to quote Corbin again: &#8220;la philosophie premiere de l&#8217;ismaelisme n&#8217;est une metaphysique ni de <I>l&#8217;ens, </I>ni de <I>l&#8217;esse, </I>mais de <I>l&#8217;esto</I>.&#8221;?<A href="#6"><SUP>6</SUP><I> </I></A>It can be said to express the distinction<I> </I>between God and creation even more sharply than the schema of<I> </I>emanationism associated with Plotinus.</P>
+<P><I></I></P>
+<P>Al-Kirmani attempts to distance the Isma&#8216;ili view from the emanationist outlook and to resolve what he regards as the ambiguities in Sijistani&#8217;s formulation by arguing that the process of emanation and its source cannot be differentiated, strictly speaking. He cites as an analogy the light emanating from the sun, which, issuing from the fountain of the sun, partakes of the essence out of which it emanates, since at the point of emanation it is no different from the essence of the sun, its source. They are thus linked, though not identical, by being together in existence; and they could not logically be conceived of, one without the other. Such mutuality cannot be associated with God, for to conceive of existence as emanating from Him necessitates multiplicity in its source, which is its very essence. For al-Kirmani, then, the only absolute way in which creation and <I>tawhid </I>can be distinguished is through a much sharper definition of that which is originated through <I>ibda, </I>namely the First Existent or the First Intellect. He states:</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>It did not exist, then it came into existence via <I>ibda </I>and <I>ikhtira, </I>neither from a thing, nor upon a thing, nor in a thing, nor by a thing, nor for a thing and nor with a thing. (Kirmani, <I>Rahat al-&#8216;Aql, </I>trans. Hunzai, p. 165)</P></BLOCKQUOTE>
+<P>Like the number one, it contains all other numbers, which depend on it for their existence. Yet it is independent and separate from them, and it is the source and the cause of all plurality. In order to establish the singularity of the First Intellect, he refers to what the ancient sages (<I>hukama</I>)<I> </I>have said:</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>From the First Existent, which is the First Cause, nothing comes into existence but a single existence ... or the Prime Mover moves only one, even though by it many are moved. (Kirmani, <I>Rahat al-&#8216;Aql</I>, trans. Hunzai, p. 166)</P></BLOCKQUOTE>
+<P>Having used the arguments of the ancients for the purpose of validating his point, al-Kirmani is nevertheless quick to separate himself from the view that all these attributes can then be applied to God, for that would compromise his insistence on absolute transcendence. They can only apply to the First Intellect, which in his scheme now becomes the Source, that which is inherently the synthesis of the One and the many (<I>Jami&#8216; li-l-wahdah wa al-kathrah</I>). At this stage, anterior to time and space, the two qualities were in the First Intellect, but they comprise the dual dimension that relates the First Intellect to <I>tawhid, </I>as well as to the role by which its generative capacity can be manifested. With respect to God, the First Intellect exists to sanctify Him. Such sanctification (<I>taqdis</I>) on the part of the First Intellect reflects the nobler aspect of its dual dimension, where it is an affirmation of its own createdness and distinction from God. On the other hand, the sanctification generates a state of happiness and contentment within it, which produces actual and potential intellects, which in turn become the causes for the creation of the subsequent spiritual and material realms. Al-Kirmani distinguishes in the First Intellect between multiplicity and diversity. Though the forms within the Intellect can be said to be multiple, they do not yet possess this aspect, since no diversity or differentiation exists within the Intellect. His analogy for the actual intellect is the Qur&#8217;anic symbol of the &#8220;pen,&#8221; and of the potential intellect, the &#8220;tablet,&#8221; which become metaphors for <I>form </I>and <I>matter</I>, respectively. Sijistani, in attempting to resolve the problem of explaining the First Intellect&#8217;s dual capacity for form and multiplicity, argues for a distinction between the concepts of multiplicity (<I>kathrah</I>)<I> </I>and diversity (<I>tafawut</I>).<I> </I>Extending the analogy of the pen, which contains all the subsequent forms of expression in writing - letters, words and names - before they appear in this differentiated form, he tries to argue that they are all one within the pen. Also, this singularity does not resemble any of the expressed forms as they appear subsequently in written form. Thus, each letter, prior to its manifestation, cannot be distinguished from the rest of the letters &#8220;preexisting&#8221; inside the pen. More interestingly, as Mohamed Alibhai shows in his analysis of Sijistanj&#8217;s epistemology, he makes the role of the Intellect analogous to that of the <I>seed </I>out of which the cosmos, in its spiritual as well as material form, develops. This metaphor, drawn from biology, suggests a process where the Intellect is manifested in the natural domain and participates in time. Such a view of creation seems to imply that the process of generation and development involves the Intellect&#8217;s participation as a &#8220;vital&#8221; principle in the cosmos progressively manifesting itself in both material and spiritual forms. The process by which this generation takes place is called <I>inbi&#8216;ath</I>.<I> </I>Al-Kirmani, for example, employs two similes to illustrate this process, one from the natural order, one relating to human relations: the reflection of the sun in a mirror, and the blush on the cheek of the lover at the sight of the beloved. <I>Inbi&#8216;ath, </I>manifestation, thus is contrasted with <EM>fayd</EM>,<EM> </EM>or emanation. The former, like the image of the sun in a mirror or a pool of water, is mere representation; it is from something and as figure can permit one to retrace it to the original. Such symbolism is particularly suited to evoking the sense of religiosity so central to the Islamic affirmation of distinction between God and creation. The rest of the intellects are manifested, one from the other, leading to the creation of the spheres, stars, and the physical world, including human beings.</P>
+<P>In<B> </B>sum, the process of creation can be said to take place at several levels. <I>Ibda&#8216; </I>represents the initial level, <I>inbi&#8216;ath, </I>the secondary level - one transcends history, the other creates it. The spiritual and material realms are not dichotomous, since in the Isma&#8216;ili formulation matter and spirit are united under a higher genus. Though they require different linguistic and rational categories for definition, they represent elements of a whole, and a true understanding of God must also take account of His creation. Such a synthesis is crucial to how the human intellect eventually relates to creation and how it ultimately becomes the instrument for penetrating through history the mystery of the unknowable God implied in the formulation of <I>tawhid</I>.<I></I></P>
+<P>When al-Muayyad fi-l-din al-Shirazi (d. 1077) interprets the Qur&#8217;anic verse &#8220;God created the heavens and earth in six days&#8221; (7:54),<SUP><A href="#7">7</A></SUP>he is concerned to show that the &#8220;days&#8221; stand figuratively for the six major cycles of Prophecy, each of which represents a journey to God. Their existence in time is not a function of priority or primacy; they merely succeed each other, like day and night. The believers in each of these cycles of prophecy are recipients of knowledge which assists in understanding <I>tawhid</I>.<I> </I>In<B> </B>Sijistani, there is a conception of two types of Prophecy, spiritual and material. The first relates to the human intellect, the second to human history embodied in the messages communicated through the various prophets. These messengers come to confirm that which the human intellect already knows, and human beings appropriately, by the acceptance of the message, corroborate the validity of each historical messenger. The actual intellect thus corroborates that which the potential intellect brings to it.</P>
+<P>At a more philosophical level, for al-Kirmani an understanding of <I>tawhid </I>requires the believers to recognise that they must in some way &#8220;deconstruct&#8221; the First Intellect, divesting it of divinity. <I>Ibda </I>and then <I>inbi&#8216;ath </I>reflect the &#8220;descending&#8221; arc of a circle, where God&#8217;s command creates the First Intellect, which is then manifested through successive existents down to the human intellect. The action of the believers can be seen to be the ascending arc, where each unit leading up to the First Intellect is divested of divinity until the process is completed on reaching the One itself. It is in this particular context that he cites a tradition of the Prophet Muhammad: &#8220;The believer is the <I>muwahhid </I>[literally, maker of the One] and God is <I>muwahhid&#8221;- </I>the believer, because he or she divests First Intellect of divinity, and God, because He originated the First Intellect as the symbol of the One. It is possible for the human intellect to comprehend this because God provides assistance to the human intellect through His &#8220;dual&#8221; messengers, making accessible the tools formalised in religious language and ritual, as well as those that reflect an intellectual and spiritual capacity for knowing.</P>
+<P>This paper began with an emphasis on the symbolic mode of expression as a crucial means of apprehending God&#8217;s word and creation. It is perhaps appropriate that it conclude with a narrative from the Qur&#8217;an and it&#8217;s hermeneutic in Isma&#8216;ili writings.</P>
+<P>The Qur&#8217;anic account of Adam, his creation, fall and retrieval constitute for Ismaili thought what Henry Corbin has called &#8220;the drama in heaven.&#8221; In the Qur&#8217;an , Adam is taught &#8220;all the names&#8221; (Qur&#8217;an 2:31) by God and subsists in the heavenly state until the act of disobedience which causes him to be expelled to earth. The <I>ta&#8217;wil </I>of this story renders Adam as the <I>homo spiritualis</I>;<I> </I>the knowledge - &#8220;names&#8221; - endowed to him is the cognisance of the Primary and Secondary Intellects. His heavenly state is the result of the bliss engendered by his true worship and adoration, a mark of his awareness of the true meaning of <I>tawhid </I>mediated through the two Intellects above him. The fall injects the element of rupture into this primordial world, because Adam&#8217;s mistake is the failure to be constant in his recognition of the eternal, ontological anteriority of the Intellects that precede him. The refusal to recognise their status is also an act of violation of the proper testimony of <I>tawhid. </I>The transgression results in a regression. In order for him to retrieve his former status, he must pass back through the stages of his &#8220;fall&#8221; to recover &#8220;paradise.&#8221; This return becomes the human effort to journey to <I>tawhid </I>by learning to divest successively, at each level, elements that might mistakenly be attributed to the principle above. It is by returning to the beginning that Adam, in the sense that he symbolises all of humankind, recovers his original status. The cosmos becomes the instrument of the purification and the &#8220;theatre&#8221; in which the struggle must be played out. Corbin points out that the sense of nostalgia and repentance felt by the soul become the energising elements representing both the return to a paradisiacal past as well as a &#8220;conversion <I>toward </I>it.&#8221;<SUP><A href="#8">8</A></SUP> Time, the dimension of creation that was engendered in the unfolding of the cosmos, becomes cyclical and is the archetype of its original form in the primordial world into which Adam was first placed.</P>
+<P>The almost poetic language of this hermeneutical analysis is somewhat removed from the tone of the earlier writings of Sijistani and Kirmani, and it exemplifies the central role of metaphoric process in discovering and opening up new possibilities for reformulating scriptural meanings. Quoting Nasir al din Tusi (d. 1274), who wrote during the Alamut period of Isma&#8216;ili history, Corbin suggests</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>that to come into this world should not be confused with corporeal presence in the world of existence; it is above all a mode of understanding this existence. To come into this world ... can have no significance other than to convert its metaphoric reality <I>(majaz) </I>into its True Reality(<I><A href="javascript:void(LaunchGlossary('GlossaryItem1a98.html?type=glossary&amp;id=255'))">haqiqah</A></I>).<SUP><A href="#9">9</A></SUP></P></BLOCKQUOTE>
+<P><I></I></P>
+<P><I></I></P>
+<P><B>Notes</B></P>
+<P><A name=1>1</A>. Many lsma&#8216;ili writings of the Fatimid period have yet to be edited, let alone studied in the context of modern scholarship. But recent studies have begun to make more of them available to us. For al-Sijistani and al-Kirmani, I have drawn primarily from two recent studies: Mohamed Alibhai, <I>Abu Yaqub</I> <I>al-Sijistani and &#8220;Kitab Sullam Al-Najat&#8221;: A Study in Islamic Neoplatonism</I> (Ph.D. diss., Harvard University, 1983); and F. M. Hunzai, <I>The Concept of</I> <I>Tawhid in the Thought </I><I>of Hamid al-din al-Kirmani </I>(Ph.D. diss., McGill University, 1986). Another thesis - Paul Walker, <I>Abu Yaqub al-Sijistani and the Development of Ismaili Neoplatonism </I>(Ph.D. diss., University of Chicago, 1974) - as well as several articles by the author, based on the thesis, have also proved helpful. A comprehensive survey of Isma&#8216;ili literature will be found in I. K. Poonawala, <I>Bibliograpby of Ismaili Literature </I>(Malibu: Urdena Publishers, 1977). For Isma&#8216;ilism, see W. Madelung, &#8220;Ismailiyyah,&#8221; <I>Encyclopaedia</I> <I>of Religion, </I>Vol. 7; Azim Nanji, &#8220;Ismailism,&#8221; in <I>Islamic Spirituality: Foundations,</I> ed. S. H. Nasr (New York: Crossroads Publishing Co., 1987); and S. H. Nasr, ed. <I>Ismaili Contributions to Islamic Culture </I>(Tehran: 1977).</P>
+<P><A name=2>2</A>. I would like to thank Professor Seyyed Hossein Nasr, who responded formally to the paper at the symposium, for his helpful comments and for elaborating the overall Muslim intellectual context in which Isma&#8216;ili thought can be set, as well as its subsequent influence on Muslim writers and thinkers.</P>
+<P><A name=3>3</A>. Quoted by Eugene Vance, &#8220;Pas de trois: Narrative, Hermeneutic and Stricture in Medieval Poetics,&#8221; in <I>Interpretation of Narrative, </I>ed. M. J. Valdes and Owen Miller (Toronto: University of Toronto Press, 1978), p. 122.</P>
+<P><A name=4>4</A>. Professor Nasr, commenting on the notion of <I>ta&#8217;wil</I>,<I> </I>suggested a definition that he attributed to the late Henry Corbin - &#8220;phenomenology.&#8221; My own sense of &#8220;metaphoric process&#8221; as a more comprehensive way of understanding the wider connotation of <I>ta&#8217;wil </I>is to see it at one level as suggesting a mode of reading the scriptural text and deciphering its verbal meaning, and also as a tool for disclosing an ultimate meaning which in the view of Isma&#8216;ili writers represents &#8220;truth&#8217;&#8221; (<I>haqq</I>).<I> </I>There is thus one text, but it has two aspects: <I>zahir </I>and <I>batin, </I>a referential aspect and a fundamental one. In this connection, see Northrop Frye, <I>The Great Code: Bible and Literature </I>(New York: Harcourt Brace Jovanovich, 1982), particularly chap. 3; and Mary Gerhart and Allan Russell, <I>Metaphoric Process: The Creation of Scientific and Religious</I> <I>Understanding </I>(Fort Worth: Texas Christian University Press, 1984), which draws from the work of Paul Ricoeur.</P>
+<P><A name=5>5</A>. David Burrell, <I>Knowing the Unknowable God: Ibn Sina, Maimonides, Aquinas </I>(Notre Dame, Ind.: University of Notre Dame Press, 1986) p. 2.</P>
+<P><I></I></P>
+<P><A name=6>6</A>. Henry Corbin, <I>Nasir-e-Khosraw: Kitab-e-jami&#8216; al-Hikmatain </I>(Paris: Adrien Maisonneuve, 1983), &#8220;Etude Prelirninaire,&#8221; p. 45.</P>
+<P><A name=7>7</A>. For a further discussion, see Azim Nanji, &#8220;Toward a Hermeneutic of Qur&#8217;anic and other Narratives in Ismaili Thought,&#8221; in <I>Approaches to Islam</I> <I>in Religious Studies, </I>ed. R. C. Martin (Tucson: University of Arizona Press, 1985), pp. 167-68.</P>
+<P><A name=8>8</A>. Henry Corbin, <I>Cyclical Time and Ismaili Gnosis </I>(London: Kegan Paul International, 1983), p. 42.</P>
+<P><A name=9>9</A>. &#8212; &#8212;, p. 57.</P>
+<DIV><BR clear=all>
+<DIV id=edn1>&nbsp;</DIV></DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Transcendence and Distinction: Metaphoric Process in Isma&#8216;ili Muslim Thought</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 21 Aug 2018 12:49:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 17/06/2011&nbsp;17:41&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109742 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:11:17 GMT -->
+</HTML>

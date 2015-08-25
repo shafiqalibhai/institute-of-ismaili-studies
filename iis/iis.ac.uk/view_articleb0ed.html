@@ -1,0 +1,528 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112206 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:48:56 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 112206;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "20";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations" height="115" width="778" class="banner" alt="L'Institut des Etudes Ismaili" src="SiteAssets/header/News%20%26%20Events.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only78cc.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D112206">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article0b6a.html?ContentID=112205">English<li><A href="view_articleb70d.html?ContentID=112207">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article251d.html?ContentID=112208">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_article7123.html?ContentID=112209">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_articlee3a1.html?type=cont.currentlang&amp;id=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A href="view_article04d0.html?type=cont.currentlang&amp;id=104873&amp;l=fr">Evénements futurs</A></p><p><A href="view_article67fc.html?type=cont.currentlang&amp;id=104498&amp;l=fr">La Mis à jour de IIS</A></p><p><A href="home.html?type=2&amp;t=midlist&amp;g=date&amp;l=fr">2013 News Archive</A></p><p><A href="view_sorted_articles0e23.html?type=cat&amp;id=203&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2012</A></p><p><A href="view_sorted_articles021c.html?type=cat&amp;id=196&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2011</A></p><p><A href="view_sorted_articlesdef3.html?type=cat&amp;id=173&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2010</A></p><p><A href="view_sorted_articlesd424.html?type=cat&amp;id=147&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2009</A></p><p><A href="view_sorted_articles91e3.html?type=cat&amp;id=137&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2008</A></p><p><A href="view_sorted_articles9d1c.html?type=cat&amp;id=122&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2007 </A></p><p><A href="view_sorted_articlesad04.html?type=cat&amp;id=118&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2006</A></p><p><A href="view_sorted_articles1e8f.html?type=cat&amp;id=114&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2005</A></p><p><A href="view_sorted_articles94b4.html?type=cat&amp;id=44&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2004</A></p><p><A href="view_sorted_articles37a4.html?type=cat&amp;id=35&amp;t=short&amp;g=date&amp;l=fr">Archive d'actualités 2003</A></p><p><A href="view_sorted_articles1664.html?type=cat&amp;id=36&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2002</A></p><p><A href="view_sorted_articlese5eb.html?type=cat&amp;id=37&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2001</A></p><p><A href="view_sorted_articles85aa.html?type=cat&amp;id=38&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2000</A></p><p><A href="view_sorted_articles7e59.html?type=cat&amp;id=39&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 1999</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Actualites</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table style="WIDTH: 445px; HEIGHT: 19px" border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><strong>En Souvenir de: Oleg Grabar (1929-2011)</strong><br/>Janvier 2011<div><br/><IMG border="0" onError="ImageLoadFailed()" src="WebAssets/medium/News%20and%20Events/Oleg%20Grabar%20%c2%a9%202011%20Cliff%20Moore-2011118154949_7055-2.jpg" align="right" alt="" style="padding: 8px;" xmlns="">Le <U><A href="view_persona13e.html?type=auth&amp;id=92">Prof Oleg Grabar</A></U>, un des plus &#233;minents historiens en Art Islamique et &#233;rudits de notre temps, est d&#233;c&#233;d&#233; &#224; Princeton, le 8 janvier 2011, &#224; l'&#226;ge de 81 ans. Son esprit critique et ses efforts inlassables pour contester les perspectives pr&#233;con&#231;ues de la pens&#233;e occidentale sur l'art et l&#8217;architecture dans le monde musulman manqueront &#224; de nombreuses personnes de l'Institut et au-del&#224;.<br/></div></td></tr><tr><td style="VERTICAL-ALIGN: text-bottom"><div><br/>Au cours de ces six derni&#232;res d&#233;cennies, ses apports , ses enseignements novateurs et prolifiques ont touch&#233; la vie de nombreuses personnes, tout en &#233;tant une force motrice qui a permis d&#8217;augmenter le nombre d'historiens, sp&#233;cialis&#233;s en art islamique, plus particuli&#232;rement aux &#201;tats-Unis. Le Prof. <U><A href="../www.iis.ac.uk/view_persone2be.html?type=auth&amp;id=19">Azim Nanji</A></U>, ancien directeur d'IIS et actuel Directeur Principal Adjoint du Programme Abbasi en Etudes Islamiques &#224; l'Universit&#233; de Stanford, a d&#233;clar&#233; que: &#171; en plus de ses &#233;crits, dont beaucoup sont des classiques en ce domaine, son h&#233;ritage le plus durable sera la formation et le d&#233;veloppement d'une g&#233;n&#233;ration de chercheurs. Chacun d'eux, en tant qu&#8217;arch&#233;ologue, architecte, directeur de mus&#233;e ou cr&#233;ateur de nouveaux programmes universitaires en Arts Musulmans, a b&#226;ti sur son enseignement et sur son &#233;rudition pour faire de ce domaine ce qu'il est devenu aujourd'hui ". 
+<P>&nbsp;</P>
+<P>Tout au long de sa vie, il a fait partie d'une myriade d'exp&#233;ditions arch&#233;ologiques et de voyages d&#8217;&#233;tude, &#224; travers le monde islamique en Afrique, au Moyen-Orient et en Asie musulmane , se documentant en continu et concevant de nouvelles m&#233;thodes pour &#233;clairer les aspects de l'art, de l'histoire et de la culture des peuples musulmans. Selon le Prof. Nanji, c'est gr&#226;ce &#224; Grabar que, &#171; les Arts et l'Architecture du Monde Musulman sont maintenant &#233;tudi&#233;s plus largement dans le cadre plus large des civilisations humaines et sont devenus une lentille qui nous permet de voir les cultures musulmanes autrement qu&#8217;&#224; travers une d&#233;finition &#233;troite, centr&#233;e sur les domaines th&#233;ologiques et textuels &#187;.</P>
+<P>Le Prof. Grabar a &#233;t&#233; le premier <U><A onclick="return fnExtLinkWarning();" href="http://agakhan.fas.harvard.edu/icb/icb.do?keyword=k69205&amp;tabgroupid=icb.tabgroup105011" target=_blank>Professeur d'Architecture et d'Art islamique Aga Khan</A>,</U> lorsque cette chaire a &#233;t&#233; &#233;tablie &#224; Harvard en 1980. En 1990, il prend sa retraite de l'Universit&#233; Harvard pour assumer un poste de Professeur Em&#233;rite &#224; l'Ecole des Etudes Historiques &#224; l'<A onclick="return fnExtLinkWarning();" href="http://www.ias.edu/" target=_blank>Institut des Etudes Avanc&#233;es</A>. En novembre 2010, il a re&#231;u le <U><A onclick="return fnExtLinkWarning();" href="http://www.akdn.org/akaa_chairman.asp" target=_blank>Prix du Pr&#233;sident du Prix Aga Khan d'Architecture</A></U>, "en reconnaissance &#224; sa contribution pr&#233;cieuse &#224; l'&#233;tude et &#224; l'&#233;volution architecturale du monde islamique, du d&#233;but de la p&#233;riode islamique jusqu'&#224; nos jours. Par le biais de son enseignement, de ses &#233;crits et de ses conf&#233;rences, Oleg Grabar a consid&#233;rablement &#233;largi et enrichi notre compr&#233;hension sur la production architecturale du monde islamique, en mettant l'accent sur sa diversit&#233; g&#233;ographique et chronologique, ainsi que sur son positionnement dans un contexte politique, social, culturel et &#233;conomique plus large &#187;.<EM></EM></P>
+<P>Son implication remonte &#224; 1990, quand il a particip&#233; &#224; la conf&#233;rence <A href="view_articleb8ea.html?type=cont.currentlang&amp;id=103578"><U>&#171; L'Islam dans le Monde Contemporain</U> &#187;</A>qui s&#8217;est tenue au Coll&#232;ge de Sainte-Catherine, &#224; Oxford et a prononc&#233; une conf&#233;rence sur les arts dans l'Islam. En 2003, Oleg Grabar a d&#233;livr&#233; la Conf&#233;rence d'ouverture lors du colloque international, <A href="view_article6ec6.html?type=cont.currentlang&amp;id=103623"><U>"Parole de Dieu, l'Art de l'homme : le Qur&#8217;an et ses Expressions cr&#233;atives'</U>&#8217; </A>qui a comm&#233;mor&#233; le 25e anniversaire de la Fondation d'IIS. Dans sa conf&#233;rence m&#233;morable, il a soulev&#233; plusieurs questions th&#233;oriques &#224; l'aide d'exemples pris dans l'histoire musulmane, afin d'examiner comment les r&#233;v&#233;lations plus g&#233;n&#233;ralement et le Qur&#8217;an en particulier, ont interagi avec les arts en donnant une expression visuelle au mot sacr&#233;. Plus r&#233;cemment, en mars 2009, le Prof. Grabar a prononc&#233; une conf&#233;rence lors de la Conf&#233;rence coparrain&#233;e par l&#8217;IIS et le British Museum, <U><A href="view_article355b.html?type=cont.currentlang&amp;id=110162">Les Gens de la Maison du Proph&#232;te : Art, Architecture et Shi'ism dans le Monde Islamique</A></U>. Dans son article intitul&#233;: &#171; Pouvons-nous identifier les caract&#233;ristiques Shi&#8217;i en Art et en Architecture? &#187; il a expos&#233; qu'il y avait une distinction entre le fait d&#8217;&#233;tiqueter un objet comme purement Shi'i en raison de certaines inscriptions et d&#8217;attribuer aux Shi'i la provenance de formulaires et de sujets, en d&#233;clarant que nous devons examiner le r&#233;cepteur, plut&#244;t que le cr&#233;ateur d'un objet afin de le comprendre.</P>
+<P>Le Prof. Grabar a laiss&#233; derri&#232;re lui une &#233;pouse de 59 ans, le Dr Terry Grabar, un ancien professeur d'anglais, son fils Nicolas, sa belle-fille Jennifer Sage et trois petits-enfants Henry, Margaret et Olivia. IIS pr&#233;sente ses condol&#233;ances &#224; toute sa famille et rend hommage &#224; ce remarquable &#233;rudit qui a consacr&#233; une grande partie de sa vie &#224; l'&#233;tude de l'art et l'architecture des soci&#233;t&#233;s musulmanes. Il restera pr&#233;sent, durant les ann&#233;es &#224; venir, dans le souvenir de ses nombreux coll&#232;gues, amis et &#233;tudiants de l'Institut des Etudes Ismaili.</P>
+<DIV>Image courtesy of Cliff Moore</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>Related Pages on the IIS Website</STRONG></DIV>
+<UL>
+<LI>Articles Academiques: <A href="view_article610b.html?type=cont.currentlang&amp;id=111299">Art Fatimide, Pr&#233;curseurs ou Apog&#233;e</A> </LI></UL></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - En Souvenir de: Oleg Grabar (1929-2011)</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 18 Jan 2021 14:15:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 27/01/2011&nbsp;17:01&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112206 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:48:56 GMT -->
+</HTML>

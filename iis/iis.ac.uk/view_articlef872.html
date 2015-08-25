@@ -1,0 +1,720 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109097 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:09:54 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 109097;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="779" class="banner" alt="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" src="WebAssets/Site_Images/header/Research%20And%20Publications.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Research%20And%20Publications.jpg','WebAssets/Site_Images/header/ResearchandPublication_2.jpg');
+				var descriptions = new Array('An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat','The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only6814.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D109097">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article338d.html?ContentID=109099">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article5636.html?ContentID=109101">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>The Ismailis and their Role in the History of Medieval Syria and the Near East</strong><br/><strong><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim       Nanji</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article which was originally published in <EM>Syria Medieval Citadels Between East and West</EM>, ed. Stefano Bianca (Geneva: The Aga Khan Trust for Culture, 2007), pp. 37-50 </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><P align=left>Whether overtly or covertly, the Ismailis have played an important role in the cultural history of Islam, particularly in Syria and Egypt, where they constituted the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryIteme8b3.html?type=glossary&amp;id=298'))">caliphate</A>, which was to last for around 200 years. After the fall of the Fatimids in 1171&nbsp;CE and during the subsequent diaspora, they became famous for their strongholds in Iran and Syria, from where they intervened in the various conflicts between Christian powers and the Muslim kingdoms in the Holy Land.</P>
+<P align=left>In religious terms, the Ismaili community is part of the larger diversity of the worldwide Muslim <I><U><A href="javascript:void(LaunchGlossary('GlossaryItembb3e.html?type=glossary&amp;id=56'))">umma</A></U></I>. Over the passage of time, Muslims constituted a variety of groups, which exemplified diverse ways of understanding the primal message of Islam and different approaches to how that commonly held message could be reflected in the practical life and organisation of the community. The Ismailis are one such group. They are part of the <U><A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;a</A></U> branch of Islam, the <U><A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni</A></U> being the other major branch, and have always constituted a minority, historically and in the contemporary world. At present, the Ismailis live in over twenty-five countries, in virtually every region of the world. In some of these regions, their history goes back over a thousand years. Syria is one such example where the Ismaili presence can be dated to the 9th century.</P>
+<P align=left>Among the Shi&#8216;a, there were those who remained faithful to the line of <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imams</A> who descended from Imam Ja&#8216;far al-Sadiq (d. 765 CE) through his son, Imam Ismail. Hence, they came to be known as Isma&#8216;ilis. There were other Shi&#8216;i groups who gave their allegiance to different lines of Imams. The largest group among such other Shi&#8216;is are called <A href="javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))">Ithna&#8216;ashari</A>; they believe in a line of twelve Imams, ending in the <A href="javascript:void(LaunchGlossary('GlossaryItem1fe4.html?type=glossary&amp;id=181'))">Mahdi </A>who remains in occultation (<I>ghayba</I>) and would reappear to grant salvation at the end of time. </P></div><div> </div><div><DIV align=left><B><IMG border=0 alt="" align=left src="SiteAssets/pdf/pdf_icon.gif" width=25 height=25><A href="SiteAssets/pdf/The%20Ismailis%20and%20their%20Role%20in%20the%20History%20of%20Medieval%20Syria%20and%20the%20Near%20East-logo%201.pdf">Download PDF version of article (55 KB)</A></B></DIV>
+<DIV align=left><B></B></DIV>
+<DIV align=left><B></B></DIV>
+<DIV align=left><B></B></DIV>
+<DIV align=left><B>Key words: </B></DIV>
+<P align=left><B></B></P>
+<P align=left>Ismailis, Syria, <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimids</A>,<I> </I><A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;a</A>, <A href="javascript:void(LaunchGlossary('GlossaryItemc5f2.html?type=glossary&amp;id=112'))">Salamiyya</A>,<I> <A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da'wa</A></I>,<I> <A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))">da&#8216;i</A></I>, Cairo, <A href="javascript:void(LaunchGlossary('GlossaryItem0eef.html?type=glossary&amp;id=318'))">al-Azhar</A>, <A href="javascript:void(LaunchGlossary('GlossaryItem16dc.html?type=glossary&amp;id=289'))">Dar al-&#8216;Ilm</A>, <A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A>, <A href="javascript:void(LaunchGlossary('GlossaryItem2b5c.html?type=glossary&amp;id=110'))">Saljuq</A>, Crusaders, <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari</A>, Aleppo, Damascus, <A href="javascript:void(LaunchGlossary('GlossaryItemb3ea.html?type=glossary&amp;id=219'))">Jabal Bahra</A>, Rashid al-Din Sinan, Kahf, <A href="javascript:void(LaunchGlossary('GlossaryItem1a27.html?type=glossary&amp;id=366'))">Mamluks</A>, Baybars, Mongols, <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasid</A>, Hospitallers, Salah al-Din, holy war.<B></B></P>
+<P align=left><B>Table of Contents:</B></P>
+<P align=left><B></B></P>
+<UL type=disc>
+<LI>
+<DIV><A href="#wide spread">A Wide-Spread Network with Shifting Power Bases </A></DIV>
+<LI>
+<DIV><A href="#medieval syria">The Ismailis in Medieval Syria </A></DIV>
+<LI>
+<DIV><A href="#Ismaili Strongholds in Syria">The Ismaili Strongholds in Syria and Iran </A></DIV>
+<LI>
+<DIV><A href="#crusaders and mongol invasions">Between Crusaders and Mongol Invasions</A> </DIV>
+<LI>
+<DIV><A href="#epilogue">Epilogue: The Ismaili Community under the Mamluks</A></DIV></LI></UL>
+<P>&nbsp;</P>
+<P align=left><B><A name="wide spread">A Wide-Spread Network with Shifting Power Bases</A></B></P>
+<P align=left>The difficult and divisive political climate of the time caused the early Ismaili Imams, fearing persecution, to maintain anonymity. According to Ismaili historical sources, they lived during this time in <A href="javascript:void(LaunchGlossary('GlossaryItemc5f2.html?type=glossary&amp;id=112'))">Salamiyya</A> in central Syria. It was from Salamiyya that the Imams secretly guided the activities of their followers from North Africa to Khurasan and Central Asia. During this early period, dating to the middle of the 9th century, the community came to be organised through the institution known as the <I><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da&#8216;wa</A></I>. Although the term was not confined to the Ismailis, their skilful organisation and effective communications gave it a very unique character at the time. The individuals representing the <I>da&#8216;wa</I> were known to lead exemplary ethical lives and possessed a keen knowledge of the highest intellectual sciences of the day. Known as <A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))"><I><U>da&#8216;i</U></I><U>s</U></A>, they also combined knowledge of diplomacy and public relations. Their role was to summon people to the cause of Islam and of the Ismaili Imams and to promote the social, moral and spiritual welfare of the community and the regions in which they lived.</P>
+<P align=left>The combined efforts of members of the <I>da&#8216;wa </I>created strong support for the Imams in North Africa, Yemen and Syria. It was however from Syria that the Imams guided the activities of their followers in these different regions. Even after the Ismaili Imams began to rule as Fatimid <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliphs</A> in Cairo, Syria continued to be an important region for their <I>da&#8216;wa</I> activities, also comprising one of the dominions of the Fatimid state. Syrian Ismailis have therefore constituted an important part of the Ismaili community throughout its history. </P>
+<P align=left>The history of Egypt itself, where the Fatimid rulers were in power from 969 CE to 1171 CE, experienced a long period of prosperity, during that period. The Fatimids established strategic control over Mediterranean and Red Sea trade routes with Cairo serving as an entrep&#244;t. They generated a flourishing era of commercial activity which included Syria. Under Fatimid rule, Egypt participated vigorously in international trade with lands such as India and the Far East, North Africa, Nubia, Europe, Byzantium (Constantinople in particular), Sicily and other islands of the Mediterranean. Agriculture led to self-sufficiency, and industry was promoted. Various religious communities, Jewish, Christian and Muslim, lived together in a spirit of mutual respect and enjoyed prosperity under the relative stability of the time.</P>
+<P align=left>It was, however, in the sphere of intellectual life that Fatimid achievements seem most brilliant and outstanding. The Fatimid rulers were lavish patrons of learning, and their generous encouragement of scientific research and cultural activity caused Cairo, their newly founded capital, to exert a degree of magnetic attraction, such as to draw renowned mathematicians, physicians and astronomers to the city from all over the Muslim world. Within the royal court, noted poets such as Ibn Hani and Tamim b. al-Mu&#8216;izz, and historians and geographers such as al-Musabbihi and al-Muhallabi, flourished under the patronage of the Fatimids. The universities of <A href="javascript:void(LaunchGlossary('GlossaryItem0eef.html?type=glossary&amp;id=318'))">al-Azhar</A> and <A href="javascript:void(LaunchGlossary('GlossaryItem16dc.html?type=glossary&amp;id=289'))">Dar al-&#8216;Ilm</A> provided a monumental and enduring testimony to the Fatimids&#8217; love of learning. Figures of outstanding ability, such as Abu Ya&#8216;qub al-Sijistani, Qadi al-Nu&#8216;man, Hamid al-Din al-Kirmani, al-Mu&#8216;ayyad fi&#8217;l-Din al-Shirazi and Nasir-i Khusraw, made crucial contributions to the articulation of Ismaili thought which was characterised by a remarkably complex upsurge of intellectual activity which M. Canard in the <I>Encyclopaedia of Islam</I> has described as analogous to that which took place in Europe in the 18th century. The cultural impact of the Fatimid state was not confined to the Muslim world. At the height of its power, while the Fatimid fleet and commerce dominated the eastern Mediterranean, the influence of the universities in Cairo spread into Europe, with Fatimid writers contributing significantly to the development in the West of sciences such as optics, medicine and astronomy. </P>
+<P align=left>When the Persian poet and thinker Nasir-i Khusraw visited Cairo in 1047 CE, he was amazed by the high level of prosperity and the security enjoyed by its citizens. &#8220;I saw such personal wealth there,&#8221; he records in his <I>Safarnama</I> (Book of Travels), <SUP><A href="#1">1</A> </SUP>&#8220;that were I to describe it, the people of Persia would never believe it.&#8221; He goes on to report that &#8220;the security and welfare of the people have reached a point that drapers, money changers and jewellers do not even lock their shops - they just lower a net across the front, and no one tampers with anything.&#8221;</P>
+<P align=left>The Fatimids attached great value and importance to education and learning. They established one of the world&#8217;s earliest universities. Founded in 970 CE as the mosque of al-Azhar (meaning &#8216;House of Illumination&#8217;), it was later transformed into a university with its own curriculum, lecture halls and residences for teachers and students, funded generously by the Imams. Al-Azhar became the foremost Fatimid institution of higher learning, specialising in various religious sciences such as Qur&#8217;anic studies, theology and law. </P>
+<P align=left>Another important academic institution of the Fatimids was the Dar al-&#8216;Ilm (&#8216;House of Knowledge&#8217;), also known as <A href="javascript:void(LaunchGlossary('GlossaryItem6232.html?type=glossary&amp;id=290'))">Dar al-Hikmah </A>(&#8216;House of Wisdom&#8217;). Founded by the Fatimid <U><A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A></U>-Imam al-Hakim in 1005 CE, this academy was accommodated with its own library in a section of the Fatimid palace. It is likely that Hasan-i Sabbah himself, the future founder of the Ismaili State in Iran, received some of his advanced education at this academy when he visited Cairo in 1078 CE. </P>
+<P align=left>It was during the <A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A> period in <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari</A> Ismaili history that Syrian Ismailis acquired major prominence and became well-known in Europe. In the final decades of the 11th century a group of Ismailis under the leadership of Hasan-i Sabbah (d. 1124 CE) established a state in Iran. They had given allegiance to Imam Nizar, the eldest son and designated as Imam by the last effective Fatimid Caliph-Imam al-Mustansir billah, who died in 1094 CE. As part of a policy of consolidating relationships with other Ismailis, Hasan-i Sabbah sent emissaries to Syria to assist the community in its organisation. Syria was politically fragmented. The first Turkoman bands had entered Syria as early as 1055 CE, and the country was subsequently invaded by the <U><A href="javascript:void(LaunchGlossary('GlossaryItem2b5c.html?type=glossary&amp;id=110'))">Saljuq</A></U> armies. By 1078 CE, the whole of Syria, apart from a coastal strip retained by the Fatimids, was under Saljuq rule or suzerainty; Tutush, the brother of the Great Saljuq Sultan Malikshah, had come to be recognised as the Saljuq overlord of Syria. As in Persia, Saljuq rule in Syria had caused many problems and was resented by the Syrians who were divided amongst themselves and unable to expel the invaders. In time, factional fights among the Saljuqs caused widespread disruption and Syria was broken into a number of smaller states. It became the scene of rivalry among different Saljuq princes and amirs, each one claiming a part of the country, while various minor local dynasties were at the same time attempting to assert their independence. </P>
+<P align=left>The political fragmentation of Syria became more pronounced by the appearance of the Crusaders in 1097 CE. Starting from Antioch, the Crusaders advanced swiftly along the Syrian coast and settled down in the conquered territories, establishing four Latin states based in Edessa, Antioch, Tripoli and Jerusalem. The Frankish encroachment of Syria naturally added to the apprehensions of the local population, complicating the Saljuq quarrels. In these troubled times, the most important Saljuq rulers of Syria were Tutush&#8217;s sons Ridwan (1095 CE-1113 CE) and Duqaq (1095 CE-1104 CE), who ruled respectively from Aleppo and Damascus. </P>
+<P align=left>The Ismailis therefore had to develop a strategy for survival and sustainability in these troubled regions. An evident solution to this problem was to create well-fortified centres where the community would find protection and freedom to organise and practise their faith. Over time, they were successful in obtaining a number of fortresses in the mountain area known then as the <A href="javascript:void(LaunchGlossary('GlossaryItemb3ea.html?type=glossary&amp;id=219'))">Jabal Bahra</A>, today called the Jabal Ansariyya after its Nusayri population. </P>
+<P align=left><B><A name="medieval syria">The Ismailis in Medieval Syria</A></B></P>
+<P align=left>The first Nizari leader in Syria, mentioned by the Damascene historian Ibn al-Qalanisi and later sources, was known as al-Hakim al-Munajjim, the physician astrologer. Probably accompanied by a number of supporters from Alamut, he appeared in Aleppo, and, by the very beginning of the 12th century CE, managed to find a protector in the city&#8217;s Saljuq ruler, Ridwan. Aleppo, in northern Syria, proved to be a hospitable environment. It had an important Shi&#8216;i population and an existing link with Ismailis. They were thus able, under the protection of the ruler, to establish themselves in Aleppo from where they could build linkages with other Ismaili communities. </P>
+<P align=left>In due course, the Ismailis tried to extend their influence, with the support of the ruler of Aleppo, to adjoining areas and soon came in conflict with the invading Crusaders who had designs of their own for acquiring certain fortifications in the region. In the ensuing conflict, several Ismaili leaders and others were killed. This was probably the first encounter between the Nizaris and the Crusaders in Syria. In 1110 CE, the Ismailis also lost Kafarlatha to the Crusaders, a lesser locality in the Jabal al-Summaq, which had come into their possession sometime earlier.</P>
+<P align=left>Following the death of Ridwan in 1113 CE, the Ismaili fortunes began to be reversed in Aleppo, since Ridwan&#8217;s young son and successor Alp Arslan adopted a more hostile stance towards them. Many Ismailis were killed in ensuing conflicts. Some two hundred Ismailis of Aleppo were also massacred or imprisoned and their properties were confiscated. Many, however, managed to escape to different areas, some even finding refuge in Frankish territory. While unsuccessful in retaining a base in this region, many positive contacts had been made with the local population who was generally supportive and sympathetic to the Ismaili presence.</P>
+<P align=left>During the second period of their initial efforts to establish themselves, the Syrian Ismailis concentrated their activities in southern Syria. In 1124 CE the new ruler of Aleppo, arrested the local leader of the Ismailis and ordered the expulsion of the Ismailis who sold their properties and departed from the city. The Ismaili centre of activities now shifted to Damascus and other localities nearby. There, the Ismailis supported the local communities against threats from the Crusaders, joining them in defending the major centres. The Turkish <I>atabeg</I> (regent) of Damascus received Bahram, the Ismaili leader, with honour and gave him official protection, further enhancing the position of the community there. At the same time, Bahram found an influential and reliable ally in the ruler&#8217;s vizier, Abu Ali Tahir b. Sad al-Mazdaqani. Bahram requested that the community be given a fortress from which to defend themselves, and in 1126 CE Tughtigin, the ruler, ceded the fortress of Baniyas, on the border with the Latin kingdom of Jerusalem, which was then menaced by a Crusader army. Enjoying the continued support of al-Mazdaqani, Bahram was also given a building in Damascus which he used as local headquarters. Henceforth, Bahram further fortified Baniyas, developing residential facilities for himself and other Ismailis. </P>
+<P align=left>In 1129 CE, the governor of Damascus turned on the community against the Ismailis and a massacre followed. His militia destroyed Ismaili homes and fortifications; those who survived the onslaught were forced to flee. The fortress in Baniyas was surrendered to the Franks, who were simultaneously advancing on Damascus. This ended a turbulent period in the attempts of the Ismailis of Syria to find a base for themselves in a very divided region beset by internal rivalries and external threats.</P>
+<P align=left>The surviving Ismailis concentrated their efforts on acquiring a network of safe strongholds. They directed their attention to the Jabal al-Bahra, a mountainous region between Hama and the coastline southwest of the Jabal al-Summaq, which was inhabited by Nusayris and possessed a number of suitable castles. Few details are known about the Syrian Nizaris and their <I>da&#8216;i</I>s during this period, when they transferred their activities out of the cities, but it seems that they were able to recover swiftly from their setback in Damascus. <I></I></P>
+<P align=left>After reorganising under the leadership of Abu&#8217;l-Fath, they established themselves in the Jabal Bahra, where the Crusaders had failed to gain permanent strongholds. In 1132-33 CE, the Nizaris came into possession of their first fortress in the Jabal Bahra by purchasing Qadmus from the local warlord of Kahf, Sayf al-Mulk b. &#8216;Amrun who, with the assistance of the Nusayris, had recovered the place from the Franks the previous year. From Qadmus, which became one of their major centres and often served as the residence of their leader, the Syrian Ismailis extended their presence in the region. Shortly afterwards, they acquired Kahf and were also able to drive out the Frankish occupants of the fortress of Khariba. </P>
+<P align=left>In 1140-41 CE, the Nizaris were able to control Masyaf, their most important stronghold in Syria. Masyaf, situated about forty kilometres to the west of Hama, subsequently served as headquarters of the Ismaili leadership in Syria. They also captured several other fortresses in the Jabal Bahra, including Khawabi, Rusafa, Maniqa and Qulay&#8217;a, which became collectively designated as the <I><A href="javascript:void(LaunchGlossary('GlossaryItem042c.html?type=glossary&amp;id=128'))">qila&#8216; al-da&#8216;wa</A></I> or the fortresses of the <I>da&#8216;wa</I>. The famous Crusader chronicler William of Tyre, writing a few decades later, puts the number of these castles at ten and the Ismaili population of the region at 60,000.</P>
+<P align=left><B><A name="Ismaili Strongholds in Syria">The Ismaili Strongholds in Syria and Iran</A></B></P>
+<P align=left>Indeed, in less than twenty years after their misfortunes in Damascus, the Syrian Ismailis had succeeded in establishing a network of mountain fortresses and consolidating their position despite the hostility of the local rulers and the threats posed by the Crusaders, who were active in the adjacent areas belonging to the Latin states of Antioch and Tripoli. As in Iran, however, they remained a local power controlling a particular territory and enjoying for some time an independent status. </P>
+<P align=left>Life inside the castle would have been spartan and uncomfortable at the best of times. In winter the temperatures are always icy, with freezing gales blowing down from the snowy peaks surrounding the valley. In spite of the altitude, the summer months are hot and dusty, requiring the greatest vigilance for attacking forces. The castle itself would have been the centre of continuous activity in all seasons. The water channels and cisterns had to be kept clean, the armourers were busy forging new weapons, the carpenters and masons constructing or maintaining mangonels, or repairing and enlarging the defences. The cooks were busy in the kitchens, replenishing the food stores and keeping them in good order. Study, learning and discussion filled the day for many, especially for those who aspired to become <I>da&#8216;i</I>s.</P>
+<P align=left>Our account of life in the castles of Iran and Syria is based on historical data and archaeological evidence. The same pattern is likely to have been replicated in all the great fortresses of the Ismailis, such as Maymundiz, Girdkuh and Qain in Iran and Masyaf and other Syrian castles, too. Time was spent in general maintenance and defensive work. Much of the mythology surrounding the castles and the Ismailis is based largely on the highly unreliable account of the Venetian traveller Marco Polo, which became accepted by many as fact until disproved by modern scholarship.</P>
+<P align=left>Marco Polo recounts during his journey to the court of the Mongol ruler Kublai Khan in the years 1271-1290 CE that while passing through northeast Iran, he heard from local people about the &#8216;Old Man of the Mountain&#8217; and his fanatical band of devotees who lived in a remote valley hidden in the mountains. The &#8216;Old Man&#8217; was said to have built a garden in which there was a palace where young men were seduced by drugs and wine into believing that they were in Paradise as a reward for their acts of assassination. </P>
+<P align=left>The fictional nature of Marco Polo&#8217;s account was long suspected by scholars, and its absurdities have been exposed more recently by various scholarly accounts. The very name &#8216;Old Man of the Mountain&#8217; was never used in the Persian sources for Hasan-i Sabbah, but applied in fact to Rashid al-Din Sinan of Syria. The persistent legend that the Ismaili <A href="javascript:void(LaunchGlossary('GlossaryItem962f.html?type=glossary&amp;id=268'))"><I>fida&#8217;i</I>s </A>were drugged and received a foretaste of Paradise before being sent out on their mission is clearly as absurd as it is fantastical. There is no contemporary Muslim evidence that this was so.</P>
+<P align=left>We know further that when the historian Juwayni inspected Alamut after its surrender to the Mongols in 1256 CE, he was greatly impressed by its library, water-cisterns and storage facilities, but he makes no mention of any delectable secret garden or sumptuous palace inside or outside the castle. It is unfortunate that Juwayni himself, after having examined the original Ismaili documents and finding them full of &#8220;heresy and error&#8221; cast them into the flames. The distortion of Ismaili history was thus often based on sheer invention and fabrication.</P>
+<P align=left>The leadership of the Ismailis in Syria now came to be assumed by their most famous leader Rashid al-Din Sinan. One of the prominent figures in Ismaili history, Sinan b. Salman (or Sulayman) b. Muhammad Abu&#8217;l-Hasan al-Basri, known also as Rashid al-Din, was born into a Shi&#8216;i family in &#8216;Aqr al-Sudan, a village near Basra on the road to Wasit. Sinan was brought up in Basra, where he became a schoolmaster and adopted Ismailism. Subsequently he went to Alamut and studied under the future Imam, Hasan II. During his stay at Alamut, Sinan studied philosophy and in particular the well-known works of the Fatimid and Nizari periods as well as benefiting from the library and other intellectual resources in Alamut. Soon after his accession to power in 1162 CE, Imam Hasan II sent Sinan to Syria. Initially, Sinan remained at Kahf, one of the major Nizari fortresses in the Jabal Bahra, making himself extremely popular with the local Nizaris, until <A href="javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))">Shaykh</A> Abu Muhammad, the head of the Syrian Nizari <I>da&#8216;wa </I>died in the mountains. Soon afterwards, Sinan assumed the leadership of the Syrian <I>da&#8216;wa</I> on the instructions of the Imam. </P>
+<P align=left>Once established, Sinan began to consolidate the position of his community while building relations with neighbouring rulers as well as the Crusaders who constituted, by their presence, a general threat to all. He rebuilt the fortresses of Rusafa and Khawabi, fortified and constructed other strongholds, and captured the fortress of Ullayqa, near the Frankish castle of Marqab held by the Hospitallers. At the same time, while moving among the various Nizari castles, especially Masyaf, Kahf and Qadmus, Sinan rapidly reorganised the Nizari community.</P>
+<P align=left>Externally, Sinan aimed to protect the Ismailis from various potential threats and to balance the various interests in the region. Clearly the Ayyubids under Salah al-Din represented a stronger threat than the Crusaders at this time. Recognising existent realities, Sinan adopted suitable policies in his dealings with the outside world; policies which were revised when needed to reassure the safety and independence of his community. As a result, from early on, Sinan established peaceful relations with the Crusaders, who had been sporadically fighting the Nizaris for several decades over the possession of various strongholds. </P>
+<P align=left>Meanwhile, the Nizaris had acquired a new Frankish enemy in the Hospitallers, who in 1142 CE had received from the lord of Tripoli the celebrated fortress of Crac des Chevaliers (Hisn al-Akrad) at the southern end of the Jabal Bahra. The Nizaris continued to have minor entanglements with the Hospitaller and Templar military orders, which owed their allegiance directly to the Pope and often acted independently. Subsequently, around 1173 CE, Sinan sent an embassy to King Amalric I, seeking a formal rapprochement with the kingdom of Jerusalem. The negotiations were evidently proceeding successfully. But the Templars disapproved of this Nizari embassy, and on their return journey Sinan&#8217;s emissaries were ambushed and killed by a Templar knight. Amalric took punitive measures against the Templars, but as he himself died soon afterwards in 1174 CE, the negotiations between Sinan, known to the Crusaders as the &#8216;Old Man of the Mountain&#8217;, and the Franks of Jerusalem proved fruitless. </P>
+<P align=left>When Sinan assumed power, Nur al-Din, the Zengid ruler of Syria, was preoccupied with his policies against the Crusaders and the later Fatimid caliphs who were recognised as Imams only by the <A href="javascript:void(LaunchGlossary('GlossaryItemeb7e.html?type=glossary&amp;id=157'))"><U>Musta&#8216;li</U> </A>Ismailis. Nevertheless, relations between Sinan and Nur al-Din remained relatively tense, due to the activities of the Ismailis in northern Syria. But Nur al-Din, who finally succeeded through Salah al-Din in overthrowing the Fatimids in 1171 CE, did not attack the Ismailis, though it is reported that he was planning a major expedition against them just before his death. The death of Nur al-Din in 1174 CE, the same year in which Amalric I died, finally gave Salah al-Din his opportunity to act as the champion of the Muslims and the leader of the holy war against the Crusaders. As the strongest of the Muslim rulers in the area, Salah al-Din strove towards incorporating Egypt, Syria and Iraq into his nascent Ayyubid empire. As a result, he targeted the Ismailis of Syria, as well as the rulers of Aleppo and Mawasil. Salah al-Din entered Damascus in 1174 CE and in the following year invaded the Ismaili territory besieging Masyaf. The siege was brief and following mediation by a local governor, Salah al-Din concluded a truce with Sinan and withdrew his forces from the area. Henceforth, hostilities ceased between the two men, who had come to an agreement on peaceful co-existence. </P>
+<P align=left>Rashid al-Din Sinan died in 1193 CE in the castle of Kahf. In the course of some thirty years, Sinan had led the Syrian Nizaris to a position of power and influence. The ablest of their chiefs, he gave the Syrian Nizaris an independent identity; with their own sphere of influence, a network of strongholds and a strong organisation. His shrewd strategies and appropriate alliances with the Zangids, the Crusaders, and Salah al-Din, served to ensure the independence of the Ismailis of Syria in difficult times.</P>
+<P align=left>The inscriptions at Masyaf, Kahf and other strongholds, and from a few Syrian literary sources indicate continuity after Sinan&#8217;s death. The Ismailis were led by several able individuals until 1258 CE, in consultation with the Imams in Alamut. Like the Nizari community in Quhistan, in eastern Persia, the Syrian Nizaris continued during this period to exercise a certain degree of local initiative in dealings with their Muslim and Frankish neighbours. The Syrian Ismailis had, on the whole, maintained peaceful relations with Salah al-Din&#8217;s Ayyubid successors in Syria. But occasional conflict continued in their dealings with the Franks, who still held the Syrian coast. </P>
+<P align=left>There were over 60 castles and forts in the Alamut valley and in Rudbar, about 80 in Khurasan, and some 50 in other parts of Iran. In Syria, the Ismailis held 60 castles of various sizes in the Jabal Bahra between Aleppo and Damascus. Thus in Iran and Syria there were some 250 fortifications, illustrating the extent and organisation of the Ismailis. All the major fortresses were well-built and provided for, with cisterns of water fed by springs or rain water and well-supplied with provisions, stored in huge underground chambers. Their libraries, too, were renowned and the objects of much envy. </P>
+<P align=left>&#8220;There can be no doubt&#8221;, says <U><A href="view_person9add.html?type=auth&amp;id=151">Peter Willey</A></U>, &#8220;about the efficiency of the Ismaili administration. This is reflected most impressively in the immense logistical tasks involved in the construction and maintenance of more then 200 castles scattered over vast distances. The construction of new castles required, first of all, detailed survey work and planning of a high order. The execution of the project must have been carried out by a group of supervisors in charge of quarrying the required stonework, and its transportation to the castle site. Under their command would be teams of masons, builders, water engineers, plasterers and other skilled workers. The huge amounts of stone required for keeping the castles and garrisons in good repair for many months and even years demanded what we would call today a quartermaster general and his staff of the highest quality. Finally, the continuous construction and strengthening of these castles would not have been possible without a large and permanent labour force, moving from one site to another as required. We have no information on the composition of these workers, although a good portion of them are certain to have been Ismailis recruited and trained locally.&#8221;<A href="#2"> <SUP>2</SUP></A></P>
+<P align=left><B><A name="crusaders and mongol invasions">Between Crusaders and Mongol Invasions</A></B></P>
+<P align=left>In the previous section, reference has already been made to the relations between Sinan and the Crusader kingdoms in the Holy Land. Other historic contacts need to be mentioned here. In 1227 CE, Frederick II (1212-1250 CE), the Emperor of Germany who went to the Holy Land on his own Crusade, sent envoys to Majd al-Din, the Syrian Ismaili leader. However, around the same time, the Hospitallers who had been highly displeased with the dealings between the Ismailis and Frederick II, demanded a tribute from the Ismailis. The Ismailis refused, announcing the fact that indeed they themselves were recipients of gifts and payments from Frankish emperors and kings. </P>
+<P align=left>The last important event in the history of the Ismaili community of this medieval period relates to the dealings between them and Louis IX, better known as St Louis, the French king who led the Seventh Crusade. These dealings, recorded by Jean de Joinville, the king&#8217;s biographer and secretary, occurred soon after the arrival of St Louis in &#8216;Akka (Acre) in May 1250 CE. At the time, they were most probably still under the leadership of Taj al-Din Abul-Futuh, whose name is mentioned in an inscription at Masyaf dated February-March 1249 CE. At any rate, Ismaili emissaries came to the French king and asked him either to pay tribute or at least release them from the tribute which they themselves paid to the Templars and the Hospitallers. On the intervention of Reginald of Vichiers and William of Chateauneuf, the Grand Masters of the Temple and the Hospital, the negotiations between the Ismailis and St Louis did not lead to any results. St Louis, himself more interested in establishing friendly relations with the Mongols, did not pay any tribute to them. But the French king and the Syrian Ismaili leadership exchanged gifts. It was in the course of these embassies that the Arabic-speaking friar Yves le Breton met with Ismaili scholars and discussed religious doctrines in Masyaf. </P>
+<P align=left>The Mongol onslaught on the Muslim world and in particular on the Ismaili state in Iran must have disheartened the Syrian community, who could no longer count on the support and leadership of Alamut and the personal guidance of the Nizari Imam after the destruction of Alamut in 1256 CE. Considerably weakened, the Syrian Ismailis eventually submitted to al-Malik al-Zahir Rukn al-Din Baybars I (1260-1277 CE), the Bahri <A href="javascript:void(LaunchGlossary('GlossaryItem1a27.html?type=glossary&amp;id=366'))">Mamluk</A> Sultan of Egypt, who soon extended his hegemony over Syria and its different principalities. </P>
+<P align=left>Meanwhile, having destroyed the Ismaili state of Iran, Hulagu, the Mongol conqueror had proceeded towards his second major objective, the extinction of the <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasid</A> caliphate. By February 1258 CE, the Mongols seized Baghdad and devastated the ancient capital of the Abbasids for a whole week. The Caliph al-Mustasim, who had endeavoured in vain to prevent the Mongol cataclysm, was put to death on Hulagu&#8217;s orders. Hulagu&#8217;s third campaign was directed against the Ayyubid states in Syria. In 1260 CE, the Mongols seized Aleppo, and soon afterwards Hama and Damascus surrendered to the Mongols. In March 1260 CE, Ket-Buqa, who had been in charge of the advance operations of the Mongols in Syria, made his triumphal entry into Damascus. It was during the same year, 1260 CE, that four of the Nizari fortresses, including Masyaf, were surrendered to the Mongols by their governors. The Mongol success in Syria was, however, short-lived. Hulagu returned to Iran in the summer upon hearing the news of the Great Khan Mongke&#8217;s death, which in fact had occurred a year earlier in 1259 CE, leaving Ket-Buqa in command of his reduced forces in Syria. In 1260 CE, the Mongols suffered a drastic defeat at Ayn Jalut, in Palestine, at the hands of the Mamluk armies of Egypt, led by Sultan al-Muzaffar Qutuz (1259-1260 CE). </P>
+<P align=left>The vanguard of the Mamluk forces was commanded by Baybars, who succeeded Qutuz to the Mamluk sultanate and thwarted the Mongols in their subsequent attempts to establish themselves in the region. Soon, the Mongols were expelled from all of Syria, where Baybars rapidly emerged as the dominant power. The Ismailis were now faced with the challenge of developing relations with the Mamluks and other Muslim rulers whom they joined in repelling the Mongols from Syria. They also recovered the four fortresses which they had earlier lost. </P>
+<P align=left><B><A name=epilogue>Epilogue: The Ismaili Community under the Mamluks</A></B></P>
+<P align=left>The Ismailis attempted to consolidate their relations with Baybars by sending him embassies and gifts. Baybars, who was then preoccupied with the Mongols and the Franks, reciprocated by granting certain favours to the community. Nonetheless, from early on Baybars systematically adopted measures which ultimately led to the loss of the independence of the Ismaili community. They eventually granted rights to Ismaili territories to al-Malik al-Mansur (1244-1285 CE), the <A href="javascript:void(LaunchGlossary('GlossaryItem67ca.html?type=glossary&amp;id=319'))">Ayyubid</A> prince of Hama. The Ismailis however retained possession of eight permanent strongholds, Masyaf, Qadmus, Kahf, Khawabi, Rusafa, Maniqa (Maynaqa), Ullayqa and Qulay&#8217;a. </P>
+<P align=left>Increasingly, Baybars compelled the Ismailis to adhere to a practice of paying them tributes and ensuring that they acknowledged the suzerainty of the Mamluk state. Around 1270 CE, Baybars demanded possession of Masyaf, which was to be entrusted to one of his own amirs, Izz al-Din al-Adimi. Sarim al-Din, who was to hold the Nizari castles as the deputy of Baybars, proceeded to take charge of them. But Sarim al-Din, too, angered the sultan by attempting through trickery to take possession of Masyaf, in violation of the sultan&#8217;s instructions. Once inside, he put to death a large number of the residents of Masyaf, who, abiding by the sultan&#8217;s orders, had refused to yield the castle to him. On Baybars&#8217; request, al-Malik al-Mansur, the ruler of Hama, dislodged the rebellious Sarim al-Din from Masyaf and sent him as a prisoner to Cairo, where he later died. </P>
+<P align=left>By February 1271 CE, Baybars had decided to deal more assertively with the Ismailis. Their leaders were arrested and forced to surrender control of the fortresses to the Mamluks. The Ismaili castles now began to submit in rapid succession to Baybars, who used military blockades, threats and negotiations in dealing with the Ismailis. Ullayqa and Rusafa surrendered in May 1271 CE, and by May 1273, Khawabi, Qulay&#8217;a, Maniqa and Qadmus had also capitulated. The residents of Kahf mustered some resistance, and with the fall of that fortress in July 1273 CE the last independent Nizari outpost in Syria fell into the hands of the Mamluks, less than three years after Girdkuh, the last stronghold in Iran had surrendered to the Mongols.</P>
+<P align=left>The Ismailis were permitted to remain in their fortresses in the Jabal Bahra, but only under the strict supervision of Mamluk lieutenants. Amongst the later medieval sources speaking of the Syrian Nizaris, an elaborate account is related by the celebrated Moorish traveller lbn Battuta, who passed through Syria for the first time in his travels in 1326 CE. He names Maniqa, Ullayqa, Qadmus, Kahf and Masyaf as the fortresses which were still in the hands of the Ismailis, and then proceeds to give interesting details on the arrangements existing between them and the Mamluk Sultan al-Nasir Nasir al-Din Muhammad, who reigned intermittently between 1294 CE and 1340 CE. The Syrian Ismailis thus lived at the time as loyal subjects of the Mamluks and after them, the Ottoman Empire&#8217;s representatives in Syria. </P>
+<P align=left>In the midst of fluctuating political fortunes, the Ismailis of Syria as elsewhere, sought to maintain, as far as was possible, an active and vibrant intellectual and cultural life. As the late Marshall Hodgson observed: &#8220;The Ismaili society was not a typical mountaineer and small-town society (...) Each community maintained its own sense of initiative in the framework of the wider cause, and probably a sense of large strategy was never completely absent (...) but what was most distinctive was the high level of intellectual life. The prominent early Ismailis were commonly known as scholars, often as astronomers, and at least some later Ismailis continued the tradition. In Alamut, in Kuhistan, and in Syria, at the main centres at least, were libraries (...) which were well known among <A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni</A> scholars. To the end the Ismailis prized sophisticated interpretations of their own doctrines, and were also interested in every kind of knowledge which the age could offer.&#8221; <SUP><A href="#3">3</A></SUP></P>
+<P align=left>Endnotes:</P>
+<P align=left><FONT size=2><A name=1>1</A></FONT> Nasir-i Khusraw, <I>Safar-name</I> [&#8220;Books of Travels&#8221;], N.W. Pur, Tehran 1972</P>
+<P align=left><FONT size=2><A name=2>2.</A></FONT> P.Willey, <I>Eagle&#8217;s Nest: Ismaili Castles in Iran and Syria</I>, London 2005</P>
+<P align=left><A name=3><FONT size=2>3</FONT>.</A> M.G.S. Hodgson, <I>The Order of Assassins</I>, The Hague 1955</P>
+<P align=left><B>Selected Bibliography</B></P>
+<P align=left><U></U></P>
+<P align=left>Berchem, Max van. &#8220;Epigraphie des Assassins de Syrie&#8221;, <I>Journal Asiatique</I>, 9 s&#233;rie, 9 (1897), pp. 453-501; reprinted in his <I>Ope</I><I>ra Minora</I>. Geneva, 1978, vol. 1, pp. 453-501.</P>
+<P align=left>Bianquis, Thierry. <I>Damas et la Syrie sous la domination Fatimide</I>, <I>359-468/969-1076</I>. Damascus, 1986-89. 2 vols.</P>
+<P align=left>Canard, Marius. &#8220;Fatimids&#8221;, in <I>The Encyclopaedia of Islam</I> (revised ed.), vol. 2, pp.850-862. </P>
+<P align=left><U><A href="view_person19c6.html?type=auth&amp;id=8">Daftary, Farhad</A></U>. <I><U><A href="view_article1080.html?type=cont.currentlang&amp;id=100638">The Ismailis: Their History and Doctrines</A></U>. </I>Cambridge, 1990.</P>
+<P align=left>Daftary, Farhad. <I><U><A href="../www.iis.ac.uk/view_article4a38.html?type=cont.currentlang&amp;id=100539">The Assassin Legends: Myths of the Ismailis</A></U></I>. London, 1994.</P>
+<P align=left>Daftary, Farhad. &#8220;The Ismailis and the Crusaders: History and Myth&#8221;, in Z.Hunyadi and J. Laszlovszky, ed. <I>The Crusaders and the Military Orders. </I>Budapest, 2001, pp. 21-41; reprinted in his Ismailis in Medieval Muslim Societies. London, 2005, pp. 149-170.</P>
+<P align=left>Daftary, Farhad. &#8220;Rashid al-Din Sinan&#8221;, in <I>The Encyclopaedia of Islam</I> (revised ed.), vol. 8, pp. 442-443.</P>
+<P align=left>Daftary, F. and J.H. Kramers. &#8220;Salamiyya&#8221;, in <I>The Encyclopaedia of Islam</I> (revised ed.), vol. 8, pp. 921-923.</P>
+<P align=left>Ghalib, Mustafa. <I>The Ismailis of Syria</I>. Beirut, 1970.</P>
+<P align=left>Halm, Heinz. &#8220;Les Fatimides &#224; Salamya&#8221;, <I>Revue des Etudes Islamiques</I>, 54 (1986), pp. 133-149.</P>
+<P align=left>Hodgson, Marshall G.S. &#8220;The Ismaili State&#8221; in <I>The Cambridge History of Iran:</I> Volume 5, <I>The Saljuq and Mongol Periods</I>, ed. J.A. Boyle,<I> </I>Cambridge, 1968, pp. 422-482.</P>
+<P align=left>Ibn al-Athir, &#8216;Izz al-Din Ali. <I>al-Kamil fi&#8217;l-tarikh</I>, ed. C.J. Tornberg. Leiden, 1851-76. 12 vols. </P>
+<P align=left>Ibn al-&#8216;Adim, Kamal al-Din. <I>Zubdat al-halab min tarikh Halab</I>, ed. S. Dahan. Damascus, 1951-68. 3 vols. </P>
+<P align=left>Ibn Muyassar, Taj al-Din Muhammad. <I>Akhbar Misr</I>, ed. A.F. Sayyid. Cairo, 1981.</P>
+<P align=left>Ibn al-Qalanisi, Hamza b. Asad. <I>Dhayl tarikh Dimashq</I>, ed. S. Z'Akkar. Damascus, 1983. </P>
+<P align=left>Joinville, Jean de. <I>Memoirs of John Lord de Joinville</I>, tr. Thomas Johnes. Hafod, 1807. 2 vols.</P>
+<P align=left>Lewis, Bernard. &#8220;Kamal al-Din&#8217;s Biography of Rasid al-Din Sinan&#8221;, <I>Arabica</I>, 13 (1966), pp. 225-267; reprinted in his <I>Studies in Classical and Ottoman Islam.</I> London, 1976, article X.</P>
+<P align=left>Lewis, Bernard. <I>The Assassins</I>. London, 1967.</P>
+<P align=left>Mirza, Nasseh. <I>Syrian Ismailism</I>. Richmond, Surrey, 1997.</P>
+<P align=left><U><A href="../www.iis.ac.uk/view_persone2be.html?type=auth&amp;id=19">Nanji, Azim</A></U>. &#8220;Assassins&#8221;<I> </I>in the <I>Encyclopaedia of Religion</I>, vol. 1, pp. 469-471. </P>
+<P align=left>Nasir-i Khursraw. <I>Book of Travels (Safarnama)</I>, ed. and tr. W. M. Thackston Jr. Costa Mesa, CA, 2001. </P>
+<P align=left>Nasr, S. Hossein. ed. <I>Ismaili Contributions to Islamic Culture</I>. Tehran, 1977.</P>
+<P align=left><A href="view_person9add.html?type=auth&amp;id=151"><U>Willey, Peter</U>.</A> <I><U><A href="view_articlef445.html?type=cont.currentlang&amp;id=106256">Eagle&#8217;s Nest: The Ismaili Castles of Iran and Syria</A></U></I>. London, 2005.</P>
+<P align=left>William of Tyre. <I>A History of Deeds Done Beyond the Sea</I>, tr. E.A. Babcock and A.C. Krey. New York, 1943. 2 vols.</P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Ismailis and their Role in the History of Medieval Syria and the Near East</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 11 Dec 2017 17:18:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 11/01/2010&nbsp;16:10&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109097 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:09:55 GMT -->
+</HTML>

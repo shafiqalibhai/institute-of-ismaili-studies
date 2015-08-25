@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+                <ShortName>IIS</ShortName>
+                <Description>IIS provider</Description>
+                <InputEncoding>UTF-8</InputEncoding><Url type="text/html" template="http://www.iis.ac.uk/searchResults.asp?cx=005462578309701098770%3A_qygld4lghm&amp;cof=FORID%3A10&amp;ie=UTF-8&amp;q={searchTerms}#953"/></OpenSearchDescription>

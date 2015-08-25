@@ -1,0 +1,287 @@
+body, td {	
+	font-size: 10pt; 
+	color: #000000;
+	margin-top: 0px;
+}
+
+.bodytext {  
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-size: 10pt; 
+	text-align: left;  
+	vertical-align: top; 
+	color: #000000
+}
+
+
+.style2 {
+	font-size: 9px;
+}
+	
+.generic_header {
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #9999ff;
+	text-decoration: none;
+}
+
+.maintxt {
+font-size: 10pt; 
+text-align: left;  
+vertical-align: top;
+color: #000000
+}
+.caption
+  {
+font-size: 9pt; 
+vertical-align: top;
+color: #000000
+  }
+
+.footerandheader {
+	font-size: 9px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.generic_italic_bold{
+	font-size: 11px;
+	font-style: italic;
+	font-weight: bold;
+	color: #000000;
+}
+.generic_italic_light{
+	font-size: 11px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.generic_caption_text{
+	font-size: 9px;
+	font-style: italic;
+	font-weight: normal;
+	color: #000000;
+}
+
+.generic_title_stripe{
+	background-image: url(tile_box.html);*/
+	background-repeat: repeat;
+	background-position: 100px 100px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	border-bottom-width: 1px;
+	height: 25px;
+	width: 500px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+
+	}
+	
+	
+.formfieldblack
+{
+	background-repeat: repeat;
+	font-weight: bold;
+	color: #000000;
+	font-size: 10px
+}
+
+.formfield
+{
+	background-repeat: repeat;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 10px
+}
+
+.formwidth {
+	font-size: 10px;
+	width: 140px;
+	z-index: -1;
+
+}
+.formwidth {
+	font-size: 10px;
+	width: 140px;
+	z-index: -1;
+}
+
+.formbackground
+{ 
+color: #300; 
+background-color: #ffc; 
+border:dashed #900; 
+border-width: 1px 0px 1px 0px; 
+} 
+
+	
+.formwidth300 {
+	font-size: 10px;
+	width: 300px;
+	font-size: 10px;
+	width: 140px;
+	border: thin none #666666;
+
+}
+
+
+a {
+	color: #009966;
+	text-decoration: none
+}
+
+
+
+.ypmenu {
+	font-size: 9px; 
+	border-right: #000000 1px solid; 
+	border-top: #000000 1px solid; 
+	font-weight: normal; 
+	background: #ffffff; 
+	border-left: #000000 1px solid; 
+	margin-right: 1px; 
+	border-bottom: #000000 1px solid; 
+	text-decoration: none;
+	padding: 2px;
+}
+
+.ypmenu a {
+	font-size: 9px; 
+	width: 100%
+}
+
+.important_text {
+	font-style: italic
+}
+
+.menu_box {
+	display: none;
+	font-size: 9px; 
+	border-right: black 1px solid;
+	cursor: hand;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	width: 100px;
+	border-bottom: black 1px solid;
+	position: relative;
+	left: 0px;
+	top: -1px;
+	z-index:0;
+
+	padding: 2px;
+
+}
+
+#option_box_header {
+	border-right: black 1px solid; 
+	padding-right: 2px; 
+	border-top: black 1px solid; 
+	padding-left: 2px; margin-bottom: 3px; 
+	padding-bottom: 2px; 
+	border-left: black 1px solid; 
+	width: 100%; padding-top: 2px; 
+	border-bottom: black 1px solid
+}
+
+#option_box {
+	border-right: black 1px solid; 
+	padding-right: 6px; 
+	border-top: black 1px solid; 
+	padding-left: 6px; 
+	padding-bottom: 6px; 
+	border-left: black 1px solid; 
+	width: 100%; 
+	padding-top: 6px; 
+	border-bottom: black 1px solid
+}
+
+td {
+font-size: 10pt; 
+
+}
+
+.td2
+	{
+	font-weight:bold;
+	font-size: 9px;
+	vertical-align: bottom;
+	text-align: left;
+	color: #000000;
+	}
+	
+.option {
+	font-size: 9.5px;
+	vertical-align: top;
+}
+
+.smallFont {
+	font-size: 11px;
+	color: #333333;
+}
+
+.formwidth500 {
+
+	font-size: 10px;
+	width: 260px;
+	border: thin none #666666;
+}
+
+.form500 {
+
+	font-size: 10px;
+	width: 160px;
+	border: thin none #666666;
+}
+
+.spanError {
+	font-size: 10px;
+	color: red;
+}
+
+.iFrBorderless {
+	border: 1px solid #cccccc;
+}
+
+/* the colour of links for tabs - set to a negative colour as the tabs are green */
+.TabLink
+{
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 9px;
+}
+
+/* different states for inputs that arr erroring*/
+
+.inputErrored
+{
+	background-color: #ff0000;
+}
+
+.inputNormal
+{
+	background-color: #ffffff;
+}
+
+/* A Faux Window Created using an ifram that floats within the current page */
+
+.frmFauxCromeless
+{
+	border-width: 3px;
+	border-style: solid;
+	border-color: #009966 #006600 #006600 #009966;
+}
+
+/* Format Series Items with View XML */
+
+.divSeriesPos
+{
+	
+}
+
+.divSeriesItem
+{
+	margin-left: 20px
+	margin-right: 20px
+}

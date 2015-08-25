@@ -1,0 +1,891 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100721 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:16:08 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 100721;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyc709.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D100721">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" border="0" cellSpacing="0" cellPadding="0" width="450" background="#" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Shimmering Light: An Anthology of Ismaili Poetry</strong><strong><br/></strong><strong><DIV><A href="view_person088e.html?type=authors&amp;id=9">Dr Faquir   M Hunzai</A></DIV></strong><br/><br/>London: I. B. Tauris in association with The Institute of Ismaili Studies, 1996.<span><br/><br/>ISBN (Hardback): 1 85043 907 9<br/>ISBN (Paperback): 1 86064 151 2</span></td><td align="middle" background="#" vAlign="top"><div align="center"><table style="HEIGHT: 230px" border="0" cellSpacing="5" cellPadding="5" width="125" background="#" bgColor="#ffffcc" align="center"><tbody><tr><td background="#" height="150"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publications/web_shimmering-2004519174137_7055.jpg" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table border="0" cellSpacing="0" cellPadding="0" width="450" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><A onclick="return fnExtLinkWarning();" href="http://books.google.com/books?id=9nWkztOrMycC&amp;printsec=frontcover&amp;dq=Shimmering+Light:+An+Anthology+of+Ismaili+Poetry&amp;cd=1#v=onepage&amp;q&amp;f=false" target=_blank><IMG height=18 alt="" src="WebAssets/Large/googlebooks.jpg" width=18 align=absMiddle border=0> Publication page on Google Books</A></P>
+<P><A href="SiteAssets/pdf/shimmering_light.pdf"><IMG height=19 alt="" src="WebAssets/Small/Academic%20Papers/pdf_icon.gif" width=19 border=0> Download PDF version of Introduction (174 KB)</A></P>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>The literatures of the Islamic peoples are rarely known to Western readers, except for a few classics such as the poetry of Hafiz, the mystical verses of Mawlana Rumi and Omar Khayyam&#8217;s Ruba&#8217;iyyat. The paucity of reliable translations and of introductions into the complicated web of rhetorical devices, of allusions to the Qur&#8217;an and the Prophetic tradition, the rich colours of hyperbolic speech and the measureless feelings expressed by the poets make it difficult for a non-tutored reader to appreciate this poetry in all its dazzling beauty. And even less known than Islamic poetry in general is that of its Ismaili community.</DIV>
+<P class=bodytext>Among those who are connected with Ismaili literature one name, however, was known for a long time: that of Nasir Khusraw (d. after 1072 in northern Badakhshan). His travelogue, Safarnama, was formerly often used in European universities as the first reading book in Persian for its deceptively easy style. The Safarnama was edited and translated into French first by Ch. Schefer of Paris in 1881; during the same decade the German scholar H. Ethe as well as the French orientalist E. Fagnan edited and analysed some other works of the great philosopher-poet. E.G. Browne, well-known for his pioneering work on Persian literature, considered Nasir Khusraw one of the very rare Persian poets whose work would appeal to Western readers as he does not indulge in panegyric poetry but speaks honestly out of his heart, defending the true faith. However, despite E.G. Browne&#8217;s enthusiastic praise of Nasir Khusraw&#8217;s poetry, which was published in 1905, very few attempts were made to offer his verse, at least in part, to an English-speaking audience. For the mainstream orientalist, Nasir Khusraw&#8217;s poetry remained outside the normal course of Islamic studies, and only recently deeper research into his fascinating thought has begun.</P>
+<P class=bodytext>One may compare his verse to the work of Ibn Hani, who lived a century before him in the farthest west of the Islamic world, in Andalusia, where he used his highly hyperbolical language to emphasize the Ismaili <I><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da&#8216;wa</A></I>, the call to the &#8220;true religion&#8221; - so much so that he had to leave his native country to become the panegyrist of al-Mu'izz, the Fatimid <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliph</A> who after the conquest of Egypt in 969 AD founded Cairo, al-Qahira al-Mu&#8217;izziyya, the capital of the Fatimid empire in which, under the inspiring rule of the <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> of the time, happiness and wealth seemed to reign and people prospered, as Nasir Khusraw shows in both his Safarnama and in some of his autobiographical poems.</P>
+<P class=bodytext>Arabic and Persian poetry in honour of the true Imam and of the Ismaili Tariqah were by no means restricted to the classical time when the &#8220;Fatimid Sun&#8221;, as Nasir Khusraw sometimes calls it, was shining over parts of the East. Pious poets have poured out their hearts wherever small pockets of Ismailis were found, be it in Syria, be it in Eastern Iran, in Badakhshan, where Nasir Khusraw is still venerated as a miraculous saint and wise philosopher, and somewhat later in the vast areas of the western subcontinent, from Gujarat to the Panjab. There, the devotional songs of the community, the ginans, were composed, again, in a large variety of languages - songs, in which the Indian traditional imagery is used side by side with the philosophical vocabulary of the Ismaili tradition. These ginans again deserve an in-depth study owing to their linguistic problems and the complicated <A href="javascript:void(LaunchGlossary('GlossaryIteme0fd.html?type=glossary&amp;id=198'))">Khojki</A> alphabet in which they were noted down till recently. And if the different yet familiar idioms of India and Pakistan were not enough to make our access to Ismaili devotional literature difficult, what can be said of hymns in Burushaski, a language absolutely unrelated to any other known language, and spoken to this day in the high valleys of Hunza?</P>
+<P class=bodytext>The different languages used by the Ismaili community during the past millennium have meant that this literature has been a closed book for most people, even within the community - for a Syrian or Iranian Ismaili was or is not able to read and enjoy religious poetry in Sindhi, Burushaski or Shina, while the pious in the lowlands of Sind or Cutch might not be conversant with Arabic or Persian.</P>
+<P class=bodytext>For this reason, a collection of Ismaili religious poetry in translation is most welcome to both the insider and the outsider. In this volume we follow the translators through their fine English renderings of a number of selected pieces from many of the linguistic areas in which Ismaili communities lived and still live, and we read with joy and deep admiration the poets&#8217; various statements about the true faith, about the radiance of the Imam whose <I>didar</I> is the hoped-for goal of the believer. The strong faith which has inspired the original pieces is certainly reflected in the translators&#8217; work, and every reader, from whatever religious background he or she may come, will enjoy this anthology and experience the intensity of religious feeling that touches his or her own heart.</P>
+<P class=bodytext>The poems show a beautiful way to the &#8220;shimmering light&#8221; the poets have seen in their visions, a way that will inspire their readers. We hope, therefore, that the anthology may serve as a fine introduction into a hitherto inaccessible world, a world filled with ardent spiritual love and inexhaustible beauty.</P>
+<P class=bodytext>(Adapted from the Foreward by Annemarie Schimmel of <I>Shimmering Light: An Anthology of Ismaili Poetry.</I> London: I. B. Tauris in association with The Institute of Ismaili Studies, 1996.)</P><br><br></div><div id="pubsContents"><strong>Contents</strong><br><P class=bodytext><I>Acknowledgements</I> 
+<P class=bodytext><I>Foreword</I><BR><BR>
+<P class=bodytext><I>Introduction</I><BR><BR>
+<P class=bodytext><I>Al&#8211;Qadi al&#8211;Nu&#8216;man</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The Most High</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Ibn Hani al&#8211;Andalusi</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">A shimmering light</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">O children of Fatima!</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The progeny of Hashim</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The foundation of faith</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The glory of our time</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The first creation</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The proof of God</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">You are the one</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Heaven on earth</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">If you were not to be</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Those who have lost their way</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The pilgrimage of a mount</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Encounter in the desert</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Thunder in the mountains</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Assembly of banners</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Amir Tamim al&#8211;Fatimi</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Elegy for al&#8211;Mu&#8216;izz</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">On the festival of Nawruz</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Time and destiny</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Al&#8211;Mu&#8217;ayyad fi&#8217;l&#8211;Din al&#8211;Shirazi</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The pure progeny</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The evil of desire</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The soul&#8217;s satisfaction</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The light of intellect</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The sanctuary</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Nasir&#8211;i Khusraw</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The Prophet&#8217;s faith</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">In search of knowledge</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The Prophet&#8217;s legacy</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The sword of &#8216;Ali</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The excellence of &#8216;Ali</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">O people of the <I>umma</I>!</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The world&#8217;s friendship</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The eye of the intellect</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Journey to the light</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Speech and silence</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The master and the disciple</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The candle of intellect</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The momentum of time</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Pearls of heaven</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The sovereign of time</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">A conceited eagle</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">A pavilion of paradise</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The esoteric and the exoteric</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Secrets of the pilgrimage</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Hasan&#8211;i Sabbah</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Repentence</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Supplication</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Particles of dust</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Make me complete</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Ra&#8217;is Hasan</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The master of the time</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The heart that knows</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The call of the spirit</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Good fortune</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The rising of the sun</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Nizari Quhistani</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Alexander&#8217;s quest</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The virtue of <I>ma&#8216;rifa</I></TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Abode of the beloved</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">I found the treasure</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The one above them all</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The sovereign of time</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>&#8216;Abd Allah Ansari</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Form and essence</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The felicity of grace</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Khayrkhwah&#8211;i Harati</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The miracle of knowledge</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The three worlds</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Khaki Khurasani</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The inner reality</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Anchor of the ship</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Shaykh Khudr</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Ships of salvation</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The awe&#8211;inspiring light</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The trustworthy spirit</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The coming of your light</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Cupbearer of the night</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Love in seclusion</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">In the courtyard of love</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The fruits of reality</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The call of the friend</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The city of shining light</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Fida&#8217;i Khurasani</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The wealth of this world</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Remembrance of the heart</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Recognition of the Imam</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">If you have Mawla&#8217;s love</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>&#8216;Allama Nasir Hunzai</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The slave of Mawla &#8216;Ali</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Quatrains of love</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">The treasure of Luqman</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Glad tidings for the soul</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">Secrets of the heart</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Isma&#8216;il Adra</I> 
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">A noble birthday</TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD width="95%">My breathless heart</TD></TR></TBODY></TABLE><BR><BR>
+<P class=bodytext><I>Notes</I><BR><BR>
+<P class=bodytext><I>Bibliography</I><BR><BR>
+<P class=bodytext><I>Index of First Lines</I><BR><BR>
+<P class=bodytext><I>General Index</I><BR><BR><!&#8211;&#8211; #EndEditable &#8211;&#8211;></P><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><P class=bodytext><I>al&#8211;Anashid al&#8211;diniyya</I>. Salamiyya, Syria, 1973.<BR><BR>
+<P class=bodytext>Asani, Ali. &#8220;The Ismaili <I>Ginans</I> as Devotional Literature&#8221;, in <I>Devotional Literature in South Asia</I>, ed. R.S. McGregor. Cambridge, 1992, pp. 101&#8211;12. <BR><BR>
+<P class=bodytext>&#8211; &#8220;The Ginan Literature of the Ismailis of Indo&#8211;Pakistan: Its Origins, Characteristics and Themes&#8221;, in <I>Devotion Divine: Bhakti Traditions from the Regions of India</I>, ed. Diana L. Eck and Fran&#231;ois Mallison. Groningen&#8211;Paris, 1991, pp. 1&#8211;18.<BR><BR>
+<P class=bodytext>Bausani, Alessandro. &#8220;Can We Speak of Muslim Poetry?&#8221;, in <I>International Islamic Colloquium Papers</I>. Lahore, 1960, pp. 13&#8211;18.<BR><BR>
+<P class=bodytext>Bellamy, James A. &#8220;The Impact of Islam on Early Arabic Poetry&#8221;, in <I>Islam: Past Influence and Present Challenge</I>, ed. Alford T. Welch and Pierre Cachia. Edinburgh, 1979, pp. 141&#8211;67.<BR><BR>
+<P class=bodytext>Browne, Edward G. <I>A Literary History of Persia</I>. Cambridge, 1902&#8211;1924. <BR><BR>
+<P class=bodytext>Bruijn, J.T.P. de &#8220;The Religious Use of Persian Poetry&#8221;, in <I>Studies on Islam</I>. Amsterdam, 1974, pp. 63&#8211;74.<BR><BR>
+<P class=bodytext><I>The Cambridge History of Arabic Literature: Arabic Literature to the End of the Umayyad Period</I>, ed. A.F.L. Beeston et al. Cambridge, 1983.<BR><BR>
+<P class=bodytext><I>The Cambridge History of Arabic Literature: &#8216;Abbasid Belles&#8211;Lettres</I>, ed. Julia Ashtiany et al. Cambridge, 1990.<BR><BR>
+<P class=bodytext>Corbin, Henry. <I>History of Islamic Philosophy</I>, tr. L. Sherrard. London, 1993 <BR><BR>
+<P class=bodytext>&#8211; and M. Mu&#8216;in, eds. <I>Commentaire de la qasida isma&#233;lienne d&#8217;Abu&#8217;l Haitham Jorjani</I>. Tehran&#8211;Paris, 1955.<BR><BR>
+<P class=bodytext>Daftary, Farhad. <I>The Assassin Legends: Myths of the Isma&#8216;iilis</I>. London, 1994. <BR><BR>
+<P class=bodytext>&#8211; <I>The Isma&#8216;iilis: Their History and Doctrines</I>. Cambridge, 1990. <BR><BR>
+<P class=bodytext>Dewhurst, R.P. &#8220;Abu Tammam and Ibn Hani&#8221;, <I>Journal of the Royal Asiatic Society</I> (1926), pp. 629&#8211;42.<BR><BR>
+<P class=bodytext><I>The Encyclopaedia of Islam</I>, ed. H.A.R. Gibb et al. New ed. Leiden&#8211;London, 1960&#8211;.<BR><BR>
+<P class=bodytext>Fida&#8217;i Khurasani, Muhammad b. Zayn al&#8211;&#8216;Abidin. <I>Mathnawi&#8211;i nigaristan</I>, ed. A.N. Semenov, in &#8220;Ismailitsky panegirik obozhestvlennoma &#8216;Aliyu Fedai Khorasonskogo&#8217;&#8221;, <I>Iran</I>, 3 (1929), pp. 51&#8211;70.<BR><BR>
+<P class=bodytext>Gabrieli, Francesco. &#8220;Religious Poetry in Early Islam&#8221;, in <I>Arabic Poetry: Theory and Development</I>, ed. G.E. von Grunebaum. Wiesbaden, 1973, pp. 5&#8211;17.<BR><BR>
+<P class=bodytext>Grunebaum, G.E.von. &#8220;The Early Development of Islamic Religious Poetry&#8221;, <I>Journal of the American Oriental Society</I>, 60 (1940), pp. 23&#8211;9.<BR><BR>
+<P class=bodytext>Ibn Hani, Muhammad. <I>Tabiyin al&#8211;ma&#8216;ani fi sharh divan ibn Hani al&#8211;Andalusi al&#8211;Maghribi</I>, ed. Zahid &#8216;Ali. Cairo, 1933.<BR><BR>
+<P class=bodytext>&#8211; <I>The Diwan of Abu Qasim Muhammad ibn Hani al&#8211;Andalusi</I>, tr. A. Wormhoudt. Oskaloosa, Iowa, 1985.<BR><BR>
+<P class=bodytext>Hasan&#8211;i Sabbah. <I>Munajat&#8211;i Baba Sayyidna</I>, in <I>Kitab al&#8211;manaqib</I>. Karachi, 1986. <BR><BR>
+<P class=bodytext>Hodgson, Marshall G.S. <I>The Venture of Islam</I>. Chicago, 1974.<BR><BR>
+<P class=bodytext>Hooda, V.N. &#8220;Some Specimens of Satpanth Literature&#8221;, in <I>Collectanea</I>, vol. 1, ed. W. Ivanow. Leiden, 1948, pp. 55&#8211;137.<BR><BR>
+<P class=bodytext>Hunzai, &#8216;Allama Nasir al&#8211;Din. <I>Bihiste Asquring</I>. Karachi, 1988. <BR><BR>
+<P class=bodytext>&#8211; <I>Jawahir&#8211;i haqa&#8216;iq</I>. Karachi, 1975.<BR><BR>
+<P class=bodytext>&#8211; <I>Jawahir&#8211;i ma&#8216;arif</I>, Karachi, n.d.<BR><BR>
+<P class=bodytext>Ivanow, W. <I>Ismaili Literature: A Bibliographical Survey</I>. Tehran, 1963.<BR><BR>
+<P class=bodytext>&#8211; &#8220;An Ismaili Poem in Praise of the Fidawis&#8221;, <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>, New Series, 14 (1938), pp. 63&#8211;72.<BR><BR>
+<P class=bodytext>Jayyusi, Salma K. &#8220;Umayyad Poetry&#8221;, in <I>The Cambridge History of Arabic Literature: Arabic Literature to the End of the Umayyad Period</I>, ed. A.FL. Beeston et al. Cambridge, 1983, pp. 387&#8211;432.<BR><BR>
+<P class=bodytext>Kashani, Abu&#8217;l&#8211;Qasim &#8216;Abd Allah b. &#8216;Ali. <I>Zubdat al&#8211;tawarikh: bakhsh&#8211;i Fatimiyan va Nizariyan</I>, ed., M.T Danishpazhuh. 2nd ed., Tehran, 1987.<BR><BR>
+<P class=bodytext>Khaki Khurasani, Imam Quli. <I>An Abbreviated Version of the Diwan of Khaki Khurasani</I>, ed. W. Ivanow. Bombay, 1933.<BR><BR>
+<P class=bodytext>Khayrkhwah&#8211;i Harati, Muhammad Rida b. Sultan Husayn. <I>Tasnifat&#8211;i Khayrkhwah&#8211;i Harati</I>, ed. W Ivanow. Tehran, 1961.<BR><BR>
+<P class=bodytext>&#8211; <I>Fasl dar bayan&#8211;i shinakht&#8211;i imam</I>, ed. W Ivanow. Tehran, 1960; English trans.,W Ivanow, <I>On the Recognition of the Imam</I>. 2nd ed., Bombay, 1947. <I>Kitab al&#8211;manaqib</I>. Karachi, 1986.<BR><BR>
+<P class=bodytext>Madelung, Wilferd. &#8220;The <I>Hashimiyyat</I> of al&#8211;Kumayt and Hashimi Shi&#8216;ism&#8221;, <I>Studio Islamica</I>, 70 (1989), pp. 5&#8211;26; reprinted in his <I>Religions and Ethnic Movements in Medieval Islam</I>. London, 1992, article V.<BR><BR>
+<P class=bodytext>Massignon, Louis. <I>The Passion of Mansur al&#8211;Hallaj: Mystic and Martyr of Islam</I>, tr. Herbert Mason. Princeton, 1982.<BR><BR>
+<P class=bodytext>Meisami, Julie Scott. &#8220;Symbolic Structure in a Poem by Nasir&#8211;i&#8211;Khusrau&#8221;, <I>Iran: Journal of the British Institute of Persian Studies</I>, 31 (1993), pp. 103117.<BR><BR>
+<P class=bodytext>al&#8211;Mu&#8217;ayyad fi&#8217;I&#8211;Din al&#8211;Shirazi, Abu Nasr Hibat Allah b. Abi &#8216;Imran Musa. <I>Diwan</I>, ed. Muhammad K. Husayn. Cairo, 1949.<BR><BR>
+<P class=bodytext>Nanji, Azim. <I>The Nizari Isma&#8216;ili Tradition in the Indo&#8211;Pakistan Subcontinent</I>. Delmar, NY, 1978.<BR><BR>
+<P class=bodytext>Nasir&#8211;i Khusraw. <I>Diwan</I>, ed. N. Taqawi. Tehran, 1925&#8211;28; ed. M. Minuwi and M. Muhaqqiq. Tehran, 1974.<BR><BR>
+<P class=bodytext>&#8211; <I>Make a Shield front Wisdom: Selected Verses from Nasir&#8211;i Khusraw&#8217;s Divan</I>, tr. <A href="view_person00fa.html?type=auth&amp;id=66">Annemarie Schimmel</A>. London, 1993.<BR><BR>
+<P class=bodytext>&#8211; <I>Nasir&#8211;i Khusraw: Forty Poems from the Divan</I>, tr. Peter Lamborn Wilson and Gholam Reza Aavani. Tehran, 1977.<BR><BR>
+<P class=bodytext>Nasr, S. Hossein. &#8220;Shi&#8216;ism and Sufism: Their Relationship in Essence and in History&#8221;, in his <I>Sufi Essays</I>. New York, 1977, pp. 104&#8211;20.<BR><BR>
+<P class=bodytext>Nizari Quhistani, Hakim Sa&#8216;d al&#8211;Din. <I>Diwan</I>, ed. Muzahir Musaffa. Tehran, 1992.<BR><BR>
+<P class=bodytext>al&#8211;Nu&#8216;man b. Muhammad, al&#8211;Qadi Abu Hanifa. <I>al&#8211;Urjuza al&#8211;mukhtara</I>, ed. Ismail K. Poonawala. Montreal, 1970.<BR><BR>
+<P class=bodytext>Poonawala, Ismail K. <I>Biobibliography of Isma&#8216;ili Literature</I>. Malibu, Ca., 1977.<BR><BR>
+<P class=bodytext>Rubinacci, R. &#8220;Political Poetry&#8221;, in <I>The Cambridge History of Arabic Literature: Abbasid Belles&#8211;Lettres</I>, ed. Julia Ashtiany et al. Cambridge, 1990, pp. 185&#8211;201.<BR><BR>
+<P class=bodytext>Rumi, Jalal al&#8211;Din. <I>Kulliyyat&#8211;i Shams Tabrizi</I>. Lucknow, 1930.<BR><BR>
+<P class=bodytext>Schimmel, Annemarie. <I>And Muhammad is His Messenger: The Veneration of the Prophet in Islamic Piety</I>. Chapel Hill, NC, 1985.<BR><BR>
+<P class=bodytext>&#8211; <I>As Through a Veil: Mystical Poetry in Islam</I>. New York, 1982. <BR><BR>
+<P class=bodytext>&#8211; <I>Mystical Dimensions of Islam</I>. Chapel Hill, NC, 1975.<BR><BR>
+<P class=bodytext>Shabistari, Mahmud. <I>Gulshan&#8211;i raz</I>, ed. and tr. E.H. Whinfield. London, 1880.<BR><BR>
+<P class=bodytext>Shackle, Christopher and Zawahir Moir. <I>Ismaili Hymns from South Asia: An Introduction to the Ginans</I>. London, 1992.<BR><BR>
+<P class=bodytext>Smoor, Pieter. &#8220;The Poet&#8217;s House: Fiction and Reality in the Works of the &#8216;Fatimid&#8217; Poets&#8221;, <I>Quaderni di Studi Arabi</I>, 10 (1992), pp. 45&#8211;62.<BR><BR>
+<P class=bodytext>&#8211; &#8220;Wine, Love and Praise for the Fatimid Imams, the Enlightened of God&#8221;, <I>Zeitschrift der Deutschen Morgenlandischen Gesellschaft</I>, 142 (1992), pp. 90&#8211;104.<BR><BR>
+<P class=bodytext>&#8211; &#8220;Fatimid Poets and the &#8216;Takhallus&#8217; that Bridges the Nights of Time to the Imam of Time&#8221;, <I>Der Islam</I>, 68 (1991), pp. 232&#8211;62.<BR><BR>
+<P class=bodytext>Stern, S.M. &#8220;Ja&#8216;far ibn Mansur al&#8211;Yaman&#8217;s Poems on the Rebellion of Abu Yazid&#8221;, in his <I>Studies in Early Isma&#8216;ilism</I>. Jerusalem&#8211;Leiden, 1983, pp. 146&#8211;52.<BR><BR>
+<P class=bodytext>Tamim b. al&#8211;Mu&#8216;izz al&#8211;Fatimi. <I>Divan</I>, ed. M.H. al&#8211;A&#8216;zami et al. Cairo, 1957. <BR><BR>
+<P class=bodytext>Taylor, J.B. &#8220;Ja&#8216;far al&#8211;Sadiq, Spiritual Forbear of the Sufis&#8221;, <I>Islamic Culture</I>, 40 (1966), pp. 97&#8211;113. <BR><BR><!&#8211;&#8211; #EndEditable &#8211;&#8211;></P></div><p>Content Date: January 1996</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Shimmering Light: An Anthology of Ismaili Poetry</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 24 Nov 2015 11:26:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 22/05/2014&nbsp;05:37&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100721 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:16:09 GMT -->
+</HTML>

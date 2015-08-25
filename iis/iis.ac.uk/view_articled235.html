@@ -1,0 +1,705 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101157 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:19 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101157;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only4c15.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101157">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlebd14.html?ContentID=101160">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>The Quest for Excellence: Towards a Cultural Renaissance?</strong><br/><strong><DIV><A href="view_person2998.html?type=authors&amp;id=162">Professor Karim H Karim</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that appeared in <EM>The Ismaili </EM>UK in 2000. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><P dir=ltr style="MARGIN-RIGHT: 0px">What is the relationship between a religious community and &#8216;culture&#8217;? Can a diverse religious community identify with a single culture? In this article, the author examines the notion of &#8216;Ismaili Muslim culture&#8217;, with its varied meanings and connotations. Exploring the roots of cultural diversity in the community, the article also surveys some of the cultural output of several Ismailis residing in the Europe and North America and assesses the possibility of a cultural renaissance for the 21st century.</P></div><div> </div><div><P class=mainhead><STRONG>Keywords</STRONG><BR><BR>
+<P class=bodytext>culture, heritage, diversity, globalisation, migration, tradition, values, pluralism, creativity, religion, cultural production, artist, <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismailis</A>, community, <I><A href="javascript:void(LaunchGlossary('GlossaryItem376e.html?type=glossary&amp;id=215'))">jamats</A></I>, interaction.<BR>
+<P class=bodytext><A title=SiteAssets/pdf/quest_for_excellence.pdf href="SiteAssets/pdf/quest_for_excellence.pdf"><IMG height=25 hspace=5 src="images/pdf_icon.gif" width=25 border=0>Download PDF version of article (190 KB)</A><BR><BR>
+<P class=mainhead><STRONG>Table of contents</STRONG><BR><BR>
+<UL class=bullet_list>
+<LI><A href="#anchor1">Introduction</A> 
+<LI><A href="#anchor2">The Roots of Ismaili Cultural Diversity</A> 
+<LI><A href="#anchor3">Putting Culture on the Agenda</A> 
+<LI><A href="#anchor4">What is Culture?</A> 
+<LI><A href="#anchor5">Culture and Religion</A> 
+<LI><A href="#anchor6">One Ismaili Culture or Many?</A> 
+<LI><A href="#anchor7">Ismaili Art and Artists in the 21st Century</A> 
+<LI><A href="#anchor8">A Culture of Excellence</A> 
+<LI><A href="#anchor8">References</A> </LI></UL>
+<P class=mainhead><BR><A name=anchor1></A><STRONG>Introduction</STRONG><BR><BR>
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD>&#8220;<I>In seeking to define what Islamic society should be in times ahead, 50 and 100 and 200 years hence, we should, I believe, be aware that the Muslims of this world cover such an amazing range of historical, ethnic and cultural backgrounds that a completely monolithic answer may not be found.</I>&#8221;</TD>
+<TD width="5%"></TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD>His Highness the Aga Khan<BR><A title=ContentLink.asp?type=cont&amp;id=101003 href="view_articlee12e.html?type=cont&amp;id=101003">Seerat Conference</A>, Karachi, March 12, 1976 </TD>
+<TD width="5%"></TD></TR></TBODY></TABLE><BR>Over the last few years, the transnational Ismaili community has become increasingly aware of its own cultural heritage and diversity. This is partly due to a twofold process involving, on the one hand, &#8220;globalisation from below&#8221; in which communities spread across several continents are renewing their historical and cultural connections, and on the other hand, &#8220;globalisation from above&#8221; initiated by governments and large corporations making more contact with each other. World events have played a central role in this process through the increase in migration from Asia and Africa to North America, Europe and Australasia, the emergence of Central Asian countries after the collapse of the Soviet Union, and the growth of communication technologies. All these forces are enabling greater interaction between Ismaili communities of various backgrounds to an extent unprecedented in history.<BR><BR>
+<DIV class=sub_head><A name=anchor2></A><STRONG>The Roots of Ismaili Cultural Diversity</STRONG></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>The roots of Ismaili cultural diversity are to be found in Ismaili history. During the 10th and 1lth centuries, for instance, Ismaili <A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))"><I>da&#8216;i</I>s </A>travelled to various parts of the Muslim world from Syria, Iraq and Iran to North Africa, Central Asia, India and other places, converting local peoples to the faith. As a result, the followers of the Fatimid Imam-Caliphs were to be found in many parts of the Middle East, North Africa, Asia and Europe. However, following the end of Ismaili rule in Egypt and the fall of Alamut to the Mongols in the 13th century, communication between the various Ismaili communities declined. Besides adverse political circumstances over the centuries, physical barriers like mountainous terrain made contact very difficult with the <I>jamat</I>s in remote places such as Badakhshan.<BR><BR>During the colonial period in the late 19th and early 20th centuries, significant numbers of Indian Ismailis settled in various parts of Africa and south-east Asia. From the 1960s, the migration of Ismailis extended to Europe and later to North America and Australasia. As a result, we have the novel situation today of Ismailis from Africa, India, Pakistan, Bangladesh, Iran, Syria, Afghanistan and elsewhere coming to live and work together in western countries. Contact between such large numbers of Ismailis of diverse ethnic and cultural backgrounds has probably never occurred before. Even in Fatimid times, it was generally individuals or small groups of people who travelled from one <I>jamat</I> to another. This is therefore a unique historical moment for the community.</DIV>
+<DIV class=sub_head><BR><A name=anchor3></A><STRONG>Putting Culture on the Agenda</STRONG></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>It is also the period in which the present <I>imam</I> of the community, His Highness the Aga Khan, is placing greater emphasis on the importance of preserving cultural values and traditions, as well as recognition of the strength that comes from a plurality of cultures within the global community. This awareness is especially pertinent for the <I>jamat</I>s in western countries which, in their endeavour to integrate into their new settings, have experienced certain losses in language and cultural traditions. The establishment of the <A title=http://www.akdn.org/agency/aktc_akaa.html onclick="return fnExtLinkWarning();" href="http://www.akdn.org/agency/aktc_akaa.html" target=_blank></A>Aga Khan Award for Architecture</A> and the <A title=http://www.akdn.org/agency/aktc.html onclick="return fnExtLinkWarning();" href="http://www.akdn.org/agency/aktc.html" target=_blank></A>Aga Khan Trust for Culture</A> has underlined the aspiration of the Imam that the basic values of Muslim culture should continue to be cherished and emulated in architecture and other areas of social life.<BR><BR>As the Ismaili community begins to include culture in its development priorities, a number of important questions need to be asked such as the following: What is meant by &#8216;culture&#8217;? What is the relationship between culture and religion? Is it valid to think of a monolithic Ismaili culture? What are the nature of creative and artistic expressions in the Ismaili community today? What is the role of the Ismaili artist in the proposed cultural renaissance? What are the standards of excellence that will guide the path towards a cultural renaissance in the 21st century?<BR><BR><A name=anchor4></A><STRONG>What is Culture?</STRONG> </DIV>
+<DIV class=sub_head>&nbsp;</DIV>
+<P class=bodytext>
+<TABLE width=150 align=right>
+<TBODY>
+<TR>
+<TD><IMG height=222 hspace=10 src="WebAssets/Site_Images/ismaili_water_basin-2.jpg" width=150 vspace=10 border=0></TD></TR>
+<TR>
+<TD class=caption>Marble water jar and basin 11th Century, Egypt Museum of Islamic Art, Cairo </TD></TR></TBODY></TABLE>There are several parallel ways in which the word &#8216;culture&#8217; is understood. It is often thought of in terms of the behaviour of &#8216;high&#8217; or &#8216;elite&#8217; classes of society than in terms of &#8216;folk&#8217; or &#8216;popular&#8217; culture of the masses. However, the word alternatively refers to the totality of the ways of life of a people, including their ideas and habits which they share and transmit from one generation to another. It also includes the material objects and monuments they use in their lives. For instance, objects of everyday life used by people during the Fatimid period are displayed in museums as illustrations of their culture. Even present-day technologies cannot be separated from the cultural contexts in which they were designed. Likewise, popular entertainment such as film and television productions are important forms of cultural expression today. The ancient heritage as well as the present identity of a particular community are reflected in its culture. Cultures are also deeply informed by the religious, moral and ethical values of a people.<BR><BR>
+<DIV class=sub_head><A name=anchor5></A><STRONG>Culture and Religion</STRONG></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>Since the dawn of history, human cultural behaviour has been profoundly affected by religious beliefs and rituals. In traditional societies, the cultural and religious behaviour of a given community generally arose from the same set of beliefs. Even though religion continues to influence culture in contemporary life, there are instances in which the two operate in different spheres. This is particularly the case in secular societies where public discussions are often carried out without reference to religion. Many symbols of state culture, such as national flags or anthems, have also acquired a non-religious character. Certain expressions of contemporary culture may be offensive to religious sensibilities or even deliberately anti-religious as in works of art, literature or music produced by individuals opposed to religion. Therefore, we cannot assume that there is a direct relationship between culture and religion in contemporary times, as they tended to be in the past.<BR><BR><A name=anchor6></A><STRONG>One Ismaili Culture or Many?</STRONG></DIV>
+<DIV class=sub_head><STRONG><BR></STRONG>The cultural traditions of various Ismaili communities are derived from their ethnic origins such as Syrian, Iranian, Punjabi, Sindhi, Gujarati, Hunzai, Chitrali, Tajiki, Afghani or Chinese. These cultures are shared with other non-Ismailis and non-Muslims of these respective origins. Myth, language, songs, poetry, food, clothing, history and ethnic symbols are among the elements that diverse communities living in the same region may share in common. Ismailis also share cultural elements with others of the same nationality. These are aspects of the multi-layered identities that we all have individually as we function in various dimensions of life. Ismailis of American, Pakistani, Kenyan, Malaysian or British nationality will know the ways of doing things in their own respective countries, but are not necessarily familiar with each other&#8217;s national customs.&nbsp;&nbsp; 
+<P class=bodytext>
+<TABLE style="WIDTH: 150px" cellSpacing=0 cellPadding=0 align=right>
+<TBODY>
+<TR>
+<TD><IMG height=211 hspace=5 src="WebAssets/site_images/al_hakim.jpg" width=150 vspace=10></TD></TR>
+<TR>
+<TD class=caption style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px">Entrance Portal, Mosque of al-Hakim &#169; Nasser Rabbat</TD></TR></TBODY></TABLE></P></DIV>
+<P class=bodytext>&nbsp;</P>
+<DIV class=bodytext>Nevertheless, Ismailis share certain cultural beliefs, values and traditions that are unique to them irrespective of their origins. These aspects are related to the religious faith and practice of the Ismaili Muslims including, above all, devotion to the <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> of the time and some knowledge about the Ismaili past. The principle of <I><A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">Imamat</A></I> has influenced Ismaili history, literature, art and architecture in very particular ways. For example, the prominent central doorway of the Mosque of the Imam al-Hakim in Cairo facilitated the Imam&#8217;s ceremonial entrance as he arrived to lead the Friday prayers. The devotional poetry composed in praise of the Prophet and the Imams many centuries ago by Ismaili <I>da&#8216;i</I>s and <A href="javascript:void(LaunchGlossary('GlossaryItemcc07.html?type=glossary&amp;id=143'))"><I>pir</I>s </A>in Arabic, Persian or Indian languages, have continued to inspire generations of Ismailis to the present day.</DIV>
+<DIV class=bodytext><BR>As Ismailis of different origins come together in countries like Canada, the United States, Britain and Australia, they are beginning to learn about the distinctive cultural values and traditions of each other. For example, the Ismailis of South Asian origins are learning to sing <I>qasida</I>s in Arabic and <I>ghazal</I>s in Farsi, whereas those of Iranian or Afghani origins are discovering the wisdom of the Indic <I><A href="javascript:void(LaunchGlossary('GlossaryItem6af6.html?type=glossary&amp;id=261'))">ginan</A></I>s or the joys of dancing to the <I>dandia-raas</I>. The Ismailis of Montreal use a very innovative combination of French, English, Arabic, Farsi, Gujarati and Cutchi languages for communication in their <I>jamatkhana</I>s. Similar patterns of cultural interaction are emerging in various centres of Europe and North America where Ismailis from different countries and nationalities have come to live together in recent years.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>
+<TABLE style="WIDTH: 110px" cellSpacing=0 cellPadding=0 align=left>
+<TBODY>
+<TR>
+<TD>
+<P><IMG height=160 hspace=10 src="WebAssets/site_images/eotp01.jpg" width=103 vspace=10></P></TD></TR>
+<TR>
+<TD class=caption>Badakhshani dancer from "Expressions of the Pamir, &#169; Islamic Publications Ltd</TD></TR></TBODY></TABLE></DIV>
+<P class=bodytext>Major factors in increasing consciousness of the rich cultural diversity of the Ismaili community were the tours in 1999 in the United States and Canada and in 2002 in Europe of the programme of music, song, dance and exhibits called <A title=ContentLink.asp?type=cont&amp;id=101789 href="view_article9124.html?type=cont&amp;id=101789">&#8220;Expressions of the Pamir: Culture and Heritage of the Ismailis of Tajikistan&#8221;</A>. Organised by The Institute of Ismaili Studies, this multimedia programme was a powerful introduction to the culture of Ismailis in Tajikistan for the <I>jamat</I>s in these countries. Many people were overcome with tears of joy to witness the beauty and splendour of the presentations. The accompanying textual materials for adults and children helped them to understand the cultural context of the performances, to avoid treating the skilled Tajik performers as exotic foreigners, and to regard their rich traditions as part of their own Ismaili heritage.<BR><BR>The social and cultural interactions of Ismailis in any contemporary society can be thought of as existing in three concentric circles: <BR>
+<UL class=bodytext>
+<LI>within the ethnic diversity of the Ismaili community; 
+<LI>with communities of secondary affinity, that is, non-Ismaili Muslims and non-Muslims sharing the same cultural heritage (e.g. Syrian, Iranian, French); and 
+<LI>with other sections of the larger society. </LI></UL>
+<P class=bodytext>Such multi-layered cultural interactions have the potential for producing new and exciting blends of cultural expression.<BR><BR>
+<DIV class=sub_head><A name=anchor7></A><STRONG>Ismaili Art and Artists in the 21st Century</STRONG></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>Just as Ismaili artistic creativity in previous eras reflected the concerns and preoccupations of those times, contemporary cultural production has to deal with those of our own times. Whereas the cultural achievements of the past provide sources of inspiration to many contemporary Ismaili artists, their work has to address twenty-first century issues in order to be relevant to our times and context. The cultural interface of the past and the present is well demonstrated by many of the winners of the Aga Khan Award for Architecture over the years in their creative utilisation of present-day materials and technologies within the framework of traditional Muslim principles of design and construction.<BR><BR>In recent years. a number of individual Ismailis have excelled in various artistic endeavours. Among these are the internationally acclaimed artist Guljee, whose many honours include the Hilal-e Imtiaz, Pakistan&#8217;s highest civilian award and the Canadian writer M.G. Vassanji, winner of a Regional Commonwealth Prize for Literature, Zainub Verjee, a media artist who retraced the migrations of South Asian Ismailis in a mirror-image multi-track production designed specifically for exhibition at Burnaby <I>jamatkhana</I>. Calligrapher Shamas Nanji experiments with an &#8220;electronic reed&#8221; to produce computer-generated designs in the Arabic script. Tazim Jaffer uses innovative ways of combining disparate media such as painting, photography, sculpture, weaving and jewellery, to explore the complex textures and rich colours of folk motifs. Some Afghan immigrants to Canada, after undergoing retraining, have already adapted their artistic skills to produce hybrid handicrafts. In the United Kingdom, the artist Zarina Bhimji reflects her East African background in her exhibitions.<BR><BR>Ismailis are excelling in media such as architecture, music and drama. The future seems to hold exciting prospects for an Ismaili cultural renaissance. But, as mentioned, Ismailis should not look only to the past for the emerging shape of an artistic resurgence. Contemporary Ismaili artists as well as non-Ismaili Muslim cultural elite, such as the late Nusrat Fateh Ali Khan and A.R. Rahman have demonstrated how traditional art forms can be creatively blended with western styles to produce remarkable works that are appreciated globally. Cultural commentators such as Homi Bhabha and Abdul JanMohamed have noted the &#8220;in-between space&#8221; of different cultures, in which the immigrant operates, as a potential site for leading-edge creativity. Driven by the angst of homelessness and the desire to find one&#8217;s niche in the new land, the diasporic artist seeks out new forms, techniques and media for self-expression.<BR><BR><A name=anchor8></A><STRONG>A Culture of Excellence<BR></STRONG></DIV>
+<P class=sub_head>
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="5%"></TD>
+<TD>&#8220;<I>In the process of adaptation we would be vain and wrong to believe or to hope that we will be able to create outstanding works of art in our own tradition in architecture, literature, painting or culture within a matter of years. But unless we begin creating the tapestry, drawing its outlines, how can we ever expect that generations from now we will be able to have the right to hope for jewels of world beauty, men of world stature in all fields, such as those that have studded our past?</I>&#8221;</TD>
+<TD width="5%"></TD></TR>
+<TR>
+<TD width="5%"></TD>
+<TD>His Highness the Aga Khan<BR><A title=ContentLink.asp?type=cont&amp;id=101451 href="view_articlef890.html?type=cont&amp;id=101451">Sind University</A>, February 6, 1970 </TD>
+<TD width="5%"></TD></TR></TBODY></TABLE></P>
+<P class=bodytext>The foundations of an Ismaili cultural renaissance need to be laid now. This process should not only include encouraging and supporting youth to turn to creative and artistic pursuits, but also to ensuring that there is general growth of cultural awareness in all sectors of the <I>jamat</I>. The aim should be to rise above mediocrity and to strive for the highest standards of excellence. Leadership and advice from present-day artists, many of whom unfortunately tend to be marginalised due to the challenging and experimental nature of their art, will be vital in preparing for such a renaissance. We need to initiate a scholarly discussion on the parameters and nature of the Ismaili aesthetic, guided among other things by the principles and ethics of our faith.<BR><BR>
+<P class=bodytext>We also need to collaborate with other Muslim and non-Muslim artists engaged in various creative endeavours. There is already significant interaction of Ismaili artists with their counterparts from other communities. As we operate more intensively in the three concentric circles of socio-cultural interactions outlined above, there will be a progressive rise in the dynamic expressions of Ismaili intellectual and cultural life in the years to come. These expressions will be in many ways a reflection of the individual&#8217;s engagement with our faith and history, our unity and diversity, our interactions with other communities and societies, as well as the increasingly globalising nature of our world. Above all, it will demonstrate our commitment to the lifelong quest for knowledge and excellence in all endeavours of life.<BR><BR>
+<DIV class=sub_head><A name=anchor9></A><STRONG>References</STRONG></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>Bhabha, Homi. <I>The Location of Culture</I> (London: Routledge, 1994).</DIV>
+<DIV class=sub_head><BR>Grabar, Oleg. <I>The Formation of Islamic Art</I>. 2nd ed. (New Haven, CT: Yale University Press, 1987).</DIV>
+<DIV class=sub_head><BR><I>The Ismaili USA</I>. Special Issue on Culture and the Arts. July 11, 2000.</DIV>
+<DIV class=sub_head><BR>JanMohamed, Abdul. &#8220;Worldliness-without-World. Homelessness as Home: Toward a Definition of the Specular Border Intellectual,&#8221; in Michael Sprinkler (ed.), <I>Edward Said: A Critical Reader</I> (Oxford: Blackwell, 1992), pp. 96-120.</DIV>
+<DIV class=sub_head><BR><A title=ContentLink.asp?type=user&amp;id=100251 href="view_person2c2e.html?type=user&amp;id=100251">Kassam, Tazim R</A>. &#8220;Artist Tazim Jaffer: Meditations on Culture.&#8221; <I>Hikmat</I> 3:6, July 1992, pp. 30-31.<BR>Prince Karim Aga Khan. <I>The Muslim World: Yesterday, Today &amp; Tomorrow</I> (Karachi: His Royal Highness the Aga Khan Ismaili Federal Council for Pakistan, 1977).</DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Quest for Excellence: Towards a Cultural Renaissance?</TITLE><META HTTP-EQUIV="Expires" CONTENT="Thu, 24 Jun 2021 11:42:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 24/06/2011&nbsp;13:40&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101157 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:22 GMT -->
+</HTML>

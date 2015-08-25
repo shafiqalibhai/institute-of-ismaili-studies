@@ -1,0 +1,659 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112345 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:49 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 112345;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyf005.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D112345">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article8827.html?ContentID=112346">Français</A></li><li><A href="view_article1910.html?ContentID=112347">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article77b7.html?ContentID=112348">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_article4617.html?ContentID=112349">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>The Qur'an in Muslim Life and Practice</strong><br/><strong><DIV><A href="view_personbe78.html?type=authors&amp;id=203">Dr Mahmoud M Ayoub</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that appeared in <I>The Muslim Almanac</I> Ed. Azim Nanji published by Gale Research Inc. Detroit, MI, p.355-364 in&nbsp;1996. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning_%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><P>Much has been said and written about the Qur&#8217;an &#8211; that it is sacred scripture, a forgery, a concoction of disparate ideas, great literature, or a confused piece dreamed by a primitive mind. While the Qur&#8217;an has been a source of bewilderment for Western understanding, it has been for Muslims a source of inspiration, solace, and salvation. Ultimately, it is not so much the Qur&#8217;an but its impact on Muslim societies that has motivated Western readers to discover some of the Qur&#8217;an&#8217;s power and beauty.</P></div><div> </div><div><P><A title="Download full version of the article" href="SiteAssets/pdf/The_Quran_in%20Muslim_Life_and_Practise_M_Ayoub_%20Muslim_Almanac.pdf"><IMG style="MARGIN-RIGHT: 2px" border=0 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=18 height=18>Download full version of the article in PDF format </A></P>
+<P><STRONG>Key Words<BR></STRONG>Qur'an, Prophet Muhammad, Recitation, Revelation, Muslim History,&nbsp;<A href="javascript:void(LaunchGlossary('GlossaryItemf60b.html?type=glossary&amp;id=264'))">Gabriel</A>&nbsp;&nbsp;</P>
+<P><STRONG><U><A name=revelation></A>THE QUR&#8217;AN AS REVELATION</U> </STRONG></P>
+<P><IMG style="MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; MARGIN-RIGHT: 10px" border=0 alt="" src="../cms.iis.ac.uk/WebAssets/Large/Quran%20on%20stand.jpg" width=173 height=112>In the Qur&#8217;an, a pious Muslim hears God&#8217;s voice guiding and encouraging, consoling and reproaching, promising the righteous mercy and eternal bliss, while threatening the wicked with wrath and eternal torment. For Muslims, the Qur&#8217;an is the word of God, which has entered human time to shape history. According to Muslim sources, the <A href="javascript:void(LaunchGlossary('GlossaryItemf60b.html?type=glossary&amp;id=264'))">Angel Gabriel </A>revealed himself to <A href="view_articlee7a1-2.html?type=cont.currentlang&amp;id=111915#anchor1">Prophet Muhammad </A>in 610 CE while he was in prayerful retreat in a cave on <A href="javascript:void(LaunchGlossary('GlossaryItem9d88.html?type=glossary&amp;id=246'))">Mount Hira</A>, outside <A href="view_article9b29.html?type=cont.currentlang&amp;id=106572">Mecca</A>. It is said that in this initial meeting, the Angel Gabriel pressed Muhammad so vehemently that he felt he was being choked. The Qur&#8217;an states that the angel then commanded: </P>
+<P><I>Recite in the name of your Lord who created, created man from a blood clot. Recite, for your Lord is most magnanimous - who taught by the pen; taught man that which he did not know.</I> (Qur&#8217;an 96:1-5)</P>
+<P>Muslims claim that God warned Prophet Muhammad: <I>We shall surely lay upon you weighty speech</I>, and enjoined him to rise up through most of the night in prayer, and remember fervently what he was told to be, "the Lord of the east and the west" (Qur&#8217;an 73:5 and 73:8). For Muslims this "weighty speech" marked Prophet Muhammad as the last Messenger of God to humankind; this event was to have a great impact on the course of human history. </P>
+<P>The Qur&#8217;an is said to have been communicated to Prophet Muhammad in two ways. Muslims believe that it was communicated through the Angel Gabriel. These communications were revealed in small portions: single verses, groups of verses, and entire chapters or <I>sura</I>s over a period of twenty to twenty-two years. The Qur&#8217;an for Muslims is not only words that can be uttered, heard, and recorded; it is also the heavenly archetype of which the recited and written Qur&#8217;an is only an earthly copy. The Qur&#8217;an in its heavenly archetypal form is for Muslims the source of divine revelation throughout human history and is eternally preserved by God. It is the covenant of God with humankind which He established with the children of Adam when they were but ideas or essences in the divine realm. Prophet Muhammad also professed to have experienced this heavenly Qur&#8217;an, in addition to having been the recipient of revelation. He would experience a profound spiritual state, shivering on a hot summer day or sweating on a cold winter day, hearing sounds like the ringing of a bell. These sounds transformed themselves in his consciousness into human words, which he memorised and had recorded. </P>
+<P>Muslims also believe that the Qur&#8217;an was also sent down in part, to Prophet Muhammad&#8217;s heart on the "night of determination" (Qur&#8217;an 44:3 and 97:1), a blessed night for all Muslims. This event sanctified his life and made Prophet Muhammad an example for Muslims to follow. In the Qur&#8217;an, God asked: <I>Am I not your Lord?</I> and those who chose to worship God affirmed as Lord responded with the words: <I>Yes, we bear witness</I>... (Qur&#8217;an 7: 172). The Qur&#8217;an is the seal and testimony to this covenant. Its message is, for Muslims, a powerful affirmation of divine lordship and Muslim commitment. </P>
+<P>The Qur&#8217;an as an earthly text has been inextricably bound to Muslim history. It served as an answer to the problems of the Arab society in Prophet Muhammad&#8217;s time. The Qur&#8217;an was also a response to Prophet Muhammad&#8217;s questions about the meaning of human life and the mystery of creation, and was closely linked to the history of the nascent Muslim community in Mecca and, later, in Medina. Many of the Qur&#8217;anic verses are said to have been revealed in answer to specific questions or life situations. The answers given are seen by Muslims to be general principles, moral imperatives, or precepts applicable to all times and places. The family of the Prophet, which the Qur&#8217;an directly addressed (see Qur&#8217;an 33:32), is seen by Muslims to be a model for all families and all societies in the world. </P>
+<P><B>Arrangement of the Qur&#8217;an</B></P>
+<P>The Qur&#8217;an was subsequently written down and memorised by professing Muslim men and women. Yet, when the Prophet died in 632 CE, ten years after the <I>Hijra</I>, that is, his migration from Mecca to Medina, the Qur&#8217;an as it is known today, did not exist. The verses and chapters, or <I>sura</I>s<I>, </I>were at that time scattered fragments of the writings of Prophet Muhammad&#8217;s scribes, preserved on privately collected pieces of parchment, stone, palm leaf, and leather, in addition to words preserved in human memory. It was during the reign of the third Muslim caliph (or religious leader) Uthman, who governed the existing Muslim community several generations after Prophet Muhammad&#8217;s death, that the Qur&#8217;an was given its standard form, which remains unchanged to this day. The <I>suras </I>were arranged so that, generally, there would be progression from the longest chapter to the shortest. It is that arrangement that has been preserved as the authoritative version of the Qur&#8217;an.</P>
+<P>It is essential for every pious Muslim to memorise as much of the Qur&#8217;an as possible. A Muslim prayer in the solitude of a room or in a congregation begins with the words of the Qur&#8217;an&#8217;s opening <I>sura (Al-Fatihah). </I>Prayer is considered to be a way for Muslims to appropriate the word of Allah. This divine-human interchange is eloquently expressed in a <I>hadith qudsi, </I>a saying of the Prophet quoting God: </P>
+<P><I>I have divided the prayer (salat) between me and my servant, and my servant shall have whatever he prays for. For when the servant says: &#8216;All praise be to God, the Lord of all beings,&#8217; God says: &#8216;My servant has praised me&#8217;. When the servant says: &#8216;The All-Merciful, the Compassionate,&#8217; God says: &#8216;</I><I>My </I><I>servant has glorified me ... this is my portion and to him belongs what remains&#8217;. </I>(M. Ayoub, <I>The</I> <I>Qur&#8217;an and Its Interpreters).</I> </P>
+<P>The <I>Fatihah, </I>the opening <I>sura </I>of the Qur&#8217;an, is considered by Muslims to be the perfect prayer. The first three and one-half of its seven verses is a prayer of praise. The rest of the <I>sura </I>is a prayer for divine guidance and grace. Not only the <I>Fatiha </I>but the entire Qur&#8217;an is a Muslim prayer. It is also a divine address to Muslims. Thus, in every prayer, God is believed to reveal Himself and the Muslim believer is to receive the word of God. Muslim prayer is the human connection to God through the Qur&#8217;an.</P>
+<P><B><U></U></B></P>
+<P><B><U><A name=recitation></A>THE QUR&#8217;AN AS RECITATION</U></B><U></U></P>
+<P>The Qur&#8217;an for Muslims is a source of divine blessing and merit, tranquillity and guidance. With it, a child is greeted at birth, by it he or she is guided through life&#8217;s journey, and with it, sent to the final abode. This long journey through life with the Qur&#8217;an is to include a recitation of the entire Qur&#8217;an over a specific period or a week, a month, or longer in accordance with divisions of the sacred text for daily recitation. This process is known as <I>Khatm al-Qur&#8217;an </I>or completion of its recitation. On special occasions, such as the fasting month of <I>Ramadan</I>, the pious undertake to recite the entire Qur&#8217;an by dividing it up into thirty equal parts that correspond with the thirty nights of the Muslim sacred month. Prophet Muhammad is said to have called such a person who journeys through the Qur&#8217;an "the sojourning traveller". This is because when the reciter comes to the end of his or her recitation, he or she must start over at the beginning again. </P>
+<P>Muslims find the recitation, memorising, copying or possessing a copy of the Qur&#8217;an in their homes a source of great blessing. Indeed, it is believed that on the day of resurrection, the status of a Muslim man or woman in paradise will be determined by the number of verses of the Qur&#8217;an that he or she has memorised during their earthly life. An even greater source of merit and blessing for Muslims is found in studying and understanding the principles and precepts of the Qur&#8217;an. The Prophet is said to have declared: <I>There are no people assembled in one of the houses of God to recite the Book of God and study it together but that the sakinah (divine tranquillity) descends upon them. </I>The term <I>sakinah </I>is possibly derived from the Hebrew term <I>sheckinah, </I>which means "to the glory of Jehovah." Such a derivation may have been the result of contact Prophet Muhammad had with both Jews and Christians prior to and during his revelations. "Mercy covers them, angels draw near to them, and God remembers them in the company of those who are with him." The reciters of the Qur&#8217;an, those who memorise its words and live by its precepts, are said to be heirs to the Prophet. The Qur&#8217;an is believed to sanctify the heart and home of the Muslim and make him or her a partaker of Divine revelation. Its word inscribed on a building, a business, or vehicle is believed to invoke a blessing or protection. </P>
+<P>Above all, the Qur&#8217;an is "a book of guidance to the God-fearing" (Qur&#8217;an 2:1-5). The faithful are enjoined to ponder the Qur&#8217;an, study both the meaning and applications of its verses, and be guided by them in their daily conduct. The Qur&#8217;an is intended to be the basis of Muslim society. The Qur&#8217;an regulates the filial relation of a child to parents and their responsibilities toward the child. It regulates the relations of a Muslim to fellow Muslims and non-Muslims, the relationship of a subject to the state and its ruling authorities, and the relationship of a human being to God. It regulates the life of society in times of war and peace, and even stipulates the reasons for and rules governing war. The Qur&#8217;an is, in short, a school for Muslims; it disciplines them physically, morally, and spiritually.</P>
+<P><B></B></P>
+<P><B><U></U></B></P>
+<P><B><U><A name=inspiration></A>THE QUR&#8217;AN AS INSPIRATION</U></B></P>
+<P>The Qur&#8217;an is essentially a series of self-contained statements, parables, stories, injunctions, and prohibitions. However, Muslims believe that underlying this diverse grouping is a unity of purpose, message, idiom, and style. The Qur&#8217;an in Arabic has been rightly described by Muslims and non-Muslims alike as a symphony of words. Not only the teachings and ideas of the Qur&#8217;an but its words and phrases have permeated the lives and speech of Muslims, regardless of differences of language, race, and culture. With the words of the Qur&#8217;an a Muslim expresses satisfaction and gratitude to God for success when exclaiming: <I>Tabarak Allah </I>(Blessed be God) or <I>Alhamdu lil-lah </I>(Praise be to God). With the words of the Qur&#8217;an a Muslim also expresses sorrow and acceptance of God&#8217;s will when losing a loved one or in encountering death by saying "To God do we belong, and to Him we shall return." With the words of the Qur&#8217;an, and especially with the pronouncement of its opening chapter or <I>sura, </I>marriages are blessed, agreements are sealed, and fear and danger believed to be averted. </P>
+<P>The Qur&#8217;an has been regarded by Muslims as a miracle of speech. Its inimitable style, idioms, and perceived unity are seen to be proof of its divine origin for Muslims. Its interpretation <I><U>(tafsir</U>) </I>has occupied some of the best minds of the Muslim community. The study of its grammar and language, eloquence, similes and metaphors, parables, stories, and precepts have evolved into a venerable science. Likewise, its recitation, whether in a simple chant <I>(tartil) </I>or highly developed artistic musical rendition <I>(tajwid), </I>has attracted the best voices and talents of Muslim society throughout Muslim history. It is in the recitation of the Qur&#8217;an that its power and beauty are felt by pious Muslims. Qur&#8217;an reciters have, therefore, occupied a special place of honour in the Muslim community. </P>
+<P>The Qur&#8217;an has set the standard of excellence for Arabic literature. It has, moreover, permeated the literature of all other Muslim languages. Muslims greet each other with the words of the Qur&#8217;an and, with its words and ideas, they express their own feelings and ideas. The Qur&#8217;an is believed to have been sent down to Prophet Muhammad and through him to humankind "in clear Arabic speech" (Qur&#8217;an 16:103). Although the Qur&#8217;an has been translated into most of the major languages of the globe, it is recited in its original language. The Qur&#8217;an is translated and its meanings interpreted into other languages only for the purpose of studying and understanding its teachings. To know the Qur&#8217;an in all its dimensions, it must be studied in its original language. </P>
+<P>This goal has motivated many non-Arab-speaking Muslim scholars to excel in the study of the language of the Qur&#8217;an. For centuries, Arabic was the international language of Muslim literature, philosophy, and science. The Qur&#8217;an has been the symbol, source, and framework of Muslim unity. </P>
+<P>Islam has spread over a vast geographically and culturally diverse area of the world. It has been adapted to suit the needs of various peoples and cultures. In the process, however, it has assumed many and widely different characters and expressions. The Qur&#8217;an underlies this great diversity and provides a fundamental unity in worship practices, literary expression, and popular culture. This paradoxical unity and diversity of Islam and its grounding in the Qur&#8217;an is its perceived strength. The principle of unity of the human family is an important Qur&#8217;anic principle: <I>Humankind, fear your Lord who created you all from one soul, from it He created its partner, and from them both He scattereth many men and women</I> (Qur&#8217;an 4:1). The principle of diversity is also a Qur&#8217;anic principle. Difference of race, colour, and creed are divinely preordained. </P>
+<P>The Qur&#8217;an has been an inexhaustible source of inspiration for Muslims in every discipline of knowledge and human endeavour. Devout Muslims claim that it speaks to every situation in the life of Muslim societies as well as to the condition of every Muslim individual. Muslims have insisted that the Qur&#8217;an is applicable to all situations at all times. Yet, for it to be universal in its scope and meaning, the<I> </I>Qur&#8217;an is read and committed to heart by every Muslim as though it were sent down at that moment, and for him or her alone.</P>
+<P><I></I></P>
+<P><B></B></P>
+<P><B><A name=references></A>References</B></P>
+<P><B></B></P>
+<P>Ayoub, Mahmoud. <I>The Qur&#8217;an and Its Interpreters, </I>2 vols. to date. New York: State University of New York Press, 1984. <BR>Izutsu, T. <I>God and Man in the Koran. </I>Tokyo: Keio Institute of Cultural and Linguistic Studies, 1964. <BR>Kassis, H.E. <I>A Concordance</I> <I>of the Qur&#8217;an</I><I>. </I>Berkeley: University of California Press, 1983. <BR>Lings, M. <I>The Qur&#8217;anic Art of Calligraphy and Illumination. </I>Boulder: Shambhala, 1976.<I></I> <BR>Nelson, K. <I>The Art of Reciting the Qur&#8217;an. </I>Austin: University of Texas Press, 1985. <BR>Safadgi, Y.H. <I>Islamic Calligraphy. </I>Boulder: Shambhala, 1978. <BR>Tabari, al. <I>The Commentary on the Qur&#8217;an. </I>Vol. 1, New York: Oxford University Press, 1987 <BR>Tabatabai, M.H. <I>The Qur&#8217;an in Islam: Its Impact and Influence on the Life of Muslims. </I>London: Muhammadi Trust, 1987.</P>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>Related Pages on the IIS Website</STRONG> </DIV>
+<UL>
+<LI>
+<DIV>Article: <A href="view_article8c53.html?type=cont.currentlang&amp;id=111705">Shi&#8216;i Ismaili Interpretations of the Holy Qur&#8217;an - Azim Nanji</A></DIV>
+<LI>
+<DIV>Article: <A href="view_article74ed.html?type=cont.currentlang&amp;id=108762">On Pluralism, Intolerance, and the Qur&#8217;an - Professor Ali S Asani<BR><BR xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns:ms="urn:schemas-microsoft-com:xslt"></A></DIV></LI></UL></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Qur'an in Muslim Life and Practice</TITLE><META HTTP-EQUIV="Expires" CONTENT="Thu, 18 Mar 2021 12:41:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 27/06/2011&nbsp;16:42&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112345 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:51 GMT -->
+</HTML>

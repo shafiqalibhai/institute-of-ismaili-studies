@@ -1,0 +1,13 @@
+body {font-size:11px}
+h1 {font-size:23px}
+h3 {font-size:19px}
+#top .left {font-size:11px}
+#top .right .top_search {font-size:11px;}
+#breadcrumb {font-size:12px;}
+#breadcrumb .right {font-size:10px;}
+#left_menu p {font-size:12px;line-height:13px;}
+#right_menu p {font-size:12px;line-height:13px;}
+#right_menu p.title_plain {font-size:13px;}
+#footer {font-size:11px;}
+#footer #links .title {font-size:12px;}
+#copyright {font-size:11px;}

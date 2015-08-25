@@ -1,0 +1,665 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101164 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:55 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101164;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning.jpg','WebAssets/Site_Images/header/Learning_1.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only871d.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101164">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article1e9a.html?ContentID=101167">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Introduction to The Assassin Legends</strong><br/><strong><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of the introduction to <EM><A onclick="return fnExtLinkWarning();" href="http://www.ibtauris.com/Books/Humanities/History/Regional  national history/Asian history/Middle Eastern history/The Assassin Legends Myths of the Ismailis.aspx?menuitem=%7BC90B73C8-B253-4CB4-A19B-025245A9366A%7D" target=_blank>The Assassin Legends: Myths of the Isma&#8216;ilis</A> </EM>published by I.B. Tauris London in 1994. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/Image5-20051110155418_7055.jpg" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><TABLE style="MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: 65%; BORDER-COLLAPSE: collapse" cellSpacing=1 cellPadding=3 align=right>
+<TBODY>
+<TR>
+<TD style="VERTICAL-ALIGN: top">The &#8216;Old Man of the Mountain and his Paradise&#8217;, as depicted in a manuscript of the travels of Odoric of Pordenone (d. 1331) contained in the Livre des Merveilles (Biblioth&#232;que Nationale, Paris, Ms. fr</TD></TR></TBODY></TABLE>This article traces the origin and evolution of the Assassin legends with the aim of invalidating the scholarly and popular legitimacy they have acquired over the centuries. The creation and widespread promulgation of these stories detailing the <A href="GlossaryItem1032.html?type=glossary&amp;id=147">Nizari</A> <A href="GlossaryItemd2ed.html?type=glossary&amp;id=224">Ismailis</A>&#8217; use of hashish, the earthly paradise created by the &#8216;Old Man of the Mountain&#8217; and the deadly missions Ismaili devotees were ready to undertake were the result of several factors. Western Orientalists indulged their European audiences with fabricated tales of passion, mystery and murder. The perpetuation of misinformation regarding the community by their <A href="GlossaryItema9e4.html?type=glossary&amp;id=82">Sunni</A> contemporaries reinforced the existing European fictions as the Crusaders took these damaging accounts home with them. In addition, persecution of Ismailis necessitated intense secrecy regarding their own practices, beliefs and literature. In more recent times, European scholars have contributed to the currency of the legends.</div><div> </div><div><P class=mainhead><STRONG>Keywords</STRONG><BR><BR></P>
+<P class=bodytext>Assassin legends, Ismaili studies, Nizaris, Ismailis, <A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A>, Hassan Sabbah, Crusades, Old Man of the Mountain, history, Persia, Hashishin.<BR><BR></P>
+<P class=bodytext><A title=SiteAssets/pdf/assassin_legends.pdf href="SiteAssets/pdf/assassin_legends.pdf"><IMG height=25 hspace=5 src="images/pdf_icon.gif" width=25 border=0>Download PDF version of article (185 KB)</A><BR><BR></P>
+<P class=mainhead><STRONG>Table of contents</STRONG><BR><BR></P>
+<UL class=bullet_list>
+<LI><A href="#anchor1">How It All Began</A> 
+<LI><A href="#anchor2">The Nizari Ismailis</A> 
+<LI><A href="#anchor3">The Genesis of the Term</A> 
+<LI><A href="#anchor4">The Legends Themselves</A> 
+<LI><A href="#anchor5">The Role of the Orientalists</A> 
+<LI><A href="#anchor6">The Role of Muslim Polemicists</A> 
+<LI><A href="#anchor7">The Role of the Ismailis</A> 
+<LI><A href="#anchor8">The Literary Background</A> 
+<LI><A href="#anchor9">Proliferating the Tales</A> </LI></UL>
+<P class=mainhead>&nbsp;</P>
+<DIV class=sub_head><A name=anchor1></A><STRONG>How It All Began</STRONG></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>Western readers of Edward FitzGerald&#8217;s introduction to his English rendition of &#8216;Umar Khayyam&#8217;s quatrains will be familiar with the &#8216;Tale of the Three Schoolfellows&#8217;. In this, the Persian poet-astronomer &#8216;Umar Khayyam is linked with the Saljuq vizier Nizam al-Mulk and Hasan Sabbah, the founder of the so-called &#8216;Order of Assassins&#8217;. The three famous Persian protagonists of this tale were, allegedly, classmates in their youth under the same master in Nishapur. They made a vow that whichever of them first achieved success in life would help the other two in their careers. Nizam al-Mulk attained rank and power first, becoming the vizier to the <A href="javascript:void(LaunchGlossary('GlossaryItem2b5c.html?type=glossary&amp;id=110'))">Saljuq</A> sultan, and he kept his vow, offering Khayyam a regular stipend and giving Hasan a high post in the Saljuq government. However, Hasan soon became a rival to Nizam al-Mulk, who eventually succeeded through trickery in disgracing Hasan before the sultan. Hasan vowed to take revenge. He left for Egypt, where he learned the secrets of the Ismaili faith, and later returned to Persia to found a sect that terrorised the Saljuqs through its assassins. Nizam al-Mulk became the first victim of Hasan&#8217;s assassins. This is one of the eastern legends connected with the Nizari Ismailis, known to mediaeval Europe as &#8216;Assassins&#8217;.<BR><BR>In the West, too, the Nizaris have been the subjects of several legends since the twelfth century. The first contact between the Europeans, or the Latin Franks, then engaged in the Crusading movement to liberate the Holy Land, and the members of this <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;i</A> Muslim community occurred in Syria during the earliest years of the twelfth century. At the time, the Nizari Ismailis had just founded, under the leadership of the redoubtable Hasan Sabbah, a special territorial state of their own, challenging the hegemony of the Saljuq Turks in the Muslim lands. Subsequently, the Nizari Ismailis of Syria became involved in a web of intricate alliances and rivalries with various Muslim rulers and with the Christian Franks, who were not interested in acquiring accurate information about their Ismaili neighbours, or indeed about any other Muslim community, in the Latin Orient. Nonetheless, the Crusaders and their occidental observers began to transmit a multitude of imaginative tales about the so-called &#8216;Assassins&#8217;, the devoted followers of a mysterious &#8216;Vetus de Montanis&#8217; or &#8216;Old Man of the Mountain&#8217;. These Assassin legends soon found wide currency in Europe, where the knowledge of all things Islamic verged on complete ignorance and the romantic and fascinating tales told by the returning Crusaders could achieve ready popularity.<BR><BR>The Assassin legends, rooted in the general hostility of the Muslims towards the Ismailis and the Europeans&#8217; own fanciful impressions of the Orient, evolved persistently and systematically during the Middle Ages. In time, these legends were taken, even by serious western chroniclers, to represent accurate descriptions of the practices of an enigmatic eastern community.<BR><BR>The Assassin legends thus acquired an independent currency, which persistently defied re-examination in later centuries when more reliable information on Islam and its internal divisions became available in Europe. However, progress in Islamic studies, and a remarkable modern breakthrough in the study of the history and doctrines of the Ismailis, have finally made it possible to dispel once and for all some of the seminal legends of the &#8216;Assassins&#8217;, which reached their height in the popular version attributed to Marco Polo, the famous thirteenth century Venetian traveller. It is the primary object of this study to trace the origins of the most famous of the mediaeval legends surrounding the Nizari Ismailis, at the same time investigating the historical circumstances under which these legends acquired such widespread currency.<BR><BR><A name=anchor2></A><STRONG>The Nizari Ismailis</STRONG></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>The Nizari lsmailis, numbering several millions and accounting for the bulk of the Ismaili population of the world, are now scattered over more than 25 countries in Asia, Africa, Europe and North America. They currently acknowledge <A href="view_article6d2b.html?type=cont.currentlang&amp;id=103467">Prince Karim Aga Khan</A> as their 49th <I></I><I>imam</I> or spiritual leader. The Ismailis represent an important minority community of Shi&#8216;i Muslims, who themselves today account for about 10 per cent of the entire Muslim society of around one billion persons.<BR><BR>The Ismailis have had a long and eventful history, stretching over more than 12 centuries, during which they became subdivided into a number of major branches and minor groupings. They came into existence, as a separate Shi&#8216;i community, around the middle of the eighth century; and, in mediaeval times, they twice founded states of their own, the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryIteme8b3.html?type=glossary&amp;id=298'))">caliphate</A> and the Nizari state. At the same time, the Ismailis played an important part in the religio-political and intellectual history of the Muslim world. The celebrated Ismaili <A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))"><I>da&#8216;i</I>s </A>or propagandists, who were at once theologians, philosophers and political emissaries, produced numerous treatises in diverse fields of learning, making their own contributions to the Islamic thought of mediaeval times.<BR><BR>In 1094, the Ismaili movement, which had enjoyed unity during the earlier Fatimid period, split into its two main branches, the Nizaris and the <A href="javascript:void(LaunchGlossary('GlossaryItemeb7e.html?type=glossary&amp;id=157'))">Musta&#8216;lians</A>. The Nizaris, who are the main object of this investigation, succeeded in founding a state in Persia, with a subsidiary in Syria. This territorially scattered state, centred on the mountain fortress of Alamut in northern Persia, maintained its cohesiveness in the midst of a hostile environment controlled by the overwhelmingly more powerful and anti-Shi&#8216;i Saljuq Turks, who championed the cause of Sunni Islam and its nominal spokesman, the <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">&#8216;Abbasid</A> caliph at Baghdad. It was under such circumstances that the Syrian Nizaris were forced to confront a new adversary in the Christian Crusaders who, from 1096, had set out in successive waves to liberate the Holy Land of Christendom from the domination of the Muslims (or the Saracens as they were commonly but incorrectly called). The Nizari Ismaili state, which controlled numerous mountain strongholds and their surrounding villages as well as a few towns, finally collapsed in 1256 under the onslaught of the Mongols. Thereafter, the Nizaris of Persia, Syria and other lands survived merely as Shi&#8216;i minority communities without any political prominence.<BR><BR><A name=anchor3></A><STRONG>The Genesis of the Term</STRONG></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>The western tradition of calling the Nizari lsmailis by the name of Assassins can be traced to the Crusaders and their Latin chroniclers as well as other occidental observers who had originally heard about these sectarians in the Levant. The name, or more appropriately misnomer, Assassin, which was originally derived under obscure circumstances from variants of the word <I>hashish</I>, the Arabic name for a narcotic product, and which later became the common occidental term for designating the Nizari lsmailis, soon acquired a new meaning in European languages; it was adopted as a common noun meaning murderer. However, the doubly pejorative appellation of Assassins continued to be utilised as the name of the Nizari Ismailis in western languages; and this habit was reinforced by Silvestre de Sacy and other prominent orientalists of the nineteenth century who had begun to produce the first scientific studies about the Ismailis.<BR><BR>In more recent times, too, many western Islamists have continued to apply the ill-conceived term &#8216;Assassins&#8217; to the Nizari Ismailis, perhaps without being consciously aware of its etymology or dubious origins. Bernard Lewis, the foremost modern authority on the history of the Syrian Nizaris and a scholar who has also concerned himself with the etymological aspects of the term Assassin, has consistently used it in his work, even adopting it for the title of his well-known monograph on the Nizari Ismailis.<SUP><A href="#anchor1-5">1</A></SUP> Marshall Hodgson also used it in the title of his standard scholarly treatment of the subject.<SUP><A href="#anchor2-5">2</A></SUP> It is, therefore, not surprising that a non-specialist such as the famous English explorer Freya Stark (1893-1993), who visited Alamut in 1930, should have decided to use this term in the title of her romantic and still highly popular travelogue which, in fact, relates mainly to sites in Persia other than Alamut.<SUP><A href="#anchor3-5">3</A></SUP> A similar choice was made by an Oxford expeditionary group of scholars who went to Persia in 1960 to conduct the most extensive archaeological investigation yet of the mediaeval Nizari strongholds of northern Persia, even though they had the renowned Ismaili specialist Samuel Stern (1920-69) as their historical adviser.<SUP><A href="#anchor4-5">4</A></SUP> Indeed, despite the long-standing correct identification of the people in question as Nizari Ismailis, the appellation of Assassins has by and large been retained in the West. Doubtless, the term Assassins, with its aura of mystery and sensation, has acquired an independent currency.<BR><BR><A name=anchor4></A><STRONG>The Legends Themselves</STRONG></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>The myths and legends of the Nizari Ismailis, encouraged throughout the centuries by the retention of the name Assassins, seem to have had a similar history. Starting in the latter decades of the twelfth century, a number of inter-related legends began to circulate in the Latin Orient and Europe about this mysterious eastern sect, whose members had attracted attention because of their seemingly blind obedience to their leader, the &#8216;Old Man of the Mountain&#8217;. Their self-sacrificing behaviour, carrying out dangerous missions at the behest of the &#8216;Old Man&#8217;, was soon attributed by their occidental observers to the influence of an intoxicating drug like hashish. This provided a rational explanation for behaviour that otherwise seemed irrational. The observers, however, had at best heard only fictitious details and distorted half-truths about the Nizaris from their numerous Muslim and Christian enemies in the Levant. Once the hashish connection was firmly established, it provided ample source material for yet more imaginative tales. The &#8216;Old Man&#8217; was held to control the behaviour of his would-be assassins through regulated and systematic administration of some intoxicating potion like hashish, in conjunction with a secret &#8216;garden of paradise&#8217; in which his drugged devotees would temporarily enjoy the delights of an earthly paradise; hence, they would carry out the dangerous commands of their chief in order to experience such bliss in perpetuity.<BR><BR><A name=anchor5></A><STRONG>The Role of the Orientalists</STRONG></DIV><STRONG></STRONG>
+<DIV><BR>It did not take long for these legends to become fully elaborated and accepted as authentic descriptions of the secret practices of the Nizaris, who were now generally depicted in European sources as a sinister order of drugged and murderous Assassins. These popular legends were handed down from generation to generation, providing important source materials even for the more scholarly Ismaili studies of the nineteenth-century orientalists, starting with Silvestre de Sacy who himself solved an important etymological mystery in this field, the connection between the words Assassin and <I>hashish</I>. Joseph von Hammer-Purgstall (1774-1856), the Austrian orientalist-diplomat who produced the first monograph in a European language on the Nizari Ismailis, had indeed accepted the authenticity of the Assassin legends wholeheartedly.<SUP><A href="#anchor5-5">5</A></SUP> His book was treated as the standard account of the Nizaris of the Alamut period, at least until the 1930s.<BR><BR><A name=anchor6></A><STRONG>The Role of Muslim Polemicists</STRONG></DIV>
+<DIV><STRONG><BR></STRONG>In the meantime, Muslim authors from early in the ninth century had generated their own myths of the Ismailis, especially regarding the origins and aims of the Ismaili movement. In particular, Sunni Muslims, who were generally ill-informed about the internal divisions of Shi&#8216;ism and could not distinguish between the Ismailis and the dissident <A href="javascript:void(LaunchGlossary('GlossaryItem23cf.html?type=glossary&amp;id=134'))">Qarmatis</A>, wrote more polemical tracts against the Ismailis than any other Muslim group, also blaming the Ismaili movement for the atrocities of the Qarmatis of Bahrain. In time, the anti-Ismaili polemicists themselves contributed significantly to shaping the hostility of Muslim society at large towards the Ismailis.<BR><BR>By spreading their disparaging accounts widely from <A href="javascript:void(LaunchGlossary('GlossaryItem1ecb.html?type=glossary&amp;id=60'))">Transoxania</A> to North Africa, aiming to discredit the entire Ismaili movement, the Muslim polemicists gave rise to their own particular &#8216;black legend&#8217; of Ismailism, which they portrayed as a sect with dubious founders and secret, graded initiation rites leading to irreligiosity and nihilism. Indeed, the most common feature of such anti-Ismaili polemics, which greatly influenced all Islamic writings on the Ismailis until modern times, was the portrayal of Ismailism as an arch-heresy or <EM><A href="javascript:void(LaunchGlossary('GlossaryItembe03.html?type=glossary&amp;id=230'))">ilhad</A></EM>, carefully designed to destroy Islam from within. It was further alleged that the Ismaili <I>imam</I>s, including especially the Fatimid caliphs, had falsely claimed Fatimid &#8216;Alid descent from the Prophet&#8217;s daughter Fatima and her husband &#8216;Ali, the first Shi&#8216;i <I><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A></I>. Needless to say, the anti-Ismaili sentiments of the polemicists also found expression in the writings of very many Muslim historians, theologians, jurists and heresiographers of mediaeval times, who rarely missed an opportunity to denounce the Ismailis and their doctrines. The anti-Ismaili &#8216;black legend&#8217; of the Muslim polemicists, and the general hostility of Muslim society towards the Ismailis, in time contributed to the westerners&#8217; imaginative tales about the Nizari Ismailis.<BR><BR><A name=anchor7></A><STRONG>The Role of the Ismailis</STRONG></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>The Ismailis themselves did not help matters by guarding their literature and refusing to divulge their doctrines to outsiders. They were, though, essentially justified in maintaining their secretiveness; in the Middle Ages the Ismailis were perhaps the most severely persecuted community within the Muslim world, subjected to massacres in many localities. The lsmailis were, therefore, obliged from the beginning of their history to adhere closely to the Shi&#8216;i principle of <I><A href="javascript:void(LaunchGlossary('GlossaryItem7383.html?type=glossary&amp;id=71'))">taqiyya</A></I>, precautionary dissimulation of one&#8217;s true religious belief in the face of danger. In fact, with the major exception of the Fatimid period, when Ismaili doctrines were preached openly in the Fatimid dominions, Ismailism developed in utmost secrecy and the Ismailis were coerced into what may be termed an underground or clandestine existence. In addition, the <I>da&#8216;i</I>s who produced the bulk of the Ismaili writings were mainly theologians and, as such, were not keen on historiography. All this, of course, provided ideal opportunities for the Ismailis&#8217; numerous adversaries to falsify and misrepresent their actual beliefs and practices.<BR><BR><A name=anchor8></A><STRONG>The Literary Background</STRONG></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>It was against this background that the orientalists of the nineteenth century, who had for the first time gained access to important collections of Islamic manuscripts held at major European libraries in Paris and elsewhere, began what promised to be a scientific study of the Ismailis. Unfortunately, they too achieved few results, mainly because they had no access to genuine Ismaili texts and were therefore obliged to approach the subject from the narrow and fanciful viewpoint of the mediaeval Crusaders and the travesties of hostile Muslim authors. It is only against this literary background that one can read any sense into some of the conjectures and dubious inferences of Silvestre de Sacy (1758-1838), the greatest orientalist of the time, who summarised his main ideas on the Nizari Ismailis in his <I>M&#233;moire sur la dynastie des Assassins</I>. The distorted image of the Ismailis in general and the Nizari Ismailis in particular was maintained in orientalist circles until the opening decades of the twentieth century. A truly scholarly assessment of the Ismailis had to await the recovery and study of a large number of Ismaili texts, a process that did not start until almost a century after de Sacy&#8217;s death. It is due to the findings of modern scholarship that we are now finally in a position to distinguish fantasy or legend from reality in things Ismaili, especially in connection with the Nizaris of the Alamut period who were the objects of the seminal Assassin legends.<BR><BR><A name=anchor9></A><STRONG>Proliferating the Tales</STRONG></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>In the light of these findings, this study contends that the Assassin legends, especially those based on the hashish connection and the secret &#8216;garden of paradise&#8217;, were actually fabricated and put into circulation by Europeans. It seems that the occidental observers of the Nizari Ismailis, especially those who were least informed about Islam and the Near East, generated these legends (initially in reference to the Syrian Nizaris) gradually and systematically, adding further components or embellishments in successive stages during the twelfth and thirteenth centuries. In this process, the westerners, who in the Crusaders&#8217; times had a high disposition towards imaginative and romantic eastern tales, were greatly influenced by the biases and the general hostility of the non-Ismaili Muslims towards the Ismailis, hostility which had earlier given rise to the anti-Ismaili &#8216;black legend&#8217; of the Sunni polemicists as well as some popular misconceptions about the Ismailis. In all probability, such popular misconceptions also circulated about the Nizaris in the non-literary local circles of the Latin East during the Crusaders&#8217; times; they would have been picked up by the Crusaders through their contact with rural Muslims working on their estates and the lesser educated Muslims of the towns, in addition to whatever information they could gather indirectly through the oriental Christians. In this connection, it is significant to note that similar legends have not been found in any of the mediaeval Islamic sources, including contemporary histories of Syria. Indeed, educated Muslims, including their historians, did not fantasise at all about the secret practices of the Nizaris, even though they were hostile towards them. Similarly, those few well-informed occidental observers of the Syrian Nizaris, such as William of Tyre, who lived in the Latin East for long periods, did not contribute to the formation of the Assassin legends.<BR><BR>In sum, it seems that the legends in question, though ultimately rooted in some popular lore and misinformation circulating locally, were actually formulated and transmitted rather widely due to their sensational appeal by the Crusaders and other western observers of the Nizaris; and they do, essentially, represent the &#8216;imaginative constructions&#8217; of these uninformed observers.<BR></DIV>
+<P class=sub_head>
+<TABLE class=bodytext width="100%" valign="top">
+<TBODY>
+<TR vAlign=top>
+<TD width="5%"><SUP><A name=anchor1-5>1</A></SUP></TD>
+<TD>Bernard Lewis, <I>The Assassins: A Radical Sect in Islam</I> (London, 1967).</TD></TR>
+<TR vAlign=top>
+<TD width="5%"><SUP><A name=anchor2-5>2</A></SUP></TD>
+<TD>Marshal G. S. Hodgson, <I>The Order of Assassins: The Struggle of the Early Nizari Isma&#8216;ilis against the Islamic World</I> (The Hague, 1955).</TD></TR>
+<TR vAlign=top>
+<TD width="5%"><SUP><A name=anchor3-5>3</A></SUP></TD>
+<TD>Freya Stark, <I>The Valleys of the Assassins and other Persian Travels</I> (London, 1934).</TD></TR>
+<TR vAlign=top>
+<TD width="5%"><SUP><A name=anchor4-5>4</A></SUP></TD>
+<TD>Peter R.E. Wiley, <I>The Castles of the Assassins</I> (London, 1963).</TD></TR>
+<TR vAlign=top>
+<TD width="5%"><SUP><A name=anchor5-5>5</A></SUP></TD>
+<TD>See Joseph von Hammer-Purgstall, <I>Die Geschichte der Assassinen</I> (Stuttgart-T&#252;bingen, 1818), pp 211-14. English trans., <I>The History of the Assassins</I>, tr. O.C. Wood (London, 1835, reprinted, New York, 1968), pp 136-8.</TD></TR></TBODY></TABLE></P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Introduction to The Assassin Legends</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 14 Jan 2018 11:38:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/07/2011&nbsp;17:40&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101164 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:56 GMT -->
+</HTML>

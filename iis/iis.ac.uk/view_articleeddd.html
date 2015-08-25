@@ -1,0 +1,779 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106391 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:11:11 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 106391;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="779" class="banner" alt="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" src="WebAssets/Site_Images/header/Research%20And%20Publications.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Research%20And%20Publications.jpg','WebAssets/Site_Images/header/ResearchandPublication_2.jpg');
+				var descriptions = new Array('An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat','The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only3a62.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D106391">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlec76f.html?ContentID=106393">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Muslim Philosophy and the Sciences</strong><br/><strong><DIV><A href="view_persond573.html?type=authors&amp;id=152">Dr Alnoor   Dhanani</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>Originally published in <I>The</I> <I>Muslim Almanac</I> (Gale Research Inc, Detroit, MI: 1996), p. 189 - 204, ed. A. Nanji; reprinted with corrections. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><DIV>&nbsp;</DIV>
+<DIV>Like the intellectual traditions of other civilizations, the intellectual traditions of Islam examined the entirety of questions which fall under the purview of the intellect. The present study focuses on the questions which are today categorized as belonging to the disciplines of the many branches of philosophy and the sciences. The study examines the historical evolution of the competing schools of philosophy and some of the significant developments in the sciences during the early (1st-2nd centuries AH/7th-8th centuries CE), classical (3rd-6th centuries AH/9th-12th centuries CE), and the medieval (7th-11th centuries AH/13th-17th centuries CE) periods of Islamic civilization.</DIV></div><div> </div><div><DIV><B>Key words</B>:</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>Knowledge, Epistemology, Religious philosophy (<I>kalam</I>), Islamic Hellenistic philosophy (<I>falsafa</I>), <I>Mu&#8216;tazilis</I>, <I>Ash&#8216;aris</I>, Neoplatonism, Mystical philosophy, Illuminationist philosophy, Metaphysics, Cosmology, ethics, Political Philosophy, Emanation, Active Intellect, Physical sciences, Astronomy, Astrology, Optics, Medicine, Mathematics, Observatory, Hospital, Translation, <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem16dc.html?type=glossary&amp;id=289'))">Dar al-&#8216;Ilm</A></U></I>, <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimids</A>.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>
+<DIV><IMG style="MARGIN-RIGHT: 10px" height=25 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=25 align=left border=0><A href="SiteAssets/pdf/Muslim%20Philosophy%20and%20the%20Sciences%20-%20Alnoor%20Dhanani%20-%20Muslim%20Almanac%20-1996.pdf">Download PDF version of article (156 KB)</A></DIV></DIV>
+<DIV><B></B></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><B>Table of Contents</B></DIV>
+<UL type=disc>
+<LI><A href="#intro - Muslim sciences">Introduction</A> 
+<LI><A href="#search for knowledge - Muslim sciences">The Search for Knowledge</A> 
+<LI><A href="#philosophy - Muslim sciences">Philosophy</A> 
+<UL type=circle>
+<LI><A href="#religious philosophy - Muslim sciences">Religious philosophy</A> 
+<LI><A href="#hellenistic - Muslim sciences">Islamic Hellenistic philosophy</A> 
+<LI><A href="#al-kindi - Muslim sciences">Al-Kindi</A> 
+<LI><A href="#al-farabi - Muslim sciences">Al-Farabi</A> 
+<LI><A href="#al-razi - Muslim sciences">Al-Razi</A> 
+<LI><A href="#ibn sina - Muslim sciences">Ibn Sina</A> 
+<LI><A href="#andalusian - Muslim sciences">Andalusian Islamic Hellenistic philosophers</A> 
+<LI><A href="#mystical - Muslim sciences">Mystical philosophy</A> </LI></UL>
+<LI><A href="#sciences - Muslim sciences">The Sciences</A> 
+<UL type=circle>
+<LI><A href="#math - Muslim sciences">Mathematical Sciences</A> 
+<LI><A href="#physical - Muslim sciences">Physical Sciences</A> 
+<LI><A href="#medicine - Muslim sciences">Medicine</A> </LI></UL>
+<LI>
+<DIV><A href="#educating - Muslim sciences">Educating Europe: The Arabo-Latin Translation Movement</A></DIV></LI></UL><BR>
+<P><B><A name="intro - Muslim sciences">Introduction</A></B></P>
+<P>The pursuit of knowledge is central to the Qur&#8217;anic message. The goal of knowledge is not mere contemplation but the discovery of action that leads to ulti&shy;mate felicity. In the intellectually fertile, diverse, multi-faith, multi-ethnic, and stimulating environ&shy;ment of classical and medieval Islamic civilisation, an intense de&shy;bate existed among competing intellectual disci&shy;plines. This debate, which endured across continents and centuries even as these disciplines evolved, fo&shy;cused on the issues of the identity and foundations of &#8220;real&#8221; knowledge that one ought to acquire and make the basis for action. </P>
+<P><B><A name="search for knowledge - Muslim sciences">The Search for Knowledge</A></B></P>
+<P>For many, such knowledge was to be found in Islamic law derived from the traditional sources of the Qur&#8217;an and the Prophetic Tradition. Salvation, then, re&shy;quired living a life in conformity with the law. For others, real knowledge was esoteric and mystical, and hence the path to salvation lay in seeking the right teacher and be&shy;ing initiated into devotional practices leading to union with God. Still others thought real knowledge consisted of a rational understanding of God&#8217;s nature and attributes, His creation of the world, its dependency on Him, and His bounty and mercy to the creatures of this world as manifested in prophecy. For them, salvation lay in the practices instituted by prophets, provided that the per&shy;formance of these practices was grounded in rational knowledge. Yet others regarded real knowledge to be the philosophical wisdom of the ancients as found in the Neoplatonised Aristotelian view of the world. Salvation, they held, was living in conformity with the ethical prin&shy;ciples of this system, namely intellectual self-improve&shy;ment and virtuous living, which allowed the soul to achieve immortality through the &#8220;Active Intellect&#8221;.</P>
+<P>A naive analysis of these formulations would pit the &#8220;foreign&#8221; or secular sciences derived from the ancients (in particular, the Greeks) against the &#8220;religious&#8221; or revealed sciences, echoing the erroneous, but nonethe&shy;less prevalent, paradigmatic view of the incompatibility between reason and religion. In the classical and medieval Islamic context, the interaction between secular and religious sciences had profound consequences, for this interac&shy;tion was the process by which knowledge whose ori&shy;gins were non-Islamic was appropriated and then naturalised into a civilisation with a different ethos. Within this interaction, both secular and religious sci&shy;ences adopted methods and doctrines from each other in the course of centuries of critical and sometimes acrimonious, debate. Three philosoph&shy;ical movements can be broadly identified within the historical evolution of this interaction: religious or the&shy;ological philosophy (<I>kalam</I>), Islamic Hellenistic philos&shy;ophy (<I>falsafa</I>), and mystical philosophy. The scientific tradition in Islamic civilisation was pri&shy;marily allied to the second of these, namely Islamic Hellenistic philosophy.</P>
+<P>The geography of the early Islamic empire was fun&shy;damental to the emergence of the intellectual disci&shy;plines of classical and medieval Islamic civilisation. The Arabian Peninsula, home to the Prophet Muhammad, was at the periphery of the centres of learning of Late Antiquity. Within a few decades after Muhammad&#8217;s death, Muslim armies had<I> </I>gained control of a vast region from the Atlantic to the borders of India. As a result, such Hellenistic centres of learning as Alexandria and Antioch where Aristotelian, Neoplatonic, Platonic, and other texts had been studied over centuries, as well as the centres of Manichean, Bardaisanite, Buddhist, Jewish, and Christian learning, now were part of a nom&shy;inally single empire, where, in time, Arabic became the language of intellectual discourse. Language was just one of the elements uniting this vast and diverse em&shy;pire. Other elements include a measure of cultural uni&shy;formity, aesthetic sensibility, patronage, the struggle to find meaning and discover norms of practice and behaviour in the Islamic message<I>, </I>and, most importantly, an attitude of reverence toward knowledge derived from the Qur&#8217;an. Material factors also played a role, in particular, the availability of paper. The discovery of its manufacture originated in China but spread across the Islamic empire in the eighth century. Since books could now be produced cheaply, the pace of the<I> </I>dissemina&shy;tion of knowledge accelerated. A flourishing book trade ensued, indicative of a desire for knowledge, which, in turn, fuelled further intellectual activity.</P>
+<P><B><A name="philosophy - Muslim sciences">Philosophy</A></B></P>
+<P><I><A name="religious philosophy - Muslim sciences">Religious philosophy</A></I></P>
+<P><B></B></P>
+<P>Religious or &#8220;theological&#8221; philosophy (<I>kalam</I>) has no counterpart in the Western tradition. Although its ori&shy;entation is theological, much of its subject matter is philosophical since it encompasses epistemology, analysis, cosmology, and metaphysics. Furthermore, its approach is rationalist and, as such, its method is philo&shy;sophical. The epistemological foundation and role of religious philosophy in classical and medieval Islamic civilisation thus differ from, and are somewhat opposed to, those of medieval Christian theology.<B></B></P>
+<P>Religious philosophy emerged within a hundred years after the<I> </I>death of the Prophet Muhammad in a mi&shy;lieu where Muslims were preoccupied with questions about their identity and thus engaged in a wide-ranging debate over beliefs, concepts, values, practices, and, in general, worldviews. This debate was conducted among Muslims and also with their non-Muslim neighbours. Several factors contributed to the urgency of such ques&shy;tions and related issues of correct practice, belief, and doctrine. Some non-Muslim subjects desired to convert to the new religion and better understand the work of the first two generations of Muslims who had laid the groundwork of knowledge about issues of the faith. In this diverse and steadily growing Muslim community, several approaches to the Islamic message were de&shy;bated and developed, which, in due course, were em&shy;bodied in emerging intellectual disciplines. The problems of free will and predestination, God&#8217;s nature and attributes, prophecy, revelation, God&#8217;s relation to the created world, the attributes and properties of things, the nature of human beings, and causality were subjects that fell within the domain of religious philoso&shy;phy. Given the multi-faith milieu, the<I> </I>discussion of these<I> </I>problems included proponents of other faiths, primarily Christians and Manicheans, as well as proponents of epistemological and cosmological positions, for exam&shy;ple, scepticism, relativism, natural causation, and the eternity of the world.</P>
+<P>The writings of early Muslim religious philosophers have not survived. Fragments preserved in later works indicate an open-minded, yet critical, attitude. The mul&shy;titude of individual and opposed views to a broad range of questions reflect the religious philosophers&#8217; engage&shy;ment in the contemporary issues of those times, some of which derive from the epistemological and cosmo&shy;logical inquiries of late antiquity. For example, regard&shy;ing the problem of attributes and properties of things, Hisham ibn al-Hakam (died circa 795 CE) and his followers held that all objects besides God are corporeal, regard&shy;less of whether they are bodies or qualities (like colour or taste). Therefore, perceptible bodies consist of a bundle of corporeal attributes (a position that had been held by the Stoics). Dirar ibn &#8216;Amr (died circa 815 CE) and others held the opposite view that created ob&shy;jects are all incorporeal qualities, and that corporeal bodies arise when these qualities combine together (this had been the position of the fourth-century Christian father, Gregory of Nyssa). Abu al-Hudhayl (died 841 CE), Mu&#8216;ammar (died 830 CE), Bishr ibn Mu&#8216;tamir (died circa 825-840 CE), and their followers held that created objects are either corporeal atoms or incorporeal qualities, and that bodies are constituted out of their combination (this position had been held by of some Dualists; some of the Greek Atomists had also expressed a similar view)</P>
+<P>During the later half of the ninth century, as a result of the effort of Abu &#8216;Ali al-Jubba&#8217;i (died 915 CE), his son Abu Hashim (died 933 CE), and their followers, a sys&shy;tem that characterises classical <A href="javascript:void(LaunchGlossary('GlossaryItem10d5.html?type=glossary&amp;id=155'))"><U>Mu&#8216;taz</U>ili</A> reli&shy;gious philosophy emerged. In outline, they hold that objects either exist, are possible, or are impossible. Existent objects comprise the eternal God and the cre&shy;ated world of space-occupying atoms and their inherent qualities. Qualities are either perceptible such as colour, taste, and sound; non-perceptible such as force and motion; psychological states of animate beings such as knowledge, perception, and intention; or are abilities such as being alive and capable of autonomous action. Atoms and qualities combine to form inanimate bodies, as well as compound animate beings. Simple objects have essential attributes that make them the kind of objects they are (God is eternal, alive, knowing, and possesses the power of autonomous action; atoms are space-occupying) and may have additional attrib&shy;utes (God&#8217;s speech, an atom&#8217;s being white). Causal agency belongs exclusively to volitional beings, for only they possess the power of autonomous action. Therefore, &#8220;nature&#8221; or &#8220;natural&#8221; agency does not &#8220;really&#8221; exist. God&#8217;s causal activity is unlimited, for the power of au&shy;tonomous action is one of His essential attributes. The human power of action, however, is nonessential and, as such, human activity is limited. Causal agents may act di&shy;rectly, as in creating an atom or a person picking up a stone, or they may act indirectly through secondary causes, as when someone directly creates upward force in a stone, which its engenders motion at the next in&shy;stant. God directly created the world. His creative ac&shy;tivity is continuous and encompasses everything besides human actions.</P>
+<P>Human knowledge is of two kinds: (a) immediate knowledge of <I>a priori </I>truths, ethical principles, ob&shy;jects of perception, and man&#8217;s internal states; and (b) ac&shy;quired knowledge deriving from reflection on argument, revelation, tradition, and so on. In their own self-interest, human beings desire to avoid harm and achieve benefit. They must therefore reflect, for in the important matter of achieving ultimate felicity and avoiding eternal harm, they would be foolish to blindly imitate someone claiming to have knowledge. They must seek rational and secure knowledge of God and recognise His bounty, in particular, his gracious act of sending prophets to guide humankind. They must pur&shy;sue ethically sound actions to earn the reward promised by God. Reflection enables them to deter&shy;mine the moral soundness of action because ethical principles are objective and immediately known to adult, mentally competent persons. God can therefore justly hold them accountable for their actions. Intellectual reflection also leads to knowledge of general religious truths, for example the existence of God and the attributes of God. However, specific religious practices like forms of prayer and pilgrimage are established and instituted by prophets and are, as such, can be known only through traditional or revealed sources of knowledge. Hence, while reason is primary, revelation is necessary for the establishment of religion and for the establishment of a social and political order conducive to its prac&shy;tice.</P>
+<P>The role of logic, epistemology, cosmology, ethics, and politics in the Mu&#8216;tazili system is obvious as is its theological orientation. But the emphasis on reason and, above all, its method of argument and objection is philosophical. Moreover, apart from secondary causa&shy;tion, this system is non-deterministic, where agents are free to perform or withhold action. Not surprisingly, the Mu&#8216;tazilis were challenged by traditionalist religious scholars and Islamic Hellenistic philosophers. The Mu&#8216;tazili view that God&#8217;s speech, namely revelation, is not one of the essential attributes of God and is therefore not eternal but rather is temporally created was rejected by traditionalists. In the early ninth century, the Mu&#8216;tazilis were politically powerful and thus imposed the doctrine of the createdness of revelation upon governmental officials, including religious judges. The resulting in&shy;quisition led to the imprisonment of prominent tradi&shy;tionalists such as the well-known scholar Ahmad ibn Hanbal (died 855 CE). The inquisition and Mu&#8216;tazili political ascendancy came to an end during the reign of <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A> al-Mutawakkil (reigned 847-861 CE).</P>
+<P>In 912-913 CE, one of al-Jubba&#8217;i&#8217;s most brilliant pupils, Abu al-Hasan al-Ash&#8216;ari (died 935 CE), broke away to found Ash&#8216;ari <I>kalam</I>, which was sympa&shy;thetic to the traditionalists. Over the course of the next three centuries, Ash&#8216;ari religious philosophy gradually became the predominant and &#8220;or&shy;thodox&#8221; <I>kalam</I> school. To a large degree, the subject matter, analytic structure, epistemology, and cosmology of the Mu&#8217;tazilis was retained. The significant departure was over the nature of God and human beings. Whereas the Mu&#8216;tazilis had emphasized God&#8217;s justice, believing it absolutely impossible for God to commit unjust acts (for man and God are beholden to the same objective ethical principles), the Ash&#8216;aris empha&shy;sized God&#8217;s absolute power and independence. Hence, they denied the objectivity of ethical prin&shy;ciples. In their view, ethical principles were within God&#8217;s determination, and human beings cannot know of them except through reve&shy;lation. The primacy of revelation over reason was thus upheld. Furthermore, God&#8217;s absolute power entails denying causal agency to human beings. They can only metaphorically be said to be causal agents, for they &#8220;acquire&#8221; actions only God can actually per&shy;form. Not surprisingly, the Ash&#8216;aris also denied secondary causation. Their system is therefore occasionalist, where every action in the world is directly caused by God. Consequently, attributing a causal relationship between a uniformly observed set of prior and posterior events (e.g., the contact of fire with cotton causes burning) is erroneous, for the unifor&shy;mity of the sequence of these events reflects only God&#8217;s choice of habitual action that He may arbitrarily choose to alter. Finally, the Ash&#8216;aris rejected the Mu&#8216;tazili distinction between God&#8217;s essence and attributes, and hence the createdness of God&#8217;s speech.</P>
+<P>The Ash&#8216;ari position was elucidated and defended from the critique of the Mu&#8216;tazilis, Islamic Hellenistic philosophers, and traditionalists by al-Ash&#8216;ari&#8217;s follow&shy;ers, notably al-Baqillani (died 1013 CE), Ibn Furak (died 1015 CE), al-Juwayni (died 1085 CE), and Abu al-Hamid al-Ghazali (died 1111 CE), the author of <I>The Destruction of the Hellenistic Philosophers</I>. In this work, al-Ghazali defended the Ash&#8216;ari view of God&#8217;s absolute freedom and causal determination, attacking the Islamic Hellenistic philosophers&#8217; doctrine of the eternity of the world; their doctrine of emanation, which denied God&#8217;s causal activity and God&#8217;s knowledge of particulars in the world but instead at&shy;tributed intelligence and causal efficacy to celestial Intellects and Souls; their denial of bodily resurrection and their theory of natural causation. Al-Ghazali&#8217;s thorough fa&shy;miliarity with Islamic Hellenistic philosophy is evident in<I> The Destruction&#8217;s </I>embrace of its conceptual lan&shy;guage (his preliminary study, <I>The Aims</I> <I>of the Philosophers</I>, is a succinct summary of Islamic Hellenistic Philosophy which, along with <I>The</I> <I>Destruction</I>, was available in Latin translation in medieval Europe. As a result, the Europeans considered al-Ghazali to be one of the Islamic Hellenistic philosophers).</P>
+<P>Religious philosophy entered a new phase with al-&shy;Ghazali as he appropriated the conceptual language and logic of Hellenistic philosophy without compro&shy;mising the premise of God&#8217;s absolute freedom and de&shy;termination. The historian Ibn Khaldun (died 1382 CE) thus complained that al-Ghazali and his followers mud&shy;dled religious philosophy with Islamic Hellenistic phi&shy;losophy. Notable religious philosophers after al-Ghazali include Fakhr al-din al-Razi (died 1209 CE) and &#8216;Adud al-din al-Iji (died 1355 CE). Al-Iji&#8217;s classic text, <I>The Stations of</I> <I>Religious Philosophy</I>, became the standard textbook of religious philosophy and was the subject of many commentaries. Four of the six sections of the book are devoted to the properly philo&shy;sophical subjects of epistemology, ontology, qualities, and bodies, while the remaining two cover the properly theological topics of God and prophecy. Moreover, al-Iji and his commentators discuss the diversity of opinions on these subjects, including those of the Islamic Hellenistic philosophers.</P>
+<P>This account of religious philosophy applies to primarily to proto-Sunni and Sunni <I>kalam. </I>Regarding the religious philosophy of the Shi&#8216;a, the Zaydis adapted Mu&#8216;tazili <I>kalam</I>, and so, initially, did the Ithna &#8216;Asharis (Twelvers). The Isma&#8216;ilis adapted Hellenistic philosophy within their own intellectual framework. However, in the thir&shy;teenth century, the philosopher and scientist Nasir al-din al-Tusi (died 1274 CE) reformulated Twelver Shi&#8216;a <I>kalam</I> within the conceptual language and system of the Islamic Hellenistic philosophers.</P>
+<P>The influence of Islamic religious philosophy also extended into Judaism. The Karaites, including Yusuf al-Basir (died 942 CE), were influenced by Mu&#8216;tazili religious phi&shy;losophy. Consequently, the debate between religious philosophy and Islamic Hellenistic philosophy is also found among Jewish intellectuals of Islamic lands. In his<I> Guide to the Perplexed</I>,<I> </I>Maimonides (died 1204 CE) presents an account of religious philosophy that he then refutes.</P>
+<P><I><A name="hellenistic - Muslim sciences">Islamic Hellenistic philosophy</A></I></P>
+<P>Islamic Hellenistic philosophy or <I>falsafa</I> is Hellenistic in inspi&shy;ration and outlook. Its characterization as &#8220;Islamic&#8221; designates the milieu of Islamic civilisation and not its conformity, or lack thereof, with what was understood to be the normative traditionalist understanding of Islam. Furthermore, not all its practitioners were Muslims. Some were Christians and others Jews. The impetus for Islamic Hellenistic philosophy originated in the transmission of Greek texts into Arabic. In due course, the philosophical issues of these texts were developed further and naturalized by a milieu with its own prob&shy;lems and competing philosophies.</P>
+<P>The impetus to appropriate and then naturalize an&shy;cient knowledge arose out of the Muslim ethic of rev&shy;erence for knowledge. In one of the most significant pre-modern transfers of knowledge, almost the entire scientific and philosophical legacy of the ancient world was translated into Arabic. Some evidence suggests that translation into Arabic may have begun in the early eighth century, but its pace accelerated under the pa&shy;tronage of the Abbasid caliphs. Translation activity was deliberate, emphasising classic scientific and philo&shy;sophical texts yet leaving aside literary texts such as Greek tragedies and epic poetry. The im&shy;portance of translation is evident in the dispatch of official emissaries to Byzantium to procure manu&shy;scripts. Translation was facilitated by the ongoing ac&shy;tivity of religious philosophers who had begun to forge philosophical terms in Arabic. Patronage also played a key role. The Abbasid caliph al-Mansur (reigned 754-775 CE) commissioned the translation of Sanskrit as&shy;tronomical and medical texts. His successors, Harun al&shy;-Rashid (reigned 786-809 CE) and al-Mamun (reigned 813-833 CE), went further, commissioning the translation of Greek texts and establishing the endowed institution of the House of Wisdom (<I>Bayt <A href="javascript:void(LaunchGlossary('GlossaryItem2bd2.html?type=glossary&amp;id=247'))">al-Hikma</A></I>) to supervise translation and engage in scientific activity. Other pa&shy;trons of translation included wealthy government offi&shy;cials, princes, and individuals. Accordingly, by the tenth century, much of the Hellenistic intellectual legacy as well as materials from ancient Iran and India were available in Arabic. Since the philosophical per&shy;spective of Late Antiquity dominated this legacy, Islamic Hellenistic philosophers approached Hellenistic philos&shy;ophy from a Neoplatonic framework.</P>
+<P>Most translators were Syriac-speaking Nestorian Christians or Sabians from Harran. The Nestorians were familiar with Hellenistic philosophy as their the&shy;ological writings, particularly regarding the Trinity, utilized its conceptual language. The Sabians were star worshippers and knowledgeable about Greek mathe&shy;matics and astronomy. Some Greek texts were thus available in Syriac before the Arab conquests. But Arabic translations, whether directly from the Greek or through the intermediary of Syriac, went further with regard to their quantity and quality. Among the transla&shy;tors, the Nestorians Hunayn ibn Ishaq (died 873 CE) and his son Ishaq ibn Hunayn (died 910 CE) were renowned. They authored scientific and philosophical treatises. The Sabian Thabit ibn Qurra (died 901 CE) was also renowned as an astronomer and translator of scientific works.</P>
+<P><I><A name="al-kindi - Muslim sciences">Al-Kindi</A></I></P>
+<P>Abu Ya&#8216;qub al-Kindi (died 870 CE) is regarded as the first Islamic Hellenistic philosopher or, according to the medieval biog&shy;raphers, the &#8220;Philosopher of the Arabs.&#8221; He enjoyed the patronage of Caliphs al-Mamun and al-Mu&#8216;tasim (reigned 833-842 CE). His interest in acquiring the knowl&shy;edge of the ancients is remarkable and indicative of the stimulating milieu. He even commissioned an Arabic translation of Aristotle&#8217;s Metaphysics. Conscious of the task of introducing Hellenistic learning, he wrote: &#8220;We ought not to be ashamed of appreciating truth and of acquiring it wherever it comes from, even if it comes from races distant and nations different from us.&#8221; Al&shy;-Kindi wrote several introductory works in philosophy and science to acquaint his readers with the Hellenistic legacy. His philosophy is notable in two aspects. First, he was alone among the Islamic Hellenistic philosophers to argue for the temporal creation of the world. Second, al-&shy;Kindi&#8217;s Treatise on Intellect introduced Neoplatonic epistemology, which was to become the hallmark of Islamic Hellenistic philosophy, purporting that the intellect has a potential ca&shy;pacity for knowledge and that its transition to become actually knowledgeable is caused by the entity known as the &#8220;Active Intellect&#8221;. Aristotle had very briefly mentioned the &#8220;Active Intel&shy;lect&#8221;, which is separate and immortal in his work <I>On the Soul</I>. This entity was identified with the emanated In&shy;tellect governing the sphere of the moon by the Neoplatonist philosophers of Late Antiquity.</P>
+<P><I><A name="al-farabi - Muslim sciences">Al-Farabi</A></I></P>
+<P>Al-Kindi had few students, and his influence was thus limited. However, the continuing tradition of Hellenistic philosophy among Nestorian Christians at&shy;tracted Abu Nasr al-Farabi (died 950 CE). Al- Farabi&#8217;s role in the naturalization of the Hellenistic legacy earned him the epithet &#8220;The Second Teacher&#8221; (Aristotle being the first). Al-Farabi considered himself a member of the philosophical school of Alexandria. As he informs us, this school had spread from Alexandria to Antioch and then from Marw and Harran to Baghdad. In the tra&shy;dition of the school, al-Farabi wrote technical and philosophical commentaries that were influential among later philosophers. But al-Farabi surpassed his Nestorian teachers who, for theological reasons, were forbidden to study logic beyond Aristotle&#8217;s <I>Prior Analytics</I>. The eager student, however, read more ad&shy;vanced works, particularly the <I>Posterior Analytics</I>. Al-&shy;Farabi&#8217;s achievement lies in his reinvigoration of philosophy by rejecting Nestorian and other constraints that were stifling philosophy and, in his activist vision of philosophy, en&shy;gaging the critical problems of the day, analyzing prophetic religion, extending political philosophy to in&shy;clude religious states, and developing the relationship of language to logic.</P>
+<P>Al-Farabi, like other Islamic Hellenistic philosophers, held that &#8220;real&#8221; knowledge is demonstrative knowledge and is therefore accessi&shy;ble only to the elite who have the natural disposition and leisure to pursue philosophy. The multitude can only aspire to persuasive knowledge by means of im&shy;ages. For al-Farabi, founders of religions or prophets are philosophers insofar as their knowledge is demonstra&shy;tive. Their achievement lies in<I> </I>their ability to fashion im&shy;ages appropriate for the multitude so that the multitude (and the elite) will pursue actions leading to happiness for all. Religion, then, is an imitation of philosophy, and the best ruler is a philosopher-king. The cosmological source of the knowledge of philosophers and prophets is the same. </P>
+<P>Al-Farabi&#8217;s emanationist cosmology is innovative. According to Neoplatonism, the First Being or God is such that creation must originate from Him by continu&shy;ous emanation. These emanations then give rise to other emanations. Al-Farabi limits emanations to ten Intellects and their spheres: the first Intellect which has no sphere; and nine other Intellects with their celestial spheres, namely, the outermost sphere, the sphere of the fixed stars, and the spheres of the seven planets (Saturn, Jupiter, Mars, Sun, Mercury, Venus, and the Moon). The Tenth Intel&shy;lect, associated with the sphere of the Moon, is the &#8220;Active In&shy;tellect&#8221; and the point of contact for the human intellect with celestial intellects. The Active Intellect is the cause of the transformation of the human intellect from potentially knowing to actually knowing. Prophetic genius derives from the virtual union of the prophetic soul with this Ac&shy;tive Intellect and God&#8217;s granting of revelation to the prophetic intellect through the Active Intellect.</P>
+<P>Al-Farabi&#8217;s account of religion and prophecy, which was mostly adopted by his followers, is at odds from the views of the religious philosophers. Al-Farabi&#8217;s per&shy;spective (as indeed the perspective of other Islamic Hellenistic philosophers) was that the religious philosophers' views were not demonstrative but rather were dialectical and do not represent &#8220;real&#8221; knowledge. Other points of contention were Al-Farabi&#8217;s espousal of emanationism, its corresponding determin&shy;ism through endowing causal efficacy to the celestial entities, and his belief in the eternity of the world.</P>
+<P><I><A name="al-razi - Muslim sciences">Al-Razi</A></I></P>
+<P>Al-Farabi&#8217;s views contrast sharply with those of Abu Bakr al-Razi (died 925 CE) who is regarded as a Islamic Hellenistic philoso&shy;pher, although his accomplishments in medicine are more significant. Al-Razi was vehemently opposed to authority. His philosophy is egalitarian, anti-Aristotelian, and anti-religion. His egalitarianism denied the special role ac&shy;corded by al-Farabi to philosophers and even the special role of prophets and religious leaders. He re&shy;garded religion to be the cause of conflict, prophets to be imposters,<I> </I>and revela&shy;tion to be mythical. He opposed the hierarchical cosmology of the Hellenistic philosophers and instead espoused a<I> </I>version of Democritean atomism, which is unlike the atomism of the religious philosophers. He upheld the eternal existence of God, Soul, Matter, Time, and Space and subscribed to a Sabian myth that the ignorant Soul desir&shy;ed matter and that God, wishing to alleviate its misery, therefore created the world, but also endowed Soul with reason. The world will dissolve when Soul has been enlightened and can free itself from matter.</P>
+<P>That al-Razi, despite his radical views, was tolerated is indicative of the tolerant milieu of classical and medieval Islamic civilisation. Not surprisingly, al-Razi did not have any followers, while al-Farabi&#8217;s philosophical synthesis be&shy;came the dominant paradigm of Islamic Hellenistic philosophy. Elements of this philosophical synthesis were appropriated by the literati and belles lettrists and by intellectually inclined religious movements among the Shi&#8216;a, like Isma&#8216;ilism.</P>
+<P><I><A name="ibn sina - Muslim sciences">Ibn Sina</A></I></P>
+<P>The naturalization of Hellenistic philosophy reached its apogee with Abu &#8216;Ali ibn Sina (died 1037 CE). In a fasci&shy;nating autobiography, Ibn Sina (Avicenna in Latin) dis&shy;cusses his education, travels, court intrigues, study habits, and writings. He was a child prodigy, born to a family with Isma&#8216;ili sympathies. He was educated in traditional Islamic subjects and the sciences, where he surpassed his teachers, progressing to a personal study of advanced scientific texts and Islamic Hellenistic phi&shy;losophy. He found Aristotle&#8217;s <I>Metaphysics </I>incompre&shy;hensible until he read al-Farabi&#8217;s <I>On</I> <I>the Goals of Aristotle&#8217;s Metaphysics</I>, which he had purchased in the booksellers&#8217; market cheaply for three silver coins. Already famous, the seventeen-year-old Ibn Sina was invited to attend to the <U><A href="javascript:void(LaunchGlossary('GlossaryItemeb5c.html?type=glossary&amp;id=109'))">Samanid</A></U> ruler Nuh ibn Mansur (reigned 976-997 CE) who had fallen ill. Obtaining permission to examine the royal library, Ibn Sina entered a building with many rooms, each con&shy;taining piles of books on a single subject. He looked through the catalogue of works by the ancients and found works that he was never to encounter again. Ibn Sina assid&shy;uously studied them all. As he was to recall later, he had, thoroughly exhausted all the available learning by the age of eighteen and he did not subsequently learn any&shy;thing new (although his knowledge was to mature and deepen with age). Ibn Sina&#8217;s account is revealing. It shows that Islamic Hellenistic philosophy had penetrated into remote provin&shy;cial centres like <U><A href="javascript:void(LaunchGlossary('GlossaryItem95b8.html?type=glossary&amp;id=302'))">Bukhara</A></U>, it illustrates the demand for and trade in philosophical works, and it verifies the ex&shy;istence of rich collections in private libraries.</P>
+<P>Unlike al-Farabi&#8217;s ouevre, Ibn Sina&#8217;s philosophy is not domi&shy;nated by political philosophy despite his service as minister to many rulers. His accomplishment lies in the fact that his philosophical writings surpassed those of his predecessors becoming the point of reference for later philosophy in the Islamic world. Particularly significant are his <I>The Cure </I>(a multi-volume encyclopaedia of the philosophical sciences),<I> The Salvation</I>, and<I> Pointers and Reminders</I>. Ibn Sina&#8217;s specific<I> </I>contributions are nu&shy;merous, but within the context of his Islamic milieu, his arguments for the existence of God, the existence of the immortal human soul, and his analysis of mysticism are significant.</P>
+<P>The existence of God, Ibn Sina maintained, is properly a sub&shy;ject for metaphysics, which investigates being in gen&shy;eral, and is not a subject for physics, which investigates corporeal beings (recall that Aristotle&#8217;s cosmological argument for a First Mover is found in his <I>Physics)</I>. Ibn Sina&#8217;s argu&shy;ment for God&#8217;s existence derives from<I> </I>the distinction he makes between essence and existence: Things either exist, may possibly exist, or are impossible (like unicorns). The essence of a thing, namely that which makes the thing what it is (for exam&shy;ple, the essence of a triangle is &#8220;a surface enclosed by three straight lines&#8221;; the essence of human beings is &#8220;mortal, rational, animal&#8221;), does not in itself entail the existence of that thing. Rather, its existence is the result of the action of a cause whereby this thing which could possibly exist now actually exists. Likewise, this cause itself requires a cause for its own existence and hence its action. This leads to an infinite regression, which can only come to an end with a being, whose ex&shy;istence is part of its essence. This is the Nec&shy;essarily Existent Being, or God. Every other being is contingent because its existence derives from another. This view of God as the Necessarily Existent Being, while compatible with Islamic reve&shy;lation, was not in accord with the view of the God of the religious philosophers or traditionalists.</P>
+<P>In psychology, Ibn Sina devised the &#8220;Suspended Man Argument,&#8221; an argument for the existence of the hu&shy;man soul which resembles Descartes&#8217; <I>cogito </I>(&#8220;I think therefore I exist&#8221;) argument. Like Descartes&#8217; argument in which a person may doubt all knowledge except of his own existence, Ibn Sina suggest a model in which a fully-formed human being is created suspended in air, in such a manner that he is completely devoid of sensation or perception. Even though he cannot, in this state of sensory deprivation<I>,</I> sense his body and completely lacks any previously acquired knowledge, he must nevertheless affirm his own existence, and this, in Ibn Sina&#8217;s view is equivalent to the existence of his soul. This argument entails the existence of the human soul as an entity distinct from the body although co-created with it. This soul is the governor of the body and uses the body as an instrument to accomplish its ob&shy;jectives. It does not perish with the body but is immortal and is the recipient of reward or punishment for its earthly deeds.</P>
+<P>In his works, Ibn Sina mentions that he had frankly expressed his own philosophical views in his text entitled <I>Eastern Philosophy</I>. This book is elusive. It is not extant in its entirety, and may not have been available in its entirety in the me&shy;dieval period (perhaps it was never completed!). Nevertheless, it has been and remains the subject of speculation and controversy. Some scholars believe that the designation &#8220;Eastern&#8221; reflects antipathy to the views of the Christian Hellenistic philosophers of Baghdad who, in Ibn Sina&#8217;s view, were inept as well as being geographically to the West of the lands of Ibn Sina&#8217;s domicile. A major point of disagreement with them was his belief in the immortality of the human soul. The subject of the soul is also associated with mysti&shy;cism. One of Ibn Sina&#8217;s contributions to Islamic Hellenistic philosophy is to treat the Sufi mystics, their practices, and their psychological states as subjects of philo&shy;sophical discourse. In this treatment, Ibn Sina makes ref&shy;erence to his allegorical writings. These were extremely influential and interpreted widely, playing a significant role in<I> </I>the formation of mystical philosophy.</P>
+<P><I><A name="andalusian - Muslim sciences">Andalusian Islamic Hellenistic philosophers</A></I></P>
+<P>Islamic Hellenistic philosophers were also active in the Western Islamic world, notably twelfth-century Spain. Abu Bakr ibn Bajja (died 1139 CE) commented on al-Farabi&#8217;s log&shy;ical works and was interested in physics and psychology. His rejection of the Aristotelian relationship between motive force, resistance of the medium, and velocity of the object was influential in discussions of motion in the Latin West. In his <I>The Regimen of the Solitary</I>, Ibn Bajja was pessimistic about the philoso&shy;pher&#8217;s political role in society<I>, </I>Rather than the role of a philosopher-king or advisor to the ruler envisioned by al-Farabi, Ibn Bajja believed that, in the imperfect states of his day, philosophers should, as far as possible, detach themselves from society and instead seek felic&shy;ity in union with the &#8220;Active Intellect&#8221;. In such a union, Ibn Bajja maintained, the individual intellect loses its particular characteristics. Ibn Bajja, therefore, rejected Ibn Sina&#8217;s view of the im&shy;mortality of the human soul, for in his view, the soul, that is to say, the individual, perishes with the death of the body.</P>
+<P>Ibn Bajja&#8217;s student, Abu Bakr ibn Tufayl (died 1185-1186 CE) was physician to the Almohad ruler Abu Ya&#8216;qub Yusuf (reigned 1163-1184 CE) and the author of the philosophical tale <I>Hayy ibn Yaqzan </I>(<I>Living, Son of Awake</I>), <I>which is thought to be </I>the model for Daniel Defoe&#8217;s <I>Robinson Crusoe</I>.<I> </I>This work is<I> </I>named after one of Ibn Sina&#8217;s al&shy;legorical works and is even framed as an unfolding of the secrets of Ibn Sina&#8217;s Eastern philosophy. In his in&shy;troduction, Ibn Tufayl is critical of Ibn Bajja&#8217;s idea of fe&shy;licity through union with the &#8220;Active Intellect&#8221;, endorsing instead Ibn Sina&#8217;s sanction of mysticism. He acknowl&shy;edges the role of rational truths and methods but holds that they are surpassed by mystical experience. He em&shy;ploys several Sufi concepts, including &#8220;direct vision,&#8221; &#8220;mystical experience,&#8221; and &#8220;sainthood.&#8221; The tale de&shy;scribes the self-education of Hayy who lands on (or was spontaneously generated on) a tropical island and is raised by a doe. As he grows up, he is able, through reflection, to deduce philosophical truths and derive actions that lead to ultimate felicity. His ascetic practices, reminiscent of Sufism, lead him to direct vi&shy;sion and then spiritual annihilation in God. Hayy then comes into contact with two men, first Absal who comes to the island in search of solitude, then Salaman from a nearby island whose inhabitants follow a prophetic religion (both Absal and Salaman are characters in another allegorical work by Ibn Sina!). Absal inclines toward mysticism and allegorical interpretation of revelation, while his friend Salaman is a literalist. Hayy and Absal go to the nearby island now ruled by Salaman, and Hayy tries to teach his wisdom to its inhabitants. His attempt fails and he recognizes that mystical and philosophical truths are not meant for all persons and that literalist religion suffices for the majority. Ibn Tufayl thus seems to ac&shy;cept Ibn Bajja&#8217;s pessimism of the political role of the philosopher while rejecting his disdain of mysticism.</P>
+<P>Ibn Tufayl was responsible for introducing a young Abu al-Walid Ibn Rushd (died 1198 CE) to the ruler Abu Ya&#8216;qub. Ibn Rushd, known to the West as Averroes, hailed from a family of jurists. He himself was to become a jurist of note and the author of a work on Maliki law. Impressed by the young philosopher, the ruler Abu Ya&#8216;qub commissioned him to write commentaries on Aristotle&#8217;s works<I>. </I>Ibn<I> </I>Rushd continued in the service of this ruler, and his son, Ya&#8216;qub ibn Mansur (reigned 1184-1199 CE). He was appointed judge of Seville, then physician to the ruler, and, later, chief judge of Cordoba. Toward the end of his life, he fell into disfavour and was exiled, probably because of Ya&#8216;qub&#8217;s political difficulties, but was then recalled back to the ruler&#8217;s court just before his death. Ibn Rushd&#8217;s commentaries on Aristotle were soon translated and transmitted to the Latin West where they were ex&shy;tremely influential, earning him the title of &#8220;The Commentator&#8221; par excellence. Ibn Rushd revered Aristotle and considered him to be infallible. Thus, in his commentaries, Ibn Rushd is usually a literalist seek&shy;ing to recover Aristotle from Ibn Sina&#8217;s and, to a limited extent, al-Farabi&#8217;s Neoplatonized readings. Not surprisingly, Ibn Rushd does not uphold Ibn Sina&#8217;s view of the immor&shy;tality of the soul. While the influence of Ibn Rushd&#8217;s com&shy;mentaries in the Islamic world was minor, his <I>On the Harmony between Religion and Philosophy </I>and as<I> </I>his reply to al-Ghazali titled <I>Destruction of the Destruction of the Philosophers </I>played a significant role. In the latter work he re&shy;sponds point by point to al-Ghazali&#8217;s<I> Destruction of the Philosophers </I>and defends Islamic Hellenistic philoso&shy;phy. In <I>On the Harmony</I>, Ibn Rushd<I> </I>examines the legal status of the pursuit of Hellenistic philosophy in the Islamic world. In an ingenious drawn-out argument, Ibn Rushd maintains that philosophy is primarily the study of the created world and a reflection on the signs of its Creator. Since such reflection is commanded by revelation, it must there&shy;fore be conducted in the best possible manner, namely by phi&shy;losophy, which is a demonstrative science. However, not everyone is qualified to undertake philosophical study and thereby achieve demonstrative knowledge of God and creation. Rather, recognizing differences in human aptitude, Islam allows for rhetorical, dialectical, or demonstrative knowledge of these matters. Demon&shy;strative knowledge does not conflict with revelation. But since revelation addresses all people regardless of their intellectual aptitude, its apparent meaning may seem to contradict the &#8220;real&#8221; state of affairs. Such apparent difference is to be resolved by allegorical interpretation of revelation by those who are well grounded in science (i.e. the Islamic Hellenistic philosophers). Allegorical interpretation of revelation must be permitted only for those who are qualified to understand its true significance. Conflicts have arisen when religious philosophers like al-Ghazali have misguidedly shared allegorical interpretations with the multitude who are incapable of grasping them.</P>
+<P>Some Muslim groups, notably the Isma&#8216;ilis, adapted Islamic Hellenistic philosophy in their doctrinal sys&shy;tems. This is evident in the <I>Epistles </I>of the anonymous</P>
+<P>Brethren of Purity (circa tenth century CE), which were widely circulated and read and in the works of <U>Fatimid</U> Isma&#8216;ili thinkers (tenth and eleventh centuries CE). Notably, however, the First Being or Intellect is the re&shy;sult of God&#8217;s command and is not an emanated being. Moreover, subscribing to the doctrine of the corre&shy;spondence between macrocosm and microcosm, the Isma&#8216;ilis held that the cosmic hierarchy of Intellects, Souls, and spheres is reflected in the religio-political hi&shy;erarchy of the imam and his representatives in society. </P>
+<P><I><A name="mystical - Muslim sciences">Mystical philosophy</A></I></P>
+<P><B></B></P>
+<P>Ibn Sina&#8217;s philosophy represents the culmination of Islamic Hellenistic philosophy in the Eastern Islamic world. Its influence on subsequent Muslim intellectual history was, and continues to be, profound. One illustration, albeit a sig&shy;nificant one, is that al-Ghazali&#8217;s understanding of phi&shy;losophy derives from Ibn Sina, and hence his critique is a critique of Ibn Sina&#8217;s philosophy. Yet al-Ghazali not only adopted the methodology and terminology of Ibn Sina for his critique but, perhaps unwittingly, initiated its appropriation into religious philosophy (some mod&shy;ern interpreters believe that al-Ghazali was thus not able to escape the determinism of his opponents!). Thus, the conceptual language of religious philosophy after al-Ghazali is replete with Ibn Sina&#8217;s concepts and terms. Al-Ghazali also incorporated the logic of Ibn Sina into Sunni jurisprudence, claiming that was a neu&shy;tral tool. However, al-Ghazali&#8217;s own commitment was to Sufi mysticism as the path to &#8220;real&#8221; knowledge and ultimate felicity.</P>
+<P>Shihab al-din al-Suhrawardi (died 1191 CE), the founder of &#8220;Iluminationist&#8221; (<I>ishraqi</I>) philosophy, was also a critic of Ibn Sina&#8217;s philosophy, which he characterized as &#8220;Peripatetic.&#8221; In contrast, he characterises Illuminationist philosophy as deriving from those who were travellers on the path to God, namely Plato, and before him, Hermes, &#8220;the father of sages,&#8221; Empedocles, Pythagoras, Agathadaimon, and others, as well as the ancient Persian sages Jamasp, Farshadshur, Buzarjumihr, and so on, (but not the impious Magians, nor Mani and other polytheists), and also his own im&shy;mediate Sufi predecessors like Abu Yazid al-Bastami, Mansur al-Hallaj, and others. Illuminationist philoso&shy;phy thus attempts to appropriate and naturalise Gnostic, Hermetic, Zoroastrian, and Sufi learning into Islamic Hellenistic philosophy. </P>
+<P>Illuminationist philosophy is based both on discur&shy;sive reason (thus, Peripatetic philosophy is essential) and mystical experience, and direct vision. It utilises symbols, particularly the symbols of light and darkness. Illuminationist cosmology is a metaphysics of light; its beings are characterised by whether their light is self-&shy;subsistent or is accidental and the degree of their dark&shy;ness (or absence) of light. God is the self-subsistent &#8220;Light of lights&#8221; that illuminates and gives existence to all other beings. An indefinite number of luminous an&shy;gels with self-subsistent lights are intermediate be&shy;tween the Light of lights and the shadows of the material world. Unlike the ten Intellects of Islamic Hellenistic philosophy, Illuminationist philosophy does not restrict the number of luminous intermediaries. Ultimate felicity lies in ascending from the material world to the luminous world through mystical exer&shy;cises. Souls that are unable to reach the luminous world remain suspended in the &#8220;world of images&#8221; where they undergo &#8220;visions&#8221; of Paradise and Hell.</P>
+<P>Suhrawardi believed that the world can never be without an illuminationist teacher. This view is analo&shy;gous to Shi&#8216;a views of the necessity of a religious guide (<I>imam</I>). This fact, in addition to the Persian orientation of his work, both conceptually as well as linguistically (a significant number of Suhrawardi&#8217;s works are writ&shy;ten in Persian), accounts for the continuation of Illuminationist philosophy in Iran and its absence in other parts of the Islamic world.</P>
+<P>A mystical philosophy of a different kind was pro&shy;posed by the Sufi Muhyi al-din ibn al-Arabi (died 1240 CE) and his disciples, particularly Sadr al-din al-Qunawi (died 1274 CE). An account of Ibn al-&#8216;Arabi belongs to the study of the mystical tradition in Islam. However, his views played a significant role in later Islamic philoso&shy;phy, in particular, the doctrine of the &#8220;unity of being.&#8221; This doctrine, while not explicitely formulated as such in Ibn al-&#8216;Arabi&#8217;s writings<I>,</I> holds there is only one Being, God, and everything else is in perpetual flux, existing only through God (some aspects of the doctrine of perpetual flux derive from the occasionalism of the Ash&#8216;ari reli&shy;gious philosophers).</P>
+<P>In 1501 the Safawid state was established in Iran, and Twelver Shi&#8216;ism was declared the of&shy;ficial doctrine of the state. A cultural and intellectual renaissance followed, and within this broad movement, the study of Hellenistic Islamic philosophy was reinvigorated by the philosophers of the &#8220;School of Isfahan,&#8221; primarily Mir Damad (died 1630 CE) and Mulla Sadra (died 1640 CE). The tradition that they established has continued and is studied today in Iran. The sources of this philosophy are religious philosophy as interpreted in the Shi&#8216;a tra&shy;dition of Nasir al-din al-Tusi, the Islamic Hellenistic philosophy of Ibn Sina, the Illuminationist philosophy of Suhrawardi, and the doctrine of &#8220;unity of being&#8221; of Ibn al-Arabi.</P>
+<P>Mulla Sadra is regarded as the most original philosopher of this school, in part for his innovative theories of the primacy of existence and substantial motion. His teacher, Mir Damad, had held the Illuminationist view of the primacy of essences (that which makes a thing what it is) for, in the Illuminationist view, essences define the mode and rank of being. In contrast, Sadra argued that essences are mental abstractions and therefore fictions, and only existence is &#8220;real&#8221;. This entails that mental compre&shy;hension, which is necessarily of essences, is not repre&shy;sentative of &#8220;real&#8221; existing things, and therefore &#8220;true&#8221; knowledge, which is of existence, has another episte&shy;mological source, namely direct mystical experience. Mulla Sadra&#8217;s theory of substantial motion augments the Aristotelian theory of motion accepted by Islamic Hellenistic philosophers, who held that change is either qualita&shy;tive (i.e. colour), quantitative (i.e. size), or spatial (i.e. motion), and that the substrate (or substance) under&shy;going change remains constant. He asserted to the contrary that substrates do indeed change, for beings are always in the process of evolving toward more per&shy;fection. Metamorphosis is constant and characteristic of the true nature of being. Thus, simple elements move on to more complex inanimate forms and thence to animate forms, from which they then move on to other higher forms of being, culminating in a return to the spiritual world from which being originates.</P>
+<P><B><A name="sciences - Muslim sciences">The Sciences</A></B></P>
+<P>Like Islamic Hellenistic philosophy, the study of science in Islamic civi&shy;lisation was inspired by the love of learning, which had initiated the translation of texts from Greek and Syriac, as well as texts from other languages, primarily Sanskrit and Pahlavi. In its heyday, individuals from al&shy;most every ethnic and religious persuasion were en&shy;gaged in the scientific enterprise, and then, in all of the disciplines of science: the mathematical sciences, the physical sciences, the life sciences including medicine, and the &#8220;pseudo-sciences&#8221; of alchemy, astrology and so on. This enterprise may be broadly characterised as broadening scientific knowledge by investigating and solving puzzles and problems. This does not mean that science was static or lacking in originality. The critical attitude, which pervades all classical and medieval Islamic learning, entailed an examination of the fundamental premises of scientific theories. Whenever necessary, theoretical and methodological innovations were proposed, even going as far as to found new disciplines or to transform received scientific procedures. Furthermore, the milieu of Islamic civilisation suggested its own problems, which engaged the minds of its scientists. Material factors also contributed to the scientific enterprise: the es&shy;tablishment of endowed institutions, primarily academies (for example, the above-mentioned House of Wisdom), libraries, hospitals, observatories, and pa&shy;tronage, which flourished even with the disintegration of the unitary empire and the establishment of local dynasties and principalities. Most patrons employed scientists as astrologers or physicians. However, the intercon&shy;nectedness of disciplines was such that an astrologer, for example, needed to know astronomy, and could not know astronomy without being versed in mathematics and natural philosophy, which, in turn, re&shy;quired familiarity with the cosmology of Islamic Hellenistic philosophy. With the passage of time, a new scientific role arose, that of the mosque timekeeper who was re&shy;sponsible for calculating prayer times as well as deter&shy;mining the start of the months of the Islamic lunar calendar.</P>
+<P>The scientific contributions of Islamic civilisation are enormous. Yet, at this stage of our knowledge of the scientific enterprise of Islamic civilisation, with the continuing discovery of new manuscripts and the in&shy;complete analysis of known works, remarks about the achievements of scientists or about the general charac&shy;ter of science must remain tentative (this is true for all of the intellectual disciplines prac&shy;ticed in classical and medieval Islam). The following survey of the sci&shy;ences in the world of classical medieval Islamic civilisation must therefore be regarded as preliminary. Moreover, it is illus&shy;trative rather than exhaustive.</P>
+<P><I><A name="math - Muslim sciences">Mathematical Sciences</A></I></P>
+<P>An inkling of the contribution of classical and medieval Islamic science to contemporary mathematics survives in our continuing usage of the terms &#8220;Arabic numerals,&#8221; &#8220;algorithm,&#8221; and &#8220;alge&shy;bra.&#8221; These terms illustrate the study of number theory, meth&shy;ods of calculation, and the establishment of algebra as an independent mathematical subject. But beyond this, the mathematicians of Islamic civilization were engaged in plane and spherical geometry, trigonometry, as well as the solu&shy;tion of higher orders of equations.</P>
+<P>The significance of &#8220;Arabic numerals&#8221; cannot be overemphasised. These numerals and their underlying methods of calculation are now common-place in every part of the world. Today, it is impossible to conceive of any arithmetical calculation which does not utilize these numerals or the methods of calculation associated with them. Yet, these numerals actu&shy;ally originated from India, and were therefore known as &#8220;Hindu numerals&#8221; in the Muslim world. They constitute the decimal system that we use today, consisting of nine numerals (from one to nine) and the zero (the etymology of &#8220;zero&#8221; is derived through French and Italian from the Arabic term <I>sifr</I>, meaning zero). These numerals are used in conjunction with a place value notation, such that the number 1367 is equal to 1x10<SUP>3</SUP> +3x10<SUP>2</SUP> +6x10<SUP>1</SUP> +7x10<SUP>0</SUP> ( that is to say that the value of each numeral depends on its place in the number, and each place in the number indi&shy;cates a value in powers of ten). These numerals were probably introduced to Islamic civilisation with the translation of Sanskrit astronomical works during the reign of the Abbasid caliph al-Mansur. Prior to this, Hellenistic mathematics had used a cumbersome system similar to Roman numerals as well as a sexagesimal system whose origins are Babylonian. In the sexagesimal system<I>, </I>numbers were represented in base sixty, similar to our continuing use of degrees, minutes, and seconds (sixty minutes equals one degree, sixty seconds equals one minute, etc.). The sexagesimal system was primarily used in astronomy. The prospect of performing arith&shy;metical operations of addition and subtraction in such a system, to say nothing of multiplication and division, is daunting indeed.</P>
+<P>The first systematic discussion of the decimal value system was made by Muhammad al-Khwarizmi (died after 847 CE). Al-Khwarizmi was active in mathematics and astronomy and was a member of the House of Wisdom. In his <I>Treatise on</I> <I>Calculations with Hindu Numerals</I>, he deals with the basic arithmetical opera&shy;tions of addition, subtraction, multiplication, division, as well as with sexagesimal fractions, and the extraction of square roots. Later mathematicians like Abu al-Wafa&#8217; al-Buzjani (died 997-8 CE), Abu Rayhan al-Biruni (died after 1050 CE), and &#8216;Umar al-Khayyam (died circa 1131 CE), who is better known as a poet, worked out methods to extract higher roots. A significant advance in the decimal system was made by Abu al-Hasan al-Uqlidisi&#8217;s invention of decimal fractions in 952-953 CE. Interestingly, this invention seems<I> </I>to have subsequently been lost until reinvented by Ghiyath at-din al-Kashi (died 1429 CE), who added a sign indicating the decimal point. Al-Uqlidisi also adapted calculation methods for ink and paper in place of the dust-board. His contemporary Al-Buzjani further popu&shy;larised the decimal system with his arithmetical text&shy;book for bureaucrats.</P>
+<P>Al-Khwarizmi is also the famous algebraist who coined the Arabic phrase <I>al-</I><I>jabr wa al-muqabala </I>(restoration and balancing), which is the<I> </I>origin of the term &#8220;algebra.&#8221; Arithmetical and geometrical methods for discovering unknown quantities had already been worked out in Babylonian, Hindu, and Greek mathe&shy;matics. Al-Khwarizmi&#8217;s innovation was to combine these together and create algebra. The process of &#8220;restoration&#8221; refers to the removal of negative quanti&shy;ties. Thus, in the equation 2x+4 = 9-3x, the step to get 5x+4 = 9 is restoration. The subsequent step of &#8220;bal&shy;ancing&#8221; reduces positive quantities on both sides of the equation and results in<I> </I>5x = 5. Al-Khwarizmi discussed methods for solving equations of the second order (quadratic equations). He pointed out the practical ap&shy;plications of his method in solving problems of survey&shy;ing as well as inheritance shares (which are quite complex under Islamic law). Later mathematicians like Abu Bakr al-Karaji (flourished circa 1000 CE), al-Samawal ben Yehuda al-Maghribi (died 1180 CE), and &#8216;Umar al&shy;-Khayyam devised methods for the solution of higher or&shy;der equations.</P>
+<P><I></I></P>
+<P>The most<I> </I>advanced mathematics is found in as&shy;tronomy. Here we find significant advances in geome&shy;try (particularly, spherical geometry), trigonometry, and methods of calculation. The pre-eminent text of Greek astronomy was Ptolemy&#8217;s <I>Almagest</I>, which is de-voted largely to predicting positions of the planets. Ptolemy used spherical geometry as well as a trigono&shy;metric function called the chord, (given an angle find the length of the chord subtended by this angle for a circle with a radius of sixty units), for which he provides a table. However, the use of this function was cumber&shy;some. Indian astronomers, on the other hand, used the well-known sine function and had calculated its value for every 3&#176;. In the Islamic milieu, once again, the Greek and Indian heritage was combined so that by the beginning of the tenth century, the modern trigonometric functions of sine, cosine, tangent, cotangent, secant, and cosecant were established, as were the additional theorem of sines and the sine law. Trigonometry came into its own with the astronomer Nasir al-din al-Tusi&#8217;s (died 1273 CE) discussion of this subject independent of any reference to astronomy. Apart from the discovery of these functions, Muslim mathemati&shy;cians laboured diligently to produce tables to greater degrees of accuracy, culminating in the sine table pro&shy;duced by the fifteenth-century astronomers at the Samarkand observatory, which has values for each minute and is accurate to the order of one to seven hundred million.</P>
+<P>In addition to astronomical problems, mathemati&shy;cians applied spherical trigonometry to solve the specific prob&shy;lem related to Muslim ritual observances, namely, finding the direction of prayer (<I><A href="javascript:void(LaunchGlossary('GlossaryItem7578.html?type=glossary&amp;id=129'))">qibla</A></I>), Mecca from any point on the earth, and determining times of prayer which are associated with shadow lengths and the times for daybreak, noon and sunset. The former had already been solved by several mathematicians in the ninth century. The mathemati&shy;cian Ibn Yunus (died 1009 CE), a member of the House of Science in Cairo, is thought to have been the first to systematically solve the latter, for which he compiled tables for the latitude of Cairo. The fourteenth-century mathematician Muhammad al-Khalili, who was em&shy;ployed as a timekeeper at the Umayyad mosque in Damascus, went much further in his tables for these and other problems. Significantly, his <I>qibla</I> tables are for every possible degree of latitude and longitude, while his prayer timetables are for the latitude of Damascus.</P>
+<P><I><A name="physical - Muslim sciences">Physical Sciences</A></I></P>
+<P>In the physical sciences, Muslim scientists were en&shy;gaged in problems of natural philosophy, optics, and as&shy;tronomy. The discussion of natural philosophy (focussed on the structure of matter, space, time, and motion) was largely between the religious philosophers and the Islamic Hellenistic philosophers. The <I>former</I> subscribed to atomism and the existence of the vacuum. In addition, they were proponents of an impetus theory of motion. Such views were in sharp op&shy;position to Aristotelian natural philosophy. The two groups were therefore engaged in an examination and refutation of the &#8216;other&#8217; system. Nevertheless, the religious philoso&shy;phers&#8217; theory of motion may have played a role in Ibn Sina&#8217;s formulation of his non-Aristotelian theory of &#8220;forced&#8221; and &#8220;natural&#8221; motion. Furthermore, Abu al&shy;-Barakat al-Baghdadi (died after 1165 CE) rejected the Aristotelian theory of time and place and also believed that a vacuum was possible under certain circum&shy;stances. Finally, as has been noted above, Ibn Bajja re&shy;jected a key aspect of Aristotelian dynamics, that is, Aristotle&#8217;s formulation of the relationship between force, resistance, and velocity.</P>
+<P>For the Hellenistic and early Islamic scientists, optics was a mathematical examination of light rays as they were transmitted through or reflected by various media, including lenses and mirrors of various shapes. This examination drew upon the works of Euclid and Ptolemy and advocated a theory of vision in which a cone of &#8220;visual rays&#8221; streamed from the eye to the visual object. A different account of vision was formulated by the Aristotelian natural philosophers (including Ibn Sina and Ibn Rushd) in their discussion of perception. For them, vi&shy;sion is the reception of the &#8220;form&#8221; of the visual object by the eye. A third account of vision formulated by such medical writers as Galen and his followers (in&shy;cluding the translator Hunayn ibn Ishaq) held that, as visual rays emerged from the eyes, the air was trans&shy;formed into an instrument of vision. Therefore, the act of vision was the result of the contact of the &#8220;instru&shy;ment&#8221; with the visual object. In the eleventh century CE, mathematician-scientist al-Hasan ibn al-Haytham (died 1040 CE) criticised the theories of his predecessors and revolutionised mathematical optics in his <I>Optics</I>. He maintained that optical inquiry &#8220;requires a combination of the natural and mathematical sciences&#8221;, thus anticipating one of the key methodological positions of the seventeenth century Scientific Revolution &#8211; the mathematisation of physics. Furthermore, Ibn al-Haytham recognized that any ac&shy;count of optics must include an account of vision and must therefore discuss the psychology of visual per&shy;ception.</P>
+<P>Methodologically, Ibn al-Haytham&#8217;s work is signifi&shy;cant for its clear concept and use of experiment to con&shy;firm the specific properties of light by setting up a controlled situation where certain parameters may be varied. With regard to vision, he rejects the visual ray hypothesis (rays stream from the eye to the visual ob&shy;ject) in favour of the natural philosophers intromission hypothesis (vision is the reception of the form of the vi&shy;sual object in the eye). Ibn al-Haytham&#8217;s achievement was to reverse the direction of the visual rays of the mathematicians and hence mathematicise the &#8220;forms&#8221; of the natural philosophers. Surprisingly, the <I>Optics </I>does not seem to have made an impact in the Muslim world un&shy;til the thirteenth century CE, and then only in the commen&shy;tary on the <I>Optics</I> by Kamal al-din al-Farisi (died circa 1320 CE). In this work, al-Farisi formulated an explanation of the shape and colours of the primary and secondary rainbow on the basis of refraction and reflection in raindrops. Quite independently, a similar formulation was almost simultaneously arrived at in medieval Europe by Theoderic of Freiberg (died circa 1310 CE).</P>
+<P>Ibn al-Haytham&#8217;s critical outlook also extended to astronomy where he was again critical of mathemati&shy;cal models of planetary motion and their lack of cor&shy;respondence with physics. Astronomy was a technical mathematical science based primarily on Ptolemy&#8217;s <I>Almagest</I>, although Sanskrit astronomical works had been translated into Arabic in the eighth century. The subsequent history of astronomy in classical and medieval Muslim civilisation consists of both theory and observations. Observations were made not only by individ&shy;ual astronomers but were also conducted within the institution of the astronomical observatory &#8211; this insti&shy;tution is one of the contributions of Muslim civilisa&shy;tion to science. It was founded and established in Baghdad in the ninth century by the Caliph al-Mamun. The Baghdad observatory was staffed by several as&shy;tronomers who were charged with revising Ptolemy&#8217;s astronomical tables on the basis of fresh observations. The result was compiled into the <I>Tested Astronomical Tables</I>. The Baghdad observatory is but one of several obser&shy;vatories founded in classical and medieval Islam. Others include the famous Maragha observatory of the thirteenth century which was under the supervision of Nasir al-din al-Tusi and the fifteenth-century observatory of Ulugh Beg in Samarkand, both of which compiled their own as&shy;tronomical tables. The precision reached by these ob&shy;servatories was such that one modern author has exclaimed that the astronomer Tycho Brahe could have easily been a Turk! The influence of Arabic ob&shy;servational astronomy survives in star names in use today, many of which are derived from Arabic, as are common astronomical terms such as &#8220;<I>nadir</I>,&#8221; &#8220;<I>az&shy;imuth</I>,&#8221; and &#8220;<I>zenith</I>.&#8221;</P>
+<P>Astronomical measurements required innovation in measuring instruments. Here, too, Muslim stronomers surpassed their predecessors by designing new instru&shy;ments, revising older ones, and sometimes building ex&shy;tremely large instruments to increase accuracy. The astrolabe is an example of an astronomical instrument that was derived from the Greeks but was improved by Islamic astronomers. Primarily used for determining the position of celestial bodies, it was combined with a number of movable plates and arcs to graphically solve complex trigonometrical functions and thereby deter&shy;mine direction or time of prayer.</P>
+<P>Theoretical innovation in astronomy was initiated by Ibn al-Haytham&#8217;s critical remarks about Ptolemy&#8217;s planetary models. According to the then prevalent Aristotelian natural philosophy, celestial bodies could only move in geocentric circles around the stationary earth. While Ptolemy had acknowledged this principle in his <I>Almagest</I>,<I> </I>he had to abandon it in his planetary models in order to account for observed positions of planets. Ibn al-Haytham objected to this practice in his <I>Doubts against Ptolemy</I>. This initiated a research project that culminated in the formulation of a new method of de&shy;vising planetary models by Nasir al-din al-Tusi in the thirteenth century. Significantly, the same objections underlie Nicolaus Copernicus&#8217; reformation of Ptolemaic astronomy. Moreover, Copernicus&#8217; earlier work on the motion of the moon resembles the discussion of al-Tusi, raising speculation of a possible Muslim influence on the Polish as&shy;tronomer who revolutionised astronomy with his helio&shy;centric system.</P>
+<P><I><A name="medicine - Muslim sciences">Medicine</A></I></P>
+<P>The medicine of classical and medieval Islamic civilisation was primarily derived from Greek medicine, in particular, the writings of Hippocrates and Galen. Some of the trans&shy;lators of these texts, including Hunayn ibn Ishaq had been trained at the medical centre of Jundishapur. The physicians to the Abbasid caliphs during the eighth and ninth centuries, from the<I> </I>Christian med&shy;ical family of Jurjis ibn<I> </I>Bukhtishu&#8216;, were also affiliated with Jundishapur. Not surprisingly, most physicians of this period were Syriac Christians. In an amusing anecdote, a contemporary Muslim physician laments that he would be more successful if only his name were George!</P>
+<P>The most significant contribution of Islamic civilisation to medicine was the establishment of the hospital<I> </I>as an institution for the treatment of pa&shy;tients and training of physicians. Hospices for the sick, poor, travellers, and orphans had existed in Byzantium and were the model for the Umayyad caliph Walid&#8217;s (reigned 705-715 CE) charitable institution for the care of lepers, the blind, and the infirm. The first real hospital (<I>bimaristan</I>), however, was built in Baghdad by Harun al-Rashid and was modeled after Jundishapur. This was soon followed by several other hospitals all over the Islamic<I> </I>world from Spain to India. Hospitals were built by caliphs, court officials, and wealthy<I> </I>individuals. Hospital revenue, derived from en&shy;dowments under the control of a board of trustees, pro&shy;vided for the salaries of the medical staff as well as provisions for the patients. Endowments were reli&shy;giously motivated, for charitable acts are greatly emphasised in the Qur&#8217;an. Hospitals were institutions where medical care was available to all regardless of their religious affiliations; hospitals also were centres of medical education, although there is some evidence which suggests that in later periods medi&shy;cine was sometimes taught in mosques and <I>madrasas</I> (schools).</P>
+<P>The &#8216;Adudi hospital in Baghdad, for example, was founded by the ruler &#8216;Adud al-Dawla in 982 CE. It had twenty-four physicians, and its specialists included ophthalmologists, surgeons, and orthopaedists. When the traveller Abu al-Husayn ibn Jubayr (died 1217 CE) vis&shy;ited Baghdad two hundred years later, the hospital was still functioning. He tells us that it was as large as a castle and had its own water supply from the Tigris River. Another great hospital was the Nasiri hospital of Cairo completed in 1284 CE. It had an annual endowment of one million dirhams. Formerly a palace with accommodation for eight thousand per&shy;sons, it had separate wards for fever, ophthalmia, sur&shy;gical cases, dysentery, etc. as well as a pharmacy, dispensary, storeroom, mosque, and a library. It also had a large administrative staff, attendants of both sexes, and lec&shy;ture halls.</P>
+<P>Islamic physicians, while respectful toward their Hellenist predecessors, were not content simply with the preservation of past medical knowledge. This is ex&shy;emplified in the work <I>Doubts against</I> <I>Galen </I>by the fa&shy;mous physician and philosopher Abu Bakr al-Razi. Al-Razi believed in the progress of knowledge, which was to be achieved by adopting a critical attitude to&shy;ward past authoritative figures . Al-Razi is the author of numerous medical works, including the twenty-three volume <I>Kitab al-Hawi</I>, which contains many personal obser&shy;vations and interesting case histories, and a small trea&shy;tise <I>On Smallpox and the Measles</I>, which contains the first clear account of these two diseases. Al-Razi&#8217;s works were influential but unsuitable as introductory texts as they omitted discussion of the general princi&shy;ples of medical science. Recognising this deficiency, &#8216;Ali ibn al-&#8216;Abbas al-Majusi (died ca. circa 982 CE) wrote his <I>K</I><I>itab al-Malaki </I>in<I> </I>which the subject matter is treated in a clear and concise, although sometimes dry, manner. This medical text was very soon surpassed by Ibn Sina&#8217;s <I>Canon of Medicine </I>(<I>al-Qanun fi l-Tibb</I>), which became the medical textbook of the Islamic world (it even became the medical textbook in the Latin West, was one of the earliest printed books, and was printed thirty-six times in the fifteenth and sixteenth centuries). However, in keeping with the critical attitude of Islamic civilization toward knowledge, the <I>Canon </I>had its own critics. One of them, not surprisingly, was the Andalusian philosopher Ibn Rushd (who, as we have seen above, disagreed with Ibn Sina's philosophi&shy;cal doctrines) and his younger contemporary Abu al-&#8216;Ala ibn Zuhr (died 1131 CE). The latter not only rejected the <I>Canon </I>for his library, but used its paper for writing prescriptions! In the East, the reception of the <I>Canon </I>was more favourable, and it attracted several commen&shy;tators. One of these was &#8216;Ali al-Qurashi,<I> </I>also known as Ibn al-Nafis (died 1288 CE), the director of the Nasiri hos&shy;pital in Cairo. Ibn al-Nafis was the first to argue for the exis&shy;tence of pulmonary circulation, claiming that blood pumped by the right ventricle of the heart is sent to the lungs where it mixes with air and then returns to the heart&#8217;s left ventricle. However, Ibn Nafis&#8217; discovery was not made on the basis of anatomical dissection but rather by logical argument. There is a strong likelihood that the European Renaissance author Michael Servetus (died 1553 CE) was directly influenced by the discovery of Ibn al-Nafis, and that the English doctor William Harvey&#8217;s (died 1657 CE) discovery of the circulation of the blood de&shy;pends on the work of Servetus.</P>
+<P>A widespread myth holds that science and philoso&shy;phy were marginal to the civilisation of Islam and that, for the most part, the scientific and philosophical en&shy;terprise in Islam was stagnant, preserving Hellenistic knowledge until Europe shook off the slumber of the Dark Ages and ushered in a renaissance of learning, culminating in the Scientific Revolution of the seven&shy;teenth century. Nothing could be further from the truth. Scientific and philosophical activity in Islamic civilisa&shy;tion, as has been illustrated above, was vigorous. It was engaged in both the preservation and advancement of knowledge; it posed foundational questions; it was crit&shy;ical of the authority of the past; it made methodological contri&shy;butions to science; and it formulated new discoveries and theories.</P>
+<P><B><A name="educating - Muslim sciences">Educating Europe : The Arabo -Latin Translation Movement</A></B></P>
+<P>The twelfth and thirteenth centuries CE witnessed yet another transfer of knowledge, this time from Arabic into Latin. As a result, a significant portion of Islamic philosophical and scientific learning of preceding cen&shy;turies was made available to medieval European schol&shy;ars. Most of this translation activity was performed in Spain, especially in Toledo where Jews, Christians, and Muslims lived side by side, and also in Sicily. Some translators were Jews who translated Arabic works into Hebrew, or collaborated with others to translate Hebrew works into Latin. The family of Judah ibn Tibbon, based in Languedoc in southern, France is famous for the translation into Hebrew of several works by Jews who<I> </I>had written in Arabic, including Saadiah Gaon (died 942 CE), Judah Halevi (died 1141 CE), Solomon ibn Gabirol (died 1058 CE), and Moses Maimonides (died 1204 CE), as well as several philosophi&shy;cal works by Ibn Rushd. Other translators were Christians, including Constantine the African (flour&shy;ished 1065-1085 CE), Adelard of Bath (flourished 1116-1142 CE), Robert of Chester (flourished 1141-1150 CE), Gerard of Cremona (circa 1114-1187 CE), and others. Translations were made not only of originally Greek works that had been translated into Arabic (for exam&shy;ple, Euclid&#8217;s <I>Elements</I>, Ptolemy&#8217;s <I>Almagest</I>, and<I> </I>the Aristotelian corpus), but also of works by Islamic sci&shy;entists and philosophers. The latter were now known through their Latinized names of Avicenna (Ibn Sina), Averroes (Ibn Rushd), Avempace (Ibn Bajja), Abubacer (Abu Bakr ibn Tufayl), Algazel (al-Ghazali), Alhazen (al-Hasan Ibn al-Haytham), Rhazes (al-Razi), Haly Abbas (&#8216;Ali ibn al-&#8216;Abbas al-Majusi), and so on.</P>
+<P>It is impossible to satisfactorily discuss the influ&shy;ence of Muslim mathematicians and scientists on Europe in this short survey. Suffice it to say, their works and theories were known and studied and led to further advances. A few illustrations are: Avicenna&#8217;s Canon was the medical textbook for European medical schools; Alhazen&#8217;s <I>Optics </I>was the foundation upon which Kepler built the modern science of optics in the sixteenth century; Copernicus&#8217; work refers to the views of Muslim astronomers; Al-Khwarizmi&#8217;s work was responsible for the introduction of the decimal place value system and the Hindu-Arabic numerals into arithmetic; the works of Muslim mathematicians introduced Europe to algebra and trigonometry, etc.</P>
+<P>In the disciplines of philosophy and theology, the views of Avicenna, Averroes, and Algazel and their readings of Aristotle are discernable in the works of Latin Scholastics like Albertus Magnus (died 1280 CE) and his student, Thomas Aquinas (died 1274 CE). Whereas Albertus Magnus, Aquinas, and others accepted a limited role for reason within the overall context of faith, the writings of Averroes were seen to champion unaided reason. The Islamic Hellenistic philosophers&#8217; views on the Active Intellect, the eternity of the world, the nature of God, and so on were also considered to be contrary to Christian teachings. Some Latin writers like Siger of Brabant (died in the 1280s CE) became proponents of these views and founded the movement characterised as Latin Averroism. Theological writers like Albertus Magnus and Aquinas wrote polemical works against the Latin Averroists, but the movement seems to have continued growing. In 1277 Etienne Templar, the Bishop of Paris, issued a condemnation of two-hundred-nineteen propositions linked with the nat&shy;uralism advocated by the Latin Averroists and some of the views held by Thomas Aquinas. While the condemna&shy;tion influenced the course of Latin natural philosophy, it did not hinder the study of the views of Islamic Hellenistic philosophers.</P>
+<P>The fact that the influence of the scientists and philosophers of Islamic civilization pervaded me&shy;dieval and even Renaissance European philosophy, theology, and science is incontestable and apparent to anyone who is familiar with the intellectual activity of these periods. But the influence went beyond these historical periods. The assertion that the paradigm shattering Scientific and Philosophical Revolutions of seventeenth-century Europe are inconceivable with&shy;out the contributions of these Islamic scholars may seem far-fetched in some circles, but it is nonetheless an accurate reflection of actual historical devel&shy;opments. The discomfort with the notion of the profound impact of non-Western sources to Western intel&shy;lectual history derives from the assumption that ratio&shy;nality, critical philosophy, and science are features unique to Western civilisation. Consequently, assertions of the substantive role and in&shy;fluence of the intellectual legacy of ancient Greek learning on these scientific and philosophical revolutions is readily acceptable. Even the assertion of the continuing influence of the Greek in&shy;tellectual legacy on contemporary Western civilisation garners considerable support. But such a depiction of exclusive Western ownership of rational&shy;ity, philosophy, and science is essentialist as well as anti-historical as is evident from the practice of phi&shy;losophy and science in the cosmopolitan civilisation of classical and medieval Islam.</P>
+<P><B>References</B></P>
+<P>al-Ash&#8216;ari. <I>The Theology of al-Ash&#8216;ari</I>. Tr. Richard McCarthy, Beirut, 1953.<I></I></P>
+<P>Berggren, J. <I>Episodes in the Mathematics of Medieval Islam</I>. New York: Springer Verlag, 1986.</P>
+<P>Chittick, William.<I> Ibn al-Arabi Metaphysics of Imagination: The Sufi</I> <I>Path to Knowledge</I>. Albany: State University of New York Press, 1989.</P>
+<P>Dhanani, Alnoor. <I>The Physical Theory of Kalam</I>. Leiden: Brill, 1994.</P>
+<P>Dols, Michael W.<I> Medieval Islamic Medicine</I>. Berkeley: University of California Press, 1984.</P>
+<P>Fakhry, Majid. <I>A History</I> <I>of Islamic Philosophy</I>. 2nd edition. New York: Columbia University Press, 1983.</P>
+<P>---<I> Ethical Theories in Islam</I>. Leiden: Brill, 1991.</P>
+<P>al-Farabi.<I> On the Perfect State</I>. Ed. and tr. Richard Walzer. Oxford: Clarendon, 1985.</P>
+<P>Frank, Richard. <I>Al-Ghazali</I> <I>and the Asharite School</I>. Durham, N.C.: Duke University Press, 1994. </P>
+<P>Ghazali. <I>Freedom</I> <I>and Fulfillment: An Annotated Translation</I> <I>of al-Ghazali&#8217;s al-Munqidh min al-dalal</I> <I>and Other Relevant Works of al-Ghazali</I>. Tr. Richard McCarthy. Boston: Twayne, 1980.</P>
+<P>Gibb H. et al. ed.<I> </I><I>The Encyclopedia of Islam</I>. New ed. 7 vols<I>. </I>Leiden: Brill, 1960.</P>
+<P>Gillespie C. et al. ed. <I>Dictionary of Scientific Biography</I>. 18<I> </I>vols. New York: Scribner&#8217;s, 1972-80.<I></I></P>
+<P>Goodman, Lenn E. <I>Avicenna</I>. London and New York: Routledge, 1992.</P>
+<P>Gutas, Dimitri. <I>Avicenna</I> <I>and the Aristotelean Tradition</I>. Leiden: Brill, 1988.</P>
+<P>Hyman, Arthur and James Walsh. <I>Philosophy in the Middle Ages: The Christian, Islamic, and Jewish Traditions</I>. New York: Harper and Row, 1967.</P>
+<P>Ibn al-Haytham<I>. Ibn al-Haytham&#8217;s Optics</I>. 2 vols. to date. Tr.<I> </I>A.I. Sabra. London: The Warburgh Institute, 1989.<I></I></P>
+<P>Ibn Rushd (Averroes). <I>On the Harmony of Religions and Philosophy</I>. Tr. George Hourani. London: Luzac, 1967.</P>
+<P><I>--- </I><I>The Incoherence of the Incoherence</I>. Tr: Simon van den Bergh. London: Luzac, 1978. </P>
+<P>Ibn Sina (Avicenna). <I>The Life of Ibn Sina</I>. Ed. and tr. William Gohlman. New York: Suny Press, 1974.</P>
+<P>---<I> Avicenna&#8217;s Psychology</I>. Tr. Fazlur<I> </I>Rahman. London: Oxford University Press, 1952. </P>
+<P>Ibn Tufayl. <I>Ibn Tufayl&#8217;s</I> <I>Hayy ibn Yaqzan: A Philosophical Tale</I>. Tr. Lenn E. Goodman, New York: Twayne, 1972. </P>
+<P>Kennedy, E.S. <I>Studies</I> <I>in the Islamic Exact Sciences</I>. Beirut:<I> </I>American University of Berut Press, 1983.</P>
+<P>al-Khwarizmi, Muhammed. <I>The Algebra of Muhammad ben Musa</I>. Tr. F Rosen. London: 1831.</P>
+<P>King, David. <I>Islamic </I><I>Mathematical Astronomy</I>. London: Variorum, 1986.</P>
+<P><I>Astronomy in</I> <I>the Service of Islam</I>. Aldershot, Hampshire, Great Britain: Brookfield, Vermont.: Variorum, 1993.</P>
+<P>Leaman, Oliver. <I>An Introduction to Medieval Islamic</I> <I>Philosophy</I>. Cambridge: Cambridge University Press, 1985.<I></I></P>
+<P>--- <I>Averroes and His Philosophy</I>. Oxford: Clarendon Press, 1988. </P>
+<P>Lerner, Ralph and Muhsin Mahdi, eds. <I>Medieval Political Philosophy: A Sourcebook. </I>Ithaca: Cornell University Press, 1972.<I></I></P>
+<P>Lindberg, David (ed). <I>Science</I> <I>in the Middle Ages</I>. Chicago<I> </I>and London: University of Chicago Press, 1978.</P>
+<P>Mulla Sadra. <I>The Wisdom</I> <I>of the Throne</I>. Tr. James W. Morris. Princeton: Princeton University Press, 1981.</P>
+<P>Nasr, Seyyed Hossein. <I>Three Muslim Sages: Avicenna, Suhrawardi, Ibn Arabi</I>. Cambridge: Harvard University Press, 1964.</P>
+<P>--- <I>Islamic Science: An Illustrated Study</I>. London: World of Islam Festival, 1976. </P>
+<P>Pines, Shlomo. &#8220;What was original in Arabic Science&#8221; in <I>Scientific Change </I>ed.<B><I> </I></B>A.C. Crombie. New York: BasicBooks, 1963.</P>
+<P>Rosenthal, Franz. <I>Knowledge Triumphant</I>.<I> </I>Leiden: Brill, 1970.</P>
+<P><I>The Classical Heritage in Islam</I>. Berkeley and Los Angeles: University of California Press, 1975.</P>
+<P>Sabra, A.I. <I>Optics, Astronomy, and Logic: Studies in</I> <I>Arabic Science and</I> <I>Philosophy</I>. Aldershot, Hampshire, Great.<I> </I>Britain; Brookfield, Vt.: Variorum, 1993.</P>
+<P>--- &#8220;Philosophy and Science in Medieval Islamic<I> </I>Theology: The Evidence of the Fourteenth Century.&#8221;<I> Zeitschrift fur Geschichte der Arabisch-Islamischen: Wissenschaftert</I>. 1995. </P>
+<P>Sayili, Aydin. <I>The Observatory in Islam</I>. Ankara, 1960. </P>
+<P>Strayer J. et al. ed. <I>Dictionary of the Middle Ages</I>. 13 vols.<I> </I>New York: Scribner's, 1982-1989.<I></I></P>
+<P>al-Tusi, Nasir al-din. <I>Memoir on Astronomy</I>. 2 vols. Ed. And tr. F Ragep. New York: Springer Verlag, 1993.</P>
+<P>al-Uqlidisi, Abu al-Hasan. <I>The Arithmetic of al-Uqlidisi</I>. Tr. A.S. Saidan. Dordrecht and Boston: Reidel, 1978. </P>
+<P>Ullmann, Manfred. <I>Islamic</I> <I>Medicine</I>. Edinburgh: Edinburgh University Press, 1978.</P>
+<P>Walker, Paul E. <I>Early </I><I>Philosophical Shi&#8216;ism</I>. Cambridge: Cambridge University Press, 1993.</P>
+<P>Wolfson, Harry. The <I>Philosophy of the Kalam</I>. Cambridge: Harvard University Press, 1976.</P>Yarshater E. ed. <I>Encyclopedia Iranica</I>. 6<I> </I>vols. London, Boston, and Henley: Routledge and Kegan Paul, 1982.</div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Muslim Philosophy and the Sciences</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 10 Jul 2017 12:13:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/11/2008&nbsp;16:32&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106391 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:11:12 GMT -->
+</HTML>

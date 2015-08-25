@@ -1,0 +1,1116 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=111208 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:35:03 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 111208;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only6012.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D111208">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article64c8.html?ContentID=111210">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articleac0a.html?ContentID=111212">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Encyclopaedia Islamica: Volume 2</strong><strong><br/></strong><strong><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><DIV><A href="view_person6412.html?type=authors&amp;id=54">Professor Wilferd  Madelung</A></DIV></strong><br/><br/><DIV>
+<DIV><A href="../cms.iis.ac.uk/default.html?type=auth&amp;id=54"></A></DIV>Brill in association with The Institute of Ismaili Studies, London, 2009</DIV><span><br/><br/>ISBN (Hardback): 978 90 04 17859 5<br/>ISBN (Softback): </span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><A href="javascript:void(0)" onclick="LaunchPreviewFull('WebAssets/Large/Publication%20Content/Encyclopaedia%20Islamica%20vol%202%20publication%20page-2010251463_7055.jpg');" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/Encyclopaedia%20Islamica%20vol%202%20publication%20page-2010251463_7055.jpg" align="left" alt="" style="padding: 0px;"></A></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li style="COLOR: gray; TEXT-DECORATION: underline">Bibliography</li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><IMG height=16 alt="" src="WebAssets/Large/googlebooks.jpg" width=16 align=absMiddle border=0> <A onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=FGanQQAACAAJ&amp;printsec=frontcover&amp;dq=bibliogroup:%22Encyclopaedia+Islamica%22&amp;cd=3" target=_blank>Publication page on Google Books</A></P>
+<DIV>Volume 2 covers Abu al-Harith to Abyanah</DIV>
+<DIV><STRONG></STRONG></DIV>
+<DIV><STRONG>The introduction to Volume 1 has been reproduced here:</STRONG></DIV>
+<P>The Islamic faith spread at a far greater speed than could ever have been anticipated, over an expanse of land stretching from the coast of the Atlantic Ocean across North Africa and the Iranian plateau to the threshold of China and India. This phenomenon resulted in the birth of a civilisation which encompassed a considerable portion of the creative and intellectual achievements of the human race to date. The extraordinary impact of Islam derived from a remarkable capacity to assimilate and further develop other cultures and civilisations, and this same capacity also accounted for the speed with which the new faith generated new, synthetic expressions of culture throughout the lands of Islam and beyond. </P>
+<P>The teachings of the Prophet, at once simple and profound, gave rise to a spiritual and intellectual culture which was inclusive and humane, affirming a mode of society compatible with the immutable prerogatives of human dignity, and also capable of adapting to the ever-changing needs of different communities and their traditions. Muslim scholars, scientists and writers were able to travel in search of learning and employment throughout the Islamic world, nurturing a tradition of learning and creativity which served to further stimulate and unite the varied societies in which they lived. </P>
+<P>The intellectual activity in the Islamic world in turn aroused the curiosity of scholars in the Christian world when they came into contact with it and, as a result, numerous works of Islamic philosophy, science and other disciplines were translated. In this way, classics of Islamic scholarship by al-Razi, Ibn Sina, al-Biruni, Ibn Rushd, and many others, became integral to the thought of scholars and writers in Mediaeval and Renaissance Europe, generating thereby a deep and enduring influence. </P>
+<P>Thus, the vast diversity of the Islamic legacy has become an integral characteristic of world heritage, and amongst all the works that are available to us from the rich sources of Islamic literature, encyclopaedic compilations enjoy a special importance. For instance, there are particular specialist works such as al-Razi&#8217;s <I>al-Hawi</I>, Ibn Sina&#8217;s <I>al-Qanun</I>, al-Biruni&#8217;s <I>al-athar al-baqiya</I>, al-Faraghani&#8217;s <I>Jawami &#8216;ilm al-nujum</I> and &#8216;Abd al-Rahman al-Khazini&#8217;s <I>Mizan al-hikma</I>, which deal with medicine, philosophy, astronomy or physics; and there are general works like Ibn al-Nadim&#8217;s <I>al-Fihrist</I>, al-Farabi&#8217;s <I>Ihsa&#8217; al-&#8216;ulum</I>, al-Khwarazmi&#8217;s <I>Mafatih al-&#8216;ulum</I>, Qutb al-Din al-Shirazi&#8217;s <I>Durrat al-taj</I>, Zakariyya&#8217; al-Qazwini&#8217;s <I>&#8216;Aja&#8217;ib al-makhluqat</I> and the <I>Rasa&#8217;il</I> of the Ikhwan al-Safa&#8217;, which belong to diverse genres of collections and can properly be regarded as the precursors of the modern encyclopaedia. </P>
+<P>With the establishment of new maritime routes, the forging of political and mercantile relations between the East and Europe in the early modern age and the increasing military and political dominance of the European powers, numerous travellers flocked to the &#8216;Orient&#8217; in search of insights into these exotic lands and their cultures. Centres of Orientalist learning and Islamic studies came to be established at European universities, encouraging a structured and systematic approach to the new fields of studies, along with a flood of publications. A major advance in the study of Islam appeared in 1697, with the posthumous publication of Barth&#233;lemy d&#8217;Herbelot&#8217;s encyclopaedic work <EM>Biblioth&#232;que Orientale</EM>. This pioneering work of Western Orientalism, which covered many aspects of the Muslim East, was to remain the standard reference work in Europe until the nineteenth century. This renowned French Orientalist had read and utilised a variety of Arabic, Persian and Turkish sources and provided details on the history and religion of Islam hitherto unknown to Europeans. The study of Islam received further stimulus a century later as a result, firstly, of the establishment of the &#201;cole des Langues Orientales Vivantes in Paris under the tutelage of Baron Antoine Isaac Silvestre de Sacy in 1795, and secondly, the Napoleonic expedition of 1798-799 to Egypt and Syria. The foundation of learned societies and the publication of specialised periodicals and journals in the field throughout the nineteenth century greatly increased the information available for the expanding discipline. In fact, the sheer volume of these published or unpublished materials, treatises, monographs and scholarly works, was such that quick and easy access to them become an increasingly difficult task. It was this state of affairs that, in the early part of the twentieth century, led some of the most distinguished Orientalists to compile a collective work of the most important aspects of Islamic culture and civilisation, under the title of <I>The Encyclopaedia of Islam</I>.</P>
+<P>The preparation and publication of this four-volume work, as well as its Supplement, in English, French and German, published from 1913 to 1938 in Leiden, under the supervision of scholars such as Houtsma, Baset, Hartmann, Wensinck, Gibb and L&#233;vi-Proven&#231;al. The enthusiasm with which this publication was received led to a 12-volume second edition in 1954, that was finally completed in 2004. Most volumes of the first and second editions of this encyclopaedia were variously translated into Arabic, Persian, Turkish, Urdu and Dari in Egypt, Iran, Turkey, Pakistan and Afghanistan. </P>
+<P>Notwithstanding the profile and status it deserved and rapidly gained, <I>The Encyclopaedia of Islam</I> nevertheless failed to cover many cultural aspects of various Islamic schools and traditions, in particular that of Persian Shi&#8216;ism, one of Islam&#8217;s most important and influential schools of thought. It was for this reason that when the decision was taken in Iran to translate it into Persian, local researchers under the guidance of Professor Ehsan Yarshater provided numerous additional articles aimed at filling the lacunae. This appeared as a supplement to the Persian-language edition under the new title of <I>The Encyclopaedia of Iran and Islam</I>. Not long after, Professor Yarshater with the support of Columbia University, embarked on the now well-known <I>Encyclopaedia Iranica</I>, which comprehensively addresses all aspects of pre-Islamic and Islamic Iranian history, literature, arts and culture. Simultaneous with the appearance of Fascicles VII and VIII of The <I>Encyclopaedia of Iran and Islam</I> in 1978, a general encyclopaedia in Persian was also published which was of particularly high quality - originally in two parts and three volumes, and entitled <I>Da&#8217;irat al-ma&#8216;arif-i Farsi</I> (&#8216;The Persian Encyclopaedia&#8217;) by Ghulam Husayn Musahib. It eventually produced a great number of additional articles on Iran and Islam by eminent scholars, such that it was expanded to three times its original size. This, too, has been further edited and translated with the final result appearing in 1995. </P>
+<P>Despite the significance and role of the <I>Encyclopaedia of Islam</I>, and the laudable efforts of Orientalist scholars in furthering an understanding of Islamic texts by providing extensive information on Islamic cultures and civilisation, and introducing sources and countless manuscripts in the field, thereby encouraging research, it has to be said that a number of new challenges had emerged which called out for new responses. Advances in education, rising standards of knowledge and information amongst Muslims and developments in Shi&#8216;i studies resulting from the establishment of an Islamic republic in Iran provoked a host of fresh queries and debates in every field, from ideology to spirituality, from the sciences to the arts. For the student of Islam, hunting for information amongst a multitude of different sources within each of these areas is a challenging task. Also, it is a well-known fact that when encyclopaedic compilations are undertaken with the necessary academic rigour and appropriate research methods, they can prove of great value in promoting a better understanding between civilisations. </P>
+<P>Such were the most significant driving factors underlying the rationale for the establishment of the Centre for the Great Islamic Encyclopaedia in 1983 in Tehran, dedicated to the production of a far-reaching, comprehensive and accurate encyclopaedia entitled <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I> (&#8216;The Great Islamic Encyclopaedia&#8217;), written by a prominent group of scholars and researchers in the field, with Kazem Musavi Bojnurdi as its editor-in-chief. The first steps proved arduous: defining the goals, identifying the audience, appointing the researchers and authors, providing research tools and a specialised library took several years, so that the first volume only appeared in 1989. To date (2008), 15 volumes have been completed, and the entire set is projected to consist of over 40 volumes. This encyclopaedia has been managed in a carefully systematic and structured manner, with special attention given to the selection of each entry, which follows a particular set of criteria filtered through a pyramid of editors, sub-editors and proof-readers, reporting to an editorial board. In a short span of time, this publication has grown from an information resource to a veritable research facility serving all manner of historians and students. Reviews and comments suggest that in the twenty years since its inception, <I>The Great Islamic Encyclopaedia</I> and its parallel ongoing Arabic translation have sparked a revolution in the methodology of such research projects, opening up new horizons and inspiring fresh topics of inquiry, dealing with manuscripts, publications, coins, archaeological remains, artefacts, and the like. </P>
+<P><I>The Great Islamic Encyclopaedia</I> project is sustained by a number of primary and secondary research departments, focusing upon specific subjects, such as the literature of Persian and other Islamic cultures, Arabic literature, Qur&#8217;anic sciences,<EM> fiqh</EM>, <I>usul</I> and <I>hadith</I>, history, geography, mysticism, comparative religion, philosophy, anthropology, the arts, and so on. These departments deal with research and editing, selection of entries, scientific categorisation and reference-verification, as well as printing. Each of these departments is managed by an editor with the help of assistants, and in the course of their work, extensive contributions are made by associate and affiliated editors. A highly-structured process of selection, cross-checking and final approval via several stages of editing ensures that the final product is the result of extensive deliberation and monitoring by a team of highly qualified experts and their assistants.</P>
+<P>Following the enthusiasm with which the Persian version of <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I> was received, it was decided that an Arabic translation would also be undertaken in Tehran. The first volume of the Arabic edition appeared in 1991 and, to date, seven volumes have been published. Given that this version is based upon the Persian, an equal number of volumes in Arabic will follow in due course. The success of the Arabic edition prompted the decision to produce an English translation in order to make this work available to an even wider audience. The Institute of Ismaili Studies in London was therefore approached because of its high standards of academic excellence; the present publication is the fruit of an agreement between the two bodies. </P>
+<P>The English translation of <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I>, named Encyclopaedia Islamica, will differ in some respects from its Persian original. The English version will not exceed 16 core volumes with supplementary volumes, given that senior consultants and editors have decided to omit a number of entries which would have been of limited interest or relevance to a Western readership. However, the integrity of the more important, lengthier entries has been preserved. A number of articles in English will be modified or abridged; many will need to be updated, given that since the publication of the original, new information, analysis or evidence has surfaced. Differences in the sequence of the letters of the alphabet between English and Persian also mean that entries beginning with, for example, &#8216;d&#8217;, and &#8216;ch&#8217; in English precede the corresponding entries in the Persian edition. Also, those entries that begin with the letter &#8216;ayn, which will appear in the English edition under the letter &#8216;a&#8217;, will be published earlier than in the Persian edition. In addition, some entries will be specifically commissioned for the new English edition which will not have appeared in the Persian. </P>
+<P>A professional team of consultants, editors and translators was assembled under the auspices of the Department of Academic Research and Publications at the Institute of Ismaili Studies; the head of this department, Dr Farhad Daftary, together with Professor Wilferd Madelung, Senior Research Fellow at the IIS, are the editors-in-chief of the <I>Encyclopaedia Islamica</I>. Under their supervision, each translated article was subjected to several stages of editing. Given the weighty demands of editing a work such as this, the final version of the entries presented here is the fruit of the efforts of both the editors and translators.</P>
+<P><I>Encyclopaedia Islamica</I>, like its Persian counterpart, <I>Da&#8217;irat al-Ma&#8216;arif-i Buzurg-i Islami</I>, is to be considered a specialist encyclopaedia. Its central contribution to Islamic studies is its coverage of specifically Shi&#8216;i themes, personalities, culture and history &#226;&#226;&#8218;&#172;&#8220; those aspects, precisely, which were either given scant attention in earlier encyclopaedias or ignored altogether, as a result of the Arabo-centric and Sunni-centric tendencies which have, until recently, prevailed in Orientialist academic circles in the West. At the same time, a major strength of the present encyclopaedia lies in its very comprehensiveness. It successfully covers an extraordinary range of themes and regions, seeking to do justice to the global nature of Islamic civilisation: it is far from being simply an encyclopaedia of &#8216;Shi&#8216;i Islam&#8217;. While offering an objective and in-depth study of hitherto neglected fields of Shi&#8216;i culture and history, it also presents biographies of political, military and cultural personalities, with accounts of events throughout the Muslim world; scientific, artistic, literary and philosophical themes; the disciplines of jurisprudence, Qur&#8217;anic studies, history and geography, logic and linguistics, faith and philosophy, and such sciences as medicine and mathematics. In this manner, scholarly attention to the specifics of the Shi&#8216;i traditions of Islam is combined with an appropriate sensitivity to the global matrix of Islamic civilisation within which these traditions have emerged; a civilisation to which Shi&#8216;ism has made such a creative and inspiring contribution, and of which it is itself an indisputably major manifestation.</P><br><br></div><div id="pubsContents"><strong>Contents</strong><br><TABLE style="WIDTH: 100%; cellspacing: " cellPadding=0 border=0 0?>
+<TBODY>
+<TR>
+<TD><STRONG>Article</STRONG></TD>
+<TD><STRONG>Author (translator)</STRONG></TD></TR>
+<TR>
+<TD>Abu al-Harith </TD>
+<TD>Department of Islamic Law and Qur&#8217;an and Hadith Studies (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Afshar Urumiya&#8217;i </TD>
+<TD>Yahya Dhoka&#8217; (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu al-Hasan al-Ahwazi </TD>
+<TD>Department of Science (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Hasan al-&#8217;Amiri </TD>
+<TD>Gholamhossein Ebrahimi Dinani and Sayyed Javad Tabatabai (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu al-Hasan al-Bisyawi </TD>
+<TD>Ahmad Pakatchi (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Ghaffari </TD>
+<TD>Yahya Dhoka&#8217; (Simin Rahimi)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Gulistanah </TD>
+<TD>Majid Sami&#8216;i (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Hasan al-Harrani </TD>
+<TD>Fariba Pat (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan al-Jurjani </TD>
+<TD>Abdol-Amir Salim (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Khan Bahrami </TD>
+<TD>Shahnaz Razpush (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Khan Beglerbegi Mahallati </TD>
+<TD>Seyyed Ali Al-i Davud (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Khan Ilchi Shirazi </TD>
+<TD>Neguin Yavari and Isabel Miller (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Mi&#8217;mar </TD>
+<TD>Yahya Dhoka&#8217; (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Mustawfi </TD>
+<TD>Yahya Dhoka&#8217; (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Nadir al-Zaman </TD>
+<TD>Nushin-dukht Nafi si (Maryam Rezaee and Roxane Zand)</TD></TR>
+<TR>
+<TD>Abu al-Hasan Simjur </TD>
+<TD>Majdoddin Kayvani (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Hasan al-Tabari </TD>
+<TD>Muhammad Ali Mowlavi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Hashim </TD>
+<TD>Ali Bahramian and Hassan Ansari (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Hashim al-Jubba&#8217;i </TD>
+<TD>Mohammad Mojtahed Shabestari (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Hatim al-Razi </TD>
+<TD>Masoud Jalali-Moqaddam (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu Hatim al-Sijistani </TD>
+<TD>Faramarz Haj Manouchehri (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu Hayyan al-Gharnati </TD>
+<TD>Enayatollah Fatehi-nezhad (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Hayyan al-Tawhidi </TD>
+<TD>Alireza Zekavati Gharagozlou (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Hilal al-&#8217;Askari </TD>
+<TD>Azartash Azarnoosh (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Hudhayfa </TD>
+<TD>Abdol-Amir Salim (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Hurayra </TD>
+<TD>Ali Bahramian (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Husayn al-Basri </TD>
+<TD>Masoud Jalali-Moqaddam (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu &#8216;Ikrima </TD>
+<TD>Ali Bahramian (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu &#8216;Isa al-Isfahani </TD>
+<TD>Abdol-Amir Salim (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu &#8216;Isa al-Warraq </TD>
+<TD>Abbas Zaryab (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Ishaq al-Ilbiri </TD>
+<TD>Department of Arabic Literature (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu Ishaq Kazaruni </TD>
+<TD>Mina Hafizi (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu Ishaq al-Kubunani </TD>
+<TD>Younes Karamati (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Ishaq al-Shirazi </TD>
+<TD>Nurollah Kasa&#8217;i (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Ja&#8217;far Khazin </TD>
+<TD>Alireza Nouri Garmroudi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Ja&#8217;far b. Shirzad </TD>
+<TD>Mohammad Asef Fekrat (Ali Khazaee-far)</TD></TR>
+<TR>
+<TD>Abu Ja&#8217;far Ustadh Hurmuz </TD>
+<TD>Abolfazl Khatibi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu Ja&#8217;far Yazid b. al-Qa&#8217;qa&#8217; </TD>
+<TD>Ahmad Pakatchi (Jawad Qasemi)</TD></TR>
+<TR>
+<TD>Abu Jahl </TD>
+<TD>Mohammad Ali Kazem Beigi ( John Cooper)</TD></TR>
+<TR>
+<TD>Abu al-Jarud </TD>
+<TD>Ali Bahramian (Roxane Zand)</TD></TR>
+<TR>
+<TD>Abu al-Jaysh al-Balkhi </TD>
+<TD>Hassan Ansari (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu al-Jud </TD>
+<TD>Muhammad Ali Mowlavi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Kamil </TD>
+<TD>Alireza Djafari Naini (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Khalid al-Kabuli </TD>
+<TD>Maryam Sadeghi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Khalid al-Wasiti </TD>
+<TD>Ahmad Pakatchi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Khasib </TD>
+<TD>Abbas Saidi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Khattab </TD>
+<TD>Hassan Ansari (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Khayr al-Ishbili </TD>
+<TD>Abu&#8217;l Hasan Dianat (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Khayr Khan Qazaq </TD>
+<TD>Majid Sami&#8216;i (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Khayr Khan Uzbek </TD>
+<TD>Majdoddin Kayvani (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Lahab </TD>
+<TD>Ali Bahramian (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Layth al-Samarqandi </TD>
+<TD>Ahmad Pakatchi (Azar Rabbani)</TD></TR>
+<TR>
+<TD>Abu Lu&#8217;lu&#8217; </TD>
+<TD>Hasan Yusofi Ishkevari (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu al-Ma&#8217;ali Lahuri </TD>
+<TD>Arif Naushahi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu al-Ma&#8217;ali </TD>
+<TD>Mas&#8216;ud Habibi Mazaheri (Azar Rabbani)</TD></TR>
+<TR>
+<TD>Abu Madyan </TD>
+<TD>Najib Mayel Heravi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Mahamid al-Ghaznawi </TD>
+<TD>Younes Karamati (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Mahasin Jurjani </TD>
+<TD>Department of Islamic Law and Qur&#8217;an and Hadith Studies (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu Mansur al-&#8217;Ijli </TD>
+<TD>Hassan Ansari (Mansur Sana&#8217;i)</TD></TR>
+<TR>
+<TD>Abu Mansur al-Isfahani </TD>
+<TD>Najib Mayel Heravi ( Jawad Qasemi)</TD></TR>
+<TR>
+<TD>Abu Mansur al-Ma&#8217;mari </TD>
+<TD>Abolfazl Khatibi (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu Mansur Muhammad b. &#8216;Abd al-Razzaq</TD>
+<TD>Abolfazl Khatibi (Ali-Akbar Bouri)</TD></TR>
+<TR>
+<TD>Abu Mansur Muwaffaq Harawi </TD>
+<TD>Younes Karamati (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu Mansur b. Yusuf </TD>
+<TD>Abolfazl Khatibi (IIS Translation Team)</TD></TR>
+<TR>
+<TD>Abu Ma&#8217;shar al-Balkhi </TD>
+<TD>Abu&#8217;l Hasan Dianat (Fatemeh Teimuri and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Ma&#8217;shar al-Sindi </TD>
+<TD>Department of History (Mansur Sana&#8217;i and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Mihjan </TD>
+<TD>Ali Bahramian (Mansur Sana&#8217;i)</TD></TR>
+<TR>
+<TD>Abu Mikhnaf </TD>
+<TD>Ali Bahramian (Azar Rabbani and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Mu&#8217;ayyad Balkhi </TD>
+<TD>Mina Hafizi ( Jawad Qasemi and Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Mufaddal al-Shaybani </TD>
+<TD>Ahmad Pakatchi ( Jawad Qasemi)</TD></TR>
+<TR>
+<TD>Abu Musa (Island) </TD>
+<TD>Mohammad Bagher Vosoughi and Stephen Hirtenstein (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Musa al-Ash&#8217;ari </TD>
+<TD>Mohammad Ansari (Ali-Akbar Bouri)</TD></TR>
+<TR>
+<TD>Abu Musa al-Madini </TD>
+<TD>Department of Islamic Law and Qur&#8217;an and Hadith Studies (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu Musa al-Murdar </TD>
+<TD>Mohammad Javad Anvari (Farhoud Bernjian and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Muslim al-Isfahani </TD>
+<TD>Mas&#8216;ud Habibi Mazaheri (Azar Rabbani and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Muslim al-Khawlani </TD>
+<TD>Department of History (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu Muslim al-Khurasani </TD>
+<TD>Ali Bahramian and Sadeq Sajjadi (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD>Abu Muslim-namah </TD>
+<TD>Sadeq Sajjadi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Mutahhar al-Azdi </TD>
+<TD>Azartash Azarnoosh (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu al-Mutarrif </TD>
+<TD>Mehran Arzandeh (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Mu&#8217;thir </TD>
+<TD>Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Nasr Farahi </TD>
+<TD>Simin Ghulamiyan (Simin Rahimi)</TD></TR>
+<TR>
+<TD>Abu Nasr al-Kashi </TD>
+<TD>Abolfazl Khatibi (Simin Rahimi and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Nasr Mansur b. &#8216;Iraq </TD>
+<TD>Sadeq Sajjadi (Simin Rahimi)</TD></TR>
+<TR>
+<TD>Abu Nasr Mushkan </TD>
+<TD>Abolfazl Khatibi (Simin Rahimi)</TD></TR>
+<TR>
+<TD>Abu Nasr Parsa </TD>
+<TD>Arif Naushahi and M.I. Waley (Saleh Nejad)</TD></TR>
+<TR>
+<TD>Abu Nasr Parsa (mausoleum) </TD>
+<TD>Yadollah Gholami (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Nasr al-Sijzi </TD>
+<TD>Department of Islamic Law and Qur&#8217;an and Hadith Studies ( Jawad Qasemi)</TD></TR>
+<TR>
+<TD>Abu Nu&#8217;aym </TD>
+<TD>Ali Bahramian (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu Nu&#8217;aym al-Isfahani </TD>
+<TD>Alireza Zekavati Gharagozlou and Hassan Ansari (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Nukhayla </TD>
+<TD>Enayatollah Fatehi-nezhad and Azartash Azarnoosh (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Qasim al-Balkhi </TD>
+<TD>Abbas Zaryab (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Qasim al-Dargazini </TD>
+<TD>Naser Shoarian-Sattari (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Qasim Farhang </TD>
+<TD>Taqi Binesh and Mohammad Hassan Semsar (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Qasim al-Hakim al-Samarqandi </TD>
+<TD>Ahmad Pakatchi (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Qasim Kashani </TD>
+<TD>Seyyed Ali Al-i Davud (Amir Hushang Nazerian)</TD></TR>
+<TR>
+<TD>Abu al-Qasim Kathir </TD>
+<TD>Abolfazl Khatibi (Hassan Lahouti)</TD></TR>
+<TR>
+<TD>Abu al-Qasim Kurragani </TD>
+<TD>Mohammad Javad Shams (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu al-Qasim Muhammad Aslam </TD>
+<TD>Ali Mir-Ansari (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Qasim al-Nasrabadi </TD>
+<TD>Maryam Sadeghi (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Qasim Simjur </TD>
+<TD>Abolfazl Khatibi (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Qasim al-Taymi </TD>
+<TD>Hassan Ansari (Azar Rabbani and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Qatada </TD>
+<TD>Abu&#8217;l Hasan Dianat (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Qir </TD>
+<TD>Ali Akbar Dianat (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Qubays </TD>
+<TD>Enayatollah Reza (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Quhafa </TD>
+<TD>Department of History (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Qurra </TD>
+<TD>Faramarz Haj Manouchehri ( Jawad Qasemi)</TD></TR>
+<TR>
+<TD>Abu Rafi&#8216; </TD>
+<TD>Kazem Musavi Bojnurdi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Rakwa </TD>
+<TD>Department of History (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Rashid al-Nisaburi </TD>
+<TD>Department of Theology (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Riyash al-Qaysi </TD>
+<TD>Nuri-Sadat Shahangian (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Sahl Hamdawi </TD>
+<TD>Mohammad Abd Ali (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Sahl al-Masihi </TD>
+<TD>Younes Karamati (IIS Translation Team)</TD></TR>
+<TR>
+<TD>Abu Sahl al-Nawbakhti </TD>
+<TD>Hassan Ansari (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD>Abu Sahl Zawzani </TD>
+<TD>Abolfazl Khatibi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id b. Abi al-Khayr </TD>
+<TD>Najib Mayel Heravi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id Bahadur Khan </TD>
+<TD>Abolfazl Khatibi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id Gurakan </TD>
+<TD>Abbas Zaryab (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id al-Jannabi </TD>
+<TD>Reza Rezazadeh Langaroodi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id al-Jurjani </TD>
+<TD>Abu&#8217;l Hasan Dianat (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id al-Kadumi </TD>
+<TD>Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id al-Khudri </TD>
+<TD>Hussein Ansari Rad (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id Kuchkunji </TD>
+<TD>Ali Akbar Dianat ( Jawad Qasemi)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id al-Rustami </TD>
+<TD>Mohammad Ali Lesani Fesharaki (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu Sa&#8217;id al-Yamami </TD>
+<TD>Department of Sciences (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Saj </TD>
+<TD>Abolfazl Khatibi (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Salah al-Halabi </TD>
+<TD>Ahmad Pakatchi (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu Salama al-Khallal </TD>
+<TD>Ali Bahramian (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu al-Salt </TD>
+<TD>Muhammad Ali Mowlavi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Saraya </TD>
+<TD>Ali Bahramian (Mansur Sana&#8217;i)</TD></TR>
+<TR>
+<TD>Abu Shakur Balkhi </TD>
+<TD>Mohammad Abd Ali (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu Shama </TD>
+<TD>Yusof Rahimlu (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Shaykh al-Isfahani </TD>
+<TD>Mahdi Salmasi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Shimr al-Murji&#8217; </TD>
+<TD>Abd al-Amir Jaberizadeh (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu al-Shis </TD>
+<TD>Azartash Azarnoosh (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Shuja&#8217; al-Isfahani </TD>
+<TD>Faramarz Haj Manouchehri (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu Sufyan </TD>
+<TD>Department of History (Farhoud Bernjian and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Sulayman al-Darani </TD>
+<TD>Gholam-Ali Arya (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Sulayman al-Sijistani </TD>
+<TD>Sharafoddin Khorasani (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Su&#8217;ud, &#8216;Abd Allah b. &#8216;Abd Allah </TD>
+<TD>Iran-naz Kashian (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Su&#8217;ud, Muhammad b. Muhammad b. Mustafa &#8216;Imadi </TD>
+<TD>Ali Akbar Dianat (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Tahir (family) </TD>
+<TD>Fatima Karimi (Rahim Gholami and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Tahir al-Jannabi </TD>
+<TD>Reza Rezazadeh Langaroodi (Mansur Sana&#8217;I and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Tahir Multani </TD>
+<TD>Arif Naushahi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Tahir Samarqandi </TD>
+<TD>Enayatollah Reza (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD>Abu Tahir Tarsusi </TD>
+<TD>Department of Literature (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD>Abu Talha </TD>
+<TD>Abu&#8217;l Hasan Dianat (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu Talib (&#8216;Imran) b. &#8216;Abd al-Muttalib </TD>
+<TD>Ali Bahramian (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Talib Khan </TD>
+<TD>Majdoddin Kayvani (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Talib al-Makki </TD>
+<TD>Fathollah Mojtaba&#8217;i (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu Talib Mudarris Hamadani </TD>
+<TD>Mohammad Hassan Semsar (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Tamahan al-Qayni </TD>
+<TD>Seyyed Mohammad Seyyedi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Tammam </TD>
+<TD>Azartash Azarnoosh (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Tayyib al-Lughawi </TD>
+<TD>Mehran Arzandeh (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Tayyib al-Mus&#8217;abi </TD>
+<TD>Mohammad Mahdi Mu&#8217;azzin Jami (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Tayyib al-Tabari </TD>
+<TD>As&#8216;ad Shaykh al-Islami (Shahram Khodaverdian)</TD></TR>
+<TR>
+<TD>Abu Thawr </TD>
+<TD>Department of Islamic Law and Qur&#8217;an and Hadith Studies (Farhoud Bernjian)</TD></TR>
+<TR>
+<TD>Abu Tufayl </TD>
+<TD>Abu&#8217;l Hasan Dianat (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Turab Ghaffari </TD>
+<TD>Yahya Dhoka&#8217; (Shahram Khodaverdian and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Turab Isfahani </TD>
+<TD>Mohammad Hassan Semsar (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Turab al-Nakhshabi </TD>
+<TD>Hussein La-Shay&#8217; (Rahim Gholami and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu &#8216;Ubayd al-Bakri </TD>
+<TD>Enayatollah Reza (Rahim Gholami and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu &#8216;Ubayd al-Qasim b. Sallam al-Khuza&#8217;i </TD>
+<TD>Ahmad Pakatchi (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu &#8216;Ubayd al-Thaqafi </TD>
+<TD>Abu&#8217;l Hasan Dianat (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu &#8216;Ubayda </TD>
+<TD>Enayatollah Fatehi-nezhad (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu &#8216;Ubayda b. al-Jarrah </TD>
+<TD>Department of History (Hamid Tehrani)</TD></TR>
+<TR>
+<TD>Abu Umama al-Bahili </TD>
+<TD>Abdol-Amir Salim (Rahim Gholami and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu &#8216;Uthman al-Hiri </TD>
+<TD>Hussein La-Shay&#8217; (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu al-Wafa&#8217; Khwarazmi </TD>
+<TD>Mohammad Javad Shams (Hamid Tehrani)</TD></TR>
+<TR>
+<TD>Abu al-Walid al-Baji </TD>
+<TD>Abdol-Amir Salim (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Walid al-Himyari </TD>
+<TD>Iran-naz Kashian (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Wazir </TD>
+<TD>Ahmad Pakatchi (Rahim Gholami)</TD></TR>
+<TR>
+<TD>Abu Yahya al-Bitriq </TD>
+<TD>Abu&#8217;l Hasan Dianat (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Ya&#8217;la al-Ja&#8217;fari </TD>
+<TD>Hassan Ansari (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu Ya&#8217;la al-Mawsili </TD>
+<TD>Maryam Sadeghi (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu al-Yanbaghi </TD>
+<TD>Azartash Azarnoosh (Hamid Tehrani)</TD></TR>
+<TR>
+<TD>Abu Ya&#8217;qub </TD>
+<TD>Enayatollah Fatehi-nezhad (Suheyl Umar)</TD></TR>
+<TR>
+<TD>Abu Ya&#8217;qub al-Hamadani </TD>
+<TD>Naser Gozashteh (Maryam Baiza)</TD></TR>
+<TR>
+<TD>Abu Ya&#8217;qub al-Sijistani </TD>
+<TD>Abbas Zaryab (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu al-Yaqzan </TD>
+<TD>Mohammad Ali Kazem Beigi (Daryoush Mohammad Poor)</TD></TR>
+<TR>
+<TD>Abu Yazid al-Nukkari </TD>
+<TD>Hasan Yusofi Ishkevari (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Yusuf </TD>
+<TD>Ahmad Pakatchi (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu Yusuf al-Qazwini </TD>
+<TD>Hassan Ansari (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Yusuf Ya&#8217;qub </TD>
+<TD>Enayatollah Fatehi-nezhad (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Zakariyya al-Janawuni </TD>
+<TD>Ahmad Pakatchi (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu Zakariyya al-Warjalani </TD>
+<TD>Masoud Jalali-Moqaddam (Maryam Rezaee)</TD></TR>
+<TR>
+<TD>Abu Zayd al-Ansari </TD>
+<TD>Enayatollah Fatehi-nezhad (Maryam Rezaee and Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Zayd al-Balkhi </TD>
+<TD>Samad Movahhed (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Zayd Kashani </TD>
+<TD>Fatima Karimi (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Zayd al-Qurashi </TD>
+<TD>Azartash Azarnoosh (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abu Zayn Kahhal </TD>
+<TD>Mohammad Hadi Mu&#8217;azzin Jami (Farzin Negahban)</TD></TR>
+<TR>
+<TD>Abyanah </TD>
+<TD>Mohammad Hasan Ganji (Farzin Negahban)</TD></TR></TBODY></TABLE><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br></div><p>Content Date: February 2010</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Encyclopaedia Islamica: Volume 2</TITLE><META HTTP-EQUIV="Expires" CONTENT="Wed, 5 Feb 2020 14:01:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/06/2010&nbsp;11:26&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=111208 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:35:04 GMT -->
+</HTML>

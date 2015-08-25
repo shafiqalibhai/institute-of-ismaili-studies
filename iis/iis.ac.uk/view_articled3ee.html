@@ -1,0 +1,817 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101259 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:22 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101259;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" height="115" width="779" class="banner" alt="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" src="WebAssets/Site_Images/header/ResearchandPublication_2.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/ResearchandPublication_2.jpg','WebAssets/Site_Images/header/Research%20And%20Publications.jpg');
+				var descriptions = new Array('The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies','An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only47ec.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101259">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlec9c1.html?ContentID=101262">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articlee361.html?ContentID=101265">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>The Metaphysics of Interfaith Dialogue: A Qur&#8217;anic Perspective</strong><br/><strong><DIV><A href="view_person2c11.html?type=authors&amp;id=135">Dr Reza  Shah-Kazemi</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>Presented at &#8220;Paths to the Heart: Sufism and the Christian East&#8221; Conference, October 18-20, 2001, University of South Carolina, USA. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong>This article presents the Qur&#8217;an as a source of dialogue amongst different belief systems. Through deft exegesis of various Qur&#8217;anic verses, in Sufi tradition, the claim is made that the Qur&#8217;an not only supports, but also wholeheartedly encourages the pluralism of faiths in today&#8217;s world while vehemently opposing religious nationalism and fanaticism. In an effort to achieve understanding, appreciation and harmony, it is imperative that Muslims bring to light that which unites all peoples in their various belief systems so as to enter into constructive and inspired dialogue with others. The Qur&#8217;an enjoins upon Muslim the understanding of other faiths and peoples as a means of attaining spiritual enlightenment: knowing oneself, knowing others and knowing God are inextricably linked.</div><div> </div><div><A href="SiteAssets/pdf/interfaith_dialogue.pdf"><IMG height=25 hspace=5 src="images/pdf_icon.gif" width=25 border=0>Download PDF version of article (160 KB)</A><BR>
+<P class=mainhead><STRONG>Table of contents</STRONG><BR><BR><A title=#anchor1 href="#anchor1">Introduction</A></P>
+<UL class=bullet_list>
+<LI><A title=#anchor2 href="#anchor2">Part I</A> 
+<UL class=bullet_list>
+<LI><A title=#anchor3 href="#anchor3">Unity, Identity and the Self</A> 
+<LI><A title=#anchor4 href="#anchor4">Binding a Cloth</A> 
+<LI><A title=#anchor5 href="#anchor5">The Metaphysics of Oneness</A> 
+<LI><A title=#anchor6 href="#anchor6">The I-ness of God</A> 
+<LI><A title=#anchor7 href="#anchor7">The Ephemeral</A> 
+<LI><A title=#anchor8 href="#anchor8">God is Transcendent</A> 
+<LI><A title=#anchor9 href="#anchor9">Grasping Relativity</A> 
+<LI><A title=#anchor10 href="#anchor10">God is Immanent</A> 
+<LI><A title=#anchor11 href="#anchor11">God Knows Himself</A> 
+<LI><A title=#anchor12 href="#anchor12">The Necessity of Human Diversity</A> 
+<LI><A title=#anchor13 href="#anchor13">The Imperative of Dialogue</A> 
+<LI><A title=#anchor14 href="#anchor14">True Tawhid</A> 
+<LI><A title=#anchor15 href="#anchor15">The Face of God</A> 
+<LI><A title=#anchor16 href="#anchor16">Spiritual Foundations for Tolerance, Courtesy</A> </LI></UL>
+<LI><A title=#anchor17 href="#anchor17">Part II</A> 
+<UL class=bullet_list>
+<LI><A title=#anchor18 href="#anchor18">The Universal Meaning of &#8216;Islam&#8217;</A> 
+<LI><A title=#anchor19 href="#anchor19">The Absolute Religion</A> 
+<LI><A title=#anchor20 href="#anchor20">Fitra - Primordial Purity</A> 
+<LI><A title=#anchor21 href="#anchor21">Moses and al-Khidr - Exoteric and Esoteric Knowledge</A> 
+<LI><A title=#anchor22 href="#anchor22">Islam Ecompasses all Revelations</A> 
+<LI><A title=#anchor23 href="#anchor23">Diversity of Ways is Divinely Willed</A> 
+<LI><A title=#anchor24 href="#anchor24">Salvation is Promised to the Faithful</A> 
+<LI><A title=#anchor25 href="#anchor25">Refuting Religious Exclusivism and Nationalism</A> 
+<LI><A title=#anchor26 href="#anchor26">Beware of Restricting God to One&#8217;s Own Beliefs</A> 
+<LI><A title=#anchor27 href="#anchor27">The Doctrine of Abrogation</A> 
+<LI><A title=#anchor28 href="#anchor28">Universal versus Contextual</A> 
+<LI><A title=#anchor29 href="#anchor29">Places Where God is Invoked</A> 
+<LI><A title=#anchor30 href="#anchor30">The Universal Scent of the Beloved</A> 
+<LI><A title=#anchor31 href="#anchor31">Spiritual Dialogue Despite Theological Differences</A> 
+<LI><A title=#anchor32 href="#anchor32">Addressing Polemical Verses in the Qur&#8217;an</A> 
+<LI><A title=#anchor33 href="#anchor33">Emphasising That Which Unites</A> </LI></UL></LI></UL>
+<DIV class=sub_head><A id=anchor1 name=anchor1></A><STRONG>Introduction</STRONG><BR></DIV>
+<DIV class=sub_head>I would like to begin my talk by expressing heartfelt gratitude to Professor James Cutsinger for having invited me to this conference and for all his hard work, meticulous organisation, and gracious hospitality. It is indeed an honour to be present at a gathering such as this and it is a particular privilege to be able to speak in the presence of two scholars I consider to be my teachers, Professor Nasr and Professor Chittick, for whose outstanding contributions to the field of Islamic spirituality I am so grateful.<BR><BR>When Professor Cutsinger invited me to deliver a paper at this conference, I decided after some thought to address myself to the Qur&#8217;an as a source of inspiration for interfaith dialogue. I came to this decision not because I am an authority on the Qur&#8217;an; I am at the very beginning of my scholarly engagement with the sacred text. Rather, I decided on this theme because I felt that the metaphysical and spiritual dimensions of the Qur&#8217;an, as expounded in the <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufi</A> tradition, have so much to offer those engaged in religious dialogue; those, in particular, who see the different religions as being so many &#8216;paths to the heart&#8217;.<BR><BR>Little did I realize how urgent it would become for all Muslims to bring to light within themselves and for others, the spirituality and universality of the Qur&#8217;an. The recent and ongoing tragic events have precipitated a heated debate about the nature of the religion of Islam, and of course, the basic message of its founding scripture. I have, accordingly, modified the first part of my paper in order to focus more sharply on the way in which the Qur&#8217;anic discourse, understood spiritually, is an effective antidote to the poison of religious fanaticism and a powerful force for the spirit of inter-religious harmony.<BR><BR>I will touch very briefly in this first part of the paper on certain basic themes of Sufi-gnosis or <I>ma&#8216;rifa</I>, that are rooted in the Qur&#8217;anic message, and briefly allude to some of their implications for reaching out to &#8216;the other&#8217;; in the second part of the talk the aim is to show how a spiritual conception of the essence of Islam opens up a path leading to the heart of religion as such. Finally, I will present a series of verses from the Qur&#8217;an which uphold this essentialist view of religion and which clearly exclude what Frithjof Schuon has aptly called &#8216;religious nationalism&#8217; - that is, the idea that only one religion is true to the exclusion of all others. <BR><BR><A id=anchor2 name=anchor2></A><STRONG>Part I</STRONG><BR><BR><A id=anchor3 name=anchor3></A><STRONG>Unity, Identity and the Self</STRONG><BR>Sufi metaphysical doctrines can be regarded as so many elaborations upon the fundamental message of the Qur&#8217;an, the principle of <I><A href="javascript:void(LaunchGlossary('GlossaryItem76ac.html?type=glossary&amp;id=64'))">tawhid</A></I>, expressed in the credal formula: <I>la ilaha illa&#8217;llah</I> - no god but God. Whereas theologically the statement is a relatively straightforward affirmation of the uniqueness of the divinity, and the negation of other &#8216;gods&#8217;, metaphysically, the formula is read as an affirmation of the true nature of being - no reality but the one Reality. Thus, &#8216;theological&#8217; <I>tawhid</I> is transformed into &#8216;ontological&#8217; <I>tawhid</I>, the doctrine of the oneness of being, associated in particular with the school of Ibn &#8216;Arabi.<BR><BR>Despite appearing to be the concern only of mystics with an otherworldly and introspective orientation, Sufi metaphysical perspectives on the central Qur&#8217;anic message of <I>tawhid</I> are in fact highly pertinent to the theme of dialogue. In particular, the implications of <I>tawhid</I> in respect to notions of &#8216;self&#8217; and &#8216;other&#8217; can be of inestimable value in helping to overcome one of the key obstacles to authentic and fruitful dialogue in today&#8217;s multi-religious world.<BR><BR><A id=anchor4 name=anchor4></A><STRONG>Binding a Cloth</STRONG><BR>This obstacle consists in a notion of &#8216;identity&#8217; or &#8216;selfhood&#8217; that has become opaque, congealed, or reified. When the self is regarded as the absolute criterion for engaging with the other, there arises a suffocating notion of identity which feeds directly into chauvinism, bigotry and fanaticism - qualities that are expressed by the Arabic word <I>ta&#8216;assub</I>. In its root meaning, this word graphically conveys the self-indulgence that constitutes the life-blood of all forms of fanaticism: <I>ta&#8216;assaba</I> primarily signifies binding a cloth around one&#8217;s head. <BR><BR>One becomes literally self-enwrapped, each fold of the cloth compounding the initial preoccupation with one&#8217;s own congealed frame of identity; one becomes imprisoned within a mental &#8216;fabric&#8217; woven by one&#8217;s own prejudices; as the head swells, the mind narrows. Needless to say, this has nothing to do with the positive symbolism of that most dignified form of headdress, the turban.<BR><BR>If the &#8216;I&#8217; be identified in a quasi-absolute manner with the ego, the family, the nation or even the religion to which one belongs, then the &#8216;other&#8217; - at whatever level - will likewise be given a quasi-absolute character. It is precisely such exclusivist notions of &#8216;self&#8217; and &#8216;other&#8217; that contribute to the dynamics of suspicion and fear, fanaticism and conflict.<BR><BR><A id=anchor5 name=anchor5></A><STRONG>The Metaphysics of Oneness</STRONG><BR>The metaphysics, or science of oneness, on the other hand, does not so much abolish as attenuate, not equalize but situate, all limited conceptions of identity. It serves to relativise every conceivable notion of identity in the face of the Absolute; in other words, it ensures that no determinate, formal conception of &#8216;self&#8217; be absolutised, or &#8216;worshipped&#8217;, however unconsciously, as &#8216;idol&#8217;. The metaphysics of integral <I>tawhid</I> can be regarded as the most complete and effective antidote to fanaticism in so far as it undermines this idolatry of selfhood, a type of idolatry tersely summed up in the Qur&#8217;anic question: &#8220;Hast thou seen him who maketh his desire his god?&#8221; (25:43; almost identical at 45:23).<BR><BR>In the Qur&#8217;an, God says to Moses at the theophany of the burning bush, &#8220;<I>Inni ana&#8217;llah</I>&#8221;. The following extremely important comment is made on this by Ja&#8216;far al-Sadiq, 6th Shi&#8216;i imam, regarded also in the Sufi tradition as one of the &#8216;poles&#8217; (<I>aqtab</I>) or supreme authorities of the early generations. This comment comes in a <I>tafsir</I> that was to have a profound influence on the later unfolding of Sufi doctrine.<BR></DIV>
+<P class=sub_head><A id=anchor6 name=anchor6></A><STRONG>The I-ness of God</STRONG><BR>&#8217;It is not proper for anyone but God to speak of himself by using these words <I>inni ana</I>, &#8216;I am I&#8217;. I [that is Moses, according to al-Sadiq&#8217;s commentary] was seized by a stupor and annihilation (<I>fana&#8217;</I>) took place. I said then: &#8216;You! You are He who is and who will be eternally, and Moses has no place with You nor the audacity to speak, unless You let him subsist by your subsistence (<I><A href="javascript:void(LaunchGlossary('GlossaryItem6cca.html?type=glossary&amp;id=312'))">baqa</A>&#8217;</I>)&#8217;.&#8221;<BR><BR>Another important early expositor of Sufi doctrine, al-Kharraz, defines <I>ma&#8216;rifa</I>, or gnosis, in relation to this principle of the one-and-only &#8216;I-ness&#8217; of God: &#8220;Only God has the right to say &#8216;I&#8217;. For whoever says &#8216;I&#8217; will not reach the level of gnosis.&#8221; <BR><BR><A id=anchor7 name=anchor7></A><STRONG>The Ephemeral</STRONG><BR>It might however be objected here that such sublime metaphysical ideals and the spiritual states they call forth can only be the concern of a small number of mystics, and highly accomplished ones, at that. Can ordinary people concerned with dialogue and coexistence in the modern world, really benefit from such perspectives? We would readily answer in the affirmative. For not only do the principles in question - even on the discursive plane - help dissolve the fixations on selfhood that give rise to pride and arrogance, on the individual and collective levels, but also, more directly, the key Qur&#8217;anic verses from which these principles and perspectives flow can bring about, in the heart of the receptive reader, a penetrating sense of the ephemerality of all things, including, crucially, the ego and its manifold extensions.<BR><BR>Two of the most important of these verses are the following:<BR><BR>&#8220;Everything is perishing except His Face [or essence]&#8221; (28:88).<BR><BR>&#8220;Everything that is thereon is passing away; and there subsisteth but the Face of thy Lord, possessor of Glory and Bounty&#8221; (55:26-27).<BR><BR><A id=anchor8 name=anchor8></A><STRONG>God is Transcendent</STRONG><BR>It should be noticed here that the words indicating the ephemeral nature of all things - <I>halik</I>, &#8216;perishing&#8217;, and <I>fan</I>, &#8216;passing away&#8217; or &#8216;evanescing&#8217; - are both in the present tense: it is not that things will come to naught or perish at some later point in time, they are in fact, here and now, &#8216;extinguishing&#8217;, before our very eyes. That which will not be is already &#8216;not&#8217;, in a certain sense, and one grasps this not only in the ineffable moments of mystical experience, but also in the very measure that one understands the following principle: reality is not subject to finality, cancellation, extinction, non-being. That which is absolutely real is that which is eternal: it is the Face of the Lord that, alone, subsists. Conversely, all that which is impermanent is, by that very fact, unreal in the final analysis.<BR><BR><A id=anchor9 name=anchor9></A><STRONG>Grasping Relativity</STRONG><BR>Reflection on the verses above, then, can heighten the sense of the relativity of all things - and, pre-eminently, the ego - in the face of the one, sole, exclusive Reality. Instead of allowing an egocentric conception of selfhood to be superimposed onto religion and even onto God, such a perspective helps to engender the opposite tendency: to see the ego itself <I>sub-species aeternitatis</I>, from the aspect of eternity. What results is a more concrete apprehension of the essential limitations of the self: the contours that delimit and define the ego are more vividly perceived against an infinite background.<BR><BR>Thus, what is in question here is not so much a vaguely mystical notion of universal illusion but a concrete, realistic and effective sense of spiritual proportions. The limitations -existentially - and the pretensions - psychologically - of the ego are revealed and a consciously theocentric focus replaces the all too often unconsciously egocentric one: nothing is absolute but the Absolute. Herein lies the first major lesson given by Sufi gnosis to those engaged in dialogue; a negative lesson, that is, the negation of egocentricity, one of the primary motors of fanaticism <BR><BR><A id=anchor10 name=anchor10></A><STRONG>God is Immanent</STRONG><BR>As for the second lesson, this is the positivity which flows from the complementary aspect of gnosis, the subsistence or <I>baqa&#8217;</I> that comes after <I>fana&#8217;</I>. This is related to the theme of immanence. Indeed, the verses quoted above do not only assert the exclusive reality of God; they also contain a subtle allusion to the divine inclusivity. <BR><BR>The Face of God which alone subsists is not only the transcendent, divine essence, in relation to which all things are nothing; it is also the immanent presence which pervades and encompasses all things, constituting in fact their true being. One should take careful note of the following six verses which refer to this complementary, inclusive dimension of the divine reality.<BR><BR>&#8220;And unto God belong the East and the West; and wherever ye turn, there is the Face of God&#8221; (12:115).<BR><BR>&#8220;He is with you, wherever ye be&#8221; (57:4).<BR><BR>&#8220;We are nearer to him [man] than the jugular vein&#8221; (50:16).<BR><BR>&#8220;Know that God cometh in between a man and his own heart&#8221; (8:24).<BR><BR>&#8220;Is He not encompassing all things?&#8221; (41:54).<BR><BR>&#8220;He is the First and the Last, and the Outward and the Inward&#8221; (57:2).<BR><BR>Each of these verses contains the seeds of the most profound spiritual doctrines; and each has given rise to the most fecund meditation upon that most mysterious of all realities, the immanence of the Absolute in all that exists; of all that which is, from another point of view &#8220;other than God&#8221;.<BR><BR><A id=anchor11 name=anchor11></A><STRONG>God Knows Himself</STRONG><BR>Before considering the question of divine immanence in relation to dialogue, it is worth dwelling briefly on the function of relativity, or &#8216;otherness&#8217; in relation to God, since this also has its significance for dialogue. This &#8216;otherness&#8217; is described by Ibn &#8216;Arabi as the locus where God reveals Himself to Himself, &#8220;for the seeing of a thing itself by itself, is not the same as its seeing itself in another, as it were in a mirror.&#8221;<BR><BR>The function, then, of an apparent &#8216;other&#8217;, at the level of divine self-disclosure, is to make possible a particular mode of self-knowledge. One recalls here the holy utterance, or <I><A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">hadith</A> qudsi</I>, so fundamental to Sufi spirituality: &#8220;I was a hidden treasure, and I loved to be known, so I created the world.&#8221; Herein, one might venture to say, lies the ultimate metaphysical archetype of all &#8216;dialogue&#8217;. What we have here is a kind of &#8216;dialogue&#8217; or communication between different aspects of the Absolute, a dialogue mediated by relativity.<BR><BR><A id=anchor12 name=anchor12></A><STRONG>The Necessity of Human Diversity</STRONG><BR>Now, if the creation of the world springs from a divine love for a distinct mode of self-knowledge, the Qur&#8217;an indicates that the differentiation, within mankind, in respect of gender, tribe and race, also serves a mode of knowledge:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;O mankind, truly We have created you male and female, and have made you nations and tribes that ye may know one another. Truly the most noble of you, in the sight of God, is the most Godfearing&#8221; (49:13).</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>Distinction and difference are here affirmed as divinely willed, and as means by which knowledge is attained. One should note that the word for knowing one another, <I>ta&#8216;arafu</I>, and that for being &#8216;known&#8217; in the holy utterance, <I>u&#8216;raf</I>, are derived from the same root, <I>&#8216;arafa</I>, and is tied to the meaning of spiritual knowledge or gnosis, the essence of which is expressed in the famous <I>hadith</I>, &#8216;Whoso knows himself knows his Lord&#8217;. Thus, knowledge of self, knowledge of the other and knowledge of God are all interwoven, and should be seen as complementary and mutually reinforcing, each element having a role to play in the attainment of spiritual knowledge or <I>ma&#8217;rifa</I>.</P>
+<P class=sub_head><A id=anchor13 name=anchor13></A><STRONG>The Imperative of Dialogue</STRONG><BR>The verse cited above is often given as a proof-text for upholding the necessity of dialogue, establishing the principle of peaceful coexistence, and indicating the divine ordainment of human diversity. Now while it does indeed support such principles, the import of the verse is deepened, its message is made more compelling and its scope more far-reaching, in so far as it is consciously related to the metaphysical principle of self-knowledge through divine self-disclosure. Thus, dialogue here-below - a dialogue rooted in the sincere desire for greater knowledge and understanding both of &#8216;the other&#8217; and of oneself - can be seen as a reflection of, and participation in, the very process by which God knows Himself in distinctive, differentiated mode; that is, not in respect of His unique, eternal essence, but in respect of the manifestation of the &#8216;treasure&#8217; comprised or &#8216;hidden&#8217; within that essence.<BR><BR>There is nothing in creation that does not obey this ontological imperative of &#8220;making known&#8221; the divine treasure. The Qur&#8217;an refers repeatedly to this universal law, doing so in terms of praise and glorification: </P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;The seven heavens and the earth and all that is therein praise Him, and there is not a thing but hymneth His praise, but ye understand not their praise&#8221; (17:44).</TD>
+<TD width=10>&nbsp;</TD></TR>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;Hast thou not seen that God - He it is Whom all who are in the heavens and the earth praise; and the birds in flight: each verily knoweth its prayer and its form of glorification&#8221; (24:41).</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor14 name=anchor14></A><STRONG>True Tawhid</STRONG><BR>We now return to the theme of divine immanence. The verse cited earlier, &#8220;Everything is perishing except His Face,&#8221; refers both to transcendence and to immanence. This is made clear by al-Ghazali in his famous exegesis of this verse. The highest gnostics see, according to him, that everything has two faces, one pertaining to itself, and another pertaining to God; it is this face of God within all things that is alone real; and it is this divine face that is seen by the gnostics upon the attainment of <I>fana&#8217;</I>. All multiplicity vanishes for them and absolute singularity is attained. Ghazali says that this is called, in the language of reality, <I>tawhid</I>, truly making one.<BR><BR>It might be asked here: Is there not a contradiction between the extinction of phenomenal multiplicity called for by the deepest level of <I>tawhid</I> and the affirmation of human plurality created by God? One way of transforming this apparent contradiction into an expression of spiritual profundity is by stressing the principle of the divine &#8216;face&#8217; within each thing.<BR><BR><A id=anchor15 name=anchor15></A><STRONG>The Face of God</STRONG><BR>Those Sufis who are extinguished to their own particular &#8216;face&#8217; - extinguished from their own non-existence - come alive to the divine face that constitutes their true reality, the immanence of God&#8217;s presence within them, and also within all that exists: Wherever ye turn there is the Face of God. Now it is precisely that divine aspect, in all things, and in all other nations and peoples, that can come into focus when this level of <I>tawhid</I> is grasped aright. <BR><BR>And one does not have to experience the grace of mystical annihilation to comprehend this principle; as Ghazali said, one can arrive at this principle not only <I>dhawqan</I>, by way of &#8216;taste&#8217;, or mystical experience, but also <I>&#8216;irfanan &#8216;ilmiyyan</I>, as a mode of cognitive knowledge. If the mystical realization of this principle bestows a &#8216;taste&#8217; of <I>tawhid</I>, we might say, following on from Ghazali, that an intellectual assimilation of the principle bestows a &#8216;perfume&#8217; of <I>tawhid</I>. <BR><BR>If the ultimate, mystical degree of <I>tawhid</I> is only realized through extinction, the lower degrees imply at least that &#8216;perfume&#8217; or prefiguration of mystical extinction which consists in self-effacement, is humility. Now an intellectual assimilation of this vision of unity, together with an orientation towards the humility that it demands, is certainly sufficient to dissolve the egocentric knots that constitute the stuff of <I>ta&#8216;assub</I>, of all forms of fanaticism. <BR><BR>What results from an apprehension of the deeper implications of <I>tawhid</I>, then, is a heightened, spiritual discernment: that is, a presentiment both of one&#8217;s own nothingness before the divine reality, and also, of the innate holiness, the divine &#8216;face&#8217;, within the &#8216;neighbour&#8217;. The transcendent, divine reality before which one is extinguished is known to be mysteriously present within &#8216;the other&#8217;. One observes here the spiritual underpinning of that crucial relationship, so often stressed in Sufi ethics, between humility and generosity, between self-effacement and self-giving; the first being a kind of <I>fana&#8217;</I> in ethical mode, and the second being a moral expression or concomitant of <I>tawhid</I>.<BR><BR><A id=anchor16 name=anchor16></A><STRONG>Spiritual Foundations for Tolerance, Courtesy</STRONG><BR>Respect for one&#8217;s neighbour is thus deepened in the very measure that one is aware of the divine presence within and beyond both oneself and the neighbour. Herein, one might say, resides one of the spiritual foundations of <I><A href="javascript:void(LaunchGlossary('GlossaryItemc4a7.html?type=glossary&amp;id=347'))">adab</A></I>, or &#8216;courtesy&#8217;, understanding by this word the profound respect, if not reverence, for the &#8216;other&#8217; that constitutes the true substance of all outward, socially conditioned forms of etiquette, good manners, and propriety towards the neighbour. <BR><BR>One sees, then, that it is not so much &#8216;religious pluralism&#8217; as &#8216;metaphysical unity&#8217; that establishes a deep-rooted and far-reaching tolerance, one that is not so much formulated as a rule, to be obeyed or broken as one will; rather, what emerges is a mode of tolerance that is organically related to an awareness of the divine presence in all things, an apprehension of the inner holiness of all that exists.<BR><BR><A id=anchor17 name=anchor17></A><STRONG>Part II</STRONG><BR><BR><A id=anchor18 name=anchor18></A><STRONG>The Universal Meaning of &#8216;Islam&#8217;</STRONG><BR>In this second part of the talk I would like to begin by stressing one aspect of the meaning of the word Islam, its literal meaning, that of submission, and to show how, from a Sufi perspective on the Qur&#8217;an, this meaning of religion as such takes precedence over such and such a religion.<BR><BR>According to one of the most highly regarded translators of the Qur&#8217;an, Muhammad Asad, the word &#8216;Islam&#8217; itself would have been understood by the hearers of the word at the time of the revelation of the Qur&#8217;an in terms of its universal, and not communal, meaning. This meaning emerges clearly from many verses containing the words Muslim and Islam. In the following verse, the principle of universal submission is equated with the religion of God:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;Seek they other than the religion of God (<I>din Allah</I>), when unto Him submitteth whosoever is in the heavens and the earth, willingly or unwillingly? And unto Him they will be returned&#8221; (3:83).</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor19 name=anchor19></A><STRONG>The Absolute Religion</STRONG><BR>The commentator al-Kashani helps to situate with the utmost clarity the nature of this religion of God. He does so in his esoteric exegesis on two sets of verses. First, in relation to a verse which declares that the religion bestowed upon the Prophet Muhammad was the very same religion which was bestowed upon his predecessors: </P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;He hath ordained for you of religion (<I>min al-din</I>) that which He commended unto Noah, and that which We reveal to thee [Muhammad], and that which We commended unto Abraham and Moses and Jesus, saying: &#8216;Establish the religion, and be not divided therein...&#8217;&#8221; (42:13). </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>Kashani comments:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;He hath ordained for you of the religion, [that is] the absolute religion (<I>al-din al-mutlaq</I>), which God charged all the prophets to establish, and to be unanimous, not divided, with regard to it. This is the principle and root of religion (<I>asl al-din</I>)....This is other than the details of the revealed Laws (<I>duna furu&#8217; al-shara&#8216;i</I>), by which they [the prophets] differentiate this [root of religion]; this differentiation occurs in accordance with what is most beneficial in [the different situations] - such as the prescription of acts of obedience, worship and social intercourse. As God Most High says, 'For each We have appointed from you a Law and a Way (5: 48).&#8217;&#8221;</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>The difference between the &#8216;absolute&#8217; or unconditional religion (<I>al-din al-mutlaq</I>) and the different forms this unique essence may take is then described by al-Kashani in terms of permanence and immutability. He continues:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;So the right religion (<I>al-din al-qayyim</I>) is tied to that which is immutable (<I>ma la yataghayyir</I>) within knowledge and action; while the revealed Law (<I>al-shari&#8216;a</I>) is tied to that which alters in respect of rules and conditions.&#8221;</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>The nature of this unchanging religion, together with its essential connection with the primordial nature of man, the <I>fitra</I>, is expounded by al-Kashani in an illuminating commentary on the following crucial verse: </P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;So set thy purpose for religion as one with pure devotion - the nature [framed] of God, according to which He hath created man. There is no altering God&#8217;s creation. That is the right religion (<I>al-din al-qayyim</I>), but most men know not.&#8221; (30:30).</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>Al-Kashani comments: </P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;So set thy purpose for the religion of <I>tawhid</I>, and this is the path to the Real (<I>tariq al-Haqq</I>)...or religion in the absolute sense (<I>al-din mutlaqan</I>). That which is other than this is not &#8216;religion&#8217;, because of its separation from the [way which leads to] attainment of the goal. The purpose [or &#8216;face&#8217;, <I>al-wajh</I>, in the verse being commented on] refers to the existent essence, with all its concomitants and accidental properties; and its being set for religion, is its disengagement from all that which is other than the Real, its being upright in <I>tawhid</I>, and stopping with the Real, without heeding its own soul or others, so that his way will be the way of God; and his religion and his path will be the religion and path of God, for he sees nothing but Him in existence.&#8221;</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor20 name=anchor20></A><STRONG>Fitra - Primordial Purity</STRONG></P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;That is, they cleave to the <I>fitrat Allah</I>, which is the state in accordance with which the reality of humanity was created - eternal purity and disengagement, and this is the right religion (<I>al-din al-qayyim</I>) in eternity without beginning or end, never altering or being differentiated from that original purity, or from that intrinsic, primordial <I>tawhid</I>.&#8221;</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>The <I>fitra</I> is described as being the result of the &#8216;most holy effusion&#8217; (<I>al-fayd al-aqdas</I>) of the divine essence; and nobody who remains faithful to this original nature can deviate from <I>tawhid</I>, or be veiled from God&#8217;s reality by the presence of phenomena. Al-Kashani cites the <I>hadith</I>, &#8220;Every baby is born according to the <I>fitra</I>; its parents make it a Jew, a Christian or a <A href="javascript:void(LaunchGlossary('GlossaryItem28c5.html?type=glossary&amp;id=182'))">Magian</A>.&#8221; But then he adds this important point: &#8220;It is not that this underlying reality changes in itself, such that its essential state be altered, for that is impossible. This is the meaning of His words <I>there is no altering God&#8217;s creation. That is the right religion, but most men know not.</I>&#8221;<BR><BR>The <I>fitra</I> is conceived here as a fundamental - or &#8216;constitutional&#8217; - affinity between the deepest dimension of the human soul and the ultimate realities expressed through divine revelation; the purest substance within resonates harmoniously with the most profound truths bestowed from on high. <BR><BR><A id=anchor21 name=anchor21></A><STRONG>Moses and al-Khidr - Exoteric and Esoteric Knowledge</STRONG><BR>Before substantiating this conception of essential religion or religion as such by citing particular Qur&#8217;anic verses, it is important to mention very briefly the Qur&#8217;anic encounter between Moses and the mysterious personage al-Khidr, not mentioned by name in the Qur&#8217;an. Even in its literal aspect, the story alludes to the distinction between the form of religion and its transcendent essence, between exoteric and esoteric knowledge. In this encounter certain forms of the law and social convention are violated by al-Khidr, who receives direct, divine inspiration regarding unseen realities underlying the situations in which the violations take place.<BR><BR>One of the uses to which Ibn &#8216;Arabi puts this story reinforces its already esoteric nature. He relates it to his important and much misunderstood doctrine of the superiority of sanctity or <I>walaya</I>, over prophecy or <I>nubuwwa</I>. Sanctity is higher because the knowledge proper to it is universal, whereas prophecy is lower insofar as the knowledge comprised within it is delimited by a particular message. But it is a question of principial priority and not personal superiority: sanctity is more universal than prophecy, but the prophet is always superior to the saint, as the prophet&#8217;s sanctity is the source of the sanctity of the saint. According to Ibn &#8216;Arabi, then, the encounter between Moses and al-Khidr is understood microcosmically: al-Khidr represents a mode of universal consciousness within the very soul of Moses, one which surpasses his consciousness <I>qua</I> prophet. This is a complex but important doctrine, that clearly affirms the relativity of the outward law in the face of its inner universal spirit, and we need to take note of it in this context. <BR><BR><A id=anchor22 name=anchor22></A><STRONG>Islam Ecompasses all Revelations</STRONG><BR>Now, to consider more explicit Qur&#8217;anic verses describing this essential religion:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;Say: We believe in God and that which is revealed unto us, and that which is revealed unto Abraham and Ishmael and Isaac and Jacob and the tribes and that which was given unto Moses and Jesus and the prophets from their Lord. We make no distinction between any of them, and unto Him we have submitted.&#8221;</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>Then comes this verse:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;And whoso seeketh a religion other than Islam, it will not be accepted from him, and he will be a loser in the Hereafter.&#8221; (3:84-85).</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>Now whereas this last sentence is understood, from a theological point of view, as upholding the exclusive validity of &#8216;Islam&#8217;, defined as the religion revealed to God&#8217;s last Prophet, it can also be seen as confirming the intrinsic validity of all the revelations brought by all the prophets mentioned in the previous verse. &#8216;Islam&#8217; thus encompasses all revelations, which can thus be seen as so many different facets of essentially one and the same self-disclosure of the divine reality.<BR><BR>The universality of this guidance through revelation is clearly stressed in the following verses:<BR><BR>&#8220;For every community (<I>umma</I>) there is a Messenger.&#8221; (10:47).<BR><BR>&#8220;Verily We sent Messengers before thee; among them are those about whom We have told thee, and those about whom We have not told thee.&#8221; (40:78).<BR><BR>&#8220;And We sent no Messenger before thee but We inspired him [saying]: &#8216;There is no God save Me, so worship Me.&#8217;&#8221; (21:25).<BR><BR>&#8220;Naught is said unto thee [Muhammad] but what was said unto the Messengers before thee.&#8221; (41:43).<BR><BR><A id=anchor23 name=anchor23></A><STRONG>Diversity of Ways is Divinely Willed</STRONG><BR>The conception of this &#8216;essential religion&#8217; or religion as such, far from obliterating differences between religions, actually presupposes formal religious diversity, regarding it not so much as a regrettable differentiation but a divinely willed necessity. The following verses uphold this calibrated conception which recognises the inner substance of religion inherent in all revealed religions, on the one hand, and affirms the necessity of abiding by the dictates of one particular religion, on the other.</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>
+<P class=bodytext>&#8220;For each We have appointed from you a Law and a Way (<I>shir&#8216;atan wa minhajan</I>). Had God willed, He could have made you one community. But that He might try you by that which He hath given you [He hath made you as you are]. So vie with one another in good works. Unto God ye will all return, and He will inform you of that wherein ye differed.&#8221; (5:48).<BR><BR></P>
+<P class=bodytext>&#8220;Unto each community We have given sacred rites (<I>mansakan</I>) which they are to perform; so let them not dispute with thee about the matter, but summon them unto thy Lord.&#8221; (22:67).<BR><BR></P></TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor24 name=anchor24></A><STRONG>Salvation is Promised to the Faithful</STRONG><BR>In another important verse, we are given a succinct definition of what constitutes this inner, essential religion. The verse also stands out as one of the most significant proof-texts in the Qur&#8217;an for upholding the principle that access to salvation is not the exclusive preserve of Islam <I>qua</I> particular religion:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;Truly those who believe, and those who are Jews, and Christians, and Sabeans - whoever believeth in God and the Last Day and is virtuous - surely their reward is with their Lord, and no fear shall come upon them, neither shall they grieve.&#8221; (2:62).</TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor25 name=anchor25></A><STRONG>Refuting Religious Exclusivism and Nationalism</STRONG><BR>The attitude promoted by such an inclusivist definition of salvation is strengthened by other verses which explicitly criticise religious nationalism. For example:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;And they say: &#8216;None entereth paradise unless he be a Jew or a Christian. These are their own desires.&#8217; Say: &#8216;Bring your proof if ye are truthful.&#8217;&#8221; &#8220;Nay, but whosoever submitteth his purpose to God and he is virtuous, then his reward is with his Lord; no fear shall come upon them, and neither shall they grieve.&#8221; (2:111-112). </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>This verse comes as a concrete rebuttal of unwarranted exclusivism. It does not contradict the exclusivist claims of the Jews and the Christians with an exclusivism of its own, that is, with a claim that only &#8216;Muslims&#8217;, in the specific sense, go to paradise. Access to salvation, far from being further narrowed by reference to the privileged rights of some other &#8216;group&#8217;, is broadened, and in fact universalised: those who attain salvation and enter paradise are those who have submitted wholeheartedly to God and are intrinsically virtuous. Faith allied to virtue: such are the two indispensable requisites for salvation.<BR><BR>Thus, it is perfectly justified to argue that the verse does not respond &#8216;in kind&#8217; to the exclusivism of the People of the Book, but rather, pitches the response on a completely different level, a supra-theological or metaphysical level, which surpasses all reified definitions, confessional denominations, communal allegiances and partisan affiliations.<BR><BR>This supra-confessional conception is further strengthened by the following verses: </P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>
+<P class=bodytext>&#8220;It will not be in accordance with your desires, nor the desires of the People of the Scripture. He who doth wrong will have the recompense thereof, and will not find apart from God any protecting friend or helper.&#8221;<BR><BR>&#8220;And whoso doeth good works, whether male or female, and is a believer, such will enter paradise, and will not be wronged the dint of a date-stone.&#8221;</P>
+<P class=bodytext>&#8220;Who is better in religion than he who submitteth his purpose to God (<I>aslama wajhahu li&#8217;llah</I>), while being virtuous, and following the religious community of Abraham the upright?...&#8221; (4:124-125).<BR></P></TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>One can read these verses as implying that in so far as the Muslim &#8216;desires&#8217; that salvation be restricted to Muslims in the specific, communal sense, he falls into exactly the same kind of exclusivism of which the Christians and Jews stand accused. It should be noted that the very same word is used both for the &#8216;desires&#8217; of the Jews and the Christians, and the &#8216;desires&#8217; of the Muslims, <I>amaniyy</I>.<BR><BR><A id=anchor26 name=anchor26></A><STRONG>Beware of Restricting God to One&#8217;s Own Beliefs</STRONG><BR>Thus, Ibn &#8216;Arabi&#8217;s well-known warning against restricting God to the form of one&#8217;s own belief is entirely in accordance with the thrust of this Qur&#8217;anic discourse:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;Beware of being bound up by a particular creed and rejecting others as unbelief! Try to make yourself a prime matter for all forms of religious belief. God is greater and wider than to be confined to one particular creed to the exclusion of others. For He says, &#8216;To whichever direction you turn, there is the face of God.&#8217;&#8221; </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor27 name=anchor27></A><STRONG>The Doctrine of Abrogation</STRONG><BR>We can also turn to Ibn &#8216;Arabi for the most satisfying Sufi response to the traditional legal notion of the abrogation of other religions by Islam. Professor Chittick in a recent book on Ibn 'Arabi and the problem of religious diversity brings this important point to light. In a brilliant dialectical stroke, Ibn 'Arabi transforms the whole doctrine of abrogation from being a basis for the rejection of other religions into an argument for the validity of the other religions: for one of the reasons for the pre-eminence of Islam is precisely the fact that Muslims are enjoined to believe in all previous messengers and not just in the Prophet of Islam:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;All the revealed religions [<I>shara&#8217;I&#8217;</I>] are lights. Among these religions, the revealed religion of Muhammad is like the light of the sun among the lights of the stars. When the sun appears, the lights of the stars are hidden, and their lights are included in the light of the sun. Their being hidden is like the abrogation of the other revealed religions that takes place through Muhammad&#8217;s revealed religion. Nevertheless, they do in fact exist, just as the existence of the lights of the stars is actualised. This explains why we have been required in our all-inclusive religion to have faith in the truth of all the messengers and all the revealed religions. They are not rendered null [<I>batil</I>] by abrogation - that is the opinion of the ignorant.&#8221; </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor28 name=anchor28></A><STRONG>Universal versus Contextual</STRONG><BR><BR>Finally, one has to address the fact that the Qur&#8217;an also contains verses of a polemical nature. How does one relate to them? To answer as briefly as possible, we would say that priority should be given to those verses which are of a clearly principal or universal nature, as opposed to those which are clearly contextual in nature: contextual in the sense not just of being tied to the particular situations to which the Qur&#8217;an responds, but also contextual in the sense of being clearly situated on the plane of theological alternativism, or inter-communal conflict - the very plane that is transcended by the vision that unfolds from the verses we have been looking at.<BR></P>
+<P class=sub_head><A id=anchor29 name=anchor29></A><STRONG>Places Where God is Invoked</STRONG><BR>Secondly, there is no warrant, even with an exclusivist reading of the Qur&#8217;an, for any brand of religious intolerance, and still less, persecution of non-Muslims. Far from it: in fact the Muslims are enjoined to defend with their own lives if necessary, churches and synagogues and not just mosques - all being described by the Qur&#8217;an as places &#8220;wherein the name of God is invoked much&#8221; (22:40). One should also cite in this connection the historically recorded acts of tolerance manifested by the Prophet himself - for example, in the treaty of Medina, in which the Jews were given equal rights with the Muslims; in the treaty signed with the monks of St. Catherine&#8217;s monastery in Sinai; and, especially, in the highly symbolic fact that, in the middle of a long series of often intense theological debates with the Christian delegation from Najran, the Prophet invited the Christians to perform their liturgical worship in his own mosque.<BR><BR><A id=anchor30 name=anchor30></A><STRONG>The Universal Scent of the Beloved</STRONG><BR>One observes here, in fact, a perfect example of how disagreement on the plane of dogma can co-exist with a deep respect on the superior plane of religious devotion. I would like to digress here and speak about Rumi a little, for this example of the prophetic <I><A href="javascript:void(LaunchGlossary('GlossaryItem3269.html?type=glossary&amp;id=83'))">sunna</A></I> or way is a good background against which one can evaluate the following important passage in his <I>Discourses</I>. In one part of the book, he clearly takes to task a Christian, Jarrah, for continuing to believe in certain inherited Christian dogmas, in particular, the idea that Jesus is God, but this disagreement on the plane of dogma does not blind Rumi from his majestic vision of the spirit above all religious forms - a theme that recurs so often in Rumi&#8217;s poetry - nor does it prevent practical discourse and mutual inspiration. In Rumi&#8217;s words:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;I was speaking one day amongst a group of people, and a party of non-Muslims was present. In the middle of my address they began to weep and to register emotion and ecstasy. Someone asked: &#8216;What do they understand and what do they know? Only one Muslim in a thousand understands this kind of talk. What did they understand, that they should weep?&#8217; The Master [i.e. Rumi himself] answered: &#8216;It is not necessary that they should understand the form of the discourse; that which constitutes the root and principle of the discourse, that they understand. After all, every one acknowledges the Oneness of God, that He is the Creator and Provider, that He controls everything, that to Him all things shall return, and that it is He who punishes and forgives. When anyone hears these words, which are a description and commemoration (<I><A href="javascript:void(LaunchGlossary('GlossaryItemef79.html?type=glossary&amp;id=279'))">dhikr</A></I>) of God, a universal commotion and ecstatic passion supervenes, since out of these words come the scent of their Beloved and their Quest.&#8217;&#8221; </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=sub_head><A id=anchor31 name=anchor31></A><STRONG>Spiritual Dialogue Despite Theological Differences</STRONG><BR>In this passage the notion of creative, spiritual dialogue is given clear definition. Receptivity to innate spirituality, such as is rooted in the <I>fitra</I>, constitutes the inalienable substance of the human soul; and this innate spirituality recognises no confessional boundaries. Rumi is not so much denying the fact that Muslims and non-Muslims disagree over particular dogmas, as affirming the ever-present validity of spiritual dialogue, a mode of dialogue which bears fruit <I>despite</I> theological disagreement. <BR><BR>This is because the receptivity proper to spiritual substance is of infinitely greater import than the limitations proper to all mental conceptions. This is how one can understand the following statement, in which both faith and infidelity are transcended by something more fundamental than the plane on which this dichotomy exists: </P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;... all men in their inmost hearts love God and seek Him, pray to Him and in things put their hope in Him, recognising none but Him as omnipotent and ordering their affairs. Such an apperception is neither infidelity nor faith. Inwardly it has no name.&#8221; </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>This perspective is reinforced by the following statements from the same work. Prayer, he says, changes from religion to religion, but &#8220;faith does not change in any religion; its states, its point of orientation and the rest are invariable.&#8221;<BR><BR>&#8220;... love for the Creator is latent in all the world and in all men, be they Magians, Jews or Christians....&#8221;<BR><BR><A id=anchor32 name=anchor32></A><STRONG>Addressing Polemical Verses in the Qur&#8217;an</STRONG><BR>Now, to return to the polemical verses that the Qur&#8217;an contains, one has also to counterbalance them with the Qur&#8217;anic order to engage in constructive dialogue, and to avoid disputation, given the presence of piety and faith in other religious traditions. This is found, not only implicitly, through spiritually interpreted verses, but also explicitly, as in the following verses:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>
+<P class=bodytext>&#8220;They are not all alike. Of the People of the Scripture there is a staunch community who recite the revelations of God in the watches of the night, falling prostrate.&#8221;<BR><BR>&#8220;They believe in God and the Last Day, and enjoin right conduct and forbid indecency, and vie with one another in good works. These are of the righteous.&#8221;<BR><BR>&#8220;And whatever good they do, they will not be denied it (check other translations); and God knows the pious.&#8221; (3:113-114).<BR><BR>&#8220;Thou wilt find the nearest of them [the People of the Scripture] in affection to those who believe to be those who say: Verily, we are Christians. That is because there are among them priests and monks, and they are not proud.&#8221; (5:82).<BR><BR>&#8220;I believe in whatever scripture God hath revealed, and I am commanded to be just among you. God is our Lord and your Lord. Unto us our works and unto you your works; no argument between us and you. God will bring us together and unto Him is the journeying.&#8221; (42:150).</P></TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>And finally:</P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10>&nbsp;</TD>
+<TD class=bodytext>&#8220;Call unto the way of thy Lord with wisdom and fair exhortation, and hold discourse with them in the finest manner.&#8221; (XVI: 125). </TD>
+<TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>Now, for those wishing to engage in dialogue with other faiths and their representatives, the key question devolves upon the way in which one understands that which is &#8216;finest&#8217;, <I>ahsan</I>. One is urged to use one&#8217;s own intelligence, to debate with the religious &#8216;other&#8217; in a way that conforms to wisdom, that accords most harmoniously with the concrete context of one&#8217;s own &#8216;dialogical&#8217; situation.<BR><BR><A id=anchor33 name=anchor33></A><STRONG>Emphasising That Which Unites</STRONG><BR>For Muslims living in the West, at a time when the alternative to dialogue is not just diatribe but violent clash, the imperative of highlighting that which unites the different religions, the common spiritual patrimony of mankind, is of the utmost urgency. There is ample evidence in the Qur&#8217;anic text itself, and compelling commentaries on these verses by those most steeped in the spiritual tradition of Islam, to prove that the Qur&#8217;an not only provides us with a universal vision of religion, and thus with the means to contemplate all revealed religions as &#8216;signs&#8217; (<I>ayat</I>) of God; it also opens up vistas of creative, constructive dialogue between the faithful of all the different religious communities, despite their divergent belief-systems; it provides us with the basis for dialogue and mutual enrichment on a more essential plane, that of immutable values, metaphysical insight, contemplative inspiration and spiritual realisation.</P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Metaphysics of Interfaith Dialogue: A Qur&#8217;anic Perspective</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 29 Oct 2017 13:27:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/11/2008&nbsp;16:45&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101259 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:23 GMT -->
+</HTML>

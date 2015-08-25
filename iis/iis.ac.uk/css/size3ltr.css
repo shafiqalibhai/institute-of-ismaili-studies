@@ -1,0 +1,41 @@
+BODY {
+	FONT-SIZE: 14px
+}
+H1 {
+	FONT-SIZE: 22px;
+}
+H3 {
+	FONT-SIZE: 20px
+}
+#top .left {
+	FONT-SIZE: 11px
+}
+#top .right .top_search {
+	FONT-SIZE: 14px
+}
+#breadcrumb {
+	FONT-SIZE: 11px
+}
+#breadcrumb .right {
+	FONT-SIZE: 13px
+}
+#left_menu P {
+	LINE-HEIGHT: 12px; FONT-SIZE: 12px
+}
+#right_menu P {
+	LINE-HEIGHT: 12px; FONT-SIZE: 12px
+}
+#right_menu P.title_plain {
+	FONT-SIZE: 12px
+}
+#footer {
+	FONT-SIZE: 12px;
+	height: 350px;
+}
+#footer #links .title {
+	FONT-SIZE: 15px
+}
+#copyright {
+	FONT-SIZE: 13px;
+	background-color: #EDEDDB;
+}

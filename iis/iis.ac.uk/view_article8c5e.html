@@ -1,0 +1,783 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105018 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:21 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 105018;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" height="115" width="779" class="banner" alt="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" src="WebAssets/Site_Images/header/ResearchandPublication_2.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/ResearchandPublication_2.jpg','WebAssets/Site_Images/header/Research%20And%20Publications.jpg');
+				var descriptions = new Array('The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies','An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only830e.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D105018">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article7bf8.html?ContentID=105020">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Muslim Saints and Hindu Rulers: The Development of Sufi and Ismaili Mysticism in the Non-Muslim States of India</strong><br/><strong><DIV><A href="view_person17f7.html?type=authors&amp;id=25">Dr Dominique-Sila  Khan</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>Published in 2003 and&nbsp;1981 with the Literature &amp; Publication Department of His Highness Prince Aga Khan Shia Imami Ismailia Association for the United Kingdom; and in 1980 His Highness Prince Aga Khan Shia Imami Ismailia Association for Kenya. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong>This article focuses on the phenomenon of religious acceptance, integration and pluralism in South India by various Hindu and Muslim leaders in the sixteenth century. It looks at examples of rulers of both religions protecting, maintaining and restoring temples, mosques and shrines which were important to the differing religion, instances include the renovation of Muslim shrines and mosques under Hindu leaders in Marwar under the Rathore dynasty. The author also explores the common occurrences of Ismailis having to live under the guise of Sufis or Hindus in order to escape persecution; this was a necessary precaution for the time. Forceful evidence of religious integration lies in the numerous examples of Hindu leaders becoming devotees of Sufi or Muslim saints and vice versa. Although admittedly the number of incidents of Muslim leaders accepting completely the teachings of Hindu saints are rather limited the reasoning for which Sila-Khan discusses.</div><div> </div><div><P class=mainhead><STRONG>Key words:</STRONG> </P>
+<DIV class=bodytext>Sufism, Sufis, Mysticism, Mystics, spiritual authority, taqiyya, South India, religious pluralism, religious integration, patronage.</DIV>
+<DIV class=bodytext>&nbsp;</DIV><STRONG>
+<P class=bodytext><A href="../www.iis.ac.uk/SiteAssets/pdf/muslim_saints.pdf"><IMG height=25 hspace=5 src="WebAssets/site_images/images/pdf_icon.gif" width=25 border=0>Download PDF version of article (126 KB)</A></P>
+<DIV class=mainhead>&nbsp;</DIV>
+<DIV class=mainhead>Table of contents</STRONG></DIV>
+<UL class=bodytext>
+<LI><A href="#anchor1">Introduction</A> 
+<LI><A href="#anchor2">Ismaili Pirs and Hindu rulers</A> 
+<LI><A href="#anchor3">Sufis in Different Hindu Kingdoms </A>
+<LI><A href="#anchor4">Rajasthan's shared spaces</A> 
+<LI><A href="#anchor5">Marwar</A> 
+<LI><A href="#anchor6">Shekawati</A> 
+<LI><A href="#anchor7">Amber - Jaipur</A> 
+<LI><A href="#anchor8">Conclusion</A> 
+<LI><A href="#anchor9">Notes</A> </LI></UL>
+<P class=sub_head><A name=anchor1></A><EM><STRONG>Introduction</STRONG></EM></P>
+<P class=bodytext>In varying countries and contexts, scholars have studied the historical links that have existed between political power, primarily embodied in kingship, and spiritual authority as represented by mystics and saints affiliated to various religious movements. The role of Sufism in South Asia and the relationships between Muslim rulers and saints has been widely explored<A href="#101"><SUP>1</SUP></A>. It has been often remarked that, as a rule, Muslim kings patronised Sufis, regardless of the latter's attitude towards political power. In actuality, some mystics preferred to remain detached from politics, whereas others, also acting as <EM>'ulama</EM>, closely collaborated with the State to legitimise its power. Apparently, there are very few cases of mystics being persecuted or condemned by rulers for their supposed 'deviance' from the norm - unless they openly professed and attempted to spread a 'version' of Islam that was regarded as heterodox by the <EM>'ulama<A href="#102"><SUP>2</SUP></A></EM>. As far as <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi'i</A> groups were concerned, most states having been ruled by Sunni Muslims, concealment of one's real faith (<EM><A href="javascript:void(LaunchGlossary('GlossaryItem7383.html?type=glossary&amp;id=71'))">taqiyya</A></EM>) was widely practised, in particular by <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismailis</A>, both <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizaris</A> and Tayyibis, in so far as they were regarded as 'heretics' (<EM>rafizi</EM>, <EM>malahida</EM>) by those who claimed to represent Muslim orthodoxy. One should however mention the existence of Twelver <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi'i</A> kingdoms, for instance in the Deccan, where the Bhamani kingdoms were, during a certain period, quite powerful<A href="#103"><SUP>3</SUP></A>. In the sixteenth century, according to R. M. Eaton, there were numerous frictions between the Sunni Sufis and some Shi'a rulers of Bijapur. As a consequence, Sufism could not flourish in that region<A href="#104"><SUP>4</SUP></A>. But, as the same author explains, the roots of this enmity were more of a political than of a doctrinal nature.</P>
+<P class=bodytext>If in India, Sufis were generally protected and patronised by the Sunni rulers of the pre-Mughal and Mughal periods, the Ismailis were in a very different situation. With the exception of a short period in <A href="javascript:void(LaunchGlossary('GlossaryItem321c.html?type=glossary&amp;id=92'))">Sind</A> in the 9th century<A href="#105"><SUP>5</SUP></A>, the Ismailis were not powerful enough to build kingdoms that could openly be declared as 'Ismaili'<A href="#106"><SUP>6</SUP></A>. Therefore, it had become customary for them to dissimulate their real identity under a Hindu ascetic or Sufi guise<A href="#107"><SUP>7</SUP></A>. In the latter case, one should mention in particular the fifteenth century case of Imam Shah, the alleged founder of the Imamshahi branch of Nizari Ismailism. Because of his formal connection with the Sufi Surhrawardi <EM>tariqa</EM> he could enjoy the patronage of Mahmud Begra, the otherwise rather intolerant Sunni ruler of Ahmedabad in Gujarat. The Imamshahi community was not threatened as long as their leaders and their shrines appeared as 'orthodox' Sufi <EM>khanqahs</EM>.</P>
+<P class=bodytext>Let us now briefly evoke the reverse case: that of Muslim rulers patronising Hindu saints and protecting Hindu places of worship. Many examples could be given to illustrate this phenomenon, but we will mention only two. Towards the end of the eighteenth century, the ambitious ruler of Mysore, Tipu Sultan, whose father, Hyder Ali had founded an ephemerous Muslim kingdom in South India, had a deep reverence for Brahmins and ascetics of various orders. At Srirangapatnam, his capital located near the city of Mysore, in modern Karnataka, he carefully protected and repaired the large temple dedicated to Vishnu which can be still visited today. In the nineteenth century, the Nawab of Arcot (a small principality located in present Tamil Nadu) caused a sacred water tank to be built outside the Kapalishvarar temple, the biggest Hindu shrine of Madras dedicated to the Dravidian god Murugan and to Shiva.</P>
+<P class=sub_head><A name=anchor2><STRONG></STRONG></A><STRONG><EM>Ismaili Pirs and Hindu rulers</EM></STRONG></P>
+<P class=bodytext>The ancient history of Nizari Ismailism in South Asia is still shrouded in mystery, but if one considers the rich <A href="javascript:void(LaunchGlossary('GlossaryItem6af6.html?type=glossary&amp;id=261'))">Ginanic</A> tradition - leaving aside debates about origins and dates - it is difficult to doubt that the mission (<EM><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da'wa</A></EM>) was, at times, quite successful in non-Muslim kingdoms. Both Nizaris and Tayyibis claim to have influenced and even converted one particular ruler of Gujarat, Sidhraj Jai Singh. During my research on the lost branches of Ismailism in Rajasthan, I have attempted to show that there may have been small Nizari kingdoms in those areas, such as the one ruled by Mallinath. But as he was observing <EM>taqiyya</EM>, Mallinath has been portrayed by historians as a Hindu king<A href="#108"><SUP>8</SUP></A>. Due to the same precautionary measures, the presence of Ismaili mystics in Hindu states, as in Sunni ones, can be only suspected after a detailed study of the shrines, literature and rituals has been conducted<A href="#109"><SUP>9</SUP></A>. Wherever non-Muslim rulers tolerated the existence of numerous Hindu traditions, the Ismailis - in whatever guises they chose to appear - were accepted in the same way as non-Muslim ascetics and Sufis<A href="#anchor 10"><SUP>10</SUP></A>. </P>
+<P class=bodytext>At this juncture it will be interesting to note that if, in most cases, a Sunni state patronised Sunni Sufis and Hindu ascetics but were rather hostile to Shi'i communities, the attitude and policy of Hindu rulers towards Muslim mysticism must have been different. As Carl Ernst has remarked<A href="#anchor 11"><SUP>11</SUP></A>, medieval and post-medieval Muslim authors do allude to the Hindus and to their traditions (without however perceiving it as one religion called Hinduism), whereas, curiously, until the modern period, Hindu literature seems altogether to ignore Islam as a religion.</P>
+<P class=bodytext>Indeed, one must recall here, that what is currently referred to as 'Hinduism' was not, until the end of the nineteenth century, viewed as one single creed<A href="#anchor 12"><SUP>12</SUP></A>. The attempts at unifying the different Hindu traditions that have recently been made by some reformist bodies are far from having been entirely successful: the huge variety of beliefs and practices that, not only differ from each other, but may appear at times completely opposed, remains a fact that is difficult to deny<A href="#anchor 13"><SUP>13</SUP></A>. In medieval Rajasthan, for instance, this diversity seems to have encouraged the non-Muslim rulers to patronise, apart from Brahmin priests, Charan and Bhat royal genealogists, who legitimised their power, and all kinds of saints and ascetics, some of them quite 'unorthodox' from a Brahmanical point of view<A href="#anchor 14"><SUP>14</SUP></A>. Owing to this diversity, it is not surprising that Muslim mystics appeared in their eyes as just one of the numerous indigenous religious movements that had always flourished in South Asia. Consequently, for Hindu rulers, tolerance was less a virtue than the result of the 'fuzzy' nature of their religious traditions that has come to be regarded recently as one uniform set of beliefs and practices called 'Hinduism'. The emergence and development of numerous religious movements that may have been referred to as <EM>sampradayas</EM>, <EM>panths</EM> or <EM>tariqas</EM> was a natural phenomenon in the landscape of medieval South Asia - like the existence of different traditions within Buddhism, Jainism and, later, Sikhism. </P>
+<P class=bodytext>We know that Sufi and Ismaili groups interacted with Shaiva orders such as the Nath Jogis and the Dasnamis, as with different types of Vaishnava communities. The case of the Nizari Ismailis should, however, be considered separately. One must bear in mind that they were outwardly characterised by a 'liminal identity'<A href="#1015"><SUP>15</SUP></A> until, roughly, the beginning of the twentieth century. Their position, so to say 'on the threshold' enabled them to locally interact in a most inconspicuous or ambiguous way, with Sunni Sufis and Hindu ascetics, as well as with rulers, whether Muslim or Hindu.</P>
+<P class=sub_head><A name=anchor3></A><STRONG><EM>Sufis in Different Hindu Kingdoms</EM></STRONG> </P>
+<P class=bodytext>The patronage of Muslim mystics by non-Muslim rulers seems to have been a widespread phenomenon, if one relies on the data collected by various scholars in different parts of South Asia. The regular and close interactions between Sufis and Hindu mystics in present Maharashtra, under Mahratta rule, has been studied by several authors<A href="#anchor 16"><SUP>16</SUP></A>. Most of them have come to the conclusion that the exchange of spiritual knowledge between the 'two groups' was so intense that many Hindu saints had chosen Sufis as their spiritual guides, while the former could also become the gurus of Muslim mystics. Without denying the fact that a non-Muslim ascetic could accept the teaching of a Sufi without converting, we will argue that the identity of the Hindu and Muslim spiritual masters who are thus interconnected by a guru-disciple lineage is by no means clear. Considering the impact of Ismailism in Maharashtra, particularly in its Imamshahi version, it is not excluded that the 'ambivalent' saints appearing as Hindu or Sunni Muslim may have been, in reality, Nizari preachers practising <EM>taqiyya</EM> in various guises<A href="#anchor 17"><SUP>17</SUP></A>. </P>
+<P class=bodytext>Contrary to a common prejudice which sees South India as a stronghold of Hinduism that has successfully resisted Muslim influences and domination, this region of the subcontinent has a very rich tradition of religious pluralism and Hindu-Muslim interactions, offering many examples of Hindu rulers patronising Muslim saints. As Susan Baily has shown, Trichy had become an active Sufi centre during the mediaeval period. Its main <EM>dargah</EM>, dedicated to Nathar Wali remains an important centre of piety and a shared space where different communities come to worship and receive the blessing of the saint buried within the tomb-shrine<A href="#anchor 18"><SUP>18</SUP></A>. Tradition has it that Mama Jigni, a Hindu princess of the royal family of Trichy, became a disciple of the famous Sufi saint of Karnataka, Dada Hayat, whose shrine is located near Chikka Magalur in Karnataka<A href="#anchor 19"><SUP>19</SUP></A>. According to Yoginder Sikand, 'Over the centuries, various Muslim as well as Hindu rulers patronised the <EM>dargah</EM>, endowing it with considerable wealth and land. Thus, during the time of the second <EM>sajjada nashin</EM>, Channamaji, the Hindu queen of Nagar, contributed lavishly for the repair of the <EM>dargah's aslah khana</EM>, the storage house for weapons for the protection of the <EM>fakirs</EM>.'<A href="#anchor 20"><SUP>20</SUP></A> Besides, the name of the same Hindu queen of Nagar, Channa Maji is mentioned as having repaired a part of this shrine. Dada Hayat and his successors have also had another prestigious patron in the person of Shri Krishnaraja Wodeyar III, the Hindu ruler of Mysore. The king not only revered the <EM>pir</EM> but also received spiritual instruction from the then <EM>sajjada nishin</EM>.<A href="#anchor 21"><SUP>21</SUP></A></P>
+<P class=bodytext>One could add the interesting case of the martyr-saint Vavar, a Muslim disciple of the Keralite warrior-king Ayyappan, who is believed to have been an incarnation of a Dravidian deity. Vavar's shrine and mosque have continuously been protected by local Hindu rulers. At present, its caretakers continue to enjoy certain privileges in spite of the efforts of some fundamentalist organisations that are unhappy with this remarkable example of Hindu/ Muslim interface in South India<A href="#anchor 22"><SUP>22</SUP></A>.</P>
+<P class=sub_head><A name=anchor4></A><STRONG><EM>Rajasthan's shared spaces</EM></STRONG></P>
+<P class=bodytext>Let us now turn our attention to Rajasthan - which has, since 1990, been the focus of our field research. A few states, such as Ajmer, Nagaur Jhunjhunu and Fatehpur, have been administrated at times by Sunni Muslim rulers or governors and had become important Sufi centres. However, numerous tomb-shrines of Muslim mystics and martyrs have also been patronised by local Hindu rulers. We can mention here but a few, not to speak of the fact that most of these sacred places have hardly been noticed or described by scholars. </P>
+<P class=sub_head><A name=anchor5></A><STRONG><EM>Marwar</EM></STRONG></P>
+<P class=bodytext>This kingdom, which became very powerful under the Rathore dynasty, used to welcome Muslim saints. Let us first mention the dargah located in the former capital of Mandore which until today is visited by devotees of all communities; the main centre of worship is the tomb of Ghulam Shah Qalandar, who is said to have been a follower of Khwaja Mu'in al-Din Chishti. The mosque and the shrine have been renovated at various times under the patronage of the Hindu Rathore rulers.<A href="#anchor 23"><SUP>23</SUP></A> In connection with the same, we should also mention the interesting case of the tomb-shrine located within the precincts of Mehrangarh Fort, in Jodhpur, which became the capital of Marwar in the fifteenth century when its founder, Rao Jodha, decided to build a fort on the top of a steep hill. During the nineteenth century, war broke out between the two rival Hindu states of Marwar and Jaipur. The Muslim general Bure Khan fought bravely with his army of Pathans to defend the kingdom of Jodhpur. The alliance struck by the Jodhpur ruler with the Pathans of Nagaur proves once more that the image of Hindu-Muslim enmity is an artificial colonial and postcolonial construct.<A href="#anchor 24"><SUP>24</SUP></A> Bure Khan died during a battle and was buried on the spot. However, later, by order of the Maharaja of Jodhpur, his mortal remains were transported to the capital and a <EM>dargah</EM> was built to commemorate his martyrdom. Today, the small tomb-shrine which lies at the entrance of the fort, within the precincts of Mehrangarh, continues to be a sacred place. During the Navratra festival, the pilgrims are supposed to stop at this shrine to make some offerings before climbing to the top of the hill to worship the Goddess. Bure Khan is worshipped as a <EM>shahid</EM> by both Hindu and Muslims and is supposed to grant all sorts of boons to his devotees. The location of the tomb-shrine at the entrance of the Hindu fort does have a particular meaning: the saintly martyr has become the guardian and protector of the palaces and the temples that have been erected within the fortress.</P>
+<P class=bodytext>Near Jodhpur, in the village of Khatu, was born a Muslim mystic known as Shaykh Ahmad Khatu who was the disciple of the thirteenth-century Baba Ishaq Maghribi, the founder of the Maghribi Sufi tradition in India. <A href="javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))">Shaykh</A> Ahmad Khatu later went to Gujarat where he is said to have exerted a great influence on Ahmad Shah I who founded the new capital of Ahmedabad.<A href="#anchor 25"><SUP>25</SUP></A> After his death, the <A href="javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))">Shaykh</A> was buried there. His tomb, located within the imposing shrine complex located near Ahmedabad, at Sarkej, is still an important centre of worship.</P>
+<P class=sub_head><A name=anchor6></A><STRONG><EM>Shekawati</EM></STRONG></P>
+<P class=bodytext>The history of this small principality, which was an independent kingdom between the fifteenth and eighteenth centuries, is of particular interest for our subject. The legend connected with the foundation of this kingdom had already attracted the attention of the British Resident, Colonnel James Tod, the celebrated author of <EM>Annals and Antiquities of Rajasthan</EM>, the first European who took interest in the history of that region.<A href="#anchor 26"><SUP>26</SUP></A> Mokul Singh's elder brother, having become the ruler of Amber (the former capital of the Jaipur kingdom), had carved a small principality for himself in the arid region that lies between modern Jaipur and Bikaner. He had no son to succeed him and as his prayers to Krishna had remained unanswered, he went to meet a <EM>fakir</EM> who was meditating in a jungle and reputed to be endowed with miraculous powers. Tod gives only a fragmentary version of the legend of Shaykh Burhan, who granted an heir to the king.<A href="#anchor 27"><SUP>27</SUP></A> According to our field data, the Muslim saint had given two sons to Mokul Singh: the elder became his <EM><A href="javascript:void(LaunchGlossary('GlossaryItema626.html?type=glossary&amp;id=161'))">murid</A></EM> and converted to Islam, whereas the younger, Rao Shekha, succeeded his father on the throne without changing his religion. Later on, the Pathans who had settled in the region and were the disciples of Shaykh Burhan struck an alliance with the Rajputs and other Hindu warriors who fought in Rao Shekha's army to defeat the ruler of Amber who wanted to conquer the newly founded kingdom of Shekhawati. Tradition has it that, in order to strengthen the bonds between the Muslim and the Hindu soldiers, the former swore never to kill cows, while the latter promised to refrain from eating pork.<A href="#anchor 28"><SUP>28</SUP></A> The links between Muslim saints and the later rulers of Shekhawati continued even after the kingdom had been split into numerous small principalities and come under the authority of the Jaipur kingdom.</P>
+<P class=sub_head><A name=anchor7></A><STRONG><EM>Amber - Jaipur</EM></STRONG></P>
+<P class=bodytext>The shrines that will be described in this part have failed to attract the attention of historians and anthropologists who have written on Jaipur. The details given below, which are conspicuously absent from history books, are the result of a fresh field research started in 2002.</P>
+<P class=bodytext>First of all, we will mention the oral tradition connected with the sixteenth-century reign of Raja Man Sing I of Amber who had become the faithful ally and commander-in-chief of the emperor Akbar. It is believed that Man Singh, who had fought on behalf of the Mughal ruler in Bengal, had brought from there a statue of the fierce goddess Kali which he installed within the fortress of Amber.<A href="#anchor 29"><SUP>29</SUP></A> Today, the temple which has been rebuilt in marble and silver by the last ruling Maharaja of Jaipur, Man Singh II, is still an important centre of pilgrimage, particularly during the Navratra festival. On the tenth day or Vijay Dashmi, goats are sacrificed as a part of the traditional royal ceremony. One of the peculiarities of the sacred image of Kali, who is known locally as Shila Devi, is that she has her head slightly bent. The inhabitants of Amber account for this detail in the following way. According to an oral tradition, human sacrifices were regularly performed until, in the sixteenth century, a Sufi saint appeared in front of an old woman whose only son was going to be sacrificed. Seeing her distress, he offered to take his place, but, instead of submitting himself to the cruel ceremony, he approached the goddess and slapped her in the face. It is said that Kali instinctively turned her head to avoid being slapped again. In this way, he taught her a lesson, after which the custom was abandoned.<A href="#anchor 30"><SUP>30</SUP></A> Gebi Pir, as the mysterious Muslim mystic is currently referred to, has his shrine at Amber where he is worshipped by Muslims and Hindus alike. Tradition has it that Man Singh, the very ruler who installed the sacred image and once allowed human sacrifices, became a devotee of the Muslim saint.<A href="#anchor 31"><SUP>31</SUP></A></P>
+<P class=bodytext>In 1727, Maharaja Jai Singh II, who was the faithful ally of Aurangzeb, founded the new capital of Jaipur. It was, as usual in those times, a fortified city which was surrounded by massive walls. Traditionally, the ruler of Jaipur and his royal guests entered the palace complex through two huge gates respectively known as <EM>Bandarwal Darwaza</EM> and <EM>Nakkarkhane ka Darwaza</EM>. On top of these gates, two Muslim shrines have been built - according to oral tradition - at the same time when the gates of the city were erected.<A href="#anchor 32"><SUP>32</SUP></A> As the small tomb-shrine lying at the entrance of the Jodhpur Fort, the Muslim saints in whose memory the cenotaphs have been built, act as the sacred protectors of the city. The first gate which owes its name to the custom of decorating the entrance of a house or palace with a colourful festooned cloth referred to as <EM>vandarmal</EM> (or <EM>bandarval</EM>) for marriages, has on its top the <EM>chilla</EM> - now painted green - dedicated to a Muslim dervish, Mastan Ali Shah who is supposed to have been the disciple of Gebi Pir. He seems to have been a Malang fakir, connected with the Madari order of Qalandars.<A href="#anchor 33"><SUP>33</SUP></A> His present caretaker is himself a Malang or Madari. The <EM>chilla</EM> is said to be have been built at the very spot where he used to meditate, sitting on the top of a <EM>chattri</EM> (a small pillared stone pavillion). Mastan 'Ali is supposed to be a <EM>jalali</EM> (or 'fierce') <EM>fakir</EM> endowed with miraculous powers. The second gate, separated from the first by a large and broad square called 'Jaleb Chowk', has a large pillared pavilion on its top: this structure was meant for the musicians of the royal fanfare who traditionally welcomed the rulers by playing drums and <EM>shehnai</EM> (a kind of oboe). These musicians belong to the Muslim community of Nagarchis. They still play the fanfare twice a day on the top of this gate as well as in the city palace which is still inhabited by the former Maharaja of Jaipur. In front of the pavilion, on the terrace, there is another small <EM>chilla</EM> built to commemorate the patron saint of the Nagarchis, Bolan Shah, a martyr-saint (<EM>shahid</EM>) who is said to have his real grave at Ajmer, on the Taragarh hill. This cenotaph is enclosed within a <EM>chattri</EM>, the lower part of which is painted green, whereas the upper one keeps the traditional pink-ochre colour for which Jaipur has became famous since the nineteen-century reign of Maharaja Ram Singh II.</P>
+<P class=bodytext>At this juncture, we will make two important remarks regarding the role of a sacred custodian of a Hindu palace, played by the Muslim saint and the hereditary professional link that has long existed between the Maharaja of Jaipur and the Nagarchi family. Here, the traditional Indian jajmani system which, through an exchange of services, links two communities across religious boundaries reinforces ritual bonds.</P>
+<P class=bodytext>Such professional links continue to exist at various levels between Muslim artisans or artists and Hindus, including Rajputs belonging or not belonging to a royal lineage. It may not be out of place to mention a few of them who are particularly relevant for our study. </P>
+<P class=bodytext>In Rajasthan, the Muslim Manihars, or bangle-makers, still perform an important ritual on the occasion of Hindu weddings, including royal marriages, by putting the bangles on the bride's arm with their own hands; they ritually legitimise the wedding and receive in exchange some offerings of grain, molasses and cash. Similarly, the Muslim Pannigars manufacture the silver foils that are used for the worship of popular Hindu deities, such as Hanuman and Bheru.<A href="#anchor 34"><SUP>34</SUP></A> In fact, the Maharaja who founded the city of Jaipur invited a number of artisans to settle in the new city and in the nearby town of Sanganer. Among the dyers, the stone-cutters, the carpet makers etc., many belonged to Muslim communities and the protection that was extended to them, as well as to their mosques and shrines, by the ruler contributed to the development of handicrafts, which particularly flourished during that period.</P>
+<P class=bodytext>Maharaja Pratap Singh, who ruled during the second-half of the eighteenth century, was a great patron of Sufi saints. He is famous for having built the Hawa Mahal or 'Wind Palace' in Jaipur and as having patronised miniature painting and classical music; he was, himself, a musician and could play various instruments. He became the devotee of Amani Shah, a Qalandar, who has his shrine at the outskirts of Jaipur city after the saint had performed a miracle. According to the legend, one cold winter morning, the half-naked <EM>fakir</EM> was sitting in meditation in front of a fire. Seeing him, the Maharaja immediately removed his costly shawl and offered it to the saint. Far from being grateful, Amani Shah threw it into the fire where it was soon reduced to ashes. As the ruler of Jaipur expressed his anger, the fakir told him that he could give him back his shawl if Pratap Singh could only recognise it. He then removed from the fire one shawl after the other and all of them were identical with the shawl that belonged to him. Impressed by this miracle, he became a devotee of the saint. After Amani Shah's death, Pratap Singh kept sending an oil lamp (<EM>chirag</EM>) to the tomb-shrine where the saint was buried. Another miracle was performed in front of the same ruler by another - unusual - Muslim 'saint'. When Pratap Singh built a summer palace in the middle of an artificial lake that lay among the Aravalli hills between Amber and Jaipur, a mysterious <EM>fakir</EM> appeared to warn him that this place was inhabited by jinn and no human being should live there. According to a tradition, the name of the fakir was Gulab Shah, and although he appeared to be the chief-of-jinn himself, he was portrayed as a kind of Sufi. Gulab Shah gathered the water of the lake into his scarf and the place became totally dry. Afterwards, he released the water and the whole city was flooded. After having asked for forgiveness and promised that he would never stay in the newly built palace, the ruler of Jaipur became his devotee. The legend is supposed to account for the fact that until today nobody has been able to remain in that palace without incurring the wrath of the jinn. A shrine has been installed within one of the pavillions (probably recently) and pilgrims come to worship there, generally on Thursday evening (<EM>jumerat</EM>); however, they can walk to the palace only when there is little water in the lake, that is to say during the years when there has been no monsoon.</P>
+<P class=bodytext>Interestingly enough, apart from the chilla dedicated to Gulab Shah, the present shrine also contains three Hindu images representing folk deities - Balaji, Bhomiyaji and a local goddess simply referred to as 'Mataji' - and is a shared space where both Hindus and Muslims come to worship and ask for boon.</P>
+<P class=bodytext>Man Singh II, the last ruling Maharaja of Jaipur, was also a devotee of Muslim saints, whom he protected and patronised, and highly respected his Muslim subjects. According to the royal Nagarchis, he himself used to frequent the top of the <EM>Nakkarkhana</EM> gate to bow in front of Bolan Shah's <EM>chilla</EM>. It is also interesting to add that another Qalandar is said to have performed in front of him exactly the same miracle which Amani Shah had shown to one of his ancestors, Pratap Singh. It is a well known fact, that during Partition, Man Singh requested the Muslim inhabitants of Jaipur to remain in his city, assuring that he would always protect them. He was deeply grieved by the tragedy that occurred during that dark period of Indian history.</P>
+<P class=sub_head><A name=anchor8></A><STRONG><EM>Conclusion</EM></STRONG></P>
+<P class=bodytext>These examples were meant to illustrate a particular phenomenon: the patronage of Muslim mystics by mediaeval and post-mediaeval Hindu rulers. From the field data collected during our research and partly analysed here one can draw the following conclusion: while the spiritual teaching of Sufi saints must have certainly impressed and influenced some of these rulers, it is mainly the belief in the power of these sacred figures that has convinced them to become their devotees. As their religious beliefs were rather eclectic<A href="#anchor 35"><SUP>35</SUP></A>, they were ready to worship these saints in the same way as they revered the gods and goddesses who protected their kingdom. On the other hand, their religious eclecticism was reinforced by the occupational and trading bonds that linked different communities of Hindus and Muslims. Therefore, their attitude towards Muslims originated not so much from a pure spirit of tolerance as from the necessity of maintaining harmony between the different communities in order to ensure peace and prosperity in their kingdom. This was, according to the ancient Brahmanical treatises, a major duty of the king to preserve the socio-cosmic order referred to as <EM>dharma</EM>.</P>
+<P class=bodytext>Before concluding we should still compare their attitude to that of the Muslim rulers of India<EM> vis-a-vis</EM> the Hindu ascetics and saints. At the beginning of this article, we have shown that in various parts of South Asia these rulers generally protected the local Hindu population and even contributed to the repairing and maintenance of their temples and other religious institutions. One could even give a few examples of Muslim rulers who became devotees and/or disciples of non-Muslim saints<A href="#anchor 36"><SUP>36</SUP></A>. However, this latter phenomenon was certainly less common. The reason lies probably in the nature of the religions we call 'Hinduism' and 'Islam'. While the diversity of schools, communities, beliefs and practices within Islam should not be underestimated - as it is too often done - one should bear in mind an important fact: 'Hinduism' as one religion is a relatively recent and fragile construct that starts to assert itself gradually from the nineteenth century onwards. The doctrines and the rituals, the beliefs and practices that we now readily subsume under the label 'Hinduism' may have common elements but can also differ to the extent of being totally opposed.<A href="#anchor 37"><SUP>37</SUP></A> During the mediaeval and post-mediaeval period, Hindu rulers, in particular the Rajputs of North India, did not only accept the Brahmans as their gurus, but all kinds of saint and ascetics, some of them being at times quite far from Brahmanical 'orthodoxy', such as the Charans and the Nath Jogis. On the other hand, most Sunni rulers of South Asia often came under the pressure of the <EM>'ulama</EM> who posed as the guardians of a certain 'orthodoxy'. It was therefore difficult for certain Muslims to go too far in their endeavour to come close to non-Muslims, and more specifically, non-Sunni saints. If the Mughal emperor Akbar's personality and power enabled him, to a greater extent, to resist the attacks of those <EM>'ulama</EM> in the seventeenth century, Dara Shikoh was less fortunate in this respect: his attempts at finding common links between various Muslims and non-Muslim faiths, and at studying under the guidance of Hindu and Nath ascetics, ended in tragedy. His younger brother Aurangzeb who wanted to ascend the throne in his stead - and even before his father Shahjahan's death - had him condemned for heresy by the <EM>'ulama</EM> and finally executed.</P>
+<P class=bodytext>This brief study does not mean to be exhaustive. It is rather an attempt at showing the importance of historical traditions while discussing the important issue of Muslim-Hindu interface. Undoubtedly, the past can throw considerable light on the contemporary period and help us to understand the persistence of certain traditions as well as the occurrence of drastic changes.</P>
+<P class=sub_head><A name=anchor9></A><STRONG><EM>Notes</EM></STRONG></P>
+<TABLE class=bodytext width="100%" align=top border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width="7%"><A name=101><SUP><U>1</U></SUP></A></TD>
+<TD>See for instance Saiyid Athar Abbas Rizvi, A History of Sufism in India (Delhi, Munshiram Manoharlal, 1978, reprinted 1986), 2 vols., passim, Eaton R.M., Sufis of Bijapur - 1300-1700 (Delhi: Munshiram Manoharlal, 1997), J.N. Hollister The Shi'a of India, (Delhi: Oriental Reprint Corporation ,1953, reprinted 1979), passim, Ansari Sarah F.D., Sufi Saints and State Power: The Pirs of Sind, 1843-1947, (Cambridge, CAU,1992). Kumar Sunil, 'Assertions of Authority: A study of the Discursive statements of Two Sultans of Delhi' in Alam, Delvoye, Gaborieau Eds. The Making of Indo-Persian Culture: Indian and French Studies, (New Delhi, Manohar, 2000),pp. 37-65. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=102><SUP><U>2</U></SUP></A></TD>
+<TD>See Rizvi, ibid. for Aurganzeb's reign, pp.127-128.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=103><SUP><U>3</U></SUP></A></TD>
+<TD>Hollister, ibid., pp. 101-125. Lucknow (in modern Uttar Pradesn) had also been an important centre of Shii Ithna Ashari Islam.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=104><SUP><U>4</U></SUP></A></TD>
+<TD>Ibid. pp. 62-69.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=105><SUP><U>5</U></SUP></A></TD>
+<TD>DN. Maclean, Religion and Society in Arab Sind, (Leiden, E.J. Brill, 1989), pp.126-148.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=106><SUP><U>6</U></SUP></A></TD>
+<TD>The interesting case of the Ismaili Shah Tahir who attempted to influence the Ithna 'Ashari ruler of Bijapur, see V. Ivanow, 'A Forgotten Branch of The Ismailis', in Journal of the Royal Asiatic Society, January 1938,pp.57-79, and F. Daftary, forthcoming. Eaton (oibid. pp.68-69) briefly allude to Tahir but does not seem to be aware of his real role.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=107><SUP><U>7</U></SUP></A></TD>
+<TD>Nanji Azim, The Nizari Ismaili Tradition in the Indo-Pakistan Subcontinent, (Delmar-NY,Caravan Books,1978), p. 68, and Ali Asani, 'The ginan Literature of the Ismailis of Indo-Pakistan' in Ed. Eck and Mallison , Devotion Divine, (Groningen, Egbert Forsten, 1991), p.3.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=108><SUP><U>8</U></SUP></A></TD>
+<TD>See our Conversions and Shifting Identities - Ramdev Pir and the Ismailis in Rajasthan, (Delhi, Manohar,1997, reprinted 2003), pp.120-121. However there are allusions to Mallinath's 'ambiguous' religious affiliation as he is sometimes referred to in literature as ' Mallinath Pir'.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=109><SUP><U>9</U></SUP></A></TD>
+<TD>Ibid., passim. I have resorted to the concept of 'traces' as used by Carlo Ginzburg in his Clues,Myths and the Historical Method (Baltimore : John Hopkins University Press, 1989), passim.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 10"><SUP><U>10</U></SUP></A></TD>
+<TD>One should be careful before bandying about the image of an allegedly 'Hindu' tolerance. During certain periods and in certain regions of India, Buddhists and Jains have been persecuted by Brahminical rulers and their gurus, and there are many instances of fights between Shaiva and Vaishnava orders. Having become a devotee of Shiva, the nineteenth century Maharaja of Jaipur, Ram Singh II, declared that Vishnuism was a heresy and drove away the Vaishnavas or forced them to accept his version of Hinduism. See C. Clementin-Ojha, Le trident sur le palais : une cabale anti-vishnouite dans un royaume hindou &#224; l'&#233;poque coloniale, (Paris, Presses de l'&#233;cole fran&#231;aise d'extr&#234;me-orient,1999). </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 11"><SUP><U>11</U></SUP></A></TD>
+<TD>Carl W. Ernst, Eternal Garden : Mysticism, History, and Politics at a South Asian Sufi Center, (New York, Sunny Press,1992),pp 29-30.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 12"><SUP><U>12</U></SUP></A></TD>
+<TD>A discussion on this issue recentely tackled by numerous scholars is summed up in our forthcoming, Crossing the threshold - Towards an Understanding of Religious Identities in South Asia (I.B. Tauris -The Institute of Ismaili Studies).</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 13"><SUP><U>13</U></SUP></A></TD>
+<TD>Namely, through the gradual 'Sanskritization' of popular and regional traditions which seek, in this way, to come closer to the doctrinal and ritual models of the Brahmins and the upper castes.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 14"><SUP><U>14</U></SUP></A></TD>
+<TD>Among them, the Nath Jogis have played a prominent role.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name=1015><SUP><U>15</U></SUP></A></TD>
+<TD>See our forthcoming Crossing&#8230;ibid. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 16"><SUP><U>16</U></SUP></A></TD>
+<TD>See for example N.K. Wagle, 'Hindu-Muslim interactions in medieval Maharashtra', and in Eds. G. D. Sontheimer and H. Kulke Hermann, Hinduism Reconsidered (Delhi, Manohar 1991, reed. 1998), pp. 51-66 and E. Zelliot, 'Eknath's Bharuds: the Sant as a Link between Cultures, in Eds Schomer and Mcleod, Schomer Karine and Mcleod W.H. Eds, The Sants -Studies in a Devotional Tradition of India, (Delhi, Motilal Banarsidass, 1987), pp.91-110. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 17"><SUP><U>17</U></SUP></A></TD>
+<TD>This issue would deserve a more detailed study. I am indebted to Zawahir Moir for having attracting my attention on the existence of an Imamshahi mission in sixteenth and seventeenth century Mahratta land. While I simply suspected an Ismaili influence, for example, on the so-called Dattatreya/Sufi tradition, where I had found typical 'traces' of Nizari teaching, she confirmed the fact that the Sayyidkhani line of Imamshahis had spread to that part of the sub-continent - where they continued, as in Gujarat to practise taqiyya. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 18"><SUP><U>18</U></SUP></A></TD>
+<TD>This shrine is located in the modern Tiruchirapalli, in Tamil Nadu, see S. Bayly, Saints, goddesses and Kings (Cambridge, Cambridge University Press, 1989, pp. 117-123.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 19"><SUP><U>19</U></SUP></A></TD>
+<TD>See Y. Sikand, Sacred Spaces - Exploring Traditions of Shared Faith in India (Delhi : Penguin Books, 2003), p. 58.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 20"><SUP><U>20</U></SUP></A></TD>
+<TD>Ibid. p. 63</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 21"><SUP><U>21</U></SUP></A></TD>
+<TD>Ibid.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 22"><SUP><U>22</U></SUP></A></TD>
+<TD>The Hindu-Muslim interface in South India has hardly been explored till our days. S. Bayly and Y.Sikand (ibid), as well as J. Assayag, Au confluent des deux rivi&#232;res - Musulmans et hindous dans le Sud de l'Inde, (Paris, Presse de l'&#233;cole fran&#231;aise d'Extr&#234;me Orient, 1995) give an idea of the importance of this phenomenon. However, Baily's study deals only with Tamil Nadu, while Assayag limits himself to Karnataka. Y. Sikand's field is much broader but - as it also includes North India - his study necessarily remains sketchy. The tradition of Vavar and its connection with the Hindu deity Ayyappa and his shrine at Sabarimalai would deserve a more detailed study. All the authors who have described and analysed the Sabarimalai tradition have not devoted more than a few lines to Vavar and its cult. The most detailed account is that of Y.Sikand, ibid. pp. 29-30, 33-34 .See also L. Kjoerholm, 'Aiyanar and Aiyappan in tamil Nadu: Change and Continuity in South Indian Hinduism, Folk, 26, 1984, p. 81, and R. Sekar, The Sabarimalai Pilgrimage and Ayyappan Cultus, (Delhi, Motilal Banarsidass, 1992) pp.45-49.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 23"><SUP><U>23</U></SUP></A></TD>
+<TD>See M. Shokoohy and N.H. Shokoohy, Nagaur - Sultanate and Early Mughal History and Architecture of the District of Nagaur, India, (Royal Asiatic Society Monographssss -Volume XXVIII, 1993) pp. 149-150. The authors write that the construction of the mosque has taken place at the time of Maharaja Man Singh (beginning of nineteenth century) 'who made an alliance with Amir Khan Pindari of Nagaur against the house of Jaipur', ibid. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 24"><SUP><U>24</U></SUP></A></TD>
+<TD>See note 26. Many similar examples of alliances between some Rajput independent rulers and local Pathans against the Mughal power supported by some other Rajput kings. See our forthcoming Crossing the Threshold&#8230;ibid. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 25"><SUP><U>25</U></SUP></A></TD>
+<TD>See Shokoohy, ibid. pp.117-118.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 26"><SUP><U>26</U></SUP></A></TD>
+<TD>James Tod, Annals and Antiquities of Rajasthan (Delhi: M.N. Publishers, 1829-1832, reprinted 1983), pp 314-315.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 27"><SUP><U>27</U></SUP></A></TD>
+<TD>See our 'Saix Burhan Chisti: le culte d'un saint musulman chez les Rajput Sekhavat' in Ed. Annie Montaut, Le Rajasthan, ses dieux, ses h&#233;ros, ses hommes, Inalco, 2000, pp. 155-166.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 28"><SUP><U>28</U></SUP></A></TD>
+<TD>Ibid. Even to-day the Shekhawat Rajputs (descendants of Rao Shekha) are supposed to eat only halal meat, and to perform a number of domestic rituals (ceremonies) at the shrine of Sheikh Burhan, at Tala, near Jaipur. See note 27.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 29"><SUP><U>29</U></SUP></A></TD>
+<TD>It is interesting to note here that Man Singh fought for Akbar against the Hindu ruler of Mewar who was helped by an army of Muslim Pathans. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 30"><SUP><U>30</U></SUP></A></TD>
+<TD>One of the interesting points of the story is that here 'non-violence' - generally connected with Hinduism, Buddhism or Jainism, is associated with mystical Islam.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 31"><SUP><U>31</U></SUP></A></TD>
+<TD>There are at least two versions of the legend that account for this name : according to one of them, after having taught a lesson to Shila Devi, the mysterious Pir suddenly disappeared (Arabic: ghayab). Another tradition has it that he established his kangah at the foot of the hill where the Amber fort still stands, made many disciples, among whom the most famous was Mastan Shah Baba, and was later buried there. As nobody knows exactly who he was and where he came from, he was referred to as gebi which can also mean ' the hidden'' or the 'mysterious' or 'secret one'.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 32"><SUP><U>32</U></SUP></A></TD>
+<TD>Here the lack of historical evidence does not allow us to make any conjectures as to the real period when those shrines were established. History books and guides do not make the slightest allusion to them. In the same way the legend of Gebi Pir is now often replaced by a different version where a Hindu slaps the goddess in the face, forcing her to abandon human sacrifices.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 33"><SUP><U>33</U></SUP></A></TD>
+<TD>The history of Shah Madar and of his tariqa known as Madari, is still shrouded in obscurity. Most scholars claim he was a Syrian Jew who converted to Islam and came to India in the tirtheenth century. He was buried at Makanpur which is still an important pilgrimage centre. See Rizvi, ibid., vol. I, p.318-320. However, the Madaris have their own version. And although they now claim to be staunch and 'orhtodox' Sunnis, their genealogy of Shah Madar curiously connects him with the Ismaili line of Imams after Jaffar al Sadiq. Ute Fallasch, whom I thank for her valuable information, is currently doing research about the Madari order. </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 34"><SUP><U>34</U></SUP></A></TD>
+<TD>Many other examples could be given in different parts of South Asia. In Kashmir, for instance, some Muslim families make clay lamps which they supply to the Hindu Pandit community temples.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 35"><SUP><U>35</U></SUP></A></TD>
+<TD>Most Hindu rulers worshipped different deities and saints and protected different religious orders, Hindu or non-Hindu. There are, of course, exceptions to this rule. For example the nineteenth century Maharaja of Jaipur, Ram Singh II had become a Shaiva and declared that all other forms of religion, particularly the Vaishnavas (although Hindus), were heretics. See C. Clementin-Ojha, Cl&#233;mentin-Ojha Catherine, Le trident sur le palais : une cabale anti-vishnouite dans un royaume hindou &#224; l'&#233;poque coloniale, (Paris, Presses de l'&#233;cole fran&#231;aise d'extr&#234;me-orient, 1999). </TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 36"><SUP><U>36</U></SUP></A></TD>
+<TD>Veronique Bouillier, forthcoming, gives the example of the Nawab of Fatehpur (a small principality of Shekhawati) who became the disciple of a Shaiva ascetic belonging to the order of Nath Jogis.</TD></TR>
+<TR>
+<TD vAlign=top width="7%"><A name="anchor 37"><SUP><U>37</U></SUP></A></TD>
+<TD>For instance, there is a whole world of difference between the cult of gods who receive only vegetarian offerings and those who demand animal sacrifice. The different systems of philosophy, as well as the doctrines of the various sects and ascetic orders are at times totally opposed. Those who believe in the existence of one Hinduism (Sanatan Dharm) in spite of this huge diversity have to establish systems of classifications and build structures that can account for these differences : for example, the concept of 'great' and 'little' traditions helped to find a link between village or tribal cults and Brahmanical rituals. </TD></TR></TBODY></TABLE></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Muslim Saints and Hindu Rulers: The Development of Sufi and Ismaili Mysticism in the Non-Muslim States of India</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 7 Nov 2017 11:28:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/11/2008&nbsp;16:25&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105018 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:22 GMT -->
+</HTML>

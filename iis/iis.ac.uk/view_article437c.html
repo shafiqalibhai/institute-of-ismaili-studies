@@ -1,0 +1,745 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106677 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:47:59 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 106677;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlya8cf.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D106677">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article0b7a.html?ContentID=106679">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Founding the Fatimid State: The Rise of an Early Islamic Empire</strong><strong><br/></strong><strong><DIV><A href="view_persona732.html?type=authors&amp;id=169">Mr Hamid  Haji</A></DIV></strong><br/><br/>Ismaili Texts and Translation Series, 6. London: I.B. Tauris in association with The Institute of Ismaili Studies, 2006.<span><br/><br/>ISBN (Hardback): 1-85043-885-4</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/founding_fatimid-20061114125248_7055.jpg" align="left" alt="" style="padding: 0px;" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><IMG height=18 alt="" src="WebAssets/Large/googlebooks.jpg" width=18 align=baseline border=0> <A onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=8r8QAQAAIAAJ&amp;q=Founding+the+Fatimid+State:+The+Rise+of+an+Early+Islamic+Empire&amp;dq=Founding+the+Fatimid+State:+The+Rise+of+an+Early+Islamic+Empire&amp;cd=1" target=_blank>Publication page on Google Books</A></P>
+<P align=left>The author of <I>Iftitah</I> <I>al-da&#8216;wa</I> (<I>Commencement of the Mission</I>), Abu Hanifa al-Nu&#8216;man b. Muhammad b. Mansur b. Ahmad b. Hayyun al-Tamimi, generally called al-<A href="javascript:void(LaunchGlossary('GlossaryItem22e6.html?type=glossary&amp;id=139'))">Qadi</A> al-Nu&#8216;man (d. 363AH/ 974CE), was the most eminent exponent of <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> jurisprudence and an official historian of the Fatimids. He entered the service of the first Fatimid <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliph</A>-<A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A> al-Mahdi billah (r. 297-322 AH/ 909-934 CE) in <U><A href="javascript:void(LaunchGlossary('GlossaryItemd1f2.html?type=glossary&amp;id=232'))">Ifriqiya</A></U> (present-day Tunisia and eastern Algeria), and served the first four Fatimid caliph-imams in various capacities for almost fifty years until his death. He reached the height of his career during the reign of the caliph-imam al-Mu&#8216;izz li-din Allah (r. 341-365 AH/ 953-975 CE) under whose close supervision he composed his <I>Da&#8216;a&#8217;im al-Islam</I> (<I>The Pillars of Islam</I>) which represents a culmination of more than thirty years of his effort to codify Fatimid jurisprudence. It was proclaimed as the official code of the Fatimid state, and continues to be one of the primary sources of <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili</A> law to the present day for some Muste&#8216;alvi Ismaili communities. When caliph-imam al-Mu&#8216;izz moved to Egypt in 362 AH/ 973 CE, after the Fatimid conquest of that country, al-Nu&#8216;man accompanied him and continued to serve caliph-imam al- Mu&#8216;izz until his death in Cairo at the end of Jumada II 363 AH/ 27 March 974 CE.</P>
+<P align=left>Al-Nu&#8216;man is also regarded as the founder of Fatimid historiography. His major historical work, <I>Iftitah al-da&#8216;wa</I>, completed during the reign of caliph-imam al-Mu&#8216;izz is the most important primary source containing a detailed narrative account of the establishment of Fatimid rule in North Africa. It relates the successive phases of the Ismaili <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem322c.html?type=glossary&amp;id=283'))">da&#8216;wa</A></U></I>: its rise in the Yemen under the direction of the <I><A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))">da&#8216;i</A></I> Ibn Hawshab, the <I>da&#8216;i</I> Abu &#8216;Abd Allah al-Shi&#8216;i&#8217;s initial training under him, his mission among the <U><A href="javascript:void(LaunchGlossary('GlossaryItem572a.html?type=glossary&amp;id=189'))">Kutama</A></U> Berbers, his military campaigns, the fall of the Aghlabids, and the advent of caliph-imam al-Mahdi in Ifriqiya. The author relates these events using biographical and archival sources and his work has become a reference for subsequent narratives of the rise of the Fatimids in Ifriqiya. The <I>Iftitah</I> devotes a few pages to Imam al-Mahdi&#8217;s emigration to the <A href="javascript:void(LaunchGlossary('GlossaryIteme4e1.html?type=glossary&amp;id=183'))">Maghrib</A> and his captivity in Sijilmasa. The author retraces briefly successive stops of caliph-imam al-Mahdi&#8217;s journey, which allows us to verify the account of another early Ismaili text, <I>Sirat al-Hajib Ja&#8216;far</I>, whose version of Imam al-Mahdi&#8217;s emigration is more detailed. The <I>Iftitah</I> specifies the historical context of his emigration and elucidates the choice of his destination which was determined especially by the rising fortunes of Abu &#8216;Abd Allah.</P>
+<P align=left>The <I>Iftitah</I> provides valuable information on some Aghlabid <A href="javascript:void(LaunchGlossary('GlossaryIteme5bc.html?type=glossary&amp;id=333'))">emirs</A>, particularly the last of them, Ziyadat Allah (r. 290-296 AH/ 903-909 CE), as well as officials who exercised military and civil functions in the Aghlabid state, complementing information found in other sources. More significantly, it highlights the activity of some supporters of Abu &#8216;Abd Allah who played a major role in his mission, but about whom only sketchy information has been preserved in the sources. They were Kutama tribesmen who adhered to the <I>da&#8216;wa</I> very early and became pillars of his administration. </P>
+<P align=left>The <I>Iftitah</I> is equally important for the social and political history of Ifriqiya at the advent of the Fatimids. It relates in detail the conditions among the Kutama where the <I>da&#8216;wa</I> was established. Their territory was a remote, mountainous region where the Aghlabids exercised only nominal authority. The Kutama represented several clans which did not recognise any authority other than their chiefs. Their situation afforded a favourable terrain to Abu &#8216;Abd Allah&#8217;s mission. However, Abu &#8216;Abd Allah was not able at first to rally all the Kutama to his cause. Some tribes offered him their strong and immediate support while others, led by chiefs jealous of their authority, rose against him. About this turbulent phase of the <I>da&#8216;wa</I> among the Kutama, the <I>Iftitah</I> presents details of Abu &#8216;Abd Allah&#8217;s struggles against a hostile tribal coalition which eventually turned in his favour, allowing him to establish his authority over all the Kutama, who then became instrumental in his military campaigns which led to the establishment of Fatimid dominion in North Africa.</P>
+<P align=left><STRONG>Chapters of the Book</STRONG> </P>
+<P align=left>The <I>Iftitah</I> contains forty-two chapters of unequal length which follow a chronological order. The first five chapters give a detailed account of the initial stage of the <I>da&#8216;wa</I> in the Yemen. The imam appointed Ibn Hawshab to conduct the <I>da&#8216;wa</I> there together with a Yemenite, &#8216;Ali b. al-Fadl. The two <I>da&#8216;i</I>s arrived in the Yemen in 268 AH/ 881 CE, and their joint effort resulted in the firm establishment of the <I>da&#8216;wa</I> in the Yemen, from where <I>da&#8216;i</I>s were sent to other countries. Abu &#8216;Abd Allah was sent to the Yemen to be trained for his mission. He remained close to Ibn Hawshab for about a year, attending his teaching sessions (<I><A href="javascript:void(LaunchGlossary('GlossaryItem7f69.html?type=glossary&amp;id=180'))">majalis</A></I>) and accompanying him on military expeditions. This prepared him for his mission in North Africa where <A href="javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))">Shi&#8216;ism</A> had already gained a foothold with the coming of two <I>da&#8216;i</I>s, Abu Sufyan and al-Hulwani, about 135 years before him. North Africa appeared to be a favourable terrain for his assignment, and Abu &#8216;Abd Allah proceeded there after a pilgrimage to Makka. Among the pilgrims, he met some Kutama Berber tribesmen from Ifriqiya, who were impressed by his personality, eloquence and knowledge. Abu &#8216;Abd Allah accepted their invitation to accompany them on their return journey to their land and settled in a fortified place in the mountainous region of Ikjan which became the headquarters of his mission. Abu &#8216;Abd Allah&#8217;s sincerity and dedication to his work and his ability to inspire this dedication in others gave impetus to his mission.</P>
+<P align=left>The next eight chapters relate Abu &#8216;Abd Allah&#8217;s establishment in Kutama territory and the emergence of a local community of supporters. Abu &#8216;Abd Allah assumed the role of a teacher among the Kutama. He set out to create a community based on norms of conduct applicable to all its members. He endowed the emergent community with the appropriate structure before confronting Aghlabid armies. He reorganised the politico-social structure of the Kutama by dividing them into seven sections which constituted military divisions, and he appointed for each section a body of responsible commanders and <I>da&#8216;i</I>s to consolidate his government. He introduced acts of worship among his companions, and implemented various regulations to curb offences and encourage charity and piety. He treated everybody with justice and equity, and punished severely anyone who deserved to be punished. This emergent community, based on a new authority over and above the authority of the elders of the tribes, was perceived as a threat not only by the Aghlabid rulers of Ifriqiya but also by the prevalent tribal order among the Kutama and other Berber tribes. Clashes erupted between Kutama clans supporting Abu &#8216;Abd Allah and those opposing him. An alliance between the rulers of <A href="javascript:void(LaunchGlossary('GlossaryItem6f18.html?type=glossary&amp;id=172'))">Mila</A>, Satif and Billizma, and the leaders of the Kutama tried to break his ranks, but their alliance fell apart, and Abu &#8216;Abd Allah was able to extend his leadership among the Kutama, including those who had not adhered to the <I>da&#8216;wa</I>. Having united the Kutama under his authority, Abu &#8216;Abd Allah was now ready for the inevitable military confrontation with those who resisted him. Alarmed at the growing influence of the Ismaili <I>da&#8216;i</I>, the Aghlabid emir, Ibrahim b. Ahmad (r. 261-289 AH/ 857-902 CE), tried to tempt him with worldly reward in exchange for abandoning his mission, and threatened to attack him if he did not accept his offer. Abu &#8216;Abd Allah was not intimidated. He rejected the emir&#8217;s offer and in turn spelled out boldly the objectives of his mission, summoning the emir to his mission. </P>
+<P align=left>The next nineteen chapters, with the exception of an intervening chapter on caliph-imam al-Mahdi&#8217;s emigration, describe military expeditions and Abu &#8216;Abd Allah&#8217;s conquests until his final victory and the fall of the Aghlabids. Abu &#8216;Abd Allah&#8217;s final victory subdued vast regions of the Maghrib as well as the former Aghlabid domains in Sicily, Italy.</P>
+<P align=left>The last ten chapters give an account of the advent of the Fatimids, the reign of caliph-imam al-Mahdi and a general survey of events until the year 346 AH/ 957 CE when the work was completed. Abu &#8216;Abd Allah&#8217;s mission entered its conclusive phase when he entered Raqqada in 296 AH/ 909 CE. He remained in the Aghlabid capital for about two months until the situation became stable. During this short period, he introduced administrative and political measures to reflect the new order. Having granted safety to the populace, including those who had served the Aghlabids, he outlined the behaviour he expected from the people and intensified the search for opponents of his orders to bring them to justice. Changes introduced in the call to prayer and sermons began to reflect the Shi&#8216;i ritual. A Shi&#8216;i qadi appointed by him was authorised to appoint judges and arbitrators in the other towns. Having appointed his brother Abu al-&#8216;Abbas and Abu Zaki as his deputies to govern Ifriqiya, Abu &#8216;Abd Allah set out on a military campaign to free Imam al-Mahdi from captivity in Sijilmasa. On this arduous westward march to the remote regions of the Maghrib, Abu &#8216;Abd Allah attacked and subdued Berber tribes that he came across on his way. Having secured the release of caliph-imam al-Mahdi and his son, after conquering Sijilmasa, Abu &#8216;Abd Allah returned to al-Qayrawan with Imam al-Mahdi who formally assumed supreme authority. </P>
+<P align=left>The basis of the nascent state rested on al-Mahdi&#8217;s sovereignty as imam from the progeny of the Prophet, the <A href="javascript:void(LaunchGlossary('GlossaryItemcb97.html?type=glossary&amp;id=341'))">ahl al-bayt</A>. Anyone rebelling against the imam would have to be fought. The <I>Iftitah</I> elucidates the circumstances that led to the execution of Abu &#8216;Abd Allah, his brother Abu al-&#8216;Abbas and several others. Al-Nu&#8216;man informs us on the cause of Abu &#8216;Abd Allah&#8217;s downfall and the plot against caliph-imam al-Mahdi just two years after his advent. He names the conspirators, their motives, the place of their secret meetings, and reveals the measures taken by Imam al-Mahdi to thwart the conspiracy. Abu al-&#8216;Abbas, the ambitious brother of Abu &#8216;Abd Allah, appears as the leader of the plot who exerts his influence on his younger brother. Having exercised power until caliph-imam al-Mahdi&#8217;s arrival in Raqqada, he expressed his resentment when Imam al-Mahdi assumed the responsibilities of the state without intending to share his authority. He incited some Berber chiefs against Imam al-Mahdi until they dared to express openly their suspicions on the imam&#8217;s impeccability and even question the authenticity of his <A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">imamate</A>. Abu &#8216;Abd Allah eventually succumbed to the instigation of his brother and asked caliph-imam al-Mahdi openly to reign without governing and let him exercise power in his name. Al-Nu&#8216;man presents in detail how Imam al-Mahdi, well informed of the intentions of the conspirators, exploited their hesitations and thwarted the conspiracy. Al-Nu&#8216;man throws all responsibility for this conspiracy on Abu al-&#8216;Abbas, without tarnishing the memory of Abu &#8216;Abd Allah, whose merit was recognised by Imam al-Mahdi. Having eliminated the conspirators, caliph-imam al-Mahdi sent armies to the outlying regions to suppress rebellions. This situation continued during the reign of his son and successor caliph-imam al-Qa&#8217;im bi-amr Allah and his grandson caliph-imam al-Mansur bi-llah. The <I>Iftitah</I> was completed during the reign of Imam al-Mu&#8216;izz li-din Allah, in 346 AH/ 957 CE, twelve years before the Fatimid conquest of Egypt. The author deals briefly with these later events, as the aim of this publication was to focus on the stages of the establishment of the <I>da&#8216;wa</I> itself to preserve its history for posterity.</P>
+<P align=left><STRONG>A Contribution to Ismaili Studies</STRONG></P>
+<P align=left>It was due to the pioneering efforts of Wladimir Ivanow that Arabic Ismaili texts relating to the rise of the Fatimids were first edited and translated into English, including some fragments of the <I>Iftitah</I>. These fragments give an account of caliph-imam al-Mahdi&#8217;s emigration from his residence in <A href="javascript:void(LaunchGlossary('GlossaryItemc5f2.html?type=glossary&amp;id=112'))">Salamiya</A> in Syria, his arrival in Sijilmasa in the remote Maghrib, and Abu &#8216;Abd Allah&#8217;s successful campaign to liberate him from captivity. It was not until 1970 that the integral text of the <I>Iftitah</I>, edited by Wadad al-Qadi, was first published in Beirut. It is based on three manuscripts: two from the American University in Beirut, and one from the Hamdani Collection from its photocopy in the Egyptian National Library. This latter manuscript was also used as a basis by Farhat Dachraoui, together with one manuscript of Indian origin, copied in 1350 AH/ 1931 CE, from the collection of Louis Massignon. Farhat Dachraoui&#8217;s integral edition, already completed in 1961, was published in Tunis only in 1975. Besides the manuscripts used by the editors, several other manuscripts of the <I>Iftitah</I> are held in private libraries of Ismaili communities in Yemen, India and Pakistan, some of which are now preserved in the West. The Institute of Ismaili Studies has seven copies in its <U><A href="view_articled089.html?type=cont.currentlang&amp;id=104728">collection of manuscripts</A></U>. The translator has compared these copies with the other editions, where necessary, producing this first integral translation of the work into any language.</P>
+<P align=left>The translation of the <I>Iftitah</I> allows non-Arabist readers to access this important primary source. The translation strives to be as close to the original Arabic text as possible, but makes allowance for modern English idiom and expressions. The translation of verses from the Qur&#8217;an draws upon Yusuf Ali&#8217;s and Pickthall&#8217;s translations with some adaptation. Ample footnotes with references have been provided for <I>toponyms</I>, names of individuals and tribes and events to aid further reading. The material has been organised into numbered chapters, with subdivisions introduced in some chapters to make the text more readable and accessible. The publication includes genealogical charts, maps of Ifriqiya and eastern Maghrib, as well as a chronology summarising the complex chain of events and battles that gave rise to the Fatimid state.</P><br><br></div><div id="pubsContents"><strong>Contents</strong><br><P><I>Maps and Tables</I> xii</P>
+<P><I>Acknowledgements</I> xiii</P>
+<P><I>Chronology</I> xv</P>
+<P>Introduction 1</P>
+<P>Translation of <I>Iftitah al-da&#8216;wa</I>: Commencement of the Mission 17</P>
+<P>1. The account of the beginning of the mission (<I>da&#8216;wa</I>) in the Yemen, the [<I>da&#8216;i</I>] in charge of it, and the factors which allowed him to accomplish his mission. 20</P>
+<P>2. Anecdotes about Abu al-Qasim, head of the <I>da&#8216;wa</I> in the Yemen. 34</P>
+<P>3. Forerunners sent to the Maghrib before the <I>da&#8216;i</I>&#8217;s arrival there. 41</P>
+<P>4. The arrival of Abu &#8217;Abd Allah, <I>da&#8216;i</I> of the Maghrib, to the head of the <I>da&#8216;wa</I> in the Yemen and his departure from there on his behalf. 45</P>
+<P>5. Abu &#8217;Abd Allah&#8217;s meeting with Kutama tribesmen in Makka and his arrival with them in Kutama territory. 48</P>
+<P>6. Abu &#8217;Abd Allah&#8217;s arrival in Kutama territory and the beginning of his mission there. 55</P>
+<P>7. Ibrahim b. Ahmad&#8217;s reply to Musa b. &#8216;Abbas conveyed by an envoy from him and his message to Abu &#8217;Abd Allah. 61</P>
+<P>8. The uprising of the coalition of Kutama against Abu &#8217;Abd Allah to seize him in Ikjan. 77</P>
+<P>9. Abu &#8216;Abd Allah&#8217;s departure from Ikjan and his journey to Tazrut. 81</P>
+<P>10. Meeting of the coalition to find a way to resolve the case of Abu &#8217;Abd Allah. 84</P>
+<P>11. Offensive by all the tribes against Abu Abd Allah and his victory over them. 89</P>
+<P>12. Abu &#8216;Abd Allah&#8217;s founding at Tazrut a place of refuge and a base from which to wage war against the tribes. 96</P>
+<P>13. Measures adopted by Abu &#8217;Abd Allah among the Kutama to reign over them and for which they submitted to him. 100</P>
+<P>14. The conquest of the town of Mila. 110</P>
+<P>15. Abu Hawal&#8217;s military expedition to Kutama territory and his retreat from there. 112</P>
+<P>16. Abu Hawal&#8217;s second military expedition and his defeat. 116.&nbsp;<BR><BR>17. Al-Mahdi&#8217;s emigration from his residence in the east, and his arrival in Sijilmasa. 121</P>
+<P>18. The conquest of the town of Satif. 126</P>
+<P>19. Ziyadat Allah&#8217;s dispatching Ibrahim b. Habashi to Kutama territory to fight Abu &#8217;Abd Allah and his defeat.128</P>
+<P>20. The conquest of the town of Tubna. 131</P>
+<P>21. The conquest of the town of Billizma. 134</P>
+<P>22. The battle of Dar Maluwwal. 136</P>
+<P>23. The conquest of the town of Tijis. 137</P>
+<P>24. Ziyadat Allah&#8217;s proclamation addressed to the provinces to pacify them and calm down the fright which he learnt had spread therein. 140</P>
+<P>25. Ziyadat Allah&#8217;s setting out at the head of troops for al-Urbus and his withdrawal from there. 147</P>
+<P>26. The conquest of the town of Baghaya. 150</P>
+<P>27. Abu &#8217;Abd Allah&#8217;s battles at Majjana and in its region adjacent to al-Urbus. 153</P>
+<P>28. The battle of Dar Madyan. 157&nbsp;</P>
+<P>29. The conquest of Qastiliya and Qafsa. 161&nbsp;</P>
+<P>30. The conquest of the town of al-Urbus and Ibn Abi al-Aghlab&#8217;s defeat. 165</P>
+<P>31. Ziyadat Allah&#8217;s flight from Raqqada. 168</P>
+<P>32. Ibrahim b. Abi al-Aghlab&#8217;s arrival in al-Qayrawan and his designs over the city. 171</P>
+<P>33. Abu &#8217;Abd Allah&#8217;s arrival in Ifriqiya, his stay in Raqqada and the consolidation of his position there. 174</P>
+<P>34. Safety granted by Abu &#8217;Abd Allah to the populace and his administrative and political measures. 176</P>
+<P>35. Ziyadat Allah&#8217;s journey, his arrival in the east, and events relating to him until his death. 183</P>
+<P>36. Abu &#8216;Abd Allah&#8217;s march to Sijilmasa, his conquest of that town and al-Mahdi&#8217;s departure from there. 192</P>
+<P>37. Al-Mahdi&#8217;s coming from Sijilmasa and his arrival in Ifriqiya. 202</P>
+<P>38. Political measures taken by al-Mahdi as imam and applied publicly amongst the people. 205</P>
+<P>39. Events relating to the hypocrites against al-Mahdi and the outcome of their affair. 213</P>
+<P>40. Inhabitants of Ifriqiya who betrayed the clemency granted to them and their punishment for treason and hostility.223</P>
+<P>41. General events relating to al-Mahdi until his death. 226</P>
+<P>42. Summary account of the period from the death of al-Mahdi, peace be upon him, until the time this book was composed. 230</P>
+<P><I>Bibliography</I>&nbsp;&nbsp; 237</P>
+<P><I>Index</I>&nbsp;&nbsp; 248</P><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><P>Abdul-Wahab, Hassen Husni. &#8216;Les steppes tunisiennes (region de Gammouda) pendant le Moyen-Age &#8216;, <I>Les cahiers de Tunisie</I>, 2 (1954), pp. 5&#8211;16.</P>
+<P>Abou El Fadl, Khaled. <I>Rebellion and Violence in Islamic Law</I>. Cambridge, 2001.</P>
+<P>Abu al-&#8216;Arab Muhammad b. Ahmad b. Tamim al-Qayrawani. <I>Tabaqat ulama Ifriqiya wa-Tunis</I>, ed. &#8216;Ali al-Shabbi and Naim Hasan al-Yafi.Tunis, 1968.<I></I></P>
+<P>Abu al-Aswad al-Du&#8216;ali. <I>Diwan Abi al-Aswad al-Du&#8216;ali sanat Abi Said al-Hasan al-Sukkari</I>, ed. Muhammad Hasan Al Yasin. Beirut, 1974.<I></I></P>
+<P>Abu Dawud Sulayman b. al-Ashath al-Sijistani. <I>Sunan Abi Dawud</I>, ed.Muhammad Muhyi al-Din &#8216;Abd al-Hamid. Beirut, n.d. English tr. Ahmad Hasan, New Delhi, 1985.</P>
+<P>Abu al-Fida&#8217; &#8216;Imad al-Din Isma&#8216;il b. &#8216;Ali <I>Kitab Taqwim al-buldan</I>, ed. J. T.Reinaud and W. Mac Guckin de Slane. Paris, 1840.</P>
+<P>al-Ajluni al-Jarrahi, Isma&#8216;il b. Muhammad. <I>Kashf al-khafa wa-muzil alilbas amma ishtahara min al-ahadith ala alsinat al-nas</I>, ed. Ahmad<I> </I>al-Qalash. Aleppo, n.d.<I> </I></P>
+<P>Arib b. Sa&#8216;d al-Qurtubi. <I>Silat Ta&#8216;rikh al-Tabari</I>, ed. M. J. de Goeje. Leiden,<I> </I>1897.<I></I></P>
+<P>al-Bakri, Abu &#8216;Ubayd &#8216;Abd Allah b. &#8216;Abdal-Aziz. <I>al-Masalik wa-al-mamalik = Description de l &#8216;Afrique septentrionale</I>, ed. and French tr. W. Mac Guckin de Slane. Paris, 1965.<I></I></P>
+<P>Baratte, Francois and Noel Duval. <I>Haidra: les ruines d &#8216;Ammaedara</I>. Tunis, 1974.</P>
+<P>Bekri, Chikh. &#8216;Le kharijisme berbere: quelques aspects du royaume rustumide&#8217;, <I>Annales de l &#8216;Institut d &#8216;etudes orientales</I>, 15 (1957), pp. 55&#8211;109.</P>
+<P>Bosworth, Clifford E. <I>The New Islamic Dynasties: A Chronological and Genealogical Manual</I>. Edinburgh, 1996.<I></I></P>
+<P>Brett, Michael. <I>The Rise of the Fatimids</I>: <I>The World of the Mediterranean and the Middle East in the Fourth Century of the Hijra, Tenth Century CE</I>.<I> </I>Leiden, 2001.<I></I></P>
+<P>Brocklemann, Carl. <I>Geschichte der arabischen Litteratur (gal)</I>. Leiden, 1996.</P>
+<P>Brunschvig, Robert. &#8216;Fiqh fatimide et histoire de l &#8216;Ifriqiya&#8217;, in <I>Melanges d &#8216;histoire et d &#8216;archeologie de l &#8216;Occident musulman II: Hommage a Georges Marcais</I>. Algiers, 1957, pp. 13&#8211;20, reprinted in his <I>Etudes d &#8216;islamologie</I>,<I> </I>ed. A. M. Turki. Paris, 1976, vol. 1, pp. 63&#8211;70.<I></I></P>
+<P>al-Bukhari, Abu &#8216;Abd Allah Muhammad b. Isma&#8216;il. <I>Sahih al-Bukhari: Translation of the meanings of Sahih al-Bukhari, Arabic-English</I>, tr. M.<I> </I>M. Khan. New Delhi, 1987.<I></I></P>
+<P>Canard, Marius. &#8216;L&#8216;autobiographie d &#8216;un chambellan du Mahdi Obeidallah le Fatimide&#8217;, <I>Hesperis</I>, 39 (1952), pp. 279&#8211;329, reprinted in his <I>Miscellanea</I> <I>Orientalia</I>, London, 1973, article V.</P>
+<P>&#8212; &#8212; &#8216;Une famille de partisans, puis d &#8216;adversaires, des Fatimides en Afrique du Nord&#8217;, in <I>Melanges d &#8216;histoire et d &#8216;archeologie de l &#8216;Occident musulman</I> <I>II: Hommage a Georges Marcais</I>. Algiers, 1957, pp. 33&#8211;49, reprinted in his <I>L &#8216;expansion arabo-islamique et ses repercussions</I>, London, 1974, article V.</P>
+<P><U><A href="view_person50bf.html?type=auth&amp;id=76">Cortese, Delia</A></U>. <A href="view_article8cfa.html?type=cont.currentlang&amp;id=100770"><I>Ismaili and Other Arabic Manuscripts: A Descriptive Catalogue of Manuscripts in the Library of The Institute of Ismaili Studies</I>.</A><I> </I>London, 2000.<I></I></P>
+<P>&#8212; &#8212; <I><A href="view_article7aca.html?type=cont.currentlang&amp;id=100763">Arabic Ismaili Manuscripts: The Zahid &#8216;Ali Collection in the Library of The Institute of Ismaili Studies</A></I>. London, 2003.<I></I></P>
+<P>Dachraoui, Farhat. &#8216;Tentative d &#8216;infiltration shiite en Espagne musulmane sous le regne d &#8216;al-Hakam II, &#8216; <I>al-Andalus</I>, 23 (1958), pp. 97&#8211;106.</P>
+<P>&#8212; &#8212;&#8216;La Crete dans le conflit entre Byzance et al-Mu&#8216;izz,&#8217; <I>Les cahiers de Tunisie</I>, 7 (1959), pp. 307&#8211;318.</P>
+<P>&#8212; &#8212;&#8216;Contribution a l &#8216;histoire des Fatimides en Ifriqiya&#8217;, <I>Arabica</I>, 8 (1961), pp. 189&#8211;203.</P>
+<P>&#8212; &#8212;&#8216;Les commencements de la predication Isma&#8216;ili enne en Ifriqiya&#8217;, <I>Studia Islamica</I>, 20 (1964), pp. 89&#8211;102.<I></I></P>
+<P>&#8212; &#8212;<I>Le califat fatimide au Maghreb (295&#8211;365 H./909&#8211;975 JC.): histoire politique et institutions</I>. Tunis, 1981.<I></I></P>
+<P><A href="view_person19c6.html?type=auth&amp;id=8">Daftary, Farhad</A>. <I><A href="view_article1080.html?type=cont.currentlang&amp;id=100638">The Isma&#8216;ilis: Their History and Doctrines</A></I>. Cambridge, 1990.</P>
+<P>&#8212; &#8212;&#8216;The Ismaili <I>da&#8216;wa </I>outside the Fatimid <I>dawla</I> &#8217;, in M. Barrucand, ed., <I>L &#8216;Egypte fatimide: son art et son histoire</I>. Paris, 1999, pp. 29&#8211;43.</P>
+<P>&#8212; &#8212;&#8216;A Major Schism in the Early Isma&#8216;ili Movement&#8217;, <I>Studia Islamica</I>, 77 (1993), pp. 123&#8211;139. </P>
+<P>&#8212; &#8212;ed., <I><A href="../www.iis.ac.uk/view_article3b35.html?type=cont.currentlang&amp;id=105683">Mediaeval Isma &#8216;ili History and Thought</A></I>. Cambridge, 1996.</P>
+<P>Djelloul, Neji. &#8216;Histoire topographique de Mahdia et de ses environs au Moyen Age&#8217;, <I>Les cahiers de Tunisie</I>, 162&#8211;163 (1992&#8211;1993), pp. 71&#8211;103 + 5 plates.</P>
+<P>Dozy, Reinhart. <I>Supplement aux dictionnaires arabes. </I>Leiden-Paris, 1967.</P>
+<P><I>E. J. Brill &#8216;s First Encyclopaedia of Islam 1913&#8211;1936</I>. Leiden, 1987.</P>
+<P><I>Encyclopaedia of Islam</I>. New ed., Leiden, 1960&#8211;2006.</P>
+<P><I>Encyclopedie berbere</I>. Aix-en-Provence, 1984&#8211;.</P>
+<P>Ennaifer, Mongi. <I>La cit d &#8216;Althiburos et l &#8216;edifice des Asclepieia</I>. Tunis, 1976.</P>
+<P>Fagnan, Edmond. &#8216;Nouveaux textes historiques relatif a l &#8216;Afrique du Nord et a la Sicile &#8217;, in <I>Centenario della nascita di Michele Amari</I>. Palermo, 1910, vol. 2, pp. 35&#8211;11 4.</P>
+<P>&#8212; &#8212;<I>Additions aux dictionnaires arabes</I>. Algiers, 1923.</P>
+<P>Fahd, Toufic. <I>La divination arabe</I>. Paris, 1987.</P>
+<P>Farrugia de Candia, J. &#8216;Monnaies fatimites du Musee du Bardo&#8217;, <I>Revue tunisienne</I>, 27&#8211;28 (1936), pp. 333&#8211;372; 29 (1937), pp. 89&#8211;136.</P>
+<P>Feki, Habib. <I>Les idees religieuses et philosophiques de l &#8216;ismaelisme fatimide</I>. Tunis, 1978.</P>
+<P><A href="view_personf16c.html?type=auth&amp;id=77">Gacek, Adam</A>. <I><A href="view_article25b4.html?type=cont.currentlang&amp;id=100784">Catalogue of Arabic Manuscripts in the Library of The Institute of Ismaili Studies</A></I>. London, 1984&#8211;1985.<I></I></P>
+<P>Gateau, Albert. &#8216;La Sirat Ja&#8216;far al-Hajib: contribution a l &#8216;histoire des Fatimides&#8217;, <I>Hesp eris</I>, 34 (1947), pp. 375&#8211;396.</P>
+<P>Geddes, Charles L. &#8216;The Apostasy of &#8216;Ali b. al-Fadl&#8217;, in R. L. Bidwell and G. R. Smith ed., <I>Arabian and Islamic Studies: Articles Presented to R. B.</I> <I>Serjeant</I>. London, 1983, pp. 80&#8211;85.</P>
+<P>Golvin, Lucien. &#8216;Mahdiya a l &#8216;epoque fatimide&#8217;, <I>Revue de l &#8216;Occident musulman et de la Mediterranee</I>, 27 (1979), pp. 75&#8211;98.<I></I></P>
+<P><A href="view_person8bd7.html?type=auth&amp;id=64">Halm, Heinz</A>. &#8216;Die <I>Sirat Ibn Hausab</I>: Die ismailitische <I>da&#8216;wa </I>im Jemen und die Fatimiden&#8217; <I>Die Welt des Orients</I>, 12 (1981), pp. 107&#8211;135.</P>
+<P>&#8212; &#8212;<I>The Empire of the Mahdi: The Rise of the Fatimids</I>, tr. M. Bonner. Leiden, 1996.</P>
+<P>&#8212; &#8212;&#8216;The Isma&#8216;ili Oath of Allegiance (&#8216;<I>ahd</I>) and the &#8216;Sessions of Wisdom&#8217; (<I>majalis al-hikma</I>) in Fatimid Times&#8217;, in F. Daftary, ed., <I>Mediaeval</I> <I>Isma&#8216;ili History and Thought</I>. Cambridge, 1996, pp. 91&#8211;11 5.</P>
+<P>Hamdani, Abbas and Francois de Blois. &#8216;A Re-examination of al-Mahdi&#8217;s Letter to the Yemenites on the Genealogy of the Fatimid Caliphs&#8217;, <I>Journal</I> <I>of the Royal Asiatic Society</I>, (1983), pp. 173&#8211;207.</P>
+<P>al-Hamdani, Abu Muhammad al-Hasan b. Ahmad. <I>Sifat Jazirat al-</I> &#8216;<I>Arab</I>, ed. Muhammad b. &#8216;Ali al-Akwa&#8217;. 3rd ed., San &#8216;a&#8217;, 1403/1983. </P>
+<P>al-Hamdani, Husayn b. Fayd Allah. <I>al-Sulayhiyyun wa-al-haraka al-Fatimiyya fi al-Yaman (min sanat 268 h ila sanat 626 h)</I>. Cairo, 1955.<I></I></P>
+<P>&#8212; &#8212;<I>On the Genealogy of Fatimid Caliphs</I>. Cairo, 1958.</P>
+<P>Hasan Ibrahim Hasan and Taha Ahmad Sharaf, &#8216;<I>Ubayd Allah al-Mahdi: Imam al-Shi&#8216;a al-Isma&#8216;iliyya wa-mu&#8217;assis al-dawla al-Fatimiyya fi bilad al-Maghrib</I>. Cairo, 1366/1947.<I></I></P>
+<P>al-Hammadi al-Yamani, Muhammad b. Malik b. Abi al-Fada&#8217;il. <I>Kashf asrar al-Batiniyya wa-akhbar al-Qaramita</I>, ed. Muhammad Zahid b. al-Hasan<I> </I>al-Kawthari. Cairo,1357/1939.<I></I></P>
+<P>Higgins, A. J. &#8216;Common Ectoparasites of the Camel and their Control&#8217;, in A. Higgins, ed., <I>The Camel in Health and Disease</I>. London, 1986, pp. 72&#8211;91.</P>
+<P>Hussain, Jasim M. <I>The Occultation of the Twelfth Imam: A Historical Background</I>. London, 1982.</P>
+<P>Ibn al-Abbar, Abu &#8216;Abd Allah Muhammad b. &#8216;Abd Allah b. Abi Bakr al- Quda&#8216;i. <I>Kitab al-Hulla al-siyara&#8217;</I>, ed. Husayn Mu&#8217;nis (Hussain Mones). Cairo, 1963&#8211;1964.</P>
+<P>Ibn al-Anbari, Muhammad b. al-Qasim. <I>Kitab al-Addad</I>, ed. Muhammad Abu al-Fadl Ibrahim. Kuwait, 1960.</P>
+<P>Ibn Aranbugha al-Zaradkash. <I>al-Aniq fi al-manajaniq</I>, ed. Ihsan Hindi. Aleppo, 1405/1985.</P>
+<P>Ibn al-Athir al-Jazari, &#8216;Izz al-Din Abu al-Hasan &#8216;Ali b. Muhammad. <I>al-Kamil fi al-Ta &#8217;rikh</I>. Beirut, 1387/1967.<I></I></P>
+<P>Ibn al-Dawadari, Abu Bakr b. &#8216;Abd Allah. <I>Kanz al-durar wa-jami &#8216; al-ghurar</I>, vol. 6, ed. Salah al-Din al-Munajjid. Cairo, 1380/1961.</P>
+<P>Ibn Hajar al- &#8216;Asqalani, Ahmad b. &#8216;Ali. <I>al-Isaba fi tamyiz al-sahaba</I>. Cairo, 1939.</P>
+<P>Ibn Hammad, Abu &#8216;Abd Allah Muhammad b. &#8216;Ali. <I>Akhbar muluk Bani &#8216;Ubayd wa-siratuhum </I>= <I>Histoire des rois obaidides</I>, ed. and tr. M.<I> </I>Vonderheyden. Algiers-Paris, 1346/1927.<I></I></P>
+<P>Ibn Hawqal al-Nasibi, Abu al-Qasim Muhammad. <I>Kitab Surat al-ard</I>. Beirut, 1979.</P>
+<P>Ibn al-Haytham, Abu &#8216;Abd Allah Ja &#8216;far b. Ahmad. <I>Kitab al-Munazarat</I>, ed. and tr. <A href="view_person6412.html?type=auth&amp;id=54">W. Madelung </A>and <A href="view_persone72a.html?type=auth&amp;id=21">P. E. Walker</A> as <A href="view_article2670.html?type=cont.currentlang&amp;id=100525"><I>The Advent of the Fatimids: A</I> <I>Contemporary Shi &#8216;i Witness</I></A>. London, 2000.</P>
+<P>Ibn Hazm, Abu Muhammad &#8216;Ali b. Ahmad. <I>Jamharat ansab al-</I> &#8216;<I>Arab</I>, ed. &#8216;Abdal-Salam Muhammad Harun. Cairo, 1391/1971.</P>
+<P>Ibn Hisham, &#8216;Abd al-Malik. <I>al-Sira al-nabawiyya</I>, ed. &#8216;Umar &#8216;Abd al-Salam Tadmuri. Beirut, 1413/1993. English tr. A. Guillaume, <I>The Life of</I> <I>Bibliography</I> <I>Muhammad: A Translation of Ishaq &#8216;s Sirat Rasul Allah</I>. Karachi, 1982.</P>
+<P>Ibn &#8216;Idhari al-Marrakushi, Abu al- &#8216;Abbas Ahmad b. Muhammad. <I>Kitab al- Bayan al-mughrib fi akhbar al-Andalus wa-al-Maghrib</I>, vol. 1, ed. G. S.<I> </I>Colin and E. Levi-Provencal. Leiden, 1948.<I></I></P>
+<P>Ibn al-Jarrah, Abu &#8216;Abd Allah Muhammad b. Dawud. <I>al-Waraqa</I>, ed. Farraj &#8216;Abd al-Sattar Ahmad Farraj and &#8216;Abd al-Wahhab &#8216;Azzam, 2nd ed., Cairo, 1967.</P>
+<P>Ibn Kathir, &#8216;Imad al-Din Isma&#8216;il b. &#8216;Umar. <I>al-Bidaya wa-al-nihaya</I>. Beirut, 1974&#8211;1977.</P>
+<P>Ibn Khaldun, &#8216;Abd Al-Rahman b. Muhammad. <I>Kitab al-&#8216;Ibar wa-al-diwan al-mubtada&#8217; wa-al-khabar fi ayyam al-</I> &#8216;<I>arab wa-al-</I> &#8216;<I>ajam wa-al-barbar wa-man </I>&#8216;<I>asarahum min dhawi al-sultan al-akbar</I>. Beirut, 1956&#8211;1961.</P>
+<P>Partial French tr. W. Mac Guckin de Slane as <I>Histoire des Bereres et les dynasties musulmanes de l &#8216;Afrique septentrionale</I>. Paris, 1978.<I></I></P>
+<P>Ibn al-Khatib, Lisan al-Din Abu &#8216;Abd Allah Muhammad. <I>A&#8216;mal al-a&#8216;lam</I>, part 3 ed. Ahmad Mukhtar al- &#8216;Abbadi and Muhammad Ibrahim al-Kattani as <I>Tarikh al-Maghrib al- &#8216;Arabi fi al- &#8216;asr al-wasit: al-qism al-thalith min</I> <I>kitab A</I> &#8216;<I>mal al-a</I> &#8216;<I>lam</I>. Casablanca, 1964.</P>
+<P>Ibn Manzur, Abu al-Fadl Muhammad b. Mukarram al-Ansari. <I>Lisan al-</I> &#8216;<I>Arab</I>. Beirut, 1374&#8211;1376/1955&#8211;1957.</P>
+<P>Ibn Naji al-Tanukhi, Abu al-Qasim b. &#8216;Isa. <I>Ma&#8216;ali m al-iman fi ma</I>&#8216;<I>rifat ahl al-Qayrawan</I>, ed. Ibrahim Shabbuh. Cairo, 1968&#8211;1972.<I></I></P>
+<P>Ibn Rashiq al-Qayrawani, al-Hasan. <I>Unmudhaj al-zaman fi shu</I> &#8216;<I>ara&#8217; al- Qayrawan</I>, ed. Muhammad al- &#8216;Arusi al-Matwi and Bashir al-Bakkush.<I> </I>Tunis, 1406/1986.<I></I></P>
+<P>Ibn Shakir al-Kutubi, Muhammad. <I>Fawat al-wafayat wa-al-dhayl </I>&#8216;<I>alayha</I>, ed. Ihsan &#8216;Abbas. Beirut, 1973&#8211;1974.</P>
+<P>Ibn Taghri Birdi, Jamal al-Din Abu al-Mahasin Yusuf. <I>al-Nujum al-zahira fi muluk Misr wa-al-Qahira</I>. Cairo, 1932&#8211;1950.<I></I></P>
+<P>Ibn Zafir al-Azdi, Jamal al-Din &#8216;Ali . <I>Akhbar al-duwal al-munqati</I> &#8216;<I>a</I>, ed. A. Ferre. Cairo, 1972.</P>
+<P>Ibn al-Zubayr, Muhammad et al. <I>Mu</I> &#8216;<I>jam asma &#8216; al-</I> &#8216;<I>Arab</I>. Muscat, 1991.</P>
+<P>Idris, Hady Roger. <I>La Berberie orientale sous les Zirides, Xe-XIIe siecles</I>. Paris, 1962.</P>
+<P>&#8212; &#8212; &#8216;Contribution a l &#8216;histoire de l &#8216;Ifrikiya. Tableau litteraire de la vie intellectuelle et administrative a Kairouan sous les Aglabites et les Fatimites (4 premiers siecle de l &#8216;Hegire), d &#8216;apres le Riyad En nufus de Abu Bakr El Maliki &#8216;, <I>Revue des etudes islamiques</I>, 9 (1935), pp. 105&#8211;178, 273&#8211;305; 10 (1936), pp. 45&#8211;104.</P>
+<P>&#8212; &#8212; &#8216;Glanes sur les Zirides d &#8216;Ifriqiya dans le manuscrit d &#8216;Istanbul de l &#8216;<I>Itti</I> &#8216;<I>az al-hunafa</I> &#8217;, <I>Arabica</I>, 11 (1964), pp. 286&#8211;305.<I></I></P>
+<P>Idris &#8216;Imad al-Din al-Qurashi. &#8216;<I>Uyun al-akhbar wa-funun al-athar fi fada</I> &#8216;<I>il al-a</I> &#8216;<I>imma al-athar</I>, vols. 4&#8211;6 ed. Mustafa Ghalib. Beirut, 1973&#8211;1984; vol.<I> </I>5 and part of vol. 6, ed. Muhammad al-Ya&#8216;lawi as <I>Ta&#8216;rikh al-khulafa al- Fatimiyyin bi-al-Maghrib: al-qism al-khass min kitab </I>&#8216;<I>Uyun al-akhbar</I>.<I> </I>Beirut, 1985.<I></I></P>
+<P>al-Idrisi, Abu &#8216;Abd Allah Muhammad. <I>Kitab Nuzhat al-mushtaq fi ikhtiraq al-afaq</I>, ed. and tr. R. Dozy and M. J. de Goeje as <I>Sifat al-Maghrib wa-ard al-Sudan wa-Misr wa-al-Andalus ma</I> &#8216;<I>khudh min Kitab Nuzhat al-mushtaq fi ikhtiraq al-afaq = Description de l &#8216;Afrique et de l &#8216;Espagne par Edrisi</I>. Leiden, 1986.<I></I></P>
+<P>Ivanow, Wladimir. &#8216;The Organisation of the Fatimid Propaganda&#8217;, <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>, new series, 15 (1939),<I> </I>pp. 1&#8211;35.<I></I></P>
+<P>&#8212; &#8212; &#8216;Ismailis and Qarmatians&#8217;, <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>, new series, 16 (1940), pp. 43&#8211;85.<I></I></P>
+<P>&#8212; &#8212;<I>Ismaili Tradition Concerning the Rise of the Fatimids</I>. London, etc., 1942.</P>
+<P>&#8212; &#8212;<I>Ismaili Literature: A Bibliographical Survey</I>. Tehran, 1963. </P>
+<P>&#8216;Iyad, al-Qadi Abu al-Fadl. <I>Tartib al-madarik wa-taqrib al-masalik li ma</I>&#8216;<I>rifat a</I>&#8216;<I>lam madhhab Malik</I>, selections ed. Muhammad al-Talibi as <I>Tarajim Aghlabiyya mustakhraja min Madarik al-Qadi </I>&#8216;<I>Iyad</I>. Tunis, 1968.</P>
+<P>Ja&#8216;far b. Mansur al-Yaman. <I>Asrar al-nutaqa &#8216;</I>, ed. Mustafa Ghalib as <I>Sara</I>&#8216;<I>ir wa-asrar al-nutaqa&#8217;</I>. Beirut, 1404/1984.<I></I></P>
+<P>&#8212; &#8212;<I>Kitab al- &#8216;alim wa-al-ghulam</I>, ed. and tr. James W. Morris as <I><A href="view_articlecc29.html?type=cont.currentlang&amp;id=100659">The Master and the Disciple: An Early Islamic Spiritual Dialogue</A></I>. London, 2001.<I></I></P>
+<P>al-Jawdhari, Abu &#8216;Ali Mansur al- &#8216;Azizi. <I>Sirat al-Ustadh Jawdhar</I>, ed. Muhammad Kamil Husayn and Muhammad &#8216;Abdal-Hadi Sha&#8216;ira. Cairo, 1954. French tr. M. Canard, <I>Vie de l &#8216;Ustadh Jawdhar</I>. Algiers, 1958.</P>
+<P><A href="view_personacab.html?type=auth&amp;id=5">Jiwa, Shainool</A>. &#8216;<A href="view_article240c.html?type=cont.currentlang&amp;id=101310">The Initial Destination of the Fatimid Caliphate: the Yemen or the Maghrib</A>?&#8217; <I>British Society for Middle Eastern Studies Bulletin</I>, 13 (1986), pp. 15&#8211;26.</P>
+<P>Joly, Ch. Al. &#8216;Thubursicum Numidarum (Khemissa) &#8217;, <I>Recueils des notices et memoires de la Societe archeologique du Departement de Constantine</I>,<I> </I>39 (1906), pp. 165&#8211;192.<I></I></P>
+<P>Kay, Henry Cassels, ed. and tr. <I>Yaman: Its Early Mediaeval History: also the abridged history of its dynasties, and an account of the Karmathians of Yaman</I>. London, 1892.<I></I></P>
+<P>Kazimirski, Albin de Biberstein. <I>Dictionnaire arabe-francais</I>. Cairo, 1875.</P>
+<P>Kennedy, Hugh. ed. <I>An Historical Atlas of Islam</I>. 2nd rev. ed., Leiden, 2002.</P>
+<P>Khuri, Yusuf Q. <I>al-Makhtutat al-</I> &#8216;<I>Arabiyya al-mawjuda fi Maktabat al-Jami</I> &#8216;<I>a al-Amrikiyya fi Bayrut</I>. Beirut, 1985.<I></I></P>
+<P>al-Khushani, Abu &#8216;Abd Allah Muhammad b. Harith b. Asad. <I>Qudat Qurtuba wa-</I> &#8216;<I>Ulama&#8217; Ifriqiya</I>, ed. &#8216;Izzat al- &#8216;Attar al-Husayni. [Cairo-Baghdad],<I> </I>1372/[1953].<I></I></P>
+<P>al-Kindi, Muhammad b. Yusuf. <I>Wulat Misr</I>, ed. Husayn Nassar. Beirut, 1379/1959.</P>
+<P>Kuthayyir &#8216;Azza. <I>Diwan Kuthayyir</I> &#8216;<I>Azza</I>, ed. Ihsan &#8216;Abbas. Beirut, 1391/1971.</P>
+<P>Lane, Edward William. <I>Arabic-English Lexicon</I>. London, 1863&#8211;1893.</P>
+<P>Lavoix, Henri. <I>Catalogue des monnaies musulmanes de la Bibliotheque nationale</I>. Paris, 1887&#8211;1896: [1] <I>Khalifes orientaux</I>, 1887, [2] <I>Espagne et Afrique</I>, 1891, [3] <I>Egypte et Syrie</I>, 1896.</P>
+<P>Le Tourneau, Roger, &#8216;La revolte d &#8216;Abu Yazid au Xme siecle &#8216;, <I>Les cahiers de Tunisie</I>, 1 (1953), pp. 103&#8211;125.<I></I></P>
+<P>Levi-Provencal, Evariste. <I>Histoire de l &#8216;Espagne musulmane</I>. Paris, 1950&#8211; 1953.</P>
+<P>Lezine, Alexandre. <I>Mahdiya: recherches d &#8216;archeologie islamique</I>. [Paris], 1965.</P>
+<P>&#8212; &#8212;<I>Le ribat de Sousse: suivi de notes sur le ribat de Monastir</I>. Tunis, 1956.</P>
+<P>Lindsay, James E. &#8216;Kitab Iftitah al-da &#8216;wa by al-Qadi al-Nu &#8216;man: Section II, Chapters VIII and IX &#8216;, <I>Al-</I> &#8216;<I>Arabiyya</I>, 22 (1989), pp. 157&#8211;168.</P>
+<P>&#8212; &#8212;&#8216;Prophetic Parallels in Abu &#8216;Abd Allah al-Shi&#8216;i&#8217;s Mission among the Kutama Berbers, 893&#8211;910&#8217;, <I>International Journal of Middle East Studies</I>, 24 (1992), pp. 39&#8211;56.</P>
+<P>Luqbal, Musa. <I>Dawr Kutama fi tarikh al-khilafa al-Fatimiyya mundh ta</I> &#8217;<I>sisiha ila muntasaf al-qarn al-khamis al-hijri (11m)</I>. Algiers, 1979.<I></I></P>
+<P>Madelung, Wilferd. &#8216;The Religious Policy of the Fatimids toward their Sunni Subjects in the Maghrib&#8217;, in M. Barrucand, ed., <I>L &#8216;Egypte fatimide, son art</I> <I>et son histoire</I>. Paris, 1999, pp. 97&#8211;104.</P>
+<P>&#8212; &#8212;&#8216;Some Notes on Non-Isma&#8216;ili Shiism in the Maghrib&#8217;, <I>Studia Islamica</I>, 44 (1976), pp. 87&#8211;97.</P>
+<P>&#8212; &#8212;&#8216;The Sufyani between Tradition and History&#8217;, <I>Studia Islamica</I>, 63 (1986), pp. 5&#8211;48.</P>
+<P>&#8212; &#8212;&#8216; &#8216;al-Mahdi&#8217;, <I>EI</I>, vol. 5, pp. 1230&#8211;1238. </P>
+<P>&#8212; &#8212; &#8216; &#8216;Mansur al-Yaman&#8217;, <I>EI</I>, vol. 6, pp. 438&#8211;439.</P>
+<P>Maitrot, Albert Charles. &#8216;Theveste. Etude militaire d&#8217;une cite romano-byzantine, 70 a 705&#8217;, <I>Recueils des notices et memoires de la Societe archeologique</I> <I>du Departement de Constantine</I>, 45 (1912), pp. 37&#8211;263.</P>
+<P>al-Majdu&#8217;, Isma &#8216;il b. &#8216;Abdal-Rasul. <I>Fahrasat al-kutub wa-al-rasa&#8217;il</I>, ed. Alinaqi Monzavi. Tehran, 1966.</P>
+<P>al-Maliki, Abu Bakr &#8216;Abd Allah b. Muhammad. <I>Kitab Riyad al-nufus fi tabaqat </I>&#8216;<I>ulama&#8217; al-Qayrawan wa-Ifriqiya</I>, ed. Bashir al-Bakkush, rev.<I> </I>Muhammad al- &#8216;Arusi al-Matwi. 2nd ed., Beirut, 1414/1994.<I></I></P>
+<P>al-Maqrizi, Taqi al-Din Abu al-&#8216;Abbas Ahmad b. &#8216;Ali. <I>Itti</I> &#8216;<I>az al-hunafa biakhbar al-aimma al-Fatimiyyin al-khulafa</I>, ed. J. al-Shayyal and M. H.<I> </I>M. Ahmad, Cairo, 1967&#8211;1973.<I></I></P>
+<P>&#8212; &#8212;<I>Kitab al-Muqaffa al-kabir (tarajim Maghribiyya wa-sharqiyya min al-fatra al-</I> &#8216;<I>Ubaydiyya)</I>, ed. Muhammad al-Ya&#8216;lawi. Beirut, 1407/1987.<I> </I>Biography of al-Mahdi tr. E. Fagnan as &#8216;Traduction de la biographie<I> </I>d&#8217; &#8216;Obeyd Allah contenue dans le &#171; Mokaffa &#187; de Makrizi&#8217;, in <I>Centenario della nascita di Michele Amari</I>. Palermo, 1910, vol. 2, pp. 35&#8211;85.<I></I></P>
+<P>Marcais, Georges. <I>L &#8216;architecture musulmane d &#8216;Occident: Tunisie, Algerie, Maroc, Espagne et Sicile</I>. Paris, 1954.<I></I></P>
+<P>Marcais, Georges. <I>La Berberie musulmane et l &#8216;Orient au Moyen Age</I>. Paris, 1946.</P>
+<P>al-Maydani, Abu al-Fadl Ahmad b. Muhammad b. Ahmad b. Ibrahim al-Naysaburi. <I>Majma &#8216; al-amthal</I>, ed. Muhammad Muhyi al-Din &#8216;Abd al-Hamid. Cairo, 1374/1955.</P>
+<P>Mones, Hussain. &#8216;Le malekisme et l &#8216;echec des Fatimides en Ifriqiya&#8217;, in <I>Etudes d &#8216;orientalisme dediees a la memoire de Levi-Provencal</I>. Paris, 1962, vol.<I> </I>1, pp. 197&#8211;220.<I></I></P>
+<P>Muslim b. al-Hajjaj al-Qushayri al-Nisaburi, Abu al-Husayn. <I>Sahih Muslim</I>, ed. Muhammad Fu &#8216;ad &#8216;Abd al-Baqi. [Cairo], 1374&#8211;1375/1955&#8211;1956. English tr. &#8216;Abdul Hamid Siddiqi. Lahore, 1976.</P>
+<P>Nagel, Tilman. <I>Fruhe Ismailiya und Fatimiden im Lichte der Risalat Iftitah ad-da</I>&#8216;<I>wa: eine religionsgeschichtliche Studie</I>. Bonn, 1972.<I></I></P>
+<P><A href="../www.iis.ac.uk/view_persone2be.html?type=auth&amp;id=19">Nanji, Azim</A>. &#8216;An Isma &#8216;ili Theory of <I>Walayah </I>in the <I>Da</I> &#8216;<I>a</I> &#8216;<I>im al-Islam </I>of Qadi al-Nu &#8216;man&#8217;, in <I>Essays on Islamic Civilisation Presented to Niyazi Berkes</I>, ed. D. P. Little. Leiden, 1976, pp. 260&#8211;273.</P>
+<P>al-Naysaburi, Ahmad b. Ibrahim. <I>Istitar al-imam</I>, ed. W. Ivanow, in <I>Bulletin of the Faculty of Arts</I>, University of Egypt, vol. 4 (1936), pp. 93&#8211;107.<I> </I>English tr. W. Ivanow, in his <I>Ismaili Tradition Concerning the Rise of the Fatimids</I>, pp. 157&#8211;183.<I></I></P>
+<P>Noth, Albrecht. <I>The Early Arabic Historical Tradition: A Source-critical Study</I>. 2nd ed., tr. M. Bonner. Princeton, 1994.</P>
+<P>al-Nuwayri, Shihab al-Din Ahmad b. &#8216;Abdal-Wahhab. <I>Nihayat al-arab fi funun al-adab</I>, vol. 24, ed. Husayn Nassar. Cairo, 1403/1983; selections<I> </I>ed. Mustafa Abu Dayf Ahmad as <I>Nihayat al-arab fi funun al-adab: al-dawla al-Fatimiyya bi-bilad al-Maghrib (296&#8211;361h/909&#8211;972m)</I>. Casablanca,<I> </I>1408/1988. Partial French tr. W. Mac Guckin de Slane: <I>Histoire des Ber&#232;res et les dynasties musulmanes de l &#8216;Afrique septentrionale</I>. Paris,<I> </I>1978.<I></I></P>
+<P>Pellegrin, Arthur. <I>Essai sur les noms de lieux d &#8216;Algerie et de Tunisie: etymologie, signification</I>. Tunis, 1949.<I></I></P>
+<P>Poonawala, Ismail K. <I>Biobibliography of Isma&#8216;ili Literature</I>. Malibu, Calif., 1977.</P>
+<P>&#8212; &#8212;&#8216;Al-Qadi al-Nu&#8216;man and Isma &#8216;ili Jurisprudence&#8217;, in F. Daftary, ed., <I>Mediaeval Isma&#8216;ili History and Thought</I>. Cambridge, 1996, pp. 11 7&#8211;143.<I></I></P>
+<P>&#8212;&#8212;&#8216;The Beginnings of the Ismaili <I>Da</I>&#8216;<I>wa </I>and the Establishment of the Fatimid Dynasty as Commemorated by al-Qadi al- Nu&#8216;man&#8217;, in Farhad Daftary and <U><A href="view_personfc9b.html?type=auth&amp;id=10">Josef W. Meri</A></U>, ed., <A href="view_article5c1e.html?type=cont.currentlang&amp;id=100567"><I><U>Culture and Memory in Medieval Islam:</U></I><U> <I>Essays in Honour of Wilferd Madelung</I></U></A>. London, 2003, pp. 338&#8211;363.</P>
+<P>al-Qadi al- Nu&#8216;man b. Muhammad, Abu Hanifa. <I>Da&#8216;a&#8217;im al-islam</I>, ed. A. A. A. Fyzee. Cairo, 1951&#8211;1960, English tr. A. A. A. Fyzee, rev. I. K. Poonawala, <I>The Pillars of Islam</I>. New Delhi, 2002&#8211;2004.</P>
+<P>&#8212; &#8212;<I>Kitab al-Himma fi adab atba</I>&#8216;<I> al-a</I>&#8217;<I>imma</I>, ed. Muhammad Kamil Husayn. Cairo, [1948].</P>
+<P>&#8212; &#8212;<I>Iftitah al-da</I>&#8216;<I>wa</I>, ed. Wadad al-Qadi. Beirut, 1970; ed. F. Dachraoui. Tunis, 1975.</P>
+<P>&#8212; &#8212;<I>al-Majalis wa-al-musayarat</I>, ed. al-Habib al-Faqi et al. Tunis, 1978.</P>
+<P>&#8212; &#8212;<I>Sharh al-akhbar fi fada&#8217;il al-a&#8217;imma al-athar</I>, ed. al-Sayyid Muhammad al-Husayni al-Jalali. Qumm, n.d.</P>
+<P>&#8212; &#8212;<I>al-Urjuza al-mukhtara</I>, ed. Ismail K. Poonawala. Montreal, 1970.</P>
+<P>al-Qurtubi, Abu &#8216;Abd Allah Muhammad b. Ahmad. <I>al-Jami&#8216; li-ahkam al qur&#8217;an</I>. Beirut, [1952]-1967.<I></I></P>
+<P>Rechberger, Herman. <I>The Rhythm in Arabian Music</I>. Helsinki, 2004.</P>
+<P>Reinach, Salomon. <I>Atlas de la province romaine d &#8216;Afrique, pour servir a l &#8216;ouvrage de M. Ch. </I><I>Tissot</I>. Paris, 1888.<I></I></P>
+<P>Sachedina, Abdulaziz A. <I>Islamic Messianism: The Idea of Mahdi in Twelver Shi&#8216;ism</I>. Albany, 1981.<I></I></P>
+<P>al-Safadi, Salah al-Din Khalil b. Aybak. <I>al-Wafi bi-al-wafayat</I>, vol. 15 ed. B. Radtke, Wiesbaden, 1979. </P>
+<P>Salama, Pierre. <I>Les voies romaines de l &#8216;Afrique du Nord</I>. Algiers, 1951.</P>
+<P>al-Samhudi, Ali b. &#8216;Abd Allah, <I>Wafa&#8217; al-wafa bi-akhbar Dar al-Mustafa</I>, ed. Qasim al-Samarra<I>&#8217;</I>i. London, 2001.</P>
+<P>Smoor, Pieter. &#8216;Al-Mahdi &#8216;s Tears: Impressions of Fatimid Court Poetry&#8217;, in U. Vermeulen and D. de Smet eds<I>, Egypt and Syria in the Fatimid, Ayyubid</I> <I>and Mamluk Eras II. Proceedings of the 4th, and 5th International Colloquium</I> <I>organized at the Katholieke Universiteit Leuven in May 1995 and</I> <I>1996</I>. Leuven, 1998, pp.132&#8211;162.</P>
+<P>Stern, Samuel M. &#8216;Isma &#8216;ili propaganda and Fatimid rule in Sind&#8217;, <I>Islamic Culture</I>, 23 (1949), pp. 298&#8211;307, reprinted in his <I>Studies in Early Isma&#8216;ilism</I>, pp. 177&#8211;188.</P>
+<P>&#8212; &#8212;&#8216;An Embassy of the Byzantine Emperor to the Fatimid Caliph al-Mu &#8216;izz&#8217;, <I>Byzantion</I>, 20 (1950), pp. 239&#8211;258.</P>
+<P>&#8212; &#8212;&#8216;Three North-African Topographical Notes (Islamic-Roman)&#8217;, <I>Arabica</I>, 1 (1954), pp. 343&#8211;345.</P>
+<P>&#8212; &#8212;&#8216;Abu &#8216;Abd Allah al-Shi&#8216;i &#8217;, <I>EI</I>, vol. 1, pp. 103&#8211;104.</P>
+<P>&#8212; &#8212;&#8216;Abu Yazid al-Nukkari&#8217;, <I>EI</I>, vol. 1, pp. 163&#8211;164.</P>
+<P>&#8212; &#8212;<I>Studies in Early Isma&#8216;ilism</I>. Jerusalem-Leiden, 1983.</P>
+<P>al-Suli, Abu Bakr Muhammad b. Yahya, <I>Akhbar Abi Tammam</I>, ed. Muhammad <I>&#8216;</I>Abduh <I>&#8216;</I>Azzam et al. 3rd ed., Beirut, 1400/1980.</P>
+<P>Talbi, Mohamed. <I>L &#8216;emirat aghlabide 184&#8211;296/800&#8211;909, histoire politique</I>. Paris, 1966.</P>
+<P>al-Tijani, &#8216;Abd Allah b. Muhammad. <I>Rihlat al-Tijani</I>, ed. Hasan Husni &#8216;Abdal-Wahhab. Tunis, 1378/1958.</P>
+<P>Tissot, Charles Joseph. <I>Geographie comparee de la province romaine d &#8216;Afrique</I>. Paris, 1884&#8211;1888.</P>
+<P>van Arendonk, Cornelis. <I>Les debuts de l &#8216;imamat zaidite au Yemen</I>, tr. J. Ryckmans. Leiden, 1960.</P>
+<P>Vonderheyden, Madeleine. <I>La Berberie orientale sous la dynastie de Benou &#8216;l- Arlab 800&#8211;909</I>. Paris, 1927.<I></I></P>
+<P>al-Waqidi, Muhammad b. &#8216;Umar. <I>Kitab al-Maghazi</I>, ed. M. Jones. London, 1966.</P>
+<P>al-Warjalani, Abu Zakariya Yahya b. Abi Bakr. <I>Kitab Siyar al-a&#8217;imma waakhbarihim</I>, ed. Isma&#8216;il al-&#8216;Arabi. Algiers, 1399/1979.</P>
+<P>Yahya b. Sa&#8216;id al-Antaki. <I>Ta&#8216;rikh al-Dhayl</I>, ed. and French tr. I. Kratchkovsky and A. Vasiliev as <I>Histoire de Yahya-ibn-Sa&#8216;id d&#8216;Antioche: continuateur</I> <I>de Sa&#8216;id -ibn-Bitriq </I>in <I>Patrologia Orientalis</I>, 18 (1924), pp. 705&#8211;833; 23 (1932), pp. 349&#8211;520.</P>
+<P>al-Ya&#8216;lawi, Muhammad. <I>al-Adab bi-Ifriqiya fi al-</I><I>&#8216;</I><I>ahd al-Fatimi, (296&#8211;365 h) = La litterature en Ifriqiya sous les Fatimides (296&#8211;365/909&#8211;976</I>). Beirut,<I> </I>1986.<I></I></P>
+<P>al-Yamani, Muhammad b. Muhammad. &#8220;Sirat al-Hajib Ja &#8216;far b. &#8216;Ali&#8221; , ed. W. Ivanow, in <I>Bulletin of the Faculty of Arts</I>, University of Egypt, vol. 4 (1936), pp. 107&#8211;133. English tr. W. Ivanow in his <I>Ismaili Tradition Concerning</I> <I>the Rise of the Fatimids</I>, pp. 184&#8211;223.</P>
+<P>al-Ya&#8216;qubi, Ahmad b. Abi Ya&#8216;qub. <I>Kitab al-Buldan</I>, ed. A. W. T. Juynboll, Leiden, 1861. French tr. G. Wiet. <I>Les pays</I>. Cairo, 1937.</P>
+<P>Yaqut b. &#8216;Abd Allah al-Hamawi al-Rumi al-Baghdadi, Shihab al-Din Abu &#8216;Abd Allah. <I>Mu</I><I>&#8216;jam al-buldan</I>. Beirut, 1374&#8211;1376/1955&#8211;1957.</P>
+<P>al-Zirikli, Khayr al-Din. <I>al-A&#8216;lam: qamus tarajim li-ashhar al-rijal wa-al-nisa&#8217; min al-</I><I>&#8216;arab wa-al-musta&#8216;ribin wa-al-mustashriqin</I>. 10th ed., Beirut,<I> </I>1992.<I></I></P></div><p>Content Date: November 2006</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Founding the Fatimid State: The Rise of an Early Islamic Empire</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 14 Nov 2016 11:35:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 28/05/2010&nbsp;17:19&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=106677 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:47:59 GMT -->
+</HTML>

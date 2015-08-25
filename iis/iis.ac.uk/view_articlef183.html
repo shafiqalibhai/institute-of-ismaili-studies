@@ -1,0 +1,738 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110192 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:09:57 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 110192;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="779" class="banner" alt="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" src="WebAssets/Site_Images/header/Research%20And%20Publications.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Research%20And%20Publications.jpg','WebAssets/Site_Images/header/ResearchandPublication_2.jpg');
+				var descriptions = new Array('An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat','The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyec2e.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D110192">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>The Dilemma of Islam as School Knowledge in Muslim Education</strong><br/><strong><DIV><A href="view_personfa63.html?type=authors&amp;id=187">Dr Shiraz  Thobani </A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an electronic version of an article that was originally published in <I>Asia Pacific Journal of Education</I> (2007), vol. 27 no.1, March 2007, pp. 11-25. Copyright Informa; Asia Pacific Journal of Education is available online at <A href="http://www.informaworld.com/smpp/content~content=a773303039~db=all~order=page">http://www.informaworld.com/</A> </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><DIV>In the contemporary period, the persistence of the dual system of state and <I>madrasa</I> education in many&nbsp;Muslim countries has raised for policymakers the dilemma of what form Islam ought to assume as a pedagogic category in these contexts. At one extreme, in the syllabi of traditionalist <I>madrasa</I>s, we find Islam being deployed as an overarching epistemological framework within which all other forms of knowledge are subsumed. At the other end, predominantly in state and private schools, Islam is presented as one discipline among a range of others. Between these two extremes lie other modes that approach Islam from interdisciplinary or ancillary perspectives. This paper proposes to examine, using constructs from the sociology of the curriculum, the political and epistemological implications of the integrative and disciplinary modes of pedagogic Islam pertaining to contrasting Muslim contexts where tensions between these two forms of education have given rise to polarised discourses on the curriculum in the post-colonial period. The enquiry will attempt to draw inferences from this analysis on the relationship between the political project of the modern Muslim nation-state, discursive posturings by competing interests, and epistemological forms of Islam as school knowledge, leading to considerations of curricular reform that can assign a progressive role to Islam in the education of young Muslims.</DIV></div><div> </div><div><P><B>Key words</B></P>
+<P><B></B></P>
+<DIV><I>Madrasa</I>s,<I> <U><A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">hadith</A></U></I>,<I> <A href="javascript:void(LaunchGlossary('GlossaryItema7d6.html?type=glossary&amp;id=357'))">sira</A></I>, <I>usul al-din</I> (principles of the faith),<I> akhlaq</I>,<I> maktab</I>s,<I> <U><A href="javascript:void(LaunchGlossary('GlossaryItem6cad.html?type=glossary&amp;id=267'))">fiqh</A></U></I> (jurisprudence),<I> kalam</I> (theology), Islamisation,<I> <A href="javascript:void(LaunchGlossary('GlossaryItemaafd.html?type=glossary&amp;id=361'))">ribat</A></I><A href="javascript:void(LaunchGlossary('GlossaryItemaafd.html?type=glossary&amp;id=361'))">s</A> (monastic colleges),<I> <U><A href="javascript:void(LaunchGlossary('GlossaryItem16dc.html?type=glossary&amp;id=289'))">Dar al-Ilm</A></U></I>,<I> <U><A href="javascript:void(LaunchGlossary('GlossaryItemc4a7.html?type=glossary&amp;id=347'))">adab</A></U></I>,<I> <U><A href="javascript:void(LaunchGlossary('GlossaryItem0f2a.html?type=glossary&amp;id=58'))">ulama</A></U></I>,<I> tafsir</I>.</DIV>
+<DIV><B>
+<P><IMG border=0 hspace=5 src="WebAssets/site_images/images/pdf_icon.gif" width=25 height=25><A href="SiteAssets/pdf/The%20Dilemma%20of%20Islam%20as%20School%20Knowledge%20in%20Muslim%20Education.pdf">Download PDF version of article (86.3 KB)</A></P></B></DIV>
+<P><STRONG>Table of contents</STRONG></P>
+<UL>
+<LI><A href="#Intro">Introduction</A> 
+<LI><A href="#Dilemma">The Dilemma</A> 
+<LI><A href="#Historical">The Historical Case</A> 
+<LI><A href="#Contem.">The Contemporary Situation</A> 
+<LI><A href="#Educ.">The Educational Argument</A> 
+<LI><A href="#Conc.">Conclusion</A> </LI></UL>
+<DIV><B><A name=Intro>Introduction</A></B></DIV>
+<P><B></B></P>
+<P>In recent years, Islam as school knowledge has been increasingly perceived as a problematic category in education, in both Muslim and non-Muslim contexts.[<A href="#1">1</A>] Terrorist incidents globally have provoked searching questions on the ends and substance of Muslim education, foregrounding the role of Islam in shaping Muslim attitudes towards the &#8220;other&#8221;. Although the espousal of militant extremism has been viewed as limited to a small minority of <I>madrasa</I>s in &#8220;remote outposts&#8221;, the threat of it spreading to other areas has prompted Muslim politicians to give serious consideration to the implications arising from the specific modes of Islam being promulgated in their national contexts.</P>
+<P>While the debate on Islam in Muslim education is complex, to say the least, and shaped by multiple forces, two viewpoints in particular have served to crystallise prescriptive discourses on this issue. On the one hand, neo-revivalists and Islamists [<A href="#2">2</A>] have demanded the imposition of Islam as an overarching epistemological framework in the school curriculum that incorporates and regulates all other forms of knowledge (Ashraf, 1985; Husain &amp; Ashraf, 1979). From an oppositional standpoint, modernists and secularists argue for its scope of influence to be regulated, preferring to see it contained as a bounded subject alongside other disciplines. [<A href="#3">3</A>]</P>
+<P>This polarising conflict frames in stark terms the question of the approach to Islam in the education of Muslims: ought it to be the sole reference point that defines the entirety of what constitutes education for a Muslim, or ought it to be one court of appeal among others in educational decision making? This crucial dilemma has been addressed in diverse ways in Muslim contexts, depending on factors such as the status accorded to Islam in national policies, the nature and degree of political activism exercised by Muslim movements, and historical and socio-cultural forces that have shaped the particular complexion of educational institutions in given settings (Daun &amp; Walford, 2004; Rahman, 1982; Roald, 1994). </P>
+<P>Given the range of responses, many of them arising from contemporary social exigencies and political pressures, much confusion persists over the approach to be adopted towards Islam in the curriculum. Neither the containment nor the expansion of Islam in Muslim education by policymakers has been free of ramifications, exposing an aporia to which there appears to be no easy resolution. The edifying vision of Islam, if curtailed in educational terms, risks being deprived of its spiritual and moral bearing that has served as an orienting inspiration for Muslim societies for centuries; given free rein institutionally, it is open to being misappropriated by extremist elements to pursue their own ideological ends.</P>
+<P>It has been all too tempting in the present circumstances for educators to lean one way or the other in a bid to resolve the crisis, without adequate reflection on the implications arising from each choice. What has long been required, although this proposal may appear impractical under current conditions, are fresh appraisals and reflexive critiques directed at the tangled mass of theories, policies, and practices that abound today so as to arrive at reasoned and justifiable courses of action to be adopted in Muslim education. Recognising the complexities involved, this form of analysis is inevitably a long-term endeavour that warrants iterative research, deliberation, and debate. One pressing issue which calls for considered attention, and which provides the impetus for this study, is the make-up of the curriculum in Muslim countries. [<A href="#4">4</A>]</P>
+<P>In the context of the enquiry undertaken here, the curriculum is understood as an epistemological field demarcated and structured for pedagogical purposes and given functional expression by educational institutions and practitioners. More broadly, it can be viewed as a pedagogic discourse, process, or mechanism by which knowledge becomes culturally selected and socially validated.[<A href="#5">5</A>] The analysis of the curriculum invites examination as a &#8220;text&#8221; with a historical trajectory, and as a contested field in which forms of knowledge vie for legitimacy and canonicity, revealing which disciplines are privileged or subordinated, integrated or isolated, ascendant or on the wane, thus exposing political and epistemological preferences at work in a given system of education (Apple, 1979; Bernstein, 1990). Curriculum analysis from the perspective of social epistemology entails scrutinising school knowledge as a site of social interests and conflicts that also reciprocally conditions societal relations and outlooks (Popkewitz, 1987).</P>
+<P>The curricular space in Muslim contexts, as in other societies, has not been free historically of social conflicts, being exposed to political, religious, and cultural forces that have contoured its topography. The curriculum in Muslim societies presents itself as an intensely contested field which has undergone fundamental shifts and transformations in Muslim history, both in the remote and recent past (Makdisi, 1981; Rahman, 1982). For any reformative strategy to be effective, it is necessary to have a grasp of the historical tendencies operating on the curriculum in Muslim education, and how constructions of the past feed into contemporary discourses of contending groups. In this paper, I analyse the problematic of Islam in the school curriculum from historical, political, and epistemological perspectives, drawing broadly from the conceptual repertoire of the sociology of the curriculum (Bernstein, 1990; Bourdieu &amp; Passeron, 1977).[<A href="#6">6</A>] In particular, I attend to the implications raised by Islamists and secularists through their counterpoising claims on the curriculum, and the nature of the dilemma faced in teaching Islam to Muslims today in national contexts where &#8220;traditional&#8221; and &#8220;modern&#8221; forms of knowledge have come to be viewed in dichotomous and reified terms. While attempts have been made to overcome this dichotomy in a variety of contexts, through the incorporation of subjects such as science, mathematics, and languages in the curricula of &#8216;reformed&#8217; <I>madrasa</I>s for instance, a polarised discourse persists at the level of the ideologues whose underlying motives need to be explicated. More specifically, this discourse needs to be interrogated for its bipolar ideology that casts the &#8220;traditional&#8221; and the &#8220;modern&#8221; as essentially static, absolute, and ultimately irreconcilable categories, oblivious to the ongoing creation, expression, and realisation of redefined modernities by contemporary Islamic traditions and movements. </P>
+<P>It needs to be stressed here that this paper is a preliminary contribution to a topic that requires further research, the analysis being confined to illustrative Muslim contexts, primarily in the Middle East and selected parts of Asia.[<A href="#7">7</A>] As such, the conclusions drawn in the article need to be corroborated by the findings of emergent studies on Muslim education that are beginning to attend to curricular issues (see e.g. Fortna, 2002; Hashim, 1996; Menashri, 1992; Roald, 1994; Starrett, 1998). </P>
+<P><B><A name=Dilemma>The Dilemma</A> </B></P>
+<P>The subject of Islam forms an important component of the curriculum of state and private schools in Muslim countries, being taught under a variety of headings such as <I>al-tarbiyya al-islamiyya</I> (Islamic Education), <I>Islamiyyat</I>, Islamic Studies, or <I>talimat-e dini</I> (Religious Instruction). It may be accompanied by ancillary or cognate subjects centred on the learning of the Qur&#8217;an, the <I><A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">hadith</A></I>, and <A href="javascript:void(LaunchGlossary('GlossaryItema7d6.html?type=glossary&amp;id=357'))"><I>sira</I> </A>(traditions and biography of the Prophet), <I>usul al-din</I> (principles of the faith), and <I>akhlaq</I> (moral precepts), while also finding mention in subjects such as history, social studies, civic education, and languages (Daun &amp; Walford, 2004; Leirvik, 2004; Shamsavary, Saqeb, &amp; Halstead, 1993). In the state schools of some Muslim countries, as much as one-third of the instructional time may be allocated to the teaching of subjects directly related to Islam. Its inclusion in the school curriculum is commonly perceived as a continuation of the religious instruction imparted in Muslim societies in the past through <I>kuttab</I>s or <I>maktab</I>s (elementary or beginners&#8217; schools) and <I>madrasa</I>s (colleges of higher instruction in the religious sciences and Islamic law), in which children and youths were inducted into their faith. Examined from the perspective of Muslim educational history, however, Islam as a bounded subject in the contemporary school curriculum is a departure in significant respects from pre-modern paradigms of Muslim religious education &#8211; in its form, substance, as well as approach. </P>
+<P>The origins of pedagogical Islam as a modern school discipline lie possibly in that wider narrative of the construction of academic subjects that began to compose educational curricula in the 19th and 20th centuries, spurred by the rise of new disciplines in the intellectual field and invested with official status by the project of the modern nation-state (Goodson, 1993; Green, 1997).[<A href="#8">8</A>] The disciplining of Islam into an objectified school-level subject seems to have been an offshoot of the development of Islam as a specialist field of enquiry in institutions of higher education, at first in Europe and then globally, and which came to be known variously as Oriental, Arabic, Middle Eastern, or Islamic Studies.[<A href="#9">9</A>] Orientalism itself can be perceived in part as a social Darwinist attempt at the classification of cultures and their positioning within the epistemological framework that originated in and evolved from Enlightenment thought (Sharpe, 1986). Islam, along with other religious and cultural categories, was rendered into a discipline by being recontextualised and reified as the constructed artifice of &#8220;religion&#8221;, a process that is very much a modern development, as William Cantwell Smith (1978) has argued. </P>
+<P>The formulation of Islam as a circumscribed academic subject represents a crucial turning point in the history of Muslim education, resulting in a significant transformation of the curriculum as an epistemological field. Prior to the modern period, it is difficult to locate, as a norm, a specialised discipline explicitly designated as &#8220;Islam&#8221; in the education of Muslims. What we discover in the classical and post-classical curricula of Muslim educational institutions, instead, are subjects such as <I>tafsir</I> (Qur&#8217;anic exegesis), <I>hadith</I> (traditions of the Prophet), <I><A href="javascript:void(LaunchGlossary('GlossaryItem6cad.html?type=glossary&amp;id=267'))">fiqh</A></I> (jurisprudence), <I>usul</I> <I>al-fiqh</I> (principles of jurisprudence), and <I>kalam</I> (theology), all undoubtedly associated with the faith of Islam and integral to its understanding, but no distinct, unified, and bounded subject known as Islam, whether referred to by that title or its cognate designations (Makdisi, 1981). The introduction of this new subject in the modern school setting points to the endeavours of educators to distil some form of synthesised essence from the historically evolved religious sciences by compacting them into a diluted paradigm of Islamic Studies, in the bid to present the core of the faith through the economy of delineated slots in the school timetable, but in the process of doing so, changing the nature of the pedagogical discourse, if not the theological episteme itself. </P>
+<P>The inclusion of Islam in the state school curriculum reveals one means by which policymakers in modernising Muslim states of the 20th century tried to eliminate the bifurcation of Muslim education created by inherited and imported modes of schooling during the colonial period, a breach which some early Muslim reformers attempted to overcome while as yet under colonial rule. With the exception of the newly formed state of Turkey, which sought to do away with Islam altogether in its educational system in the immediate post-Ottoman phase, other Muslim states adopted strategies to represent the subject in their national curricula in a variety of modes, the space allocated to it mirroring the degree of influence Islam in general was deemed to wield politically (Hashim, 1996; Hoodbhoy, 1998; Starrett, 1998; Szyliowicz, 1973; Tibawi, 1979). </P>
+<P>With the establishment of state and private schools alongside existing and restructured <I>madrasa</I>s, what transpired as a radical reconfiguration of educational institutions in Muslim societies spurred the birth, after intermittent periods of educational change, of an alternative and innovative curricular space. This new epistemological field was composed of a mix of discrete but interlinked disciplines, as had been the case to some degree in pre-modern systems; but in contrast to the curricula of those <I>madrasa</I>s in which the religious sciences predominated, the subjects now included forms of knowledge previously supplemental, marginalised, or excluded, and which came to be labelled as &#8220;secular&#8221; knowledge. While Islam was inserted by policymakers in this framework as an additional discipline, or in some cases as a subset of interrelated disciplines, it was not universally and intentionally deployed in the immediate post-colonial period to act as a uniting and integrating core to which all the other subjects made reference. Rather, it appears to have been conceived as functioning predominantly in its own separate space, intersecting with other subjects such as history, geography, civics, and social studies, but without generally doing away with their disciplinary integrity. The overall philosophy that seems to have informed this pluriform curriculum was that young Muslims should be exposed to a rounded concept of knowledge (Gokalp, 1959; Hussein, 1954; Sadiq, 1931). </P>
+<P>In the consolidating phase of the post-colonial decades, Islam as a pedagogical category in state schools was strategically appropriated as part of the overall drive towards national unity, perceived as a potent means to inculcate, in diverse Muslim constituencies, a common understanding of Islam through state education. Politically, it was one strategy among a range of others through which the ruling elite of nascent Muslim nation-states sought to forge, as a matter of practical expediency, national unity, identity, and consciousness out of divided loyalties in order to check the threat of ethnic and sectarian conflicts. This imperative afforded the state with a justification for presenting Islam in a contained and controlled manner in its official curriculum, while allowing policymakers to claim its presence and representation in state education as answering to the demands of the Muslim public for religious education. National leaders and ministers of education in the first half of the 20th century, in their commitment to realise their reformist projects, actively set out to promote the case for modernising Islamic education in the domain of public schooling (Gokalp, 1959; Hussein, 1954; Rahman, 1953; Sadiq, 1931). In consequence, as Starrett (1998) reveals in his study on educational change in Egypt, school-level Islam became objectified, codified, and functionalised for political and social utility in the phase of rising nationalism. </P>
+<P>In the 1970s, a belated reaction arose among Islamist thinkers that was specifically targeted at the disciplining of Islam into a school subject. Labelling this process as the &#8220;secularisation&#8221; of education, advocates of this view took exception to Islam being contained and relativised in the education of Muslims. If secularisation was the negation of the ideals upheld by the neo-revivalists, its alternative was Islamisation, an ideological perspective given formal expression in a series of conferences on Muslim education organised in the late 1970s and early 1980s (Husain &amp; Ashraf, 1979). In these conferences, the opposition to a mode of instruction for Muslims in which Islam was assigned a restricted and reduced status was vociferously expressed, and the case was promoted for all school subjects to be taught within an integrative framework, making Islam the central point of reference for Muslim education. </P>
+<P>The call for the Islamisation of education represented, in essence, a bid to reinstate Islam as an overarching epistemological frame in the determination and propagation of knowledge. Islamisation was advanced by its proponents as the fundamental means by which the curricular hegemony lost with the modernising of Muslim education could be reclaimed. Advocates of this stance sought, in effect, to force the revaluation of the epistemic legitimacy of school subjects through the redefinition of relations between forms of knowledge. The argument was insistently made that in educating young Muslims, Islam necessarily had to be the principal source of reference, without which Muslim education, to the extent that it fostered &#8220;<I>Muslimness</I>&#8221;, was rendered meaningless, if not nullified altogether. Islam, as an all-encompassing outlook on the totality of life and the sole foundational base that defined and justified all forms of learning, so the Islamists asserted, could not simply be reduced to a subject in the curriculum but ought to constitute the epistemological basis of all subjects to which Muslim children were exposed (Husain &amp; Ashraf, 1979). As an ideological viewpoint, Islamisation committed itself to reversing the perceived secularisation of Muslim education that materialised in the modern period, while also challenging, both frontally and tacitly, the authority of the modern nation-state to educate Muslims, positing in its stead a transnational and homogenising ideal of Islamic education. </P>
+<P>In the last quarter of the 20th century, the totalitarian aspirations of the Islamists gained a degree of political realisation in Muslim states where Islam was adopted as the state ideology. In the case of Pakistan, <I>Islamiyyat</I> was not only imposed as a compulsory subject in the curriculum from the elementary to undergraduate level, but a concerted attempt was made to integrate Islamic content into other subject areas (Hoodbhoy, 1998; Nayyar &amp; Salim, 2002), effectively diluting disciplinary boundaries so as to Islamise the domains of pedagogical knowledge. In Iran, the 1979 revolution led to the extending of the space allocated to Islam in the curriculum, resulting in its permeation into subjects such as history, geography, literature, and economics that had previously been more eclectic in their approach (Godazgar, 2001). These cases reveal interesting relations between the nature of political ideology espoused by modern nation-states, and the types of epistemological boundaries constructed in their educational curricula. </P>
+<P>The questioning of the disciplining of Islam in recent decades has opened up a new frontier of debate in Muslim education, as have political attempts by some Muslim states to Islamise all domains of school knowledge. Deep tensions exist today in various Muslim contexts between the containment and expansion of Islam in the curriculum (Roald, 1994; Starrett, 1998). Exacerbated by the contemporary geopolitical crises and concomitant acts of terrorism, the problematic of Islam in the epistemological space has taken on a sharper edge. Should Islam be treated as a single discipline or an all-encompassing frame of reference in Muslim education? How is the schooling of Muslims to be understood in relation to Islam? Is Muslim education conceivable without Islam, or with circumscribed reference to it? Conversely, what implications are raised for Muslims if the entirety of their education is determined by Islam, howsoever defined? Any attempt to answer these questions by the various stakeholders, which warrants careful deliberation and debate on their part, requires as an initial step a clearer understanding of the curriculum as an epistemological space in Muslim history. </P>
+<P><B><A name=Historical>The Historical Case</A> </B></P>
+<P>Islamisation, while being a modern polemic (Abaza, 2002; Wan Daud, 1998), draws its justification from historical arguments with history being used as a means to legitimise curricular categories and relations through a projection of contemporary desires onto the past. It plays to the advantage of the Islamists to deploy the historical card in order to give credence, validity, and force to their political and pedagogical claims. Modern changes in the curriculum are therefore portrayed as aberrations and deviations, with policymakers being exhorted to return to their historical roots and traditions to repossess a supposed authenticity of Muslim education. The invention of tradition conjures up the impression that the curricular space was a unified field in Muslim history or, if differentiated, that it was entirely determined by an essentialised &#8220;Islam&#8221;. Such claims need to be interrogated through an engagement with historical sources that refer to the classification and positioning of fields of knowledge in Muslim intellectual traditions. </P>
+<P>The argument that the education of Muslims was wholly informed by some form of univocal and monolithic Islam, and that the curricular space in the Muslim past was consensually derived, does not quite stand up to historical evidence (Bakar, 1998; Makdisi, 1981). In the first five centuries of Muslim history, education in Muslim societies became diversified denominationally, institutionally, and epistemologically. Denominational and sectarian diversification from the outset meant that there was no agreement among Muslims on how the Islamic message was to be understood, leading to differences of interpretation between Shi&#8216;as, Kharijis, and Sunnis, not to mention the claims of numerous sects and schools which emerged within the major traditions. At the same time, these differences were given material expression through the development of diverse institutional paradigms which included <I>masjid</I>s and <I>jami</I>s (mosque colleges), <A href="javascript:void(LaunchGlossary('GlossaryItem16dc.html?type=glossary&amp;id=289'))"><I>dar al-ilm</I>s</A> and <I>bayt al-hikma</I>s (academies of knowledge or wisdom), <I>khizana</I>s and <I>maktaba</I>s (libraries), <I>zawiya</I>s and <A href="javascript:void(LaunchGlossary('GlossaryItemaafd.html?type=glossary&amp;id=361'))"><I>ribat</I>s </A>(monastic colleges), <I>mashhad</I>s (shrine colleges), as well as <I>madrasa</I>s. Contrasting forms of curricula, although sharing some common elements, found expression in these institutions to answer to the particular understandings of the Islamic vision which each tradition espoused (Berkey, 1992; Halm, 1997; Makdisi, 1981; Rahman, 1982). </P>
+<P>As Muslim history progressed, different modes of education evolved, depending on whether philosophical, legal, or mystical perspectives were adopted as a matter of emphasis by the divergent traditions of interpretation (Hodgson, 1974). From an epistemological perspective, intellectual developments in Muslim civilisations reveal keen attention to religious, literary, and scientific spheres of interest. The curricular schemes proposed by philosophers such as al-Farabi were based on an eclectic mix of subjects-philosophical, theological, and empirical (Bakar, 1998), and institutions like the Fatimid <I>Dar al-Ilm</I> in 11th-century Cairo took the form of proto-universities that adopted a pansophic approach to knowledge (Halm, 1997), an aspiration also to be discerned in the encyclopaedic endeavours of the Ikhwan al-Safa. In the classical phase of Muslim history, a natural diversification of the curriculum was beginning to &#64258;ower, responding to the changing social and historical circumstances, the specificity of intellectual and cultural contexts, and the particular readings of Islam being upheld. </P>
+<P>The early epistemological space in Muslim education crystallised around the study of the Qur&#8217;an, the awakening interest in linguistic sciences, and the scholarship based on the traditions and biography of the Prophet, including the history of early Islam, a phase closely followed by the development of jurisprudence, theology, and other ancillary subjects such as scholastic logic, rhetoric, and prosody (Hodgson, 1974). The curricular space experienced an initial differentiation and advancement of the religious sciences, but gradually lost its intellectual fecundity with the ascendancy of <I>fiqh</I> (jurisprudence) as a regulatory discipline that sought to curb competing domains of knowledge (Rahman, 1982). </P>
+<P>During the peak of classical creativity, Muslim engagement with philosophy, logic, astronomy, mathematics, medicine, and the empirical sciences intensified, sparked off initially by the discovery and translation of ancient Greek texts. This sphere of enquiry, in contrast to the field of religious knowledge, became categorised as the &#8220;ancient&#8221; or &#8220;foreign&#8221; sciences. With the entry of this domain into the curricular space, the tension between the religious and ancient sciences heightened, eventually culminating in a sharp demarcation between the two areas of knowledge, with a further rift caused by the marginalising of <I><A href="javascript:void(LaunchGlossary('GlossaryItemc4a7.html?type=glossary&amp;id=347'))">adab</A></I> (literary humanism) (Makdisi, 1981, 1990). These major divisions in the classical period led to different emphases and strategies of organising the epistemological space, as is evident when we compare the schemes of al-Farabi, Ibn Sina, Ikhwan al-Safa, al-Ghazali, Ibn Khaldun, and other prominent thinkers (Bakar, 1998; Tibawi, 1979). The philosophers&#8217; classification of the disciplines drew inspiration from Greek sources and employed Aristotelian and neo-Platonic categories. Al-Ghazali and the theologians who followed, on the other hand, applied religious law to define epistemic categories, dichotomising the curriculum into <I>fard</I> &#8216;<I>ayn</I>-what was obligatory for each individual (to learn); and <I>fard</I> <I>kifaya</I>-what obligations (related to the study of specific subjects) could be fulfilled by some on behalf of all (Al-Ghazali, 1962). </P>
+<P>The increasing domination of religious law in the epistemological space of the Sunni legal schools effectively resulted in the marginalisation of philosophy, science, and literature in the majority Muslim tradition (Makdisi, 1981). We thus find in the <I>madrasa</I> education that gained prominence in Muslim history a close link being forged between knowledge and control, an outcome arising directly from the struggle between competing interests over the curriculum. The subsequent history of Muslim education witnessed the privileging of religious sciences by the <I><A href="javascript:void(LaunchGlossary('GlossaryItem0f2a.html?type=glossary&amp;id=58'))">ulama</A></I> (religious scholars), in some degree to safeguard their status in Muslim polity as the guardians of the faith and the <A href="javascript:void(LaunchGlossary('GlossaryItem1d00.html?type=glossary&amp;id=98'))"><I>shari</I><I>&#8216;a</I></A> (Muslim religious and social law), although it needs to be acknowledged here that in several contexts in the modern period, the <I>ulama</I> served as active agents of change and reform (see e.g. Fortna, 2002, and Metcalf, 1982). </P>
+<P><B><A name=Contem.>The Contemporary Situation</A> </B></P>
+<P>The historical hegemony exercised by the <I>ulama</I> over the curricular space was finally challenged in the colonial period through the establishment of a parallel curricular field whose structure was imported largely from Europe (Hashim, 1996; Metcalf, 1982; Szyliowicz, 1973; Tibawi, 1979). In general, religious sciences continued to dominate the syllabi of the traditionalist <I>madrasa</I>s, including restructured ones such as those introduced by the Deoband <I>ulama</I> in the Indian subcontinent in the late nineteenth century (Metcalf, 1982). In contrast, &#8220;secular&#8221; subjects furnished the organising framework for the new curriculum in state and private schools in Muslim societies, into which disciplined Islam was inserted as an additional subject, a move mirrored in the attempts to inject non-religious disciplines in the <I>madrasa</I>s. Despite these measures, the <I>ulama</I> and the politicians struggled to reconcile the parallel systems in critical parts of the Muslim world, leading to the entrenchment of a dual system of education in these areas and sharpening the polarisation between what came to be perceived as the &#8220;traditional&#8221; and the &#8220;modern&#8221; (see e.g. Hashim, 1996; Menashri, 1992; Metcalf, 1982). The <I>madrasa</I> curriculum offered resistance, not in all but many cases, to the incorporation of the new non-religious disciplines, the latter being branded as &#8220;innovations&#8221; that soon became subjected to the politics of suspicion by conservative-minded <I>ulama</I>. </P>
+<P>In the 20th century, the changed political and social conditions provoked reconfigurations in school-level knowledge, transformations that were driven in the main by the elite of the newly liberated Muslim nation-states keen to assert their agendas of social reform. Emergent forms of nationalism dictated diverse modes of education-from secularisation in Turkey (Kazamias, 1966) and modernisation in Egypt (Starrett, 1998) to Islamisation in Pakistan, Iran, and Saudi Arabia (Hoodbhoy, 1998; Menashri, 1992; Tibawi, 1979). The particular types of policies adopted had visible and material consequences for the epistemological status of Islam, manifested in its absence, containment, or expansion in the curriculum. </P>
+<P>In these and other Muslim states, there was a concerted attempt to impose a national ideology on education, with Turkey and Saudi Arabia representing the two extreme poles of the stance expressed towards Islam as a pedagogical subject. Turkey&#8217;s radical policy cast Islam as being antithetical to the project of the modern nation-state, and therefore to be excluded altogether from the state curriculum if national progress was not to be compromised (Kazamias, 1966). In Saudi Arabia, on the other hand, where state and religious interests coalesced into a mutually reinforcing alliance, a contrasting strategy was implemented by co-opting Islam into the national ideology which came to control the curricular content (Tibawi, 1979). Other Muslim states adopted educational policies leaning towards one of these extremes, and with varying degrees of political sway exercised over the presence of Islam in the curriculum (Leirvik, 2004). It would not be amiss here to conclude that, overall, there was a lack of imagination on the part of the modern Muslim nation-state and its elite in the 20th century to create a facilitative curricular space that cultivated a progressive epistemology in all fields of knowledge, including pedagogical Islam. </P>
+<P>This failure of Muslim states to address the educational dilemma explains to a large degree the reactions of neo-revivalist and Islamist movements from the 1970s onwards, who began to promote alternative modes of socialising the young. Islamisation, as one of these alternative ideologies, advocated a transnational approach that was not simply a reversal to the pre-modern <I>madrasa</I> curriculum centred on the &#8220;traditional&#8221; religious sciences. Rather, it was a political attempt at the total institutional and curricular control of education, requiring a radical shift from previous conceptions of Muslim education upheld by the <I>ulama</I> (see e.g. Roald, 1994). In this scheme of things, science and other non-religious subjects were not rejected but subsumed within the overall curriculum in a bid to institute Islam, not as a solitary and detached subject, but as an overarching informing frame, determinative of all other spheres of knowledge. Univocal Islam was perceived as the final and universal criterion of education, the arbiter of what constituted valid knowledge and valid ways of knowing (Husain &amp; Ashraf, 1979). What retained resonances with the past was the attempt by the Islamists to re-impose epistemological hegemony over the curriculum, leading ultimately to the restoration of doctrinaire religion as the dominating influence in the upbringing of the young. </P>
+<P>The policy of the Islamisation of school knowledge advocated by neo-revivalists and Islamists reflects a somewhat coarse polemic, based as it is on an ideological closure of Islam. More sophisticated arguments have since emerged that challenge the current epistemological basis of the modern school curriculum, and which draw their motivating impulses from post-colonialism, cultural studies, liberal feminism, and critical theory. These views question absolute, exclusivist, and essentialised notions of knowledge promoted through contemporary education, and advocate instead fidelity to cultural, situational, and negotiational processes of apprehending the world. </P>
+<P><B><A name=Educ.>The Educational Argument</A> </B></P>
+<P>Given the multiple forces seeking to influence education in Muslim societies today, the question of the nature of curricular space to be created for the emerging generations of Muslims has become increasingly complex. Ought it to be secularised or Islamised? Should it be regulated by the state or Muslim communities? What principles should inform its underlying epistemology? In response to the current crisis, there is a pressing need to modulate political judgements on Muslim education with historical, sociological, and epistemological analyses. Fresh approaches and options have to be identified that take into account the changed circumstances and realities in which Muslims find themselves, and the implications these changes have for the upbringing of their young. Above all, it is essential for Muslims to seek educational principles within the informing spirit of the Islamic vision itself that can break the impasse created by the polarising tendencies of Islamists and secularists, and promote creative ways of conceiving education in Muslim societies in the 21st century. </P>
+<P>That Islam must have a place in the education of young Muslims is upheld as a sine qua non by Muslim communities. Without Islam, Muslims consider themselves deprived of their &#8220;<I>Muslimness</I>&#8221;, for it constitutes their spiritual and moral compass. On these grounds, the absence of Islam in the curriculum raises serious implications for policymakers in Muslim countries, while a nominal presence will not be acceptable to the Muslim public. Muslim societies need to do justice to the teaching of Islam in ways that genuinely foster a deeper understanding of its principles, while at the same time cultivating the intellect of the young and preparing them for plural encounters. </P>
+<P>Approaches to Muslim education are required that draw upon higher ideals of education in Islam, embodied in the original vision of the prophetic message. These ideals have served as the inspirational fount of diverse intellectual traditions that evolved in Muslim societies, and their underlying principles have been expounded over the centuries by inspired thinkers and educators. Among these principles are the pursuit of knowledge-which calls for the unfettered purchasing of wisdom for the good of all; the nurturing of personhood-facilitating the maturation of the individual into a rational, responsible being, gifted with the potential for limitless growth; respect for the intellect-as a universal propensity and divine endowment to humanity, progressively unveiling the mysteries of the cosmos and the self; the quest for enlightenment through inspiration-answering to the inner need to engage with the fundamental, existential questions in human life; and finally, acknowledgement of the diversity of interpretations and historical situatedness of these principles-to be true to the plural reality of Muslim societies and the latitude of meanings accommodated in the Islamic message. This natural diversity of understandings invites the enactment of plural forms of education, rather than adherence to a single, monolithic notion of &#8220;Islamic education&#8221;, if the above principles are to be honoured and realised. </P>
+<P>Several options offer themselves for consideration in emerging approaches to Muslim education. The first of these is to continue treating Islam as a curricular subject, but at the same time being alert to the modern tendency to reify religious forms. The discipline-centred paradigm can prove advantageous for concentrated study, allowing the exposition of Islam as a sui generis phenomenon while also highlighting what it shares in common with other faiths. The bounded study of Islam as a world religion necessitates, however, that it be treated as an investigative entry point rather than a restrictive cul-de-sac. Such an approach, in the context of state education, has to be non-denominational and non-confessional to respect the beliefs of all students, incorporating an impartial study of other traditions to equip Muslim students to live in a plural world. </P>
+<P>A second option is to present Islam humanistically through its consideration in subjects such as civilisational, regional, or cultural studies. Engaging with Islam from this angle, which goes beyond viewing it simplistically or dogmatically as a &#8220;religion&#8221;, opens up for exploration a range of social endeavours, creative expressions, and cultural enactments in Muslim civilisations that have been engendered historically by the Islamic vision, as also by encounters and interactions with other societies. This curricular model has not quite received the attention it deserves, and holds forth rich possibilities for Muslim education. Theology, law, and ritual form important aspects in the study of Islam, but need to be complemented with other facets of engagement-political, economic, intellectual, and cultural-that are integral to all Muslim societies. Students can be made aware of the organic connections that exist between different domains of human experience, reflective of the complexity of social existence, by being acquainted with real-life issues and conditions facing Muslims and other societies today. </P>
+<P>A third possibility is to continue teaching Islam through the &#8220;traditional&#8221; religious sciences, especially in <I>madrasa</I> settings, but nurturing the intellectual growth of these disciplines denied to them after the classical period. Subjects such as <I>tafsir</I>, <I>hadith</I>, <I>fiqh</I>, <I>usul</I> <I>al-fiqh</I>, and <I>kalam</I> would be analysed from the perspective of their historical development, and practitioners would be encouraged to expand this enquiry by bringing into play fresh ideas, perspectives, and insights from other fields to reinvigorate the classical momentum, thus effectively setting up a conversation between hitherto compartmentalised forms of knowledge. Instead of being quarantined, the religious sciences would be considered participants as fields of knowledge in a shared epistemological space and invited to &#8220;converse&#8221; on equal terms with other disciplines in the social sciences and humanities. Such interactions and engagements would hopefully open up possibilities of interdisciplinary discoveries through mutual enrichment, while also challenging the dichotomised interface between the &#8220;religious&#8221; and the &#8220;secular&#8221; as a modern artifice. </P>
+<P>Finally, Islam can be perceived in Muslim education as an inspiring ethos, facilitating the creation of an enabling environment in which education can be pursued in its broadest sense. In this mode, the spiritual and ethical principles underpinning the Islamic vision would serve to institute a socially inclusive ethic in schools and <I>madrasa</I>s, while its intellectual premise would mandate that Islam be pursued as an area of enquiry, not a given. Such an approach would require the relinquishing of ideological closures and the acceptance of the intellect as a sacred gift to humans whose true calling lies in the pursuit of reason, wisdom, and excellence. </P>
+<P><B><A name=Conc.>Conclusion</A></B></P>
+<P>In the face of the complexities that Muslim societies are confronting today, and given the diverse nature of their situations, the idea of there being a universal panacea to the reform of Muslim education is a highly questionable proposition. Political and social realities are forcibly determining the pace, scope, and character of educational changes occurring in different regions of the Muslim world. While it is reasonable to expect common patterns to emerge between the educational systems of Muslim states, how Islam as a pedagogical category will be enacted in each national context will of necessity vary. </P>
+<P>On this basis, the four curricular options identified above, in somewhat condensed terms, are not intended to be formulaic prescriptions, nor should one expect them to find application in all cases of Muslim education. Rather, they are meant to contribute to the ongoing dialectic between theoretical conceptions and practical contingencies, and more specifically, to catalyse the debate on the significance and relation of different forms of knowledge in Muslim education. </P>
+<P>While some of these suggestions may appear to verge on the utopian, it is possible to identify pioneering contexts in Muslim societies where what was once deemed to be inconceivable or unrealisable now finds practical expression. Thus, <I>madrasa</I>s are emerging today where there is a courageous attempt to question the divide, and redefine the relation, between the &#8220;traditional&#8221; and the &#8220;modern&#8221;, or between the &#8220;religious&#8221; and the &#8220;secular&#8221;. In state and private schools, we come across approaches that are seeking to do justice to the message of Islam, while initiating the young in the celebration of human diversity. We also find examples of curricula on Islam being developed that are striving for a broad integration of normative, humanistic, and civilisational perspectives through the reconceptualising of conventional disciplinary boundaries. Few though these cases might be, and somewhat experimental at this juncture, they reveal promising possibilities for a wider renewal of Muslim education.</P>
+<P><B>Notes </B></P>
+<P><A name=1>1</A>. The problematic of defining &#8220;Islam&#8221; in educational terms is discussed in Douglass and Shaikh (2004) and Panjwani (2004). Other studies highlight the political implications of the teaching of Islam in various educational contexts. See, for example, Coulson (2004), Leirvik (2004), and the United States Agency for International Development (2003). </P>
+<P><A name=2>2</A>. For definitions of the terms &#8220;Islamists&#8221; and &#8220;neo-revivalists&#8221; as they are used in this paper, see Esposito (2000) and Roald (1994). </P>
+<P><A name=3>3</A>. A good example of this progressivist view is Tibi (1990), who mounts a trenchant critique of the advocates of Islamisation, as do Nayyar and Salim (2002) in the context of Pakistan. </P>
+<P><A name=4>4</A>. In using the term &#8220;Muslim countries&#8221;, I am referring to those states in which there is a majority Muslim presence. This designation is not intended to overlook non-Muslim minorities who form an integral part of Muslim states. </P>
+<P><A name=5>5</A>. I am aware of the point made by Berkey (1992) that Muslim institutions in the past did not have a curriculum in the formal and technical sense that we understand the term today. However, I am using the concept broadly to imply the repertoire of knowledge transmitted by educational institutions or practitioners, however informally and personally structured. </P>
+<P><A name=6>6</A>. It is beyond the scope of this article to undertake a methodological discussion here. For a detailed explanation, refer to Thobani (2001) for an example of the application of the sociology of the curriculum to Islam in the context of the English educational system. </P>
+<P><A name=7>7</A>. These illustrative contexts, which include Turkey, Egypt, Iran, Pakistan, and Malaysia, need to be broadened through further studies on Muslim states and populations in North, West, and Sub-Saharan Africa, South East and Central Asia, as well as Eastern Europe. </P>
+<P><A name=8>8</A>. A discipline, for our purposes here, may be defined as a specialised form of knowledge, with its own set of distinctive propositions or &#8220;language game&#8221;, its own criteria of validity, and demarcated by identifiable boundaries from other areas of knowledge (Hirst, 1974). </P>
+<P><A name=9>9</A>. For the development of Orientalism and Islamic Studies as European disciplines, see Nanji (1997). </P>
+<P><B>References </B></P>
+<P><B></B></P>
+<P>Abaza, M. (2002). <I>Debates on Islam and knowledge in Malaysia and Egypt: Shifting worlds</I>. London: Routledge Curzon. </P>
+<P>Al-Ghazali (1962). <I>The book of knowledge</I>. (N. A. Faris, Trans). Lahore, Pakistan: Sh. Muhammad Ashraf. </P>
+<P>Apple, M. W. (1979). <I>Ideology and curriculum</I>. London: Routledge and Kegan Paul. </P>
+<P>Ashraf, S. A. (1985). <I>New horizons in Muslim education</I>. Sevenoaks, Kent, England: Hodder and Stoughton. </P>
+<P>Bakar, O. (1998). <I>Classification of knowledge in Islam</I>. Cambridge, England: Islamic Texts Society. </P>
+<P>Berkey, J. (1992). <I>The transmission of knowledge in medieval Cairo: A social history of Islamic education</I>. Princeton, NJ: Princeton University Press. </P>
+<P>Bernstein, B. (1990). <I>Class, codes and control: Vol. 4. The structuring of pedagogic discourse</I>. London: Routledge. </P>
+<P>Bourdieu, P., &amp; Passeron, J-C. (1977). <I>Reproduction in education, society and culture</I>. London: Sage. </P>
+<P>Coulson, A. (2004). Education and indoctrination in the Muslim world. Is there a problem? What can we do about it? <I>Policy Analysis</I>, 511, 1&#8211;36. </P>
+<P>Daun, H. &amp; Walford, G. (Eds.) (2004). <I>Educational strategies among Muslims in the context of globalization</I>. Leiden, Netherlands: Brill Academic Publishers. </P>
+<P>Douglass, S. L., &amp; Shaikh, M. A. (2004). Defining Islamic education: Differentiation and applications. <I>Current Issues in Comparative Education</I>, 7, 5&#8211;18. </P>
+<P>Esposito, J. L. (2000). <I>Oxford history of Islam</I>. Oxford, England: Oxford University Press. </P>
+<P>Fortna, B. C. (2002). <I>Imperial classroom</I>. Oxford, England: Oxford University Press. </P>
+<P>Godazgar, H. (2001). Islamic ideology and its formative in&#64258;uence on education in contemporary Iran. <I>Economia, Sociedad y Territorio</I>, [Economy, Society and Territory], 3, 321&#8211;336.</P>
+<P>Gokalp, Z. (1959). <I>Turkish nationalism and western civilization. Selected essays of Ziya Gokalp</I> (N. Berkes, Ed. &amp; Trans.). London: George Allen and Unwin.</P>
+<P>Goodson, I. F. (1993). <I>School subjects and curriculum change: Studies in curriculum history</I> (3rd ed.). London: Falmer Press. </P>
+<P>Green, A. (1997). <I>Education, globalization and the nation state</I>. London: Macmillan Press. </P>
+<P>Halm, H. (1997). <I>The Fatimids and their traditions of learning</I>. London: I.B. Taurus in association with The Institute of Ismaili Studies. </P>
+<P>Hashim, R. (1996). <I>Educational dualism in Malaysia: Implications for theory and practice</I>. Kuala Lumpur, Malaysia: Oxford University Press. </P>
+<P>Hirst, P. H. (1974). <I>Knowledge and the curriculum</I>. London: Routledge and Kegan Paul. </P>
+<P>Hodgson, M. (1974). <I>The venture of Islam: Conscience and history in a world civilization, 1&#8211;3</I>. Chicago: University of Chicago Press. </P>
+<P>Hoodbhoy, P. (Ed.) (1998). <I>Education and the state: Fifty years of Pakistan</I>. Karachi, Pakistan: Oxford University Press. </P>
+<P>Husain, S. S., &amp; Ashraf, S. A. (1979). <I>Crisis in Muslim education</I>. Sevenoaks, Kent, England: Hodder and Stoughton. </P>
+<P>Hussein, T. (1954). <I>The future of culture in Egypt</I>. (S. Glazer, Trans.). Washington, DC: American Council of Learned Societies. </P>
+<P>Kazamias, A. M. (1966). <I>Education and the quest for modernity in Turkey</I>. London: George Allen &amp; Unwin. </P>
+<P>Leirvik, O. (2004). Religious education, communal identity and national politics in the Muslim world. <I>British Journal of Religious Education</I>, 3, 223&#8211;236. </P>
+<P>Makdisi, G. (1981). <I>The rise of colleges: Institutions of learning in Islam and the West</I>. Edinburgh, Scotland: Edinburgh University Press. </P>
+<P>Makdisi, G. (1990). <I>The rise of humanism in classical Islam and the Christian West: </I></P>
+<P><I>With special reference to scholasticism</I>. Edinburgh, Scotland: Edinburgh University Press. </P>
+<P>Menashri, D. (1992). <I>Education in the making of modern Iran</I>. Ithaca, NY: Cornell University Press. </P>
+<P>Metcalf, B. D. (1982). <I>Islamic revival in British India: Deoband, 1860-1900</I>. Princeton, NJ: Princeton University Press. </P>
+<P>Nanji, A. (Ed.) (1997). <I>Mapping Islamic studies: Genealogy, continuity and change</I>. Berlin, Germany: Mouton de Gruyter. </P>
+<P>Nayyar, A. H. &amp; Salim, A. (Eds.) (2002). <I>The subtle subversion: The state of curricula and textbooks in Pakistan</I>. Islamabad, Pakistan: Sustainable Development Policy Institute. </P>
+<P>Panjwani, F. (2004). The &#8220;Islamic&#8221; in Islamic education: Assessing the discourse. <I>Current Issues in Comparative Education</I>, 7, 19&#8211;29. </P>
+<P>Popkewitz, T. S. (1987). <I>The formation of school subjects: The struggle for creating an American institution</I>. London: Falmer Press. </P>
+<P>Rahman, F. (1953). <I>New education in the making in Pakistan: Its ideology and basic problems</I>. London: Cassell. </P>
+<P>Rahman, F. (1982). <I>Islam and modernity</I>. Chicago: University of Chicago Press. </P>
+<P>Roald, A. S. (1994). <I>Tarbiya: Education and politics in Islamic movements in Jordan and Malaysia. </I>Lund, Sweden: Lund University. </P>
+<P>Sadiq, I. (1931). <I>Modern Persia and her educational system</I>. New York: Teachers College. </P>
+<P>Shamsavary, P., Saqeb, G. N., &amp; Halstead, M. (1993). Islam: State, religion and education. In W. Tulasiewicz &amp; C-Y. To (Eds.), <I>World religions and educational practice</I> (pp. 144&#8211;160). London: Cassell. </P>
+<P>Sharpe, E. J. (1986). <I>Comparative religion: A history</I> (2nd ed.). London: Duckworth. </P>
+<P>Smith, W. C. (1978). <I>The meaning and end of religion</I>. London: Society for Promoting Christian Knowledge. </P>
+<P>Starrett, G. (1998). <I>Putting Islam to work: Education, politics, and religious transformation in Egypt</I>. Berkeley, CA: University of California Press. </P>
+<P>Szyliowicz, J. R. (1973). <I>Education and modernization in the Middle East</I>. London: Cornell University Press. </P>
+<P>Thobani, S. (2001). <I>Islam in the English education system: Cultural identities, symbolic boundaries and pedagogic discourses</I>. Unpublished doctoral thesis, University of Cambridge, England. </P>
+<P>Tibawi, A. L. (1979). <I>Islamic education: Its tradition and modernization into the national Arab system</I> (2nd ed.). London: Luzac &amp; Co. </P>
+<P>Tibi, B. (1990). <I>Islam and the cultural accommodation of social change</I>. (C. Krojzl, Trans.). Oxford, England: Westview Press.</P>
+<P>United States Agency for International Development. (2003, June). <I>Strengthening education in the Muslim world</I>. (Issue Paper No. 2). Washington, DC: Author.</P>Wan Daud, W. M. N. (1998). <I>The educational philosophy and practice of Syed Muhammad Naquib al-Attas: An exposition of the original concept of Islamization</I>. Kuala Lumpur, Malaysia: International Institute of Islamic Thought and Civilization.</div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Dilemma of Islam as School Knowledge in Muslim Education</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 24 Mar 2019 13:31:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 17/06/2011&nbsp;17:27&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110192 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:09:58 GMT -->
+</HTML>

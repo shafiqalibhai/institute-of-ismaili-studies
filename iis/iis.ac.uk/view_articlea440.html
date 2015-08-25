@@ -1,0 +1,727 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=108760 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:15:47 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2rtl.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1rtl.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3rtl.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 108760;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="rtl" class="rtl fa">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" href="home.html">&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="&#1580;&#1587;&#1578;&#1580;&#1608; &#1583;&#1585; &#1608;&#1576;&#8204;&#1587;&#1575;&#1610;&#1578;&#1616; &#1605;&#1572;&#1587;&#1587;&#1607;" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning.jpg','WebAssets/Site_Images/header/Learning_1.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fa_list">
+
+<li class="fa">
+	<a class="0" title="&#1606;&#1582;&#1587;&#1578;" rel="dropmenu0_b" href="homecce4.html?l=fa">&#1606;&#1582;&#1587;&#1578;</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_article6795.html?type=cont.currentlang&amp;id=104413&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</A></div><div><A href="view_article6d2b.html?type=cont.currentlang&amp;id=103471&amp;l=fa">&#1581;&#1590;&#1585;&#1578; &#1608;&#1575;&#1604;&#1575; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></div><div><A href="view_articleb06f.html?type=cont.currentlang&amp;id=104448&amp;l=fa">&#1580;&#1575;&#1605;&#1593;&#1607;&#8204;&#1740; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;</A></div><div><A href="view_article506d.html?type=cont.currentlang&amp;id=104373&amp;l=fa">&#1588;&#1576;&#1705;&#1607;&#8204;&#1740; &#1578;&#1608;&#1587;&#1593;&#1607;&#8204;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="15 2 34" title="&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;" rel="dropmenu1_b" href="view_sorted_articles7192.html?type=static&amp;id=ResearchandPublications&amp;l=fa">&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></div><div><A href="view_article5d32.html?ContentID=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A></div><div><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A></div><div><A href="view_article8aae.html?ContentID=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></div><div><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A></div><div><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A></div><div><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A></div><div><A href="view_articleb430.html?ContentID=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A></div><div><A href="view_article2b6d.html?ContentID=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1740;&#1607;</A></div><div><A href="view_article5aa9.html?ContentID=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A></div><div><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="3" title="&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;" rel="dropmenu2_b" href="view_sorted_articles0fe6.html?type=static&amp;id=graduate_studies&amp;l=fa">&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article6d62.html?type=cont.currentlang&amp;id=104478&amp;l=fa">&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1610;&#1604;&#1740; &#1583;&#1585; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1593;&#1604;&#1608;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;</A></div><div><A href="view_article313f.html?type=cont.currentlang&amp;id=106627&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1740;&#1578; &#1605;&#1593;&#1604;&#1605; &#1583;&#1608;&#1585;&#1607;&#8204;&#1740; &#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1740;&#1740;</A></div><div><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A></div><div><A href="view_article7818.html?type=cont.currentlang&amp;id=105818&amp;l=fa">&#1587;&#1575;&#1740;&#1585; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="22" title="&#1570;&#1605;&#1608;&#1586;&#1588;" rel="dropmenu3_b" href="view_sorted_articles8ed3.html?type=static&amp;id=learning&amp;l=fa">&#1570;&#1605;&#1608;&#1586;&#1588;</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A></div><div><A href="view_articlee423.html?ContentID=104858&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A></div><div><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A></div><div><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A></div><div><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></div><div><A href="view_article5bd8.html?ContentID=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></div><div><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="5" title="&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;" rel="dropmenu4_b" href="view_sorted_articles900d.html?type=static&amp;id=library&amp;l=fa">&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_article0a46.html?type=cont.currentlang&amp;id=103462&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></div><div><A href="view_articlef688.html?type=cont.currentlang&amp;id=104503&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1670;&#1575;&#1662;&#1740;</A></div><div><A href="view_articledaae.html?type=cont.currentlang&amp;id=104538&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1589;&#1608;&#1578;&#1740; &#1608; &#1578;&#1589;&#1608;&#1740;&#1585;&#1740;</A></div><div><A href="view_articlece75.html?type=cont.currentlang&amp;id=114807&amp;l=fa">Electronic Resources</A></div><div><A href="view_article3a7d.html?type=cont.currentlang&amp;id=104728&amp;l=fa">&#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A></div><div><A href="view_articleeac8.html?type=cont.currentlang&amp;id=104748&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A></div><div><A href="view_sorted_articles06b6.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="7 20" title="&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;" rel="dropmenu5_b" href="view_sorted_articles1714.html?type=static&amp;id=newsevents&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A></div><div><A href="view_article1720.html?ContentID=104873&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;</A></div><div><A href="view_article2827.html?ContentID=104498&amp;l=fa">&#1582;&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "rtl" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyaccf-2.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D108760">&#1605;&#1578;&#1606; &#1578;&#1606;&#1607;&#1575;</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articleb5ce.html?ContentID=108757">English<li><A href="view_article1511.html?ContentID=108759">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articlef4f7.html?ContentID=108761">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A></p><p><A href="view_sorted_articles38af.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4ca3.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1578;&#1575;&#1585;&#1740;&#1582;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlese577.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1606;&#1575;&#1605; &#1605;&#1572;&#1604;&#1601;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesbe8e.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1593;&#1606;&#1608;&#1575;&#1606;</A></p><p><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A></p><p><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A></p><p><A href="view_article5517.html?type=cont.currentlang&amp;id=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></p><p><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></p><p><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" href="javascript:mailpage()"><img border="0" alt="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" src="images/email.gif"/></a>  <a title="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" href="javascript:mailpage()">&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;</a></p>	
+
+<p><a title="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" href="javascript:window.print();"><img border="0" alt="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" src="images/print.gif"/></a>  <a title="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" href="javascript:window.print();">&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;</a></p>
+
+<p><a title="&#1575;&#1601;&#1586;&#1608;&#1606;&#1607;&#8204;&#1609; &#1580;&#1587;&#1578;&#1580;&#1608;&#1740; &#1601;&#1608;&#1585;&#1740;" href="view_articled5e0.html?ContentID=110810">&#1575;&#1601;&#1586;&#1608;&#1606;&#1607;&#8204;&#1609; &#1580;&#1587;&#1578;&#1580;&#1608;&#1740; &#1601;&#1608;&#1585;&#1740;</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">&#1593;&#1604;&#1575;&#1602;&#1605;&#1606;&#1583;&#1740;&#8204;&#1607;&#1575; &#1608; &#1576;&#1607; &#1575;&#1588;&#1578;&#1585;&#1575;&#1705;&#8204;&#1711;&#1584;&#1575;&#1585;&#1740;</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>&#1570;&#1605;&#1608;&#1582;&#1578;&#1606; &#1605;&#1575;&#1583;&#1575;&#1605; &#1575;&#1604;&#1593;&#1605;&#1585;: &#1605;&#1602;&#1575;&#1604;&#1575;&#1578;</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><strong>The Ismaili Alternative Dispute Resolution Training Programmes and the Potential for New Directions in Mediation</strong><br/><br/><DIV><A href="../www.iis.ac.uk/view_person0fc5.html?type=authors&amp;id=17">Mr Mohamed   Keshavjee</A></DIV><table border="0" cellSpacing="0" cellPadding="0" width="450" background="#"><tbody><tr><td>This is an edited version of a speech presented to the members of the Judiciary of British Columbia and the members of the Canadian Ismaili Conciliation and Arbitration Boards at the Ismaili Centre&nbsp;at&nbsp;Burnaby, British Columbia in&nbsp;Canada&nbsp;on 2 December 2006. </td><td> <IMG border="0" onerror="ImageLoadFailed()" src="../www.iis.ac.uk/WebAssets/Small/LL%20Articles/Keshavjee.jpg" xmlns=""></td></tr></tbody></table><br/><strong>&#1670;&#1705;&#1740;&#1583;&#1607;<br/></strong><P>Referring to the inspiration behind the dispute resolution system in the <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shia</A> Imami <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili</A> Muslim community, the author discusses the inspiration drawn from the Holy Quran, the <I><A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">hadith</A></I>s of Prophet Muhammad, the teachings of Hazrat Ali and other Shi&#8216;i <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A>s, including Imam Muhammad al-Baqir and Imam Ja&#8216;far al-Sadiq, the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> jurists and the guidance of the hereditary Shia Ismaili Imams. The author focuses briefly on institutional developments in the Ismaili community in the 20th century, culminating in the promulgation of the global Ismaili Constitution, giving rise to the Conciliation and Arbitration Boards (CABs) worldwide. The author shows how an international training programme in mediation has yielded new insights on cross-cultural mediation, highlighting that these programmes, coupled with the actual practice in different cultural contexts, predispose the Ismaili Conciliation and Arbitration Boards to contribute to new directions in the field of mediation and help mediation fulfil its yet unfulfilled promise. Citing examples of new directions for the future, the author stresses that great care needs to be exercised in ensuring that informal justice does not degenerate into inferior justice, and that continuous and sustainable training becomes part of the institutional ethos. Ongoing training and the readiness to learn from different cultural influences are major antidotes to the premature juridification of ADR processes and systems.</P><br/><br/><DIV><B><IMG height=25 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=25 border=0><A href="../www.iis.ac.uk/SiteAssets/pdf/Ismaili%20ADR%20training%20programme_logo.pdf">Download PDF version of article<BR><BR></A></B></DIV>
+<DIV><B>Table of contents</B></DIV>
+<UL>
+<LI>
+<DIV><A href="#ismaili muslims">The Ismaili Muslims</A></DIV>
+<LI>
+<DIV><A href="#concept">The Concept of Negotiated Settlement in Islam &#8211; &#8216;<I>Sulh</I>&#8217;</A></DIV>
+<LI>
+<DIV><A href="#modern infrastructure">Modern Infrastructure of the Community</A></DIV>
+<LI>
+<DIV><A href="#conciliation">Conciliation and Arbitration Boards</A></DIV>
+<LI>
+<DIV><A href="#training programmes">Training Programmes in Mediation</A></DIV>
+<LI>
+<DIV><A href="#learnings">Learnings from the Training Programmes</A></DIV>
+<LI>
+<DIV><A href="#concept relationality">The Concept of Relationality</A></DIV>
+<LI>
+<DIV><A href="#MEDARB">Greater Use of MEDARB</A></DIV>
+<LI>
+<DIV><A href="#need for">The Need for Institutionalisation and Sustainability of Training Programmes</A></DIV>
+<LI>
+<DIV><A href="#constant work">A Constant Work in Progress</A></DIV>
+<LI>
+<DIV><A href="#challenges">The Challenges That Lie Ahead: New Directions</A></DIV>
+<LI>
+<DIV><A href="#conclusion">Conclusion</A></DIV></LI></UL>
+<P>My topic this afternoon is &#8220;The Ismaili Alternative Dispute Resolution (ADR) processes and the potential for new directions in mediation&#8221;.<A href="#f1">[1]</A> I will give you a brief background on who the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili</A> Muslims are and what their connection to Alternative Dispute Resolution has been, both historically and in the contemporary context. I will then touch briefly on some of the important challenges that mediation is facing globally today and the role that the international training programmes of the Ismaili ADR system may be able to play in addressing some of these challenges. At the outset, I would like to mention that we do not pretend to have any of the answers. We are constantly on the learning curve, but in keeping with our tradition, where the role of the intellect has such a primary place in our lives, we are always willing to learn of new paradigms of thinking, and, where possible, share these with others. It is in this spirit of mutuality that I address you - the members of the Judiciary of British Columbia - today, for Canada, in its own right, has contributed significantly to human understanding and development, and some of the Canadian thinkers on ADR have made an important contribution to this burgeoning field.</P>
+<P><B><A name="ismaili muslims">The Ismaili Muslims</A></B></P>
+<P>Ismailis are <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shia</A> Muslims who today live in over 25 countries of the world, mainly in South and Central Asia, Africa, the Middle East, Europe and North America. Islam, like Judaism and Christianity, is a monotheistic faith whose most fundamental principle is the belief in one God.</P>
+<P>As Muslims, the Ismailis affirm the fundamental testimony of truth, the<I> Shahada</I>, that there is no god but Allah and that Muhammad (Peace of Allah be upon him) is His Messenger. They believe that Muhammad was the last and final Prophet of Allah and that the Holy Quran, Allah&#8217;s final message to mankind, was revealed through him. Muslims hold this revelation to be the culmination of the message that had been revealed through other Prophets of the Abrahamic tradition before Muhammad, including Abraham, Moses and Jesus, all of whom Muslims, as Children of Abraham, revere as the Prophets of God.</P>
+<P>In common with other Shia Muslims, Ismailis affirm that after the Prophet&#8217;s death, Hazrat Ali, the Prophet&#8217;s cousin and son in law, became the first <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> (the spiritual leader) of the Muslim community and that this spiritual leadership, known as <I><A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">Imamat</A></I>, continues thereafter by hereditary succession through Imam Ali and his wife, Fatima, the Prophet&#8217;s daughter. Succession to Imamat, according to Shia doctrine and tradition, is by way of <I><A href="javascript:void(LaunchGlossary('GlossaryItem39ca.html?type=glossary&amp;id=150'))">nass</A></I> (designation), it being the absolute prerogative of the Imam of the time to appoint his successor from amongst any of his male descendants, whether they be sons or remoter issue. His Highness the <A href="javascript:void(LaunchGlossary('GlossaryItem2a9a.html?type=glossary&amp;id=344'))">Aga Khan</A> is the 49th hereditary Imam of the Shia Imami Ismaili Muslims. He succeeded his grandfather, Sir Sultan Mahomed Shah Aga Khan as Imam on 11 July 1957.</P>
+<P>Spiritual allegiance to the Imam of the time and adherence to the Shia Imami Ismaili persuasion of Islam, according to the guidance of the living Imam, have engendered in the Ismaili community an ethos of self reliance, unity, and a common identity. In a number of countries where they live, the Ismailis have evolved a well-defined institutional framework through which they have established schools, hospitals, health centres, housing societies and a variety of social, cultural and economic development institutions for the common good of all, regardless of their race, colour, creed, or gender.</P>
+<P><B><A name=concept>The Concept of Negotiated Settlement in Islam - &#8216;<I>Sulh&#8217;</I></A></B></P>
+<P>You may ask: what is the main inspiration for dispute resolution in a community that is so widely dispersed from the snow-capped mountains of Tajikistan in Central Asia to the equatorial shores of Lake Victoria in Tanzania? The fountainhead for this inspiration is the Holy Qur&#8217;an, which constitutes the guiding light for all Muslims. The Qur&#8217;an says:</P>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<P>&#8220;If you fear a breach <BR>Between them twain (i.e., husband and wife)<BR>Appoint (two) arbiters<BR>One from his family<BR>And the other from hers:<BR>If they wish for peace,<BR>Allah will cause<BR>Their reconciliation<BR>For Allah hath full knowledge<BR>And is acquainted with all things.&#8221;<BR>Qur&#8217;an (4:39)</P></BLOCKQUOTE>
+<P>Elsewhere, the Qur&#8217;an states categorically:</P>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<P>&#8220;Allah doth command you<BR>To render back your Trusts<BR>To those to whom they are due;<BR>And when ye judge<BR>Between man and man,<BR>That ye judge with justice:<BR>Verily how excellent<BR>Is the teaching which He giveth you!<BR>For Allah is He Who heareth<BR>And seeth all things.&#8221;<BR>Qur&#8217;an (4:31)</P></BLOCKQUOTE>
+<P>This concept of reconciliation and harmony is also found in the traditions (<I><A href="javascript:void(LaunchGlossary('GlossaryItem3269.html?type=glossary&amp;id=83'))">sunna</A></I>) of the Prophet Muhammad (Peace be upon him) whose life is filled with examples of mediated solutions to human problems. There is a story that in the reconstruction of the <A href="javascript:void(LaunchGlossary('GlossaryItem366a.html?type=glossary&amp;id=207'))">Ka&#8216;ba</A>, the building in Mecca to which Muslims go for pilgrimage, a dispute arose over the placing of the Black Stone (<I>Hajr al-Aswad</I>) into the building. Each of the four tribes of the Quraysh wanted to have the honour of placing the stone, to the exclusion of the others. An impasse arose and the matter was referred to the Prophet. He asked each of the contesting tribes to choose a leader. He then spread a full sheet of cloth on the floor and placed the stone in the centre, asking all four leaders to each hold it at one end and raise it together. Thus, a serious conflict was averted by the Prophet&#8217;s prudent action in giving all four leaders an equal honour of placing the stone.</P>
+<P>Imam Ali Ibn Abi Talib (d. 661 CE), the fourth <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A> of Islam and the first Shia Imam, extolled the virtue of dialogue and the value of compromise. He likened the assistance given to solve human disputes to prayer and encouraged negotiated settlements within the principles of the ethics of the faith. In his &#8216;Instrument of Instructions&#8217; to Malik Ibn Harith al-Ashter, on his appointment as Governor of Egypt, Imam Ali defined justice as: &#8220;bringing to everyone what is his due&#8221;. Elaborating how this can be accomplished, he wrote: &#8220;Do justice to Allah and do justice to the people, as against yourself, your near ones and those of your subjects for whom you have liking&#8230;&#8221;.<A href="#f2">[2]</A> &#8220;Compassion&#8221; says Imam Ali to Malik, &#8220;must be administered equitably for all without any prejudice whatsoever&#8221;, thereby stressing the principle of the unity of the human family. Referring to the citizenry, Imam Ali said: &#8220;For they are of two types: Either your brother in religion or your like, in creation&#8221;.</P>
+<P>According to a Shia tradition, Imam Husayn (d. 680 CE), the son of Imam Ali, was once asked whether two persons, belonging to his community, who fall out over the issue of debt or inheritance, should refer the dispute to a secular authority. The Imam replied that the parties should refer to a qualified person from among his followers. Similar advice occurs in the teachings of Imam Ja&#8216;far al Sadiq (d. 765 CE), another Shia Imam, who, for instance, is reported to have said: &#8220;The charity which Allah loves the most is the peace re-established between quarrelling parties&#8221;.</P>
+<P>The same principles are found in Fatimid Law. The <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimids</A>, a Shia Ismaili dynasty, ruled Egypt from 969-1171 CE. In his book <I>Compendium of Fatimid Law</I>, the noted Shia legal scholar, Dr A.A. Fyzee, quotes Imam Ali from the <I>Da&#8216;a&#8217;im al Islam,</I> a work compiled by the foremost Fatimid jurist of the 10th century called al-Qadi al Nu&#8216;man (d. 974 CE). He says that, according to Imam Ali, &#8220;The composing of differences between man is better than all manner of fasts and prayers&#8221;. Referring to the conduct of a Qadi, Dr Fyzee quotes from the Fatimid text, as follows:</P>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<P align=left>&#8220;The Qadi should have patience; not show his displeasure to any party; give judgement only upon manifestly clear proof; know the law thoroughly; make no difference between layman and lawyer (in an argument in a suit); not accept any present from any party; not make any difference between high and low, the strong and the poor.&#8221; </P></BLOCKQUOTE>
+<P align=left>Fyzee further states: &#8220;The Qadi should also not hold court and perform his functions while he is angry or hungry or sleepy.&#8221;</P>
+<P>These principles of negotiated settlement, known as &#8216;<I>Sulh</I>&#8217; permeate the Family Law Statutes of most Muslim countries, from Morocco to Bangladesh, which provide that the judge must first establish a panel to explore the possibilities of a reconciliation.<A href="#f3">[3]</A> Though marriage in Islam is viewed as a contract and though divorce is allowed where the parties can no longer sustain a viable marriage, the dissolution of a marriage is not taken lightly.</P>
+<P>As in other sectors of human endeavour, such as education and economics, so also in the sector of justice and dispute resolution, institutions and methodologies have evolved over time to serve the needs of successive generations of Muslims. In the case of the Ismaili Muslims, that evolution took place through the teachings of Imam Ali, successive Shia Imams from his progeny, the juridical work of the Fatimids and, in recent years, through the ongoing teachings of the hereditary Imams and the work of respected elders in various Ismaili communities.</P>
+<P><B><A name="modern infrastructure">Modern Infrastructure of the Community</A></B></P>
+<P>This then brings me to the modern infrastructure of the Ismaili Muslim community.<A href="#f4">[4]</A> It was the present Aga Khan&#8217;s grandfather, Sir Sultan Mahomed Shah Aga Khan, the 48th hereditary Imam, who laid the foundation of the Ismaili community&#8217;s institutional structures. He did this by building on the Muslim tradition of a communitarian ethic on the one hand, and responsible individual conscience, with freedom to negotiate one&#8217;s own moral commitment and destiny, on the other. In this spirit, he created new organisational structures as a way forward for the community into the 20th century.</P>
+<P>In 1905, he ordained the first Ismaili Constitution for the social governance of the community in East Africa. This was a very important step, among others, towards the modernisation of the Ismaili community. It gave the community a form of administration comprising a structure of councils at local, national and regional levels. It also set out rules of personal law in matters such as marriage, divorce and inheritance, as well as guidelines for mutual cooperation and support among the Ismailis and their interface with other communities. Similar constitutions were promulgated in the Indian subcontinent. All of them were periodically reviewed and revised to address the community&#8217;s emerging needs and circumstances.</P>
+<P>This tradition has continued under the leadership of his successor, the present Imam, <A href="javascript:void(LaunchGlossary('GlossaryItemab36.html?type=glossary&amp;id=245'))">His Highness Shah Karim al Hussayni</A> Aga Khan, who, from 1970, has extended the practice to other regions, such as the United States, Canada, and several Western European countries, as well as East and South Asia, Central Asia, the Gulf Coordinating Countries, Syria, Iran and Afghanistan. This was done after a process of consultations within each respective constituency. In 1986, His Highness promulgated a single Constitution that, for the first time, brought under one aegis the social governance of the worldwide Ismaili Community, with built-in flexibility to account for diverse circumstances of different regions. Served by volunteers appointed by, and accountable to, the Imam, the Constitution functions as an enabler to harness the best in individual creativity, within an ethos of group responsibility, in order to promote the common weal. Like its predecessors, the Constitution is founded on each Ismaili&#8217;s spiritual allegiance to the Imam of the time, which is separate from the secular allegiance which each Ismaili owes as an individual citizen to his or her respective national state. The Constitution operates within the laws of the various countries where the Ismailis are settled. While the Constitution serves primarily the social governance needs of the Ismaili community, in some countries its provisions for encouraging amicable settlement of disputes, through impartial conciliation, mediation and arbitration, are being increasingly used by non-Ismailis.</P>
+<P><B><A name=conciliation>Conciliation and Arbitration Boards</A></B></P>
+<P>Under the global Ismaili Constitution, provision is made for a National Conciliation and Arbitration Board (NCAB) for each of the areas specified therein, known as &#8220;His Highness Prince Aga Khan Shia Imami Ismaili National Conciliation and Arbitration Board&#8221; for the territory for which it is formed. Depending on the different levels of social governance and the nature of the community&#8217;s dispersal, there are in some countries regional CABs, as in Canada, or local CABs, as in India and Pakistan. These Boards are absolutely independent and disputants submit to their jurisdiction on a totally voluntary basis.</P>
+<P>At the international level, there is an International Conciliation and Arbitration Board (ICAB), made up of a lawyer Chairperson and six other members. The present panel is made up of lawyers and non lawyers from Canada, the United Kingdom, Kenya, Pakistan, India, Syria and the USA. The International CAB assists in the conciliation process between parties in differences or disputes arising from commercial, business and other civil liability matters, domestic and family matters, including those relating to matrimony, children of a marriage, matrimonial property, testate and intestate succession. The International CAB hears disputes that are international in scope but also acts as an appeal Board for appeals from decisions of any National Conciliation and Arbitration Board worldwide. Submission to the jurisdiction of these Boards, as mentioned, is on a totally voluntary basis and the Boards are made up of trusted individuals, mainly volunteers, from various fields of endeavour from within the Ismaili community. This afternoon, we have CAB members here from across Canada - many of whom have achieved great distinction in their secular lives. Institutionally, their cumulative experience amounts to some 500 years of experience across a range of community activities in over a dozen countries. They serve with great dedication and selflessness and it is their generosity of time, experience, effort and wisdom that has made the system work so well.</P>
+<P><B><A name="training programmes">Training Programmes in Mediation</A></B></P>
+<P>In the year 2000, His Highness the Aga Khan felt that given the developments that were then taking place in the field of mediation worldwide, it was time for the CAB system to further professionalise and come to speed with the new thinking in this field of ADR. In conjunction with The Institute of Ismaili Studies, the School of Oriental and African Studies (SOAS) of London University, and two of Britain&#8217;s then leading training organisations - the National Family Mediation (NFM) and the Centre for Dispute Resolution (CEDR) - the NCABs mounted a training programme for 40 people from 16 countries at the Ismaili Centre in London. This programme was conducted by some of the most outstanding professors and trainers in the field of ADR in the UK, many of them pioneers in their respective fields. Since then, training programmes have been conducted in Kenya, Uganda, Tanzania, the United Kingdom, Canada, USA, Portugal, France, India, Pakistan, Afghanistan and Syria. To date, the NCABs have trained some 1,000 mediators from 17 countries of the world.</P>
+<P>These training programmes are a combination of state-of-the-art mediation techniques with the Ismaili community&#8217;s own cultural values, norms and traditions, based on the ethics of Islam which transcend both space and time. This approach has helped the NCABs to ensure that they do not indiscriminately adopt a highly individualistic problem-solving model of dispute resolution at the cost of the rich heritage that the various Ismaili communities and cultural traditions embody. At the same time, the training programmes try to creatively integrate new techniques, such as listening skills, positive reframing, power balancing and domestic abuse screening to ensure that the Ismaili dispute resolution processes remain sensitive to the changes that human societies are experiencing today. A judicious balance of Ismaili cultures, values, ethics and traditions, with the contemporary principles of ADR to serve the needs of the various peoples that the CAB system provides for, within the public laws of the many countries in which the Ismailis live, is helping these programmes to creatively critique mainstream ADR techniques globally. </P>
+<P>The training programme has developed its own cross-cultural educational curriculum which has been adapted to the languages of the countries in which the CAB system operates today. The trainers, hailing from 10 countries of the world and led by Mr. Tony Whatling, a member of the UK College of Mediators, are learning while they are teaching. As good teachers, they transmit the techniques they learn from the Ismaili CAB programmes and apply them to other training programmes they conduct for other communities in various parts of the world.</P>
+<P><B><A name=learnings>Learnings from the Training Programmes</A></B></P>
+<P>This brings us to the specific learnings we have gained from these programmes. Each of these programmes is jointly constructed: they are not top-down programmes, but nor are they absolutely bottom-up. They represent a collaboration between those willing to share learnings with each other, very much within the spirit of a jointly-constructed pedagogy espoused by the great Harvard-trained Brazilian educationist of the 1960&#8217;s, Paulo Frere. They also resonate the principles of sound cross-cultural mediation advocated by John Paul Lederach, a leading cross-cultural theorist and practitioner.<A href="#f5">[5]</A></P>
+<P>Among the many things that we have learnt and have begun to share, there are two that stand out prominently. One is the concept of relationality in a communitarian culture<A href="#f6">[6]</A> and how to address this phenomenon in a mediatory context. The other is the usage of a relatively new ADR processual tool such as MEDARB as a forerunner to the usage of mediation as a processual tool, alone.</P>
+<P><B><A name="concept relationality">The Concept of Relationality</A></B></P>
+<P>The training programmes have come to realise that in a community context there are many stakeholders and conflict resolution, necessarily, cannot be an individualistic endeavour. In a family dispute, there would be many interested parties such as parents and grandparents, siblings, neighbours, friends, employees, employers, children and their friends. This does not mean that the CABs bring them all to the mediation process. The CABs respect the privacy of the parties, but at the same time, they construct a matrix to see whether the concerns of all parties that contribute to the solution of a problem have been taken into consideration. The CABs call this the &#8220;Greek chorus&#8221; and in their training programmes actually constitute groups to write down all the concerns of the different constituencies. Through role plays, the trainers and the trainees revisit some of these concerns and see whether, and to what extent, these concerns have been taken on board when the mediation is done. As the African-American writer Eldridge Cleaver has so succinctly stated: &#8220;you are either part of the solution or you remain part of the problem&#8221;. This integrated approach, it has been found, resonates with the community ethos that the Ismailis, like other Muslims, espouse. Here, I would like to quote someone whom I have quoted many times in other parts of the world. I deeply respect the work of Michelle Le Baron in this field, for she has put her finger on the pulse of what actually constitutes a community when she says:</P>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<P>&#8220;Each person is like a knot in a large fishing net with its intricate intertwine of innumerable knots. Each person is tied to many others. When all of the knots are firmly tied, the net is in full working condition. If any of the knots is too close or too tight, the whole net is skewed. Each knot, each relationship, has an effect on the whole. If there is a tear, or a gap in the net, the net is not a working one&#8230;.Nets are to be checked frequently, knots cared for tenderly, and if tears do appear, they must be repaired.&#8221;<A href="#f7">[7]</A></P></BLOCKQUOTE>
+<P><B><A name=MEDARB>Greater Use of MEDARB</A></B></P>
+<P>The other thing the CABs have learnt through the training programmes is the need for greater usage of MEDARB as an ADR tool, particularly in those cultures where conflict is not, as yet, accepted as something belonging to individual disputants. Mediation, as an autonomous ADR tool, does not always find easy receptivity in such situations. Such societies often tend to veer more towards the directive, rather than the facilitative, end of the mediation spectrum. This was the case in Syria when we went there to conduct a training programme for the CAB members. For the first full day, the lawyers dominated the discourse. On the second day, as trainers, we noticed a strong body language which said &#8220;why are you here and what is it that you are going to teach us that we do not already know?&#8221;. The feeling was palpable. But on the third day, one individual stood up and spoke in the vernacular to the others. We could not understand immediately what he was saying, but suddenly the attitude began to change. In effect, what he said to them was: &#8220;here we are learning about a new tool in the ADR tool box. We may not want to use it now, but it will be to our benefit to learn <U>how</U> to use it. It will one day serve us well. Our society is changing: our children are living in different parts of Europe, the Gulf and the USA, they are accessing institutions of higher learning. Let us learn new ideas for dealing with conflict now and when the need arises, combine them with our own norms and values. We could utilise these to our benefit when the time comes.&#8221;</P>
+<P>What this taught us was the need to teach the techniques of MEDARB, and the humility to allow people to make the transition at the pace that they themselves are able to sustain. What was most encouraging was the fact that when we finished our training, most of the participants made wallet-sized facsimiles of the certificates of participation that we gave out to them and started carrying our certificates in their wallets. They were proud to call themselves &#8220;mediators&#8221;. One of them even introduced a mediation programme at his university. We have since been asked to return to Syria to do a follow up course in mediation, which we intend to do in 2007.</P>
+<P>However, the best training programme was in Afghanistan. On our arrival, my suitcase got lost and I rushed to the airline company to see if I could retrieve it. Unfortunately, this was not immediately possible. I pleaded with the official to help me out, but he could not. I impressed upon him that I had to meet a large collection of people waiting for me and that I did not have a suit to change into. I even cited the Warsaw Convention with regard to my rights as a passenger! But this was to no avail. I was then asked by him, through the interpreter, that if my suit was all that important, why did I put it in the hold? Should I not have kept it with me as my cabin baggage? At this point, I realised that discretion was the better part of valour and so borrowed an Afghan outfit from one of the institutional leaders who had come to fetch me. My arrival was hailed with great applause from the awaiting crowd. Mediation, after all, could not be all that bad if the purveyor of it cared to adopt their sartorial culture, literally within minutes of his arrival in the country!</P>
+<P>What was even more interesting was the first day of the training programme. Everyone, including the ex-mayor of Kabul, sat on the floor as is the custom in the country. There were 7 ladies and 32 gentlemen participating in the course, and on the first day the relationship was somewhat formal. We were slightly nervous of how things would work out. However, on the second day, the relationship began to thaw and by the third day, when the roles had to be switched, we had the ex-mayor of Kabul role-playing as an &#8216;aggrieved wife&#8217; complaining about &#8216;her mother-in-law&#8217; and everyone was in a fit of laughter.</P>
+<P>This generated a great deal of enjoyment, but also taught us that human beings are very resilient and willing to learn, regardless of which area of the world they come from or what position they hold. We also came to realise that some of the issues that emerged in the various role plays in Afghanistan are at the very heart of the ADR discourse today and each time we go to a different country, we learn something new that adds significantly to our programme. We find this experience truly enriching.</P>
+<P><B><A name="need for">The Need for Institutionalisation and Sustainability of Training Programmes</A></B></P>
+<P>A fundamental lesson we have learnt is that training programmes, if they are to yield the necessary benefits to the communities they intend to serve, need to be consistent and, where possible, institutionalised and sustained. A one-time training endeavour does not really work, as learning is an iterative process, and mediators need ongoing help and support. In a field that is so new and which is in its nascent stage of development, ongoing learning and application becomes critical. Also, learning has to be a mutual exercise. While one trains people in the field, trainers themselves also learn from the field. The exercise is symbiotic, which presupposes an ongoing dialogue that is sustainable. Fortunately, the CAB system is institutionalised and the training programme, now in its 8th year, has evolved and keeps in touch with the national CABs in each country. Mediation training today, unfortunately, suffers from a lack of resources, both financial and institutional. It is here that collaboration among major institutions involved in this field can ensure more optimal resource utilisation globally. </P>
+<P>Faith communities, which normally have structures to deal with their constituencies, could be encouraged to do more in the field of training their dispute resolution volunteers, helping them to combine their traditional methods with contemporary approaches to mediation practice. Ongoing training will ensure that traditional systems remain contemporary and relevant to the needs of the people they serve. At the same time, such systems, if they are operative and effective, can add significantly to the ADR discourse globally, adding to the greatest understanding of cross cultural mediation and how its principles work in different parts of the world.</P>
+<P><B><A name="constant work">A Constant Work in Progress</A></B></P>
+<P>Our training programmes are very much a work in progress, because human societies themselves are works in progress. Human issues are in a constant state of flux; our programmes, therefore, cannot be final. We are always open to new learnings about new cultures and traditions, not in an essentialising and condescending way, reifying them as exotic rarities, but with a view to genuinely understanding such cultures as living organisms, giving meaning to living societies. We have come to realise that since human societies are constantly evolving, one cannot operate on facile assumptions or on stereotypical images. Even within different cultures, there are different sub-cultures: for example, African, Hispanic and Asian societies in Canada and the United Kingdom are very different today from when people from Africa, Asia and Latin America first arrived in these countries some 50-60 years ago. Such peoples&#8217; problems have evolved, their disputes have become more complex and their attitude to conflict has also changed. Peoples&#8217; aspirations have also changed and hence their approach to dispute resolution has to change. This diversity has to be understood and legal pluralism has to be recognised within the context of acculturation which all societies, of necessity, undergo.</P>
+<P>The CAB training programmes, thus, are always open to drawing from the rich tapestries of human experience and the new learnings that are taking place in the field of ADR and the related social sciences. This is done in the hope of learning from, and contributing to, the global ADR discourse. Mediation, as we are aware, is portrayed as an alternative to adjudication. Adjudication has been described as a process that has limited remedial imagination: that does not mean that law is going to become obsolete. As a lawyer, I fully appreciate and recognise the role of law in the process of ADR, but at the same time, I am mindful that mediation has a far greater potential than adjudication in helping disputants to re-orient their relations with each other. If mediation becomes immune to new influences, it may be rendering itself vulnerable to premature juridification. In such a case, it could easily become an inferior form of justice, rather than a genuine alternative: a complementary process which operates within the shadow of the law with which it shares a common bedrock.<A href="#f8">[8]</A> We therefore view our programmes as a collaborative and complementary process, working always within the framework of the law of the various countries in which the Ismailis live. We do this in the spirit of learning as a joint endeavour; as someone once said: &#8220;walk not in front of me, I might not follow; walk not behind me, I might not lead; walk beside me, and we will travel together&#8221;.</P>
+<P><B><A name=challenges>The Challenges That Lie Ahead: New Directions</A></B></P>
+<P>This then brings me to the final part of my paper which touches on the challenges that lie ahead. These are many and varied and cannot be covered in a short lecture. While many of these are technical and rule-centred, the fundamental ones are philosophical and existential such as: what is the main purpose of mediation? Is its true potential being fulfilled in the present mediation practice, that we are following globally? And, if not, how does conflict and its resolution lead to transformation?</P>
+<P>Let us not forget that Mahatma Gandhi, himself a lawyer, experienced a major change in his life, not through his own conflict, but through mediating in the conflict of two disputants in South Africa in 1893. Writing about his experiences some years later, he said:</P>
+<P>&#8220;My joy was boundless. I had learnt the true practice of law. I had learnt to find out the better side of human nature and to enter men&#8217;s hearts. I realised that the true function of a lawyer was to unite parties riven asunder. The lesson was so indelibly burnt into me that a large part of my time during the twenty years of my practice as a lawyer was occupied in bringing about private compromises of hundreds of cases. I lost nothing thereby - not even money, certainly not my soul&#8221;.<A href="#f9">[9]</A></P>
+<P>Mediation theorists and practitioners today are calling for new paradigms. On the horizon, we can see various possibilities: these include transformative mediation, narrative mediation and therapeutic mediation. According to Robert Bush and Joseph Folger, mediation has the potential to do far more than create agreements and improve relationships.<A href="#f10">[10]</A> It has the potential to <I>transform</I> peoples&#8217; lives, to give them both an increased sense of their own personal efficacy, i.e., <I>empowerment</I>, and a greater openness to and acceptance of the person seated on the other side of the table, i.e., <I>recognition</I>. They argue that the present &#8216;problem-solving&#8217; approach neglects the most important dimension of the process, which is its potential to change the people themselves who are in the very midst of conflict. They refer to this as <I>transformative mediation</I>.</P>
+<P><I>Narrative mediation</I> is a departure from the traditional, interest-based, problem-solving approach to resolving disputes. This innovative approach, championed by Winslade and Monk, two practitioners from New Zealand, aims to seek out the conflicting parties&#8217; individual stories and show how these can be applied to create a lasting resolution for a wide variety of conflicts.<A href="#f11">[11]</A> At the heart of narrative mediation lies the goal of developing a <I>context</I> for creating a relationship that is incompatible with conflict. This transformed relationship is built on <I>narratives</I>: stories of understanding, respect and collaboration.</P>
+<P><I>Therapeutic Family Mediation</I> is a response to the problem of a &#8216;one-size-fits-all&#8217; culture of the predominant, individualist, problem-solving model developed over the past 25 years, largely in the Western world. It is based on a growing awareness that some family conflicts are so entrenched and relationships so &#8216;enmeshed&#8217; that conventional problem-solving models have little impact. Therapeutic family mediation is not, as might be implied by its title, &#8216;therapy&#8217;. Rather, it is &#8220;using therapeutic techniques to enhance the objectives of family mediation&#8221;.<A href="#f12">[12]</A></P>
+<P>These, it is submitted, are some of the paradigms that need to be tested, adapted and put into practice if human societies want to ensure that the human race does not relapse into egregious savagery at a time of renewed and escalating global conflict. These are some of the new directions that we need to look into if we want mediation to play an important role in the development of a genuine, international civil society. These are the directions that will help us to constructively critique the dominant discourses of the day and re-orient them in the service of peace and, by doing so, developing a genuine alliance of civilisations, rather than a self-fulfilling prophecy of conflict of civilisations that we keep on hearing of, ad nauseam, every day.</P>
+<P><B><A name=conclusion>Conclusion</A></B></P>
+<P>It is here that the Ismaili NCAB ADR training programmes globally hold a potential for the future. They are guided by a vision which His Highness the Aga Khan articulated so eloquently in 1958 soon after he assumed his role as the 49th hereditary Imam of the Ismaili Muslims. He said:</P>
+<P>&#8220;The Ismailis have always prided themselves on their highly developed social conscience. Our faith teaches us that we have obligations far beyond our own or even our family&#8217;s interest. By the way you conduct your daily lives, by the compassion you show to your fellow men and women and, above all, by your faith in God, you will ultimately be judged.&#8221;<A href="#f13">[13]</A></P>
+<P>It is this vision, I submit, that has shaped the contours of the Ismaili Muslim community through time and space through the guidance of a living, hereditary Imam, regardless of where in the world it is settled. Hopefully, this vision can be leveraged today in the service of a more inclusive approach to humanity.</P>
+<DIV><BR clear=all></DIV>
+<DIV>
+<HR align=left width="33%" SIZE=1>
+</DIV>
+<P><A name=f1>[1]</A> Speech given in the presence of the Chief Justice of B.C., the Honourable Lance Finch, the Attorney General of B.C, the Honourable Wally Oppal and the Chairperson of His Highness Prince Aga Khan Shia Imami Ismaili National Conciliation and Arbitration Board for Canada, the Honourable Judge Shehni Dossa.</P>
+<P><A name=f2>[2] </A>Shah-Kazemi, R. <EM><A href="view_article1dee.html?type=cont.currentlang&amp;id=106552">Justice and Remembrance - Introducing the Spirituality of Imam 'Ali</A></EM>, I.B. Tauris, London, New York, in association with The Institute of Ismaili Studies, London (2006), pp. 81-85.</P>
+<P><A name=f3>[3]</A> Alami, D.S. and Hinchcliffe, D. &#8220;Islamic Marriage and Divorce Laws in the Arab World&#8221;, Cimel and Kluwer Law International, London, The Hague and Boston (1998).</P>
+<P><A name=f4>[4]</A> See <A href="view_articlec00e.html?type=cont.currentlang&amp;id=101192">speech</A> given by Mohamed M. Keshavjee, on 10 May 2007 at the 4<SUP>th</SUP> International Conference of the World Mediation Forum, at the Sheraton Hotel and Convention Centre, Buenos Aires, Argentina.</P>
+<P><A name=f5>[5]</A> Lederach, J.P. <EM>Preparing for Peace: Conflict Transformation Across Cultures</EM>, Syracuse University Press, Syracuse, New York (1995).</P>
+<P><A name=f6>[6]</A> For a fuller understanding of this concept, see Kagit&#231;ibasi, C. &#8220;A Critical Appraisal of Individualism and Collectivism: Towards a New Formulation&#8221; in <EM>Individualism and Collectivism: Theory, Methods and Application</EM>, Uichol Kim et al (eds), Sage Publications, Thousand Oaks, California (1994).</P>
+<P><A name=f7>[7]</A> Duryea, M.L. &#8220;Conflict and Culture: A Literature Review and Bibliography", University of Victoria Institute of Dispute Resolution, Vancouver (1992).</P>
+<P><A name=f8>[8]</A> Mnookin, R. and Kornhauser, L. &#8220;Bargaining in the Shadow of the Law: The case of Divorce&#8221;, The Yale Law Journal, 88 (1979), pp. 950-997.</P>
+<P><A name=f9>[9]</A> Gandhi M.K. <EM>An Autobiography or The Story of My Experiments with Truth</EM>, Navajivan Trust (2005), Ahmedabad, India, p. 124.</P>
+<P><A name=f10>[10]</A> Bush, R.A.B and Folger, J.P. <EM>The Promise of Mediation</EM>, Jossey Bass, San Francisco (2005).</P>
+<P><A name=f11>[11]</A> Winslade, J. and Monk, G. <EM>Narrative Mediation &#8211; A new approach to Conflict Resolution</EM>, Jossey-Bass Publishers, San Francisco (2001).</P>
+<P><A name=f12>[12]</A> Irving, H. and Benjamin, M. <EM>Therapeutic Family Mediation - Helping Families Resolve Conflicts</EM>, Sage Publications Inc., California, London and New Delhi (2002).</P>
+<P><A name=f13>[13]</A> Speech of His Highness the Aga Khan at the Installation Ceremony, Bombay, 11<SUP>th</SUP> March, 1958.</P></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Ismaili Alternative Dispute Resolution Training Programmes and the Potential for New Directions in Mediation</TITLE><META HTTP-EQUIV="Expires" CONTENT="Wed, 2 Aug 2017 14:41:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 02/08/2007&nbsp;14:45&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">&#1604;&#1740;&#1606;&#1705;&#8204;&#1607;&#1575;&#1740; &#1587;&#1585;&#1740;&#1593;</p>
+<p><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">&#1570;&#1711;&#1607;&#1740; &#1575;&#1587;&#1578;&#1582;&#1583;&#1575;&#1605;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">&#1605;&#1585;&#1705;&#1586; &#1588;&#1594;&#1604;&#1740; &#1588;&#1576;&#1705;&#1607;&#8204;&#1740; &#1578;&#1608;&#1587;&#1593;&#1607;&#8204;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></p><p><A href="contactcce4.html?l=fa">&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1578;&#1605;&#1575;&#1587;</A></p><p><A href="view_articlea912.html?ContentID=104023&amp;l=fa">&#1587;&#1572;&#1575;&#1604;&#1575;&#1578; &#1585;&#1575;&#1740;&#1580;</A></p><p><A href="view_sorted_articles06b6.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A></p><p><A href="glossary_listcce4.html?l=fa">&#1608;&#1575;&#1688;&#1607;&#8204;&#1606;&#1575;&#1605;&#1607;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></p><p><A href="view_article00af.html?ContentID=104443&amp;l=fa">&#1604;&#1740;&#1606;&#1705;&#8204;&#1607;&#1575;&#1740; &#1605;&#1601;&#1740;&#1583;</A></p><p><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>&#1583;&#1585;&#1711;&#1575;&#1607;&#8204;&#1607;&#1575;</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A></p><p><A href="view_sorted_articles6ac9.html?catid=160&amp;layout=children&amp;l=fa">&#1705;&#1575;&#1585;&#1705;&#1606;&#1575;&#1606;</A></p><p><A href="view_sorted_articles4fbc.html?catid=161&amp;layout=children&amp;l=fa">&#1583;&#1575;&#1606;&#1588;&#1580;&#1608;&#1740;&#1575;&#1606;</A></p><p><A href="view_sorted_articles9116.html?catid=165&amp;layout=children&amp;l=fa">&#1605;&#1583;&#1585;&#1587;&#1575;&#1606;  </A></p><p><A href="view_sorted_articles8cf7.html?catid=169&amp;layout=children&amp;l=fa">&#1576;&#1575;&#1586;&#1583;&#1740;&#1583;&#1705;&#1606;&#1606;&#1583;&#1711;&#1575;&#1606;</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles7192.html?type=static&amp;id=ResearchandPublications&amp;l=fa">&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</a></span><br />
+<div><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A><br/></div><div><A href="view_article5d32.html?ContentID=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A><br/></div><div><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A><br/></div><div><A href="view_article8aae.html?ContentID=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A><br/></div><div><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A><br/></div><div><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A><br/></div><div><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A><br/></div><div><A href="view_articleb430.html?ContentID=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A><br/></div><div><A href="view_article2b6d.html?ContentID=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1740;&#1607;</A><br/></div><div><A href="view_article5aa9.html?ContentID=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A><br/></div><div><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles0fe6.html?type=static&amp;id=graduate_studies&amp;l=fa">&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;</a></span><br />
+<div><A href="view_article6d62.html?type=cont.currentlang&amp;id=104478&amp;l=fa">&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1610;&#1604;&#1740; &#1583;&#1585; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1593;&#1604;&#1608;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;</A><br/></div><div><A href="view_article313f.html?type=cont.currentlang&amp;id=106627&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1740;&#1578; &#1605;&#1593;&#1604;&#1605; &#1583;&#1608;&#1585;&#1607;&#8204;&#1740; &#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1740;&#1740;</A><br/></div><div><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A><br/></div><div><A href="view_article7818.html?type=cont.currentlang&amp;id=105818&amp;l=fa">&#1587;&#1575;&#1740;&#1585; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8ed3.html?type=static&amp;id=learning&amp;l=fa">&#1570;&#1605;&#1608;&#1586;&#1588;</a></span><br />
+<div><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A><br/></div><div><A href="view_articlee423.html?ContentID=104858&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A><br/></div><div><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A><br/></div><div><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A><br/></div><div><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A><br/></div><div><A href="view_article5bd8.html?ContentID=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A><br/></div><div><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles900d.html?type=static&amp;id=library&amp;l=fa">&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;</a></span><br />
+<div><A href="view_article0a46.html?type=cont.currentlang&amp;id=103462&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div><A href="view_articlef688.html?type=cont.currentlang&amp;id=104503&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1670;&#1575;&#1662;&#1740;</A><br/></div><div><A href="view_articledaae.html?type=cont.currentlang&amp;id=104538&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1589;&#1608;&#1578;&#1740; &#1608; &#1578;&#1589;&#1608;&#1740;&#1585;&#1740;</A><br/></div><div><A href="view_articlece75.html?type=cont.currentlang&amp;id=114807&amp;l=fa">Electronic Resources</A><br/></div><div><A href="view_article3a7d.html?type=cont.currentlang&amp;id=104728&amp;l=fa">&#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A><br/></div><div><A href="view_articleeac8.html?type=cont.currentlang&amp;id=104748&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A><br/></div><div><A href="view_sorted_articles06b6.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articles1714.html?type=static&amp;id=newsevents&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;</a></span><br />
+<div><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A><br/></div><div><A href="view_article1720.html?ContentID=104873&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;</A><br/></div><div><A href="view_article2827.html?ContentID=104498&amp;l=fa">&#1582;&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_articleb886.html?type=static&amp;id=copyright&amp;l=fa">© &#1605;&#1572;&#1587;&#1617;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740; &#1778;&#1776;&#1777;&#1635;</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=108760 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:15:48 GMT -->
+</HTML>

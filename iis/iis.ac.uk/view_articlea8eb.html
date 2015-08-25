@@ -1,0 +1,636 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=104394 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 21:56:59 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 104394;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute of Ismaili Studies: A Centre for Research and Education" height="115" width="779" class="banner" alt="The Institute of Ismaili Studies: A Centre for Research and Education" src="WebAssets/Site_Images/header/Home_test.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Home_test.jpg','WebAssets/Site_Images/header/Home_1.jpg');
+				var descriptions = new Array('The Institute of Ismaili Studies: A Centre for Research and Education','The Institute of Ismaili Studies: A Centre for Research and Education');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlye349.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D104394">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article118d.html?ContentID=104393">English<li><A href="view_articledaa9.html?ContentID=104395">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article4e5a.html?ContentID=104397">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article6a17.html?type=cont.currentlang&amp;id=103467&amp;l=fr">Un Aperçu d'IIS</A></p><p><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articlecce7.html?type=cont.currentlang&amp;id=110993&amp;l=fr" >L'Imamat Ismaili</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articlecc7c.html?type=cont.currentlang&amp;id=104388&amp;l=fr" >L'Imamat Ismaili: Histoire</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articlea8eb.html?type=cont.currentlang&amp;id=104393&amp;l=fr" >L'Imamat Ismaili: Époque Contemporaine</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr" >Discours: l'Aga Khan III</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr" >Discours: l'Aga Khan IV</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles3f2a.html?type=cat&amp;id=25&amp;t=short&amp;g=date&amp;l=fr" >Lire également le dossier</A></p><p><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></p><p><A href="view_article8faa.html?type=cont.currentlang&amp;id=104737&amp;l=fr">Reseau de Developpement Aga Khan</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<h3 xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">Sir Sultan Muhammad Shah, Aga Khan III</h3><P class=bodytext>Sir Sultan Muhammad Shah, Aga Khan III, traversa au cours de son <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem6461.html?type=glossary&amp;id=228" target=_blank><EM>Imamat</EM></A>, de soixante douze ans, le plus long de l&#8217;histoire, une &#232;re remarquablement intense en moments importants. C&#8217;&#233;tait une &#233;poque qui vit une transformation de grande port&#233;e dans la condition humaine, qui toucha tous les domaines de contribution de l&#8217;homme: social, politique, culturel, intellectuel et scientifique. C&#8217;&#233;tait une &#233;poque qui fut t&#233;moin de l&#8217;apog&#233;e et du d&#233;mant&#232;lement de l&#8217;aventure imp&#233;riale europ&#233;enne. Sa pr&#233;occupation d&#8217;un bout &#224; l&#8217;autre fut le bien-&#234;tre de sa diverse communaut&#233; &#233;parpill&#233;e, mais son champ d&#8217;action s&#8217;&#233;tendit aussi bien au progr&#232;s des Musulmans en Inde et partout ailleurs, qu&#8217;aux autres personnes ordinaires en situation difficile n&#8217;importe o&#249;, r&#233;sumant ainsi son souci g&#233;n&#233;ralis&#233; pour le respect de la dignit&#233; humaine.</P>
+<P class=bodytext>La deuxi&#232;me moiti&#233; tardive du dix neuvi&#232;me si&#232;cle fut une p&#233;riode de grande anxi&#233;t&#233; et de crainte pour les Indiens Musulmans. Ils &#233;taient mal pr&#233;par&#233;s pour faire face aux nouveaux d&#233;fis ou pour profiter des nouvelles opportunit&#233;s d&#8217;ascension sociale et de repr&#233;sentation politique, qui commen&#231;aient &#224; &#233;merger. Un r&#233;cent rapport gouvernemental a d&#233;crit les Musulmans comme &#233;tant en retard en mati&#232;re d&#8217;&#233;ducation. Pour sauvegarder leurs int&#233;r&#234;ts, l&#8217;Aga Khan mis en place une longue campagne pleine de succ&#232;s pour le principe d&#8217;une repr&#233;sentation musulmane en tant qu&#8217;entit&#233; distincte, dans la l&#233;gislation indienne. Cependant, comme pour d&#8217;autres Musulmans pr&#233;voyants, la lutte contre l&#8217;ignorance devint sa passionnante priorit&#233;.&nbsp;</P>
+<P class=bodytext>A partir de chaque plateforme, il plaida gratuitement, de mani&#232;re universelle, en donnant une priorit&#233; fonctionnelle &#224; l&#8217;&#233;ducation; am&#233;liora les &#233;coles secondaires pour les Musulmans, et prit les dispositions pour favoriser les bourses gouvernementales et priv&#233;es pour permettre aux &#233;tudiants Musulmans talentueux d&#8217;&#233;tudier en Angleterre, en Europe, en Am&#233;rique et au Japon afin&nbsp;"qu&#8217;ils puissent acqu&#233;rir les diff&#233;rentes technologies dans le prestigieux Commonwealth industriel".&nbsp;</P>
+<P class=bodytext>Il s&#8217;assura rigoureusement que les hommes et les femmes Musulmans profitaient &#233;quitablement des b&#233;n&#233;fices de l&#8217;&#233;ducation. Lorsque les ressources &#233;conomiques d&#8217;une famille &#233;taient limit&#233;es, il pla&#231;ait une plus grande priorit&#233; &#224; l&#8217;&#233;ducation de la fille. Une m&#232;re instruite&nbsp;&#233;duquera la famille. Il compara les hommes et les femmes aux deux poumons dans un corps. Affaiblir un des poumons revenait &#224; affaiblir le corps entier.&nbsp;</P>
+<P class=bodytext>C&#8217;est dans la poursuite de sa conception de l&#8217;&#233;ducation que l&#8217;Aga Khan se d&#233;dia au projet de transformer, avec succ&#232;s, le Coll&#232;ge Anglo-Oriental Muhammadan &#224; Aligarh, en une universit&#233; pilote, asiatique. Il envisagea l&#8217;Universit&#233; Aligarh comme&nbsp;"un capital intellectuel et moral" pour les Musulmans, une universit&#233; qui aurait&nbsp;"pr&#234;ch&#233; l&#8217;&#233;vangile de la libre recherche, d&#8217;une grande tol&#233;rance et d&#8217;une moralit&#233; parfaite".</P>
+<P class=bodytext>La croisade de l&#8217;Aga Khan pour l&#8217;&#233;ducation ne fut jamais paroissiale. Il accueillit avec chaleur la proposition de l&#8217;installation de l&#8217;universit&#233; Hindou de B&#233;nar&#232;s, d&#233;clarant sa conviction du bienfait qui en r&#233;sulterait de&nbsp;"chaque mouvement qui apportait une meilleure vari&#233;t&#233; intellectuelle dans le pays. De telles contributions intellectuelles vont rendre &#224; terme les Indiens plus tol&#233;rants". Son int&#233;r&#234;t pour l&#8217;&#233;ducation n&#8217;&#233;tait pas non plus confin&#233; &#224; l&#8217;inde. Il appuya, par exemple, la cr&#233;ation du Gordon M&#233;morial Coll&#232;ge au Soudan, lequel &#233;volua plus tard en Universit&#233; de Khartoum.</P>
+<P class=bodytext>La situation difficile des autochtones musulmans en Afrique pr&#233;occupa &#233;norm&#233;ment l&#8217;Aga Khan. Leur retard maladif en mati&#232;re d&#8217;&#233;ducation les excluait du progr&#232;s sur le plan &#233;conomique, social, culturel ou politique. Dans un discours &#233;vocateur &#224; la conf&#233;rence des Musulmans de l&#8217;Afrique de l&#8217;Est &#224; Mombasa, Kenya en 1945, il lan&#231;a un s&#233;rieux d&#233;fi aux bienfaisants musulmans non-autochtones. En tra&#231;ant un plan d&#8217;action pour &#233;carter les trag&#233;dies, il s&#8217;engagea &#224; contribuer une livre sterling pour la donation de chaque livre sterling par les Musulmans non-Ismailis. Au moment de sa mort en juillet 1957, la Soci&#233;t&#233; de Bienfaisance Musulmane de l&#8217;Afrique de l&#8217;Est avait construit plusieurs &#233;coles, mosqu&#233;es, cliniques de sant&#233; et une polytechnique d&#8217;&#233;ducation sup&#233;rieure en Afrique de l&#8217;Est, largement d&#251; &#224; sa g&#233;n&#233;rosit&#233; et ses conseils continuels.&nbsp;</P>
+<P class=bodytext>L&#8217;Imamat Ismaili est compl&#232;tement au-dessus, et ind&#233;pendant, de la politique et de toutes all&#233;geances politiques. Son profond engagement, malgr&#233; tout, aux id&#233;aux Islamiques de fraternit&#233; de l&#8217;homme, la paix entre les nations et le respect de la dignit&#233; de l&#8217;homme, poussa l&#8217;Aga Khan III &#224; exercer un r&#244;le d&#8217;homme d&#8217;&#233;tat dans la sc&#232;ne mondial. Il conclut des amiti&#233;s parmi diff&#233;rentes communaut&#233;s en Inde, en Afrique et ailleurs. Sa d&#233;fense &#233;nergique contre&nbsp;l&#8217;empi&#233;tement de l&#8217;Europe sur la Turquie apr&#232;s la premi&#232;re guerre mondiale &#233;tait motiv&#233;e par le d&#233;sir d&#8217;une paix juste et &#233;quitable, et non par un int&#233;r&#234;t r&#233;el de voir une Turquie mutil&#233;e, provoquer un outrage contre l&#8217;Ouest dans tout le monde musulman. Il joua un r&#244;le important dans l&#8217;&#233;volution politique du sous-continent Indien, et fut un d&#233;l&#233;gu&#233; &#224; la conf&#233;rence de la table ronde &#224; Londres dans les ann&#233;es 1930. En tant que Pr&#233;sident de la ligue des nations de 1937 &#224; 1939, et par le biais d&#8217;autres forums, il chercha des solutions pacifiques aux probl&#232;mes, l&#8217;&#233;mancipation des Musulmans et autres nations contre le joug colonial et une compr&#233;hension mutuelle parmi les nations de cultures diff&#233;rentes comme base d&#8217;une paix durable.&nbsp;</P>
+<P class=bodytext>L&#8217;implication de Sir Sultan Muhammad Shah III dans le monde des affaires fut &#224; l&#8217;origine d&#8217;une tradition familiale de service international. Son fils a&#238;n&#233;, le Prince Aly Khan, servit comme Ambassadeur du Pakistan aupr&#232;s des Nations Unis. Son fils cadet, l&#8217;oncle de l&#8217;actuel Aga Khan, le Prince Sadruddin, a &#233;t&#233; Haut Commissaire des Nations Unis aupr&#232;s des r&#233;fugi&#233;s, Coordinateur des Nations Unis pour l&#8217;assistance &#224; l&#8217;Afghanistan et D&#233;l&#233;gu&#233; Ex&#233;cutif du Secr&#233;taire G&#233;n&#233;ral pour un programme humanitaire des Nations Unis dans les r&#233;gions frontali&#232;res de l&#8217;Irak-Kowet, l&#8217;Irak-Iran, et l&#8217;Irak-Turquie. Le fr&#232;re de l&#8217;actuel Aga Khan, le Prince Amyn, entra au Secr&#233;tariat des Nations Unis apr&#232;s sa graduation &#224; Harvard en 1965, avant de rejoindre le Secr&#233;tariat de l&#8217;Aga Khan en 1968 et d&#8217;&#234;tre fortement impliqu&#233; dans le d&#233;veloppement des activit&#233;s de l&#8217;Imamat.&nbsp;</P>
+<P class=bodytext>Le souci permanent de l&#8217;Aga Khan, tout au long de sa carri&#232;re, a &#233;t&#233; le bien-&#234;tre de sa propre communaut&#233; ismaili. Son leadership &#233;clair&#233; ainsi que la r&#233;action enthousiaste de sa communaut&#233; &#224; ses directives, permirent &#224; cette derni&#232;re de rentrer dans une p&#233;riode de remarquable progr&#232;s dans le domaine de la sant&#233;, de l&#8217;&#233;ducation, du logement, du commerce et de l&#8217;industrie. Pour faire face aux besoins de la communaut&#233; en Asie du Sud et en Afrique de l&#8217;Est, des r&#233;seaux de cliniques de la sant&#233;, d&#8217;h&#244;pitaux, d&#8217;&#233;coles, d&#8217;h&#244;tels, de soci&#233;t&#233;s de coop&#233;rative, de trusts d&#8217;investissements, de soci&#233;t&#233;s d&#8217;&#233;pargne et de constructions et des compagnies d&#8217;assurances furent cr&#233;&#233;s. La p&#233;riode de l&#8217;Imamat a &#233;t&#233; critique dans l&#8217;histoire moderne de la communaut&#233;. Son leadership lui a permis de s&#8217;adapter au changement de l&#8217;histoire.&nbsp;</P>
+<P class=bodytext>Il se reposa sur la tradition musulmane d&#8217;une &#233;thique communautaire d&#8217;une part, et sur une conscience individuelle responsable, ayant la libert&#233; de n&#233;gocier son propre engagement moral et destin&#233;, d&#8217;autre part, pour cr&#233;er de nouvelles structures organisationnelles comme un moyen d&#8217;avanc&#233;e dans le vingti&#232;me si&#232;cle. En 1905, il d&#233;cr&#233;ta la premi&#232;re Constitution Ismaili pour la gouvernance sociale de la communaut&#233; en Afrique de l&#8217;Est. Elle donna &#224; la communaut&#233; une forme d&#8217;administration comprenant une hi&#233;rarchie de conseils &#224; des niveaux locaux, r&#233;gionaux et nationaux. Elle mis &#233;galement en place des r&#232;gles de lois personnelles dans des domaines tels que le mariage, le divorce et la succession et procura des lignes de conduite pour la coop&#233;ration mutuelle et l&#8217;entraide entre les Ismailis et leur interface avec d&#8217;autres communaut&#233;s. Des constitutions similaires furent promulgu&#233;es dans le sous continent Indien. Elles furent toutes p&#233;riodiquement r&#233;vis&#233;es &#224; la lumi&#232;re des nouveaux besoins et&nbsp;circonstances.&nbsp;</P>
+<P class=bodytext>Cette tradition a continu&#233; sous le leadership de son successeur. L&#8217;Aga Khan IV, l&#8217;actuel Imam, a &#233;tendu cette pratique &#224; d&#8217;autres r&#233;gions, depuis les Etats-Unis, le Canada et plusieurs pays Europ&#233;ens, &#224; l&#8217;Asie de l&#8217;Est et du Sud, le Golfe et l&#8217;Iran, en suivant un processus de consultations dans chaque circonscription respective. En 1986, il promulgua une constitution qui, pour la premi&#232;re fois, rassembla sous une &#233;gide, la gouvernance sociale de la communaut&#233; ismaili du monde entier, avec une flexibilit&#233; interne tenant compte des diversit&#233;s r&#233;gionales. Servie par des volontaires nomm&#233;s et responsables devant l&#8217;Imam, la Constitution fonctionne en donnant la possibilit&#233; d&#8217;exploiter la meilleure cr&#233;ativit&#233; individuelle de promouvoir le bien &#234;tre commun, dans un &#233;thos de responsabilit&#233; de groupe. Comme les pr&#233;c&#233;dentes, la Constitution est bas&#233;e sur l&#8217;all&#233;geance spirituelle de chaque Ismaili envers l&#8217;Imam du temps pr&#233;sent, qui est s&#233;par&#233; de l&#8217;all&#233;geance s&#233;culaire qu&#8217;ils doivent en temps que citoyens &#224; leurs entit&#233;s nationales respectives. Alors que la Constitution sert en priorit&#233; les besoins de l&#8217;administration sociale de la communaut&#233; Ismaili, ses dispositions pour encourager une r&#233;solution amicale des conflits par le biais d&#8217;une conciliation et d&#8217;un arbitrage impartial, sont de plus en plus utilis&#233;es dans certains pays par des non Ismaili &#233;galement.&nbsp;</P>
+<P class=mainhead><STRONG>La p&#233;riode contemporaine</STRONG></P>
+<P class=bodytext>Sir Sultan Muhammad Shah Aga Khan III d&#233;c&#233;da le 11 juillet 1957, en ayant d&#233;sign&#233; son petit-fils, le Prince Karim, pour le succ&#233;der en tant que 49i&#232;me Imam h&#233;r&#233;ditaire de la communaut&#233; musulmane Shia Ismaili, install&#233;e dans plus de vingt cinq pays, la plupart dans les pays en voie de d&#233;veloppement, mais ayant &#233;galement une pr&#233;sence substantielle dans le monde industrialis&#233; d&#8217;aujourd&#8217;hui. Le Prince Karim Aga Khan IV avait vingt ans au moment de son ascension. En reconnaissance &#224; sa position de leader d&#8217;une importante communaut&#233; musulmane largement &#233;parpill&#233;e dans le Commonwealth et au-del&#224;, la Reine Elisabeth l&#8217;honora &#233;galement du titre de Son Altesse. Il fut dipl&#244;m&#233; avec une mention sp&#233;ciale &#224; l&#8217;universit&#233; de Harvard en Histoire Islamique, deux ans plus tard en 1959.&nbsp;</P>
+<P class=bodytext>En moins de deux d&#233;cades et demi de sa succession &#224; l&#8217;Imamat, presque toute l&#8217;Afrique devint ind&#233;pendante. Des changements politiques significatifs se produirent &#233;galement en Asie. Le processus de changement &#233;tait ponctu&#233; par de s&#233;rieuses crises; l&#8217;expulsion de Burma de ses r&#233;sidents non autochtones; la guerre civile au Pakistan dont a r&#233;sult&#233; la cr&#233;ation du Bengladesh; l&#8217;expulsion de l&#8217;enti&#232;re population asiatique de l&#8217;Ouganda, sous la dictature brutale de Idi Amin; et l&#8217;exode du Mozambique de toute sa population non autochtones d&#251; &#224; la plus compl&#232;te rupture de la loi et de l&#8217;ordre durant la p&#233;riode dominant l&#8217;ind&#233;pendance du pays.&nbsp;</P>
+<P class=bodytext>Par cons&#233;quent, l&#8217;Aga Khan IV, plus que son grand p&#232;re, eut &#224; traiter avec multiples gouvernements ayant leurs propres aspirations. L&#8217;adaptation au changement, a &#233;t&#233; une caract&#233;ristique consistante de la p&#233;riode depuis 1957. De nouvelles crises apparurent: l&#8217;&#233;ruption de violentes animosit&#233;s ethniques, comme au Tadjikistan, suite &#224; la chute de l&#8217;Union Sovi&#233;tique, et une violence continuelle en Afghanistan. Comme pour les crises pr&#233;c&#233;dentes, des mesures humanitaires urgentes ont d&#251; &#234;tre prises incluant, quand il &#233;tait n&#233;cessaire, la r&#233;installation des populations d&#233;localis&#233;es dans les r&#233;gions concern&#233;es ou en Europe et en Am&#233;rique du Nord. D&#251; &#224; ces changements rapides des circonstances locales et nationales v&#233;cues par la communaut&#233; ismailie dans le monde entier depuis 1957, l&#8217;Aga Khan IV s&#8217;est soustrait de son implication directe et personnelle avec les agences internationales telles que les Nations Unis, et a remplac&#233; les r&#244;les directs et personnels qui &#233;taient tenus dans le pass&#233; par son grand-p&#232;re et les autres membres de sa famille, par de nouvelles relations entre ces agences et l&#8217;&#233;tat major de l&#8217;Imamat Ismaili.&nbsp;</P>
+<P class=bodytext>Sous le leadership de l&#8217;Aga Khan IV, les institutions de l&#8217;Imamat se sont, ainsi, d&#233;velopp&#233;es bien au-del&#224;&nbsp;du noyau g&#233;ographique et de l&#8217;envergure de leurs activit&#233;s originelles. L&#8217;impulsion qui les a soutenu, et a model&#233; la conscience sociale de sa communaut&#233;, l&#8217;Aga Khan l&#8217;a expliqu&#233; dans ses maintes d&#233;clarations, reste la m&#234;me &#233;thique musulmane de compassion pour les vuln&#233;rables dans la soci&#233;t&#233;. Plusieurs nouvelles institutions ont &#233;t&#233; fond&#233;es, refl&#233;tant la complexit&#233; actuelle du processus de d&#233;veloppement. La Fondation Aga Khan, incluant les programmes Aga Khan de support de d&#233;veloppement rural, et de support de d&#233;veloppement des soci&#233;t&#233;s de montagnes, l&#8217;Universit&#233; Aga Khan, les Services de sant&#233; Aga Khan, les Services d&#8217;&#233;ducation Aga Khan et les Services de Planning et Construction Aga Khan op&#232;rent dans le d&#233;veloppement social. Les activit&#233;s &#233;conomiques sont du ressort du Fond Aga Khan pour le d&#233;veloppement &#233;conomique incluant ses filiales de Services de promotion en tourisme, industrielle et activit&#233;s financi&#232;res. Le Trust Aga Khan pour la culture coordonne les activit&#233;s culturelles de l&#8217;Imamat. Sous son &#233;gide se trouvent le Prix Aga Khan pour l&#8217;Architecture, le Programme Aga Khan pour l&#8217;Architecture Islamique &#224; Harvard et &#224; l&#8217;Institut Technologique de Massachusets, et le Programme de Support des Cit&#233;s Historiques. Les probl&#232;mes relatifs &#224; la construction dans le Monde en d&#233;veloppement reste le centre d&#8217;int&#233;r&#234;t du Trust, particuli&#232;rement dans les soci&#233;t&#233;s o&#249; les Musulmans sont pr&#233;sents.&nbsp;</P><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Sir Sultan Muhammad Shah, Aga Khan III</TITLE><META HTTP-EQUIV="Expires" CONTENT="Fri, 30 Oct 2015 18:22:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 30/10/2005&nbsp;23:43&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=104394 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 21:56:59 GMT -->
+</HTML>

@@ -1,0 +1,539 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112842 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:57:50 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 112842;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only2120.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D112842">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article19ad.html?ContentID=112843">Français</A></li><li><A href="view_article3c08.html?ContentID=112844">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articledb35.html?ContentID=112846">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></p><p><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Encyclopaedia Articles</H3><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">Tawakkul</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_personf3ef.html?type=authors&amp;id=136">Dr Leonard  Lewisohn</A></DIV><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <A href="http://www.brill.nl/publications/online-resources/encyclopaedia-islam-online"><I>The Encyclopaedia of Islam</I></A> (Second Edition), Volume X, 2000, pp. 376-8, ed. P. Bearman, Th. Bianquis, C.E. Bosworth, E. van Donzel and W.P. Heinrichs, (E.J. Brill).<br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><P><IMG style="MARGIN-TOP: -2px" border=0 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=20 height=20><A href="SiteAssets/pdf/Tawakkul-%20Leonard%20Lewisohn%20-%2006-09-11.pdf">Download PDF version of this article</A></P>
+<P>Tawakkul (a.), verbal noun or <I>masdar </I>of Form V of <I>wakala</I> &#8220;to entrust [to someone], have confidence [in someone]&#8221;, a concept in Islamic religious terminology, and especially that of <U><A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufism</A></U>, with the sense of dependence upon God. </P>
+<P>Tor Andrae pointed out that the verb <I>tawakkala</I> meant &#8220;to trust someone in the same way as I would trust my <I>wakil&#8221;</I>, i.e., the person whom I have chosen to be my procurator or <I>homme d&#8217;affaires</I>, to look after my business and to govern and dispose on my behalf. Here he was drawing largely on <U><A href="javascript:void(LaunchGlossary('GlossaryItem2d06.html?type=glossary&amp;id=388'))">al-Ghazali</A></U>&#8217;s etymological analysis of <I>tawakkul </I>in his <I>Ihya&#8217;</I>, Cairo 1352 AH / 1933 CE, iv, 223, where he states that it is derived from <I>wakala</I>, power of attorney or deputyship, &#8220;hence one says that one entrusts one&#8217;s affairs (<I>wakala</I>) to someone, i.e., one relies on him. The one to whom one consigns one&#8217;s affairs is called an agent or trustee (<I>wakil</I>). With respect to the one in whom one trusts, one says that one abandons oneself to one&#8217;s agent. Thus one entrusts one&#8217;s soul to him and depends firmly on him... Hence <I>tawakkul</I> expresses the heart&#8217;s confidence in the One Trustee (<I>al-wakil al-wahid)</I>&#8221;.</P>
+<P>In the earliest <U>Sufi</U> writings is found just such a conception of &#8220;religion as <I>tawakkul&#8221;</I>, the sum of all acts of pious devotion, the essence of the feeling of &#8220;absolute dependence&#8221;, which, as Schleiermacher observed, itself is religion. In the <U><A href="javascript:void(LaunchGlossary('GlossaryItemf3b2.html?type=glossary&amp;id=378'))">Qur&#8217;an</A></U> and <I><U><A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">Hadith</A></U></I>, trust in God is a central topic. In the Qur&#8217;an, <I>tawakkul</I> is mentioned some 60 times, with such typical admonitions as, &#8220;So put your trust in God, if you are believers&#8221; (Q 5:23). In <I>Hadith</I>, we find, e.g., &#8220;If you trust in God Almighty as it truly demands, He will certainly supply your daily bread just as He provides the birds who fly forth with empty stomachs in the morning but return surfeited at dusk&#8221; (<I>Ihya&#8217;</I>, iv, 211).</P>
+<P>In early Qur&#8217;anic exegesis, in al-Sulami&#8217;s recension of the <I>Tafsir</I> ascribed to Imam Ja&#8216;far al-Sadiq, his description of the interior topography of the heart anticipates later Sufi conceptions of <I>tawakkul </I>as an inner spiritual attitude rather than an external practice (ed. P. Nwyia, <I>M&#233;langes de la Facult&#233; orientale de l&#8217; Universit&#233; St. Joseph (MUSJ)</I>, xliii/4 [1967], 181-230); and early debates in Sufism on the propriety of <I>tawakkul</I> in the spiritual life often focussed on the exegesis of Qur&#8217;anic verses, e.g., Sahl al-Tustari (d. 283 AH / 896 CE ) on XI, 6, &#8220;As long as one who trusts in God (<I>al-mutawakkil</I>) perceives secondary causes (<I>al-asbab</I>), he is a false claimant.&#8221;</P>
+<P>From early Islamic times onwards, there were heated debates about the respective virtues of &#8220;earning a living&#8221; (<I>kasb, takassub, iktisab</I>) versus pure trust in God (<I>tawakkul</I>) (summary of these in Abu Talib al-Makki<I>, Qut al-qulub</I>, Beirut n.d., ii, 5-6). Like other technical terms in Islamic thought, these discussions partook of the parity phenomenon, where ideas were discussed in terms of linguistic pairs of opposites representing contrary philosophico-mystical or mystico-theosophical positions, so that <I>tawakkul/kasb</I> was often paired with <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemc551.html?type=glossary&amp;id=218'))">jabr</A></U>/ikhtiyar</I>, determinism/ freewill (see e.g. the tale of the lion and the beasts of the chase in <U><A href="javascript:void(LaunchGlossary('GlossaryItemfd77.html?type=glossary&amp;id=389'))">Rumi</A></U>&#8217;s <I>Mathnawi</I>, ed. and tr. Nicholson, i, vv. 900-1200, 1263-1371). </P>
+<P>It was the Iraqi school of Baghdad, followers of al-Junayd (d. 298 AH / 910 CE) and his reliance for sustenance on God&#8217;s Providence alone, who became the main exponents of the doctrine of <I>tawakkul</I> in early Islam, whereas the Khurasanian school of Nishapur, following the teachings of Abu Yazid Tayfur al-Bastami (d. 260 AH / 874 CE) based their doctrine on <I>malama</I>, blame, and advocated the virtues of <I>kasb</I>. But these were general tendencies rather than clear-cut divisions, and we find individuals who did not fit easily into this categorisation; thus Abu Turab Nakhshabi (d. 245 AH / 859 CE), although a member of the <U><A href="javascript:void(LaunchGlossary('GlossaryItemef6a.html?type=glossary&amp;id=196'))">Khurasan</A></U> school, was also famed for his <I>tawakkul</I> (Jami,<I> Nafahat al-uns</I>, Tehran 1991, 49). </P>
+<P>Those fearful, like the Baghdadi Ruwaym (d. 298 AH / 310 CE), of reliance on excessive <I>tawakkul</I>, stressed the Prophet&#8217;s <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem3269.html?type=glossary&amp;id=83'))">sunna</A></U></I> on the virtues of <I>kasb</I>, and debates on the limits of <I>tawakkul</I> abounded in the 3rd-4th AH /9th-10th CE centuries. According to Hujwiri, <I>Kashf al-mahjub</I>, tr. Nicholson, Leiden and London 1911, 146, Abu Hamza al-Khurasani, an early advocate of <I>tawakkul</I>, reportedly fell into a pit and refused to call out to be rescued by a party of travellers lest he be thought to have committed himself to anyone but God (cf. further, Nicholson, <I>The mystics of Islam</I>, London 1914, 41 ff.). Perhaps the best-known advocate of <I>tawakkul</I> within the Baghdadi school was Ibrahim al-Khawwas (d. 290 AH / 903 CE), who carried the idea of self-abandonment to God to its extreme; al-Junayd commented on his death that &#8220;the expanse of <I>tawakkul</I> on the surface of the earth has been rolled up&#8221; (&#8216;Abd Allah al-Ansari al-Harawi, <I>Tabaqat al-sufiyya</I>, Tehran 1362/1983, 348). </P>
+<P>But most Sufis by now were increasingly aware of the subtlety of the <I>tawakkul</I> doctrine, literal interpretation of which they tended to regard as naive. Thus <U><A href="javascript:void(LaunchGlossary('GlossaryItem8a9f.html?type=glossary&amp;id=385'))">al-Hallaj</A></U> found it objectionable that al-Khawwas based his entire mystical doctrine on <I>tawakkul</I>, taking it as &#8220;real faith&#8221; (Hujwiri, <I>Kashf</I>, 290). A subtle point was raised in such critiques as this and others: the sincerity of one&#8217;s own devotion is blemished by consciousness of one&#8217;s own reliance, and the annihilation of self (<I>fana&#8217;</I>) must underlie true realisation of <I>tawakkul</I>. It is clear that most Baghdadi Sufis acknowledged the subtle connection of the two.</P>
+<P>It was not long before many mystics began to criticise the classical doctrine of <I>tawakkul</I> as wanting in spiritual sophistication, especially those Khurasanians who had little regard for the concept anyway. Abu Bakr al-Wasiti (d. 320 AH / 931 CE) considered it, with <I>zuhd</I>, renunciation, <I>rida</I>, contentment, and <I>taslim</I>, submission, as one of the four stations which he regarded as unbefitting of true wisdom (<I>ma&#8216;rifa</I>), i.e., it was suitable only for dull pedestrians along the Sufi path.</P>
+<P>But the dominant attitude which prevailed amongst the mystics was that it was the interior reality, not the external paraphernalia, of <I>tawakkul</I> which really mattered. The great Sufi poet Baba Tahir (<I>fl</I>. 5th AH / 11th CE century) devoted the 26th chapter of his <I>Aphorisms</I> (<I>Kalimat-i qisar</I>, ed. J. Mashkur, Tehran 1354/1975) to the topic of trust, and voices the idea paradoxically: <I>tawakkul nafy tawakkul,</I> &#8220;trust in God is the negation of trust in God&#8221;, explained by a commentator as &#8220;the one who truly trusts in God denies himself any attachment to <I>tawakkul</I> in the sense that he has neither confidence in, nor pays attention to, his own trust&#8221;. Here, the poet approaches al-Wasiti&#8217;s view that <I>tawakkul</I> is unbefitting of wisdom. It was also recognised that <I>tawakkul</I> and <I>tawhid</I> were interconnected and involved the attainment of perfect inner peace, as emphasised by al-Ghazali in <I>Ihya&#8217;</I>, iv, 210 (cf. A. Schimmel, <I>Mystical dimensions of Islam</I>, Chapel Hill, N.C. 1975, 119).</P>
+<P>Whilst there were debates about the degrees and authenticity of <I>tawakkul</I>, the classical Sufis nonetheless generally concurred that there was a moral quality which involved abandonment of freewill and volition whilst beholding God as the supreme source of causality, as the definitions cited by &#8216;Abd Allah al-Ansari, <I>Tabaqat</I>, 338, show; in these last, human force and will are negated in favour of absolute divine Providence and Power. Thus <I>tawakkul</I> came to be considered a key component, a pillar of faith, as by al-Ghazali, who devoted over 40 pages of his <I>Ihya&#8217;</I> to the subject of <I>al-tawhid wa&#8217;l-tawakkul</I> and who laid down four degrees of <I>tawhid</I> revealed through the <I>&#8216;ilm al-mukashafa</I>, science of mystical unveiling. </P>
+<P>A similar schema of four degrees, with <I>tawakkul </I>corresponding to one of them, was laid down by the 8th AH / 14th CE century author Mahmud Shabistari in his short Persian philosophical treatise <I>Haqq al-yaqin</I> (Tehran 1365 / 1986, 310-11). Nearly all the Sufi manuals, whilst enumerating the &#8220;stations&#8221; (<I>maqamat</I>) in different orders, list <I>tawakkul</I> as amongst the initial stages of the Sufi way, preceded by <I>zuhd</I> (cf. e.g. Hujwiri, <I>Kashf</I>, 181). Al-Ghazali further discerned three degrees of trust: (1) that of the confidence (<I>thiqa</I>) of a client in his legal agent; (2) a stronger kind, like the absolute reliance of an infant on its mother, which is however unconscious and lacks any deep knowledge of her abilities; and (3), the highest degree, when the devotee trusts in God &#8220;like a corpse in the hands of the corpse-washer&#8221;, but is nevertheless conscious that his soul is being moved by the Eternal Will of the Divine Power. This tripartite typology of <I>tawakkul</I> proved, in fact, very popular in later Sufi expositions, such as that of the great Chishti saint Nizam al-Din Awliya&#8217; (d. 725 AH / 1325 CE).</P>
+<P><B>Bibliography</B></P>
+<P><B></B></P>
+<P>In addition to references given in the article: </P>
+<P>Dihkhuda, <I>Lughat-namah</I>, v, Tehran, pp. 6267-8, s.v.</P>
+<P>L. Gardet, <I>L&#8217;abandon a Dieu (tawakkul): texte d&#8217;al-Ghazzali</I>, in <I>Revue de l'Institut des Belles Lettres Arabes (IBLA)</I>, xiii (1950), pp. 37-48 (partial tr. of the section of the <I>Ihya&#8217;</I> on <I>tawhid</I> and <I>tawakkul</I>).</P>
+<P>L. Lewisohn, <I>The way of Tawakkul. The ideal of &#8220;Trust in God&#8221; in classical Persian Sufism</I>, in <I>Islamic Culture (IC)</I>, xxiii / 2 (1999), pp. 27-62.</P>
+<P>J. Nurbakhsh, <I>Ma&#8216;arif al-sufiyya</I>, v, London 1986, pp. 59-84.</P>
+<P>B. Reinert, <I>Die Lehre vom tawakkul in der &#228;lteren Sufik</I>, Berlin 1968.</P>
+<P>Darshan Singh, <I>The nature and meaning of tawakkul in Sufism</I>, in <I>Islamic Culture (IC)</I>, l vi (1982), pp. 265-74.</P><BR><BR><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Tawakkul</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 6 Sep 2021 12:58:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 15/09/2011&nbsp;12:30&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112842 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:57:51 GMT -->
+</HTML>

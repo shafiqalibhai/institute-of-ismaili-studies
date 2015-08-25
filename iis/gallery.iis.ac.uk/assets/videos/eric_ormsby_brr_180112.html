@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from gallery.iis.ac.uk/assets/videos/eric_ormsby_brr_180112.html by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:16:38 GMT -->
+<head>
+<style type="text/css">
+#chapters
+{
+font-family: Verdana;
+font-size: 12px;
+color: green;
+}
+</style>
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences_all.js"></script>
+<script type="text/javascript">
+    var bcExp;
+    var modExp;
+    var modCue;
+    var modVid;
+    var queuedTime;
+	
+    /**
+     * Automatically called by the Brightcove API.
+     */
+    function onTemplateLoaded(experienceId)
+    {
+        bcExp = brightcove.getExperience(experienceId);
+		
+        // get references to the modules we'll need
+        modExp = bcExp.getModule(APIModules.EXPERIENCE);
+        modCue = bcExp.getModule(APIModules.CUE_POINTS);
+        modVid = bcExp.getModule(APIModules.VIDEO_PLAYER);
+		
+        // listen for the content load event so we can grab the videos cuepoints
+        modExp.addEventListener(BCExperienceEvent.CONTENT_LOAD, onContentLoad);
+    }
+	
+    /**
+     * Called when the video content is loaded.
+     */
+    function onContentLoad(event)
+    {
+        // reference to the chapter div which we'll put our links into
+        var chaptersElem = document.getElementById("chapters");
+
+        // remove any previous links which already be in the div
+        chaptersElem.innerHTML = "";
+		
+        // get the list of cuepoints for the video
+        var cuepoints = modCue.getCuePoints(modVid.getCurrentVideo().id);
+		
+        // loop over all the cuepoints
+        for (var i=0; i < cuepoints.length; i++)
+        {
+            // we're looking for "code" (type = 1) cuepoints, there will also be some
+            // ad cuepoints in the list so check the type 
+            if (cuepoints[i].type == 1) 
+            {
+                // only add the divider if at least one link has been added
+                if (chaptersElem.children.length > 0) 
+                {
+                    chaptersElem.innerHTML += " | ";
+                }
+				
+                // dynamically add a new link for the current cuepoint
+                chaptersElem.innerHTML += "<a href='javascript:void();' onclick='seek(" + cuepoints[i].time + ");'>" + cuepoints[i].name + "</a>";
+            }
+        }
+    }
+	
+    /**
+     * Seeks to the given time in the video.
+     */
+    function seek(time)
+    {
+        // it's not possible to seek unless the video is playing
+        // so check to see if it's playing and if it's not then
+        // save the time and tell the video to play
+        if (modVid.isPlaying()) 
+        {
+            modVid.seek(time);
+        }
+        else
+        {
+            queuedTime = time;
+            modVid.addEventListener(BCMediaEvent.PROGRESS, onProgress);
+            modVid.play();
+        }
+    }
+	
+    /**
+     * Called when the video starts playing.
+     */
+    function onProgress(event)
+    {
+        // remove the progress event listener and seek to the saved time
+        modVid.removeEventListener(BCMediaEvent.PROGRESS, onProgress);
+        seek(queuedTime);
+    }
+</script>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+<object id="myExperience2102234353001" class="BrightcoveExperience">
+  <param name="bgcolor" value="#FFFFFF" />
+  <param name="width" value="430" />
+  <param name="height" value="242" />
+  <param name="playerID" value="1598527073001" />
+  <param name="playerKey" value="AQ~~,AAAAlwpybYk~,Oor7wWdAhP6GQESPHAyPMLSHR9S_DlbJ" />
+  <param name="isVid" value="true" />
+  <param name="isUI" value="true" />
+  <param name="dynamicStreaming" value="true" />
+  
+  <param name="@videoPlayer" value="2102234353001" />
+</object>
+
+<script type="text/javascript">brightcove.createExperiences();</script>
+
+<div style="color:green;" id="chapters"></div>
+</body>
+
+<!-- Mirrored from gallery.iis.ac.uk/assets/videos/eric_ormsby_brr_180112.html by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:16:38 GMT -->
+</html>

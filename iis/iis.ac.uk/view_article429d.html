@@ -1,0 +1,720 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110497 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:18 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 110497;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" height="115" width="779" class="banner" alt="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" src="WebAssets/Site_Images/header/ResearchandPublication_2.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/ResearchandPublication_2.jpg','WebAssets/Site_Images/header/Research%20And%20Publications.jpg');
+				var descriptions = new Array('The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies','An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyd592.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D110497">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article999f-2.html?ContentID=110500">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_articlee27b.html?ContentID=110501">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table style="WIDTH: 450px" cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>
+
+
+Why Study Islamic Thought in the Twentieth Century? (Introduction)
+
+
+</strong><br/><strong><DIV><A href="view_person1dfc.html?type=authors&amp;id=20">Dr Suha  Taji-Farouki</A></DIV><DIV><A href="view_persone24a.html?type=authors&amp;id=194">Dr Basheer   Nafi</A></DIV></strong><strong></strong></p><p><table cellSpacing="0" cellPadding="0" width="450" background="#" border="0"><tbody><tr><td><div><DIV>This is an edited version of an article that was originally published in <I><A href="../www.iis.ac.uk/view_articleff68.html?type=cont.currentlang&amp;id=104963">Islamic Thought in the Twentieth Century</A>,</I> eds. Suha Taji-Faroukhi and Basheer M. Nafi (2004)<I>,</I> I. B. Tauris, pp. 1-27</DIV> </div></td><td> <IMG border="0" onError="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/index.html" align="left" alt="" style="padding: 0px;" xmlns=""></td></tr></tbody></table></p><div> </div><div><STRONG><IMG border=0 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=25 height=25> </STRONG><A href="SiteAssets/pdf/Why%20Study%20Islamic%20Thought%20in%20the%20Twentieth%20Century.pdf">Download PDF version of the article</A> (120 KB) 
+<DIV>&nbsp;</DIV>
+<DIV><B></B></DIV>
+<DIV><B>Key words:</B></DIV>
+<P><B></B></P>
+<P>Islamic thought, modernity, Islamic schools,<I> fiqh</I>, Mamluk, ulama, Sufi <I>tariqa</I>s, modern Islamist, <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;i</A> Iran, Khumayni, Qur&#8217;an, <A href="javascript:void(LaunchGlossary('GlossaryItem3269.html?type=glossary&amp;id=83'))">Sunna</A>,<I> tawhid</I>, <I>khilafa</I>, diversity, Orientalism, globalisation.<B> </B><I></I></P>
+<P><B></B></P>
+<P><B>Table of Contents:</B></P>
+<P><B></B></P>
+<UL>
+<LI><A href="#introduction">Introduction</A> 
+<LI><A href="#General Framework">Towards a General Framework</A> 
+<LI><A href="#This Volume">This Volume</A> </LI></UL>
+<P><B></B></P>
+<P><B><A name=introduction>Introduction</A></B></P>
+<P><B></B></P>
+<P>The question that perhaps poses itself at the outset in relation to this volume is why such a study of Islamic thought in the twentieth century should be undertaken. There is, of course, no simple answer to this question. Yet, even in the Western context, the twentieth century seems to mark a turning point in human history. Relating the condition of modernity to the movement of modernisation during the twentieth century, Marshall Berman writes: </P>
+<P>The maelstrom of modern life has been fed from many sources: great discoveries in the physical sciences, changing our images of the universe and our place in it; the industrialisation of production, which transforms scientific knowledge into technology, creates new human environments and destroys old ones; speeds tip the whole tempo of life, generates new forms of corporate power and class struggle; immense demographic upheavals, severing millions of people from their ancestral habitats, hurling them halfway across the world into new lives; rapid and often cataclysmic urban growths; systems of mass communication, dynamic in their development, enveloping and binding together the most diverse people and societies; increasingly powerful national states, bureaucratically structured and operated, constantly striving to expand their powers; mass social movements of people, and peoples challenging their political and economic rulers, striving to gain some control over their lives; finally, bearing and driving all these people and institutions along, an ever-expanding, drastically fluctuating capitalist world market.[<A href="#1">1</A>]</P>
+<P>Berman&#8217;s view of the social processes unleashed by these changes, which constitute what we know as &#8216;modernisation&#8217;, is very much influenced by his understanding of the Western (that is, European and North American) experience. Yet the impact of these changes has been felt not only in Western but also in non-Western societies, and especially in Muslim countries, as the twentieth century has become a major arena of disruption and dynamism in intellectual, social and political life. In the Middle East of 1900, for example, less than 10 per cent of the inhabitants were city dwellers; by 1980, 47 per cent were urban. In 1800, Cairo had a population of 250,000, rising to 600,000 by the beginning of the twentieth century. The unprecedented influx of immigrants from rural areas brought the population of Cairo to almost 8 million by 1980.[<A href="#2">2</A>] Massive urbanisation altered patterns of living, of housing and architecture, of the human relation with space and land, of marketing, employment and consumption, and the very structure of family and social hierarchy. Programmes of modernisation were launched in several parts of the Muslim world in the second half of the nineteenth century; however, by the end of the Second World War, the accelerated rate of change had reached almost every corner of Islamic life. Modern transformation brought with it pervasive and ever-expanding nation-states; centralised education and legal systems; telegraph and telephone lines, railways and highways; printing and visual media; and finally satellite dishes, mobile phones and digital communication.</P>
+<P>But the difference between the Western and the Islamic experiences of the modern is significant. While modern changes were intrinsic to Western historical development, they were largely seen by Muslims as alien and enforced. Intellectual and social resistance to modern changes, which are still visible in Western societies, were sometimes - and remain - pronounced and powerful in the Muslim world. The Muslim perspective on the modern was fundamentally different in another way, for even when modern systems, institutions and instruments were welcomed, it did not escape the Muslim collective consciousness that these were articulated in foreign languages, and were premised on foreign values. Muslim peoples&#8217; relation to the modern was moreover complicated by the imperialist project, and the role that the imperialist administrations played in the process of change in Muslim societies.</P>
+<P>Yet modernity was never triumphant in the Muslim world; while the new became irreversibly integrated into Muslim realities, it could not totally obliterate the old and the traditional.[<A href="#3">3</A>] In many cases, imperatives of survival and adaptation forced both the old and the new to exchange concessions; in others, relations between the two were marked by a state of conflict. This situation became a source of continuous tension in Muslim societies, turning Islamic discourse in the twentieth century into a discourse of crisis. The modern Muslim lives in the middle of countless moments of apparently irreconcilable differences. These include the values taught and promoted in the mosque, and the morality of the secular public sphere; the laws emanating from the sacred book, and the official law of the land; the inherently pervasive and centralised modern state, and the unrepresentativeness of the body politic; the world-view advanced by modern education, and that associated with traditional texts and Islamic schools. Conscious of the philosophical underpinnings of modernity, twentieth-century Islamic thought reflects a continuous intellectual struggle to define the place of the sacred and the place of human reason, to decipher the implications engendered by identifying with Islam in a world characterised by a fractured, multi-dimensional sense of identity, and to chart a meaningful way between an ever-persisting past, and an ever-changing reality. In many respects, therefore, what is &#8216;Islamic&#8217; in modern Islamic thought is largely a construct, a construct in which a complex nexus of forces and cognitions are at play in the context of modernity, and which defies easy labels and definitions. As Roxanne L. Euben has concluded, even the ideas of Sayyid Qutb, a &#8216;fundamentalist&#8217; <I>par excellence</I> among twentieth-century Muslim ideologues, cannot be described as either pre-modern, anti-modern or post-modern. Rather they should be understood in terms of a dialectical relationship to modernity, one that entails not the negation of modernity but an attempt to simultaneously abolish, transcend, preserve and transform it&#8217;.[<A href="#4">4</A>] This dialectical relationship to the modern creates a level of discontinuity between Islamic thought in the twentieth century and Islamic intellectual traditions, and provides the crucial framework for the study of this thought. It is often obscured by the fact that much modern Muslim thought, in a reaction to the actual or perceived threat of cultural marginalisation or annihilation, has increasingly become self-consciously Islamic. As the Western debate concerning Islam has intensified in the course of the century and particularly since the Iranian revolution, it has pushed the &#8216;other&#8217; in this debate to self-identify as such. This Islamic self-consciousness at the same time reflects a process in which Islam as a faith has become objectified in the Muslim imagination, partly as a result of the penetration of the Muslim world by multiple ideological and philosophical options with which &#8216;Islam&#8217; must compete, and with which it must favourably compare.[<A href="#5">5</A>]</P>
+<P>In contrast with the ferment and dynamism of the modern period, Islamic thought and Islamic societies of middle Islamic history have often been represented as stagnant and static. The period extending from the Mongol invasion in the mid-thirteenth century to the Muslim-European encounter from the late-eighteenth century onwards has been described as a period of decay and lack of creativity in Muslim history. During this period, according to widespread assumptions, speculative thinking declined drastically, <I>fiqh</I> and theological pursuits were frozen, and intellectual reasoning dissipated.[<A href="#6">6</A>] As more recent scholarship on this long and complex era of Islamic history makes significant advances, there is an emerging realisation that the stagnation hypothesis may not be correct. Islamic life thus did not cease to change and evolve, whether in intellectual or structural spheres. During the Mamluk era, Middle Eastern Islamic cities re-emerged, remarkably, from the long period of confrontations with the Crusaders and the Mongols, and Islamic learning and culture exhibited the complexity and diversity of a new renaissance. Recent academic glimpses into the early Ottoman period, often assumed to be the nadir of Islamic decline, depict a continuous intellectual dynamism and change. At the same time, both Iran and Moghul India were living through some of the most prosperous and fruitful eras of their histories.[<A href="#7">7</A>] While the focus of the present work is on the twentieth century, it is neither premised on nor in any way meant to condone the view that vitality and diversity characterise Islamic thought in the modern period to the exclusion of Islamic thinking and the intellectual life of Muslim societies of pre-modern eras. Rather, its intention is to highlight the fact that the volume and magnitude of change experienced by Islamic societies and culture during the late-nineteenth, and particularly the twentieth centuries, are largely unprecedented in the history of these societies and culture. This change has transformed the discursive underpinnings and assumptions of Islamic thought, as well as its subject matter. It has created overlapping and interacting junctures of intellectual rupture and continuity never witnessed before in Islamic intellectual history. This is what informs our conviction that Islamic thought in the twentieth century constitutes a worthy subject for an undertaking such as that presented here, however incomprehensive it might be.[<A href="#8">8</A>]</P>
+<P><B><A name="General Framework">Towards a General Framework</A></B></P>
+<P>By their very nature, projects such as this volume, which bring together articles by different contributors, tend to be susceptible to a loss of inner unity and coherence. By emphasising their own areas of specialisation, contributors are naturally less concerned with the overall picture and the ultimate purpose of the project. Bearing this in mind, in what follows in this introductory chapter we attempt to sketch a basic framework for approaching Islamic thought in the twentieth century, constructed around three major themes. First, is the making of modern and contemporary spokesmen of Islam, the producers of the range of ideas that form the subject of this volume. Second, are the salient features of Islamic discourse in the twentieth century, among which its internal diversity specifically is highlighted. Third, are the inter-connections and dis-connections, or ruptures, between Islamic thought and the global intellectual arena (particularly, its dominant Western formulations), or their shared concerns and the gulfs and preoccupations that divide and separate them.</P>
+<P><I>Modern Spokesmen for Islam</I></P>
+<P><I></I></P>
+<P>Throughout its long history, a single social group spoke for most of the Muslim world. This was the ulama class. Although Islam was embedded within and expressed by the community as a whole, it was the ulama who held the recognised authority, particularly amongst the majoritarian Sunni communities, to interpret the Qur&#8217;an, to derive the rules of <I>fiqh</I> from their cardinal sources, and to define the religious outlook of society. The role played by the ulama in safeguarding the tenets of religion, holding the societal nexus, and extending legitimacy to the state was unparalleled. This role was achieved through the ulama&#8217;s occupation and control of the posts of <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem22e6.html?type=glossary&amp;id=139'))">qadi</A></U></I>s, teachers, <I>mufti</I>s, guardians of <I>waqf</I>s, market inspectors, and scribes. With the rise of the bureaucratised Islamic empires in the fifteenth and sixteenth centuries, two major developments came to affect the position of the ulama. First, was the incorporation of a large segment of the ulama class into structures of the Ottoman, <U><A href="javascript:void(LaunchGlossary('GlossaryItem3e53.html?type=glossary&amp;id=117'))">Safavid</A></U> and Mughul states.[<A href="#9">9</A>] Second, was the increasing identification of the Sufi <I>tariqa</I>s with the ulama institutions. [<A href="#10">10</A>]</P>
+<P>While leading to a marked reduction in intellectual diversity within the ulama class as a whole, and limiting the degree of freedom they enjoyed relative to that of ulama of preceding centuries, these developments did not diminish the influence of the ulama. On the contrary: the pervasive diffusion of Sufi <I>tariqa</I>s in Muslim society and the instrument of the state that had thus become available to &#8216;official&#8217; ulama in fact consolidated and added further dimensions to the ulama&#8217;s status and influence in society. By the late nineteenth and beginning of the twentieth century, sweeping transformations produced by the modernisation programmes and the experience of European imperialism were leaving their impact on the position of the ulama, opening the doors for the eventual emergence of new spokesmen for Islam.</P>
+<P>Modern education brought with it new disciplines, depriving the ulama of their centuries-old monopoly of the educational process. At the same time, it produced new types of professionals and intellectuals, for whom the traditional Islamic knowledge of the ulama was becoming increasingly irrelevant. Similarly, modern court systems based on foreign legal procedures and laws, and the appropriation of the legislation process itself by the centralised state, undermined the foundation of the social identification between the ulama and the law. The <I>waqf</I> sector, a major source of the economic power of the ulama and of their economic independence, was largely taken over by the modern state in the nineteenth century, and finally abolished in many Muslim countries during the course of the twentieth century. To use Pierre Bourdieu&#8217;s defining concept of the social field,[<A href="#11">11</A>] the ulama were rapidly losing much of their economic and cultural capital, as modern schoolteachers, lawyers, engineers, journalists, government officials, army officers and politicians, and even actors and actresses, speaking new languages and promoting different ideals, crowded the social arena.</P>
+<P>However, as noted earlier, as the triumph of modernity was never comprehensive or complete, modern social forces in Muslim societies were ideologically divided from the moment of their birth. This division was accentuated under the impact of the political, social, ideological and economic maelstrom of the twentieth century, leading to the fragmentation of cultural expression and the Islamic cultural arena. The modern Muslim intelligentsia might thus espouse an ideal of one of the Marxist variants, or an &#8216;Islamic&#8217; political vision, or subscribe to a Sufi <I>tariqa</I>, or promote a liberal or a nationalist vision, or be utterly non-committed. For that matter, the ulama have themselves also become widely divided, not only on traditional <I>madhhabi</I> and theological lines, but also as reformist/traditional, Sufi/salafi, and political/non-political ulama. One of the salient outcomes of the historical shift encapsulated in the decline of the ulama class was the rising role of the Islamically committed intelligentsia in speaking on behalf of Islam. This intelligentsia occupied much of the space vacated by the ulama, either because of the evident weakening of the ulama as a social force or because of their failure to respond to the modem discursive challenge. The vast majority of illustrative Islamist political leaders and influential Muslim intellectuals in the twentieth century are of non-ulamatic background, including Hasan al-Banna, Abu al-A&#8216;la Mawdudi, Sayyid Qutb, Hasan al-Turabi, Necmettin Erbakan, Rashid al-Ghannushi, Khurshid Ahmad, Tariq al-Bishri, Muhammad Salim al-&#8216;Awa, Munir Shafiq and &#8216;Abbasi Madani. The modern Islamist intellectuals and political activists, graduates of the universities of Cairo, Istanbul, Aligarh and Algiers, as well as of London and Paris, speak for Islam using novel idioms and discourses, expressing new concerns and preoccupations, and crystallising the contradictions of modernity while they reflect the ruptures it has brought with Islamic intellectual traditions.&#8217;[<A href="#12">12</A>]</P>
+<P>While emphasis must be placed upon such shifts engendered by modernisation, one must not fall into the trap of underestimating the tenacity of the traditional forces, and the ability of these forces, and their associated religious modes and spokesmen, to survive the challenges of the twentieth century. In this volume, chapters by Basheer M. Nafi (The Rise of Islamic Reformist Thought and its Challenge to Traditional Islam&#8217;) and Elizabeth Siriyyeh (&#8216;Sufi Thought and its Reconstruction&#8217;) demonstrate that both the ulama class and the Sufi <I>tariqa</I>s have succeeded in riding the storm of modernisation, albeit with significant concessions and heavy losses. They have survived either by implementing structural changes and embracing reformist thought, or by regrouping. Two of the most influential Sunni ulama of the twentieth-century Arab world, Muhammad Rashid Rida (1865-1935) and Yusuf al-Qaradawi (b. 1926), thus subscribe to a salafi-reformist outlook, while a long process of reform and restructuring has been a major factor behind the enduring influence of al-Azhar university. On the other hand, consolidation and regrouping have been mainly responsible for the survival of the Sufi-oriented Barelwi trend and the Deobandi, orthodox Hanafi school of ulama in the Indo-Pakistani subcontinent. The triumph of the Islamic revolution in 1979, led by Ayatullah Khumayni, is the most startling testimony to the survival and persisting influence of the ulama class and its traditional centres of learning in Shi&#8216;i Iran. This persistence must be qualified on at least two significant fronts, however. First, it is necessary to take into account the important contribution of Iranian Islamist intellectuals and professionals to the evolution of the political and cultural environment in which the Islamic revolution was reared, and to the rallying of the masses behind the Khumayni leadership. Second, it must be acknowledged that Khumayni&#8217;s concept of <I>wilayat al-faqih</I>, which played a vital role in imploding the traditional Shi&#8216;i Ithna&#8216;ashari ulama institution from within, and in offering a discursive justification for the political responsibility of the ulama to establish an Islamic state in the absence of their Shi&#8216;i Imam, singled him out as an <I>&#8216;alim</I> with a powerful reformist outlook.</P>
+<P><I>The Diversity of Twentieth-Century Islamic Thought</I></P>
+<P><I></I></P>
+<P>Diversity, to the point of complete fragmentation, is the outstanding feature of Islamic thought in the twentieth century. Unlike traditional Islamic thought, in which ideational differences referred to a common origin and in which an evolving consensus set the boundaries of orthodoxy, modern Islamic thought reflects diverse frames of references and is inspired by an assortment of intellectual, as well as structural, influences. It lacks any level of consensus. In addition to invoking Islam as a source of legitimacy, at the same time it projects Islam, as suggested above, as the object of the intellectual process. This diversity, important aspects of which are illustrated in William Shepard&#8217;s chapter (&#8216;The Diversity of Islamic Thought: Towards a Typology&#8217;), is the function of several forces.</P>
+<P>First, rather than being a development within cultural traditions that is internally generated, twentieth-century Islamic thought is constitutively responsive; it is substantially a reaction to extrinsic challenges. Thus, Muslim reformist thought was largely an eclectic response to post-Enlightenment European ideas; modern Sufi and neo-Ash&#8216;arite tracts are motivated by the combined onslaught of Muslim reformist and Western rationalist thought; liberal Islamists seek to establish a niche for democracy and the multi-party system in modern Islamic political thought, while other forces of political Islam re-imagine the traditional Islamic polity in terms of the modern nation-state. Meanwhile conservative Islamic thinkers reject Islam&#8217;s westernisation and politicisation, brought about by the rise of reformist thought and political Islam. Second, in its complex relation to modernity, modern Islamic thought has become a reflection of the very nature of modernity itself, from the confidence evinced in Kantian morality and the rise of capitalism, to the loss of certainty engendered by twentieth-century global wars, consumerism, and relativist philosophies. Modernity resulted in undermining centuries-old social institutions, in challenging normative values, in raising doubts about the invincibility of Islamdom, and in offering different and contradictory answers to the very questions it generated. The nineteenth-century Islamic reformists seemed to think that embracing reason and free will would engender a new Islamic revival. In the twentieth century, Muslim thought embraced and subsequently lost faith in the pan-Islamic ideal, nationalism, the effectiveness of the modern state, and socialism. It remains deeply divided on the merits of liberalism and globalisation. In essence, the invocation of Islam in modern Islamic thought was not only an affirmation of continuing commitment to the Islamic faith and heritage. It was also meant to extend a sense of certainty, morality and stability to ever-changing perceptions of the past and present.</P>
+<P>Yet, this in itself has become a source of further divergence, for debating Islam has largely turned into a debate about man and the world, at a time when both man and the world are in a state of continuous change and flux.</P>
+<P>Diversity in modern Islamic thought was also precipitated by, and has been a major factor behind, the loss of Islamic intellectual authority. Lamenting the intrusion of non-ulamatic elements into the modern cultural arena of Islam, Khaled Abou El FadI, a Muslim academic, writes:</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P align=left>&#8230;there is a state of virtual anarchy in modern Islam: it is not clear who speaks with authority on religious issues. This state of virtual anarchy is perhaps not problematic in secular societies where religion is essentially reduced to a private matter. But where religion remains central to the dynamics of public legitimacy and cultural meaning, the question of who represents the voice of God is of central significance.&#8217; [<A href="#13">13</A>]</P></BLOCKQUOTE>
+<P>In the pre-modern mode, the authority of the ulama sprang from age-long traditions of learning, a teacher-student system of intimate companionship, established customs of <I>ijaza</I>-granting, piety and societal recognition. Major Islamic centres of learning, such as al-Azhar and al-Zaytuna, and numerous madrasas throughout the Muslim world, played a vital role in maintaining these traditions and their associated attributes of Islamic intellectual authority. New spokesmen for Islam, lawyers, teachers, journalists or modern professionals, lacked the formal training of the ulama class along with its established criteria of learning and piety.&#8217;[<A href="#14">14</A>] Above all, they lacked the world-view of this class. What contributed yet further to the rupturing of traditional Islamic authority was the powerful case made by the Muslim reformists for reasserting the primacy of the foundational Islamic texts, the Qur&#8217;an and Sunna. As the salafi idea of returning directly to the founding texts gradually displaced the assumption of the ulamatic traditions of learning as the necessary credentials for speaking on behalf of Islam, the Islamic cultural arena became wide open to an assortment of voices, reflecting new notions of authority. Alternative modes of authority were derived from the dominant and pervasive influence of modern education and professions, from political activism, and from the power and influence of modern information technology and modes of communication. [<A href="#15">15</A>] In many cases, the intensifying conflict between the ruling classes and political Islamic forces forced even the modern nation-state to appropriate for itself the authority to speak on behalf of Islam. As claims to Islamic intellectual authority continue to multiply and diversify, and the potential choices available to the individual expand, it is increasingly a matter of accident which &#8216;authoritative&#8217; voices, texts and discourses are encountered and embraced. </P>
+<P>One of the most significant features of twentieth-century Islamic thought, which both contributes to and reflects the trends sketched above, is the blurring of contours between expressions of Islamic intellectualism and the academic study of Islam. The study of Islam, in the modern sense, began with the emergence of Orientalism in the late eighteenth century in modern European educational centres. [<A href="#16">16</A>] However, Orientalism did not begin to exercise any tangible influence on Islamic thought until the late nineteenth and early twentieth centuries, and this influence was largely in a negative sense. Increasing numbers of Muslim scholars were encountering the works of Western scholars of Islam, whether in European languages or through translations, and many felt compelled to respond to what they regarded as the Orientalists&#8217; distortions of Islam and Islamic realities. Behind the polemics, however, Muslim admiration for the meticulous methods of inquiry adopted by the Orientalists could be discerned. [<A href="#17">17</A>] In the course of the twentieth century, as scholars of Area Studies, Humanities and Social Sciences gradually replaced Orientalists, Islamic culture began to develop an affinity of sorts with works produced by new generations of Western scholars of Islam, among whom many were in fact themselves Muslims. Parallel with this development was the institution of the modern university as the bastion of higher education in the Muslim world. Here, the study of Islam would be largely introduced just like any of the other modern areas of specialisation. Gradually, as the chapters in this volume by Hibba Abugideiri (&#8216;On Gender and the Family&#8217;) and Rodney Wilson (&#8216;The Development of Islamic Economics: Theory and Practice&#8217;) testify, the Islamic cultural arena has become a melting-pot of ideas from diverse sources, among which are Muslim thinkers or academics who may or may not have a declared commitment to an Islamic ideal. Alternatively, they might emanate from works produced in various departments of Western universities. Some of the most illustrious Muslim intellectuals of the twentieth century, from Hasan al-Turabi, Mohammed &#8216;Abed al-Jabiri to Khurshid Ahmad, have themselves been trained in the best traditions of modern Humanities and Social Sciences. At the same time, works of Western scholars, such as Joseph Schacht, Henri Laoust, H. A. R. Gibb, Albert Hourani, and Bernard Lewis have exercised a marked influence on modern Islamic debates.[<A href="#18">18</A>] The impact of modern Humanities and Social Sciences on modern Islamic thought might in fact prove immeasurable. Thus, while modern Muslim societies and currents of Islamic thought remain objects of inquiry for students of Islam, the publications generated by such inquiry are widely read by Muslims, the very objects of inquiry, thereby producing and reproducing a novel and unprecedented circle of knowledge, in which external projections and self-perceptions continuously interact.</P>
+<P><I>Inter connections and Dis-connections</I></P>
+<P>Coupled with the structural transformation of Muslim societies, the conscious adoption and unconscious internalisation of Western ideas and concepts by modern Muslims have led to fundamental changes both in the imagining of the Islamic past, and in the definition of what constitutes the &#8216;Islamic&#8217;. The example of nationalism is a case in point. From the early twentieth century, Muslim intellectuals demonstrated a clear predisposition to embrace the idea of nationalism in spite of its Western origins (and despite the persistent influence of the pan-Islamic project). Typically, this alien idea was set within an Islamic rubric. Thus, Islamist intellectuals in the Arab world sought in an Islamically-orientated nationalist vision a route for revitalising Arab society and reawakening the Arab spirit; while Pakistan&#8217;s nationalist project was framed not in terms of language and ethnicity but in terms of Islam. Similarly, Islam was the defining source of differentiation that informed the struggle of Bosnian Muslim intellectuals to assert Bosnian independence. The concept of constitutionalism provides a further example. In the late 1970s, it laid the foundation for the establishment of the Islamic Republic of Iran, mirroring the role it had previously played in the Iranian and Ottoman reformist revolutions of the early twentieth century.</P>
+<P>Furthermore, with some minor differences, the philosophical underpinnings of the Islamic state in Iran, and likewise the assumptions of a wide range of the programmes of political Islamist forces, are heavily indebted to the modern Western concept of the state. Similarly, the &#8216;Islamic&#8217; debate about civil society, democracy and human rights, which has intensified during the late twentieth century,[<A href="#19">19</A>] is only faintly related to Islamic traditions, and is rather a reflection of a global debate that swept the world in the aftermath of the collapse of the Soviet bloc.</P>These few examples illustrate the inter-connections that exist between twentieth-century constructions of the &#8216;Islamic&#8217; and the intellectual products of the modern West. Yet, the traumatic experience of Western imperialism and post-colonial Western hegemony, which has unfolded steadily and undeniably during the twentieth century, has also had its share in shaping the Islamic imagining, both of the self-world and of the world at large. Equally, this experience has shaped the manner in which modern Muslims invoke traditional Islamic values and cultural systems, and, crucially, the ends to which such invocation is put. Hence, as much as the West is admired and internalised, it is vilified and consciously rejected. Rashid Rida&#8217;s revised assessment of the West, motivated by images of carnage during the First World War, would develop as the century progressed into an outright and sweeping condemnation of Western decadence and immorality, as articulated in the writings of Hasan al-Banna, Abu al-A&#8216;la Mawdudi and Sayyid Qutb, for example.[<A href="#20">20</A>] As illustrated by the chapter in this volume by Abdelwahab El-Affendi (&#8216;On the State, Democracy and Pluralism&#8217;), more than a century and a half after the beginnings of the Muslim encounter with the modern West, Islamic thought continues in its struggle to reconcile its embrace of modern political ideas and institutions with the Western cultural and philosophical roots of those ideas and institutions. 
+<DIV>
+<DIV id=ftn1>
+<P>Perceptions of a threatening West have been translated into self-defensive cultural withdrawal on the part of some Islamic circles, which can take the form of passive, introspective Sufi positions on the one hand, or highly aggressive anti-Western postures on the other. The discursive Islamic formulations in which the latter are rooted, illustrate the consciously constructed dis-connections between certain modes of Islamic thought and the West, or the modern world at large with which it is equated. Examples of such self-defensive constructs can be found in the assertion of Islamic concepts such as <I>al</I>-<I>wala&#8217; wa&#8217;l-bara&#8217; </I>(allegiance to the Islamic side and dissociation from the non-Islamic one), and the division of the world into Islam and <I>jahiliya</I>, <I>dar al-Islam</I> and <I>dar al-harb</I>, or Islam and <I>kufr</I>. Such bipolar models and their associated categories are then used to justify the use of violence, whether against Western targets in the international arena or, closer to home, against political enemies within Muslim societies, who are themselves often seen as Western agents. A discourse of dis-connection can thus have drastic implications in shaping the postures adopted from within towards Muslim societies and states. While the state and its various apparatuses are anathematised, specific categories within society can at times pay an especially high price. This has been demonstrated in recent years by the experience of the Copts at the hands of the militant al-Jama&#8216;a al-Islamiyya in Egypt, and by that of women under the rule of the Taliban in Afghanistan. Informed by an explicit rejection of a threatening West and an impulse to retrieve a perceived pure Islamic culture as the basis for constructing a pure Islamic society and polity, Islamic discourses of dis-connection are at times nonetheless developed through the assumption of concepts and realities that are connected to, or have been shaped by the very West that is denied. [<A href="#21">21</A>] This underscores the centrality of the Islam-West relation to contemporary Islamic thinking, and points to its complexity.</P>
+<P>Muslim views of the West are naturally shaped by contradictory contingencies, aspects of which are discussed in the chapter in this volume by Jacques Waardenburg (&#8216;Reflections on the West&#8217;). Beyond these, however, it is evident that it is through the Western prism specifically (and not through the prism of Chinese, Japanese, Indian, or any other cultural influences) [<A href="#22">22</A>] that modern Muslim intellectuals see the world, and define their relations to its diverse cultural actors and currents. Furthermore, even when resisting the hegemonic forces of modernity and struggling to address problems that have been entirely or largely of the West&#8217;s making, defending what they deem to be the immutable values of their religious traditions, Muslims tend to seek allies in Western forces specifically, be they religious or otherwise. This tendency has been evident on many occasions and in different arenas including, for example, the joint Islamic-Catholic position adopted during the UN International Conference on Population and Development (Cairo, 5-13 September, 1994) and The Fourth World Conference on Women (Beijing, 4-15 September 1995), and the shared activities among Islamic representatives and others at UN World Conferences on the Environment. It is also apparent in various intellectual fora for bringing together Muslim and Western intellectuals and academics, an example of which is The Circle of Tradition and Progress, which argues that the modernist project has actually come to pose a threat to life itself.[<A href="#23">23</A>] Although the vast majority of Islamic intellectual output with an international perspective remains confined to issues related to the pivotal Islamic-Western relation, Muslim intellectuals are nevertheless becoming increasingly visible in the global debates generated by the twentieth-century experience. They have endeavoured to make a contribution from within the Islamic cultural heritage to efforts addressing issues related to accelerated rates of modernisation and change, and to redress some of their more pernicious effects. Worthy of mention in this regard are arguments rooted in the pivotal Qur&#8217;anic concepts of <I>tawhid </I>and <I>khilafa</I> for a human-oriented and morally-inspired vision of economics and development based on equity and justice and balancing the demands of growth with those of the environment.[<A href="#24">24</A>] In addition, resources derived from the universalist ethics of Islam have inspired calls by Muslim intellectuals for a reinstatement of moral dimensions in global politics, through prioritisation of ethical and human issues.[<A href="#25">25</A>] Finally, some have drawn attention to the potential dangers posed by unrestrained rates of secularisation,[<A href="#26">26</A>] by unbridled scientific and technological advance,[<A href="#27">27</A>] and by uncontrolled processes of globalisation.[<A href="#28">28</A>]</P>
+<P>An appreciation of the three broad themes sketched in the basic framework here informs the overall approach to Islamic thought in the twentieth century adopted in the present volume. These themes are discernible to a greater or lesser extent in the individual chapters, as well as in the volume as a whole.</P>
+<P><B><A name="This Volume">This Volume</A></B></P>
+<P>The questions and challenges that have exercised Islamic thought in the twentieth century first came to the fore during the closing decades of the preceding century, when the major responses, fault-lines and debates were also adumbrated. The structure of the present volume reflects this. In the context of modernisation projects launched in the face of the growing encroachment of a dominant Europe, the late nineteenth century witnessed the beginnings of a rupture with traditional Islamic modes of thought. As the first three chapters here demonstrate, the Islamic intellectual arena during the twentieth century in many ways reflects this rupture, and the problematic of how to relate to the modern West that had effectively engendered it. Basheer M. Nafi traces the social origins, ideological underpinnings and ultimate fate of the late nineteenth-early twentieth-century salafi reformist project, seeing this as a response to the crisis engendered by the challenge of Europe and the demands of modernisation, and an expression of the inner Islamic impulse of reform and renewal. While acknowledging its shortcomings and the ultimate disintegration of the Islamic-Western (or modern-traditional) synthesis it had endeavoured to forge, Nafi underlines the reformist project&#8217;s profound, long-term imprint, largely overlooked in assessments of it, on the political and cultural order of modern Muslim societies, and on the evolution of twentieth-century Islamic intellectual currents. For example, the reformists helped prepare the ground for the emerging sense of modern nationhood that would eventually influence all aspects of the modern Muslim experience. By breaking the dominance of traditional modes of Islam and challenging the monopoly of the traditional institutions, they prepared the way for those with no ulamatic training to speak on behalf of Islam. Through their willingness to engage with modernity while retaining their Islamic commitment, they helped pave the way for its assimilation with the least possible losses for Islam. Finally, the reformist vision, in some respects, provided the canonical logic for the ideologisation of Islam manifest in the twentieth-century movements of political Islam.</P>
+<P>William Shepard&#8217;s survey of the ideological dimension of Islamic thinking in the twentieth century bears ample witness to the fact that the problematic of Islam and Western modernity has loomed large throughout. It also illustrates the outcomes of the unravelling of the reformist synthesis. Shepard&#8217;s typological analysis is framed in terms of responses to two inter-related issues: Islam as a holistic doctrine, and the limits of adoption from the West. Three pure types are identified, which appear in concrete expression in positions of innumerable admixtures and shades, demonstrating the diversity and fragmentation of intellectual life in Muslim contexts. These are secularism, Islamism and traditionalism/neo-traditionalism, the latter being separated from the first two in terms of attitude towards modernity. In 1900, the author notes, all but a limited urban elite in the Muslim world would have been described as &#8216;traditionalists&#8217;. In contrast, in the course of the twentieth century, secularism and Islamism (in its modernist and radical expressions) have each flourished in opposition to each other, having reached something of an impasse in their relations at present. Significantly, Shepard points to the decline of the West&#8217;s moral hegemony as a major factor behind the growth in Islamic self-affirmation during the final quarter of the century. He also underlines the ongoing upward social mobility, acquired through mass education, of Muslims who are responsive to Islamist or neo-traditionalist options, thanks to their traditional backgrounds. Both Shepard and Nafi stress that, while dealt a significant blow by the impacts of modernity and the challenge of alternative formulations of Islam, Islamic traditionalism has not only survived but occasionally gained in force in the twentieth century, having been constrained in many cases to engage in self-reform. </P>
+<P>As a mode of traditional Islam, <I>tasawwuf</I> was the object of a pointed attack among many late nineteenth and early twentieth-century reformists, and remained thus across the twentieth century for many Islamists and other cultural forces. Elizabeth Sirriyeh charts its fortunes. Underscoring once more the grand rupture of the twentieth century, she points out that, in 1900, the Sufi understanding of Islam was mediated to the vast majority of Muslims by Sufi <I>shaykh</I>s or traditional ulama who accepted <I>tasawwuf</I> as the inner core of Islam. While it never regained the strength and influence of previous centuries, Sirriyehs discussion demonstrates that the story of <I>tasawwuf</I> by the close of the twentieth century was one of measured success, thanks largely to its flexibility and adaptability. This has been in spite of mid-century predictions of its demise, and the rival campaigns of Islamist movements, whose very successes and excesses may indeed have contributed to <I>tasawwuf</I>&#8217;s recovered popularity.</P>
+<P>Continuities and ruptures in modes of Islam and Islamic intellectual traditions, which are both mediated and magnified by the impacts of modernisation, point to the importance of historical and contextual dimensions in the study of modern Islamic thought. Questions relating to theory and methodology and the assumptions (at times prejudices) that guide these are brought to the fore in chapters by Ralph Coury and Abdelwahab El-Affendi. Focusing on the contentious issue of nationalism in the Muslim world (and the case of Arab nationalism in particular), Coury offers a critique of the widespread assumptions and prominent contemporary theories that shape a significant trend in scholarship. Marshalling an array of evidence, he upholds the view that nationalism has been confirmed as the dominant view of the world among Muslims, and that it has been as &#8216;modular&#8217; in the Islamic world as it has been elsewhere. He attributes the widespread opposing assumption (that the Islamic world is virtually immune to nationalism, or is able to produce only nationalisms that parody what exists in the West) to the persistence of Orientalist perspectives. These continue to shape understandings of the history of nationalism in the Islamic world, and its relation to culture. Coury thus points to the reformulation of standard Orientalist motifs in the discourses of post-modernism and neo-modernisation theory, which have risen to prominence in the post-Cold War period. He argues that these have reinforced emphasis on the notion of a uniquely Islamic essence, defined either in terms of Islam as a religion, or in terms of fragmentation. Insisting that Islamic societies are not constituted by an Islamic essence that has been &#8216;everywhere the same and decisive&#8217;, Coury rejects the totalisation of these societies and their histories as Islamic. As a corollary, he underlines the fallaciousness of interpretations of Islamism as a &#8216;return of the repressed&#8217;, in societies that are ultimately resistant to nationalism and all other foreign imports. Coury&#8217;s rejection of the notion of an Islamic essence and his critique of a spectrum of discussions of Arab nationalism have several important implications for the study and understanding both of Arab nationalism specifically and of Muslim societies and culture more generally. Three of these implications can be mentioned here by way of illustration. First, it makes possible a re-imagining of Arab nationalism from standard tendencies to demonise it in various ways, or to pronounce it dead. Second, it enables more illuminating interpretations of political Islamist movements and their agendas, and of their &#8216;Islamic identity as manufactured, rather than recovered. Finally, it elucidates the inter-connectedness of the Muslim experience with that of other societies and cultures, and the virtually universal character of what is often attributed to some Islamic &#8216;uniqueness&#8217;.</P>
+<P>Essentialist assumptions have at times informed the argument that Islamism (and indeed Islam itself) is by nature illiberal, and that anti-democracy tendencies are inherent within it. Pointing up the general ambivalence that characterises Islamist attitudes towards democracy, rooted in the challenge of reconciling its philosophical underpinnings and world-view with fundamental Islamic principles, El-Affendi&#8217;s discussion demonstrates that the outcomes of this challenge in Islamic discourse have been far from monolithic. Indeed, he notes that, while many Islamists set about &#8216;proving&#8217; the compatibility of Islam and democracy, or pragmatically isolate and embrace its procedural aspects and even field candidates in the electoral process, current regimes in Muslim countries and their Western backers reject not only Islamism, but, equally, the democratic option. El-Affendi underlines the importance for understanding the modern Islamic debate on democracy of contextualisation, something that is frequently neglected in discussions of this debate. In charting its course, due consideration must thus be given to the impact of the abolition of the caliphate, the implantation of modern states which have failed substantially to achieve legitimacy in Muslim perceptions, the assertion of democracy as a global norm, and the secularisation debate. As in the case of democracy, El-Affendi&#8217;s discussion of Islamic responses to the debate concerning human rights and pluralism illustrate Muslim efforts simultaneously to adopt and mimic Western constructs and norms, to defend the distinctiveness of the Islamic experience, and to accommodate and deny existing realities.</P>
+<P>Similar concerns and impulses can be discerned in the development of Islamic thinking concerning economics. As Rodney Wilson demonstrates, the mid-century establishment of the science of Islamic economics, conceived as an ideal system rooted in the sources of revelation, has been intimately connected with the elaboration of Islamic critiques of contemporary economic theories, and of responses to the secularist-capitalist structures under which Muslims live. Most recently, the discipline has launched a challenge to development economics, based on alternative concepts of development that emphasise human values, socio-moral regeneration, and justice. Wilson highlights the preoccupation of many Islamic economists, who have often been trained in Western universities, with the problematic of how to narrow the gap between Islamic ideals and the contemporary realities of Muslim countries. Outside of the sphere of finance, where there has been much practical implementation, he notes the lack of commitment in existing Muslim states to addressing this issue.</P>
+<P>In comparison with Islamic economics, which has been relatively marginal in modern Islamic thought, debates concerning gender and the family have been prominent and widespread throughout the century. Contrasting this with late nineteenth-century Muslim debates on how the liberation of woman from the role of mother could be achieved, Hibba Abugideiri deconstructs a pervasive, &#8216;taken-for-granted&#8217; way of thinking in the twentieth century that has re-inscribed traditional notions of family, and hence of women&#8217;s roles, in Islamic thought. While turn-of-the-century reformists had conceptualised a woman&#8217;s role as a social, and not exclusively domestic, agent, the discourse analysed by Abugideiri gives primacy to motherhood and a woman&#8217;s role within the family, and views her agency within society as secondary to this role. This perspective, which Abugideiri argues has been constructed at the expense of other legitimate Islamic roles and rights of women, is drawn from an essentialist understanding of women as relational. She is thus conceived as the unique cementing agent of the family, society and culture, who while binding these together, at the same time confers on them Islamic legitimacy. As the interpreted nature of women as relational is also central to Islamic cultural authenticity, Abugideiri concludes that modernity, post-coloniality, globalisation and Western cultural hegemony have all served as pretexts for its construction and perpetuation. Noteworthy in recent years is the rise of a counter-discourse that underlines the nature of the interpretive process as a human endeavour and, accordingly, that of gender roles as cultural constructs. As chapters by Abugideiri and Coury demonstrate, essentialist understandings are by no means the monopoly of certain trends of Western scholarship on Islam, and indeed arise in Islamic constructs of the Muslim other, whether defined in terms of gender, or ideological persuasion. </P>
+<P>It has been contended that the uniquely Islamic &#8216;essence&#8217; constructed by some Western scholarship on Islam has been cast in the role of the other to the distinctiveness, indeed uniqueness, of Western modernity. Some might argue that such a contention can be legitimately inverted, and applied to Muslim constructs of the West and, more broadly, of the non-Muslim other, however defined. Acknowledging this debate, the purpose of chapters by Jacques Waardenburg, Hugh Goddard and Suha Taji-Farouki is to investigate perceptions, views and constructs of the non-Muslim other in twentieth-century Islamic thought. An important aspect of these contributions is to map the impact of the transformations engendered by this century on traditional views and perceptions, where appropriate, and to ascertain the extent to which twentieth century Muslim imaginings have become the subject of consensus, or display fragmentation. The chapters in question consider Islamic thinking concerning three significant non-Muslim others, which are frequently clustered together, or at least associated with each other, in contemporary Islamic discourses. Waardenburg&#8217;s overview of Muslim reflections on the most significant, and perhaps the defining, non-Muslim other highlights the widely-divergent perceptions and constructions of the West embedded in twentieth-century Muslim discourses. It maps the impact on these of shifting configurations exemplified by the colonial experience, de-colonisation , the Cold War, and the &#8216;New World Order&#8217; since 1991. As Waardenburg demonstrates, imaginings of the West are linked to the diverse experiences of particular Muslim intellectuals, social groups, societies and nations. While they are neither monolithic nor static, they bring home the tremendous impact of the West, both as a reality and an idea, on Muslims in the twentieth century. Among these disparate imaginings, the West as a political construct in which the aspect of power predominates has been particularly prominent, reflecting the historical facts and ongoing concerns of various Muslim experiences. Discourses that focus on the religious aspect of the West were preoccupied during the first half of the twentieth century with the activities of Christian missions in Muslim countries, motivating refutations of Christianity. Since then, a major concern has been with the rise of secularism as a subversive influence from the West. As Goddard demonstrates, apart from standard polemical works that are largely faithful to the traditional mould, and with a few important exceptions, intellectual engagement with Christianity <I>per se</I> has been less prominent in Muslim writings from the second half of the century. This might be attributed to the fact that, as Waardenburg suggests, Christianity is seen less as an aggressive enemy; at the same time, preoccupation with the West as a political and cultural threat has taken centre stage. Goddard highlights two important areas that speak to the diversity and creativity of Muslim thinking on the Christian other, and the impact of twentieth-century political realities in nurturing Muslim re-imaginings of traditional Islamic concepts and modes. First is the Islamic debate concerning the status of Christians in Islamic societies and states, in which the contemporary validity of the traditional institution of the <I>dhimma</I> is questioned and increasingly denied. Second is the expanding arena of Muslim-Christian dialogue. Such developments can be partly attributed to Muslim perceptions that Christianity no longer constitutes a hostile force (it is in fact often seen as an ally in the struggle against the common enemy of radical secularism), and to the growing and constructive personal contacts between Muslims and Christians world-wide. With certain qualifications, a useful contrast can be drawn here with Muslim perceptions of the Jewish other, and the realities of Muslim-Jewish relations in the twentieth century. As Taji-Farouki demonstrates, the profound impact of Zionism and the creation of the Jewish state in Palestine on Muslim perceptions of the Jews and the Muslim-Jewish relationship has ushered in significant shifts in traditional Islamic formulations, producing new constructs and traditions. Its broader context has been the ruptures occasioned by modernity and the colonial experience through which the West, in Muslim perceptions, effectively brought the Jews into the heart of Arab-Muslim existence, as part of its new order for the region. The sense of crisis and mood of self-defence generated by the Muslim experience of modernity, with its perceived imposition of alien concepts and forms, is perhaps nowhere more acute in twentieth-century Islamic discourses than in relation to the issue of the Jews and their state. Taji-Farouki emphasises that to understand contemporary Islamic discourses concerning this issue, as for so many others, it is imperative to return to the Muslim experience of the modern and, in particular, the imperialist project that was seen to be inextricably linked to it.</P>
+<P>To conclude this introductory chapter, we would underline the complex, contradictory and overlapping nature of the forces of the twentieth-century experience, which are mirrored in the manifestations and expressions of modern Islamic culture. These forces, which shape the broad context of modern Islamic thought, point to the risks involved in upholding reductionist, one-dimensional approaches to its ideational structures, and its makers and producers. While undercurrents of internal conflict, polarisation, and a strong sense of crisis form significant aspects of modern Islamic thought, these aspects must not be allowed to conceal its essential vitality and dynamism. Nor should they be seen as the end of its journey. In many respects, modern Islamic thought is characterised by a strong sense of the self-learning and experimentation that constitute key features in modern man&#8217;s struggle to grasp the meaning of his world, and to come to terms with it. It is hoped that the essays collected here might in some way contribute to this struggle.</P>
+<P><B>Notes</B></P>
+<P><B></B></P>
+<P><A name=1>1. </A>Marshall Berman, <I>All That is Solid Melts into Air: The Experience of Modernity</I> (New York, 1982), p. 16.</P>
+<P><A name=2>2.</A> Dale F. Eickelman, <I>The Middle East: An Anthropological Approach</I> (Englewood Cliffs, NJ, 1989), pp. 96-97.</P>
+<P><A name=3>3.</A> Albert Hourani, &#8216;How Should We Write the History of the Middle East? <I>IJMES</I>, 23 (1991), pp. 125-136.</P>
+<P><A name=4>4.</A> Roxanne I. Euben, &#8216;Premodern, Antimodern or Postmodern? Islamic and Western Critiques of Modernity&#8217;, <I>Review of Politics</I>, 59, 3 (1997), pp. 429-460.</P>
+<P><A name=5>5. </A>Recognition of the self-consciously Islamic character of the thinking surveyed in this volume is deliberately reflected in the volume title. On the &#8216;objectification&#8217; of Islam in Muslim consciousness, see Dale F. Eickelman and James Piscatori, <I>Muslim Politics</I> (Princeton, NJ, 1996), pp. 37-45. On the &#8216;ideologisation&#8217; of Islam, see Bassam Tibi, &#8216;Islam and Modern European Ideologies&#8217;, <I>IJMES</I>, 18 (1986), pp. 15-29.</P>
+<P><A name=6>6. </A>For some aspects of the debate about Islamic decline, see Charles Issawi, &#8216;Europe, the Middle East and the Shift in Power: Some Reflections on a Theme by Marshall Hodgson&#8217;, in C. Issawi, <I>The Arab World&#8217;s Legacy</I> (Princeton, NJ, 1981), pp. 111-131; Martin Sicker, <I>The Islamic World in Decline</I> (New York, 2000).</P>
+<P><A name=7>7. </A>See, for example, Marshall Hodgson, <I>Rethinking World History</I>, edited, with an introduction and conclusion, by Edmund Burke III (Cambridge, 1993), pp. 171-206; John O. Voll, &#8216;Hadith Scholars and <I>Tariqa</I>s: An ulama Group in the 18th Century Haramayn and Their Impact in the Islamic World&#8217;, <I>JAAS</I>, 15, 3-4 (1980), pp. 264-273; John O. Voll, &#8216;Muhammad Hayya al-Sindi and Muhammad ibn Abd al-Wahhab: An Analysis of an Intellectual Group in Eighteenth Century Madina&#8217;, <I>BSOAS</I>, 38, 1 (1974), pp. 32-39. Also, the collection of articles included in N. Levtzion and J. Voll, ed., <I>Eighteenth-Century Renewal and Reform in Islam</I> (New York, 1987); Ahmad Dallal, The Origins and Objectives of Islamic Revivalist Thought, 1750-1850&#8217;, <I>JAOS</I>, 113, 3 (1993), pp. 341-359; Basheer M. Nafi, &#8216;Tasawwuf and Reform in pre-Modern Islamic Culture: In Search of Ibrahim al-Kurani&#8217;, <I>WO</I>, 42,3 (2002), pp. 1-49.</P>
+<P><A name=8>8.</A> To complement the present work, a follow-up volume exploring the impact of the twentieth century on the evolution of the Islamic disciplines specifically is planned.</P>
+<P><A name=9>9.</A> Stanford Shaw, <I>History of the Ottoman Empire and Modern Turkey</I> (Cambridge, 1976), vol. 1, pp. 134-139; Ira Lapidus, <I>A History of Islamic Societies</I> (Cambridge, 1988), p.324; Marshall Hodgson, <I>The Venture of Islam</I> (Chicago, 1974), vol. 3, pp.105-106.</P>
+<P><A name=10>10.</A> Halil Inalcik, <I>The Ottoman Empire: The Classical Age</I>, 1300-1600 (London, 1973), pp. l68-202; J. Spencer Trimingham, <I>The Sufi Orders in Islam</I> (Oxford, 1971), pp. 99-102; Ishtiaq Husain Qureshi, <I>The Muslim Community of the Indo-Pakistani Subcontinent</I>, 610-1947 (The Hague, 1962), pp. 125-148.</P>
+<P><A name=11>11. </A>Pierre Bourdieu, <I>Practical Reason on the Theory of Action</I> (Stanford, 1998), pp.1-18.</P>
+<P><A name=12>12.</A> See, for example, John L. Esposito and John O. Voll, <I>Makers of Contemporary Islam</I> (Oxford, 2001); Ali Rahnema, ed., <I>Pioneers of Islamic Revival</I> (London and New Jersey, 1994).</P>
+<P><A name=13>13. </A>Khaled Abou El Fadl, &#8216;The Place of Tolerance in Islam&#8217;, <I>The Boston Review</I> (December 2001/January 2002).</P>
+<P><A name=14>14. </A>Timothy Mitchell, <I>Colonising Egypt</I> (Cambridge, 1988), p.84. See also, Dale F. Eickelman, &#8216;The Art of Memory: Islamic Education and Its Social Reproduction&#8217;, in Juan I. Cole, ed., <I>Comparing Muslim Societies: Knowledge and the State in a World Civilization </I>(Ann Arbor, MI, 1992), pp. 97-132; Seyyed Hossein Nasr, &#8216;Oral Transmission and the Book in Islamic Education: The Spoken and the Written Word&#8217;, JIS, 3, 1 (1992), pp. 1-14; Michael Chamberlain, <I>Knowledge and Social Practice in Medieval Damascus</I>, 1190-1350 (Cambridge, 1994), pp. 69-90.</P>
+<P><A name=15>15. </A>On shifting modes of authority see Dale F. Eickelman, &#8216;Islamic Religious Commentary and Lesson Circles: Is There a Copernican Revolution?&#8217; in G. W. Most, ed., <I>Commentaries - Kommentare </I>(G&#246;ttingen, 1999), pp. 121-146; Dale F. Eickelman, &#8216;Inside the Islamic Reformation&#8217;, <I>Wilson Quarterly</I> (Winter 1998), pp. 80-89; Francis Robinson, &#8216;Technology and Religious Change: Islam and the Impact of Print&#8217;, <I>Modern Asian Studies </I>27, 1 (1993), pp.229-251; Dale F. Eickelman and Jon W. Anderson, ed., <I>New Media in the Muslim World: The Emerging Public Sphere</I> (Bloomington, IN, 2000).</P>
+<P><A name=16>16. </A>Albert Hourani, <I>Islam in European Thought</I> (Cambridge, 1991), pp. 7-60.</P>
+<P><A name=17>17. </A>For examples of some later evaluations and responses by Muslim scholars see Asaf Hussain, Robert Olson and Jamil Qureshi, ed., <I>Orientalism, Islam and Islamists</I> (Brattleboro, VT, 1984).</P>
+<P><A name=18>18. </A>See, for example, the impact of Joseph Schacht&#8217;s theory on the origin of Islamic jurisprudence on the debate among Muslim scholars about early Islamic <I>fiqh</I> and <I>hadith</I> in G. H. A. Juynboll, <I>The Authenticity of the Tradition Literature: Discussion in Modern Egypt</I> (Leiden, 1969); Harald Motzki, <I>The Origins of Islamic Jurisprudence: Meccan Fiqh before the Classical Schools,</I> tr., Marion Katz (Leiden, 2002), pp. 35-45.</P>
+<P><A name=19>19.</A> For examples of this debate see the website of the Centre for the Study of Islam and Democracy (http://vww.islamdemocracy.org/) and its quarterly newsletter <I>Muslim Democrat.</I></P>
+<P><A name=20>20. </A>Basheer M. Nafi<I>, The Rise and Decline of the Arab-Islamic Reform Movement</I> (London, 2000), pp. 55-68.</P>
+<P><A name=21>21.</A> See, for example, Sami Zubaida, <I>Islam, the People and the State: Political Ideas and Movements in the Middle East </I>(London, 1993), pp. 1-63; Suha Taji Farouki, &#8216;Islamic State Theories and Contemporary Realities&#8217;, in Anoushiravan Ehteshami and Abdel Salam Sid Ahmad, ed., <I>Islamic Fundamentalism</I> (Boulder, CO, 1996), pp. 35-50.</P>
+<P><A name=22>22. </A>Apart from studies related to the genre of comparative religions, Islamic investigations into non-Western world cultures are virtually non-existent. A rare serious study of the Japanese modern experience in comparison with the Arab modern experience, written in Arabic by an Arab academic, is Mas&#8216;ud Dahir, <I>al-Nahda al-&#8216;Arabiyya wa&#8217;l-nahda al-Yabaniyya: Tashabuh al-muqaddamat wa ikhtilaf al-nata&#8217;ij</I> (Kuwait, 1999).</P>
+<P><A name=23>23.</A> See &#8216;The Circle of Tradition and Progress&#8217;, <I>MESA</I><I> </I><I>Newsletter,</I> 19, 3 (1997), p. 11. For examples of the convergence of opinion among Muslims and Christians on areas of common concern, see Suha Taji-Farouki, &#8216;Muslim-Christian Cooperation in the 21st Century: Some Global Challenges and Strategic Responses&#8217;, <I>Islam and Christian-Muslim Relations,</I> 11, 2 (July 2000). pp. 167-193.</P>
+<P><A name=24>24.</A> For examples of the growing literature on Islamic perspectives on the environmental and ecological challenges see A. R. Agwan, ed., <I>Islam and The Environment</I> (New Delhi, 1997); Harfiyah Abdel Haleem, ed., <I>Islam and The Environment</I> (London, 1999); Mustafa Abu-Sway, &#8216;Towards an Islamic Jurisprudence of the Environment (<I>Figh al-bi&#8217;afi&#8217;l-Islam</I>) www.islamonline.net/English/Contemporary/2002/08/Article02.shtml. Established in the mid-1980s, the Islamic Foundation for Ecology and Environmental Sciences describes itself as &#8216;a comprehensive socio-ecological project to respond to the destruction of the environment through application of the Qur&#8217;an and Sunna&#8217;. As an internationally recognised body, it articulates the Islamic position through educational and awareness-raising activities, while attempting at the same time to give practical expression to this position. See http://www.ifees.org/.</P>
+<P><A name=25>25.</A> For explorations of the potential of Islamic resources in this regard see, for example, Sohail Hashmi, &#8216;Is there an Islamic Ethic of Humanitarian Intervention?&#8217;<I> Ethics and International Affairs</I>, 7 (1993), pp. 55-73; Mohammed A. Muqtedar Khan, &#8216;Islam as an Ethical Tradition of International Relations&#8217;, <I>Islam and Christian-Muslim Relations</I>, 8, 2 (1997), pp. 177-192.</P>
+<P><A name=26>26.</A> See, for example, the works of &#8216;Abd al-Wahhab al-Massiri in Aziz Al-Azmeh and &#8216;Abd al-Wahhab al-Massiri, <I>al-&#8216;Ilmaniyya taht al-majhar</I> (Damascus, 2001), and &#8216;Abd al-Wahhab al-Massiri, <I>al-&#8216;Ilmaniyya al-juz&#8217;iyya wa&#8217;l-shamila: namudhaj tafsiri jadid</I> (Cairo, 2002), 2 vols.; Munir Shafiq,<I> al-Dimuqratiyya wa&#8217;l-&#8216;ilmaniyyafi&#8217;l-tajriba al-gharbiyya</I> (Beirut, 2001).</P>
+<P><A name=27>27.</A> Seyyed Hossein Nasr has been one of the most outspoken Muslim critics of modern secular science. See, for example, <I>The Encounter of Man and Nature: The Spiritual Crisis of Modern Man </I>(London, 1968); <I>Religion and the Order of Nature</I> (Oxford, 1996). For different perspectives, see Ziauddin Sardar, ed., <I>Touch of Midas: Scientific Values and the Environment in Islam and the West </I>(Manchester, 1984).</P>
+<P><A name=28>28.</A> Jalal Amin, al-&#8217;Awlama (Cairo, 1998); Munir Shafiq, <I>Fi&#8217;l-hadatha wa&#8217;l khitab al-hadathi </I>(Casablanca, 1999).</P></DIV><STRONG></STRONG></DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - 
+
+
+Why Study Islamic Thought in the Twentieth Century? (Introduction)
+
+
+</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 11 Aug 2019 17:59:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 17/06/2011&nbsp;17:11&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110497 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:18 GMT -->
+</HTML>

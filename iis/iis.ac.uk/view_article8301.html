@@ -1,0 +1,650 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101066 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:45 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101066;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only50fd.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101066">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlebb22.html?ContentID=101067">Français</A></li><li><A href="view_article5b31.html?ContentID=101069">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article2de5.html?ContentID=103085">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Aga Khan III: A Study in Humanism</strong><br/><strong><DIV><A href="../www.iis.ac.uk/view_person5dab.html?type=authors&amp;id=159">Professor K.K.  Aziz</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that appeared in <EM>The Ismaili </EM>UK Supplement pp. 1-4 in July 1998. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/ak3-200511914207_7055.jpg" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><TABLE style="MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: 45%; MARGIN-RIGHT: 5px; BORDER-COLLAPSE: collapse" cellSpacing=1 cellPadding=3 align=right>
+<TBODY>
+<TR>
+<TD style="VERTICAL-ALIGN: top">A portrait of Sir Sultan Mahomed Shah Aga Khan from a mosaic in lapis-lazuli by the Pakistani artist Guljee.</TD></TR></TBODY></TABLE>In this study, the author examines the character of <A href="view_person42de.html?type=auth&amp;id=71">Sir Sultan Mahomed Shah</A>, Aga Khan III, with particular attention to the trait of humanism in his character. Articulated by way of his speeches and writings, the article sheds light on his vision for the equality of race and gender; the value Aga Khan III placed on education, culture and spirituality and his inclination for peace and a stable world order. The study also provides insight on his personal faith and philosophy of religion.</div><div> </div><div><DIV class=mainhead><STRONG>Keywords</STRONG><BR><BR>Aga Khan III, Sultan Mahomed Shah, humanism, humanist, Islam, leadership, imam, Ismailism, Ismaili, contemporary, modernity, character, biography, emancipation, women, education.<BR><BR><A href="SiteAssets/pdf/aga_khan_humanism.pdf"><IMG height=25 hspace=5 src="images/pdf_icon.gif" width=25 border=0>Download PDF version of article (167 KB)</A><BR><BR><STRONG>Table of contents</STRONG><BR></DIV>
+<DIV class=mainhead>&nbsp;</DIV>
+<UL>
+<LI>
+<DIV class=mainhead><A href="#anchor1">Introduction</A> </DIV>
+<LI><A href="#anchor2">The Social Status of Women</A> 
+<LI><A href="#anchor3">Educational Reform</A> 
+<LI><A href="#anchor4">Social and Political Governance</A> 
+<LI><A href="#anchor5">Addressing Racial Inequalities</A> 
+<LI><A href="#anchor6">Striving For a Peaceful World Order</A> 
+<LI><A href="#anchor7">Culture and Spirituality</A> 
+<LI><A href="#anchor8">Personal Faith and Philosophy of Religion</A> 
+<LI>
+<DIV><A href="#anchor9">Conclusion</A></DIV></LI></UL>
+<P>&nbsp;</P>
+<DIV class=mainhead><A id=anchor1 name=anchor1></A><STRONG>Introduction</STRONG></DIV>
+<DIV class=mainhead>&nbsp;</DIV>
+<DIV class=mainhead>Sir Sultan Mahomed Shah, <A href="view_person42de.html?type=auth&amp;id=71">Aga Khan III</A>, was a man of many parts and in his long life played diverse roles in numerous public fields. He was the hereditary <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> of the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili</A> Muslims, head of the All India Muslim League, founder-president of the All India Muslim Conference, patron of the London Muslim League, head of the 1906 Muslim Deputation to the Viceroy of India, President of the All India Muhammadan Educational Conference, one of the founders of the Aligarh Muslim University, Head of the British Indian Delegation to the Round Table Conference, Delegate to the Disarmament Conference, chief Indian Delegate to the League of Nations and later its President amongst others. It is impossible to survey the achievements and recount the activities of such a remarkable person in a brief article. If I am asked to pick out one thread which ran through all his private convictions and public views, I would settle on the trait of humanism in his character. He was an extraordinary human being with unwavering and sensitive sympathy for ordinary human beings. Whether we look at his political career, or examine the other spheres which exercised his mind and carried the imprint of his shaping influence, we find the driving force, the governing factor, to be a humanistic interest in the life and condition of the common man and woman. The existence, nature and strength of this sentiment formed the foundation of his passion for social reform, his hatred of violence and war, his disapproval of racism, his faith in democracy, his tendency towards socialism, his fight for world peace, his obsession with education, his struggle for social uplift, his interest in the advancement of women, his appreciation of poetry, his emphasis on culture, and his interpretation of Islam.<BR><BR>Humanism drove him to dedicate much of his time and effort to social reform. He complimented the British rulers of India on their attempt to eradicate <I>sati</I>, slavery, torture and mutilation by saying that these bans raised the &#8220;standard of humanitarian feeling and sentiment.&#8221; His social conscience was painfully stirred by the pitiable circumstances and needs of the rural masses. His heart ached at the sight of the peasant&#8217;s poverty, illness, illiteracy and ignorance, and he suggested several innovative measures to make his life comfortable and worth living. Unlike the run-of-the-mill social reformers, he related the human condition to the purpose of divinity and the destiny of man. &#8220;With this denial of divinity in mankind, there is the denial of human brotherhood ... The whole economic, social and religious fabric calls for immediate relief - uplift of the weak - economically, intellectually and culturally, so that there may be left no one to be called downtrodden.&#8221; This concern for the common man took no notice of religious differences. He was in favour of the Muslims attending to the needs of the so-called untouchables of India with a view to elevating their social status, bringing enlightenment to them and offering them a chance to enter a &#8220;cultured civilisation.&#8221; Similarly, in South and East Africa he appealed to the Asian settlers to befriend the local population.<BR><BR><A id=anchor2 name=anchor2></A><STRONG>The Social Status of Women</STRONG></DIV><STRONG></STRONG>
+<DIV class=mainhead><BR>Aga Khan III&nbsp;refused to identify mankind with man alone. His innermost feelings were moved by the need for the progress and improvement of females in society. He called women &#8220;the guardians of the life of the race.&#8221; The enhancement of their social status would improve the tone of the domestic realm and bring a higher and nobler idealism into the life of the state. In his view, the higher spiritual life of Muslim society was indebted to the example and influence of women. The general well-being of every community depends on the existence of emancipated women. No artificial barriers should obstruct their betterment. No narrow prejudices should deprive them of their natural rights and proper social status. Again and again he stressed the commanding importance of educating girls. He went to the extent of declaring that &#8220;Personally, if I had two children, and one was a boy and the other a girl, and if I could afford to educate only one, I would have no hesitation in giving the higher education to the girl.&#8221; He realised that the future of every generation was to be determined by the woman&#8217;s ability to lead the young along the right path and teach them the rudiments of culture. A woman was the carrier of civilisation and human sensitivities. She not only introduced values into our life but transmitted them to those who would come after us.</DIV>
+<DIV class=mainhead><BR><A id=anchor3 name=anchor3></A><STRONG>Educational Reform</STRONG></DIV>
+<DIV class=mainhead><STRONG></STRONG><BR>Human worth is largely created by education. If we read all the speeches and statements of the Aga Khan III, we find one strong moral tendency running through them with stubborn consistency: the theme of education. Like Mustafa Kamal Ataturk in Turkey, the Aga Khan, in every land which his interests touched, was pre-eminently an educator, the schoolmaster of several nations and peoples. In his opinion the one single achievement which gladdened his heart and his one single greatest success was the creation of the Aligarh University. This is a very significant confession coming from a man who had so many other major achievements inscribed in the credit column of the register of his life.<BR><BR>He believed that education alone could release the poor from his poverty, the slave from his bondage, the ignorant from his bewilderment, and the downtrodden from his degradation. He gave it the same priority as national defence, calling for equal sacrifice in the interest of both. It was only through education that eminent literary men and women would ultimately emerge to develop every facet of human life - intellectual, spiritual and religious. One of the many fruits of this harvest would be tolerance which lay at the heart and core of humanism. As a Muslim, he considered education a religious duty. He recalled the Prophet&#8217;s saying which exhorted the Muslims to travel as far as China in search of knowledge. He referred to the Qur&#8217;an&#8217;s repeated injunction to study nature and comprehend God&#8217;s motive in creating the Universe.<BR><BR><A id=anchor4 name=anchor4></A><STRONG>Social and Political Governance</STRONG></DIV><STRONG></STRONG>
+<DIV class=mainhead><BR>It was his concern for the body and mind of the ordinary human being which made him a democrat of democrats. &#8220;More power to the masses&#8221; was his slogan. The peasants and other rural inhabitants should participate in policymaking and law-making. Political parties must be made into grassroots organisations. Leaders must consult the people at every step. The base of political governance must be broadened. He warned the political leaders: &#8220;You must avoid forcing your own preferences when they clash with what we believe to be the real wishes of the mass of the people.&#8221; Party chiefs must &#8220;keep their ears to the ground and ascertain the views and wishes of the masses.&#8221; If you want to command the voter, you must serve the voter. Had the political leaders of Asia and Africa of his time listened to this sage advice enormous suffering and depredation of nations could have been avoided.<BR><BR>Perhaps nothing underlines the role of humanism in the Aga Khan&#8217;s thinking than the fact that for its sake he came to support a form of democratic socialism. It appears completely incredible that this aristocrat of aristocrats enjoying the blessings and luxuries of great wealth should have prescribed socialism for removing the ills of mankind - but he did. He came to socialism via his concern for the poor and the deprived. He wanted labour to be organised because he saw that in every free land organised labour was throwing its influence on the side of peace and international goodwill. The issue of the future, he said, was the economic freedom of the masses. He quoted the example of the Soviet Union of the 1930s as evidence of the failure of private effort to deal with the problem of poverty. &#8220;The social betterment of the masses could only happen by Socialism when every component part worked for the entire social fabric.&#8221; This is not to suggest that the Aga Khan III did not favour private effort. On the contrary, in the task of promoting development, he viewed private and public efforts as equally necessary and complementary.<BR><BR><A id=anchor5 name=anchor5></A><STRONG>Addressing Racial Inequalities</STRONG></DIV><STRONG></STRONG>
+<DIV class=mainhead><BR>The Aga Khan then applied the principle of humanism to the tragedies of racial conflict and international enmity. He was horrified by racism no matter who practised it and where. He was as critical of the British as of the Asians in this context. He reprimanded the British for their discriminatory policies in South and East Africa. He also warned the Asian settlers of these two regions of potential danger, and asked them to cooperate with the local Africans in improving land economy and acquiring new skills. They must look upon the country they had come to in search of a better life as their own and upon themselves as its &#8220;humble servants.&#8221; Europeans, Asians and Africans must not hate and fear each other. &#8220;White, black and brown are complementary members of a common body politic.&#8221;</DIV>
+<DIV class=mainhead><BR><A id=anchor6 name=anchor6></A><STRONG>Striving For a Peaceful World Order</STRONG></DIV>
+<DIV class=mainhead><STRONG>&nbsp;</STRONG><BR>It was again his overriding concern for humanity which drove the Aga Khan III into internationalism and cosmopolitanism. It strengthened his resolve to work for world peace and to avert war. He was convinced that a peaceful international order was the only guarantee not only of the security and happiness of the world but of its very existence and survival. To achieve and sustain this order he suggested measures both conventional and novel. Peace could be made to prevail through cultural co-operation. Mutual understanding and amity could be encouraged and widened by learning foreign languages, studying other literatures, travelling, raising the standard of education, improving the health of the common man, expanding external trade and eliminating racial bigotry. In India he pleaded for Hindu-Muslim unity for many years and converted to the idea of a partition of the subcontinent only after all avenues of co-operation had been blocked by Congress ambition. In the West he encouraged a Christian-Islamic understanding and a genuine respect for all faiths. In the world of Islam he was an enthusiastic spokesman of a pan-Islamic unity and a Shi&#8217;a-Sunni rapprochement. The idea behind all these endeavours was to bring humanity together or at least closer, so that man respected man.<BR><BR>He pursued the elusive star of world peace at the Disarmament Conference of 1932 and in the League of Nations in the years that followed. Emphasising its moral aspect he appealed to the conscience of world statesmen to remove the paralysing effects of fear, ill-will and suspicion. On the material side, he pointed out the great benefits and gains which would flow from the absence of war. &#8220;There is a cry going up from the heart of all the peace-loving citizens of every country for the lessening of their military burdens, for a decrease of the financial load which those burdens impose, for the security of civil population against indiscriminate methods of warfare, and above all, for security against the very idea of war.&#8221; In 1937, as President of the League of Nations, he gave a stirring call for the &#8220;peaceful removal of the causes of war and the establishment of the unchallenged empire of peace throughout the world.&#8221; Two years later the Maharaja of Bikaner called him &#8220;a bridge between the East and the West, a connecting link between the two main civilisations of the modern world.&#8221; In trying to employ culture, and particularly literature, as a means of international goodwill, awareness of historical and intellectual give-and-take and world enlightenment, he had no successor in the corridors of nations for two decades. Not until the 1950s was the same theme reiterated with unflagging zeal and unparalleled eloquence by Professor Ahmad Shah Bokhari of Pakistan in and outside the United Nations.<BR><BR>The Aga Khan&#8217;s love for humanity, for each individual human being, was his most fundamental motive for seeking world peace and ending wars. All the problems of the international world order are, he said, &#8220;ultimately reduced to one - that of man, and the dignity of man.&#8221; One year before the Second World War broke out he appealed for the revival of the idea of a United States of Europe suggested by Briand and Stresemann, so that dangers to world civilisation were minimised.<BR><BR><A id=anchor7 name=anchor7></A><STRONG>Culture and Spirituality</STRONG></DIV><STRONG></STRONG>
+<DIV class=mainhead><BR>If the humanity of a people is mirrored in its culture, the humanism of the individual is reflected in his love of culture. It is, therefore, no matter of surprise that the Aga Khan III identified culture in its broadest (or rather one should say its deepest) sense with spiritual forces, and defined the latter as &#8220;anything that deals with man&#8217;s life of the spirit here and now on this earth and in this life.&#8221; There was &#8220;one impregnable, central fact in existence: that here and now, in this world, we have a soul which has a life of its own in its appreciation of truth, beauty, harmony and good against evil.&#8221; In this connection, he reminded his own people that Islamic civilisation was among the first to appreciate &#8220;art for art&#8217;s sake, beauty for beauty&#8217;s sake and literature for literature&#8217;s sake.&#8221;<BR><BR>For all mankind the crown of culture is poetry, and especially the poetry which speaks of the spirit of man and the goodness of God. The Aga Khan had read poetry to some purpose, and for him it (and particularly Persian poetry) had a message for mankind: &#8220;man&#8217;s greatest of all treasures, the greatest of all his possessions, was the inherent, ineffaceable, everlasting nobility of his own soul.&#8221; In it &#8220;there was forever a spark of true divinity which could conquer all the antagonistic and debasing elements in nature.&#8221; The faith in the soul of man is &#8220;not simply a religious or mystic faith but an all-embracing and immediate contact with a fact which, in every human being, is the central fact of existence.&#8221; He held Hafiz Shirazi, the summit of Persian poetry, in great respect because he gave expression to &#8220;universal human convictions - appreciation of beauty, love, gentleness and kindliness; of the value of human beings; of glory and splendour and joy of the universe; the wonder of communion with nature.&#8221; Therefore poetry had a special place in human life precisely because of its humane nature and its capacity to bring man closer to man and to God. He described it metaphorically as the &#8220;voice of God speaking through the lips of man.&#8221;<BR><BR>In this connection it is significant that the Aga Khan III recommended the study of Oriental literature for its healing calmness. In a world of &#8220;troubled temper&#8221; man should seek internal solace and peace, which only the contemplation of sublime literature can give. Reading and reciting of this literature would &#8220;contribute to the ushering in of that frame of mind which alone could save mankind from a disaster greater than anything of the past.&#8221;<BR><BR><A id=anchor8 name=anchor8></A><STRONG>Personal Faith and Philosophy of Religion</STRONG></DIV><STRONG></STRONG>
+<DIV class=mainhead><BR>The Aga Khan&#8217;s formal faith and inner belief went together. He called Islam &#8220;the greatest unifying, civilising and fraternising influence in the world&#8221; and &#8220;a great cultural and spiritual force for the unity of the world and the fraternity of the nations,&#8221; because his view of Islam in particular, and of any faith in general, was deeply and unmistakably tinged with mysticism. After having studied Persian and Punjabi poetry (which send out their mystic message with magic clarity), <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufism</A> and the esoteric meaning of Islamic art for four decades, I can bring myself confidently to say that the Aga Khan III believed in a mystical Islam. He was in the true sense of the term a Sufi.<BR><BR>He believed in an individual religion of strong spiritual and aesthetic dimensions. For him, religion was not just a set of formal beliefs, moral injunctions and ethical &#8220;dos&#8221; and &#8220;don&#8217;ts,&#8221; but a beautiful thing in itself which led its votaries to explore divine beauty and ultimately to become a part of it. &#8220;A man must be at one with God,&#8221; he said. This was the mystical way to personal communion and undisturbed joy of the heart. His religion had many dimensions in itself, all leading to a humanistic view of the world and an inner comprehension of what God has created. Let me spell it out through his own words.<BR><BR>Nature, with its manifold beauty and layers of meanings, is one way of God manifesting Himself in the universe. Appreciation, enjoyment and contemplation of the glories of nature are a part of his religion. &#8220;All those sunrises and sunsets - all the intricate miracle of sky colour, from dawn to dusk. All that splendid and spendthrift beauty. As a very rich man treasures the possessions of some unique picture, so a man should treasure and exult in the possession - his individual possession - of the sights of this unique world ... I look up at night and I know - I <I>know</I> the glory of the stars. It is then that the stars speak to us - and the sense of that mystery is in our blood.&#8221; To be at one with God was also important on a different level. Those who reach this stage of God-comprehension will find that behind the mask of their sorrow, however bitter it might be, their souls will be at peace.<BR><BR>The esoteric and mystic side of his personal faith is well described in certain passages of his <I>Memoirs</I>. To recall them to our attention is to understand the man who wrote them. &#8220;It is said that we live, move, and have our being in God ... when we realise the meaning of this saying, we are already preparing ourselves for the gift of the power of direct experience&#8221;. The love of one human being for another is the harbinger of a joy which overshadows all the treasures of this life, all fame, all wealth, all power, all riches. The spiritual love the enlightenment, and the &#8220;sublime experience of the direct vision of reality which is God&#8217;s gift and grace&#8221; surpass all that human love can give us. &#8220;For that gift we must ever pray.&#8221; Man has duty to make for himself &#8220;a direct path which will constantly lead his individual soul to and bind it with the universal Soul of which the Universe ... is one of the infinite manifestations.&#8221; Another contrast reconfirms the same message. In our ordinary prayer &#8220;adoration of the beloved fills up every nook and cranny of the human consciousness,&#8221; but &#8220;in the rare, supreme moments of spiritual ecstasy, the light of Heaven blinds mind and spirit to all other lights and blots out every other sense and perception.&#8221;<BR><BR>The imperative mood of his exhortation reflects the strength and vigour of his conviction. &#8220;Man must never ignore and leave untended and undeveloped that spark of the divine which is in him. The way to personal fulfillment, to individual reconciliation with the Universe that is about us, is comparatively easy for anyone who firmly and sincerely believes, as I do, that Divine Grace has given man in his own heart the possibilities of illumination and of union with Reality.&#8221; And he concluded: &#8220;Life in the ultimate analysis has taught me one enduring lesson. The subject should always disappear in the object. In our ordinary affections one for another, in our daily work with hand or brain, we most of us discover soon enough that any lasting satisfaction, any contentment that we can achieve, is the result of forgetting self, or merging subject with object in a harmony that is of body, mind and spirit. And in the highest realms of consciousness all who believe in a Higher Being are liberated from all the clogging and hampering bonds of the subjective self in prayer, in rapt meditation upon and in the face of the glorious radiance of Eternity, in which all temporal and earthly consciousness is swallowed up and itself becomes the eternal.&#8221;<BR><BR>The Aga Khan&#8217;s advice to his heirs sums up his philosophy of religion: &#8220;Let them seek communion with the Eternal Reality which I call Allah and you call God! For that is the twin problem of existence - to be at once entirely yourself and altogether at one with the Eternal. I say that you should endeavour to suit your desire to the event, and not the event to your desire.&#8221; How we wish that all of us could follow this wise counsel!<BR><BR><A id=anchor9 name=anchor9></A><STRONG>Conclusion</STRONG></DIV>
+<DIV class=mainhead><STRONG></STRONG><BR>In the light of these and similar ideas and concepts scattered throughout his writings and speeches, I have no hesitation in affirming that what really moved the heart and mind and conscience of the Aga Khan III was the highest kind of Islamic humanism. I am, in all probability, the only person alive who has read and re-read every word that Sir Sultan Muhammad Shah spoke or wrote. And what I have read and pondered over tells me that his lifestyle and mundane interests and political activities notwithstanding, he was a Sufi at heart.<BR><BR>Nothing moved him more than the plight of the common man, the poverty of the indigent, the helplessness of the weak, and the ignorance of the unlettered. All his life he strove to remove this halter or at least make its stranglehold less galling. He did not succeed completely - no man does or can; but he achieved much - more than most men do or can. For this we remember him and bless his name. No man who has done good ever dies completely. His deeds become a part of history, and his memory springs eternal in every generation.</DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Aga Khan III: A Study in Humanism</TITLE><META HTTP-EQUIV="Expires" CONTENT="Thu, 13 Jul 2017 14:57:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 27/06/2011&nbsp;15:58&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101066 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:47:47 GMT -->
+</HTML>

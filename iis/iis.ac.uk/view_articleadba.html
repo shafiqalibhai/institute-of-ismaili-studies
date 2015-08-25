@@ -1,0 +1,674 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100596 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:22:39 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 100596;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="L'Institut des Etudes Ismaili" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlybf03.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D100596">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article44d3.html?ContentID=100595">English<li><A href="view_articleee65.html?ContentID=100601">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4067.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=fr" >Par Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8f84.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=fr" >Par Auteur</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles08d8.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=fr" >Par Titre</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article1c50.html?type=cont.currentlang&amp;id=105758&amp;l=fr" >Nouvelles Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articlead61.html?type=cont.currentlang&amp;id=111218&amp;l=fr" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articlecb6f.html?type=cont.currentlang&amp;id=104743&amp;l=fr" >Prochaines Publications</A></p><p><A href="view_articleb827.html?type=cont.currentlang&amp;id=110958&amp;l=fr">Etudes Qur'aniques</A></p><p><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></p><p><A href="view_article4bc1.html?type=cont.currentlang&amp;id=104878&amp;l=fr">Articles académiques</A></p><p><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></p><p><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></p><p><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></p><p><A href="view_articlef9b5.html?type=cont.currentlang&amp;id=104298&amp;l=fr">Séminaires et Conférences publiques</A></p><p><A href="view_article7db1.html?type=cont.currentlang&amp;id=104483&amp;l=fr">Programmes de Bourse</A></p><p><A href="view_articlee442.html?type=cont.currentlang&amp;id=104398&amp;l=fr">Chercheurs associés sous-contrat</A></p><p><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Extase et Eclaircissement: La Litt&#233;rature d&#233;votionnelle 
+ismailie de l&#8217;Asie du Sud.</strong><strong><br/></strong><strong><DIV><A href="view_person7951.html?type=authors&amp;id=62">Professor Ali Asani</A></DIV></strong><br/><br/>Londres: I.B. Tauris en association avec l&#8217;Institut des Etudes Ismailies, 2002. pp. xxii + 183.<span><br/><br/>ISBN (Livre relié): 1 86064 758 8<br/>ISBN (Livre de poche): 1 86864 828 2</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><A href="javascript:void(0)" onclick="LaunchPreviewFull('WebAssets/Large/Publications/web_ecstasy-2004126151720_7055.jpg');" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publications/web_ecstasy-2004126151720_7055.jpg" align="left" alt="" style="padding: 0px;"></A></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synthèse </a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Table des matières </a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliographie </a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synthèse <br></strong><DIV class=bodytext><I></I>&nbsp;</DIV>
+<DIV class=bodytext><I>Rappelle toi le nom du Seigneur<BR>Et la lumi&#232;re surgira en toi;<BR>Goutte le nectar de l&#8217;amour<BR>Et l&#8217;extase te submergera.</I><BR><BR>Traduit de<I> Candrabhan</I>,&nbsp;un <I>ginan</I> attribu&#233; &#224; Pir Shams.</DIV>
+<DIV class=bodytext>&nbsp;<BR></DIV>
+<DIV class=bodytext>Cette publication avance en m&#234;me temps un nombre d&#8217;essais par l&#8217;auteur sur les litt&#233;ratures d&#233;votionnelles et &#233;sot&#233;riques des Ismailis nizari dans le subcontinent Indien. La plupart de ces essais &#8211; certains publi&#233;s ant&#233;rieurement dans des journaux ou des volumes collectifs et d&#8217;autres apparaissant ici pour la premi&#232;re fois &#8211; se focalisent sur les <I>Ginans</I>, une grande quantit&#233; d&#8217;hymnes et de po&#232;mes compos&#233;s dans une vari&#233;t&#233; de langues indiennes et attribu&#233;s &#224; une s&#233;rie de saints pr&#234;cheurs qui ont propag&#233; l&#8217;Islam ismaili dans le subcontinent &#224; travers plusieurs si&#232;cles.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Dans son introduction du volume, l&#8217;auteur situe le d&#233;veloppement des traditions ismailies dans l&#8217;Asie du Sud dans trois contextes culturels.&nbsp;Le premier est la large perspective historique de la&nbsp;<I>Tariqa</I> ismailie tel qu&#8217;elle s&#8217;est manifest&#233;e et a &#233;volu&#233; dans diff&#233;rentes parties du monde musulman. Le deuxi&#232;me est le cadre indo-musulman de croissance des institutions et mouvements musulmans dans le subcontinent indien. Le troisi&#232;me est le contexte indien dans lequel la tradition ismailie a &#233;t&#233; en interaction avec diff&#233;rentes cultures et traditions locales et avec des groupes religieux indig&#232;nes tels que les Sufis, Bhaktas, Sants et Yogis.</DIV>
+<DIV class=bodytext><BR>C&#8217;est &#224; nouveau l&#8217;arri&#232;re-plan de ces trois contextes culturels se chevauchant, que Dr Asani reproduit dans les chapitres subs&#233;quents pour explorer les aspects sp&#233;cifiques des <I>Ginans</I>, tels que leurs histoires, th&#232;mes, incantations et m&#233;lodies; le caract&#232;re d&#233;votionnel des <I>Ginans</I> et leurs r&#244;les dans la vie religieuse des Ismailis; le symbole de l&#8217;amour divin et du mariage spirituel dans les <I>Ginans</I>; et une discussion de certains des points li&#233;es aux questions de la paternit&#233; des <I>Ginans</I>. Il y a &#233;galement un chapitre sur le d&#233;veloppement de la tradition des <I>git</I> comme un genre reli&#233; mais diff&#233;rent des po&#232;mes religieux entre les Ismailis.</DIV>
+<DIV class=bodytext><BR>Les deux derniers essais sont consacr&#233;s &#224; l&#8217;&#233;tude de l&#8217;unique script khojki dans lequel les <I>Ginans</I> ont &#233;t&#233; consign&#233;s et qui a &#233;t&#233; jusqu&#8217;ici peu &#233;tudi&#233;s par les &#233;rudits. Issu du Sind aux alentours du 10&#232;me/16&#232;me si&#232;cle, le khojki a &#233;t&#233; con&#231;u par les ismailis de l&#8217;Asie du Sud avec la seule raison de pr&#233;server leurs litt&#233;ratures. Dr Asani fournit la premi&#232;re analyse syst&#233;matique du script, son syst&#232;me phon&#233;tique et sa traduction manuscrite. <BR><BR>Les essais dans ce volume sont pr&#233;c&#233;d&#233;s par un avant-propos utile du <A href="view_person00fa.html?type=auth&amp;id=66">Professeur Annemarie Schimmel</A>, l&#8217;autorit&#233; &#233;minente sur le mysticisme islamique et les traditions litt&#233;raires. Elle note que le livre de <A href="view_person7951.html?type=auth&amp;id=62">Ali Asani</A> est un tr&#233;sor pour tout le monde int&#233;ress&#233; par l&#8217;histoire et la pens&#233;e ismailies. Il offre un mat&#233;riel important non seulement pour les membres de la communaut&#233;, mais aussi aux scientifiques de branches diverses qu&#8217;ils soient islamistes, indo logistes, sociologistes ou historiens de la religion<SPAN lang=FR style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: FR; mso-fareast-language: FR; mso-bidi-language: AR-SA">&#8217;</SPAN>. Le livre culmine avec un appendice d&#8217;une s&#233;lection de po&#232;mes traduits, mystiques et d&#233;votionnels.<BR><BR></DIV><br><br></div><div id="pubsContents"><strong>Table des matières </strong><br><P class=bodytext><I>Illustrations&nbsp;et tables des mati&#232;res</I> <BR><BR>
+<DIV class=bodytext><I>Avant-propos par le <A href="view_person00fa.html?type=auth&amp;id=66">Professeur Annemarie Schimmel</A></I><BR><I></I></DIV>
+<DIV class=bodytext><I></I>&nbsp;</DIV>
+<DIV class=bodytext><I>Remerciements</I></DIV>
+<DIV class=bodytext>&nbsp;</DIV><I></I>
+<DIV class=bodytext><I>Note de la r&#233;daction</I><BR>&nbsp;<BR><BR></DIV>
+<P class=bodytext>Introduction: La tradition nizari en Asie du Sud<BR>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Les&nbsp;<I>Ginans</I> en tant que Litt&#233;rature D&#233;votionnel: Leurs origines, caract&#233;ristiques et th&#232;mes<BR><BR>Symboles nuptiaux dans les <I>Ginans</I><BR></DIV>
+<DIV class=bodytext>La tradition du <I>Git</I>: Un t&#233;moignage d&#8217;Amour<BR><BR>R&#233;flexions sur l&#8217;autorit&#233; et paternit&#233; des <I>Ginans</I><BR></DIV>
+<DIV class=bodytext>Le Script Khojki: Un Legs de l&#8217;Islam ismaili dans le subcontinent<BR><BR>Le Script Khojki et sa tradition manuscrite<BR><BR></DIV><br><br></div><div id="pubsBibliography"><strong>Bibliographie </strong><br><P class=bodytext>Ahmad, Aziz. <I>Studies in Islamic Culture in the Indian Environment</I>. Delhi, 1964.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>An Intellectual History of Islam in India</I>. Edinburgh, 1969.<BR><BR>
+<P class=bodytext>Ahmed, Imtiaz. &#8220;The Islamic Tradition in India,&#8221; in <I>Islam and the Modern Age</I>, 12, no. 1 (1981), pp. 44&#8211;62.<BR><BR>
+<P class=bodytext>Ahmed, Rafiuddin. <I>The Bengal Muslims 1871&#8211;1906: A Quest for Identity</I>. Delhi, 1981.<BR><BR>
+<P class=bodytext>Ali, Syed Mujtaba. <I>The Origin of the Khojas and their Religious Life Today</I>. Bonn, 1981.<BR><BR>
+<P class=bodytext>Allana, G. A. <I>Ginans of the Ismaili Pirs</I>. Vol. 1. Karachi, 1984.<BR><BR>
+<P class=bodytext>Allana, G. <I>Sindhi Suratkhati</I>. Hyderabad, 1964.<BR><BR>
+<P class=bodytext>Asani, Ali. <I>The Isma&#8216;ili Ginan Literature: Its Structure and Love Symbolism.</I> BA thesis, Harvard University, 1977.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;<I>Ginan</I>&#8221; in Mircea Eliade, ed., <I>Encyclopedia of Religion</I>. New York, 1987.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The Khojas of Indo&#8211;Pakistan: The Quest for an Islamic Identity,&#8221; <I>Journal of the Institute of Muslim Minority Affairs</I>, 8, no. 1 (1987), pp. 31&#8211;41.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The Khojki Script: A Legacy of Ismaili Islam in the Indo&#8211;Pakistan Subcontinent,&#8221; <I>Journal of the American Oriental Society</I>, 107 (1987), pp. 439&#8211;49.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Sufi Poetry in the Folk Traidition of Indo&#8211;Pakistan,&#8221; <I>Religion and Literature</I>, 20 (1988), pp. 81&#8211;95.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>The Harvard Collection of Ismaili Literature in Indic Languages: A Finding Aid and Descriptive Catalogue</I>. Boston, 1992.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The Ismaili Ginans as Devotional Literature&#8221; in R. S. McGregor, ed., <I>Devotional Literature in South Asia: Current Research, 1985&#8211;88</I>. Cambridge, 1991, pp. 101&#8211;12.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The <I>Ginan</I> Literature of the Ismailis of Indo&#8211;Pakistan: Its Origins, Characteristics and Themes,&#8221; in D. Eck and F. Mallison, ed., <I>Devotion Divine: Bhakti Traditions from the Religions of India</I>. Gr&#246;ningen&#8211;Paris, 1991, pp. 1&#8211;18.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>The Bujh Niranjan: An Ismaili Mystical Poem</I>. Cambridge, MA, 1991.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Bridal Symbolism in Ismaili Mystical Literature of Indo&#8211;Pakistan,&#8221; in Robert Herrera, ed., <I>Mystics of the Book: Themes, Topics and Typologies</I>. New York, 1993, pp. 389&#8211;404.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Folk Romance in Sufi Poetry from Sind,&#8221; in A. Dallapiccola and S. Lallemant, ed., <I>Islam and the Indian Regions</I>. Stuttgart, 1993. Vol. 1, pp. 229&#8211;37.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;A Testimony of Love: The <I>Git</I> Tradition of the Nizari Ismailis,&#8221; in A. Giese and J. C. B&#252;rgel, ed., <I>God is Beautiful and He Loves Beauty</I> (Festschrift in Honour of <A href="view_person00fa.html?type=auth&amp;id=66">Annemarie Schimmel</A>). Bern, etc., 1994, pp. 39&#8211;51.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The Bridegroom Prophet in Medieval Sindhi Poetry,&#8221; in A. Entwistle and F. Mallison, ed., <I>Studies in South Asian Devotional Literature: Research Papers 1989&#8211;91</I>. Delhi and Paris, 1994, pp. 213&#8211;25.<BR><BR>
+<P class=bodytext>&#8212;&#8212;and Kamal Abdel&#8211;Malik. <I>Celebrating Muhammad: Images of the Prophet in Popular Muslim Poetry</I>. Columbia, SC, 1995.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The Ismaili <I>ginans</I>: Reflections on Authority and Authorship,&#8221; in <A href="view_person19c6.html?type=auth&amp;id=8">Farhad Daftary</A>, ed., <I>Mediaeval Isma&#8216; ili History and Thought</I>. Cambridge, 1996, pp. 265&#8211;80.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;The Khojas of South Asia: Defining a Space of Their Own,&#8221; <I>Cultural Dynamics</I>, 13 (2001), pp. 155&#8211;68.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Muslims in South Asia: Defining Community and the &#8216;Other&#8217;,&#8221; <I>Bulletin of the Royal Institute of Inter&#8211;Faith Studies</I>, 2 (2001), pp. 103&#8211;13.<BR><BR>
+<P class=bodytext>Austin, R. J. W., &#8220;The Sophianic Feminine Tradition in the Works of Ibn &#8216;Arabi,&#8221; in <A href="view_personf3ef.html?type=auth&amp;id=136">Leonard Lewisohn</A>, ed., <I>The Heritage of Sufism</I>. Oxford, 1999, vol. 2 pp. 233&#8211;45.<BR><BR>
+<P class=bodytext>Baloch, Nabi Bakhsh Khan. <I>Sindhi Boli ji mukhtasar tarikh</I>. Hyderabad, 1962.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Education in Sind Before the British Conquest and the Educational Policies of the British Government</I>. Hyderabad, 1971.<BR><BR>
+<P class=bodytext>Bausani, Alessandro, &#8220;About a Curious Mystical Language,&#8221; <I>East and West</I>, 4 (1954), pp. 234&#8211;8.<BR><BR>
+<P class=bodytext>al&#8211;Biruni, Abu Rayhan. <I>Kitab al&#8211;Hind</I>. English tr., E. C. Sachau, <I>Alberuni&#8217;s India</I>, ed., A. T. Embree. New York, 1971.<BR><BR>
+<P class=bodytext>Brass, Paul. &#8220;Ethnic Groups, Symbol Manipulation and Ethnic Identity among Muslims of South Asia,&#8221; in D. Taylor and M. Yapp, ed., <I>Political Identity in South Asia</I>. London, Dublin, 1979, pp. 35&#8211;77.<BR><BR>
+<P class=bodytext>Burton, R. <I>Sindh and the Races that Inhabit the Valley of the Indus</I>. Repr. ed., Karachi, 1973.<BR><BR>
+<P class=bodytext>Cole, W. Owen and P. S. Sambhi. <I>The Sikhs: Their Religious Beliefs and Practices</I>. London and Boston, 1978.<BR><BR>
+<P class=bodytext>Corbin, Henry. &#8220;Le Temps cyclique dans le Mazd&#233;isme et dans l&#8217;Isma&#233;lisme,&#8221; <I>Eranos&#8211;Jarhrbuch</I>, 20 (1951), pp. 149&#8211;217. English tr., &#8220;Cyclical Time in Mazdaism and Ismailism,&#8221; in Corbin, <I>Cyclical Time and Ismaili Gnosis</I>, pp. 1&#8211;58.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Epiphanie Divine et naissance spirituelle dans la gnose Isma&#233;lienne,&#8221; <I>Eranos&#8211;Jarhrbuch</I>, 23 (1954), pp. 141&#8211;249. English tr., &#8220;Divine Epiphany and Spiritual Birth in Ismailian Gnosis,&#8221; in Corbin, <I>Cyclical Time and Ismaili Gnosis</I>. London, 1983. pp. 59&#8211;150.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;De la gnose antique &#224; la gnose Isma&#233;lienne,&#8221; in <I>Oriente ed Occidente nel Medio Evo. </I>Rome, 1957, pp. 105&#8211;43 . English tr., &#8220;From the Gnosis of Antiquity to Ismaili Gnosis,&#8221; in Corbin, <I>Cyclical Time and Ismaili Gnosis</I>. London, 1983. pp. 151&#8211;93.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Herm&#233;neutique spirituelle compar&#233;e,&#8221;<B> </B><I>Eranos&#8211;Jarhrbuch</I>, 33 (1964), pp. 71&#8211;176.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Histoire de la philosophie Islamique</I>. Paris, 1964. English tr. Philip Sherrard, <I>History of Islamic Philosophy</I>. London, 1993.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Cyclical Time and Ismaili Gnosis</I>. tr. R. Mannheim and J. W. Morris. London, 1983.<BR><BR>
+<P class=bodytext>Daftary, Farhad. <I>The Isma&#8216;ilis: Their History and Doctrines</I>. Cambridge, 1990.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>A Short History of the Ismailis</I>. Edinburgh, 1998.<BR><BR>
+<P class=bodytext>Diringer, D. <I>The Alphabet, Key to the History of Mankind</I>. 3rd ed., New York, 1968.<BR><BR>
+<P class=bodytext>Eaton, Richard. &#8220;Sufi Folk Literature and the Expansion of Islam,&#8221; <I>History of Religions</I>, 14 (1974&#8211;5), pp. 115&#8211;27.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Sufis of Bijapur, 1300&#8211;1700</I>. Princeton, NJ, 1978.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>The Rise of Islam and the Bengal Frontier, 1204&#8211;1760</I>. Berkeley and London, 1993.<BR><BR>
+<P class=bodytext>Eliade, Mircea. <I>The Two and the One</I>. New York, 1965.<BR><BR>
+<P class=bodytext><I>Encyclopedia of Religion</I>. ed. Mircea Eliade. New York, 1987.<BR><BR>
+<P class=bodytext><I>Encyclopedia of Islam</I>. ed. H. A. R. Gibb et. al. New ed., Leiden and London, 1960&#8211;.<BR><BR>
+<P class=bodytext>Enthoven, Reginald E. <I>Tribes and Castes of Bombay</I>. Bombay, 1922.<BR><BR>
+<P class=bodytext>Ernst, Carl. <I>Eternal Garden: Mysticism, History and Politics at a South Asian Sufi Centre</I>. Albany, NY, 1992.<BR><BR>
+<P class=bodytext>Esmail, Aziz. &#8220;Satpanth Ismailism and Modern Changes Within it With Special Reference to East Africa.&#8221; PhD thesis, University of Edinburgh, 1971.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I></I>and <A href="../www.iis.ac.uk/view_persone2be.html?type=auth&amp;id=19"><A href="../www.iis.ac.uk/view_persone2be.html?type=auth&amp;id=19">Azim Nanji</A></A>. &#8220;The Isma&#8216;ilis in History,&#8221; in S. H. Nasr, ed., <I>Isma&#8216;ili Contributions to Islamic Culture</I>. Tehran, 1977, pp. 225&#8211;65.<BR><BR>
+<P class=bodytext>Friedmann, Yohannan. &#8220;Islamic Thought in Relation to the Indian Context,&#8221; <I>Purusartha</I>, 9 (1986), pp. 79&#8211;91.<BR><BR>
+<P class=bodytext>Fyzee, Asaf A. A. <I>Cases in the Muhammadan Law of India and Pakistan</I>. Oxford, 1965.<BR><BR>
+<P class=bodytext>Gandhi, S. S. <I>History of the Sikh Gurus</I>. New Delhi, 1978.<BR><BR>
+<P class=bodytext>Goldziher, Ignaz. &#8220;Linguistisches aus der Literatur de muhammadanischen Mystik,&#8221; <I>Zeitschrift der Deutschen Morgenl&#228;ndischen Gesellschaft</I>, 26 (1872), pp. 764&#8211;85.<BR><BR>
+<P class=bodytext>Graham, William A. <I>Beyond the Written Word: Oral Aspects of Scripture in the History of Religion</I>. Cambridge and New York, 1987.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Scripture,&#8221; in Mircea Eliade, ed., <I>Encyclopedia of Religion</I>. New York, 1987.<BR><BR>
+<P class=bodytext>Grierson, G. <I>Linguistic Survey of India</I>. 11 vols. Calcutta, 1903&#8211;28.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;On the Modern Indo&#8211;Aryan Alphabets of North&#8211;Western India,&#8221; <I>Journal of the Royal Asiatic Society</I> (1904), pp. 67&#8211;73.<BR><BR>
+<P class=bodytext>Grunebaum, Gustav E. von, ed. <I>Unity and Variety in Muslim Civilization</I>. Chicago, 1955.<BR><BR>
+<P class=bodytext>Gupte, B. A. &#8220;The Modi Character,&#8221; <I>Indian Antiquity</I>, 34 (1905), pp. 27&#8211;30.<BR><BR>
+<P class=bodytext>al&#8211;Hamadani, Abbas H. <I>The Beginnings of the Isma&#8216;ili Da&#8216; wa in Northern India</I>. Cairo, 1956.<BR><BR>
+<P class=bodytext>al&#8211;Haqq, &#8216;Abd. <I>Urdu ki ibtida&#8217;i nashwo numa men sufiya&#8217; &#8211;i kiram ka kam</I>. Aligarh, 1968.<BR><BR>
+<P class=bodytext>Hardy, Peter. &#8220;Modern European and Muslim Explanations of Conversion to Islam in South Asia: A Preliminary Survey of the Literature,&#8221; in Nehemia Levitzion, ed., <I>Conversion to Islam</I>. New York and London, 1979, pp. 68&#8211;99.<BR><BR>
+<P class=bodytext>Hawley, J. &#8220;Images of Gender in the Poetry of Krishna,&#8221; in Caroline Bynum et al., ed., <I>Gender and Religion: On the Complexity of Symbols</I>. Boston, 1986.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Author and Authority in the Bhakti Poetry of North India,&#8221; <I>Journal of Asian Studies</I>, 47 (1988), pp. 269&#8211;90.<BR><BR>
+<P class=bodytext>&#8212;&#8212;and M. Juergensmeyer. <I>Songs of the Saints of India</I>. Oxford, 1988.<BR><BR>
+<P class=bodytext>Hodgson, Marshal G. S. <I>The Order of Assassins</I>. The Hague, 1955.<BR><BR>
+<P class=bodytext>Ibn al&#8211;Nadim, Muhammad. <I>al&#8211;Fihrist</I>. Cairo 1348/1929.<BR><BR>
+<P class=bodytext>Ivanow, Wladimir. &#8220;The Sect of Imam Shah in Gujrat,&#8221; <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>, New Series, 12 (1936), pp. 19&#8211;70.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Khodja,&#8221; <I>Shorter Encyclopaedia of Islam</I>, pp. 256&#8211;7.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Tombs of Some Persian Ismaili Imams,&#8221; <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>. New Series, 14 (1938), pp. 49&#8211;62.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Satpanth (Indian Ismailism),&#8221; in W. Ivanow, ed., <I>Collectanea</I>, vol. 1. Leiden, 1948, pp. 1&#8211;54.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Shums Tabriz of Multan&#8221; in S. M. Abdallah, ed., <I>Professor Muhammad Shafi Presentation Volume</I>. Lahore, 1955, pp. 109&#8211;18.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Sufism and Ismailism: The <I>Chiragh&#8211;Nama</I>,&#8221; <I>Revue Iranienne d'Anthropologie</I>, 3 (1959), English, pp. 13&#8211;17; Persian, pp. 53&#8211;70.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Ismaili Literature. A Bibliographical Survey</I>. Tehran, 1963.<BR><BR>
+<P class=bodytext>Kassam, Tazim R. &#8220;Syncretism on the Model of Figure&#8211;Ground: A Study of Pir Shams&#8217; Brahma Prakasa,&#8221; in Katherine K. Young, ed., <I>Hermeneutical Paths to the Sacred Worlds of India</I>. Atlanta, 1994, pp. 231&#8211;41.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Songs of Wisdom and Circles of Dance: Hymns of the Satpanth Isma&#8216;ili Muslim Saint, Pir Shams</I>. Albany, NY, 1995.<BR><BR>
+<P class=bodytext>Kellogg, S. H. <I>A Grammar of the Hindi Language</I>. 3rd ed., London, 1938.<BR><BR>
+<P class=bodytext>Khakee, G. &#8220;The Dasa Avatara of the Satpanthi Ismailis and Imam Shahis of Indo&#8211;Pakistan.&#8221; PhD thesis, Harvard University, 1972.<BR><BR>
+<P class=bodytext>Khan, Dominique&#8211;Sila. <I>Conversions and Shifting Identities: Ramdev Pir and the Ismailis in Rajasthan</I>. New Delhi, 1997.<BR><BR>
+<P class=bodytext>Khan, F. A. <I>Banbhore</I>. Karachi, 1976.<BR><BR>
+<P class=bodytext>Krishna, Lajwanti Rama. <I>Panjabi Sufi Poets AD 1460&#8211;1900</I>. Repr. ed., Karachi, 1977.<BR><BR>
+<P class=bodytext>Kahn, Mohammad, Ishaq. <I>Kashmir&#8217;s Transition to Islam: The Role of Muslim Rishis</I>, 15th&#8211;18th Century. New Delhi, 1994.<BR><BR>
+<P class=bodytext>Lord, Albert. <I>Singer of Tales</I>. Cambridge, MA, 1968.<BR><BR>
+<P class=bodytext>Maclean, Derryl. <I>Religion and Society in Arab Sind</I>. Leiden, 1989.<BR><BR>
+<P class=bodytext>Madelung, Wilferd. &#8220;Isma&#8216;iliyya,&#8221; <I>EI2</I>, vo.. 4, pp. 198&#8211;206.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Khodja,&#8221;, <I>EI2</I>, vol. 5, pp. 25&#8211;7.<BR><BR>
+<P class=bodytext>Mahesh, M. S. <I>The Historical Development of Mediaeval Hindi Prosody</I>. Bhagalpur, 1964.<BR><BR>
+<P class=bodytext>Meeks, Wayne A. &#8220;The Image of the Androgyne: Some Uses of a Symbol in Early Christianity,&#8221; <I>History of Religions</I> 13, no. 3 (1974), pp. 165&#8211;208.<BR><BR>
+<P class=bodytext>Menant, D. &#8220;Les Khodjas du Guzarate,&#8221; <I>Revue du Monde Musulman</I>, 10 (1910), pp. 214&#8211;32; 406&#8211;24.<BR><BR>
+<P class=bodytext>Mohamed, al&#8211;Waiz Sultanali. <I>Wonderful Tradition: Transliteration of Holy Ginans</I>. Kenya, 1966.<BR><BR>
+<P class=bodytext>Moir (Noorally), Zawahir. <I>Catalogue of Khojki Manuscripts in the Collection of the Institute of Ismaili Studies</I>. Unpublished ms., London, n.d.<BR><BR>
+<P class=bodytext>Nanji, Azim. <I>The Nizari Isma&#8216;ili Tradition in the Indo&#8211;Pakistan Subcontinent</I>. Delmar, NY, 1978.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Isma&#8216;ilism,&#8221; in S. H. Nasr, ed., <I>Islamic Spirituality: Foundations</I>. New York, 1987, pp. 179&#8211;98, 432&#8211;3.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;<I>Shari&#8216;at</I> and <I>Haqiqat</I>: Continuity and Synthesis in the Nizari Isma&#8216;ili Muslim Tradition,&#8221; in K. P. Ewing, ed., <I>Shari&#8216;at and Ambiguity in South Asian Islam.</I> Berkeley and Los Angeles, 1988, pp. 63&#8211;76.<BR><BR>
+<P class=bodytext>Nanjiani, S. <I>Khoja Vrttant</I>. Ahmadabad, 1892.<BR><BR>
+<P class=bodytext>Noorally, Zawahir. &#8220;Ginans: Our Wonderful Tradition,&#8221; mimeographed paper. Vancouver, n.d.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Catalogue of Khojki Manuscripts in the Collection of the Ismailia Association for Pakistan</I>. Unpublished ms., Karachi, 1971.<BR><BR>
+<P class=bodytext>Orr, W. G. <I>A Sixteenth Century Indian Mystic</I>. London, 1947.<BR><BR>
+<P class=bodytext><I>Pandiyat&#8211;i javanmardi</I> or &#8220;<I></I>Advices of Manliness&#8221;. Ed. and trans. by W. Ivanow. Leiden, 1953.<BR><BR>
+<P class=bodytext>Pollock, Sheldon. &#8220;<I></I>India in the Vernacular Millenium: Literary Culture and Polity, 1000&#8211;1500,&#8221; paper presented at the Center for International Affairs South Asia Seminar, Harvard University, 1997.<BR><BR>
+<P class=bodytext>Poonawala, Ismaili K. <I>Biobibliography of Isma&#8216;ili Literature</I>. Malibu, CA, 1977.<BR><BR>
+<P class=bodytext>Prinsep, J. &#8220;<I></I>Note on <I>A Grammar of the Sindhi Langugage dedicated to the Rt Honourable Sir Robert Grant, Governor of Bombay by W. H. Whalen Esq.</I>,&#8221; <I>Journal of the Asiatic Society of Bengal</I>, 6 (1837), pp. 347&#8211;54.<BR><BR>
+<P class=bodytext>Qureshi, Ishtiaq H. <I>The Muslim Community of the Indo&#8211;Pakistan Subcontinent (610&#8211;1947)</I>. Karachi, 1977.<BR><BR>
+<P class=bodytext>Qureshi, Regula. <I>Sufi Music of India and Pakistan. Sound Context and Meaning in Qawwali</I>. Cambridge, 1986.<BR><BR>
+<P class=bodytext>Ramanujan, A. K. &#8220;Three Hundred <I>Ramayana</I>s: Five Examples of Three Thoughts on Translation,&#8221; in Paula Richman, ed., <I>Many Ramayanas: The Diversity of a Narrative Tradition in South Asia</I>. Delhi, 1994, pp. 22&#8211;49.<BR><BR>
+<P class=bodytext>Rinehart, Robin. &#8220;The Portable Bullhe Shah: Biography, Authorship, and Categorization in the Study of Punjabi Sufi Poetry,&#8221; paper presented at the Seventh International Conference on Early Literature in New Indo&#8211;Aryan Languages, Venice, 1997.<BR><BR>
+<P class=bodytext>Roy, Asim. &#8220;The Pir Tradition: A Case Study in Islamic Syncretism in Traditional Bengal,&#8221; in Fred Clothey, ed., <I>Images of Man: Religion and the Historical Process in South Asia</I>. Madras, 1982, pp. 112&#8211;41.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>The Islamic Syncretistic Tradition in Bengal</I>. Princeton, NJ, 1983.<BR><BR>
+<P class=bodytext>Sachedina, Abdulaziz. &#8220;Khojas,&#8221; in John L. Esposito, ed., <I>Oxford Shorter Encyclopedia of the Modern Islamic World</I>. Oxford, 1995, vol. 2, pp. 423&#8211;27.<BR><BR>
+<P class=bodytext>Sadik Ali, Mumtaz Ali Tajddin. &#8220;Sayyida Bibi Imam Begum,&#8221; <I>Hidayat</I> (July 1989), pp. 16&#8211;21.<BR><BR>
+<P class=bodytext>Schimmel, Annemarie. &#8220;The Influence of Sufism on Indo&#8211;Muslim Poetry,&#8221; in Joseph P. Strelka, ed., <I>Anagogic Qualities of Literature</I>. University Park, PA, 1971, pp. 181&#8211;210.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Sindhi Literature,&#8221; in J. Gonda, ed., <I>A History of Indian Literature</I>. Wiesbaden, 1974.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Mystical Dimensions of Islam</I>. Chapel Hill, NC, 1975.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Pain and Grace: A Study of Two Mystical Writers of Eighteenth Century Muslim India</I>. Leiden, 1976.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>The Triumphal Sun: A Study of Works on Jalaloddin Rumi</I>. Rev. ed., London, 1980<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Reflections on Popular Muslim Poetry,&#8221; <I>Contributions to Asian Studies</I> 17 (1982), pp. 17&#8211;26.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>As Through a Veil: Mystical Poetry in Islam</I>. New York, 1982.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>And Muhammad is His Messenger</I>. Chapel Hill, NC, 1985.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>My Soul is a Woman: the Feminine in Islam</I>. New York, 1997.<BR><BR>
+<P class=bodytext>Shackle, Christopher. <I>From Wuch to Southern Lahnda, A Century of Siraiki Studies in English</I>. Multan, 1984.<BR><BR>
+<P class=bodytext>&#8212;&#8212;and Zawahir Moir. <I>Ismaili Hymns from South Asia: An Introduction to the Ginans</I>. London, 1992.<BR><BR>
+<P class=bodytext><I>Shorter Encyclopedia of Islam</I>. ed. H. A. R. Gibb and J. H. Kramers. Leiden, 1953.<BR><BR>
+<P class=bodytext>Slochower, Harry. <I>Mythopoesis</I>. Detroit, 1970.<BR><BR>
+<P class=bodytext>Smith, Wilfred C. &#8220;The Crystallization of Religious Communities in Mughul India,&#8221; in M. Minovi and I. Afshar, ed., <I>Yad&#8211;Name&#8211;ye Irani&#8211;ye Minorsky</I>. Tehran, 1969, pp. 1&#8211;24.<BR><BR>
+<P class=bodytext>Stack, G. <I>A Grammar of the Sindhi Language</I>. Bombay, 1849.<BR><BR>
+<P class=bodytext>Stern, S. M. &#8220;Isma&#8216;ili Propoganda and Fatimid Rule in Sind,&#8221; <I>Islamic Culture</I>, 23 (1949), pp. 298&#8211;307, reprinted in S. M. Stern, <I>Studies in Early Isma&#8216;ilism</I>. Jerusalem and Leiden, 1983, pp. 177&#8211;88.<BR><BR>
+<P class=bodytext>Trumpp, E. <I>Grammar of the Sindhi Language</I>. Leipzig, 1872.<BR><BR>
+<P class=bodytext>Underhill, Evelyn. <I>Mysticism. A Study in the Nature and Development of Man's Spiritual Consciousness</I>. 12th ed., New York, 1961.<BR><BR>
+<P class=bodytext>Vaudeville, Charlotte. <I>Kabir</I>. Vol. 1. Oxford, 1974.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Kabir and the Interior Religion,&#8221; <I>History of Religions</I>, 3 (1964), pp. 191&#8211;201.<BR><BR>
+<P class=bodytext>&#8212;&#8212;&#8220;Sant Mat: Santism as the Universal Path to Sanctity,&#8221; in Karine Schomer and W. H. McLeod, ed., <I>The Sants: Studies in the Devotional Tradition of India</I>. Berkeley and Delhi, 1987, pp. 21&#8211;40.<BR><BR>
+<P class=bodytext>Velji, D. <I>72 Ginans. Part I: Transliteration of Holy Ginans</I>. Nairobi, 1972.<BR><BR>
+<P class=bodytext>Walliullah, Shah. <I>Tafhimat al&#8211;ilahiyya</I>, ed. Ghulam Mustafa al&#8211;Qasimi. 2 vols. Hyderabad, Sind, 1967&#8211;70.<BR><BR>
+<P class=bodytext>Walker, Paul E. &#8220;Abu Ya&#8216;qub al&#8211;Sijistani and the Development of Ismaili Neoplatonism.&#8221; PhD thesis, University of Chicago, 1974.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Early Philosophical Shiism: The Ismaili Neoplatonism of Abu Ya&#8216;qub al&#8211;Sijistani</I>. Cambridge, 1993.<BR><BR>
+<P class=bodytext>&#8212;&#8212;<I>Abu Ya&#8216;qub al&#8211;Sijistani: Intellectual Missionary</I>. London, 1996.<BR><BR></P></div><p>Content Date: Janvier 2002</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Extase et Eclaircissement: La Litt&#233;rature d&#233;votionnelle 
+ismailie de l&#8217;Asie du Sud.</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 16 Nov 2015 12:16:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 02/12/2005&nbsp;15:01&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100596 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:22:40 GMT -->
+</HTML>

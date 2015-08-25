@@ -1,0 +1,687 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110182 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:45:08 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 110182;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only3fab.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D110182">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article697b.html?ContentID=110183">Français</A></li><li><A href="view_article9249-2.html?ContentID=110184">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articleff32.html?ContentID=110186">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Religion and State in a Pluralist Nation:
+Policy Challenges in Contemporary Canadian Society</strong><br/><strong><DIV><A href="view_person2998.html?type=authors&amp;id=162">Professor Karim H Karim</A></DIV><DIV><A href="view_person9e58.html?type=authors&amp;id=186">Ms Faiza  Hirji</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that appeared in &#8216;Religious Diversity and Canada&#8217;s Future', <EM>Association for Canadian Studies </EM>in&nbsp;Winter 2008. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning_%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><DIV>&nbsp;</DIV>
+<DIV>The Canadian state has long made room for the practice of religion while maintaining its secular framework for public life. Recent years have seen increased policy discourse about religious identity in the public sphere, mostly due to growing diversity. Debates involving the intersection of religious and civic identities tend to become conflated with negative perceptions of immigration, of overly reasonable accommodation that privileges minority rights over those of the majority, and concerns about gender rights and public security. In several cases, the extent of the social conflict has been magnified by the media to produce moral panics. Public figures have also over-reacted to reports of apparent disputes. Central to this policy debate is the upholding of the fundamental rights and freedoms of all, particularly human rights and the ability to participate in public life.</DIV></div><div> </div><div><P><B>Keywords</B></P>
+<DIV>Canada, immigrants, media, minorities, multi-culturalism, pluralism, private sphere, public sphere, religion, human rights, secularism. </DIV>
+<DIV>&nbsp;</DIV>
+<DIV><IMG height=25 hspace=5 src="images/pdf_icon.gif" width=25 border=0><A href="SiteAssets/pdf/Religion%20and%20State%20in%20a%20Pluralist%20Nation.pdf">Download PDF version of article (51.5 KB)</A></DIV>
+<P><B></B></P>
+<P><B>Table of Contents</B></P>
+<UL>
+<LI><A href="#a">Church and State</A></LI>
+<LI><A href="#b">Debates on Accommodation</A></LI>
+<LI><A href="#c">Need for Careful Examination</A></LI>
+<LI><A href="#d">Rights in the Public and Private Spheres</A></LI></UL>
+<P><B></B></P>
+<P><B><A name=a>Church and State</A></B></P>
+<P>Political developments over the last few centuries have favoured the separation of church and state. Whereas such leanings towards the secular generally translate into neutrality towards religious belief, some states like China have adopted policies of official atheism. On the other hand, religious authorities have significant influence in the Iranian model. According to Richard Neuhaus, a prominent American churchman who grew up in Canada, secularism has produced a &#8220;naked public square&#8221; in contemporary Western society because religion and religious values have been systematically excluded from consideration (Neuhaus, 1988). It is useful here to make a distinction between &#8220;secular&#8221; and &#8220;secularism.&#8221; Although some view that <I>secular </I>positions do not necessarily mean the elimination of religion from public life, <I>secularism </I>does stand in strong opposition towards religion. Aziz Esmail notes that, &#8220;Secularism in the strong sense of the term has the characteristics of an ideology, treating religion as a rival to itself, and attempting to offer a total explanation of its own&#8230;&#8221; (quoted in Salam, 1991, p. 24).</P>
+<P>Religion is a basic (although not the only) source of most societies&#8217; concepts of public ethics, morality and values. Fundamental notions underlying theories of good governance, justice and human rights are drawn from precepts developed in religious philosophy. Key elements in national constitutions and bodies of legislation are often based on ideas that originate in the religion of the majority. </P>
+<P>Even though conscious efforts are made to de-sacralize structures of the secular state, a country&#8217;s culture cannot be completely separated from its religious heritage. Official and unofficial symbols, public ceremonies, common linguistic phrases, etc. are often based on religious culture. Even though the spiritual significance of Christmas and Easter may not be acknowledged in official government discourses, these events are commemorated as holidays in the national calendars of Western countries, where Sunday is also the weekly day of rest. This includes France, despite its rigorous application of the policy of <I>la&#239;cit&#233;</I>. Although India is officially secular, its national days include several Hindu and Muslim festivals and Indian states with significant populations of Sikhs and Christians publicly mark their sacred commemorations.</P>
+<P>Canadian governments at various levels have historically engaged with aspects of religion. <I>The Canadian Charter of Rights and Freedoms </I>guarantees &#8220;freedom of conscience and religion&#8221; as a fundamental right. While the <I>Charter </I>gives all Canadians the right to hold their own respective beliefs, Christianity, the faith of the majority in Canada, has historically been given a particular status. The lyrics in French of the national anthem, &#8220;O Canada,&#8221; adopted in 1980, proclaim, &#8220;Il sait porter la croix,&#8221; a clear acknowledgement of the country&#8217;s Christian heritage. At the formation of the Canadian nation, the <I>Constitution Act </I>of 1867 provided for separate religious-based schools. Roman Catholicism, the faith of most francophones, was given recognition within the Canadian state in addition to that accorded to the Church of England. By 1967, three other Christian denominations and the Jewish faith had been included in the Federal Government&#8217;s Order of Precedence, which determines the placement of individual persons &#8211; in this case, religious representatives &#8211; at official state ceremonies. In the early 1990s, the religious category in the Order was made inclusive of all religious groups, in acknowledgement of the broadening religious diversity of the population.</P>
+<P>However, such entente between religion and state in Canada does not mean that they have not been in periodic conflict with each other. Given that aspects of the national culture are based on the norms of mainstream Christian denominations, the latter&#8217;s confrontations with the state appear to occur when these norms undergo changes, such as the legalisation of Sunday shopping, abortion, and same sex marriage. Recent years have seen an increased discourse about religious identity in the public sphere, mostly due to the growing pluralism of Canadian society. Requests for accommodation have come from a variety of religious groups including Sikhs, Muslims, Jews, Mormons and Mennonites. This has created policy challenges at both the provincial and federal levels of government in the secular Canadian state.</P>
+<P><B></B></P>
+<P><B><A name=b>Debates on Accommodation</A></B></P>
+<P>One of the most contentious national debates involving non-Christian groups occurred in the early 1990s and concerned the right of Sikh Royal Canadian Mounted Police officers to wear turbans instead of Stetsons as part of their uniform. The point of contention in such cases is usually, but not always, the ability of the members of minority religions to participate in public institutions while continuing to adhere to the precepts of their respective religions. </P>
+<P>A brief listing of some of the controversies over religion in the Canadian public sphere is illustrative of this issue&#8217;s significance[<A href="#1">1</A>].</P>
+<P>&#8226; The proposal of some Muslim organisations to use <I>sharia </I>(&#8220;Islamic law&#8221;) as the basis for arbitration in matters of family law.</P>
+<P>&#8226; Provincial and federal inquiries into allegations of sexual abuse in a polygamist Mormon community living in Bountiful, British Columbia.</P>
+<P>&#8226; A Supreme Court decision allowing the wearing of Sikh <I>kirpans </I>in Qu&#233;bec schools.</P>
+<P>&#8226; A Supreme Court ruling making it permissible to erect temporary <I>succah </I>huts (outdoor structures built by Orthodox Jews during the festival of <I>Succot</I>) in the balconies of condominiums in a Montreal complex.</P>
+<P>&#8226; The Qu&#233;bec Human Rights Commission ruling allowing prayer on school grounds.</P>
+<P>&#8226; The decision by the Commission scolaire Marie-Victorin in Longueuil, Qu&#233;bec to restrict access to a high school pool so that three Muslim students could have private swimming lessons.</P>
+<P>&#8226; The passage of an ordinance by the town council of Herouxville, Qu&#233;bec that advised immigrants of community norms and informing them that the traditions of their countries of origin could not be brought to Quebec.</P>
+<P>&#8226; The Alberta Court of Appeal&#8217;s ruling that individuals in the Hutterite community who had religious objections to having their pictures taken were not obligated to obtain photographs for their driver&#8217;s licences.</P>
+<P>&#8226; The ejection of a Muslim girl playing in a soccer tournament in Laval, Qu&#233;bec from the game by a referee who ruled that her <I>hijab</I> posed a safety concern.</P>
+<P>&#8226; The barring of five Muslim girls from a Montreal Tae Kwon Do team from competing in a tournament because they were wearing <I>hijab</I>s.</P>
+<P>&#8226; The installation of frosted windows in a Montreal YMCA building in order to block the sight of exercising women, which a neighbouring Hassidic community felt would be highly distracting for its young male members.</P>
+<P>&#8226; The circulation of an internal document by Montreal police advising its female officers that they might need to step aside and allow male officers to take command in investigations involving male Hassidic Jews who felt uncomfortable speaking to women.</P>
+<P>&#8226; The decision by a provincially-run community health clinic in Montreal to offer prenatal classes for women only, in order to meet the needs of their Hindu, Muslim and Sikh populations.</P>
+<P>&#8226; A major Toronto-area amusement park granting turbaned Sikhs exemption from the helmet requirement of the Ontario safety authority after a Sikh man obtained a provincial Human Rights Commission ruling exempting him from wearing one.</P>
+<P>&#8226; The motion by the town council of Oxford, Nova Scotia declaring December to be the Christmas season, which prompted the Canadian Jewish Congress to accuse Oxford of being exclusionary.</P>
+<P>&#8226; Strong criticism by the <I>Journal de Montreal </I>for owners of <I>cabanes &#224; sucre </I>(sugar shacks) for accommodating Muslim visitors by providing prayer space and omitting lard and pork from their meals.</P>
+<P>In examining such controversies, it is useful to consider the distinct nature of the situations leading up to them. They are not necessarily reflective of a conflict between religion and state. Some have emerged out of the process of policy development at various levels of government, such as the initiative to incorporate the <I>sharia </I>into the work of faith-based tribunals in Ontario. Others have come to prominence through rulings in courts; for example, the issue of whether Khalsa Sikh males can wear <I>kirpans</I> in schools. Whereas most of these cases are widely covered in the media, there are specific issues that have become &#8220;incidents&#8221; as a result of media highlighting and have caused a &#8220;moral panic.&#8221;[<A href="#2">2</A>] This panic is prompted by the feeling that the accommodations granted to various minority religions are eroding society&#8217;s values.</P>
+<P><B><A name=c>Need for Careful Examination</A></B></P>
+<P>Incidents need to be reviewed carefully, in terms of their pertinent historical, social, political and economic contexts, and in terms of the identities of the actors involved &#8211;including the media, civil society, institutions, community groups and the public. At times, a minor event may be magnified as a major happening and presented as demanding instant action, particularly by stakeholders who feel that they may gain an advantage of some kind, or conversely that they are under attack. The way incidents are given public definitions by the media and other public opinion leaders should be examined.</P>
+<P>Certain media have failed to examine controversies with the level of detail and analysis that is necessary. Particular media have tended to adopt a consistently inflammatory tone. For instance, in covering many of the abovementioned cases, the tabloid <I>Journal de Montreal </I>has told Qu&#233;becois that they have accommodated minorities for too long and may be in danger of losing their own traditions (see Hanes, 2007 and Valpy, 2007). Some journalists have fanned the flames of discontent, promoting the perception of a crisis where none may exist. For instance, the so-called sugar shack controversy was made out to be a problem, even though it did not touch upon a public policy issue, was not before the courts, nor was it the source of any known consumer complaint. A Muslim who visited the <I>cabanes &#224; sucre </I>noted that this was not a case of reasonable accommodation in the policy sense, but of private accommodation &#8211; or, as one of the owners put it, good business. It seems that the newspaper had taken upon itself to make an issue out of what appears to have been an amicable arrangement. On the other hand, the media can and often does play a moderating role. Several Canadian journalists have spoken eloquently and compassionately about the challenges of reasonable accommodation.</P>
+<P>Some actors are too quick to respond to media reports without sufficient understanding of particular cases. Occasionally, individuals or organisations exploit the situation for their own advantage. Some politicians were quick to jump into the fray during the campaign leading to the Quebec election in March 2007, in cases such as that of the <I>hijab</I>-wearing soccer player, as were their federal counterparts in their response to the decision by Canada&#8217;s Chief Electoral Officer to permit the wearing of <I>niqabs </I>(full veils covering the face). No Muslim group had asked for the latter accommodation, yet several media discussions implied that the issue was prompted by Muslims&#8217; unreasonable demands. Canadian leaders need to be aware that such a tendency has had disastrous consequences. A prime example is India, where political parties have exploited feelings of fear against religious minorities resulting in deadly attacks against them.</P>
+<P><B></B></P>
+<P><B><A name=d>Rights in the Public and Private Spheres</A></B></P>
+<P>It is clear that the issues raised here involve a lot of grey areas. In many cases, it is not obvious who has jurisdiction and who is expected to act. Policy analysts are often unsure of the steps they need to take and what kind of advice they should offer to decision makers. They are expected to support the public interest, seeking to balance the range of claims made by competing elements in the public sphere. They are also guided by the objectives of ensuring that all citizens have the opportunity to participate in public institutions &#8211; that their adherence to the precepts of their respective religions should not become barriers to such participation.</P>
+<P>Beyond the participatory function of citizenship, policy makers also seek to promote adherence to a sense of belonging that buttresses social cohesion in the nation. Discussions have often broached the notions of the core values, basic principles and civic identity which shape Canadian society. They have proposed that responsibilities should be highlighted in addition to rights. Some fear that the accommodation of specific religious practices may impinge upon efforts to ensure equality in society, and that the rights of individuals may collide with those of groups. Whereas the implications of many issues at the inter section of religious and civic identities remain ambiguous, there are certain boundaries, such as those defined by the Criminal Code and human rights, which help to delineate the limits of acceptable accommodations. For example, proposed changes to public norms that would threaten the safety or liberties of women would not be permitted. The answers to many of these difficult situations are often sought from the judiciary.</P>
+<P>A key issue that underlies many of the incidents is the conceptualisation of the public sphere. It includes the common physical spaces of a society and the discursive spaces made possible by the mass media. Most of the controversies are about the apparent conflicts of minority faiths with public bodies. But several of the debates regarding the intersection of religious and civic identities have occurred over the practices of private institutions like sports associations, women&#8217;s gyms and sugar shacks. They are brought into public discussions by media. In other cases, &#8220;publicness&#8221; is accorded to a situation when a high profile person speaks about the issue.</P>
+<P>There are other aspects of the public sphere that are shaped by the nature of the act involved &#8211; a crime conducted in the private domain such as the abuse of a woman&#8217;s fundamental rights comes within the purview of the authorities. Some occurrences are given a high profile that tends to demand the immediate attention of governments. But in certain cases, the tensions are those that inevitably unfold in the process of social adjustment as an immigrant group and the host society come to terms with each other. The passage of time usually provides the solution as the two sets of actors get to know each other better. But it is the very magnification of the conflict in the public eye, and the resultant controversy, which causes it to last longer than it normally would.</P>
+<P>Debates involving the intersection of religious and civic identities tend to become conflated with negative perceptions of immigration, of overly reasonable accommodation that privileges minority rights over those of the majority, and concerns about gender rights and public security (Adams and Langstaff, 2007). They are also often framed within a perceived &#8220;failure of multi-culturalism.&#8221; The moral panic over the fragmentation of Canadian society due to the accommodation of minorities calls for a closer examination of the term &#8220;accommodation.&#8221; Its use in these circumstances implies a derogation of societal norms. However, if human rights, equality of opportunity to participate in society and the freedom of conscience and religion are fundamental Canadian principles, then perhaps &#8220;accommodation&#8221; is not the correct word to be used in these circumstances. Certain changes to societal norms are actually permitting immigrants to integrate more effectively into Canadian communities.</P>
+<P>The Canadian state has long made room for the practice of religion while maintaining its secular framework for public life. Among the many civil society actors who interact in the public sphere, religious organisations are legitimate participants who seek to speak for their communities. Protestant-Catholic conflicts in early Canadian history have become a distant memory and these groups have found a place from which to carry out a conversation with the state. As the Canadian religious sphere has become more pluralistic, there has been a growth in the number of bodies that are interacting with the state and other mainstream institutions. The demands of Jews, Sikhs and Muslims may sound alien to a dominantly Christian country, but they are only the most recent in the longstanding engagement of religion with Canadian society. Central to these negotiations is the upholding of the fundamental rights and freedoms of all residents of this country, particularly human rights and the ability to participate in public life. An individual&#8217;s adherence to any religion should not hinder these primary guarantees that the Canadian state affords every citizen.</P>
+<P><I>The research from which this article draws was commissioned by the Strategic Policy, Planning and Research, Department of Canadian Heritage. It was presented at the 12th International Metropolis Conference in Melbourne, Australia and at the Ethnicity and Democratic Governance conference in Montreal, both of which took place in October 2007.</I></P>
+<P><B></B></P>
+<P><B>References</B></P>
+<P>Adams, M. and Langstaff, A. (2007). <I>Unlikely utopia: The surprising triumph of Canadian pluralism. </I>Toronto: Viking Canada.</P>
+<P>Cohen, S. (1972). <I>Folk devils and moral panics. </I>London: MacGibbon and Kee.</P>
+<P>Hanes, A. (2007, March 20). Sugar like salt in Quebec&#8217;s wound. <I>The National Post, </I>p. A3.</P>
+<P>Karim, K. H. and Hirji Kassam, F. (2007). <I>Religious pluralism and public policy: Background paper</I>. Quebec: Canadian Heritage.</P>
+<P>Neuhaus, R. (1988). <I>The naked public square: Religion and democracy in America. </I>2nd ed. Grand Rapids, MI: Eerdmans Publishing.</P>
+<P>Salam, H. (Ed.). (1991). <I>Expressions of Islam in buildings. </I>Geneva: Aga Khan Trust for Culture.</P>Valpy, M. (2007, March 31). A shortage of accommodation. <I>The Globe and Mail</I>,<I> </I>p. F1. 
+<DIV><BR clear=all>
+<HR align=left width="33%" SIZE=1>
+
+<DIV id=ftn1>
+<P>[<A name=1>1</A>] These controversies are discussed in greater detail in Karim and Kassam (2007).</P>[<A name=2>2</A>] Stanley Cohen (1972) defines the term as a societal reaction to a group based on the false or exaggerated perception that its cultural behaviour is dangerously deviant and poses a menace to societal values and interests.</DIV></DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Religion and State in a Pluralist Nation:
+Policy Challenges in Contemporary Canadian Society</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sat, 23 Mar 2019 12:14:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 24/06/2011&nbsp;13:44&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110182 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:45:09 GMT -->
+</HTML>

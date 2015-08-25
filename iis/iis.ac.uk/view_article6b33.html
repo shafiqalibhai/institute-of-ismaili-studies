@@ -1,0 +1,1265 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109217 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:35:14 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 109217;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyd745.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D109217">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article3713.html?ContentID=109218">Français</A></li><li><A href="view_articlec51a.html?ContentID=109219">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article5cd8.html?ContentID=109220">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_article3d07.html?ContentID=109221">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Arts of the City Victorious: Islamic Art and Architecture in Fatimid North Africa and Egypt</strong><strong><br/></strong><strong></strong><br/><br/>Yale University Press in association with The Institute of Ismaili Studies, 2007<span><br/><br/>ISBN (Hardback): 978-0-300-13542-8</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/arts_city01-2008131122638_7055.jpg" align="left" alt="" style="padding: 0px;" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><IMG border=0 alt="" align=baseline src="WebAssets/Large/googlebooks.jpg" width=18 height=18> <A onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=ePfqAAAAMAAJ&amp;q=Arts+of+the+City+Victorious:+Islamic+Art+and+Architecture+in+Fatimid+North+Africa+and+Egypt&amp;dq=Arts+of+the+City+Victorious:+Islamic+Art+and+Architecture+in+Fatimid+North+Africa+and+Egypt&amp;cd=1" target=_blank>Publication page on Google Books </A></P>
+<P>Arts of the City Victorious<B> </B>is the first book-length study of the art and architecture produced under the Fatimids, the Ismaili Shi&#8216;i dynasty that ruled in North Africa and Egypt from 909 to 1171 CE. The Fatimids are famous for founding the city of <I>al-Qahira </I>(&#8220;the victorious,&#8221; whence the name Cairo) in 969 CE, and their art&#8212;particularly textiles and luster ceramics, but also metalwork and carved rock-crystal, ivory and woodwork&#8212;has been admired for nearly a millennium. Initially brought home to Europe by merchants and Crusaders and then preserved as relics and reliquaries in church treasuries, Fatimid art is still prized today by collectors and curators for its strongly figural imagery, otherwise unusual in the arts of the contemporary Islamic lands, and its elegant and inventive use of Arabic calligraphy, particularly the angular &#8220;Kufic&#8221; script from which leaves and tendrils grow. Surviving examples of Fatimid art and architecture are supplemented by an unusual wealth of medieval texts that provide evidence for the rich visual culture shared among the Muslim, Christian and Jewish inhabitants of the Fatimid realm. Fatimid art and architecture has always been somewhat anomalous in the history of Islamic art because of the direction in which it grew (west to east), subject matter (figural at a time when geometry and the arabesque are developing elsewhere), and unusually rich and precise documentation in royal and popular accounts. Whereas earlier studies treated the two and a half centuries of Fatimid art and architecture as a single category, this book is the first to show how they grew and evolved over time.</P>
+<P>The book begins by situating Fatimid art in the larger history of Islamic art and summarizing previous scholarship about it. The first chapter also raises questions about whether the art of the Fatimids is a consciously dynastic art, meant to bolster and support the regime&#8217;s policies, or whether it was simply the product of its time and place, specifically the period when the largely benevolent Fatimid regime led to the revival of Egypt as an agricultural, commercial, industrial, intellectual and artistic center. It also questions whether Fatimid art, as some authors have argued, has specifically Shi&#8216;i and esoteric qualities, or it is just another chapter in the nuanced history of the visual arts in the Islamic lands. The second chapter traces the origins of the Fatimid dynasty from their obscure beginnings in Iraq and Syria to their emergence in what is now Tunisia in the early tenth century CE. The chapter chronicles the development of a rather tentative Fatimid art in North Africa as the new rulers attempted to establish themselves and their dynasty in relatively hostile surroundings. It explores how the rulers began to exploit the new dynasty&#8217;s complex relationships with contemporary Mediterranean powers, specifically the Byzantine empire in the east and the neo-Umayyad dynasty in the Iberian peninsula, and how these policies may&#8212;or may not&#8212;have been worked out in the visual arts.</P>
+<P>The third chapter explores the founding of Cairo, and the burst of building activity that followed it, as the new rulers erected mosques, palaces, and shrines in their new city. The author carefully reexamines the reasons for the city&#8217;s creation and the new structures that were erected there. It also explores the possible relationships to earlier Fatimid buildings in North Africa and to contemporary ones in Syria, as craftsmen were attracted to this new and wealthy metropolis. The fourth chapter investigates the wide range of decorative arts&#8212;ranging from textiles, ceramics, metalwares, glass and rock crystal, to woodwork, ivory and painting&#8212;produced in Cairo during this same period as Ismaili and other immigrants joined native Egyptians to create vibrant new styles and techniques. It also takes up the role of representation in Fatimid art.</P>
+<P>Following a series of crises in the middle of the eleventh century about succession to the throne, the economy, and the nature of the political state, Fatimid rulers were no longer able to pursue their patronage on such a grand scale, but nevertheless architecture and the arts continued to flourish for another century under the patronage of immensely wealthy and powerful viziers. The fifth chapter treats architecture&#8212;military, residential, and religious&#8212;from the 1060s to the fall of the dynasty in 1171 CE. It shows how new patrons underwrote smaller but more numerous kinds of buildings to achieve new ends. The sixth chapter covers the same ground in the decorative arts, as some of the fabulous wealth of the Fatimid treasuries was dispersed, and some craftsmen emigrated from Egypt to seek their fortunes elsewhere, notably in Syria and Iran. </P>
+<P>The final chapter explores the legacies of Fatimid art and architecture in Egypt, North Africa and Sicily, as well as in medieval Europe and modern times. Fatimid architecture, although much of it was destroyed, set the model for the subsequent activities of Egypt&#8217;s Ayyubid and Mamluk rulers. Fatimid secular arts were transformed by craftsmen in medieval Europe into liturgical vessels and vestments far removed from their original contexts. The rediscovery of Fatimid histories and Fatimid art in the nineteenth century led to increased interest in the subject, but this book is the first comprehensive treatment of the entire range of visual arts from the Fatimid period in North Africa and Egypt.</P>Written in an engaging and accessible style, the book concentrates on securely dated and localized examples of Fatimid art and architecture. Discussions focus on key examples illustrated with 165 illustrations, mostly in color. The book synthesises the findings of many scholars in many languages, and extensive notes and bibliography provide guidance for further reading and research<br><br></div><div id="pubsContents"><strong>Contents</strong><br><BR>
+<DIV>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Foreword</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>ix</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Preface</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>xiii</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>I</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>An Introduction to Fatimid History and Fatimid Art</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>1</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>II</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>Fatimid Art in North Africa</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>15</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Fatimid Origins</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>15</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Prelude in Syria</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>16</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Arrival in North Africa</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>17</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Mahdiyya</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>22</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>The Reign of al-Qa&#8217;im</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>33</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>The Reign of al-Mansur</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>35</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Mansuriyya</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>37</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Mansuriyya in the Mediterranean Context</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>40</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Decorative Arts during the Reign of al-Mu&#8217;izz in North Africa</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>42</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>III</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>Architecture in Egypt from 969 to the 1060s</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>51</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>The Arts in Egypt before the Fatimids</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>53</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>The Founding of Cairo</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>54</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Architecture</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>59</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Conclusion</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>85</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>IV</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>The Decorative Arts from 969 to the 1060s</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>89</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Egyptian Arts before the Fatimids</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>90</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Textiles</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>91</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Ceramics</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>93</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Metalwares</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>97</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Precious Metals</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>99</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Rock Crystal and Glass</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>101</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Woodwork</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>105</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Ivory</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>107</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Books and Paintings</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>109</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Representation in Fatimid Art</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>113</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>V</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>Architecture from the 1060s s to 1171</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>117</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>The Historical Setting</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>118</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Military Architecture</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>121</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Palaces</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>129</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Religious Architecture</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>129</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>VI</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>The Decorative Arts from the 1060s to 1171</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>157</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>The Dispersal of the Fatimid Treasures</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>157</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Coins</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>159</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Textiles</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>159</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Woodwork</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>162</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Ceramics and Glass</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>167</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Metalware</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>170</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Books</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>170</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Paintings</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>171</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54>
+<DIV>VIII</DIV></TD>
+<TD vAlign=top width=444>
+<DIV><B>The Legacies of Fatimid Art</B></DIV></TD>
+<TD vAlign=top width=42>
+<DIV>175</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Cairo</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>176</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Egyptian Islamic Art</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>181</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>North Africa</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>184</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Sicily</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>189</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Christian Europe</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>193</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Conclusion</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>197</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>&nbsp;</TD>
+<TD vAlign=top width=42></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Appendix: The Fatimid Caliphs</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>200</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Notes</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>201</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Bibliography</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>220</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Photograph credits</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>230</DIV></TD></TR>
+<TR>
+<TD vAlign=top width=54></TD>
+<TD vAlign=top width=444>
+<DIV>Index</DIV></TD>
+<TD vAlign=top width=42>
+<DIV>231</DIV></TD></TR></TBODY></TABLE></DIV><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><P>&#8216;Abd al-Wahhab, Hasan Husni. <I>Mujmal tarikh al-adab al-Tunisi min fajr al-fath al-&#8216;arabi li-Ifriqiya ila al-&#8216;a</I>s<I>r al-ha dir. </I>Tunis, 1968. </P>
+<P><I>Abhath al-nadwat al-dawliyya li-tarikh al-Qahira</I>. Cairo, 1970.</P>
+<P>Abu-Lughod, Janet L. <I>Cairo: 1001 Years of the City Victorious. </I>Princeton, NJ, 1971.</P>
+<P>Allan, James W. &#8216;Concave or Convex? The Sources of Jaziran Metalwork in the Thirteenth Century&#8217;, in Julian Raby, ed., <I>The Art of Syria and the Jazira 1100-1250. </I>Oxford, 1985, pp. 127-40.</P>
+<P>&#8212; &#8212; &#8216;&#8220;My Father is a Sun and I am the Star&#8221;&#8217;: Fatimid Symbols in Ayyubid and Mamluk Metalwork&#8217;, <I>Journal of the David Collection, </I>1 (2003), pp. 25-47.</P>
+<P>Allen, Terry. <I>Ayyubid Architecture. </I>Electronic publication on the internet. Occidental, CA, 1996. <A href="http://www.sonic.net/~tallen/palmtree/ayyarch"></A><U><A href="http://www.sonic.net/~tallen/palmtree/ayyarch/">http://www.sonic.net/~tallen/palmtree/ayyarch/</A></U>/</P>
+<P>Alsayyad, Nezar, Irene A. Bierman and Nasser Rabbat. <I>Making Cairo Medieval. </I>Lanham, 2005.</P>
+<P>Amin, M. M. and Laila A. Ibrahim. <I>Architectural Terms in Mamluk Documents (648-923H) (1250-1517) (al-Mustalahat al-mi&#8217;mariyya fi-al-watha&#8217;iq al-mamlukiyya). </I>Cairo, 1990.</P>
+<P>Anglade, Elise. <I>Catalogue des boiseries de la section islamique, Musee du Louvre. </I>Paris, 1988.</P>
+<P>Arberry, Arthur J. <I>The Koran Illuminated: A Handlist of Korans in the Chester Beatty Library. </I>Dublin, 1967.</P>
+<P>Arnold, T. W. <I>Painting in Islam. </I>Oxford, 1928.<I>The Art of Medieval Spain A.D. 500-1200. </I>New York, 1993<I>.</I></P>
+<P><I>The Arts of Islam. London, </I>1976.</P>
+<P>Assabgui, Andr&#233;e, Ahmed Beheiry, Evine Hashem, Magdi Wahba and Nadia Younes, eds, <I>Colloque internationale sur l&#8217;histoire du Caire. </I>Grafenheinichen, 1972.</P>
+<P>At&#305;l, Esin. <I>Art of the Arab World. </I>Washington, DC, 1975.</P>
+<P>&#8212; &#8212; <I>Islamic Art and Patronage: Treasures from Kuwait. </I>New York, 1990. </P>
+<P>Auld, Sylvia. &#8216;The <I>Minbar </I>of al-Aqsa: Form and Function&#8217;, in Robert Hillenbrand, ed. <I>Iconography in Islamic Art. </I>London, 2005. </P>
+<P>Auld, Sylvia and Robert Hillenbrand, eds. <I>Ottoman Jerusalem, the Living City: 1517-1917. </I>London, 2000.</P>
+<P>Baer, Eva. <I>Ayyubid Metalwork with Christian Images. </I>Leiden, 1989.</P>
+<P>&#8212; &#8212; &#8216;Fatimid Art at the Crossroads: A Turning Point in the Artistic Concept of Islam?&#8217;, in Barrucand, ed. <I>L&#8217;&#201;gypte Fatimide, </I>pp. 386-94.</P>
+<P><I>&#8212; &#8212;Metalwork in Medieval Islamic Art. Albany, NY</I>,<I> </I>1983. </P>
+<P>Baker, Patricia L. <I>Islamic Textiles. </I>London, 1995.</P>
+<P>Balard, Michel. &#8216;Notes sur le commerce entre l&#8217;Italie et l&#8217;&#201;gypt sous les Fatimides&#8217;, in Barrucand, ed. <I>L&#8217;&#201;gypte</I> <I>Fatimide, </I>pp. 628-33.</P>
+<P>Barrucand, Marianne, ed. <I>L&#8217;&#201;gypte Fatimide: son art et son histoire. </I>Actes du colloque organis&#233; &#224; Paris les 28, 29 et 30 mai 1998. Paris, 1999.</P>
+<P><I>&#8212; &#8212; &#8216;Les chapiteaux de remploi de la mosqu&#233;e al-Azhar et l&#8217;&#233;mergence d&#8217;un type de chapiteau m&#233;di&#233;vale en &#201;gypte&#8217;, Annales Islamologiques, 36 (2002), </I>pp. 37-75<I>.</I></P>
+<P>al-Basha, Hasan Mahmud Hasan. &#8216;Tabaq min al-khazaf biism Ghabn mawla al-Hakim bi-Amr Allah (A ceramic dish with the name of Ghabn, client of al-Hakim)&#8217;, <I>Bulletin of the Faculty of Arts, Cairo University, </I>18 (1965), pp. 71-85.</P>
+<P>Behrens-Abouseif, Doris. &#8216;The Fa&#231;ade of the Aqmar Mosque in the Context of Fatimid Ceremonial&#8217;, <I>Muqarnas, </I>9 (1992), pp. 29-38.</P>
+<P><I>&#8212; &#8212; Islamic Architecture in Cairo, an Introduction. </I>Supplements to <I>Muqarnas.</I> Leiden, 1989.</P>
+<P><I>&#8212; &#8212; The Minarets of Cairo. </I>Cairo, 1985.</P>
+<P>El-Bekri, Abou-Obe&#239;d. <I>Description de l&#8217;Afrique septentrionale, </I>tr. MacGuckin de Slane. Paris, 1911-13; repr, 1965.</P>
+<P>Bellafiore, Giuseppe. <I>Architettura delle et&#224; islamica e normanni in Sicilia. </I>Palermo, 1990. </P>
+<P>Berchem, Marguerite van. &#8216;Le Palais de Sedrata dans le d&#233;sert Saharien&#8217;, in <I>Studies in Islamic Art and Architecture in Honour of Professor K. A. C. Creswell. </I>Cairo, 1965, pp. 8-29. </P>
+<P>Berchem, Max van. &#8216;La Chaire de la Mosqu&#233;e d&#8217;H&#233;bron et le martyrion de la t&#234;te de Husain &#224; Ascalon&#8217;, in <I>Festschrift Eduard Sachau. </I>Berlin, 1915, pp. 298-310.</P>
+<P><I>&#8212; &#8212; Mat&#233;riaux pour un Corpus Inscriptionum Arabicarum I: &#201;gypte 1. </I>Cairo, 1894-1903<I>.</I></P>
+<P><I>&#8212; &#8212; Mat&#233;riaux pour un Corpus Inscriptionum Arabicarum II: Syrie du Sud: Jerusalem. </I>Cairo, 1920-7<I>.</I></P>
+<P><I>&#8212; &#8212; &#8216;Une mosqu&#233;e de temps des fatimites au Caire: Notice sur le G&#226;mi&#8217; el Goy&#251;shi&#8217;, M&#233;moires de l&#8217;Institut &#201;gyptien,2 (1889), </I>pp. 605-19<I>.</I></P>
+<P><I>&#8212; &#8212; &#8216;Notes d&#8217;arch&#233;ologie Arabe: monuments et inscriptions Fatimites (I)&#8217;, Journal Asiatique,17 (1891), </I>pp. 411-95<I>.</I></P>
+<P><I>&#8212; &#8212; &#8216;Notes d&#8217;arch&#233;ologie Arabe (I): monuments et inscriptions Fatimites (suite)&#8217;, Journal Asiatique, 18 (1891), </I>pp.46-86<I>.</I></P>
+<P><I>&#8212; &#8212; &#8216;Notes d&#8217;arch&#233;ologie Arabe (II): monuments et inscriptions Fatimites&#8217;, Journal Asiatique,19 (1892), </I>pp. 377-407<I>.</I></P>
+<P>Bernus, M., H. Marchal and G. Vial. &#8216;Le Suaire de Saint Josse&#8217;, <I>Bulletin de liaison du centre international d&#8217;&#233;tudes des textiles anciens, </I>33 (1971), pp. 1-57.</P>
+<P>Bianquis, Thierry. &#8216;Autonomous Egypt from Ibn &#7788;ulun to Kafur, 868&#8211;969&#8217;, in Carl Petry, ed., <I>The Cambridge History of Egypt, I: Islamic Egypt 640-1517. </I>Cambridge,1998, pp. 86-119.</P>
+<P><I>&#8212; &#8212; Damas et la Syrie sous la domination Fatimide 359&#8211; 468 H/969-1076, essai d&#8217;interpr&#233;tation de chroniques Arabes m&#233;di&#233;vales. </I>Damascus, 1986-9.</P>
+<P><I>&#8212; &#8212; &#8216;La prise de pouvoir par les Fatimides en &#201;gypte&#8217;, Annales Islamologiques, </I>11 (1927), pp. 49-108<I>.</I></P>
+<P>Bierman, Irene A. &#8216;Art and Architecture in the Medieval Period&#8217;, in Petry, ed., <I>The Cambridge History of Egypt,</I>vol.1, pp. 339-74. </P>
+<P><I>&#8212; &#8212; &#8216;</I>Inscribing the City: Fatimid Cairo&#8217;, in <I>Islamische Textilkunst des Mittelalters: Aktuelle Probleme. Riggisberger Berichte, </I>5 (1997). Riggisberg, 1997, pp. 105-14<I>.</I></P>
+<P><I>&#8212; &#8212; Writing Signs: The Fatimid Public Text. </I>Berkeley, CA, 1998<I>.</I></P>
+<P>Blair, Sheila S. &#8216;Decoration of City Walls in the Medieval Islamic World: The Epigraphic Message&#8217;, in James D. Tracy, ed., <I>City Walls in Early Modern History. </I>Cambridge, 2000, pp. 488-529.</P>
+<P><I>&#8212; &#8212; &#8216;</I>Floriated Kufic and the Fatimids&#8217;<I>, </I>in<I> </I>Barrucand<I>, ed., L&#8217;&#201;gypte Fatimide, </I>pp. 107-16<I>.</I></P>
+<P><I>&#8212; &#8212; Islamic Calligraphy. </I>Edinburgh, 2006<I>.</I></P>
+<P><I>&#8212; &#8212; The Monumental Inscriptions from Early Islamic Iran and Transoxiana. Supplements to Muqarnas. </I>Leiden, 1992<I>.</I></P>
+<P><I>&#8212; &#8212; </I>&#8216;What is the Date of the Dome of the Rock?&#8217;, in Julian Raby and Jeremy Johns, eds,<I> Bayt al-Maqdis: &#8216;Abd al-Malik&#8217;s Jerusalem, Part One. </I>Oxford, 1992, pp. 59-88<I>.</I></P>
+<P>Blair, Sheila S. and Jonathan M. Bloom. <I>The Art and Architecture of Islam, 1250-1800. </I>London and New Haven, CT, 1994.</P>
+<P><I>&#8212; &#8212; Cosmophilia: Islamic Art from the David Collection, Copenhagen. </I>Chestnut Hill, MA, 2006<I>.</I></P>
+<P>Blair, Sheila S., Jonathan M. Bloom and Anne E. Wardwell. &#8216;Reevaluating the Date of the &#8220;Buyid&#8221; Silks by Epigraphic and Radiocarbon Analysis&#8217;, <I>Ars Orientalis, </I>22 (1992), pp. 1-42.</P>
+<P>Blake, Hugh, Antony Hutt and David Whitehouse. &#8216;Ajdabiyah and the Earliest Fatimid Architecture&#8217;, <I>Society for</I> <I>Libyan Studies, Annual Report, </I>2 (1971), pp. 9-10.</P>
+<P>Bloom, Jonathan M. &#8216;Almoravid Geometrical Designs in the Pavement of the Cappella Palatina in Palermo&#8217;, in Bernard O&#8217;Kane, ed., <I>The Iconography of Islamic Art:</I> <I>Studies in Honour of Robert Hillenbrand. </I>Edinburgh, 2005, PP.61-80.</P>
+<P><I>&#8212; &#8212; &#8216;</I>The Blue Koran: An Early Fatimid Kufic Manuscript from the Maghrib&#8217;, in Fran&#231;ois D&#233;roche, ed.,<I> Les Manuscrits du moyen-orient: essais de codicologie et pal&#233;ographie. </I>Istanbul and Paris,<I> </I>1989, pp. 95-9<I>.</I></P>
+<P><I></I></P>
+<P><I>&#8212; &#8212; </I>&#8216;The Early Fatimid Blue Koran Manuscript&#8217;,<I> Graeco-Arabica, </I>4 (1991), pp. 171-8<I>. </I></P>
+<P>&#8212; &#8212; &#8216;Fact and Fantasy in Buyid Art&#8217;, in Barbara Finster, Christa Fragner and Herta Hafenrichter, eds.<I> Kunst und Kunsthandwerke im Fr&#252;hen Islam, 2. Bamberger Sympo-sium der Islamischen Kunst 25-27. July 1996, Oriente Moderno, NS, 22 (2004). </I></P>
+<P><I>&#8212; &#8212; </I>&#8216;The Fatimids (909-1171): Their Ideology and their Art&#8217;, in <I>Islamische Textilkunst des Mittelalters: Aktuelle Probleme. Riggisberger Berichte, 5 (1997). </I>Riggisberg, 1997, pp. 15-26<I>.</I></P>
+<P><I>&#8212; &#8212; </I>&#8216;Five Fatimid Minarets in Upper Egypt&#8217;,<I> Journal of the Society of Architectural Historians, </I>43<I> </I>(1984), pp. 162-7.</P>
+<P><I>&#8212; &#8212; </I>&#8216;The Introduction of the Muqarnas Into Egypt&#8217;,<I> Muqarnas, </I>5 (1988), pp. 21-8.</P>
+<P><I>&#8212; &#8212; </I>&#8216;Jerusalem in Medieval Islamic Literature&#8217;, in Nitza Rosovsky, ed., <I>City of the Great King: Jerusalem from David to the Present. </I>Cambridge, MA, 1996, pp. 205-17.</P>
+<P><I>&#8212; &#8212; </I>&#8216;Al-Ma&#8217;mun&#8217;s Blue Koran?&#8217;,<I> Revue des etudes Islamiques, </I>54 (1986), pp. 61-5.</P>
+<P><I>&#8212; &#8212; </I>&#8216;Meaning in Early Fatimid Architecture: Islamic Art in North Africa and Egypt in the Fourth Century A. H. (Tenth Century A. D.).&#8217; Ph. D. dissertation, Harvard University, 1980.</P>
+<P><I>&#8212; &#8212; Minaret: Symbol of Islam. </I>Oxford, 1989<I>. </I></P>
+<P>&#8212; &#8212; &#8216;The Mosque of al-Hakim in Cairo&#8217;, <I>Muqarnas, </I>1(1983), pp. 15-36. </P>
+<P>&#8212; &#8212; &#8216;The Mosque of Baybars al-Bunduqdari in Cairo&#8217;, <I>Annales Islamologiques</I>, 18 (1982), pp. 45-78.</P>
+<P>&#8212; &#8212; &#8216;The Mosque of the Qarafa in Cairo&#8217;,<I> Muqarnas</I>, 4 (1987), pp.7-20</P>
+<P>&#8212; &#8212; &#8216;The Origins of Fatimid Art&#8217;, <I>Muqarnas</I>, 3 (1985), pp. 20-38</P>
+<P><I>&#8212; &#8212;Paper Before Print: The History and Impact of Paper in the Islamic World. </I>New Haven, CT, 2001.</P>
+<P><I>&#8212; &#8212; &#8216;</I>Walled Cities in Islamic North Africa and Egypt with Particular Reference to the Fatimids (909-1171)&#8217;, in James D. Tracy, ed., <I>City Walls: The Urban Enceinte in Global Perspective.</I> Cambridge, 2000, vol. 4, pp. 219-46.</P>
+<P><I>&#8212; &#8212; </I>&#8216;Woodwork in Syria, Palestine, and Egypt During the Twelfth and Thirteenth Centuries&#8217;, in Sylvia Auld and Robert Hillenbrand, eds,<I> Ayyubid Jerusalem</I>. London, forthcoming.</P>
+<P>Bloom, Jonathan M., Ahmed Toufiq, Stefano Carboni, Jack Soultanian, Antoine M. Wilmering, Mark D. Minor, Andrew Zawacki and El Mostafa Hbibi. <I>The Minbar from the Kutubiyya Mosque. </I>New York, 1998. </P>
+<P>Bobin, O., M., Schvoerer, C. Ney, M. Rammah, A. Daoulatli, B. Pannequin and R. P. Gayraud. &#8216;Where Did the Lustre Tiles of the Sidi Oqba Mosque (AD 836&#8211;63) in Kairouan Come From?&#8217;, <I>Archaeometry, </I>45 (2003), pp. 569-77. </P>
+<P>Bosch, Gulnar, John Carswell and Guy Petherbridge. <I>Islamic Bindings and Bookmaking. </I>Chicago, 1981.</P>
+<P>Bosworth, Clifford Edmund. <I>The New Islamic Dynasties: A Chronological and Genealogical Manual. </I>Edinburgh, 1996.</P>
+<P>Bourouiba, Rached. <I>La Qal&#8217;a des Bani Hammad. </I>Algiers,1975.</P>
+<P>Bresc, C&#233;cile. &#8216;Les Monnaies des Ayyoubides&#8217;, in <I>L&#8217;Orient de Saladin, </I>pp. 31-44.</P>
+<P>Brett, Michael. <I>The Rise of the Fatimids: The World of the Mediterranean and the Middle East in the Fourth Century fo the Higra, Tenth Century CE. </I>Leiden, 1996.</P>
+<P>&#8212; &#8212; &#8216;The Way of the Nomad&#8217;,<I> Bulletin of the School of Oriental and African Studies, 58 (1995</I>), pp. 251-69.</P>
+<P>Brett, Michael and Elizabeth Fentress. <I>The Berbers. </I>Oxford, 1996.</P>
+<P>Briggs, Martin S. <I>Muhammadan Architecture in Egypt and Palestine. </I>1924, repr., New York, 1974.</P>
+<P>Broadhurst, R. J. C., tr. <I>A History of the Ayyubid Sultans of Egypt, Translated from the Arabic of al-Maqrizi with Introduction and Notes. </I>Boston, MA, 1980.</P>
+<P>Caiger-Smith, Alan. <I>Lustre Pottery: Technique, Tradition and Innovation in Islam and the Western World. </I>London, 1985.</P>
+<P>Canard, Marius. &#8216;Le C&#233;r&#233;monial Fatimide et le c&#233;r&#233;monial Byzantin: essai de comparaison&#8217;, <I>Byzantion, </I>21 (1951), pp. 355-420. </P>
+<P>&#8212; &#8212; &#8216;L&#8217;Imperialisme des Fatimides et leur propagande&#8217;,<I> Annales de l&#8217;Institut d&#8217;Etudes Orientales, </I>6 (1942&#8211;7), pp.156-93. </P>
+<P><I>&#8212; &#8212; &#8216;La Procession du nouvel an ches les Fatimides&#8217;, Annales de l&#8217;Institut d&#8217;Etudes Orientales,10 (1952),</I> pp. 364-95.</P>
+<P>Carboni, Stefano. &#8216;Glass Production in the Fatimid Lands<I> </I>and Beyond&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide, </I>pp.169-78.</P>
+<P>Carboni, Stefano and David Whitehouse. <I>Glass of the Sultans. </I>New York, 2001.</P>
+<P>Collinet, Anabelle. &#8216;Le M&#233;tal Ayyoubide&#8217;, in <I>L&#8217;Orient de Saladin, </I>pp. 127-30.</P>
+<P>Combe, Etienne. &#8216;Tissus Fatimides du Mus&#233;e Benaki&#8217;, <I>M&#233;moires de l&#8217;InstitutFran&#231;ais d&#8217;Arch&#233;ologie Orientale au Caire, </I>68 (1935), pp. 259-72.</P>
+<P>Combe, &#201;tienne, Jean Sauvaget and Gaston Wiet. <I>R&#233;pertoire chronologique d&#8217;&#233;pigraphie arabe. </I>Cairo, 1931.</P>
+<P>Contadini, Anna. <I>Fatimid Art at the Victoria and Albert Museum. </I>London, 1998.</P>
+<P>&#8212; &#8212; &#8216;Fatimid Ivories within a Mediterranean Context&#8217;,<I> Journal of the David Collection,</I> 2 (2004), pp. 227-47.</P>
+<P>Contadini, Anna, Richard Camber and Peter Northover. &#8216;Beasts That Roared: The Pisa Griffin and the New York Lion&#8217;, in Warwick Ball and Leonard Harrow, eds., <I>Cairo</I><I> to Kabul: Aftghan and Islamic Studies Presented to Ralph Pinder-Wilson. </I>London, 2002, pp. 65-83.</P>
+<P>Cornu, Georgette. &#8216;Les Tissus d&#8217;apparat Fatimides, parmi les plus somptueux le &#171;voile de Sainte Anne&#187; d&#8217;Apt&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide, </I>pp. 331-7.</P>
+<P>Cortese, Delia and Simonetta Calderini. <I>Women and the Fatimids in the World of Islam. </I>Edinburgh, 2006. </P>
+<P>Creswell, K.A.C. <I>Early Muslim Architecture, </I>vol. 1. 2nd ed.,<I> </I>Oxford, 1969. </P>
+<P><I>&#8212; &#8212; Early Muslim Architecture, </I>vol. 2. Oxford, 1940.</P>
+<P><I>&#8212; &#8212; The Muslim Architecture of Egypt. </I>Oxford, 1952-9.</P>
+<P>Curatola, Giovanni. <I>Eredit&#224; dell&#8217;Islam. </I>Venice, 1993.</P>
+<P>Cutler, Anthony. <I>The Craft of Ivory: Sources, Techniques, and Uses in the Mediterranean World: A.D. 200-1400. </I>Washington, DC, 1985.</P>
+<P><I>&#8212; &#8212; The Hand of the Master: Craftsmanship, Ivory and Society in Byzantium (Ninth-Eleventh Centuries). </I>Princeton, NJ, 1994.</P>
+<P>&#8212; &#8212; &#8216;The Parallel Universes of Arab and Byzantine Art (with Special Reference to the Fatimid Era)&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide, </I>pp. 635-48.</P>
+<P>Daftary, Farhad. <I>The Isma&#8216;ilis: Their History and Doctrines. </I>Cambridge, 1990; second edition 2007.</P>
+<P><I>&#8212; &#8212; A Short History of the Ismailis: Traditions of a Muslim Community. </I>Edinburgh, 1998.</P>
+<P>David-Weill, J. <I>Les Bois &#224; &#233;pigraphes jusqu&#8217;&#224; l&#8217;&#233;poque Mamlouke. </I>Cairo, 1931</P>
+<P><I>De Carthage &#224; Kairouan: 2000 ans d&#8217;art et d&#8217;histoire en Tunisie. </I>Paris, 1982.<I>Description de l&#8217;&#201;gypte, publi&#233;e par les ordres de Napol&#233;on Bonaparte. </I>Cologne, 1994.</P>
+<P>D&#233;roche, Fran&#231;ois. <I>The Abbasid Tradition: Qur&#8217;ans of the Eighth to the Tenth Centuries AD, </I>vol. 1 of Julian Raby, ed., <I>The Nasser D. Khalili Collection of Islamic Art. </I>London, 1992. </P>
+<P>Dodds, Jerrilynn D., ed. <I>Al-Andalus: The Art of Islamic Spain. </I>New York, 1992. </P>
+<P>Doorninck, Frederick H. van. &#8216;The Serce Limani Shipwreck: An Eleventh-Century Cargo of Fatimid Glassware Cullet for Byzantine Glassmakers&#8217;, in <I>I. Uluslararasi Anadolu Cam Sanati Sempozyumu, 26-27 Nisan 1988/First International Anatolian Glass Symposium</I>, April 26th-27th, 1988. Istanbul, 1990, pp. 58-63.</P>
+<P>Eche, Youssef. <I>Les Biblioth&#232;ques Arabes publiques et semi-publiques en M&#233;sopotamie, en Syrie et en &#201;gypte au moyen age. </I>Damascus, 1967.</P>
+<P>Ehrenkreutz, Andrew S. &#8216;Arabic Dinars Struck by the Crusaders&#8217;, <I>Journal of the Economic and Social History of the Orient, </I>7 (1964), pp. 167-82.</P>
+<P><I>The Encyclopaedia of Islam, </I>New Edition,<I> </I>ed. H. A. R. Gibb et al. Leiden, 1960-2004.</P>
+<P>Ettinghausen, Richard. &#8216;Painting in the Fatimid Period: A Reconstruction&#8217;, <I>Ars Islamica, </I>9 (1942), pp. 112-24.</P>
+<P>Ettinghausen, Richard, Oleg Grabar and Marilyn Jenkins-Madina. <I>Islamic Art and Architecture 650-1250. </I>New Haven<I> </I>and London, 2001.</P>
+<P>Falk, Toby, ed. <I>Treasures of Islam. </I>London, 1985.</P>
+<P>Feh&#233;rv&#225;ri, Geza. <I>Islamic Metalwork of the Eighth Century to the Fifteenth Century in the Keir Collection. </I>London, 1976.</P>
+<P>Ferrugia de Candia, J. &#8216;Monnaies Fatimites du Mus&#233;e du<I> </I>Bardo&#8217;, <I>Revue Tunisienne, NS, 7 (1936), pp. 333-71.</I></P>
+<P>Finster, Barbara. &#8216;On Masjid al-Juyushi on the Muqattam&#8217;, <I>Arch&#233;ologie Islamique, </I>10 (2000), pp. 65-78. </P>
+<P>Flury, Samuel. <I>Die Ornamente der Hakim- Under AsharMoschee. </I>Heidelburg, 1912. </P>
+<P>Foote, Rebecca M. &#8216;Abbasid Qasr (F103) and the Carved Ivory Panels&#8217;, <I>Annual of the Department of Antiquities of Jordan, </I>47 (2003), pp. 55-64.</P>
+<P>Foy, Daniele. &#8216;Lampes de verre Fatimides &#224; Fostat: le mobilier des fouilles de Istabl Antar&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide, </I>pp. 179-96.</P>
+<P>Francez, J. <I>Un Pseudo-linceul du Christ. </I>Paris, 1935.</P>
+<P>Fraser, Marcus and Will Kwiatkowski. <I>Ink and Gold: Islamic Calligraphy. </I>Berlin and London, 2006.</P>
+<P>Fratadocchi, Tommaso Breccia. &#8216;Notes on Armenian Military Architecture&#8217;, <I>A.A.R.P Environmental Design: Journal of the Islamic Environmental Design Research Centre, </I>1-2 (1999), pp. 66-71.</P>
+<P>Gabrieli, Francesco, Gioia Chiauzzi, Clelia Sarnelli Cerqua, Lucien Golvin and Pierre Guichard. <I>Maghreb</I><I> m&#233;di&#233;val:</I> <I>l&#8217;apog&#233;e de la civilisation islamique dans l&#8217;occident arabe, </I>tr. Marguerite Pozzoli. Aix-en-Provence, 1991.</P>
+<P>Gabrieli, Francesco and Umberto Scerrato. <I>Gli Arabi in Italia: Cultura, Contatti e Tradizioni. </I>Milan, 1979.</P>
+<P>Garcin, Jean Claude. &#8216;Remarques sur un plan topographique de la grande mosqu&#233;e du Q&#251;s&#8217;, <I>Annales Islamologiques, </I>9 (1970), pp. 97-108.</P>
+<P>Garcin, Jean-Claude. <I>Un Centre Musulman de la haute&#201;gypte m&#233;di&#233;vale: Q&#363;s. </I>Cairo, 1976.</P>
+<P>Gayraud, Roland-Pierre. &#8216;La N&#233;cropole des Fatimides &#224; Fostat&#8217;, <I>Dossiers d&#8217;arch&#233;ologie, </I>233 (1998), pp. 34-41 </P>
+<P>&#8212; &#8212; &#8216;Le Qar&#257;fa al-Kubr&#257;, derni&#232;re demeure des Fatimids&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 443-64. </P>
+<P>Goitein, S. D. F. &#8216;The Main Industries of the Mediterranean Area as Reflected in the Record of the Cairo Geniza&#8217;, <I>Journal of the Economic and Social History of the Orient, </I>4 (1961), pp. 168-97.</P>
+<P><I>&#8212; &#8212; A Mediterranean Society. </I>Berkeley and Los Angeles, CA, 1967-94.</P>
+<P><I>&#8212; &#8212; Studies in Islamic History and Institutions. </I>Leiden, 1966.</P>
+<P>Golvin, Lucien. <I>Essai sur l&#8217;architecture religieuse musulmane. </I>Paris, 1970.</P>
+<P>&#8212; &#8212; &#8216;Le Palais de Z&#238;r&#238; &#224; Ach&#238;r (Dixi&#232;me si&#232;cle J. C.)&#8217;,<I> Ars Orientalis</I>, 6 (1966), pp. 47-76.</P>
+<P>&#8212; &#8212; &#8216;Les Plafonds a muqarnas de la Qal&#8217;a des Banu Hammad et leur influence possible sur l&#8217;art de la Sicile a la p&#233;riode normande&#8217;, <I>Revue de l&#8217;occidentMusulman et de la M&#233;diterran&#233;e</I>, 17 (1974), pp. 63-9.</P>
+<P>&#8212; &#8212; <I>Recherches arch&#233;ologiques &#224; la Qal&#8217;a des Banu Hammad</I>. Paris, 1965.</P>
+<P>Gonzalez, Val&#233;rie. &#8216;Pratique d&#8217;une technique d&#8217;art Byzantine chez les Fatimides: l&#8217;&#233;maillerie sur m&#233;tal&#8217;, in Barrucand, ed.,<I>L&#8217;&#201;gypte Fatimide, </I>pp. 197-217.</P>
+<P>Grabar, Oleg. <I>The Alhambra. </I>Cambridge, MA, 1978. </P>
+<P>&#8212; &#8212; &#8216;The Earliest Islamic Commemorative Structures&#8217;, <I>Ars Orientalis</I>, 6 (1966), pp. 7-46. </P>
+<P>&#8212; &#8212; &#8216;Imperial and Urban Art in Islam: The Subject Matter of Fatimid Art&#8217;, <I>in Colloque Internationale sur l&#8217;histoire du Caire. </I>Grafenheinichen,1972, pp. 173-90.</P>
+<P><I>&#8212; &#8212; The Shape of the Holy Early Islamic Jerusalem. </I>Princeton, NJ, 1996.</P>
+<P>Grossmann, Peter. <I>Christliche Architektur in Agypten. </I>Leiden, 2002.</P>
+<P>Grube, Ernst J. &#8216;Fatimid Pottery&#8217;, in Julian Raby and Ernst J. Grube, eds, <I>Cobalt and Lustre: The First Centuries of Islamic Pottery. </I>London,1994, pp. 137-46.</P>
+<P>&#8212; &#8212; &#8216;Fostat Fragments&#8217;, in B. W. Robinson, ed., <I>Islamic Painting and the Arts of the Book. </I>London, 1976, pp. 23-66.</P>
+<P>&#8212; &#8212; &#8216;Realism or Formalism: Notes on Some Fatimid Lustre-Painted Ceramic Vessels&#8217;, in Renato Traini, ed., <I>Studi in Ornori di Francesco Gabrieli nel Suo Ottantesimo Compleanno. </I>Rome, 1984, pp. 423-32.</P>
+<P><I>&#8212; &#8212; Studies in Islamic Painting. </I>London, 1995. </P>
+<P>&#8212; &#8212; 'Studies in the Survival and Continuity of Pre-Muslim Traditions in Egyptian Islamic Art&#8217;, <I>Journal of the American Research Center in Egypt</I>, 1(1962), pp. 75-97 </P>
+<P>Grube, Ernst J. and Jeremy Johns. <I>The Painted Ceilings of the Cappella Palatina.</I></P>
+<P>Supplement to <I>Islamic Art.</I> Genova and New York, 2005.</P>
+<P>Haldane, Duncan. <I>Islamic Bookbindings in the Victoria and Albert Museum. </I>London, 1983. </P>
+<P>Halm, Heinz. <I>The Empire of the Mahdi: The Rise of the Fatimids, </I>tr. Michael Bonner. Leiden, 1996. </P>
+<P>&#8212; &#8216;Les Fatimides &#224; Salamya&#8217;, <I>Revue des &#233;tudes Islamiques</I>, 54 (1986), pp. 133-49. </P>
+<P>&#8212; &#8212; &#8216;Nachrichten zu Bauten der Aglabiden und Fatimiden in Libyen und Tunesien&#8217;, <I>Die Welt des Orients</I>,<I> </I>23 (1992), pp. 129-57. </P>
+<P>Hampikian, Nairy. &#8216;Medievalization of the Old City as an Ingredient of Cairo&#8217;s Modernization: Case Study of Bab Zuwayla&#8217;, in Nezar Alsayyad, Irene A. Bierman and Nasser Rabbat, eds, <I>Making Cairo Medieval. </I>Lanham, 2005, pp. 201-34. </P>
+<P>al-Hawari, Hasan Muhammad Effendi. &#8216;Trois minarets Fatimides &#224; la fronti&#232;re Nubienne&#8217;, <I>Bulletin de l&#8217;Institut d&#8217;&#201;gypte,</I> 17 (1934-5), pp.141-53.</P>
+<P>Hawary, H. and H. Rached. <I>Les St&#232;les fun&#233;raires. </I>Cairo,1932-8.</P>
+<P>Herz, Max. <I>Die Baugruppe des Sultans Qalaun in Kairo. </I>Hamburg,1919.</P>
+<P>Hill, Derek and Lucien Golvin. <I>Islamic Architecture in North Africa. </I>London,1976.</P>
+<P>Hillenbrand, Carole. <I>The Crusades: Islamic Perspectives. </I>Edinburgh,1999.</P>
+<P>Hillenbrand, Robert, ed. <I>The Art of the Saljuqs in Iran and Anatolia: Proceedings of a Symposium Held in Edinburgh in 1982. </I>Costa Mesa, CA, 1994.</P>
+<P><I>&#8212; &#8212; Islamic Architecture: Form, Function and Meaning. </I>Edinburgh,1994.</P>
+<P><I>&#8212; &#8212; Islamic Art and Architecture. </I>London, 1999.</P>
+<P>Hoffman, Eva R. &#8216;A Fatimid Book Cover: Framing and Re-Framing Cultural Identity in the Medieval Mediterranean World&#8217;, in Barrucand, ed. <I>L&#8217;&#201;gypte Fatimide,</I> pp. 403-19.</P>
+<P>Howard, Deborah. <I>Venice</I><I> and the East. </I>New Haven, CT and London, 2000.</P>
+<P>Humphreys, R. Stephen. &#8216;Egypt in the World System of the Later Middle Ages&#8217;, in Petry, ed. <I>The Cambridge History of Egypt, </I>vol. 1.</P>
+<P>Ibn Hawqal, Abul-Qasim. <I>Kitab surat al-ard, </I>ed. J.H. Kramers. Leiden, 1938; 2nd ed. 1967.</P>
+<P>Ibn &#8216;Idhari al-Marrakushi. <I>Kitab al-bayan al-Maghrib (Histoire de l&#8217;Afrique du nord et de l&#8217;Espagne Musulmane), </I>ed. G. S. Colin and &#201;. L&#233;vi-Proven&#231;al. Leiden, 1948-51. </P>
+<P>Ibn al-Zubayr, al-Qadi al-Rashid. <I>Kitab al-dhakka&#8217;ir wa&#8217;ltuhaf, </I>ed. M. Hamidullah. Kuwait, 1959.</P>
+<P>Inostrantsev, Konstantin Aleksandrovich. <I>La Sortie solennelle des califes Fatimides. </I>St Petersburg, 1905. Irwin, Robert. <I>Dangerous Knowledge: Orientalism and its Discontents. </I>Woodstock, 2006.</P>
+<P>Jarrar, Sabri. &#8216;Al-Maqrizi&#8217;s Reinvention of Egyptian Historiography Through Architectural History&#8217;, in Doris Behrens-Abouseif, <I>The Cairo Heritage: Essays in Honor of Laila Ali Ibrahim. </I>Cairo, 2000, pp. 31-54.</P>
+<P>al-Jawdhari, Abu &#8216;Ali Mansur al-&#8216;Azizi. <I>Sirat al-ustadh Jawdhar, </I>ed. Muhammad Kamil Husayn and Muhammad &#8216;Abd al-Hadi Sha&#8216;ira. Cairo, 1954; French tr., M. Canard as <I>Vie de l &#8216;ustadh Jaudhar. </I>Algiers, 1958.</P>
+<P>Jenkins, Marilyn. &#8216;Early Medieval Islamic Pottery: The Eleventh Century Reconsidered&#8217;, <I>Muqarnas, </I>9 (1992), pp.56-66.</P>
+<P>&#8212; &#8212; &#8216;An Eleventh-Century Woodcarving from a Cairo Nunnery&#8217;, in Richard Ettinghausen, ed., <I>Islamic Art in The Metropolitan Museum of Art. </I>New York, 1972, pp.227-40. </P>
+<P>&#8212; &#8212; &#8216;Fatimid Jewelry, its Subtypes and Influences&#8217;, <I>Ars Orientalis</I>,18 (1988), pp. 39-58. </P>
+<P>&#8212; &#8212; &#8216;Muslim: An Early Fatimid Ceramicist&#8217;, <I>Bulletin of the Metropolitan Museum of Art</I>, 26 (1968), pp. 359-69. </P>
+<P>&#8212; &#8212; &#8216;New Evidence for the Possible Provenance and Fate of the So-Called Pisa Griffon&#8217;,<I> Islamic Archaeological Studies</I>, 1(1978), pp. 79-85.</P>
+<P>&#8212; &#8212; &#8216;Western Islamic Influences on Fatimid Egyptian Iconography&#8217;, <I>Kunst des Orients</I>,10 (1976), pp. 91-107.</P>
+<P>Jenkins, Marilyn and Manuel Keene. <I>Islamic Jewelry in the Metropolitan Museum of Art. </I>New York, 1982.</P>
+<P>Johns, Jeremy. <I>Arabic Administration in Norman Sicily: The Royal Diwan. </I>Cambridge, 2002. </P>
+<P>&#8212; &#8212; &#8216;The Norman Kings of Sicily and the Fatimid Caliphate&#8217;, in Marjorie Chibnall, ed. &#8216;Proceedings of the Battle Conference and of the XI Colloquio medievale of the Officina di Studi Medievali 1992&#8217;, <I>Anglo-Norman Studies, </I>15 (1993), pp. 133-59. </P>
+<P>Kahle, Paul. &#8216;Die Schatze der Fatimiden&#8217;, <I>Zeitschrift der Deutschen Morgenl&#228;ndischen Gesellschaft,</I> 14 (1935), pp.1-35.</P>
+<P>Kashdan, Alexander P., ed. <I>The Oxford Dictionary of Byzantium. </I>New York, 1991.</P>
+<P>Kessler, Christel. &#8216;Funerary Architecture Within the City&#8217;, in <I>Colloque internationale sur l&#8217;histoire du Caire. </I>Grafenheinichen,1972, pp. 257-68.</P>
+<P>King, David A. &#8216;The Orientation of Medieval Islamic Religious Architecture and Cities&#8217;, <I>Journal for the History of Astronomy,</I> 26 (1995), pp.253-74.</P>
+<P>Kircher, G. &#8216;Die Moschee des Mu&#7717;ammad b. Hairun (DreiTore-Moschee) in Qairawan/Tunesien. Erster Bericht,&#8217; <I>Mitteilungen des Deutschen Archaologischen Instituts Abteilung Kairo, </I>26 (1970), pp. 141-68.</P>
+<P>Knipp, David. &#8216;Image, Presence and Ambivalence: The Byzantine Tradition of the Painted Ceiling in the Cappella Palatina, Palermo, <I>Byzas </I>5 (2006), pp. 283-328.</P>
+<P>&#8212; &#8212; &#8216;The Torre Pisana in Palermo: A Maghribi Concept and its Byzantinization&#8217;, in Andreas Speer and Lydia Wegener, eds., <I>Wissen &#252;ber Grenzen: Arabisches Wissenund Laternisches Mittelalter; Miscellanea Meduvalia </I>33 (2006), pp. 745-74. </P>
+<P>Komaroff, Linda and Stefano Carboni, eds. <I>The Legacy of Genghis Khan: Courtly Art and Culture in Western Asia,1256&#8211;1353. </I>New Haven, CT, 2002.</P>
+<P>Koseoglu, Cengiz. <I>The Topkap&#305; Saray Museum: The Treasury, </I>tr. and ed. J. M. Rogers. Boston, MA, 1987.</P>
+<P>Kroger, Jens. &#8216;Fustat and Nishapur: Questions About Fatimid Cut Glass&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide,</I> pp. 219-32.</P>
+<P>Kubiak, Wladys&#322;aw B. <I>Al-Fustat: Its Foundation and Early Urban Development. </I>Cairo, 1987.</P>
+<P>Kubiak, Wladys&#322;aw and George T. Scanlon. <I>Fustat Expedition Final Report, Vol. 2: Fustat-C. </I>Winona Lake, IN,1989.</P>
+<P>Kunitzsch, Paul. &#8216;Zur Namengebung Kairos (al-Qahirr-Mars?)&#8217;, <I>Der Islam, </I>52 (1975), pp.209-25.</P>
+<P>Kuhnel, Ernst. <I>Die Islamischen Elfenbeinskulpturen,</I><I> VIII-XIII. Jahrhundert. </I>Berlin,1971.</P>
+<P>Kuhnel, Ernst, and Louisa Bellinger. <I>Catalogue of Dated Tiraz Fabrics: Umayyad, Abbasid, Fatimid. </I>Washington, DC, 1952.</P>
+<P>Lamm, Carl Johan. &#8216;Fatimid Woodwork, its Style and Chronology&#8217;, <I>Bulletin de l&#8217;Institut d&#8217;&#201;gypte, </I>18 (1935), pp. 59-91.</P>
+<P><I>&#8212; &#8212; Cotton in Medieval Textiles of the Near East. </I>Paris,1937.</P>
+<P><I>Cotton in Medieval Textiles of the Near East. </I>Paris,1937. </P>
+<P>Lane-Poole, Stanley. <I>The Art of the Saracens in Egypt. </I>London, 1886 (repr. Beirut, n.d.).</P>
+<P>Lasko, Peter. <I>Ars Sacra 800-1200. </I>2nd ed. New Haven, CT, and London, 1994.</P>
+<P>Lassner, Jacob. <I>The Shaping of &#8216;Abbasid Rule. </I>Princeton, NJ,1980.</P>
+<P>Lavoix, H. &#8216;Les Arts Musulmans&#8217;, <I>Gazette des beaux-arts, </I>12 (1875), pp. 97-113.</P>
+<P>Leisten, Thomas. <I>Architektur fur Tote: Bestattung in architektonischem Kontext in den Kernlandern der islamischen Welt zwischen 3./9. und 6./12. Jahrhundert. </I>Berlin, 1998. </P>
+<P>&#8212; &#8212; &#8216;Dynastic Tomb or Private Mausolea: Observations on the Concept of Funerary Structures of the Fatimid and &#8216;Abbasid Caliphs&#8217;, in<I> </I>Barrucand, ed.,<I> L&#8217;&#201;gypte fatimide</I>, pp. 465-79. </P>
+<P>Lentz, Thomas W. and Glenn D. Lowry. <I>Timur and the Princely Vision. </I>Los Angeles, CA,1989.</P>
+<P>Lester, Ayala, Yael D. Arnon and Rachel Rolak. &#8216;The Fatimid Hoard from Caesarea: A Preliminary Report&#8217;, in Barrucand, ed. <I>L&#8217;&#201;gypte Fatimide, </I>pp. 233-48.</P>
+<P>Lev, Yaacov. <I>State and Society in Fatimid Egypt. </I>Leiden,1991. </P>
+<P>L&#233;zine, Alexandre. <I>Mahdiya: recherches d&#8217;arch&#233;ologie islamique</I>. Paris, 1965. </P>
+<P>&#8212; &#8212; &#8216;Notes d&#8217;arch&#233;ologie ifriqiyenne IV: Mahdiyaquelques precisions sur la &#8220;ville&#8221; des premiers fatimides&#8217;, <I>Revue des &#233;tudes Islamiques</I>, 35 (1967), pp. 82-101.</P>
+<P>Lled&#243;, Berta. &#8216;Mold Siblings in the Eleventh-Century Cullet from Ser&#231;e Limani&#8217;, <I>Journal of Glass Studies</I>, 39 (1997), pp. 43-55.</P>
+<P>Lombard, Maurice. <I>Les Textiles dans le monde musulman viie-xne si&#232;cle</I>. Paris, La Haye and New York,1978.</P>
+<P>Mack, Rosamond E. Bazaar to Piazza: <I>Islamic Trade and Italian Art, 1300&#8211;1600.</I> Berkeley, Los Angeles and London, 2002.</P>
+<P>MacKenzie, Neil D. <I>Ayyubid Cairo: A Topographical Study</I>. Cairo, 1992.</P>
+<DIV>Mahfoudh, Faouzi, Samir Baccouch and Bechir Yazidi. <I>L&#8217;Histoire de l&#8217;eau et des installations hydrauliques dans le bassin de Kairouan.</I> Unpublished paper. Tunis, 2004. </DIV>
+<DIV><I></I>&nbsp;</DIV>
+<DIV><I>et historique de l&#8217;&#201;gypte</I>, tr. U. Bouriant and P. Casanova. Paris and Cairo, 1895-1900.</DIV>
+<P>&#8212; &#8212;<I> Itti&#8216;a.; al-hunafa&#8217; bi-akhbar al-a&#8217;imma al-Fatimiyi&#299;n al-khulafa&#8217;</I>, ed. Jamal al-Din al-Shayyal and Muhammad H. M. Ahmad. Cairo, 1967-73.</P>
+<P>&#8212; &#8212; Taqi al-Din Ahmad b. &#8216;Ali b. &#8216;Abd al-Qadir.<I> al&#172;Mawaiz wa&#8217;l-i&#8216;tibar bi-dhikr al-khitat wa&#8217;l-athar (Exhortations and instructions on the districts and antiquities). </I>Cairo, 1270/1853-4.</P>
+<P><I>&#8212; &#8212; al-Mawazi wa&#8217;l-i&#8217;tibar f&#299;-dikr al-hitat wal-atar (Exhortations and instructions on the districts and antiquities)</I>, ed. Ayman Fu&#8217;ad Sayyid. London, 1422&#8211;4/2003&#8211;4.</P>
+<P>Marcais, Georges. <I>Architecture musulmane d&#8217;occident.</I> Paris, 1954.</P>
+<P><I>&#8212; &#8212; La Berb&#233;rie Musulmane et l&#8217;orient au moyen &#226;ge. </I>Paris,1946.</P>
+<P><I>&#8212; &#8212; Coupoles et plafonds de la Grande Mosqu&#233;e de Kairouan. </I>Tunis,1925.</P>
+<P><I>&#8212; &#8212; Les Fa&#239;ences &#224; reflets m&#233;talliques de la Grande Mosqu&#233;e de Kairouan. </I>Paris,1928.</P>
+<P>Marcais, Georges and Lucien Golvin.<I> La Grande Mosqu&#233;e de Sfax</I>. Tunis,1960.</P>
+<P>Mar&#231;ais, Georges and Louis Poinssot. <I>Objets Kairouanais </I><I>IX</I><I>e au </I><I>XIII </I><I>si&#232;cle.</I> Tunis, 1948.</P>
+<P>Mar&#231;ais, Georges and Gaston Wiet. &#8216;Le &#171;Voile de Sainte Anne&#187; d&#8217;Apt&#8217;, <I>Monuments et m&#233;moires publi&#233;s par l&#8217;Acad&#233;mie des Inscriptions et Belles-Lettres</I>, 34(1934), pp. 177-94.</P>
+<P>Markel, Stephen. &#8216;Fit for an Emperor: Inscribed Works of Decorative Art Acquired by the Great Mughals&#8217;, <I>Orientations</I>, 21(1990), pp. 22-36.</P>
+<P>Marzouk, M.A. &#8216;The Earliest Fatimid Textile (Tiraz al Mansuriya)&#8217;, <I>Bulletin of the Faculty of Arts, Alexandria University</I>, 11 (1957), pp. 37-56.</P>
+<P>Mason, R. B. and M. S. Tite. &#8216;The Beginnings of Islamic Stonepaste Technology&#8217;, <I>Archaeometry</I>, 36 (1994), pp. 77-91.</P>
+<P>Mason, Robert B. &#8216;Medieval Egyptian Lustre-Painted and Associated Wares: Typology in a Multidisciplinary Study&#8217;, <I>Journal of the American Research Center in Egypt</I>, 34 (1997), pp. 201-42.</P>
+<P><I>&#8212; &#8212; Shine Like the Sun: Lustre-Painted and Associated Pottery from the Medieval Middle East. Costa Mesa, CA</I>, 2004.</P>
+<P>Mason, Robert B. and Edward J. Keall. &#8216;Petrography of Islamic Pottery from Fustat&#8217;, <I>Journal of the American Research Center in Egypt</I>, 27 (1990), pp. 165-84.</P>
+<P>Mayerson, Philip. &#8216;The Role of Flax in Roman and Fatimid Egypt&#8217;, <I>Journal of Near Eastern Studies</I>, 56 (1997), pp. 201-7.</P>
+<P>Mazot, Sibylle. &#8216;L&#8217;Architecture d&#8217;influence nord-africaine &#224; Palerme&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 665-79.</P>
+<P>Meinecke, Michael. &#8216;Materialien zu fatimidischen Holzdekorationen in Kairo II: Die Holzpaneele der Moschee des Ahmad Bay Kuhya&#8217;, <I>Mitteilungen des deutschen arch&#228;ologischen Instituts: Abteilung Kairo</I>, 47 (1991), pp. 235-42.</P>
+<P>Meinecke-Berg, Viktoria. &#8216;Materialien zu fatimidischen Holzdekorationen in Kairo I): Holzdecken aus dem fatimidischen Westpalast in Kairo&#8217;, <I>Mitteilungen des deutschen arch&#228;ologischen Instituts: Abteilung Kairo</I>, 47 (1991), pp. 227-33.</P>
+<P>Melikian-Chirvani, A. S. &#8216;Le Griffon Iranien de Pise: Mat&#233;riaux pour un Corpus de l&#8217;Argenterie et du Bronze Iraniens, III&#8217;, <I>Kunst des Orients</I>, 5 (1968), pp. 68-86.</P>
+<P>Meri, Josef W. <I>The Cult of Saints Among Muslims and Jew in Medieval Syria</I>. Oxford, 2002.</P>
+<P>Miles, George C. <I>Fatimid Coins in the Collections of the University Museum, Philadelphia, and the American Numismatic Society</I>. New York, 1951.</P>
+<P>Milstein, Rachel and N. Brosch. <I>Islamic Painting in the Israel Museum</I>. Jerusalem, 1984.</P>
+<P>Milwright, Marcus. &#8216;Fixtures and Fittings: The Role of Decoration in Abbasid Palace Design&#8217;, in Chase F. Robinson, ed. <I>A Medieval Islamic City Reconsidered: An Interdisciplinary Approach to Samarra</I>. Oxford, 2001, pp. 79-110.</P>
+<P>Montesquiou-Fezensac, Blaise de and Danielle Gaborit&#172;Chopin. <I>Le Tr&#233;sor de Saint-Denis</I>. Paris, 1977.</P>
+<P>Moulton, Jean-Michel. &#8216;La Pr&#233;sence Chr&#233;tienne au Sina&#239; &#224; l&#8217;&#233;poque Fatimide&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 613-24.</P>
+<P>Mulder, Stephennie. &#8216;The Mausoleum of Imam al-Shafi&#8216;i&#8217;, <I>Muqurnas</I> 23 (2006), pp. 15-46.</P>
+<P>al-Muqaddasi. <I>Ahsan at-taqasim fi ma&#8216;rifat al-aalim (La meilleure r&#233;partition pour la connaissances des provinces)</I>, tr. Andre Miquel. Damascus, 1963.</P>
+<P><I>&#8212; &#8212; Ahsan at-taqasim fi ma&#8216;rifat al-aalim (La meilleure r&#233;partition pour la connaissances des provinces), </I>ed. M. de Goeje. Leiden, 1906.</P>
+<P><I>&#8212; &#8212; The Best Divisions for Knowledge of the Regions (Ahsan al-taqai&#299;m fi ma&#8217;rifat al-aqalim), </I>tr. Basil Collins. Reading, 1994. </P>
+<P>Museum fur Islamische Kunst Berlin. <I>Katalog</I> 1971. Berlin, 1971.</P>
+<P>Nasir-i Khusraw. <I>Safarnama</I>, ed. Muhammad Dabir Siyaqi. Tehran, n.d.; English trans.,</P>
+<P><I>&#8212; &#8212; Sefer Nameh: relation du voyage de Nassiri Khosrau, ed</I>. and tr. Ch. Schefer. Paris, 1881.</P>
+<P><I>Necipoglu, Gulru. Architecture, Ceremonial, and Power: The Topkapi Palace in the Fifteenth and Sixteenth Centuries. </I>Cambridge, MA, 1991.</P>
+<P>&#8212; &#8212; [ed.] <I>Pre-Modern Islamic Palaces. Ars Orientalis </I>(Entire Issue), 1993.</P>
+<P>&#8212; &#8212; <I>The Topkapi Scroll &#8211; Geometry and Ornament in Islamic Architecture</I>. Santa Monica, CA, 1995.</P>
+<P>Nicol, Norman Douglas. <I>A Corpus of Fatimid Coins</I>. Trieste, 2006.</P>
+<P>Nuseibeh, Said, with essay by Oleg Grabar. <I>The Dome of the Rock</I>. New York, 1996.</P>
+<P>O&#8217;Kane, Bernard. &#8216;Domestic and Religious Architecture in Cairo: Mutual Influences&#8217;, in Behrens-Abouseif, <I>The Cairo Heritage</I>, pp. 149-82.</P>
+<P>&#8212; &#8212; &#8216;The Origin, Development and Meaning of the Nine Bay Plan in Islamic Architecture&#8217;, in <I>A Survey of Persian Art, vol. 18: From the End of the Sasanian Empire to the Present, Studies in Honor of Arthur Upham Pope</I>, ed. Abbas Daneshvari. Costa Mesa, CA, 2005, pp. 189-244.</P>
+<P>&#8212; &#8212; &#8216;The Ziyada of the Mosque of al-Hakim and the Development of the Ziyada in Islamic Architecture&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 141-58. </P>
+<P><I>L&#8217;Orient de Saladin:l&#8217;art des Ayyoubides</I>. Paris, 2001.</P>
+<P>Otavsky, Karel and Muhammad &#8216;Abbas Muhammad Salim. <I>Mittelalterliche Textilien I: Agypten, Persien und Mesopotamien, Spanien und Nordafrika. </I>Riggisberg,1995.</P>
+<P>Pauty, Edmond. <I>Les Bois sculpt&#233;s d&#8217;&#233;glises coptes (&#233;poque fatimide). </I>Cairo, 1930.</P>
+<P><I>&#8212; &#8212; Les Bois sculpt&#233;s jusqu&#8217;&#224; l&#8217;&#233;poque ayyoubide.</I> Cairo, 1931.</P>
+<P>&#8212; &#8212; &#8216;Le Minbar de Qus&#8217;, in <I>M&#233;langes Maspero 111 (M&#233;moires publi&#233;s par les membres de l&#8217;Institut Fran&#231;ais d&#8217;Arch&#233;ologie Orientale au Caire, 68). </I>Cairo, 1940, pp. 41-8.</P>
+<P>Philon, Helen. <I>Early Islamic Ceramics: Ninth to Late Twelfth Centuries</I>. London, 1980.</P>
+<P>Pinder-Wilson, Ralph. &#8216;Ivory Working in the Umayyad and Abbasid Periods&#8217;, <I>Journal of the David Collection</I>, 2 (2005), pp. 13-23.</P>
+<P>Pinder-Wilson, R. H. and C. N. L. Brooke. &#8216;The Reliquary of St. Petroc and the Ivories of Norman Sicily&#8217;, <I>Archaeologia</I>, 104 (1973), pp. 261-305.</P>
+<P>Prisse d&#8217;Avennes, Achille Constant Th&#233;odore Emile. <I>Arabic Art After Monuments of Cairo</I>, tr. Juanita Steichen. Paris, 2001.</P>
+<P>al-Qaddumi, Ghada al-Hijjawi, tr. <I>Book of Gifts and Rarities. Kitab al-Hadaya wa al-Tuhaf</I>. Cambridge, MA, 1996.</P>
+<P><I>The Qur&#8217;an and Calligraphy: A Selection of Fine Manuscript Material</I>. London, 1995.</P>
+<P>Rabbat, Nasser O. <I>The Citadel of Cairo: A New Interpretation of Royal Mamluk Architecture.</I> Leiden, 1995.</P>
+<P>&#8212; &#8212; &#8216;Al-Azhar Mosque: An Architectural Chronicle of Cairo&#8217;s History&#8217;, <I>Muqarnas</I>, 13 (1996), pp. 45-67.</P>
+<P>Ragib, Yusuf. &#8216;Sur deux monuments funeraires d&#8217;al-Qarafa al-Kubra&#8217;, <I>Annales Islamologiques</I>, 12 (1974), pp. 67-83.</P>
+<P>&#8212; &#8212; &#8216;La Mosquee d&#8217;al-Qarafa et Jonathan M. Bloom&#8217;, <I>Arabica</I>, 41(1994), pp. 419-21.</P>
+<P>&#8212; &#8212; &#8216;Un Oratoire Fatimide au sommet du Muqattam&#8217;, <I>Studia Islamica</I>, 65 (1987), pp. 51-67.</P>
+<P>&#8212; &#8212; &#8216;Sur un groupe de mausol&#233;es du cimiti&#232;re du Caire&#8217;, <I>Revue des &#201;tudes Islamiques</I>, 40 ( 1972), pp. 189-95.</P>
+<P>Ravaisse, Paul. &#8216;Essai sur l&#8217;histoire et sur la topographie du Caire d&#8217;apr&#232;s Makrizi&#8217;, <I>Memoires de la mission arch&#233;ologique fran&#231;aise au Caire</I>, 1 (1889), pp. 409-79.</P>
+<P>&#8212; &#8212; &#8216;Essai sur l&#8217;histoire et sur la topographie du Caire d&#8217;apr&#232;s Makr&#238;z&#238;&#8217;, <I>Memoires de la mission arch&#233;ologique Fran&#231;aise au Caire</I>, 3 (1890), pp. 1-114.</P>
+<P>&#8212; &#8212; &#8216;Sur trois mihrabs en bois sculpt&#233;&#8217;, <I>M&#233;moires de l&#8217;InstitutEgyptien</I>, 2 (1889), pp. 621-67.</P>
+<P>Raymond, Andre, ed.<I> Cairo</I>, tr. Willard Wood. Cambridge, MA, 2000. </P>
+<P>&#8212; &#8212; <I>Cairo</I><I>, an Illustrated History</I>, tr. Jane Brenton and Barbara Mellor. New York, 2001.</P>
+<P>Redford, Scott. &#8216;How Islamic is It? The Innsbruck Plate and its Setting&#8217;, <I>Muqarnas</I>, 7 (1990), pp. 119-32.</P>
+<P>Reid, Donald Malcolm. &#8216;Cultural Imperialism and Nationalism: The Struggle to Define and Control the Heritage of Arab Art in Egypt&#8217;,<I> International Journal of Middle East Studies</I>, 24 (1992), pp. 57-76.</P>
+<P>Rice, D. S. &#8216;A Datable Islamic Rock Crystal&#8217;, <I>Oriental Art, NS, 2 (1956), pp. 85-93.</I></P>
+<P>&#8212; &#8212; &#8216;The Seasons and Labours of the Months&#8217;, <I>Ars Orientalis</I>, 1 (1954), pp. 1-39.</P>
+<P>&#8212; &#8212; <I>The Unique Ibn al-Bawwab Manuscript in the Chester Beatty Library</I>. Dublin, 1955.</P>
+<P>Robinson, B. W. <I>Islamic Painting and the Arts of the Book</I>. London, 1976.</P>
+<P>Rosen-Ayalon, Myriam.<I> Islamic Art and Archaeology of Palestine</I>. Walnut Creek, CA, 2006.</P>
+<P>Rousset, Marie-Odile. &#8216;La C&#233;ramique des XIe et XIIe si&#232;cles en &#201;gypte et au Bilad al-Sham. &#201;tat de la question&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 249-64.</P>
+<P>Roy, B. and P. Poinssot. <I>Inscriptions Arabes de Kairouan</I>. Paris, 1950-8.</P>
+<P>Ruggles, D. Fairchild. <I>Gardens, Landscape and Vision in the Palaces of Islamic Spain</I>. University Park, PA, 2000.</P>
+<P>Saifuddin, Ja&#8216;far us Sadiq M. <I>Al Aqmar: A Living Testimony to the Fatemiyeen</I>. London, 2000.</P>
+<P>&#8212; &#8212; <I>Al Juyushi: A Vision of the Fatemiyeen</I>. London, 2002.</P>
+<P>Saliba, George. &#8216;Artisans and Mathematicians in Medieval Islam&#8217;, <I>Journal of the American Oriental Society</I>, 119 (1999), pp. 637-45.</P>
+<P>&#8212; &#8212; Sanders, Paula A. &#8216;Bohra Architecture and the Restoration of Fatimid Culture&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 159-65.</P>
+<P>&#8212; &#8212; &#8216;The Court Ceremonial of the Fatimid Caliphate in Egypt&#8217;, Ph.D. dissertation. Princeton University, 1984.</P>
+<P><I>&#8212; &#8212; Ritual, Politics, and the City in Fatimid Cairo</I>. Albany, NY, 1994.</P>
+<P>Sayyid, Ayman Fu&#8217;ad. &#8216;L&#8217;art du livre&#8217;, <I>Dossiers d&#8217;arch&#233;ologie</I>, 233 (1998), pp. 80-3.</P>
+<P><I>&#8212; &#8212; La Capitale de l&#8217;&#201;gypte jusqu&#8217;&#224; l&#8217;&#233;poque Fatimide: al&#172;Qahira et al-Fustat, essai de reconstitution topo&#172;graphique.</I> Beirut, 1998.</P>
+<P>&#8212; &#8212;&#8216;Le Grand palais Fatimide au Caire&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 117-26.</P>
+<P>Scanlon, George T. &#8216;Fustat Fatimid Sgraffiato: Less Than Lustre&#8217;, in Barrucand, ed. <I>L&#8217;&#201;gypte Fatimide</I>, pp. 265-84.</P>
+<P>Schaefer, Karl R. <I>Enigmatic Charms: Medieval Arabic Block Printed Amulets in American and European Libraries and Museums</I>. Leiden, 2006.</P>
+<P>Schnyder, Rudolph. &#8216;Tulunidische Lusterfayence&#8217;, <I>Ars Orientalis</I>, 5 (1963), pp. 49-78.</P>
+<P>Schorta, Regula. &#8216;Zur Entwicklung der Lampastechnik&#8217;, in <I>Islamische Textilkunst des Mittelalters: Aktuelle Probleme.</I> Riggisberg, 1997, pp. 173-80.</P>
+<P>Sebag, Paul. <I>The Great Mosque of Kairouan</I>, tr. Richard Howard. New York, 1965.</P>
+<P>Sed-Rajna, Gabrielle. <I>L&#8217;art juif</I>. Paris, 1975.</P>
+<P>Seipel, Wilfried, ed. <I>Schatze der Kalifen: Islamische Kunst zur Fatimidenzeit</I>. Vienna, 1998.</P>
+<P>Serjeant, R.B. <I>Islamic Textiles: Material for a History to the Mongol Conquest</I>. Beirut, 1972.</P>
+<P>Shafe&#8216;i, Farid. &#8216;The Mashhad al-Juyushi (Archeological Notes and Studies)&#8217;, in <I>Studies in Islamic Art and Architecture in Honour of Professor K.A.C. Creswell. Cairo</I>, 1965, pp. 237-52. </P>
+<P>Shalem, Avinoam. <I>Islam Christianized: Islamic Portable Objects in the Medieval Church Treasuries of the Latin West.</I> Frankfurt am Main, 1997.</P>
+<P>&#8212; &#8212; &#8216;New Evidence for the History of the Turquoise Glass Bowl in the Treasury of San Marco&#8217;, <I>Persica</I>,15 ( 1995), pp. 65-8.</P>
+<P>&#8212; &#8212; &#8216;A Note on the Shield-Shaped Ornamental Bosses on the Fa&#231;ade of Bab al-Nasr in Cairo&#8217;, <I>Ars Orientalis</I>, 26 (1996), pp. 55-64.</P>
+<P><I>&#8212; &#8212; The Oliphant: Islamic Objects in Historical Context</I>. Leiden, 2004.</P>
+<P>Sharon, Moshe. <I>Corpus Inscriptionum Arabicarum Palaestinae</I>. Leiden, 1997.</P>
+<P>Simaika Pasha, Marcus, and &#8216;Abd al-Masih Effendi. <I>Catalogue of the Coptic and Arabic Manuscripts in the Coptic Museum, the Principal Churches of Cairo and Alexandria and the Monasteries of Egypt</I>. Cairo, 1939.</P>
+<P>Sinclair, T. A. <I>Eastern Turkey: An Architectural and Archaeological Survey</I>. London, 1987-90.</P>
+<P>Sokoly, Jochen A. &#8216;Between Life and Death: The Funerary Context of Tiraz Textiles&#8217;, in<I> Islamische Textilkunst des Mittelalters: Aktuelle Probleme</I>. Riggisberg,1997.</P>
+<P>Solignac, M. &#8216;Recherches sur les installations hydrauliques de Kairouan et des steppes Tunisiennes du vne au xie si&#232;cle (J.-C.)&#8217;, <I>Annales de l&#8217;institut d&#8217;&#233;tudes orientales </I>(1952-3),10, pp. 5-273 and 11, pp. 60-170.</P>
+<P>Soucek, Priscilla. &#8216;Byzantium and the Islamic East&#8217;, in Helen C. Evans and William D. Wixom, eds. <I>The Glory of Byzantium: Art and Culture of the Middle Byzantine Era A.D.</I> 843-1261. New York,1997, pp. 403-11.</P>
+<P>Sourdel-Thomine, Janine and Bertold Spuler. <I>Die Kunst des Islam</I>. Berlin, 1973.</P>
+<P>Soustiel, Jean. <I>La C&#233;ramique Islamique: le guide du connaisseur</I>. Fribourg, 1985.</P>
+<P>Stern, Henri. &#8216;Recherches sur la Mosqu&#233;e al-Aqsa et ses mosa&#239;ques&#8217;, <I>Ars Orientalis</I>, 5 (1963), pp. 27-47.</P>
+<P>Stern, S. M. <I>Fatimid Decrees: Original Documents from the Fatimid Chancery</I>. London, 1964.</P>
+<P>Stillman, Yedida K. &#8216;The Importance of the Cairo Geniza Manuscripts for the History of Medieval Female Attire&#8217;, <I>International Journal of Middle East Studies</I>, 7 (1976), pp. 579-89. </P>
+<P>Tabbaa, Yasser. <I>The Transformation of Islamic Art During the Sunni Revival</I>. Seattle and London, 2001.</P>
+<P>Taylor, Christopher S. <I>In the Vicinity of the Righteous: Ziyara and the Veneration of Muslim Saints in Late Medieval Egypt</I>. Leiden, 1999.</P>
+<P>&#8212; &#8212; &#8216;Reevaluating the Shi&#8217;i Role in the Development of Monumental Funerary Architecture: The Case of Egypt&#8217;, <I>Muqarnas</I>, 9 (1992), pp. 1-10.</P>
+<P>Terrasse, Henri. <I>La Mosqu&#233;e al-Qaraouiyin &#224; F&#232;s</I>. Paris,1968.</P>
+<P>Terrasse, Michel. &#8216;Recherches arch&#233;ologiques d&#8217;&#233;poque islamique en Afrique du Nord&#8217;, <I>Comptes rendus del&#8217;Acad&#233;mie des Inscriptions et Belles-Lettres</I> (1976), pp. 590-611.</P>
+<P>Thackston, W. M., Jr., <I>Naser&#8211;e Khosraw&#8217;s Book of Travels (Safarnama). </I>NewYork,1986.</P>
+<P>Tibbetts, Gerald R. &#8216;The Balkhi School of Geographers&#8217;, in J. B. Harley and David Woodward, eds. <I>Cartography in the Traditional Islamic and South Asian Societies, vol. 2 of The History of Cartography. </I>Chicago, 1992, pp. 108-36. </P>
+<P><I>Tissus d&#8217;&#201;gypte: collection Bouvier</I>. Paris, 1994.</P>
+<P>Tonghini, Cristina. &#8216;Fatimid Ceramics from Italy: The Archaeological Evidence&#8217;, in Barrucand, ed. <I>L&#8217;&#201;gypte Fatimide</I>, pp. 286-97.</P>
+<P><I>The Treasury of San Marco Venice</I>. New York, 1984. </P>
+<P><I>Tr&#233;sors Fatimides du Caire</I>. Paris, 1998.</P>
+<P>Tronzo, William. <I>The Cultures of His Kingdom: Roger II and the Cappella Palatina in Palermo</I>. Princeton, NJ, 1997. </P>
+<P>Turner, Jane, ed. <I>The Dictionary of Art</I>. London, 1996.</P>
+<P>Tushingham, A.D. and V.B. Meen. <I>Jawahirat-i sultaii-yi Iran</I>. Tehran, 1967.</P>
+<P>Unsworth, Barry. <I>The Ruby in Her Navel: A Novel of Love and Intrigue in the Twelfth Century</I>. New York, 2006.</P>
+<P>Vernoit, Stephen. &#8216;Islamic Art and Architecture: An Overview of Scholarship and Collecting, c.1850-c.1950&#8217;, in Stephen Vernoit, <I>Discovering Islamic Art</I>. London,2000, pp. 1-61.</P>
+<P>&#8212; &#8212; &#8216;The Rise of Islamic Archaeology&#8217;, <I>Muqarnas</I>, 14 (1997), pp. 1-10.</P>
+<P>Walker, Paul E. <I>Exploring an Islamic Empire: Fatimid History and Its Sources</I>. London, 2002.</P>
+<P>&#8212; &#8212; &#8216;Fatimid Institutions of Learning&#8217;, <I>Journal of the American Research Center in Egypt</I>, 34 (1997), pp. 179-200.</P>
+<P>&#8212; &#8212; &#8216;The Isma&#8216;ili Da&#8217;wa and the Fatimid Caliphate&#8217;, in Carl Petry, ed. <I>The Cambridge History of Egypt, I: Islamic Egypt 640-151</I>. Cambridge, 1998, pp. 120-50.</P>
+<P>&#8212; &#8212; &#8216;Al-Maqrizi and the Fatimids&#8217;, <I>Mamluk Studies Review</I>, 7 (2003), pp. 83-97.</P>
+<P>Ward, Rachel. <I>Islamic Metalwork</I>. New York, 1993. </P>
+<P>Warner, Nicholas. <I>The Monuments of Historic Cairo: A Map and Descriptive Catalogue</I>. Cairo, 2005.</P>
+<P>Watson, Oliver. <I>Ceramics from Islamic Lands</I>. London, 2004.</P>
+<P>&#8212; &#8212; &#8216;Fritware: Fatimid Egypt or Saljuq Iran?&#8217;, in Barrucand, ed., <I>L&#8217;&#201;gypte Fatimide</I>, pp. 299-307.</P>
+<P>Whelan, Estelle J. <I>The Public Figure: Political Iconography in Medieval Mesopotamia</I>. London, 2oo6.</P>
+<P>Whitehouse, David. &#8216;Byzantine Gilded Glass&#8217;, in Rachel Ward, ed. <I>Gilded and Enamelled Glass from the Middle East: Origins, Innovations</I>. London, 1998, pp. 4-7. </P>
+<P>Wiet, Gaston. &#8216;Un Dessin du xie si&#232;cle&#8217;, <I>Bulletin de l&#8217;institut &#201;gyptien,19</I> (1936&#8211;1907), pp. 223-7.</P>
+<P>&#8212; &#8212; &#8216;Les Inscriptions du mausol&#233;e de Shafi&#8217;i&#8217;, <I>Bulletin de l&#8217;Institut d&#8217;&#201;gypte,15 </I>(1933), pp. 167-85.</P>
+<P>&#8212; &#8212; &#8216;L&#8217;Exposition d&#8217;art Persan &#224; Londres&#8217;, <I>Syria</I>, 13 (1932), pp. 65-93,196-212.</P>
+<P><I>&#8212; &#8212; Mat&#233;riaux pour un corpus inscriptionum Arabicarum I:&#201;gypte 2</I>. Cairo, 1929-30.</P>
+<P>&#8212; &#8212; &#8216;Notes d&#8217;&#233;pigraphie Syro-Musulmane&#8217;, <I>Syria</I>, 5 (1924), pp. 216-53.</P>
+<P>&#8212; &#8212; &#8216;Une Nouvelle inscription Fatimide au Caire&#8217;, <I>Journal Asiatique</I>, 249 (1961), pp. 13-20.</P>
+<P>&#8212; &#8212; &#8216;Nouvelles inscriptions Fatimides&#8217;, <I>Bulletin de l&#8217;Institut de &#201;gypte</I>, 24 (1941-2), pp.145-55.</P>
+<P>&#8212; &#8212; &#8216;Une Peinture du xiie si&#232;cle&#8217;, <I>Bulletin de l&#8217;Institut d&#8217;&#201;gypte</I>, 26 (1944), pp. l09-18.</P>
+<P><I>&#8212; &#8212; Les St&#232;les fun&#233;raires</I>. Cairo, 1936-42.</P>
+<P>William of Tyre. <I>A History of Deeds Done Beyond the Sea</I>, tr. Emily Atwater Babcock and A. C. Krey. New York, 1943. </P>
+<P>Williams, Caroline. &#8216;The Cult of &#8216;Alid Saints in the Fatimid Monuments of Cairo. Part I: The Mosque of al-Aqmar&#8217;, <I>Muqarnas</I>, 1(1983), pp. 37-52.</P>
+<P>&#8212; &#8212; &#8216;The Cult of &#8216;Alid Saints in the Fatimid Monuments of Cairo. Part II: The Mausolea&#8217;, <I>Muqarnas</I>, 3 (1985), pp. 39-60.</P>
+<P>&#8212; &#8212; &#8216;The Qur&#8217;anic Inscriptions on the Tabut of al-Husayn in Cairo&#8217;, <I>Islamic Art 2 </I>(1987), pp. 3-14.</P>
+<P>Wustenfeld, F. &#8216;Geschichte der Fatimiden Chalifen nach den Arabischen Quellen&#8217;, <I>Sitzungsberichte der Konigl. Gesellschaft der Wissenschaften, Histor.-Philolog. Classe XXVI.3, XXVII.1, XXVIII, 3 (1880&#8211;1), </I>pp. 1-97; 3-130; 1-124.</P>
+<P>Yusuf, &#8216;Abd al-Ra&#8217;uf &#8216;Ali. &#8216;Egyptian Luster-Painted Pottery from the Ayyubid and Mamluk Periods&#8217;, in Behrens-Abouseif, <I>The Cairo Heritage</I>, pp. 263-74.</P>
+<P>Abd el-Ra&#8217;uf Ali Yusuf. &#8216;A Rock-Crystal Specimen in the Museum of Islamic Art and the Seven Fatimid Domes in the Qarafa al-Kubra in Cairo&#8217;, in Marianne Barrucand, ed. <I>L&#8217;&#201;gypte Fatimide: son art et son histoire</I>, Actes du colloque organis&#233; &#224; Paris les 28, 29 et 30 mai 1998. Paris, 1999, pp. 311-18.</P>
+<P>Zbiss, Slimane Mostfa. &#8216;Mahdia et Sabra-Man&#7779;o&#251;riya: nouveaux documents d&#8217;art fatimite d&#8217;occident&#8217;, <I>Journal Asiatique</I>, 244 (1956), pp. 79-93</P></div><p>Content Date: January 2008</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Arts of the City Victorious: Islamic Art and Architecture in Fatimid North Africa and Egypt</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 10 Apr 2022 15:11:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 10/04/2012&nbsp;15:13&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109217 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:35:15 GMT -->
+</HTML>

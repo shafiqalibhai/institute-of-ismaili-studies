@@ -1,0 +1,583 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100735 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:14:53 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 100735;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyf4e6.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D100735">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article90db.html?ContentID=100741">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Struggling with the Philosopher: A Refutation of Avicenna&#8217;s Metaphysics</strong><strong><br/></strong><strong><DIV><A href="view_person6412.html?type=authors&amp;id=54">Professor Wilferd  Madelung</A></DIV><DIV><A href="view_person47b0.html?type=authors&amp;id=74">Dr Toby  Mayer</A></DIV></strong><br/><br/>Ismaili Texts and Translations Series 2, A New Arabic Edition and English Translation of Muhammad b. &#8216;Abd al-Karim al-Shahrastani&#8217;s <I>Kitab al-Musara&#8216;a,</I> London: I. B. Tauris in association with The Institute of Ismaili Studies, 2001, pp. v + 107 (English) + 135 (Arabic).<span><br/><br/>ISBN (Hardback): 1 86064 693 X</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publications/web_struggling_philosopher-200451917396_7055.jpg" align="left" alt="" style="padding: 0px;" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><A onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=sbYEAQAAIAAJ&amp;q=Struggling+with+the+Philosopher:+A+Refutation+of+Avicenna%E2%80%99s+Metaphysics&amp;dq=Struggling+with+the+Philosopher:+A+Refutation+of+Avicenna%E2%80%99s+Metaphysics&amp;cd=1" target=_blank><IMG height=18 alt="" src="WebAssets/Large/googlebooks.jpg" width=18 align=absMiddle border=0> Publication page on Google Books</A></P>
+<P><A href="SiteAssets/pdf/struggling_philosophy.pdf"><IMG height=19 alt="" src="WebAssets/Small/Academic%20Papers/pdf_icon.gif" width=19 border=0> Download PDF version of Introduction (179 KB)</A></P>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Taj al&#8211;Din Abu&#8216;l&#8211;Fath Muhammad ibn &#8216;Abd al&#8211;Karim al&#8211;Shahrastani (d. AH 548/1153 CE) is mainly known in Islamic intellectual history for two great contributions. Firstly, he is famous for his monumental study of religious communities, the <I>Kitab al&#8211;Milal wa&#8217;l&#8211;Nihal</I>. This work, widely appreciated in medieval Islam, continues to inspire admiration for the scope of its inquiry and non&#8211;polemical style. A fully annotated French translation of the book by Gimaret, Monnot and Jolivet was recently sponsored by UNESCO (<I>Livre des religions et des sects</I>. Peeters: 1986, 1993). Secondly, al&#8211;Shahrastani is well&#8211;known as one of the main authorities on Sunni theology as formulated within the Ash&#8216;ari school. He taught Ash&#8216;ari theology at the famous al&#8211;Nizamiyya Madrasa in Baghdad, and developed it in works like his <I>Kitab Nihayat al&#8211;Iqdam fi &#8216;Ilm al&#8211;Kalam</I>. In particular, al&#8211;Shahrastani expounded the school of &#8220;neo&#8211;Ash&#8216;arism&#8221; which had been ushered in by al&#8211;Ghazali, and which was distinguished from the earlier Ash&#8216;arism by its more pronounced philosophical tendency. <BR><BR></DIV>
+<P class=bodytext>In <I>Struggling with the Philosopher</I> (<I>Kitab al&#8211;Musara&#8216;a</I>), al&#8211;Shahrastani is concerned to refute a number of key aspects of the metaphysics of the great Persian philosopher Abu &#8216;Ali Ibn Sina (d. AH 428/1037 CE). Ibn Sina&#8217;s extraordinary achievements in Islamic philosophy had a major impact on Islamic thought through the AH 6th/12th CE century, and there is evidence that the influence of his worldview was even felt beyond the intellectual classes. This inevitably called forth a reaction, and a series of critiques of his metaphysics was produced by Muslim thinkers beginning with al&#8211;Ghazali&#8217;s <I>Incoherence of the Philosophers</I>. Al&#8211;Shahrastani&#8217;s <I>Struggling with the Philosopher</I> is to be broadly aligned with such refutations. For example, it contains brilliant <I>a priori</I> arguments against Ibn Sina&#8217;s teaching that the world is beginningless, akin to those found in al&#8211;Ghazali&#8217;s earlier attack.<BR><BR></P>
+<P class=bodytext>However, careful scrutiny of al&#8211;Shahrastani&#8217;s work shows that it is not simply driven by a concern to defend Sunni Ash&#8216;ari theology against Ibn Sina, as are most of the other critiques. Instead, the book surprisingly suggests a Shi&#8216;i intellectual context. Notably, it was commissioned by an &#8216;Alid patron, Abu&#8217;l&#8211;Qasim &#8216;Ali ibn Ja&#8216;far al&#8211;Musawi of Tirmidh, contains encomia which are clearly Shi&#8216;i in tone and even argues for the imamate. And this is not all. It is arguable that the doctrine al&#8211;Shahrastani espouses as the ideal answer to Ibn Sina&#8217;s philosophy is specifically Ismaili in inspiration. While the author does not refer to Ismailism explicitly, preferring to use euphemisms such as the &#8220;Hanifi revelation&#8221; (<I>al&#8211;shar&#8216; al&#8211;hanifi</I>), it is demonstrable that the latter amounts to a characteristically Ismaili theology.<BR><BR></P>
+<P class=bodytext>A large part of <I>Struggling with the Philosopher</I> is dedicated to bringing out the contradictions in Ibn Sina&#8217;s concept of God as the &#8220;Necessary Existent0 (<I>wajib al&#8211;wujud</I>). As al&#8211;Shahrastani points out, Ibn Sina insists that for something to be intrinsically necessary, it must be absolutely simple. Composition, even of a &#8220;conceptual&#8221; order, implies contingency, since the thing in question will then become dependent on its subsidiary elements and perhaps also on an agent to put them together. In particular, God&#8217;s identity becomes a composite of two elements: (1) the pseudo&#8211;genus existence, held in common with contingents, and (2) a differentia which is needed to mark God off from contingents within existence. Thus, according to al&#8211;Shahrastani, Ibn Sina&#8217;s concept of God as the Necessary Existent flagrantly contradicts his insistence on divine simplicity.<BR><BR></P>
+<P class=bodytext>For al&#8211;Shahrastani, the way out of this absurdity is to elevate God above existence or, as he carefully presents in the text, the answer is to treat existence as a purely equivocal term &#8211; so that attributing God with &#8220;existence&#8221; has nothing in common with attributing contingents with existence. In essence, this amounts to the radical theology familiar from Ismaili philosophers like al&#8211;Kirmani, al&#8211;Sijistani and Nasir Khusraw, according to whom God is so absolute in His transcendence that He is even beyond the categories of &#8220;being&#8221; and &#8220;non&#8211;being&#8221;. In all this, <I>Struggling with the Philosopher</I> testifies to the accuracy of the allegations of al&#8211;Shahrastani&#8217;s contemporaries that, notwithstanding his public Ash&#8216;arism and Shafi&#8216;ism, he was drawn to the &#8220;people of the mountain fortresses&#8221;, i.e., the Ismailis. It can be added to other works of his such as the <I>Majlis</I>, and his Qur&#8217;an commentary, the <I>Mafatih al&#8211;Asrar wa Masabih al&#8211;Abrar</I>, all of which add up to a crucial body of evidence that this major medieval Muslim intellectual embraced Ismaili teachings.<BR><BR></P>
+<P>This volume is the second monograph in the <A href="view_articlebdba.html?type=cont.currentlang&amp;id=104893">Ismaili Texts and Translations Series</A> of The Institute of Ismaili Studies.</P><br><br></div><div id="pubsContents"><strong>Contents</strong><br>
+<P class=bodytext><STRONG><I>Introduction</I>: Al&#8211;Shahrastani, Isma&#8216;ilism and Philosophy</STRONG><BR><BR>
+<P class=bodytext><I>Note on the Translation</I><BR><BR>
+<P class=bodytext><I>Kitab al&#8211;Musara&#8216;a</I> (English Text)<BR><BR>
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="24%">The First Issue:</TD>
+<TD width="76%">On the Enumeration of the Subdivisions of Existence</TD></TR>
+<TR>
+<TD width="24%">The Second Issue:</TD>
+<TD>On the Existence of the Necessary of Existence</TD></TR>
+<TR>
+<TD width="24%">The Third Issue:</TD>
+<TD>On the Unity of the Necessary of Existence</TD></TR>
+<TR>
+<TD width="24%">The Fourth Issue:</TD>
+<TD>On the Knowledge of the Necessary of Existence and its Relationship with the Universal and Particular</TD></TR>
+<TR>
+<TD width="24%">The Fifth Issue:</TD>
+<TD>On the Incipience of the World</TD></TR></TBODY></TABLE>
+<P class=bodytext><I>Bibliography</I><BR><BR>
+<P class=bodytext><I>Index to the English Text</I><BR><BR>
+<P class=bodytext><I>Kitab al&#8211;Musara&#8216;a</I> (Arabic Text)</P><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br>
+<P class=bodytext>Adharshab, Muhammad &#8216;Ali. <I>Tafsir al&#8211;Shahrastani al&#8211;musamma Mafatih al&#8211;asrar wa&#8211;masabih al&#8211;abrar</I>. Vol. 1. Tehran, 1417/1997.<BR><BR>
+<P class=bodytext>al&#8211;Bayhaqi, Zahir al&#8211;Din &#8216;Ali. <I>Ta&#8217;rikh hukama&#8217; al&#8211;islam,</I> ed. Muhammad Kurd &#8216;Ali. Damascus, 1365/1946.<BR><BR>
+<P class=bodytext>Danishpazhuh, Muhammad Taqi. &#8216;Da&#8216;i al&#8211;Du&#8216;at Taju&#8217;l&#8211;Din Shahrastana&#8217;, in <I>Nama&#8211;yi Astan&#8211;i Quds</I>, 7, no. 2 (1346/1968), pp. 71&#8211;80; 8, no. 4 (1347/1969), pp. 61&#8211;71.<BR><BR>
+<P class=bodytext>al&#8211;Ghazali, Abu Hamid Muhammad. <I>Faysal al&#8211;tafriqa bayn al&#8211;islam wa&#8217;l&#8211;zandaqa</I>, ed., Sulayman Dunya. Cairo, 1380/1960.<BR><BR>
+<P class=bodytext>EI2. <I>The Encyclopaedia of Islam</I>, New edition. Leiden, 1960&#8211; .<BR><BR>
+<P class=bodytext>Gimaret, Daniel, Monnot, Guy and Jolivet, Jean. <I>Shahrastani: Livre des Religions et des sects</I>. Vols.1&#8211;2. Paris and Louvain, 1986&#8211;1993.<BR><BR>
+<P class=bodytext>Guillaume, Alfred. <I>The Summa Philosophiae of al&#8211;Shahrastani: Kitab Nihayat al&#8211;aqdam fi &#8216;ilm al&#8211;kalam</I>. London, 1934.<BR><BR>
+<P class=bodytext>Hartmann, Angelika. &#8216;Isma&#8216;ilitische Theologie bei sunnitischen &#8216;Ulama&#8217; des Mittelalters&#8217;, in ed., Ludwig Hagemann and Ernst <BR><BR>
+<P class=bodytext>Pulsfort, <I>Ihr alle aber seid Br&#252;der: Festschrift f&#252;r A. Th. Khoury zum 60.Gesburtstag</I>. W&#252;rzburg&#8211;Altenberge, 1990, pp. 190&#8211;206.<BR><BR>
+<P class=bodytext>&#8211;&#8211;&#8216;al&#8211;Suhrawardi, Shihab al&#8211;Din Abu Hafs&#8217;, in EI2, vol. 9, pp. 778&#8211;782. <BR><BR>
+<P class=bodytext>Hourani, George. &#8216;Ibn Sina on Necessary and Possible Existence&#8217;, <I>Philosophical Forum</I>, 4 (1972), pp. 74&#8211;86.<BR><BR>
+<P class=bodytext>Ibn Babuya, Abu Ja&#8216;far Muhammad b. &#8216;Ali. <I>Kitab al&#8211;Tawhid</I>, ed., Hashim al&#8211;Husayni al&#8211;Tihrani. Beirut, [1387/1967].<BR><BR>
+<P class=bodytext>Ibn Qayyim al&#8211;Jawziyya. <I>Ighathat al&#8211;lahfan min masayid al&#8211;shaytan</I>, ed. Muhammad Hamid al&#8211;Fiqi. Cairo, 1358/1939. 2 vols.<BR><BR>
+<P class=bodytext>Ibn Qutayba, Abu Muhammad &#8216;Abd Allah. <I>&#8216;Uyun al&#8211;akhbar</I>, ed. Ahmad Zaki al&#8211;&#8216;Adawi. Cairo, 1343&#8211;8/1925&#8211;1930.<BR><BR>
+<P class=bodytext>Ibn Sina, Abu &#8216;Ali al&#8211;Husayn b. &#8216;Abd Allah. <I>al&#8211;Isharat wa&#8217;l&#8211;tanbihat</I>, with Tusi&#8217;s commentary, ed., Sulayman Dunya. Cairo, 1377&#8211;1380/1957&#8211;1960. 3 vols.<BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>al&#8211;Mubahathat</I>, ed. Muhsin Bidarfar. Qum, 1414/1993&#8211;4.<BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>al&#8211;Najat</I>, ed., Muhyi l&#8211;Din al&#8211;Kurdi. Tehran, 1346 S.H./1985.<BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>al&#8211;Shifa&#8217;: al&#8211;Ilahiyyat</I>, ed., Ibrahim Madkur et al. Cairo, 1960.<BR><BR>
+<P class=bodytext>Lane, Edward William. <I>An Arabic&#8211;English Lexicon</I>. Cambridge, 1984. 2 vols. al&#8211;Majlisi, Muhammad Baqir. <I>Bihar al&#8211;anwar</I>. Tehran, 1376&#8211;1392/1956&#8211;1972.<BR><BR>
+<P class=bodytext>Monnot, Guy. &#8216;Islam: ex&#233;g&#232;se coranique&#8217; ;, in <I>Annuaire de l&#8217;Ecole des Hautes Etudes, Section des sciences religieuses</I>, 90&#8211;99 (1981&#8211;1991). <BR><BR>
+<P class=bodytext>&#8211;&#8211;&#8216;al&#8211;Shahrastani&#8217;, EI2, vol. 9, pp. 214&#8211;216.<BR><BR>
+<P class=bodytext>Mukhtar, Suhayr Muhammad, ed. <I>Kitab Musara&#8216;at al&#8211;falasifa</I>. Cairo, 1396/1976.<BR><BR>
+<P class=bodytext>Na&#8217;ini, Muhammad Rida Jalali. <I>Sharh&#8211;i hal wa&#8211;athar&#8211;i Hujjatu&#8217;l&#8211;haqq Abu&#8217;l&#8211;Fath Muhammad b. &#8216;Abd al&#8211;Karim b. Ahmad Shahrastani</I>. Tehran, 1343/1964.<BR><BR>
+<P class=bodytext>&#8211;&#8211;&#8211;<I> Du maktub</I>. Tehran, 1369/1990. <BR><BR>
+<P class=bodytext>Iadr al&#8211;Din al&#8211;Shirazi, Muhammad. <I>al&#8211;Hikma al&#8211;muta&#8216;aliya fi&#8217;l&#8211;asfar al&#8211;&#8216;aqliyya al&#8211;arba&#8216;a</I>. Beirut, 1402&#8211;1411/1981&#8211;1990. 9 vols.<BR><BR>
+<P class=bodytext>al&#8211;Shahrastani, Taj al&#8211;Din Muhammad. <I>Kitab al&#8211;Milal wa&#8217;l&#8211;nihal</I>, ed., W. Cureton. London, 1842&#8211;1846. <BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>Mafatih al&#8211;asrar wa&#8211;masabih al&#8211;abrar, facsim</I>. ed. Tehran, 1409/1989. 2 vols.<BR><BR>
+<P class=bodytext>Steigerwald, Diane. <I>&#8216;Abd al&#8211;Karim Shahrastani (m. 548/1153), Majlis: Discours sur L&#8217; ;Ordre et la creation</I>. Saint&#8211;Nicolas, Qu&#233;bec, 1998.<BR><BR>
+<P class=bodytext>al&#8211;Subki, Taj al&#8211;Din Abu&#8217;l&#8211;Nasr. <I>Tabaqat al&#8211;Shafi&#8216;iyya al&#8211;kubra</I>, ed. Muhammad &#8216;Abd al&#8211;Fattah al&#8211;Hilw and Mahmud Muhammad al&#8211;Tanahi. Cairo, 1383&#8211;96/1964&#8211;76. 10 vols.<BR><BR>
+<P class=bodytext>al&#8211;Tusi, Nasir al&#8211;Din Muhammad. <I>Masari&#8216; al&#8211;musari&#8216;</I>, ed. Hasan al&#8211;Mu&#8216;izzi. Qum, 1405/1984.<BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>Contemplation and Action: The Spiritual Autobiography of a Muslim Scholar</I>, ed. and tr., S. J. Badakhchani. London, 1998.<BR><BR>
+<P class=bodytext>Wolfson, Harry Austryn. <I>Studies in the History of Philosophy and Religion</I>, ed., I. Twersky and G.H. Williams. Cambridge, M.A., 1973. 2 vols.<BR><BR>
+<P class=bodytext>Yaqut, b. &#8216;Abd Allah al&#8211;Rumi. <I>Mu&#8216;jam al&#8211;buldan</I>, ed. F. W&#252;stenfeld. Leipzig, 1866&#8211;1873. 6 vols.<BR><BR>
+<P class=bodytext>Zimmermann, Friedrich Wilhelm. <I>Al&#8211;Farabi&#8217;s Commentary and Short Treatise on Aristotle&#8217;s De Interpretatione</I>. London, 1981. </P></div><p>Content Date: February 2001</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Struggling with the Philosopher: A Refutation of Avicenna&#8217;s Metaphysics</TITLE><META HTTP-EQUIV="Expires" CONTENT="Wed, 2 Dec 2015 15:20:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/06/2010&nbsp;12:13&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100735 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:14:54 GMT -->
+</HTML>

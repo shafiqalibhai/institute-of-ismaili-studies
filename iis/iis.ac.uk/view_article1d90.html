@@ -1,0 +1,751 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105678 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:59:49 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 105678;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlye06c.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D105678">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article70e1-2.html?ContentID=105679">Français</A></li><li><A href="view_article8989.html?ContentID=105680">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Civil Society in the Muslim World: Contemporary Perspectives</strong><strong><br/></strong><strong><DIV><A href="view_person9f61.html?type=authors&amp;id=57">Dr Amyn B Sajoo</A></DIV></strong><br/><br/>London: I. B. Tauris in association with The Institute of Ismaili Studies, 2002, pp. 339.<span><br/><br/>ISBN (Hardback): 1 86064 858 4</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/web_civil_society-200581817921_7055.jpg" align="left" alt="" style="padding: 0px;" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><P><IMG height=18 alt="" src="WebAssets/Large/googlebooks.jpg" width=18 align=absMiddle border=0> <A onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=Vn2uneOVaKoC&amp;printsec=frontcover&amp;dq=Civil+Society+in+the+Muslim+World:+Contemporary+Perspectives&amp;cd=1#v=onepage&amp;q&amp;f=false" target=_blank>Publication page on Google Books</A></P>
+<P><IMG height=18 alt="" src="WebAssets/Small/Academic%20Papers/pdf_icon.gif" width=18 border=0> <A href="SiteAssets/pdf/civil_society.pdf">Download PDF version of Introduction (361 KB)</A></P>
+<DIV>&nbsp;</DIV>
+<DIV>Well before the events of September 11, 2001, and their continuing aftermath, the global discourse on civil society - in its varied imaginings and practices - had caught the attention of citizens and communities across the Muslim world. From Indonesia, Pakistan, Tajikistan and Iran to Turkey, Egypt and the Maghreb, the clamour for human rights, pluralism and gender equity were at the forefront of the wider quest for accountable governance and participatory politics. The communalisms of old that dominated the public and private spheres were no longer tenable, even if the appeal for &#8216;religious&#8217; solidarity continued to command respect - a trend reinforced by perspectives from the growing Muslim diasporas in the West.</DIV>
+<P>A fresh urgency attends those pursuits today: patterns of political violence, and some of the responses to them, threaten to undermine the ethical legacy of Muslim civilisations and its role in the emergence of a civic culture tied to the rule of law and individual dignity. For some, recent trends merely confirm the sentiment that civil society is a Western, secular idea with no relevance to contexts where religion and tradition are deeply woven into the fabric of everyday life. Others argue that civil society has always resonated with key Islamic values, and can be renewed and enriched by the energies that feed the quest for modern, democratic citizenship in emergent and transitional nations.</P>
+<P>This landmark survey of social and intellectual trends in diverse contexts challenges many of the facile claims about the Muslim world today that abound in mainstream media as well as scholarly accounts. With contributions by Shirin Akiner, Mohammed Arkoun, Aziz Esmail, Tair Faradov, Abdou Filali-Ansary, Ersin Kalaycioglu, Iftikhar Malik, Ziba Mir-Hosseini, Olivier Roy and Amyn B. Sajoo, this volume will appeal not only to scholars of contemporary culture, politics and religion, but to all those interested in the unfolding of civic modernities in the new millennium.</P>
+<P>This volume is a culmination of a year-long project that was highlighted by a series of seminars on civil society hosted by The Institute of Ismaili Studies, beginning in November 2000. Most of the chapters evolved from papers delivered at the seminars where participants ranged from senior academics and policy-makers to community activists, journalists and graduate students.</P><br><br></div><div id="pubsContents"><strong>Contents</strong><br><!--StartFragment -->&nbsp; 
+<P class=bodytext><I>Foreword by Azim Nanji</I></P>
+<P class=bodytext><I>Editor&#8217;s Note</I></P>
+<P class=bodytext><I>About the Contributors</I></P>
+<OL class=bodytext>
+<LI>Introduction: Civic Quests and Bequests<BR>Amyn B. Sajoo 
+<LI>Locating Civil Society in Islamic Contexts<BR>Mohammed Arkoun 
+<LI>Self, Society and Civility in Islam<BR>Aziz Esmail 
+<LI>Debating Women: Gender and the Public Sphere in Post-Revolutionary Iran<BR>Ziba Mir-Hosseini 
+<LI>Soviet Legacies and Western Aid Imperatives in the New Central Asia<BR>Olivier Roy 
+<LI>Prospects for Civil Society in Tajikistan<BR>Shirin Akiner 
+<LI>Religiosity and Civic Culture in Post-Soviet Azerbaijan: A Sociological Perspective<BR>Tair Faradov 
+<LI>Ethics in the Civitas<BR>Amyn B. Sajoo 
+<LI>State and Civil Society in Turkey: Democracy, Development and Protest<BR>Ersin Kalaycioglu 
+<LI>Between Identity-Politics and Authoritarianism in Pakistan<BR>Iftikhar H. Malik 
+<LI>State, Society and Creed: Reflections on the Maghreb<BR>Abdou Filali-Ansary</LI></OL>
+<P class=bodytext><I>Bibliography</I></P>
+<P class=bodytext><I>Index</I></P><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><!--StartFragment -->&nbsp;
+<P class=bodytext>Abdullaev, K. and C. Barnes, ed. <I>Politics of Compromise: The Tajikistan Peace Process.</I> London, 2001.</P>
+<P class=bodytext>Abdullaev, K. <I>Exiles of Bolshevism</I>. London, 2002.</P>
+<P class=bodytext>Abu -Lughod, J. &#8216;The Islamic City&#8217;, <I>International Journey of Middle Eastern Studies</I>, 19 (1987), pp. 155-76.</P>
+<P class=bodytext>Ahmad, Aziz. <I>Islamic Modernism in India and Pakistan, 1857-1947</I>. Oxford, 1967.</P>
+<P class=bodytext>Akarli, Engin D. &#8216;The State as a Socio-Cultural Phenomenon and Political Participation in Turkey&#8217; in Engin D. Akarli and Gabriel Ben-Dor, ed., <I>Political Participation in Turkey: Historical Background and Present Problems. </I>Istanbul: 1975, pp. 135-55.</P>
+<P class=bodytext>Akarl&#253;, Engin D. &#8216;The State as a Socio-Cultural Phenomenon and Political Participation in Turkey&#8217;, in Engin D. Akarl&#253; and Gabriel Ben-Dor, ed., <I>Political Participation in Turkey: Historical Background and Present Problems</I>. Istanbul, 1975, pp. 135-55.</P>
+<P class=bodytext>Akiner, Shirin. &#8216;Between Tradition and Modernity: the Dilemma Facing Contemporary Central Asian Women&#8217;, in Mary Buckley, ed., <I>Post-Soviet Women: From the Baltic to Central Asia</I>. Cambridge, 1997, pp. 261-304.</P>
+<P class=bodytext>--- &#8216;Ethnicity, Nationality and Citizenship as Expressions of Self-Determination in Central Asia&#8217;, in D. Clark and R. Williamson, ed., <I>Self- Determination: International Perspectives</I>. London, 1996, pp. 249-274.</P>
+<P class=bodytext>--- &#8216;Islam, the State and Ethnicity in Central Asia in Historical Perspective&#8217;, <I>Religion, State and Society: The Keston Journal</I>, 24 (1996), pp. 91-132.</P>
+<P class=bodytext>--- &#8216;Social and Political Reorganisation in Central Asia: Transition from Pre- Colonial to Post-Colonial Society&#8217;, in T. Atabaki and J. O&#8217;Kane, ed., <I>Post- Soviet Central Asia</I>. London, 1998, pp. 1-34.</P>
+<P class=bodytext>--- <I>Tajikistan: Reconciliation or Disintegration?</I> London, 2001.</P>
+<P class=bodytext>Alexander, J. C., ed. <I>Real Civil Societies: Dilemmas of Institutionalization</I>. London, 1998.</P>
+<P class=bodytext>Almond, Gabriel A. and G. Bingham Powell, Jr. <I>Comparative Politics: System, Process, and Policy</I>. 2nd ed., Boston and Toronto, 1978.</P>
+<P class=bodytext>Amin, Camron Michael. &#8216;Selling and Saving &#8220;Mother Iran&#8221;: Gender and the Iranian Press in the 1940s&#8217;, <I>International Journal of Middle Eastern Studies</I>, 33 (2001), pp. 335-61.</P>
+<P class=bodytext>Anderson, Benedict. <I>Imagined Communities: Reflections on the Origin and Spread of Nationalism</I>. London, 1991.</P>
+<P class=bodytext>Anderson, John. &#8216;Creating a Framework for Civil Society in Kyrgyzstan&#8217; <I>Europe- Asia Studies</I>, 52 (2000), pp. 73-93.</P>
+<P class=bodytext>Anheier, H., M. Glasius and M. Kaldor, ed. <I>Global Civil Society 2001</I>. Oxford and New York, 2001.</P>
+<P class=bodytext>Antoun, Richard. &#8216;Civil Society, Tribal Process, and Change in Jordan&#8217;, <I>International Journal of Middle Eastern Studies</I>, 32 (2000), pp. 441-63.</P>
+<P class=bodytext>Arat, Yesim. &#8216;Feminist Institutions and Democratic Aspirations: The Case of the Purple Roof Women&#8217;s Shelter Foundation&#8217;, in Zehra F. Arat, ed., <I>Deconstructing Images of the Turkish Women</I>. New York, 1999, pp. 295-309.</P>
+<P class=bodytext>Arkoun, Mohammed. <I>The Unthought in Contemporary Islamic Thought</I>. London, 2002. </P>
+<P class=bodytext>--- <I>Rethinking Islam: Common Questions, Uncommon Answers, </I>tr. Robert D. Lee. Boulder, Colorado and Oxford, 1994.</P>
+<P class=bodytext>Askari-Rizvi, Hasan. <I>Military and Politics in Pakistan</I>. Karachi, 1998.</P>
+<P class=bodytext>Babadjanov, Bakhtyar. &#8216;Muhammadjan Hindustani and the Beginning of the &#8220;Great Schism&#8221; among Muslims in Uzbekistan&#8217;, in St&#233;phane A. Dudoignon and Hisao Komatsu, ed., <I>Islam and Politics in Russia and Central Asia (Early 18th-Late 20th Centuries)</I>. London, forthcoming.</P>
+<P class=bodytext>Bellah, R. N., ed. <I>Beyond Belief: Essays on Religion in a Post-Traditionalist World</I>. Berkeley, California, 1991. </P>
+<P class=bodytext>Bellah, R. N., R. Madsen and W. M. Sullivan. <I>The Good Society</I>. New York, 1992.</P>
+<P class=bodytext>Belin, Isaiah. <I>The Sense of Reality: Studies in Ideas and their History</I>. London, 1996.</P>
+<P class=bodytext>Berrada, M. <I>The Game of Forgetting</I>, tr. I. J. Boullata. Austin, TX, 1996, p. 128, original title, <I>Lu&#8217;bat al-Nisyan</I>. Rabat, 1987.</P>
+<P class=bodytext>Binder, Leonard. <I>Religion and Politics in Pakistan</I>. Berkeley, CA, 1961.</P>
+<P class=bodytext>Boroujerdi, M. &#8216;The Paradoxes of Politics in Postrevolutionary Iran&#8217;, in J. L. Esposito and R. K. Ramazani, ed., <I>Iran at the Crossroads</I>. New York, 2001, pp. 13-27.</P>
+<P class=bodytext>Bunt, G. <I>Virtually Islamic</I>. Cardiff, 2000, pp. 13-27.</P>
+<P class=bodytext>Carkoglu, A. &#8216;Religion and Public Policy in Turkey&#8217;, <I>Institute for the Study of Islami in the Modern World (ISIM) Newsletter</I>, 8 (September 2001), p. 29.</P>
+<P class=bodytext>Carothers, T. &#8216;The Rule of Law Revival&#8217;, <I>Foreign Affairs </I>(1998), pp. 95-106.</P>
+<P class=bodytext>Carter, Stephen. <I>Civility</I>. New York and London, 1999.</P>
+<P class=bodytext>--- <I>The Culture of Disbelief: How American Law and Politics Trivializes Religious Devotion</I>. New York, 1993.</P>
+<P class=bodytext>Castoriadis, C. <I>World in Fragments</I>, ed. D. A. Curtis. Palo Alto, Calif., 1997. </P>
+<P class=bodytext>Causse, Maurice. &#8216;Theologie de rupture et theologie de la communaute&#8217;, <I>Revue d&#8217;histoire et de philosophie religieuse</I>, 44 (1964), pp. 60-80.</P>
+<P class=bodytext>Chandoke, N. <I>State and Civil Society: Explorations in Political Theory</I>. New Delhi, 1995.</P>
+<P class=bodytext>Charfi, Mohamed. <I>Islam et Libert&#233;, le malentendu historique</I>. Paris, 1999.</P>
+<P class=bodytext>Cloughley, Brian. <I>The Pakistan Army</I>. Karachi, 1999.</P>
+<P class=bodytext>Cohen, J. and A. Arato. <I>Civil Society and Political Theory</I>. Cambridge, MA, 1992.</P>
+<P class=bodytext>Cole, D. H. &#8216;An Unqualified Human Good: E. P. Thompson and the Rule of Law&#8217;, <I>Journal of Law and Society</I>, 28, 2 (2001), pp. 177-203.</P>
+<P class=bodytext>Coles, R. <I>The Secular Mind</I>. Princeton, NJ, 1999.</P>
+<P class=bodytext>Cox, Eva. <I>A Truly Civil Society</I>. Sydney, 2001. </P>
+<P class=bodytext>Dabashi, Hamid. <I>Theology of Discontent</I>. New York, 1993.</P>
+<P class=bodytext>Dagger, R. <I>Civic Virtues: Rights, Citizenship and Republican Liberalism</I>. Oxford and New York, 1997.</P>
+<P class=bodytext>Desrues, Thierry and Eduardo Moyano. &#8216;Social Change and Political Transition in Morocco&#8217;, <I>Mediterranean Politics</I>, 6 (2001), pp. 21-47.</P>
+<P class=bodytext>Diamond, Larry. &#8216;Rethinking Civil Society: Toward Democratic Consolidation&#8217;, <I>Journal of Democracy</I>, 5 (1994), pp. 4-17.</P>
+<P class=bodytext>Dudoignon, S. &#8216;Political Parties and Forces in Tajikistan, 1989-1993&#8217;, in M-R. Djalili, F. Grare and S. Akiner, ed., <I>Tajikistan: The Trials of Independence</I>. London, 1998, pp. 52-85.</P>
+<P class=bodytext>Dupret, Baudouin. <I>Au nom de quell droit</I>. Cairo, 2000.</P>
+<P class=bodytext>Durkheim, Emile. <I>De la division du travail social</I>. 4th ed., Paris, 1922.</P>
+<P class=bodytext>Dworkin, Ronald. <I>Sovereign Virtue: The Theory and Practice of Equality</I>. Cambridge, MA, 2000.</P>
+<P class=bodytext>Eickelman, D. and J. Anderson, ed. <I>New Media in the Muslim World: The Emerging Public Sphere</I>. Bloomington and Indianapolis, IN, 1999.</P>
+<P class=bodytext>Enayat, Hamid. &#8216;Iran: Khumayni&#8217;s concept of the &#8220;Guardianship of the Juriconsult&#8221; &#8217;, in James Piscatori, ed., <I>Islam and the Political Process</I>. Cambridge, 1982, pp. 160-80.</P>
+<P class=bodytext>Esmer, Yilmaz. <I>Devrim, Evrim ve Stat&#252;ko: T&#252;rkiye&#8217;de Sosyal, Siyasal, Ekonomik Degerler</I>. Istanbul, 1999.</P>
+<P class=bodytext>Esposito, J. L. <I>Unholy War: Terror in the Name of Islam</I>. New York, 2002.</P>
+<P class=bodytext>Esposito, J. L. and J. O. Voll. <I>Islam and Democracy</I>. New York and Oxford, 1996.</P>
+<P class=bodytext>Etzioni, A. &#8216;Law in Civil Society, Good Society and the Prescriptive State&#8217;, <I>Chicago-Kent Law Review</I>, 75 (2000), p. 355.</P>
+<P class=bodytext>--- <I>The Spirit of Community</I>. New York, 1994. </P>
+<P class=bodytext>Faier, Elizabeth. &#8216;Making &#8220;Civil Society&#8221; in Divided Communities&#8217;, <I>Workshop for Homegrown Models of Civil Society in the Muslim World</I>, Watson Institute for International Studies, Brown University, March 12-13, 1999.</P>
+<P class=bodytext>Fakhry, M. <I>Ethical Theories in Islam</I>. Leiden, 1994.</P>
+<P class=bodytext>Falk, R. <I>Religion and Humane Governance</I>. New York and Basingstonke, UK, 2001.</P>
+<P class=bodytext>Fandy, M. <I>Saudi Arabia and the Politics of Dissent</I>. New York, 2001.</P>
+<P class=bodytext>Farhi, Farideh. &#8216;Fifty Years Later&#8217;, <I>India Today</I> (New Delhi), Vol. 22:21 (18 August, 1997), pp. 66-71.</P>
+<P class=bodytext>--- &#8216;Fifty Years, Fifty Questions,&#8217; <I>The Herald</I> (Karachi), Vol. 28:1 (January, 1997), pp. 139-92. </P>
+<P class=bodytext>&#8216;Religious Intellectuals, the &#8220;Women&#8217;s Problem&#8221; and the Struggle for the Creation of a Democratic Public Sphere in Iran&#8217;, in Ahmed Ashraf, ed., <I>Intellectual Discourse in Post-Revolutionary Iran</I>, Special Issue of <I>International Journal of Politics, Culture and Society</I>. 2001, pp. 315-39.</P>
+<P class=bodytext>Filaly-Ansari, A. &#8216;Can Modern Rationality Shape a New Religiosity? Mohamed Abed Jabri and the Paradox of Islam and Modernity&#8217;, in J. Cooper et al., ed., <I>Islam and Modernity</I>. London and New York, 1998, pp. 156-71.</P>
+<P class=bodytext>--- &#8216;The Challenge of Secularization&#8217;, in <I>Journal of Democracy</I>, 7 (1996), pp. 76-80.</P>
+<P class=bodytext>Fukuyama, Francis. <I>Trust: The Social Virtues and the Creation of Prosperity</I>. London and New York, 1995.</P>
+<P class=bodytext>Gellner, Ernest. <I>Conditions of Liberty: Civil Society and its Rivals</I>. London, 1994.</P>
+<P class=bodytext>Gerber, H. <I>Islamic Law and Culture, 1600-1840</I>. Leiden and Boston, 1999.</P>
+<P class=bodytext>Geyushev, A. &#8216;Peculiarities of the Process of Revival of Islam in Azerbaijan&#8217;, <I>Pole</I>, 1 (2000), pp. 32-37.</P>
+<P class=bodytext>al-Ghannouchi, Rachid. &#8216;Traditional Muslim Society is a Model of Civil Society &#8217;, in Azzam Tamimi and John Esposito, ed., <I>Islam and Secularism in the Middle East</I>. London, 2000, pp. 97-123.</P>
+<P class=bodytext>Giddens, A., ed. <I>The Global Third Way Debate</I>. Cambridge, 2001.</P>
+<P class=bodytext>Glendon, Mary Ann. &#8216;Introduction: Forgotten Questions&#8217;, in Glendon, Mary Ann and D. Blankenhorn, ed., <I>Seedbeds of Virtue: Sources of Competence, Character and Citizenship in American Society</I>. Lanham, MD, 1995.</P>
+<P class=bodytext>Goldberg, E. &#8216;Private Goods, Public Wrongs and Civil Society in Some Medieval Arab Theory and Practice&#8217;, in E. Goldberg, R. Kasaba and J. Migdal, ed., <I>Rules and Rights in the Middle East</I>. London and Seattle, 1993, pp. 248-71.</P>
+<P class=bodytext>G&#246;le, Nil&#252;fer. &#8216;Toward an Autonomization of Politics and Civil Society in Turkey,&#8217; in Metin Heper and Ahmet Evin, ed., <I>Politics in the Third Turkish Republic</I>. Oxford, 1994, pp. 213-22.</P>
+<P class=bodytext>--- &#8216;Authoritarian Secularism and Islamist Politics: The Case of Turkey&#8217;, in Augustus Richard Norton, ed., <I>Civil Society in the Middle East</I>. Leiden, 1996, pp. 17-43.</P>
+<P class=bodytext>Gretsky, S. &#8216;Profile: Qadi Akbar Turajonzoda&#8217;, <I>Central Asia Monitor</I>, 1 (1994), p. 20.</P>
+<P class=bodytext>Habermas, J. <I>Between Facts and Norms: Contributions to a Discourse of Law and Democracy</I>, tr. W. Regh. Cambridge, MA and Cambridge, UK, 1996, pp. 329-87.</P>
+<P class=bodytext>Haddad, Y., ed. <I>Muslims in the West: From Sojourners to Citizens</I>. New York, 2002.</P>
+<P class=bodytext>Hall, J. A., ed. <I>Civil Society: Theory, History, Comparison</I>. Cambridge, MA and Cambridge, UK, 1995.</P>
+<P class=bodytext>Halliday, F. <I>Two Hours That Shook the World - September 11, 2001: Causes and Consequences</I>. London, 2002.</P>
+<P class=bodytext>Hammoudi, Abdellah. <I>Master and Disciple: The Cultural Foundations of Moroccan Authoritarianism</I>. London, 1997.</P>
+<P class=bodytext>Hann, Chris and Elizabeth Dunn, ed. <I>Civil Society: Challenging Western Models</I>. London and New York, 1996.</P>
+<P class=bodytext>Harris, Colette. <I>Control and Subversion: Gender, Islam and Socialism in Tajikistan</I>. PhD thesis, University of Amsterdam (2000); publication forthcoming (2002).</P>
+<P class=bodytext>Harrison, L. E. and Samuel P. Huntington, ed. <I>Culture Matters: How Values Shape Human Progress</I>. New York, 2000.</P>
+<P class=bodytext>Hasan, Mushirul. <I>Legacy of a Divided Nation: India&#8217;s Muslims since Independence</I>. London, 1997.</P>
+<P class=bodytext>Hashmi, Taj-ul-Islam. <I>Pakistan as a Peasant Utopia: The Communalization of Class Politics in East Bengal</I>. Boulder, 1992.</P>
+<P class=bodytext>Havel, V. <I>Summer Meditations</I>. New York, 1992. </P>
+<P class=bodytext>Heper, Metin. <I>The State Tradition in Turkey</I>. Walkington, 1985.</P>
+<P class=bodytext>Hesse, C. and R. Post, ed., <I>Human Rights and Political Transltions: Gettysburg to Bosnia</I>. New York, 1999.</P>
+<P class=bodytext>Himmelfarb, G. <I>The De-Moralization of Society: From Victorian Virtues to Modern Values</I>. New York, 1995.</P>
+<P class=bodytext>Hodgson, Marshall G. S. <I>The Venture of Islam: Conscience and History in a World Civilization</I>. Chicago, 1974.</P>
+<P class=bodytext>Hovannisian, R. G., ed. <I>Ethics in Islam</I>. Malibu, CA, 1985.</P>
+<P class=bodytext>Howard, M. M. &#8216;The Weakeness of Postcommunist Civil Society&#8217;, <I>Journal of Democracy</I>, 13 (2002), pp. 157-69.</P>
+<P class=bodytext>Huband, M., J. Dempsey and R. Khalaf. &#8216;Middle Eastern NGOs Strain at the Bonds of Authoritarian Government&#8217;, <I>The Financial Times</I> (London, 10 June 1999), p. 7.</P>
+<P class=bodytext>Human Rights Watch. <I>World Report 2002</I>. New York and London, 2002.</P>
+<P class=bodytext>Humphrey, Benedict. <I>Marx Went Away but Karl Stayed Behind: Economy, Society and Religion in a Siberian Collective Farm</I>. Ann Arbor, MI, 1998. </P>
+<P class=bodytext>Huntington, Samuel P.<I> The Clash of Civilizations and the Remaking of World Order</I>. New York, 1996.</P>
+<P class=bodytext>Ibn al-Jawzi. <I>Talbis Iblis</I>. Cairo, 1928.</P>
+<P class=bodytext>Ibrahim, Saad Eddin. &#8216;From Taliban to Erbakan: The Case of Islam, Civil Society and Democracy&#8217;, in Elisabeth Ozdalga and Sune Persson, ed., <I>Civil Society, Democracy and the Muslim World</I>. Istanbul, 1997, pp. 33-44.</P>
+<P class=bodytext>Inglehart, Ronald. <I>Modernization and Postmodernization: Cultural, Economic, and Political Change in 43 Countries</I>. Princeton, N.J., 1997.</P>
+<P class=bodytext>Iqbal, M. <I>The Reconstruction of Religious Thought in Islam</I>. Lahore, 1962.</P>
+<P class=bodytext>Izutsu, T. <I>God and Man in the Koran: Semantics of the Koranic Weltanschauung</I>. Tokyo, 1994.</P>
+<P class=bodytext>Jabri, Mohamed Abed. <I>Arab Political Reason: Determinants and Expressions (al-&#8216;aql al- siyasi al arabi : muhaddidatuh wa tajalliyatuh</I>). Casablanca, 1990.</P>
+<P class=bodytext>Jabri, V. <I>Discourses on Violence: Conflict Analysis Reconsidered</I>. New York, 1996.</P>
+<P class=bodytext>Jalaeipour, Hamidreza. &#8216;Religious Intellectuals and Political Action in the Reform Movement&#8217;, paper presented at a conference on &#8216;Intellectual Trends in 20th Century Iran&#8217;, Princeton University, 21 Oct. 2000; available at &lt;www.seraj. org&gt;.</P>
+<P class=bodytext>Kalaycioglu, Ersin. &#8216;Civil Society in Turkey: Continuity and Change?&#8217;, in Brian W. Beely, ed., <I>Turkish Transformation: New Century, New Challenges.</I> Walkington, 2001.</P>
+<P class=bodytext>--- &#8216;The Shaping of Party Preferences in Turkey: Coping with the Post-Cold War Era&#8217;, <I>New Perspectives on Turkey</I>, 20 (1999), pp. 47-76.</P>
+<P class=bodytext>--- &#8216;T&#252;rkiye&#8217;de Siyasal K&#252;lt&#252;r ve Demokrasi&#8217;, in Ergun &#246;zbudun, Ersin Kalaycioglu and Levent K&#246;ker, ed., <I>T&#252;rkiye&#8217;de Demokratik Siyasal K&#252;lt&#252;r</I>. Ankara, 1995, pp. 43-69.</P>
+<P class=bodytext>Kamali, M. <I>Revolutionary Iran: Civil Society and the State in the Modernization Process</I>. Aldershot, UK, 1998.</P>
+<P class=bodytext>Kamrava, M. &#8216;The Civil Society Discourse in Iran&#8217;, <I>British Journal of Middle Eastern Studies</I>, 28 (2001), pp. 165-85.</P>
+<P class=bodytext>Kandiyoti, D. &#8216;Rural Livelihoods and Social Networks in Uzbekistan&#8217;, <I>Central Asian Survey,</I> 17 (1998), pp. 561-78.</P>
+<P class=bodytext>Karatnycky, A. &#8216;The 2001 Freedom House Survey: Muslim Countries and the Democracy Gap&#8217;, <I>Journal of Democracy</I>, 13 (2002), pp. 99-112.</P>
+<P class=bodytext>Kaviraj, S. and S. Khilnani, ed. <I>Civil Society: History and Possibilities</I>. Cambridge, UK, 2001.</P>
+<P class=bodytext>Kawtharani, Wajih. <I>The Arab Renaissance Project or the Crisis of Evolution from Sultanian to National Society</I>. Beirut, 1995.</P>
+<P class=bodytext>Keane, John, ed., <I>Civil Society and the State: New European Perspectives</I>. New York and London, 1998.</P>
+<P class=bodytext>Keane, John. <I>Civil Society: Old Images, New Visions.</I> Cambridge, UK, 1998.</P>
+<P class=bodytext>Kepel, Gilles. <I>Expansion et d&#233;clin de l&#8217;islamisme</I>. Paris, 2000.</P>
+<P class=bodytext>--- <I>Jihad: The Trail of Political Islam</I>. London and Cambridge, MA, 2002.</P>
+<P class=bodytext>Khan, Gulfishan. <I>Indian Muslim Perceptions of the West during the Eighteenth Century</I>. Karachi, 1998.</P>
+<P class=bodytext>Khiabany, Gholam and Annabelle Sreberny, &#8216;The Iranian Press and the Continuing Struggle over Civil Society 1998-2000&#8217;, <I>Gazette: International Journal for Communication Studies</I>, 63 (2001), pp. 203-23.</P>
+<P class=bodytext>Lewis, Bernard. <I>What Went Wrong? Western Impact and Middle Eastern Response</I>. New York, 2002.</P>
+<P class=bodytext>Maalouf, Amin. <I>In the Name of Identity: Violence and the Need to Belong</I>, tr. B. Bray. New York, 2000.</P>
+<P class=bodytext>Madjid, N. &#8216;Potential Islamic Doctrinal Resources for the Establishment and Appreciation of the Modern Concept of Civil Society&#8217;, in Mitsuo et al., ed., <I>Islam and Civil Society in Southeast Asia</I>. Singapore, 2001.</P>
+<P class=bodytext>Makarova, Ekaterina. &#8216;The Mahalla, Civil Society and the Domestication of the State in Soviet and Post-Soviet Uzbekistan &#8217;, <I>Workshop for Homegrown Models of Civil Society in the Muslim World</I>, Watson Institute for International Studies, Brown University, March 12-13, 1999.</P>
+<P class=bodytext>Makdisi, G. &#8216;The Marriage of Tughril Beg&#8217;, <I>International Journal of Middle Eastern Studies</I> (1970), pp. 259-75.</P>
+<P class=bodytext>Maleshenko, A. and M. B. Olcott. <I>Islam in the Post-Soviet Newly Independent States: The View from Within</I>. New York, 2001.</P>
+<P class=bodytext>Malik, Iftikhar. <I>Islam, Nationalism and the West: Issues of Identity in Pakistan</I>. Oxford, 1999.</P>
+<P class=bodytext><I>--- State and Civil Society in Pakistan: Politics of Authority, Ideology and Ethnicity</I>. Oxford, 1997.</P>
+<P class=bodytext>Martinez, Luis. <I>La guerre civile en Alg&#233;rie</I>. Karthala, 1998. </P>
+<P class=bodytext>Mardin, Serif. &#8216;Center-Periphery Relations: A Key to Turkish Politics?&#8217; in E. Akarh and G. Ben-Dor, eds., <I>Political Participation in Turkey: Historical Background and Present Problems</I>. Istanbul, 1975, pp. 7-32.</P>
+<P class=bodytext>Mayer, Anne Elizabeth. <I>Islam and Human Rights: Tradition and Politics</I>. 2nd ed., London, 1995.</P>
+<P class=bodytext>Merchant, Liaquat H., ed. <I>The Jinnah Anthology</I>. Karachi, 1999.</P>
+<P class=bodytext>Migdal, Joel S. <I>Strong Societies and Weak States: State-Society Relations and State Capabilities in the Third World</I>. Princeton, N.J., 1988.</P>
+<P class=bodytext>Mir-Hosseini, Ziba. <I>Islam and Gender: The Religious Debate in Contemporary Iran</I>. London, 2000.</P>
+<P class=bodytext>Miskawayh. <I>The Refinement of Character</I>, tr. C. K. Zurayk. Beirut, 1968.</P>
+<P class=bodytext>Mitra, Subrata, ed. <I>Sub-national Movements in South Asia</I>. Boulder and Oxford, 1996.</P>
+<P class=bodytext>Monshipouri, M. &#8216;State Prerogatives, Civil Society and Liberalization: The Paradoxes of the Late Twentieth Century in the Third World&#8217;,<I> Ethics and International Affairs</I>, 11 (1997), pp. 232-51.</P>
+<P class=bodytext>Mumtaz, Khawar. &#8216;NGOs in Pakistan: An Overview&#8217;, in Tariq Banuri, et al. eds., <I>Just Development: Beyond Adjustment with a Human Face</I>. Karachi, 1997, pp. 171- 190.</P>
+<P class=bodytext>Murshid, Tazeen. &#8216;Nations Imagined and Fragmented: Bengali Ethnicity and the Break up of Pakistan&#8217;, in W. van Schendel and E. J. Zurcher, eds., <I>Identity Politics in Central Asia and the Muslim World: Nationalism, Ethnicity and Labour in the Twentieth Century</I>. London, 2001, pp. 85-105.</P>
+<P class=bodytext>Muzaffar, C. &#8216;Ethnicity, Ethnic Conflict and Human Rights in Malaysia&#8217;, in C. E. Welch and V. A. Leary, eds., <I>Asian Perspectives on Human Rights</I>. Boulder, CO, 1990, pp. 107-41.</P>
+<P class=bodytext>Najmabadi, Afsaneh. &#8216;Feminism in an Islamic Republic: Years of Hardship, Years of Growth&#8217;, in Yvonne Yazbeck Haddad and John L. Esposito, eds., <I>Islam, Gender and Social Change</I>. Oxford, 1988, pp. 59-84.</P>
+<P class=bodytext>Neuhaus, Richard John. <I>The Naked Public Square: Religion and Democracy in America</I>. Grand Rapids, MI, 1984.</P>
+<P class=bodytext>Newberg, Paula. <I>Judging the State: Courts and Constitutional Politics in Pakistan</I>. Cambridge, 1995.</P>
+<P class=bodytext>Norton, Augustus Richard, ed. <I>Civil Society in the Middle East</I>. Leiden and New York, 1994, vol. 1 and 1995, vol. 2.</P>
+<P class=bodytext>Olcott Martha B. and N. Udalova. <I>Drug Trafficking on the Great Silk Road: The Security Environment in Central Asia</I>. Working Papers, Carnegie Endowment for International Peace, 11 (March, 2000). <I>Opinion Analysis</I>, Office of Research Department of State, Washington DC (July 6, 2000).</P>
+<P class=bodytext>Owusu, M. &#8216;Domesticating Democracy: Culture, Civil Society and Consititutionalism in Africa&#8217;, <I>Comparative Studies in Society and History</I>, 39 (1997), pp. 120-52.</P>
+<P class=bodytext>&#246;zdalga, Elisabeth. &#8216;Civil Society and Its Enemies&#8217;, in Elisabeth &#246;zdalga and Sune Persson, ed., <I>Civil Society, Democracy, and the Muslim World</I>. Istanbul, 1997. </P>
+<P class=bodytext>Pasha-zade, A.S. <I>Islam in the Caucasus</I>. Baku, 1991.</P>
+<P class=bodytext>Pippin, R. B. &#8216;The Ethical Status of Civility?&#8217;, in L. S. Rouner, ed., <I>Civility</I>. Notre Dame, IN, 2000, pp. 103-17.</P>
+<P class=bodytext>Piscatori, James. <I>Islam, Islamists, and the Electoral Principle in the Middle East</I>. Leiden, 2000.</P>
+<P class=bodytext>Plagemann, Gottfried. &#8216;Human Rights Organizations: Defending the Particular or the Universal?&#8217;, in Stefanos Yerasimos et. al., eds., <I>Civil Society in the Grip of Nationalism: Studies on Political Culture in Contemporary Turkey</I>. Istanbul, 2000, pp. 433-73.</P>
+<P class=bodytext>Popper, Karl. <I>The Open Society and its Enemies</I>, vol. 1. London, 1945; repr. London, 1999.</P>
+<P class=bodytext>Pusch, Barbara. &#8216;Stepping into the Public Sphere: The Rise of Islamist and Religious-Conservative Women&#8217;s Non-Governmental Organizations&#8217;, in Stefanos Yerasimos et. al., eds., <I>Civil Society in the Grip of Nationalism: Studies on Political Culture in Contemporary Turkey</I>. Istanbul, 2000, pp. 475-505. </P>
+<P class=bodytext>Putname, R. D. <I>Bowling Alone: The Collapse and Revival of American Community</I>. New York, 2000.</P>
+<P class=bodytext>Pye, L. <I>Asian Power and Politics: The Cultural Dimensions of Authority</I>. Cambridge, MA, 1985.</P>
+<P class=bodytext>Rahnema, Ali. <I>An Islamic Utopian: A Political Biography of Ali Shari&#8216;ati</I>. London and New York, 1998.</P>
+<P class=bodytext>Rashid, Ahmed. <I>Jihad: The Rise of Militant Islam in Central Asia</I>. New Haven, CT, 2002.</P>
+<P class=bodytext>Rawls, John. <I>A Theory of Justice</I>. Rev. ed. Cambridge, MA, 1999.</P>
+<P class=bodytext>Ro&#8217;i, Y. <I>Islam in the Soviet Union: From World War II to Perestroika</I>. London, 2000.</P>
+<P class=bodytext><I>--- &#8216;Rowshan-fekri-ye dini va mas&#8217;aleh-ye zanan&#8217;</I>, (&#8216;Religious Intellectualism and the Woman Question&#8217;) <I>Rah-e Now</I> 1 (16), 17 Mordad 1377, pp. 32-33.</P>
+<P class=bodytext>Rorty, Richard. &#8216;The Priority of Democracy to Philosophy&#8217; in <I>Objectivity, Relativism and Truth: Philosophical Papers</I>. Cambridge, UK, 1991, vol. 1.</P>
+<P class=bodytext>Roy, Olivier. &#8216;Kolkhoz and Civil Society in the Independent States of Central Asia&#8217;, in Ruffin and Waugh, ed., <I>Civil Society in Central Asia</I>. Baltimore and Seattle, 1999, pp. 109-21. </P>
+<P class=bodytext>--- <I>The Failure of Political Islam</I>. Cambridge, Mass., 1994.</P>
+<P class=bodytext>--- <I>The New Central Asia</I>. London, 2000.</P>
+<P class=bodytext>Ruffin, Holt and Daniel Waugh, ed. <I>Civil Society in Central Asia</I>. Baltimore and Seattle, 1999. </P>
+<P class=bodytext>Rzayeva, L. &#8216;Azerbaijani Intellectuals during the Transition&#8217;, <I>Central Eurasian Studies Review</I>, 1 (2002), pp. 13-14.</P>
+<P class=bodytext>Sadri, M. and A. Sadri, eds. <I>Reason, Freedom and Democracy in Islam: Essential Writings of &#8216;Abdolkarim Soroush</I>. Oxford, 2000.</P>
+<P class=bodytext>Saghafi, Morad. &#8216;Crossing the Deserts: Iranian Intellectuals after the Islamic Republic&#8217;, <I>Critique: Journal for Critical Studies of the Middle East</I>, 18 (2001), pp. 15-46.</P>
+<P class=bodytext>Said, Edward. &#8216;Impossible Histories: Why the many Islams cannot be simplified&#8217;, <I>Harper&#8217;s Magazine</I>, July 2002, pp. 69-74.</P>
+<P class=bodytext>Sajoo, Amyn B. &#8216;The Islamic Ethos and the Spirit of Humanism&#8217;, <I>Internationational Journal of Politics, Culture and Society</I>, 8 (1995), pp. 579-96.</P>
+<P class=bodytext>--- <I>Pluralism in Old Societies and New States</I>. Singapore, 1994.</P>
+<P class=bodytext>--- Review of Ernest Gellner, <I>Conditions of Liberty: Civil Society and its Rivals</I>, <I>Canadian Journal of Law and Society</I>, 11 (1996), pp. 307-10.</P>
+<P class=bodytext>Sandel, M. <I>Liberalism and the Limits of Justice</I>. Cambridge, 1998.</P>
+<P class=bodytext>Saul, J. R. <I>On Equilibrium</I>. Toronto, New York and London, 2001, pp. 65-7, 86.</P>
+<P class=bodytext>Schirazi, Asghar. <I>The Constitution of Iran: Politics and the State in the Islamic Republic</I>, tr. John O&#8217;Kane. London, 1998.</P>
+<P class=bodytext>Seligman, Adam B. <I>The Idea of Civil Society</I>. Princeton, NJ, 1992.</P>
+<P class=bodytext>Shahrani, Nazif. &#8216;Re-building Communities of Trust in Muslim Central Asia: Past Legacies and Future Prospects&#8217;, <I>Workshop for Home-grown Models of Civil Society in the Muslim World</I> (Watson Institute for International Studies, Brown University, March 12-13, 1999).</P>
+<P class=bodytext>Shaikh, Farzana. <I>Community and Consensus in Islam: Muslim Representation in Colonial India, 1860-1947</I>. Cambridge, 1989.</P>
+<P class=bodytext>Sharabi, Hicham. <I>Neopatriarchy: A Theory of Distorted Change in Arab Society</I>. Oxford, 1988.</P>
+<P class=bodytext>Smith, J. <I>Moralities: Sex, Money and Power in the Twenty-First Century</I>. London, 2001.</P>
+<P class=bodytext>Smith-Christopher, D. L. &#8216;&#8220;That was Then ... &#8221;: Debating Nonviolence within the Textual Traditions of Judaism, Christianity and Islam&#8217;, in J. Runzo and N. M. Martin, eds., <I>Ethics in the World Religions</I>. New York and Oxford, 2001, pp. 256-9.</P>
+<P class=bodytext>Soroush, Abdolkarim. &#8216;Reforming the Revolution&#8217;, tr. Nilou Mobasser, <I>Index on Censorship</I> (London), Janurary 2002, pp. 64-77.</P>
+<P class=bodytext>Sunar, Ilkay. &#8216;Politics of Citizenship in the Middle East: An Agenda for Research&#8217;, in <I>Suna Kili&#8217;ye Armagan: Cumhuriyet&#8217;e Adanan bir Yasam</I>. Istanbul, 1998, pp. 365- 71.</P>
+<P class=bodytext>Open Society Institute. <I>Tajikistan: Refugee Reintegration and Conflict Prevention</I>. New York, 1998. </P>
+<P class=bodytext>Talaqani, Azam. &#8216;Fa&#8216;aliyat-ha-ye dah saleh-ye mo&#8217;assaseh-ye eslami-ye zanan-e Iran&#8217; (Ten Years&#8217; Activities of the Islamic Institute of Iranian Women), <I>Daftar-e Dovvom: Masa&#8217;el-e Zanan</I> (Second Volume: Women&#8217;s Issues). Tehran, 1991, pp. 1-10.</P>
+<P class=bodytext>Tarock, Adam. &#8216;The Muzzling of the Liberal Press in Iran&#8217;, <I>Third World Quarterly</I>, 22 (2001), pp. 585-602.</P>
+<P class=bodytext>Taylor, Charles. <I>Philosophical Arguments</I>. Cambridge, MA and London, 1995.</P>
+<P class=bodytext>--- <I>The Ethics of Authenticity</I>. Cambridge, MA, 1992.</P>
+<P class=bodytext>Teitelbaum, J. <I>Holier than Thou: Saudi Arabia&#8217;s Islamic Opposition</I>. Washington, DC, 2000.</P>
+<P class=bodytext>Thiemann, R. <I>Religion in Public Life: A Dilemma for Demoracy</I>. Washington DC, 1996.</P>
+<P class=bodytext>Tibi, B. <I>Islam between Culture and Politics</I>. New York, 2001.</P>
+<P class=bodytext>Tohidi, N. &#8216;Soviet in Public, Azeri in Private: Gender, Islam, and Nationalism in Soviet and Post-Soviet Azerbaijan&#8217; (Hoover Institution Working Paper). Stanford, Calif., 1995.</P>
+<P class=bodytext>Toprak, Binnaz. &#8216;Civil Society in Turkey&#8217;, in Augustus Richard Norton, ed., <I>Civil Society in the Middle East</I>. Leiden, 1996, pp. 87-118.</P>
+<P class=bodytext>Tornquist, Olle. <I>Tajikistan: Human Development Report 2000</I>. New York, 2000.</P>
+<P class=bodytext>Turner, B. S. <I>Orientalism, Post-modernism and Globalism</I>. London and New York, 1994.</P>
+<P class=bodytext>Tusi, Nasir al-Din. <I>The Nasirean Ethics</I>, tr. G. M. Wickens. London, 1964.</P>
+<P class=bodytext>United Nations Development Programme. <I>Human Development Report</I>. New York and Oxford, 2002.</P>
+<P class=bodytext>Viswanathan, G., ed. <I>Power, Politics and Culture: Interviews with Edward Said</I>. New York, 2001.</P>
+<P class=bodytext>Walzer, Michael. <I>The Revolution of the Saints</I>. Cambridge, MA, 1965.</P>
+<P class=bodytext>Walzer, R. <I>al-Farabi on the Perfect State</I>. Oxford, 1985.</P>
+<P class=bodytext>Weiss, B. &#8216;Interpretation in Islamic Law: The Process of Ijtihad&#8217;, <I>American Journal of Comparative Law</I>, 26 (1978), p. 199.</P>
+<P class=bodytext>Wiktorowicz, Q. and S. Taji-Farouki. &#8216;Islamic NGOs and Muslim Politics: A Case from Jordan&#8217;, <I>Third World Quarterly</I>, 21 (2000), pp. 685-99.</P>
+<P class=bodytext>Wright, R. &#8216;Two Visions of Reformation&#8217; (on Soroush and Ghannouchi), <I>Journal of Democracy</I>, 7 (1996), pp. 64-75.</P>
+<P class=bodytext>--- <I>The Last Great Revolution: Turmoil and Transformation in Iran</I>. New York, 2000.</P>
+<P class=bodytext>Yalman, Nur. &#8216;Some Observations on Secularism in Islam: The Cultural Revolution in Turkey&#8217;, <I>Daedalus</I>, 102 (1973), pp. 139-67.</P>
+<P class=bodytext>Yamamoto, T., ed. <I>Emerging Civil Society in the Asia Pacific Community</I>. Singapore, 1995.</P>
+<P class=bodytext>Yavuzyigit, Hikmet. &#8216;Derneklerin Demokratik Toplumsal Yapiya Katkisi&#8217;, <I>M&#252;lkiyeliler Birligi Dergisi</I>, vol. XXII No 210-12 (1998), pp. 62-69.</P>
+<P class=bodytext>Zeghal, Malika. <I>Gardiens de l&#8217;islam: Les oul&#233;mas d&#8217;Al-Azhar dans l&#8217;Egypte contemporaine</I>. Paris, 1996. </P></div><p>Content Date: August 2002</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Civil Society in the Muslim World: Contemporary Perspectives</TITLE><META HTTP-EQUIV="Expires" CONTENT="Fri, 13 Nov 2015 13:49:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/06/2010&nbsp;11:48&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105678 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:59:51 GMT -->
+</HTML>

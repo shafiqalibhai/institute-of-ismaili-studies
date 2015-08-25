@@ -1,0 +1,601 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113487 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:25 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 113487;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only14c9.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D113487">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articleddf9.html?type=cont.currentlang&amp;id=110963&amp;l=en" >Objectives</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article9cda.html?type=cont.currentlang&amp;id=110968&amp;l=en" >Staff and Research</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article2212.html?type=cont.currentlang&amp;id=110973&amp;l=en" >Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article63e3.html?type=cont.currentlang&amp;id=111028&amp;l=en" >Seminars and Conferences</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4f22.html?type=cont.currentlang&amp;id=110978&amp;l=en" >Related Material</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<h3 xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">The Gwalior Qur&#8217;an Manuscript: Abstracts</h3><DIV><B>The Gwalior Qur&#8217;an Manuscript: The Polysemy of an Illuminated Codex</B></DIV>
+<DIV>Paris, 14&#8211;15 June, 2012</DIV>
+<DIV>Institut National d&#8217;Histoire de l&#8217;Art and the Biblioth&#232;que Nationale de France (Site Richelieu).</DIV><BR><BR>
+<DIV align=center>
+<TABLE style="WIDTH: 380px; BORDER-COLLAPSE: collapse" cellSpacing=9 cellPadding=9>
+<TBODY>
+<TR>
+<TD style="BORDER-BOTTOM: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-RIGHT: gray 1px solid">
+<DIV align=left><A href="view_article7103.html?type=cont.currentlang&amp;id=113472">Conference introduction</A><BR><A href="view_article2704.html?type=cont.currentlang&amp;id=113477">Conference programme</A><BR><A href="view_articled5f3.html?type=cont.currentlang&amp;id=113482">Biographies</A><BR><STRONG>Abstracts</STRONG></DIV></TD></TR></TBODY></TABLE></DIV><BR><BR>
+<DIV><B><I>The Process of Decorating the Gwalior Qur&#8217;an Manuscript: A Preliminary Study</I></B></DIV>
+<DIV><I>Nourane Ben Azzouna (Agence France Museums/Louvre Abu Dhabi) and Patricia Roger-Puyo (Institut de Recherche sur les Arch&#233;omat&#233;riaux, CRNS, Orl&#233;ans)</I></DIV><BR>
+<P>The Gwalior Qur&#8217;an manuscript is an interesting manuscript on more than one count, particularly because of its rich and varied decoration. We first present a practical study of these decorations resulting from visual and spectrometric analysis using two techniques: absorption spectrometry through diffuse reflection within the visible spectrum and X-ray fluorescence. </P>
+<P>Few pre-Mughal Indian manuscripts have as yet undergone similar analysis. The first objective of our work is thus to identify the palette of pigments and colours used in the manuscript and to evaluate it with reference to the sources and studies available on the subject. However, the physical examination goes hand in hand with stylistic analysis, with the aim of discovering whether the technical variety echoes the stylistic variety observable to the naked eye. Can we identify several techniques which correspond to the varied styles of several artists? Is it possible to discern a clear structure within the work? Are the decorations in this Qur&#8217;an manuscript the product of a workshop? The aim of this twofold approach is to try and understand the process used in decorating the manuscript.</P>
+<P><I></I></P>
+<DIV><B><I>The Decorations of the Gwalior Qur&#8217;an Manuscript: Deconstruction and Elements for Comparison</I></B></DIV>
+<DIV><I>Mathilde Cruvelier (University of Paris &#8211; Sorbonne) and Frantz Chaigne (University of Paris &#8211; Sorbonne)</I></DIV><BR>
+<P>The aim of this paper is to suggest a way of describing the illuminations of this Qur&#8217;an manuscript, emphasising the unique context in which it was created. To this end, we will show how it fits into the styles widely used throughout the Mamluk and Iranian worlds (e.g. by the Ilkhan dynasty and its Injuid, Muzaffarid and Jalayirid successors), even in Anatolia or Central Asia, while adopting motifs that originated in Indian culture. We will also show how an entirely original synthesis developed from these remarkable elements. </P>
+<P>In an attempt to locate and identify these elements, be they structural or ornamental, we will deconstruct the decorations by means of successive focussing, concentrating on comparisons with all the above-mentioned cultures. The first part of this presentation will examine the macrostructures of the double frontispieces: following the functional approach, we will show that they may be divided into three groups, namely the opening frontispiece, the double frontispieces which mark the <I>juz&#8217;</I>, and those which mark the quadripartite division of the manuscript. </P>
+<P>Moving on from this approach, we will continue to develop a more formal classification with reference to their methods of creation. We will then examine the composition of each of the constituent folios of the double frontispieces, studying hypothetical modules, examining possible symmetries between the two folios and their connection by means of a possible border (intricate structures fashioned from simple threads). </P>
+<P>The second part will be dedicated to geometric decoration: we will show how it can be a tool for the construction of the aforementioned illuminated structures (braids, &#8216;pseudo-braids&#8217;, laces), but also appear in the form of elements covering the background, or as simple adventitious elements in the background. Once again, the examination will benefit from our knowledge of the ornaments used throughout the Middle East. </P>
+<P>The third part of this presentation will focus on the decoration inspired by vegetation. We shall once more describe the structures (arabesques, foliage, garlands, rows of overlapping leaves, bunches of flowers, etc.) and classify them according to their position within the decoration and the function they fulfil there. These structures will, in turn, be broken down into their constituent elements, such as palmettes, leaves, petals, lotus flowers, tufts of grass, and others which were probably inspired by eastern poppies and cotton flowers. Finally, a look at the vegetation-style decorations will highlight the part played by the arabesque throughout the world of Islamic art, with reference to how they are constructed as well as where they are found. </P>
+<P>The final part will allow us to draw attention to the rich palette of colours used in this Qur&#8217;an manuscript, how they are used and even the techniques employed by the illuminator/s: the predominance of gold, which is applied with great care in the composition of structures as well as when filling them in, means that no part of the illumination is left in the shade, as every single leaf glitters. Finally, the variety of techniques remembered in drawing the outlines and the positioning of the colours within one and the same codex deserve our attention, as they appear to be one of a kind in India; indeed, in the entire Islamic world.</P>
+<P><I></I></P>
+<DIV><B><I>Variety in Calligraphy and Cultural Exchange: Reflections on the transmission of the Gwalior Qur&#8217;an Manuscript</I></B></DIV>
+<DIV><I>Marie Lamaa (Centre Phoenix pour les &#201;tudes Libanaises, Saint-Esprit University, Kaslik, Lebanon)</I></DIV><BR>
+<P>In this paper, I present a &#8216;graphic directory&#8217; of the styles used in the compilation of the text of the Gwalior Qur&#8217;an manuscript during the late fourteenth century. The variety of styles is meant to be just as manifold as the decorations. The presence of foliate <I>kufi</I>, <I>muhaqqaq</I>, <I>thuluth</I>, <I>naskh</I> and <I>bihari</I> calligraphic styles bear witness to the fact that numerous different writing styles were in circulation all over the Islamic world, from their land of origin &#8211; in Egypt, the Near East and Persia &#8211; to India at the time of the sultanates. At this level, the calligrapher steps in; he is a highly cultured person who works in an environment of conquest and major political upheaval, producing a work of the highest quality.</P>
+<P><I></I></P>
+<DIV><B><I>Lotus and Tracery, From China and Iran to India at the Time of the Sultanates</I></B></DIV>
+<DIV><I>Yves Porter (University of Aix-Marseille) </I></DIV>
+<P>The lotus flower, originating within the decorative catalogue of China, is found everywhere in Iranian art during the rule of the Ilkhans (late thirteenth to early fourteenth century); we see it in illuminated manuscripts as well as on the so-called &#8216;Sultanabad ceramics&#8217; and in the inlays on metal objects.</P>
+<P>In the Sultanate period in India, the lotus in the Chinese style had a rather more limited flowering. After the dynasties of Delhi, where the lotus was a motif borrowed mostly from the local decorative style, the form of the flower with its leaf in the Chinese style was probably introduced along two routes: firstly, and probably directly, with imports of ceramics (and other items, notably silk products) from China; Firuz Shah Kotla&#8217;s finds illustrate this very well. The other, less direct, way indicates influences transmitted via the art of Iran or the Mamluk region, particularly where illuminated manuscripts are concerned. </P>
+<P>Though the lotus flower dominates on the frontispieces of the Gwalior Qur&#8217;an manuscript, there are very few in architectural decoration dating from the late fourteenth century. We may well ask whether this document is really representative of artworks created during a time for which we have so very little evidence. A notable exception may be seen on the Adina Mosque in Pandua (1364&#8211;75): this monument, which stands in a city that was once the capital of the Sultanate of Bengal, is a milestone (as rare as it is enchanting) on the road that this floral motif took across the sub-continent.</P>
+<P>Thus, the aim of this paper is to ask where motifs in the Chinese style, such as lotus flowers and leaves, would have been in circulation, and to trace their movement from their point of origin in Yuan China all the way to their final destination in the decorations of books and architecture in India at the time of the sultanates. In addition, we will attempt to unwind the tangle of motifs of less certain origins, such as &#8216;Taoist&#8217; knots and the play of tracery that grew out of them.</P>
+<P><I></I></P>
+<DIV><B><I>The Context of the Gwalior Qur&#8217;an Manuscript: Some Iranian Comparisons</I></B></DIV>
+<DIV><I>Francis Richard (Biblioth&#232;que Universitaire des Langues et Civilisations, Paris)</I></DIV><BR>
+<P>The Gwalior Qur&#8217;an manuscript possesses an exceptional wealth of decoration. By comparing it with Iranian manuscripts, we are able to find traces of a number of possible influences. Some manuscripts (such as MS Sprenger 1475 in the Staatsbibliothek, Berlin) allow us to catch a glimpse of the links between Muzaffarid production in Fars and India at the time of the sultanates. The number of surviving manuscripts is too small to allow us to assess what originated in Central Asia and what came from southern Iran. This paper particularly emphasises certain possible points of comparison. The palette of colours and certain specific characters of the writing frequently present us with many difficulties when trying to determine their origin.</P>
+<P>It now remains to find out how this influence occurred. We are aware of the close links between the Sufis of Fars and India during the fourteenth century. We still have to ask the question: are we looking at a firmly established tradition, or at a hybrid art form which is trying to fulfil the aesthetic expectations of India by drawing on the catalogue of the art of Iranian and Near Eastern books of the time?</P>
+<DIV><B><I>The Qur&#8217;an MS W.563 of the Walters Art Museum in Baltimore: A Manuscript from the Sultanate Period in India with Ornamental Decorations in the Persian Style</I></B></DIV>
+<DIV><I>Simon Rettig (Freie Universit&#228;t Berlin)</I></DIV><BR>
+<P>Many undated copies of the Qur&#8217;an are assumed to have been created in India during the fourteenth and fifteenth centuries, not only because of their codicological characteristics but also because of their particular style of ornamentation. Thus the Qur&#8217;an MS W.563, which is held by the Walters Art Museum in Baltimore, seems to belong to this large and varied group, of which the Gwalior Qur&#8217;an manuscript from the Aga Khan Collection is the most significant example. Nevertheless, the manuscript has special stylistic features which lead us to consider that the evolution of the design was a complex one. The aim of this presentation is to put forward some hypotheses with regards to the origins and sources of the decorations in the Qur&#8217;an MS W.563 as well as the date of its creation.</P>
+<P>The copy of the Qur&#8217;anic text contains additional marginal notes: commentaries, instructions for the recitation, translation into Persian and <I>fal nama</I>; so many textual additions which should be analysed just as thoroughly as the different forms of writing used in copying and arranging them. Besides the interest raised by these styles of writing, the wealth of illuminated decoration throughout the book is evidence of the extraordinary vitality of manuscript workshops in eastern Iran between 1400 and 1500 CE, and the exchanges that took place between these centres of production. </P>
+<P>The ornamental composition appears to be greatly indebted to contemporary Timurid models, which ought to be compared to this manuscript. Indeed, the &#8216;architecture&#8217; of the illuminated pages and the arrangement of the decorations would appear to imitate Persian examples. Similarly, the ornamental vocabulary is, to a great extent, inspired by Iranian art, particularly that of Fars. From this perspective, a comparison with art from the workshops of Shiraz in the first third of the fifteenth century under Eskandar Soltan and Ebrahim Soltan would appear particularly relevant. </P>
+<P>Some decorations, however, as well as the range of colours used, mainly reflect the aesthetic codes that were typical of India at the time of the sultanates. The manuscript not only invites us to study the complex fusion of Persian decorative styles, and motifs and forms typical of book art of pre-Mughal India, but also to reflect on Persian &#8216;taste&#8217; and its assimilation into the Indian context during the fifteenth century. </P>
+<P>The seal of Sultan Bayazid II (1481&#8211;1512 CE), finally, lets us establish a connection with contemporary Ottoman society. The binding that protects the manuscript to this day was probably added in Istanbul. Thus, this is so far the only copy of a Qur&#8217;an manuscript from India to have found its way into the Ottoman collections at such an early date. Consequently, we should wonder about the reasons for and possible consequences of this relocation.</P>
+<DIV><B><I>Marginal Glosses and fal nama of the Gwalior Qur&#8217;an Manuscript: Evidence of the Uses of the Qur&#8217;an in India at the Time of the Sultanates</I></B></DIV>
+<DIV><I>Sabrina Alilouche (University of Paris &#8211; Sorbonne) and Ghazaleh Esmailpour Qouchani (University of Paris &#8211; Sorbonne)</I></DIV><BR>
+<P>In this joint lecture we aim to present our research on the book of divination found at the end of the Gwalior Qur&#8217;an manuscript, as well as the marginal glosses in Persian and Arabic which run parallel to the Qur&#8217;anic text and are scattered throughout the manuscript. The presence of a <I>fal nama</I>, usually associated with glosses that highlight the merit of a sura (<I>fadl al-sura</I>) or contain instructions for readings and corrections, is entirely unusual. These elements supply valuable information about the context in which this Qur&#8217;an manuscript was produced, which was certainly connected to religious circles in Gwalior at the end of the fourteenth century.</P>
+<P>The association between the Qur&#8217;anic text and divination practices in the Middle Ages is a subject that has been given little attention. As the Gwalior Qur&#8217;an manuscript is the earliest exemplar containing a dated <I>fal nama</I>, analysing it is of considerable importance. We have read and studied this manual of divination together with three other Indian Qur&#8217;ans of a similar, or slightly later, date, kept in the <I></I>Biblioth&#232;que Nationale de France (MS Arabe 7260), in the Keir Collection (MS no. 19) and in the Walters Art Museum (MS W.563), respectively. The rather unconventional appearance of this Qur&#8217;an manuscript makes it necessary to study its orthographical and calligraphic particularities as well as the contents of the interpretations of the letters of the Arabic alphabet of the <I>fal nama</I> which have a link with old-established<I> </I>magical practice. </P>
+<P>The Persian and Arabic marginal glosses, which occur frequently throughout the Qur&#8217;anic text, constitute another of the special features of this manuscript. They may be divided into seven groups to reflect the didactic extent of the work. Thus, in the annotations we find words that the copyist of the Qur&#8217;anic text omitted, corrections in a different hand, textual variants, instructions on how to pronounce and recite the text, but also on the gestures to be made while reading, on the letters relating to the division of the text and, finally, <I>fadl al-sura</I>. Variant readings and corrections are supported by one or more names. There are six names which appear throughout the Gwalior Qur&#8217;an manuscript, which have been identified in comparison with the Qur&#8217;an of the Walters Art Museum (MS W. 563). </P>
+<P>In its first folios, the latter has the names of the so-called seven canonical readers of the Qur&#8217;an, each of them together with his two reciters, who are recognised in a normative list drawn up by al-Shatibi during the twelfth century CE. In the Gwalior Qur&#8217;an manuscript, only four of the seven are quoted, and two reciters. This selection from among the canonical readings may be an indication of the context of the creation of the manuscript: did the community for which this Qur&#8217;an was copied only recognise four of the seven canonical readings?</P>
+<P>These glosses on the correct readings are all the more striking as they are found next to <I>fadl al-sura </I>inspired by &#8216;apocryphal&#8217; hadiths, as well as a final <I>fal nama</I>. It would be interesting, therefore, to establish the sum of the connections inherent in this coexistence of elements which appear to be contradictory, but which are probably part of the socio-religious make-up prevalent when the Gwalior Qur&#8217;an manuscript was produced.</P>
+<P><I></I></P>
+<DIV><B><I>The &#8220;Restored&#8221; Shi&#8216;i Mushaf as Divine Guide? The Practice of fal-i Qur&#8217;an in the Safavid Period</I></B></DIV>
+<DIV><I>Christiane Gruber (University of Michigan, Ann Arbor)</I><I></I></DIV><BR>
+<P>This presentation will show that the exponential growth of divinatory texts variously attributed to &#8216;Ali and Ja&#8216;far al-Sadiq included at the end of Qur&#8217;an manuscripts produced during the Safavid period provides further evidence for the widespread interest in divination during the sixteenth and seventeenth centuries in Iran. Treatises on divination by the Qur&#8217;an (<I>fal-i Qur&#8217;an</I>) reveal that it was considered &#8216;permissible&#8217; to seek guidance by means of the Scripture at this time. </P>
+<P>On a more symbolic level, <I>fal-i Qur&#8217;an </I>works can be understood as a kind of restoration of the &#8216;defective&#8217; &#8216;Uthmanic codex by &#8216;re-Shi&#8216;ifying&#8217; it &#8211; if not by reinserting supposedly dropped verses on the <I>ahl al-bayt</I>, then at the very least by adding divinations attributed to the figureheads of Shi&#8216;i Islam. This particular practice therefore follows general &#8216;Shi&#8216;ification&#8217; trends found in a number of cultural and artistic practices of the Safavid period, which also are potentially discernible within the domain of Qur&#8217;anic manuscripts production.</P>
+<P><I></I></P>
+<DIV><B><I>The Written Word and Practice: The Book in Divinatory and Magico-Therapeutic Practices in Contemporary Yemen (the High Plateaus and Tihama)</I></B><B> </B></DIV>
+<DIV><I>Anne Regourd (Institute for Social Anthropology, Austrian Academy of Sciences, Vienna)</I></DIV><BR>
+<P>The book, and with it its manuscript codices, is of great cultural and social importance in the Yemen. Combining the written word on the one hand with divinatory and magico-therapeutic practices on the other may be understood in a number of ways. This paper focuses on the question of how the text was introduced into the practice, beginning with the question of whether there was a chain of transmission for this kind of knowledge, and its sociological implications, on the Yemeni high plateaus and in the Tihama region along the Red Sea. A few examples will be considered.</P>
+<P><I></I></P>
+<DIV><B><I>Writing the Qur&#8217;an: To What End?</I></B><B> </B></DIV>
+<DIV><I>Asma Hilali (The Institute of Ismaili Studies, London)</I></DIV><BR>
+<P>The question of literary genre, in the context of the religious literature of the first three centuries of the Islamic era, requires a new approach. The connection between the Qur&#8217;an, hadith and intermediary texts has yet to be studied. What exactly was being referred to when people spoke of &#8216;<I>hadith</I>&#8217;, or &#8216;<I>hadith</I> <I>qudsi&#8217;</I>, or even &#8216;the Qur&#8217;an&#8217; during the first centuries of the Islamic era? </P>
+<P>This paper deals with the first three centuries, a period during which transmission history developed towards the division of disciplines into <I>hadith</I>, <I>fiqh</I>, <I>tafsir</I>, etc. In the first part of my presentation, I will describe the history of the circles of transmission of texts during the first centuries of the Islamic era, and I will show the confusion that existed between the (later) genres of &#8216;Qur&#8217;an&#8217; and &#8216;<I>hadith</I>&#8217;; the resulting creative confusion of literary genres may be referred to as &#8216;intermediary genres&#8217;. </P>
+<P>In the second part, I will analyse textual aspects which are connected to this confusion of genres, with reference to two examples: the oldest Qur&#8217;anic manuscript, the San&#8216;a palimpsest, and an example from a later period, the Gwalior Qur&#8217;an manuscript.</P>
+<P><I></I></P>
+<DIV><B><I>Muslim Settlement in Gwalior and India before the Fourteenth Century</I></B></DIV>
+<DIV><I>Johanna Blayac (University of Paris 8 &#8211; Centre d&#8217;&#201;tudes l&#8217;Inde et de l&#8217;Asie du Sud)</I></DIV><BR>
+<P>This paper sets out to consider the available documents on the subject of the Muslim presence in Gwalior and India before the fourteenth century. Thus, it will mention the commercial networks which connected India with the Muslim world, as well as the territorial development of the Sultanate of Delhi (1210&#8211;1526 CE) and its possible links to alternative powers already existing and/or emerging here. Altogether, it will show, especially with reference to the exceptional example of the Gwalior Qur&#8217;an manuscript, that art history is an essential discipline for studying and understanding the history of the earliest Indian sultanates and Indo-Muslim society.</P>
+<P><I></I></P>
+<DIV><B><I>The Gwalior Qur&#8217;an Manuscript and the Ghurid Legacy to Indo-Islamic Art</I></B></DIV>
+<DIV><I>Finbar Barry Flood (Institute of Fine Arts, New York University)</I><I></I></DIV><BR>
+<P>The ephemeral nature of the Ghurid sultanate of Afghanistan and north India (ca. 1150&#8211;1206 CE), and the paucity of manuscripts and other portable objects that can be securely attributed to Ghurid patronage make it difficult to evaluate its artistic legacy. This is especially true in north India, where the collapse of the Ghurid polity, the emergence of an independent sultanate, and the disruptions associated with the Mongol invasions of eastern Iran and Afghanistan severed the political links between Delhi and the ancestral homelands of its former overlords to the west. </P>
+<P>Despite this, both material and textual evidence attest to the cultural links between the Delhi sultanate, the regional Indo-Islamic courts that arose during the course of the fourteenth century, and the wider Islamic world. The architecture of the sultanate period is, for example, characterised by eclecticism and innovation in its morphological, stylistic and technical aspects, witnessing the introduction of architectural forms and modes of decoration that find affinities as far west as Anatolia. Some of these formal and stylistic affinities are likely to result from mobility and migration between South Asia and the Islamic lands to the west. </P>
+<P>If Sultanate architecture offers a tangible remnant of what Janet Abu-Lughod famously called the fourteenth-century &#8216;world system&#8217;, the roots of its penchant for eclecticism may lie earlier. Although it is easier to argue this for architecture than the portable arts, aspects of a unique Ghurid Qur&#8217;an manuscript completed in 1189 CE seem to anticipate those of the Gwalior Qur&#8217;an manuscript. Using analogies between these Qur&#8217;an copies as a point of departure, this paper explores the possibility that the stylistic eclecticism manifest in the calligraphy and ornamentation of the Gwalior Qur&#8217;an manuscript continues a tradition pioneered in the art of the Ghurid sultanate. In doing so, it also considers the role of migration and mobility in expanding the stylistic repertoires of Indo-Persian artists and the tastes of Indo-Persian elites during the thirteenth and fourteenth centuries CE.</P>
+<DIV><B><I>Kalpa Sutra and the Qur&#8217;an: Some Thoughts on the Writing and Painting of Jain Manuscripts from Western India from the Fourteenth Century Onwards</I></B></DIV>
+<DIV><I>Nalini Balbir (Universit&#233; Sorbonne Nouvelle &#8211; Paris 3)</I></DIV><BR>
+<P>Among the Svetambara Jain communities of Western India, the Kalpa Sutra is a text that has had unparalleled ceremonial significance, particularly since the thirteenth/fourteenth centuries CE. It exists in many manuscript copies, whose material value is not insignificant either: visual proof is supplied by calligraphy, illustration and decorative motifs, all of which confirm that the Kalpa Sutra manuscripts are comparable to Qur&#8217;an manuscripts. The fact that experts often study one strictly delimited subject partly explains why possible points of contact tended to remain concealed. This paper, which focuses on a Qur&#8217;an manuscript that was produced in India, is an opportunity to study them further and put them into perspective.</P>
+<DIV><B><I>Which Indian Knowledge for the Sultans? Persian Texts about Indian Sciences Written by Muslim Nobles during the Pre-Mughal Period</I></B></DIV>
+<DIV><I>Fabrizio Speziale (Universit&#233; Sorbonne Nouvelle &#8211; Paris 3)</I></DIV><BR>
+<P>Patronage of Persian texts about Indian knowledge and tradition is often seen and presented as being typical of the Mughal era. However, Akbar and Dara Shikoh were not the first Indo-Muslim patrons of such works. In the pre-Mughal period we already find a number of Persian texts about the knowledge of the Hindus, texts which were dedicated to Muslim sultans, or commissioned by them, and which frequently dealt with sciences such as astronomy, medicine and zoology. </P>
+<P>This paper focuses on the pre-Mughal period in order to highlight certain similarities as well as the main differences from the Mughal era. During the era of the sultanates, for instance, patronage was more important for certain subjects than under the Mughals. Thus, three Persian works based on the Salihotra, a Sanskrit text on the study of horses, were composed for the Indo-Muslim sultans, while the Mughals did not order even one translation of such texts. However, pre-Mughal patronage appears to have been essentially limited to the scientific field and did not anticipate the interest in religious sources which would be so typical of translations during the Mughal period.<B></B></P><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Gwalior Qur&#8217;an Manuscript: Abstracts</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 31 May 2022 18:11:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 31/05/2012&nbsp;18:24&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113487 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:25 GMT -->
+</HTML>

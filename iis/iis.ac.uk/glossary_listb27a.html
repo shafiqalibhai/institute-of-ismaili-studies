@@ -1,0 +1,622 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+<!-- Mirrored from iis.ac.uk/glossary_list.asp?l=en&lang=en&f=L&t=Q by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:58:52 GMT -->
+<HEAD>
+<title>The Institute of Ismaili Studies : Introduction to the Glossary</title>
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies - Introduction to the Glossary">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+<SCRIPT type="text/javascript">
+
+
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute of Ismaili Studies: A Centre for Research and Education" height="115" width="779" class="banner" alt="The Institute of Ismaili Studies: A Centre for Research and Education" src="WebAssets/Site_Images/header/Home_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Home_1.jpg','WebAssets/Site_Images/header/Home_test.jpg');
+				var descriptions = new Array('The Institute of Ismaili Studies: A Centre for Research and Education','The Institute of Ismaili Studies: A Centre for Research and Education');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	
+    <div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only4aed.html?s=%2Fglossary%5Flist%2Easp%3Fl%3Den%26lang%3Den%26f%3DL%26t%3DQ">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A class="" href="glossary_list18e0.html?l=fr&amp;lang=fr&amp;f=L&amp;t=Q">Français</A></li><li><A class="" href="glossary_listdaea.html?l=ar&amp;lang=ar&amp;f=L&amp;t=Q">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A class="" href="glossary_list83f9.html?l=fa&amp;lang=fa&amp;f=L&amp;t=Q">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A class="" href="glossary_list23a0.html?l=ru&amp;lang=ru&amp;f=L&amp;t=Q">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="glossary_lista173.html?f=a&amp;t=c&amp;l=en" class="aMenu3">A - C</A></p><p><A href="glossary_list2651.html?f=d&amp;t=g&amp;l=en" class="aMenu3">D - G</A></p><p><A href="glossary_lista664.html?f=h&amp;t=k&amp;l=en" class="aMenu3">H - K</A></p><p><A href="glossary_list47e0.html?f=l&amp;t=q&amp;l=en" class="aMenu3">L - Q</A></p><p><A href="glossary_listc1d4.html?f=r&amp;t=z&amp;l=en" class="aMenu3">R - Z</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Introduction to Glossary</H3>
+					<P>Listings in the glossary are selected terms and names appearing frequently in the text. The meanings given often refer to the technical and religious senses of the words as adopted especially by the Ismailis. The abbreviated forms ‘pl.’ and ‘lit.’ mean ‘plural’ and ‘literally’, respectively.</P>
+					
+					<P style="font-weight: bold;">Glossary: L - Q</P><br/><DIV class="divGlosItem"><A name='188'></a><DIV title="A senior rank in early <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'> Ismaili </A> <A href='javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))'><I> da&#145;wa </I></A> corresponding to that of <I><A href='javascript:void(LaunchGlossary('GlossaryItem53c1.html?type=glossary&amp;id=243'))'> hujja </A></I>." class="divGlosHead"><i>lahiq</i></DIV><DIV class="divGlosBody">A senior rank in early <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))"> Ismaili </A> <A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))"><I> da&#145;wa </I></A> corresponding to that of <I><A href="javascript:void(LaunchGlossary('GlossaryItem53c1.html?type=glossary&amp;id=243'))"> hujja </A></I>.</DIV></DIV><DIV class="divGlosItem"><A name='187'></a><DIV title="A province in present&#8211;day Algeria." class="divGlosHead">Lesser Kabylia</DIV><DIV class="divGlosBody">A province in present&#8211;day Algeria.</DIV></DIV><DIV class="divGlosItem"><A name='186'></a><DIV title="Lit. ‘licentiate,’; a rank in the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'>Fatimid</A> <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'>Ismaili</A> <A href='javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))'><EM>da‘wa</EM></A><EM> </EM>structure; an assistant to the regional <A href='javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))'><EM>da‘i</EM></A>; originally divided into two ranks: <I>al–ma’dhun al–mutlaq</I> and <I>al–ma’dhun al–mahdud</I>, or which the latter became known as <A href='javascript:void(LaunchGlossary('GlossaryItem9517.html?type=glossary&amp;id=166'))'><EM>al–mukasir</EM></A>. Often, the <I>al–ma’dhun al–mutlaq</I> became a <A href='javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))'><EM>da‘i</EM></A> himself and was authorised as the chief licentiate to administer the oath of initiation and rules and policies of the <I>da‘wa</I> to initiates. " class="divGlosHead"><i>al-ma’dhun</i>; <i>al-madhun</i></DIV><DIV class="divGlosBody">Lit. ‘licentiate,’; a rank in the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili</A> <A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))"><EM>da‘wa</EM></A><EM> </EM>structure; an assistant to the regional <A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))"><EM>da‘i</EM></A>; originally divided into two ranks: <I>al–ma’dhun al–mutlaq</I> and <I>al–ma’dhun al–mahdud</I>, or which the latter became known as <A href="javascript:void(LaunchGlossary('GlossaryItem9517.html?type=glossary&amp;id=166'))"><EM>al–mukasir</EM></A>. Often, the <I>al–ma’dhun al–mutlaq</I> became a <A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))"><EM>da‘i</EM></A> himself and was authorised as the chief licentiate to administer the oath of initiation and rules and policies of the <I>da‘wa</I> to initiates. </DIV></DIV><DIV class="divGlosItem"><A name='162'></a><DIV title="A believer whose faith has been tested by God. " class="divGlosHead"><i>al-mu’min al-mumtahan</i></DIV><DIV class="divGlosBody">A believer whose faith has been tested by God. </DIV></DIV><DIV class="divGlosItem"><A name='175'></a><DIV title="Arabic name for Transoxiana. " class="divGlosHead"><i>Ma wara al-nahr</i></DIV><DIV class="divGlosBody">Arabic name for Transoxiana. </DIV></DIV><DIV class="divGlosItem"><A name='184'></a><DIV title="Arabic word with a range of meanings including &#145;doctrine&#146;, &#145;movement&#146; and &#145;creed&#146;; a system or school of religious law in Islam. " class="divGlosHead"><i>madhhab</i></DIV><DIV class="divGlosBody">Arabic word with a range of meanings including &#145;doctrine&#146;, &#145;movement&#146; and &#145;creed&#146;; a system or school of religious law in Islam. </DIV></DIV><DIV class="divGlosItem"><A name='181'></a><DIV title="Lit., the &#145;rightly guided one,&#146; a name applied in Muslim eschatology to the restorer of true religion and justice expected at the end of time. In <A href='javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))'> Ithna&#145;ashari </A> <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'> Shi&#145;ism </A>, the <EM>mahdi</EM> refers specifically to the hidden <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A>." class="divGlosHead"><i>mahdi</i></DIV><DIV class="divGlosBody">Lit., the &#145;rightly guided one,&#146; a name applied in Muslim eschatology to the restorer of true religion and justice expected at the end of time. In <A href="javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))"> Ithna&#145;ashari </A> <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))"> Shi&#145;ism </A>, the <EM>mahdi</EM> refers specifically to the hidden <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A>.</DIV></DIV><DIV class="divGlosItem"><A name='180'></a><DIV title="<SPAN class=bodytext>Pl. of <I>majlis</I>; a term which literally means &#145;a place to sit&#146; and refers to any formal gathering or assembly of peoples.</SPAN> " class="divGlosHead"><i>majalis</i></DIV><DIV class="divGlosBody"><SPAN class=bodytext>Pl. of <I>majlis</I>; a term which literally means &#145;a place to sit&#146; and refers to any formal gathering or assembly of peoples.</SPAN> </DIV></DIV><DIV class="divGlosItem"><A name='177'></a><DIV title="Persian term for poems differing greatly in genre and length, normally composed in rhyming couplets. " class="divGlosHead"><i>mathnawi</i></DIV><DIV class="divGlosBody">Persian term for poems differing greatly in genre and length, normally composed in rhyming couplets. </DIV></DIV><DIV class="divGlosItem"><A name='176'></a><DIV title="A term meaning &#145;clients.&#146; Used for non&#8211;Arab Muslims in the early centuries of Islam. " class="divGlosHead"><i>mawali</i></DIV><DIV class="divGlosBody">A term meaning &#145;clients.&#146; Used for non&#8211;Arab Muslims in the early centuries of Islam. </DIV></DIV><DIV class="divGlosItem"><A name='174'></a><DIV title="&#145;Lord&#146; or &#145;master,&#146;; often used as an honorary epithet, though in early Islam it also meant &#145;client&#146;. " class="divGlosHead"><i>mawla</i></DIV><DIV class="divGlosBody">&#145;Lord&#146; or &#145;master,&#146;; often used as an honorary epithet, though in early Islam it also meant &#145;client&#146;. </DIV></DIV><DIV class="divGlosItem"><A name='185'></a><DIV title="Arabic word meaning &#145;infallible&#146; and &#145;immaculate&#146;; these qualities are attributed to Prophet Muhammad by many Muslims and by the <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'> Shi&#145;a </A> to their <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imams</A>. " class="divGlosHead"><i>ma‘sum</i></DIV><DIV class="divGlosBody">Arabic word meaning &#145;infallible&#146; and &#145;immaculate&#146;; these qualities are attributed to Prophet Muhammad by many Muslims and by the <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))"> Shi&#145;a </A> to their <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imams</A>. </DIV></DIV><DIV class="divGlosItem"><A name='170'></a><DIV title="A covenant, promise or oath. The notion of such a pledge is rooted in the Qur’an and was first given to Prophet Muhammad. In the <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'>Ismaili </A><A href='javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))'><EM>da‘wa</EM></A>, it referred to an oath of allegiance given to the <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A> of the time. (See <A href='javascript:void(LaunchGlossary('GlossaryItem44b0.html?type=glossary&amp;id=342'))'><EM>‘ahd</EM></A>.) " class="divGlosHead"><i>mithaq</i></DIV><DIV class="divGlosBody">A covenant, promise or oath. The notion of such a pledge is rooted in the Qur’an and was first given to Prophet Muhammad. In the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili </A><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))"><EM>da‘wa</EM></A>, it referred to an oath of allegiance given to the <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> of the time. (See <A href="javascript:void(LaunchGlossary('GlossaryItem44b0.html?type=glossary&amp;id=342'))"><EM>‘ahd</EM></A>.) </DIV></DIV><DIV class="divGlosItem"><A name='401'></a><DIV title="(Arabic; derived from the root <I>‘a-ra-ja</I>, meaning ‘to ascend’ or ‘to mount’). The term <I>Mi‘raj</I> has been associated with the <I>Isra’</I>. In some sources, they are referred to together by the term <I>Laylat al-Isra’ wa al-Mi‘raj</I>,<I> </I>that is, the night of (the Prophet’s) night journey and celestial ascent. The journey is said to have happened in the month of Rajab; however, there is no unanimous opinion on the precise date. This journey is linked to a verse in the Holy Qur’an (17:1). <I>Isra’</I> refers to the Prophet’s night journey from Mecca to Jerusalem, while <I>Mi‘raj</I> refers to the Prophet’s ascension through the heavens to the very Throne of God (according to some commentators, this is what Q 53:1-18 refers to). The idea of the Prophet’s <I>Mi‘raj</I> found its place in the literature of Islamic theology, philosophy and <A href='javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))'>Sufism</A>. It was and continues to be debated, the key issue being whether the night journey took place in a physical or a spiritual sense. Amongst the esoteric traditions of Muslims, <I>Mi‘raj </I>is symbolic of the spiritual search leading the soul to the state of spiritual union with the Divine. The story of the journey has further entered into universal literature; it is claimed by some scholars, such as Miguel Asin Palacios, that this was the model which inspired Dante’s <I>Divine Comedy</I>. It has constituted an important theme in Islamic art." class="divGlosHead"><i>Mi‘raj</i></DIV><DIV class="divGlosBody">(Arabic; derived from the root <I>‘a-ra-ja</I>, meaning ‘to ascend’ or ‘to mount’). The term <I>Mi‘raj</I> has been associated with the <I>Isra’</I>. In some sources, they are referred to together by the term <I>Laylat al-Isra’ wa al-Mi‘raj</I>,<I> </I>that is, the night of (the Prophet’s) night journey and celestial ascent. The journey is said to have happened in the month of Rajab; however, there is no unanimous opinion on the precise date. This journey is linked to a verse in the Holy Qur’an (17:1). <I>Isra’</I> refers to the Prophet’s night journey from Mecca to Jerusalem, while <I>Mi‘raj</I> refers to the Prophet’s ascension through the heavens to the very Throne of God (according to some commentators, this is what Q 53:1-18 refers to). The idea of the Prophet’s <I>Mi‘raj</I> found its place in the literature of Islamic theology, philosophy and <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufism</A>. It was and continues to be debated, the key issue being whether the night journey took place in a physical or a spiritual sense. Amongst the esoteric traditions of Muslims, <I>Mi‘raj </I>is symbolic of the spiritual search leading the soul to the state of spiritual union with the Divine. The story of the journey has further entered into universal literature; it is claimed by some scholars, such as Miguel Asin Palacios, that this was the model which inspired Dante’s <I>Divine Comedy</I>. It has constituted an important theme in Islamic art.</DIV></DIV><DIV class="divGlosItem"><A name='169'></a><DIV title="The truthful teacher. A concept based on the Shi‘i idea that the&nbsp;<A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imams</A> are the only authoritative teachers after the Prophet. In the reformulation of Hasan Sabbah (d. 1124), the term implies that there must be one single <I>imam</I> as instructor for all Muslims in every age. He identifies the figure with the Ismaili Imam. " class="divGlosHead"><i>mo‘allem-e sadeq (Ar. al-mu‘allim al-sadiq)</i></DIV><DIV class="divGlosBody">The truthful teacher. A concept based on the Shi‘i idea that the&nbsp;<A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imams</A> are the only authoritative teachers after the Prophet. In the reformulation of Hasan Sabbah (d. 1124), the term implies that there must be one single <I>imam</I> as instructor for all Muslims in every age. He identifies the figure with the Ismaili Imam. </DIV></DIV><DIV class="divGlosItem"><A name='166'></a><DIV title="Lit. &#145;breaker&#146; a junior rank in the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'> Fatimid </A> <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'> Ismaili </A> <A href='javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))'><I> da&#145;wa </I></A> mainly responsible for attracting prospective converts and &#145;breaking&#146; their attachments to other religions. " class="divGlosHead"><i>mukasir; al-mukasir</i></DIV><DIV class="divGlosBody">Lit. &#145;breaker&#146; a junior rank in the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))"> Fatimid </A> <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))"> Ismaili </A> <A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))"><I> da&#145;wa </I></A> mainly responsible for attracting prospective converts and &#145;breaking&#146; their attachments to other religions. </DIV></DIV><DIV class="divGlosItem"><A name='165'></a><DIV title="In Muslim heresiographical literature, a term of abuse for individuals regarded as religious deviants or heretics (pl. <I>malahida</I>). " class="divGlosHead"><i>mulhid</i></DIV><DIV class="divGlosBody">In Muslim heresiographical literature, a term of abuse for individuals regarded as religious deviants or heretics (pl. <I>malahida</I>). </DIV></DIV><DIV class="divGlosItem"><A name='164'></a><DIV title="Derived from the Arabic <I><A href='javascript:void(LaunchGlossary('GlossaryItem0983.html?type=glossary&amp;id=174'))'>mawla</A></I>, denoting a Muslim religious cleric." class="divGlosHead"><i>mullah; mulla</i></DIV><DIV class="divGlosBody">Derived from the Arabic <I><A href="javascript:void(LaunchGlossary('GlossaryItem0983.html?type=glossary&amp;id=174'))">mawla</A></I>, denoting a Muslim religious cleric.</DIV></DIV><DIV class="divGlosItem"><A name='161'></a><DIV title="Lit. ‘one who seeks’. Sufi <EM><A href='javascript:void(LaunchGlossary('GlossaryItemda5d.html?type=glossary&amp;id=69'))'>tariqas</A></EM> developed around the relationship between the murids and a spiritual master (called <EM><A href='javascript:void(LaunchGlossary('GlossaryItemcb61.html?type=glossary&amp;id=160'))'>murshid</A></EM>, <EM><A href='javascript:void(LaunchGlossary('GlossaryItemcc07.html?type=glossary&amp;id=143'))'>pir</A></EM>, <EM><A href='javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))'>shaykh</A></EM> or <EM><A href='javascript:void(LaunchGlossary('GlossaryItem8d80.html?type=glossary&amp;id=125'))'>qutb</A></EM>). The first <A href='javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))'>Nizari</A> <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imams</A> after the Mongols’ conquest of <A href='javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))'>Alamut</A> lived as clandestine <A href='javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))'>Sufi</A> masters, while their followers adopted the designation of murids, which is still in use today. principality was founded in around 958." class="divGlosHead"><i>murid</i></DIV><DIV class="divGlosBody">Lit. ‘one who seeks’. Sufi <EM><A href="javascript:void(LaunchGlossary('GlossaryItemda5d.html?type=glossary&amp;id=69'))">tariqas</A></EM> developed around the relationship between the murids and a spiritual master (called <EM><A href="javascript:void(LaunchGlossary('GlossaryItemcb61.html?type=glossary&amp;id=160'))">murshid</A></EM>, <EM><A href="javascript:void(LaunchGlossary('GlossaryItemcc07.html?type=glossary&amp;id=143'))">pir</A></EM>, <EM><A href="javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))">shaykh</A></EM> or <EM><A href="javascript:void(LaunchGlossary('GlossaryItem8d80.html?type=glossary&amp;id=125'))">qutb</A></EM>). The first <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari</A> <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imams</A> after the Mongols’ conquest of <A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A> lived as clandestine <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufi</A> masters, while their followers adopted the designation of murids, which is still in use today. principality was founded in around 958.</DIV></DIV><DIV class="divGlosItem"><A name='160'></a><DIV title="Lit. ‘guide.’ Spiritual master (See <I><A href='javascript:void(LaunchGlossary('GlossaryItema626.html?type=glossary&amp;id=161'))'>murid</A></I>). Word used for <A href='javascript:void(LaunchGlossary('GlossaryItema626.html?type=glossary&amp;id=161'))'>Imam</A> in the <I><A href='view_articlefc45.html?type=cont.currentlang&amp;id=100932'>Pandiyat–i Jawanmardi</A></I>, authored by Imam Munstansir bi’llah II (d. 1480). " class="divGlosHead"><i>murshid</i></DIV><DIV class="divGlosBody">Lit. ‘guide.’ Spiritual master (See <I><A href="javascript:void(LaunchGlossary('GlossaryItema626.html?type=glossary&amp;id=161'))">murid</A></I>). Word used for <A href="javascript:void(LaunchGlossary('GlossaryItema626.html?type=glossary&amp;id=161'))">Imam</A> in the <I><A href="view_articlefc45.html?type=cont.currentlang&amp;id=100932">Pandiyat–i Jawanmardi</A></I>, authored by Imam Munstansir bi’llah II (d. 1480). </DIV></DIV><DIV class="divGlosItem"><A name='156'></a><DIV title="
+Lit. &#145;respondent&#146;; a term denoting an initiate to the lowest rank in the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'> Fatimid </A> religious hierarchy. <br/><br/>" class="divGlosHead"><i>mustajib</i></DIV><DIV class="divGlosBody">
+Lit. &#145;respondent&#146;; a term denoting an initiate to the lowest rank in the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))"> Fatimid </A> religious hierarchy. <br/><br/></DIV></DIV><DIV class="divGlosItem"><A name='392'></a><DIV title="The seventh <U><A href='javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))'>Abbasid</A></U> <U><A href='javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))'>Caliph</A></U> (786- 833 CE), who succeeded his father Harun al-Rashid and ruled from 813 to 833 CE. He is known for his support of the <U><A href='javascript:void(LaunchGlossary('GlossaryItem10d5.html?type=glossary&amp;id=155'))'>Mu‘tazili</A></U> interpretation of Muslim theology and for his ultimately unsuccessful attempt to impose it as the state policy. He encouraged the translation of scientific and philosophical works of other civilisations into Arabic at the <I><U><A href='javascript:void(LaunchGlossary('GlossaryItem1978.html?type=glossary&amp;id=351'))'>Bayt al-Hikma</A></U> </I>(House of Wisdom),<I> </I>a centre he founded in Baghdad. With the aim of reconciling divisions between the <U><A href='javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))'>Sunnis</A></U> and <U><A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'>Shi‘a</A></U>, he appointed the Twelver Shi‘i <U><A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A></U> ‘Ali b. Musa al-Rida as his successor. But this attempt failed as ‘Ali died a year later and his followers accused al-Ma’mun of having him poisoned." class="divGlosHead">Al-Ma’mun, Abu al-‘Abbas ‘Abd-Allah (d. 833 CE)</DIV><DIV class="divGlosBody">The seventh <U><A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasid</A></U> <U><A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A></U> (786- 833 CE), who succeeded his father Harun al-Rashid and ruled from 813 to 833 CE. He is known for his support of the <U><A href="javascript:void(LaunchGlossary('GlossaryItem10d5.html?type=glossary&amp;id=155'))">Mu‘tazili</A></U> interpretation of Muslim theology and for his ultimately unsuccessful attempt to impose it as the state policy. He encouraged the translation of scientific and philosophical works of other civilisations into Arabic at the <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem1978.html?type=glossary&amp;id=351'))">Bayt al-Hikma</A></U> </I>(House of Wisdom),<I> </I>a centre he founded in Baghdad. With the aim of reconciling divisions between the <U><A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunnis</A></U> and <U><A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi‘a</A></U>, he appointed the Twelver Shi‘i <U><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A></U> ‘Ali b. Musa al-Rida as his successor. But this attempt failed as ‘Ali died a year later and his followers accused al-Ma’mun of having him poisoned.</DIV></DIV><DIV class="divGlosItem"><A name='167'></a><DIV title="First month of the Islamic lunar calendar, often referred to as the &#145;month of mourning&#146; because of the death of Imam <A href='javascript:void(LaunchGlossary('GlossaryItemfcde.html?type=glossary&amp;id=239'))'> Husayn b. &#145;Ali </A> at the Battle of Karbala in 680. " class="divGlosHead">al-Muharram; Muharram</DIV><DIV class="divGlosBody">First month of the Islamic lunar calendar, often referred to as the &#145;month of mourning&#146; because of the death of Imam <A href="javascript:void(LaunchGlossary('GlossaryItemfcde.html?type=glossary&amp;id=239'))"> Husayn b. &#145;Ali </A> at the Battle of Karbala in 680. </DIV></DIV><DIV class="divGlosItem"><A name='183'></a><DIV title="Lit. &#145;the place of sunset.&#146; In mediaeval Muslim geography it referred to the western part of North Africa (present&#8211;day Morocco, Algeria and Tunisia). " class="divGlosHead">Maghrib; Maghreb</DIV><DIV class="divGlosBody">Lit. &#145;the place of sunset.&#146; In mediaeval Muslim geography it referred to the western part of North Africa (present&#8211;day Morocco, Algeria and Tunisia). </DIV></DIV><DIV class="divGlosItem"><A name='182'></a><DIV title="Adjective from Magi (sing. magus) referring to a member of the Zoroastrian priestly caste in Ancient Persia. " class="divGlosHead">Magian</DIV><DIV class="divGlosBody">Adjective from Magi (sing. magus) referring to a member of the Zoroastrian priestly caste in Ancient Persia. </DIV></DIV><DIV class="divGlosItem"><A name='179'></a><DIV title="A province in eastern Iran. " class="divGlosHead">Makran</DIV><DIV class="divGlosBody">A province in eastern Iran. </DIV></DIV><DIV class="divGlosItem"><A name='366'></a><DIV title="(1250-1517 CE), the word Mamluk is derived from Arabic, and literally means ‘owned’ or ‘possessed’. The Mamalik were slave soldiers, mostly of Turkish origin, who served under various Muslim dynasties such as the <A href='javascript:void(LaunchGlossary('GlossaryItem67ca.html?type=glossary&amp;id=319'))'>Ayyubids</A>, the <A href='javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))'>Abbasids,</A> and the Ikhshidids. The Sultan’s Mamluks were educated in military schools where they studied Islam, whilst undergoing military training. Mamluks rose to high positions in the army command, coming to play an important part in the resistance to the Crusaders. In 1250 CE, the Mamluks founded their own Sultanate in Egypt and Syria. One of their well known achievements was their success in the battle of <I>‘Ayn Jalut</I> against the Mongols in 1260 CE. The Mamluk Sultanate was brought to an end by the Ottomans in1517 CE." class="divGlosHead">Mamluks/Mamalik</DIV><DIV class="divGlosBody">(1250-1517 CE), the word Mamluk is derived from Arabic, and literally means ‘owned’ or ‘possessed’. The Mamalik were slave soldiers, mostly of Turkish origin, who served under various Muslim dynasties such as the <A href="javascript:void(LaunchGlossary('GlossaryItem67ca.html?type=glossary&amp;id=319'))">Ayyubids</A>, the <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasids,</A> and the Ikhshidids. The Sultan’s Mamluks were educated in military schools where they studied Islam, whilst undergoing military training. Mamluks rose to high positions in the army command, coming to play an important part in the resistance to the Crusaders. In 1250 CE, the Mamluks founded their own Sultanate in Egypt and Syria. One of their well known achievements was their success in the battle of <I>‘Ayn Jalut</I> against the Mongols in 1260 CE. The Mamluk Sultanate was brought to an end by the Ottomans in1517 CE.</DIV></DIV><DIV class="divGlosItem"><A name='178'></a><DIV title="A medieval military engine for hurling stones and other missiles. " class="divGlosHead">mangonel</DIV><DIV class="divGlosBody">A medieval military engine for hurling stones and other missiles. </DIV></DIV><DIV class="divGlosItem"><A name='379'></a><DIV title="<P>(Arabic and Persian; lit. ‘source to follow’ or ‘religious reference’). It is a term usually used for a Shi‘i <U><A href='javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))'>Ithna ‘ashari</A></U> religious scholar, also called <I><U><A href='javascript:void(LaunchGlossary('GlossaryItem67bd.html?type=glossary&amp;id=355'))'>Ayatullah</A></U> al-‘uzma</I>, who is recognised for his scholarship, knowledge and personal piety. According to Shi‘i Ithna ‘ashari tradition, a <I>Marja‘</I> has the authority to make legal decisions based on his knowledge and interpretation within the confines of Shi‘i theological doctrines and jurisprudence.</P>" class="divGlosHead">Marja‘; Marja‘-i taqlid; Marja‘-i Dini </DIV><DIV class="divGlosBody"><P>(Arabic and Persian; lit. ‘source to follow’ or ‘religious reference’). It is a term usually used for a Shi‘i <U><A href="javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))">Ithna ‘ashari</A></U> religious scholar, also called <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem67bd.html?type=glossary&amp;id=355'))">Ayatullah</A></U> al-‘uzma</I>, who is recognised for his scholarship, knowledge and personal piety. According to Shi‘i Ithna ‘ashari tradition, a <I>Marja‘</I> has the authority to make legal decisions based on his knowledge and interpretation within the confines of Shi‘i theological doctrines and jurisprudence.</P></DIV></DIV><DIV class="divGlosItem"><A name='362'></a><DIV title="(mosque; pl. Masajid) Arabic derived from the root <I>sa-ja-da</I>, meaning ‘to prostrate’. In the early Islamic era, the word <I>masjid</I> meant a place of prayer which could be any clean spot on earth. The first <I>masjid</I> in Islam was built in Medina in 622 CE. The <I>masjid</I> is primarily a designated space for the offering of canonical ritual prayers by Muslim congregations. Besides its religious function, <I>masjid</I> is also used as the centre of community life which can serve social, political and educational roles. The architectural style of the <I>masjid</I> often reflects the style of the region and the period in which they were established. Important functionaries of the <I>masjid</I> are the prayer leader (Imam al-Masjid) and the person who calls to prayer (al-Mu’adhdhin)." class="divGlosHead">Masjid </DIV><DIV class="divGlosBody">(mosque; pl. Masajid) Arabic derived from the root <I>sa-ja-da</I>, meaning ‘to prostrate’. In the early Islamic era, the word <I>masjid</I> meant a place of prayer which could be any clean spot on earth. The first <I>masjid</I> in Islam was built in Medina in 622 CE. The <I>masjid</I> is primarily a designated space for the offering of canonical ritual prayers by Muslim congregations. Besides its religious function, <I>masjid</I> is also used as the centre of community life which can serve social, political and educational roles. The architectural style of the <I>masjid</I> often reflects the style of the region and the period in which they were established. Important functionaries of the <I>masjid</I> are the prayer leader (Imam al-Masjid) and the person who calls to prayer (al-Mu’adhdhin).</DIV></DIV><DIV class="divGlosItem"><A name='173'></a><DIV title="Lit. ‘our lord/master the present Imam.’ Designation used by <A href='javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))'>Nizari </A>Ismailis for their contemporary <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A>, who is presently <A href='view_article6d2b.html?type=cont.currentlang&amp;id=103467'>His Highness Prince Karim Aga Khan</A>. " class="divGlosHead">Mawlana Hazar Imam (Ar. <i>Mawlana al-imam al-hadir</i>)</DIV><DIV class="divGlosBody">Lit. ‘our lord/master the present Imam.’ Designation used by <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari </A>Ismailis for their contemporary <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A>, who is presently <A href="view_article6d2b.html?type=cont.currentlang&amp;id=103467">His Highness Prince Karim Aga Khan</A>. </DIV></DIV><DIV class="divGlosItem"><A name='172'></a><DIV title="A town in Algeria." class="divGlosHead">Mila</DIV><DIV class="divGlosBody">A town in Algeria.</DIV></DIV><DIV class="divGlosItem"><A name='171'></a><DIV title="A small town three miles from Mecca, which is the site of special ceremonies performed by Muslim pilgrims to the <A href='javascript:void(LaunchGlossary('GlossaryItem366a.html?type=glossary&amp;id=207'))'> Ka&#145;ba </A>. " class="divGlosHead">Mina</DIV><DIV class="divGlosBody">A small town three miles from Mecca, which is the site of special ceremonies performed by Muslim pilgrims to the <A href="javascript:void(LaunchGlossary('GlossaryItem366a.html?type=glossary&amp;id=207'))"> Ka&#145;ba </A>. </DIV></DIV><DIV class="divGlosItem"><A name='168'></a><DIV title="Adherents of an early <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'>Shi‘i </A>group who upheld the <A href='javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))'>Imamate</A>&nbsp;of Muhammad b. Isma‘il after the death of Isma‘il b. Ja‘far al–Sadiq, representing the nascent <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'>Ismaili </A>community. " class="divGlosHead">Mubarakiyya</DIV><DIV class="divGlosBody">Adherents of an early <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi‘i </A>group who upheld the <A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">Imamate</A>&nbsp;of Muhammad b. Isma‘il after the death of Isma‘il b. Ja‘far al–Sadiq, representing the nascent <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismaili </A>community. </DIV></DIV><DIV class="divGlosItem"><A name='367'></a><DIV title="(pl. muftin) An Arabic word derived from the root <I>fa-ti-ya</I>; a jurisconsult who is authorized to give a <I>fatwa</I>. The mufti should have a sound knowledge of the Islamic schools of law (<I>madhahib</I>). When issuing <I>fatwas</I>, the mufti usually cites the Holy Qur’an, the sunna of Prophet Muhammad, established precedents, consensus of the ‘ulema, or another accepted authority (e.g., the Imams in Shi‘i traditions) within the school of law to which he adheres." class="divGlosHead">Mufti</DIV><DIV class="divGlosBody">(pl. muftin) An Arabic word derived from the root <I>fa-ti-ya</I>; a jurisconsult who is authorized to give a <I>fatwa</I>. The mufti should have a sound knowledge of the Islamic schools of law (<I>madhahib</I>). When issuing <I>fatwas</I>, the mufti usually cites the Holy Qur’an, the sunna of Prophet Muhammad, established precedents, consensus of the ‘ulema, or another accepted authority (e.g., the Imams in Shi‘i traditions) within the school of law to which he adheres.</DIV></DIV><DIV class="divGlosItem"><A name='372'></a><DIV title="An Indo-Muslim dynasty (1526 – 1858 CE), founded by the Timurid Prince Baber, a descendent of Genghis Khan and Timur Lang. At their peak, the Mughals ruled over most of South Asia and parts of what is now Afghanistan. Among its famous rulers is Akbar (1556-1605 CE), who introduced a pluralistic administrative system, recruiting Indian Muslims and non-Muslims, Persians and others. Akbar also introduced a policy of religious tolerance among Hindus and Muslims. The Mughal Empire developed a distinguished Muslim architectural heritage based on the Timurid heritage as well as the local Indian one. Their imperial tombs are distinguished examples of architecture in Muslim contexts. Among the grandest mausoleums that have become synonyms of Mughal architecture is the Taj Mahal, which was completed in 1648 CE. This was built in Agra by the Mughal emperor Shah Jahan (1628-58 CE) for his wife Mumtaz Mahal. The last Mughal emperor was Bahadur Shah Zafar, who was dethroned and exiled by the British in 1858 CE." class="divGlosHead">Mughals </DIV><DIV class="divGlosBody">An Indo-Muslim dynasty (1526 – 1858 CE), founded by the Timurid Prince Baber, a descendent of Genghis Khan and Timur Lang. At their peak, the Mughals ruled over most of South Asia and parts of what is now Afghanistan. Among its famous rulers is Akbar (1556-1605 CE), who introduced a pluralistic administrative system, recruiting Indian Muslims and non-Muslims, Persians and others. Akbar also introduced a policy of religious tolerance among Hindus and Muslims. The Mughal Empire developed a distinguished Muslim architectural heritage based on the Timurid heritage as well as the local Indian one. Their imperial tombs are distinguished examples of architecture in Muslim contexts. Among the grandest mausoleums that have become synonyms of Mughal architecture is the Taj Mahal, which was completed in 1648 CE. This was built in Agra by the Mughal emperor Shah Jahan (1628-58 CE) for his wife Mumtaz Mahal. The last Mughal emperor was Bahadur Shah Zafar, who was dethroned and exiled by the British in 1858 CE.</DIV></DIV><DIV class="divGlosItem"><A name='349'></a><DIV title="<DIV>From Arabic; derived from the root <I>ja ha da</I>, ‘to make an effort’. <I>Mujtahid</I> literally means one who strives for a higher position, usually in scholarship and learning. In Muslim law, the term refers to a person who is equipped with the knowledge and authority to perform <I>ijtihad</I>. The term was extensively used from the middle of the 2<SUP>nd</SUP> AH/8<SUP>th</SUP> CE century until the 4<SUP>th</SUP> AH/10<SUP>th</SUP> CE century when the four <A href='javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))'>Sunni</A> schools of law were constituted. Amongst Sunni Muslims, the term <I>mujtahid</I> is restricted to legal scholars of the medieval period. Among the <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'>Shi‘a</A>, the <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A> holds ultimate authority in matters of Muslim law. For the <A href='javascript:void(LaunchGlossary('GlossaryItem5bfd.html?type=glossary&amp;id=59'))'>Twelver Shi‘is</A>, following the concealment of their twelfth Imam, authority over the law was delegated to their <A href='javascript:void(LaunchGlossary('GlossaryItem0f2a.html?type=glossary&amp;id=58'))'>‘ulama’</A> who excercise <I>ijtihad</I> in formulating their own religious and judicial principles, based on the teachings of the Holy Qur’an and the <A href='javascript:void(LaunchGlossary('GlossaryItem3269.html?type=glossary&amp;id=83'))'>Sunna</A> of the Prophet as attested or verified by the Imams.</DIV>" class="divGlosHead">Mujtahid</DIV><DIV class="divGlosBody"><DIV>From Arabic; derived from the root <I>ja ha da</I>, ‘to make an effort’. <I>Mujtahid</I> literally means one who strives for a higher position, usually in scholarship and learning. In Muslim law, the term refers to a person who is equipped with the knowledge and authority to perform <I>ijtihad</I>. The term was extensively used from the middle of the 2<SUP>nd</SUP> AH/8<SUP>th</SUP> CE century until the 4<SUP>th</SUP> AH/10<SUP>th</SUP> CE century when the four <A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni</A> schools of law were constituted. Amongst Sunni Muslims, the term <I>mujtahid</I> is restricted to legal scholars of the medieval period. Among the <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi‘a</A>, the <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> holds ultimate authority in matters of Muslim law. For the <A href="javascript:void(LaunchGlossary('GlossaryItem5bfd.html?type=glossary&amp;id=59'))">Twelver Shi‘is</A>, following the concealment of their twelfth Imam, authority over the law was delegated to their <A href="javascript:void(LaunchGlossary('GlossaryItem0f2a.html?type=glossary&amp;id=58'))">‘ulama’</A> who excercise <I>ijtihad</I> in formulating their own religious and judicial principles, based on the teachings of the Holy Qur’an and the <A href="javascript:void(LaunchGlossary('GlossaryItem3269.html?type=glossary&amp;id=83'))">Sunna</A> of the Prophet as attested or verified by the Imams.</DIV></DIV></DIV><DIV class="divGlosItem"><A name='163'></a><DIV title="A major city in the province of Sind (today in Pakistan) where the seat of a <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'> Fatimid </A> principality was founded in around 958." class="divGlosHead">Multan</DIV><DIV class="divGlosBody">A major city in the province of Sind (today in Pakistan) where the seat of a <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))"> Fatimid </A> principality was founded in around 958.</DIV></DIV><DIV class="divGlosItem"><A name='381'></a><DIV title="<P>(derived from the Arabic root <I>na-fa-qa</I>, meaning ‘to dissent, disagree or oppose’). The term is used in the Holy <U><A href='javascript:void(LaunchGlossary('GlossaryItemf3b2.html?type=glossary&amp;id=378'))'>Qur’an</A></U> for those professing Islam outwardly but who did not inwardly believe in the message of Prophet Muhammad. It is also the title of Sura 63 of the Holy Qur’an. The term is rendered in English as ‘hypocrites’.</P>" class="divGlosHead">Munafiqun</DIV><DIV class="divGlosBody"><P>(derived from the Arabic root <I>na-fa-qa</I>, meaning ‘to dissent, disagree or oppose’). The term is used in the Holy <U><A href="javascript:void(LaunchGlossary('GlossaryItemf3b2.html?type=glossary&amp;id=378'))">Qur’an</A></U> for those professing Islam outwardly but who did not inwardly believe in the message of Prophet Muhammad. It is also the title of Sura 63 of the Holy Qur’an. The term is rendered in English as ‘hypocrites’.</P></DIV></DIV><DIV class="divGlosItem"><A name='159'></a><DIV title="A Muslim dynasty which ruled <A href='javascript:void(LaunchGlossary('GlossaryItem175f.html?type=glossary&amp;id=280'))'>Daylam</A>, Azerbaijan, Arran and Armenia in the 10th and 11th centuries CE, succeeded in Daylam by the Ismailis. " class="divGlosHead">Musafirids</DIV><DIV class="divGlosBody">A Muslim dynasty which ruled <A href="javascript:void(LaunchGlossary('GlossaryItem175f.html?type=glossary&amp;id=280'))">Daylam</A>, Azerbaijan, Arran and Armenia in the 10th and 11th centuries CE, succeeded in Daylam by the Ismailis. </DIV></DIV><DIV class="divGlosItem"><A name='158'></a><DIV title="A local<A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'> Shi&#145;i </A> Arab dynasty which ruled the town of Hawiza or Huwayza in <A href='javascript:void(LaunchGlossary('GlossaryItem6838.html?type=glossary&amp;id=193'))'>Khuzistan</A>, Persia, in the 15th century CE. " class="divGlosHead">Musha’aha’</DIV><DIV class="divGlosBody">A local<A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))"> Shi&#145;i </A> Arab dynasty which ruled the town of Hawiza or Huwayza in <A href="javascript:void(LaunchGlossary('GlossaryItem6838.html?type=glossary&amp;id=193'))">Khuzistan</A>, Persia, in the 15th century CE. </DIV></DIV><DIV class="divGlosItem"><A name='157'></a><DIV title="Adherents of a branch of the <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'>Ismailis</A> who supported al-Musta‘li, the younger son of the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'>Fatimid</A> <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A>-<A href='javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))'>Caliph</A> al-Mustansir (d. 1094) as his successor. " class="divGlosHead">Musta‘lis; Musta‘aliyya</DIV><DIV class="divGlosBody">Adherents of a branch of the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismailis</A> who supported al-Musta‘li, the younger son of the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A>-<A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A> al-Mustansir (d. 1094) as his successor. </DIV></DIV><DIV class="divGlosItem"><A name='155'></a><DIV title="A term referring to diverse scholars in early Islam who belonged to a rationally orientated school of thought that emphasized precepts such as Divine Unity and Justice and human freewill. " class="divGlosHead">Mu‘tazila; Mu‘taziliyya; Mutazila</DIV><DIV class="divGlosBody">A term referring to diverse scholars in early Islam who belonged to a rationally orientated school of thought that emphasized precepts such as Divine Unity and Justice and human freewill. </DIV></DIV><DIV class="divGlosItem"><A name='153'></a><DIV title="A term used in medieval Ismaili and other cosmological doctrines for the Universal Soul. See <I><A href='javascript:void(LaunchGlossary('GlossaryItem290d.html?type=glossary&amp;id=327'))'> aql&#8211;i kull </A></I>. " class="divGlosHead"><i>nafs-i kull</i></DIV><DIV class="divGlosBody">A term used in medieval Ismaili and other cosmological doctrines for the Universal Soul. See <I><A href="javascript:void(LaunchGlossary('GlossaryItem290d.html?type=glossary&amp;id=327'))"> aql&#8211;i kull </A></I>. </DIV></DIV><DIV class="divGlosItem"><A name='154'></a><DIV title="Used in the Qur&#146;an more than 300 times, where its primary meaning is the human self or person. In post&#8211;Qur&#146;anic religious literature it came to mean the human &#145;soul&#146; or &#145;spirit&#146; in a metaphysical sense. The conception of the human soul by Muslim philosophers was strongly influenced by Aristotle&#146;s theories." class="divGlosHead"><i>nafs</i></DIV><DIV class="divGlosBody">Used in the Qur&#146;an more than 300 times, where its primary meaning is the human self or person. In post&#8211;Qur&#146;anic religious literature it came to mean the human &#145;soul&#146; or &#145;spirit&#146; in a metaphysical sense. The conception of the human soul by Muslim philosophers was strongly influenced by Aristotle&#146;s theories.</DIV></DIV><DIV class="divGlosItem"><A name='152'></a><DIV title="A Qur’anic term referring to a voluntary contribution to Prophet Muhammad. Among <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'>Ismailis</A>, it was a due offered by converts to Ismailism to the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'>Fatimid</A> <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A> who used it for the society’s well being. It was abolished by the Imam-<A href='javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))'>Caliph</A> al-Hakim in AH 400/1009-1010 CE." class="divGlosHead"><i>najwa</i></DIV><DIV class="divGlosBody">A Qur’anic term referring to a voluntary contribution to Prophet Muhammad. Among <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismailis</A>, it was a due offered by converts to Ismailism to the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> who used it for the society’s well being. It was abolished by the Imam-<A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A> al-Hakim in AH 400/1009-1010 CE.</DIV></DIV><DIV class="divGlosItem"><A name='151'></a><DIV title="<P>Lit. chief, leader. In the Fatimid Ismaili <EM><A href='javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))'>da‘wa</A></EM>, the person in charge of each <A href='javascript:void(LaunchGlossary('GlossaryItemfaff.html?type=glossary&amp;id=211'))'><EM>jazira</EM></A>. Also called <EM><A href='javascript:void(LaunchGlossary('GlossaryItem53c1.html?type=glossary&amp;id=243'))'>hujja</A></EM>, <A href='javascript:void(LaunchGlossary('GlossaryItemacb3.html?type=glossary&amp;id=188'))'><EM>lahiq</EM></A> or <A href='javascript:void(LaunchGlossary('GlossaryItem0aa5.html?type=glossary&amp;id=46'))'><EM>yad</EM></A>.</P>" class="divGlosHead"><i>naqib</i> (pl. <i>naqaba</i>)</DIV><DIV class="divGlosBody"><P>Lit. chief, leader. In the Fatimid Ismaili <EM><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da‘wa</A></EM>, the person in charge of each <A href="javascript:void(LaunchGlossary('GlossaryItemfaff.html?type=glossary&amp;id=211'))"><EM>jazira</EM></A>. Also called <EM><A href="javascript:void(LaunchGlossary('GlossaryItem53c1.html?type=glossary&amp;id=243'))">hujja</A></EM>, <A href="javascript:void(LaunchGlossary('GlossaryItemacb3.html?type=glossary&amp;id=188'))"><EM>lahiq</EM></A> or <A href="javascript:void(LaunchGlossary('GlossaryItem0aa5.html?type=glossary&amp;id=46'))"><EM>yad</EM></A>.</P></DIV></DIV><DIV class="divGlosItem"><A name='150'></a><DIV title="Lit. ‘text.’ In <A href='javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))'>Shi‘ism </A>, it refers to Muhammad’s declaration of<A href='javascript:void(LaunchGlossary('GlossaryItembe59.html?type=glossary&amp;id=335'))'> ‘Ali </A>as his successor, and by extension, to the requirement that each <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>imam</A> should explicitly appoint the following Imam. The concept of <I>nass</I> was developed in the early decades of Shi‘ism, when several people claimed the <I>imamat</I> for themselves, especially in the times of <I>imam</I>s Muhammad al–Baqir and Ja‘far al–Sadiq. " class="divGlosHead"><i>nass</i></DIV><DIV class="divGlosBody">Lit. ‘text.’ In <A href="javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))">Shi‘ism </A>, it refers to Muhammad’s declaration of<A href="javascript:void(LaunchGlossary('GlossaryItembe59.html?type=glossary&amp;id=335'))"> ‘Ali </A>as his successor, and by extension, to the requirement that each <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A> should explicitly appoint the following Imam. The concept of <I>nass</I> was developed in the early decades of Shi‘ism, when several people claimed the <I>imamat</I> for themselves, especially in the times of <I>imam</I>s Muhammad al–Baqir and Ja‘far al–Sadiq. </DIV></DIV><DIV class="divGlosItem"><A name='148'></a><DIV title="Arabic word for &#145;adjective,&#146; which can also mean link, relationship, ancestry, lineage or origin. " class="divGlosHead"><i>nisba</i></DIV><DIV class="divGlosBody">Arabic word for &#145;adjective,&#146; which can also mean link, relationship, ancestry, lineage or origin. </DIV></DIV><DIV class="divGlosItem"><A name='145'></a><DIV title="Lit. ‘light,’ a term used for God, defined as light in the Qur’an in the so–called verse of light (<I>ayat al–nur</I>) Q 24:35: ‘God is the light of the heavens and the earth…’). In <A href='javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))'>Shi‘ism</A>, the term is taken to mean the light that is believed to have emanated through Adam, via Muhammad into the family of <A href='javascript:void(LaunchGlossary('GlossaryItembe59.html?type=glossary&amp;id=335'))'>‘Ali</A> and his successors, the <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imams</A>." class="divGlosHead"><i>nur; noor</i></DIV><DIV class="divGlosBody">Lit. ‘light,’ a term used for God, defined as light in the Qur’an in the so–called verse of light (<I>ayat al–nur</I>) Q 24:35: ‘God is the light of the heavens and the earth…’). In <A href="javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))">Shi‘ism</A>, the term is taken to mean the light that is believed to have emanated through Adam, via Muhammad into the family of <A href="javascript:void(LaunchGlossary('GlossaryItembe59.html?type=glossary&amp;id=335'))">‘Ali</A> and his successors, the <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imams</A>.</DIV></DIV><DIV class="divGlosItem"><A name='403'></a><DIV title="Lit. ‘the way of eloquence’. A well-known collection of letters, sermons and sayings attributed to Imam ‘Ali Ibn Abi Talib (d. 661 CE), compiled in its present form by al-Sharif al-Radi (d. 1016 CE), a renowned Imami Shi‘i writer and poet of the Abbasid period (750-1258 CE). Many commentators, such as Ibn Abi al-Hadid (d. 1258 CE), consider this work as an example of the most eloquent Arabic and have highlighted its importance for theological and philosophical discourse in the Muslim world. The first sermon of the Nahj al-Balagha has been regarded by Shi‘i and Sunni Muslims alike as being among the most important discourses of Imam ‘Ali concerning the essence of faith and the nature of God. His letter to Malik al-Ashtar, appointing him as governor of Egypt, is likewise deemed by innumerable Muslim authorities to be a profound description of just governance according to Muslim principles." class="divGlosHead">Nahj al-Balagha</DIV><DIV class="divGlosBody">Lit. ‘the way of eloquence’. A well-known collection of letters, sermons and sayings attributed to Imam ‘Ali Ibn Abi Talib (d. 661 CE), compiled in its present form by al-Sharif al-Radi (d. 1016 CE), a renowned Imami Shi‘i writer and poet of the Abbasid period (750-1258 CE). Many commentators, such as Ibn Abi al-Hadid (d. 1258 CE), consider this work as an example of the most eloquent Arabic and have highlighted its importance for theological and philosophical discourse in the Muslim world. The first sermon of the Nahj al-Balagha has been regarded by Shi‘i and Sunni Muslims alike as being among the most important discourses of Imam ‘Ali concerning the essence of faith and the nature of God. His letter to Malik al-Ashtar, appointing him as governor of Egypt, is likewise deemed by innumerable Muslim authorities to be a profound description of just governance according to Muslim principles.</DIV></DIV><DIV class="divGlosItem"><A name='384'></a><DIV title="Persian <A href='javascript:void(LaunchGlossary('GlossaryItema8be-2.html?type=glossary&amp;id=51'))'>vizier</A> (1059/ 63- 1092) of the <A href='javascript:void(LaunchGlossary('GlossaryItem2b5c.html?type=glossary&amp;id=110'))'>Seljuk</A> Empire who served under Sultans Alp Arsalan and Malik Shah I. After the assassination of Alp Arsalan (1072), Nizam al-Mulk enjoyed full authority in the Seljuk Empire dominating the then eighteen years old Malik Shah. For the next twenty years, Nizam al-Mulk was the real ruler of the Seljuk Empire. Aside from his extraordinary influence as vizier, he is also well-known for institutionalisation of <A href='javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))'>Sunni</A> Muslim education through the establishment of the famous Nizamiyyah schools of higher education in Iraq, al-Jazira and Persia, which were named after him. The most famed and celebrated of all was <I>al-Madrasa al-Nizamiyya</I> of Baghdad (founded in 1067 CE), where Nizam al-Mulk appointed noted scholars such as al-Juwayni and al-Ghazzali to professorships. He himself wrote a book called <I>Siyasatnama</I> (The Book of Government). " class="divGlosHead">Nizam al-Mulk (d. 1092 CE)</DIV><DIV class="divGlosBody">Persian <A href="javascript:void(LaunchGlossary('GlossaryItema8be-2.html?type=glossary&amp;id=51'))">vizier</A> (1059/ 63- 1092) of the <A href="javascript:void(LaunchGlossary('GlossaryItem2b5c.html?type=glossary&amp;id=110'))">Seljuk</A> Empire who served under Sultans Alp Arsalan and Malik Shah I. After the assassination of Alp Arsalan (1072), Nizam al-Mulk enjoyed full authority in the Seljuk Empire dominating the then eighteen years old Malik Shah. For the next twenty years, Nizam al-Mulk was the real ruler of the Seljuk Empire. Aside from his extraordinary influence as vizier, he is also well-known for institutionalisation of <A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni</A> Muslim education through the establishment of the famous Nizamiyyah schools of higher education in Iraq, al-Jazira and Persia, which were named after him. The most famed and celebrated of all was <I>al-Madrasa al-Nizamiyya</I> of Baghdad (founded in 1067 CE), where Nizam al-Mulk appointed noted scholars such as al-Juwayni and al-Ghazzali to professorships. He himself wrote a book called <I>Siyasatnama</I> (The Book of Government). </DIV></DIV><DIV class="divGlosItem"><A name='147'></a><DIV title="Adherents of a branch of the <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'>Ismailis</A> who gave allegiance to Nizar, the eldest son of the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'>Fatimid</A> <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A>-<A href='javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))'>caliph</A> al-Mustansir (d. 1094) as his successor." class="divGlosHead">Nizariyya; Nizaris</DIV><DIV class="divGlosBody">Adherents of a branch of the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismailis</A> who gave allegiance to Nizar, the eldest son of the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A>-<A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliph</A> al-Mustansir (d. 1094) as his successor.</DIV></DIV><DIV class="divGlosItem"><A name='149'></a><DIV title="A <A href='javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))'>Sufi</A> order named after its founder Shah Ni&#145;matullah Wali (d. 1431 CE), which gained popularity in Iran and India. " class="divGlosHead">Ni‘matu’llahiyya; Ni‘mat Allahiyya</DIV><DIV class="divGlosBody">A <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufi</A> order named after its founder Shah Ni&#145;matullah Wali (d. 1431 CE), which gained popularity in Iran and India. </DIV></DIV><DIV class="divGlosItem"><A name='397'></a><DIV title="(Arabic, derived from the root <I>na-ba-’a</I> meaning ‘to utter’ or ‘to inform’), also <I>ta-na-ba-’a</I> to claim for oneself the gift of prophecy or office of a prophet. Hence, <I>nubuwwa</I> means prophethood. It is a definitive aspect of Muslim religious belief, being the primary means by which God communicates to humankind. <I>Nubuwwa</I> is a rich and central topic in the <A href='javascript:void(LaunchGlossary('GlossaryItemf3b2.html?type=glossary&amp;id=378'))'>Qur'an</A> which refers to a continuous chain of revelation-bearers who were related genealogically. According to the Quran, this chain starts with Adam, and ends with the <I>khatam al-anbiya’</I> (the seal of Prophets), that is, Prophet Muhammad. Theologians developed a theory of the distinctive signs of prophethood (<I>dala’il</I>, <I>‘alamat</I>, or <I>imarat</I> <I>al-nubuwwa</I>). These included receiving the revelation (<I>wahy</I>), that the Prophet is of a noble descent, having a mark between his shoulders, having miraculous powers, and being supported with marvels which prove his status. By the 13<SUP>th</SUP> century, theologians went on to develop the doctrine of <I>‘isma</I> (infallibility/impeccability) as a fundamental sign of <I>nubuwwa</I> and this was applied broadly to Prophet Muhammad." class="divGlosHead">Nubuwwa</DIV><DIV class="divGlosBody">(Arabic, derived from the root <I>na-ba-’a</I> meaning ‘to utter’ or ‘to inform’), also <I>ta-na-ba-’a</I> to claim for oneself the gift of prophecy or office of a prophet. Hence, <I>nubuwwa</I> means prophethood. It is a definitive aspect of Muslim religious belief, being the primary means by which God communicates to humankind. <I>Nubuwwa</I> is a rich and central topic in the <A href="javascript:void(LaunchGlossary('GlossaryItemf3b2.html?type=glossary&amp;id=378'))">Qur'an</A> which refers to a continuous chain of revelation-bearers who were related genealogically. According to the Quran, this chain starts with Adam, and ends with the <I>khatam al-anbiya’</I> (the seal of Prophets), that is, Prophet Muhammad. Theologians developed a theory of the distinctive signs of prophethood (<I>dala’il</I>, <I>‘alamat</I>, or <I>imarat</I> <I>al-nubuwwa</I>). These included receiving the revelation (<I>wahy</I>), that the Prophet is of a noble descent, having a mark between his shoulders, having miraculous powers, and being supported with marvels which prove his status. By the 13<SUP>th</SUP> century, theologians went on to develop the doctrine of <I>‘isma</I> (infallibility/impeccability) as a fundamental sign of <I>nubuwwa</I> and this was applied broadly to Prophet Muhammad.</DIV></DIV><DIV class="divGlosItem"><A name='146'></a><DIV title="A group which split off from the Huruffiyya in 1397&#8211;98 CE." class="divGlosHead">Nuqtawiyya; Nuqtawis</DIV><DIV class="divGlosBody">A group which split off from the Huruffiyya in 1397&#8211;98 CE.</DIV></DIV><DIV class="divGlosItem"><A name='144'></a><DIV title="A <A href='javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))'>Sufi</A> order founded by Muhammad b. &#145;Abd Allah known as Nurbakhsh (d. 1464 CE). " class="divGlosHead">Nurbakhshiyya; Nurbakshi</DIV><DIV class="divGlosBody">A <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufi</A> order founded by Muhammad b. &#145;Abd Allah known as Nurbakhsh (d. 1464 CE). </DIV></DIV><DIV class="divGlosItem"><A name='374'></a><DIV title="<P>(Arabic; means absence);<B> </B>this term is associated with the <U><A href='javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))'>Ithna‘ashari Shi‘i</A></U> Muslim tradition in reference to the ‘hidden state’ of their twelfth imam, Muhammad al-Mahdi. Historically, the occultation began with the disappearance of the twelfth Imam in 260 AH/874 CE and continues to the present. According to Ithna ‘ashari tradition, the occultation has two distinct stages, the lesser occultation (<I>al-ghayba al-sughra</I>), which lasted from 260 AH/874 CE to 329 AH/941 CE, during which the hidden Imam was represented by some agents (<I>sufara’, </I>sing, <I>safir</I>) who were believed to be in touch with him and exercising authority on his behalf. The greater occultation (<I>al-ghayba al-kubra</I>), continues to the present time, where the Imam has no special agent. However, the <U><A href='javascript:void(LaunchGlossary('GlossaryItem5bfd.html?type=glossary&amp;id=59'))'>Twelver</A></U> Shi‘i jurists are recognised as his representatives and the only legitimate interpreters of Shari‘a for the Ithna ‘ashari Shi‘i Muslims. </P>" class="divGlosHead">Occultation/Ghayba</DIV><DIV class="divGlosBody"><P>(Arabic; means absence);<B> </B>this term is associated with the <U><A href="javascript:void(LaunchGlossary('GlossaryItem0f94.html?type=glossary&amp;id=220'))">Ithna‘ashari Shi‘i</A></U> Muslim tradition in reference to the ‘hidden state’ of their twelfth imam, Muhammad al-Mahdi. Historically, the occultation began with the disappearance of the twelfth Imam in 260 AH/874 CE and continues to the present. According to Ithna ‘ashari tradition, the occultation has two distinct stages, the lesser occultation (<I>al-ghayba al-sughra</I>), which lasted from 260 AH/874 CE to 329 AH/941 CE, during which the hidden Imam was represented by some agents (<I>sufara’, </I>sing, <I>safir</I>) who were believed to be in touch with him and exercising authority on his behalf. The greater occultation (<I>al-ghayba al-kubra</I>), continues to the present time, where the Imam has no special agent. However, the <U><A href="javascript:void(LaunchGlossary('GlossaryItem5bfd.html?type=glossary&amp;id=59'))">Twelver</A></U> Shi‘i jurists are recognised as his representatives and the only legitimate interpreters of Shari‘a for the Ithna ‘ashari Shi‘i Muslims. </P></DIV></DIV><DIV class="divGlosItem"><A name='358'></a><DIV title="The name of a Turkish dynasty (from late 13<SUP>th </SUP>century until 1924 CE). At the height of its power in the 16<SUP>th</SUP> century, the empire controlled much of South-eastern Europe, the Near and the Middle East as well as North Africa. The Ottoman rule is especially known for its architectural, literary and administrative achievements. Their mode of managing religious communities within the empire – the millet system – is sometimes referred to in discussions on pluralism in contemporary political philosophy. After the demise of the nominal <A href='javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))'>Abbasid</A> <A href='javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))'>Caliph</A> in Cairo in 1517, the Ottomans assumed the title of caliph for themselves. From the early 19th century, the Ottomans went through several alternate phases of reformatory and reactionary politics in the wake of their attempts to respond to forces of European modernity. In the process, several areas once under the empire became independent. During the First World War, the Ottomans aligned with the Central Powers whose defeat hastened the decline of the empire. The Ottoman Caliphate was finally abolished in 1924 by Mustafa Kemal Atatürk (1881-1938) who simultaneously founded the Republic of Turkey. The last Ottoman Caliph was Abdülmecid II (d. 1944)." class="divGlosHead">Ottomans; Osmanlis</DIV><DIV class="divGlosBody">The name of a Turkish dynasty (from late 13<SUP>th </SUP>century until 1924 CE). At the height of its power in the 16<SUP>th</SUP> century, the empire controlled much of South-eastern Europe, the Near and the Middle East as well as North Africa. The Ottoman rule is especially known for its architectural, literary and administrative achievements. Their mode of managing religious communities within the empire – the millet system – is sometimes referred to in discussions on pluralism in contemporary political philosophy. After the demise of the nominal <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasid</A> <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">Caliph</A> in Cairo in 1517, the Ottomans assumed the title of caliph for themselves. From the early 19th century, the Ottomans went through several alternate phases of reformatory and reactionary politics in the wake of their attempts to respond to forces of European modernity. In the process, several areas once under the empire became independent. During the First World War, the Ottomans aligned with the Central Powers whose defeat hastened the decline of the empire. The Ottoman Caliphate was finally abolished in 1924 by Mustafa Kemal Atatürk (1881-1938) who simultaneously founded the Republic of Turkey. The last Ottoman Caliph was Abdülmecid II (d. 1944).</DIV></DIV><DIV class="divGlosItem"><A name='143'></a><DIV title="Lit. ‘elder.’ (like the Arabic <A href='javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))'><EM>shaykh</EM></A>). Spiritual director (=<A href='javascript:void(LaunchGlossary('GlossaryItemcb61.html?type=glossary&amp;id=160'))'><EM>murshid</EM></A>), who may be the founder of a <A href='javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))'>Sufi</A> <A href='javascript:void(LaunchGlossary('GlossaryItemda5d.html?type=glossary&amp;id=69'))'><EM>tariqa</EM></A>. The earliest Qasim Shahi Imams were referred to as pirs. In the post-<A href='javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))'>Alamut</A> period, the term designated the local leaders of <A href='javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))'>Nizari</A> communities, some of whom had a hereditary position (as in Afghanistan, Badakhshan and elsewhere in Central Asia). In Indian (Satpanth) Ismailism, the pirs are the figures who led the <A href='javascript:void(LaunchGlossary('GlossaryItem3c86.html?type=glossary&amp;id=199'))'>Khoja</A> community (from at least the 13th until the 19th centuries) and to whom the <A href='javascript:void(LaunchGlossary('GlossaryItem6af6.html?type=glossary&amp;id=261'))'><EM>ginans</EM></A> are ascribed." class="divGlosHead"><i>pir</i></DIV><DIV class="divGlosBody">Lit. ‘elder.’ (like the Arabic <A href="javascript:void(LaunchGlossary('GlossaryItem59aa.html?type=glossary&amp;id=96'))"><EM>shaykh</EM></A>). Spiritual director (=<A href="javascript:void(LaunchGlossary('GlossaryItemcb61.html?type=glossary&amp;id=160'))"><EM>murshid</EM></A>), who may be the founder of a <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufi</A> <A href="javascript:void(LaunchGlossary('GlossaryItemda5d.html?type=glossary&amp;id=69'))"><EM>tariqa</EM></A>. The earliest Qasim Shahi Imams were referred to as pirs. In the post-<A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A> period, the term designated the local leaders of <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari</A> communities, some of whom had a hereditary position (as in Afghanistan, Badakhshan and elsewhere in Central Asia). In Indian (Satpanth) Ismailism, the pirs are the figures who led the <A href="javascript:void(LaunchGlossary('GlossaryItem3c86.html?type=glossary&amp;id=199'))">Khoja</A> community (from at least the 13th until the 19th centuries) and to whom the <A href="javascript:void(LaunchGlossary('GlossaryItem6af6.html?type=glossary&amp;id=261'))"><EM>ginans</EM></A> are ascribed.</DIV></DIV><DIV class="divGlosItem"><A name='127'></a><DIV title="Arabic term for the Last Day, the Day of Resurrection. A concept which features prominently in the Qur’an. Belief in the Last Day features as one of the pillars of the Islamic creed." class="divGlosHead"><i>al-qiyama</i></DIV><DIV class="divGlosBody">Arabic term for the Last Day, the Day of Resurrection. A concept which features prominently in the Qur’an. Belief in the Last Day features as one of the pillars of the Islamic creed.</DIV></DIV><DIV class="divGlosItem"><A name='141'></a><DIV title="Derived from Q 33:38, etc and often translated as &#145;destiny,&#146; &#145;fate,&#146; or predestination. See <I><A href='javascript:void(LaunchGlossary('GlossaryItembb86.html?type=glossary&amp;id=142'))'> qada&#146; </A></I>. " class="divGlosHead"><i>qadar</i></DIV><DIV class="divGlosBody">Derived from Q 33:38, etc and often translated as &#145;destiny,&#146; &#145;fate,&#146; or predestination. See <I><A href="javascript:void(LaunchGlossary('GlossaryItembb86.html?type=glossary&amp;id=142'))"> qada&#146; </A></I>. </DIV></DIV><DIV class="divGlosItem"><A name='142'></a><DIV title="Divine decree. In the Qur&#146;an, it does not appear as a noun, but as a verb meaning &#145;to decree, determine.&#146; Together with <I>qadar</I> this concept featured in theological disputes on the issue of free will and predestination. " class="divGlosHead"><i>qada’</i></DIV><DIV class="divGlosBody">Divine decree. In the Qur&#146;an, it does not appear as a noun, but as a verb meaning &#145;to decree, determine.&#146; Together with <I>qadar</I> this concept featured in theological disputes on the issue of free will and predestination. </DIV></DIV><DIV class="divGlosItem"><A name='139'></a><DIV title="A Muslim judge (pl. <I>qudat</I>). " class="divGlosHead"><i>qadi</i></DIV><DIV class="divGlosBody">A Muslim judge (pl. <I>qudat</I>). </DIV></DIV><DIV class="divGlosItem"><A name='135'></a><DIV title="Reed&#8211;pen. The first verse of Sura 68 says: &#145;By the pen and what they write&#146; and Q 96:4 states that God taught man &#145;by the pen&#146;. According to some traditions (such as those collected in Tabari&#146;s <I>Tafsir</I>), the <I>qalam</I> was the first thing created by God. Abu Ya&#146;qub al&#8211;Sijistani (d. after 971) linked the terms <I>qalam</I> and <I><A href='javascript:void(LaunchGlossary('GlossaryItem0817.html?type=glossary&amp;id=326'))'> &#145;arsh </A></I> with <I>&#145;<A href='javascript:void(LaunchGlossary('GlossaryItem0817.html?type=glossary&amp;id=326'))'> aql </A></I> in an attempt to equate the Qur&#146;anic concepts with Neoplatonic cosmology. " class="divGlosHead"><i>qalam</i></DIV><DIV class="divGlosBody">Reed&#8211;pen. The first verse of Sura 68 says: &#145;By the pen and what they write&#146; and Q 96:4 states that God taught man &#145;by the pen&#146;. According to some traditions (such as those collected in Tabari&#146;s <I>Tafsir</I>), the <I>qalam</I> was the first thing created by God. Abu Ya&#146;qub al&#8211;Sijistani (d. after 971) linked the terms <I>qalam</I> and <I><A href="javascript:void(LaunchGlossary('GlossaryItem0817.html?type=glossary&amp;id=326'))"> &#145;arsh </A></I> with <I>&#145;<A href="javascript:void(LaunchGlossary('GlossaryItem0817.html?type=glossary&amp;id=326'))"> aql </A></I> in an attempt to equate the Qur&#146;anic concepts with Neoplatonic cosmology. </DIV></DIV><DIV class="divGlosItem"><A name='133'></a><DIV title="A polythematic poem originating in pre&#8211;Islamic Arabia. It has come to refer to any poem of a certain length in Arabic, Persian and Turkish literatures, often including the eulogy of a personality. Persian <I>qasida</I>s are also composed to celebrate festivals. The chanted <I>qasida</I> is part of the religious tradition of Arabic and Persian&#8211;speaking <A href='javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))'> Nizari </A> Ismailis. " class="divGlosHead"><i>qasida</i></DIV><DIV class="divGlosBody">A polythematic poem originating in pre&#8211;Islamic Arabia. It has come to refer to any poem of a certain length in Arabic, Persian and Turkish literatures, often including the eulogy of a personality. Persian <I>qasida</I>s are also composed to celebrate festivals. The chanted <I>qasida</I> is part of the religious tradition of Arabic and Persian&#8211;speaking <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))"> Nizari </A> Ismailis. </DIV></DIV><DIV class="divGlosItem"><A name='131'></a><DIV title="A group, tribe or community of the <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'> Shi&#145;a </A>. " class="divGlosHead"><i>qawm min al-shi‘a</i></DIV><DIV class="divGlosBody">A group, tribe or community of the <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))"> Shi&#145;a </A>. </DIV></DIV><DIV class="divGlosItem"><A name='136'></a><DIV title="Lit. ‘the Resurrector of the Resurrection.’ See <I>khudawand–i qiyamat </A></I>and <I><A href='javascript:void(LaunchGlossary('GlossaryItemdcf3.html?type=glossary&amp;id=137'))'>qa’im </A></I>. " class="divGlosHead"><i>qa’im al-qiyamah</i></DIV><DIV class="divGlosBody">Lit. ‘the Resurrector of the Resurrection.’ See <I>khudawand–i qiyamat </A></I>and <I><A href="javascript:void(LaunchGlossary('GlossaryItemdcf3.html?type=glossary&amp;id=137'))">qa’im </A></I>. </DIV></DIV><DIV class="divGlosItem"><A name='137'></a><DIV title="Lit. ‘riser’ or ‘resurrector.’ Used in early <A href='javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))'>Shi‘i</A> thought for a member of the family of Muhammad who was expected to restore justice on earth by rising against the regime considered as illegitimate. It also came to mean the eschatological <EM><A href='javascript:void(LaunchGlossary('GlossaryItem1fe4.html?type=glossary&amp;id=181'))'>mahdi</A></EM>. The title al-qa’im bi amr Allah was adopted by the second <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'>Fatimid</A> <A href='javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))'>caliph</A>-<A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>imam</A> (d. 946) and later by the 26th <A href='javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))'>‘Abbasid</A> caliph (d. 1075). Some early Ismailis expected Imam Muhammad b. Ismail to return as the qa’im or <EM><A href='javascript:void(LaunchGlossary('GlossaryItem1fe4.html?type=glossary&amp;id=181'))'>mahdi</A></EM>. In the writings of Qadi Nu’man, qa’im designated the Fatimid imam-caliphs, who had assumed the functions of the qa’im to elucidate the hidden meaning (see <EM><A href='javascript:void(LaunchGlossary('GlossaryItem6ca1.html?type=glossary&amp;id=310'))'>batin</A></EM>) of the prescribed laws. However, some groups continued to expect the second coming of Muhammad b. Isma‘il as the qa’im who would end the last era of mankind. These Ismailis are sometimes called seveners (see <EM><A href='javascript:void(LaunchGlossary('GlossaryItemb2f9.html?type=glossary&amp;id=118'))'>sab‘iyya</A></EM>). The doctrine of <A href='javascript:void(LaunchGlossary('GlossaryItem45d6.html?type=glossary&amp;id=127'))'><EM>qiyamat</EM></A> in <A href='javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))'>Alamut</A> gave a central role to the imam as the qa’im and gateway to the divine world (see <EM><A href='javascript:void(LaunchGlossary('GlossaryItemda05.html?type=glossary&amp;id=136'))'>qa’im al-qiyamah</A></EM> and <A href='javascript:void(LaunchGlossary('GlossaryItemb977.html?type=glossary&amp;id=197'))'>khudawand-i qiyamat</A>). " class="divGlosHead"><i>qa’im</i></DIV><DIV class="divGlosBody">Lit. ‘riser’ or ‘resurrector.’ Used in early <A href="javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))">Shi‘i</A> thought for a member of the family of Muhammad who was expected to restore justice on earth by rising against the regime considered as illegitimate. It also came to mean the eschatological <EM><A href="javascript:void(LaunchGlossary('GlossaryItem1fe4.html?type=glossary&amp;id=181'))">mahdi</A></EM>. The title al-qa’im bi amr Allah was adopted by the second <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A> <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliph</A>-<A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A> (d. 946) and later by the 26th <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">‘Abbasid</A> caliph (d. 1075). Some early Ismailis expected Imam Muhammad b. Ismail to return as the qa’im or <EM><A href="javascript:void(LaunchGlossary('GlossaryItem1fe4.html?type=glossary&amp;id=181'))">mahdi</A></EM>. In the writings of Qadi Nu’man, qa’im designated the Fatimid imam-caliphs, who had assumed the functions of the qa’im to elucidate the hidden meaning (see <EM><A href="javascript:void(LaunchGlossary('GlossaryItem6ca1.html?type=glossary&amp;id=310'))">batin</A></EM>) of the prescribed laws. However, some groups continued to expect the second coming of Muhammad b. Isma‘il as the qa’im who would end the last era of mankind. These Ismailis are sometimes called seveners (see <EM><A href="javascript:void(LaunchGlossary('GlossaryItemb2f9.html?type=glossary&amp;id=118'))">sab‘iyya</A></EM>). The doctrine of <A href="javascript:void(LaunchGlossary('GlossaryItem45d6.html?type=glossary&amp;id=127'))"><EM>qiyamat</EM></A> in <A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A> gave a central role to the imam as the qa’im and gateway to the divine world (see <EM><A href="javascript:void(LaunchGlossary('GlossaryItemda05.html?type=glossary&amp;id=136'))">qa’im al-qiyamah</A></EM> and <A href="javascript:void(LaunchGlossary('GlossaryItemb977.html?type=glossary&amp;id=197'))">khudawand-i qiyamat</A>). </DIV></DIV><DIV class="divGlosItem"><A name='128'></a><DIV title="The collective name for several Nizari fortresses in Syria’s Jabal Bahra’ after their capture around 535/1140–1, including al-Khawabi, Rusafa, Maniqa and Qulay‘a. " class="divGlosHead"><i>qila‘ al-da‘wa</i></DIV><DIV class="divGlosBody">The collective name for several Nizari fortresses in Syria’s Jabal Bahra’ after their capture around 535/1140–1, including al-Khawabi, Rusafa, Maniqa and Qulay‘a. </DIV></DIV><DIV class="divGlosItem"><A name='125'></a><DIV title="Lit. &#145;pole&#146; or &#145;pivot&#146;. In mystical literature, such as the writings of al&#8211;Tirmidhi, Abd al&#8211;Razzaq and Ibn al&#8211;&#145;Arabi (d. 1240), it refers to the most perfect human being (<I>al&#8211;insan al&#8211;kamil</I>) who is thought to be the universal leader of all saints, to mediate between the divine and the human and whose presence is deemed necessary for the existence of the world. For some <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'> Shi&#145;i </A> authors, such as Haydar Amuli (14th c.) the <I>qutb</I> is the Shi&#145;i <I><A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>imam</A></I>. " class="divGlosHead"><i>qutb; kutb</i></DIV><DIV class="divGlosBody">Lit. &#145;pole&#146; or &#145;pivot&#146;. In mystical literature, such as the writings of al&#8211;Tirmidhi, Abd al&#8211;Razzaq and Ibn al&#8211;&#145;Arabi (d. 1240), it refers to the most perfect human being (<I>al&#8211;insan al&#8211;kamil</I>) who is thought to be the universal leader of all saints, to mediate between the divine and the human and whose presence is deemed necessary for the existence of the world. For some <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))"> Shi&#145;i </A> authors, such as Haydar Amuli (14th c.) the <I>qutb</I> is the Shi&#145;i <I><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A></I>. </DIV></DIV><DIV class="divGlosItem"><A name='138'></a><DIV title="Arabic word for the city of Cairo in Egypt, founded by the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'> Fatimids </A> in 969. " class="divGlosHead">al-Qahira</DIV><DIV class="divGlosBody">Arabic word for the city of Cairo in Egypt, founded by the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))"> Fatimids </A> in 969. </DIV></DIV><DIV class="divGlosItem"><A name='140'></a><DIV title="Followers of a theological school in early Islam who advocated the doctrine of free will; also the name of a <A href='javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))'> Sufi </A> order founded by &#145;Abd al&#8211;Qadir al&#8211;Jilani (d. 1166 CE). " class="divGlosHead">Qadariyya; Qadarites</DIV><DIV class="divGlosBody">Followers of a theological school in early Islam who advocated the doctrine of free will; also the name of a <A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))"> Sufi </A> order founded by &#145;Abd al&#8211;Qadir al&#8211;Jilani (d. 1166 CE). </DIV></DIV><DIV class="divGlosItem"><A name='134'></a><DIV title="A number of revolutionary movements in early Islam which, while adhering with the <A href='javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))'> Ismailis </A> to the <A href='javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))'> Imamat </A> of Isma&#145;il b. Ja&#145;far, were generally opposed to the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'> Fatimids </A>. " class="divGlosHead">Qarmatis; Qarmatiyya</DIV><DIV class="divGlosBody">A number of revolutionary movements in early Islam which, while adhering with the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))"> Ismailis </A> to the <A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))"> Imamat </A> of Isma&#145;il b. Ja&#145;far, were generally opposed to the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))"> Fatimids </A>. </DIV></DIV><DIV class="divGlosItem"><A name='132'></a><DIV title="Adherents of one of the main branches of Nizari Ismailis who followed Qasim Shah as the successor to the Imam Shams al&#8211;Din Muhammad (d. 1310 CE)." class="divGlosHead">Qasim Shahis</DIV><DIV class="divGlosBody">Adherents of one of the main branches of Nizari Ismailis who followed Qasim Shah as the successor to the Imam Shams al&#8211;Din Muhammad (d. 1310 CE).</DIV></DIV><DIV class="divGlosItem"><A name='130'></a><DIV title="A Tunisian city, often transliterated in English as Kairouan, which became the capital city of the <A href='javascript:void(LaunchGlossary('GlossaryItemaa32.html?type=glossary&amp;id=29'))'>Aghlabids</A> and later of the <A href='javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))'> Fatimids </A>. " class="divGlosHead">Qayrawan; Kairouan</DIV><DIV class="divGlosBody">A Tunisian city, often transliterated in English as Kairouan, which became the capital city of the <A href="javascript:void(LaunchGlossary('GlossaryItemaa32.html?type=glossary&amp;id=29'))">Aghlabids</A> and later of the <A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))"> Fatimids </A>. </DIV></DIV><DIV class="divGlosItem"><A name='129'></a><DIV title="The direction of Muslim prayer towards the<A href='javascript:void(LaunchGlossary('GlossaryItem366a.html?type=glossary&amp;id=207'))'> Ka‘ba </A>, indicated in a mosque by a niche called mihrab." class="divGlosHead">Qibla</DIV><DIV class="divGlosBody">The direction of Muslim prayer towards the<A href="javascript:void(LaunchGlossary('GlossaryItem366a.html?type=glossary&amp;id=207'))"> Ka‘ba </A>, indicated in a mosque by a niche called mihrab.</DIV></DIV><DIV class="divGlosItem"><A name='126'></a><DIV title="Lit. &#145;Red&#8211;heads,&#146; name of Turkish tribesmen and followers of the Safawiyya Sufi order who founded the the Safawid dynasty in Persia in 1501 CE." class="divGlosHead">Qizilbash</DIV><DIV class="divGlosBody">Lit. &#145;Red&#8211;heads,&#146; name of Turkish tribesmen and followers of the Safawiyya Sufi order who founded the the Safawid dynasty in Persia in 1501 CE.</DIV></DIV><DIV class="divGlosItem"><A name='400'></a><DIV title="A historic city in Iran to the south of Tehran. It is considered by many <A href='javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))'>Shi‘i</A> Muslims as Iran’s second holiest city after Mashhad. Qum is a leading centre of <A href='javascript:void(LaunchGlossary('GlossaryItem5bfd.html?type=glossary&amp;id=59'))'>Twelver</A> Shia learning in Iran, which contains major institutions for the training of students and is home of leading schools and libraries. Following the Islamic Revolution in Iran in 1979, Qum’s importance has grown enormously. Qum’s fame as a pilgrimage site, visited by millions from Iran and abroad, is mainly due to the shrine of Fatima (popularly known as <I>Hazrat-i Ma‘suma</I>), daughter of the 7<SUP>th</SUP> <A href='javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))'>Imam</A> of the Twelver Shia, Musa b. Ja‘far al-Kazim, and sister of the 8<SUP>th</SUP> Imam of the Twelver Shia, Ali Reza, whose shrine is in Mashhad." class="divGlosHead">Qum</DIV><DIV class="divGlosBody">A historic city in Iran to the south of Tehran. It is considered by many <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi‘i</A> Muslims as Iran’s second holiest city after Mashhad. Qum is a leading centre of <A href="javascript:void(LaunchGlossary('GlossaryItem5bfd.html?type=glossary&amp;id=59'))">Twelver</A> Shia learning in Iran, which contains major institutions for the training of students and is home of leading schools and libraries. Following the Islamic Revolution in Iran in 1979, Qum’s importance has grown enormously. Qum’s fame as a pilgrimage site, visited by millions from Iran and abroad, is mainly due to the shrine of Fatima (popularly known as <I>Hazrat-i Ma‘suma</I>), daughter of the 7<SUP>th</SUP> <A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imam</A> of the Twelver Shia, Musa b. Ja‘far al-Kazim, and sister of the 8<SUP>th</SUP> Imam of the Twelver Shia, Ali Reza, whose shrine is in Mashhad.</DIV></DIV><DIV class="divGlosItem"><A name='378'></a><DIV title="<P>(also Koran. Arabic term meaning, ‘recitation’ or ‘scripture’): Muslims believe that the Holy Qur’an contains divine revelations to Prophet Muhammed received in Mecca and Medina over a period of 23 years in the early 7th century CE. It consists of 114 <I>sura</I>s (chapters) of varying lengths, each of which is divided into a number of <I>ayat</I> (verses). The <I>suwar </I>(chapters)<I> </I>fall under two categories, the Meccan in reference to those revealed while the Prophet was in Mecca, and the Medinan in reference to those revealed while he was in Medina. After the first <I>sura</I>,<I> </I>called<I> al-Fatiha</I>, the rest of the chapters are arranged roughly in decreasing order of length. There are varying traditions amongst Muslims about the collection and compilation of the Holy Qur’an, although it is generally believed that the authoritative collection (<I>mushaf</I>) was prepared following the demise of Prophet Muhammad. Among Muslims, the Holy Qur’an plays a central role in rituals, law, theology, literature arts and spirituality. </P>" class="divGlosHead">Qur’an</DIV><DIV class="divGlosBody"><P>(also Koran. Arabic term meaning, ‘recitation’ or ‘scripture’): Muslims believe that the Holy Qur’an contains divine revelations to Prophet Muhammed received in Mecca and Medina over a period of 23 years in the early 7th century CE. It consists of 114 <I>sura</I>s (chapters) of varying lengths, each of which is divided into a number of <I>ayat</I> (verses). The <I>suwar </I>(chapters)<I> </I>fall under two categories, the Meccan in reference to those revealed while the Prophet was in Mecca, and the Medinan in reference to those revealed while he was in Medina. After the first <I>sura</I>,<I> </I>called<I> al-Fatiha</I>, the rest of the chapters are arranged roughly in decreasing order of length. There are varying traditions amongst Muslims about the collection and compilation of the Holy Qur’an, although it is generally believed that the authoritative collection (<I>mushaf</I>) was prepared following the demise of Prophet Muhammad. Among Muslims, the Holy Qur’an plays a central role in rituals, law, theology, literature arts and spirituality. </P></DIV></DIV>
+			
+
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+		</div>
+	</div>
+
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/glossary_list.asp?l=en&lang=en&f=L&t=Q by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:58:52 GMT -->
+</HTML>

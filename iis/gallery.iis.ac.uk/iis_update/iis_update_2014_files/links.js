@@ -1,0 +1,1 @@
+window.flipbook_links = [];

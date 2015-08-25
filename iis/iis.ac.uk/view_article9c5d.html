@@ -1,0 +1,732 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105491 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:43:40 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2rtl.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1rtl.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3rtl.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 105491;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="rtl" class="rtl fa">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" href="home.html">&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="&#1580;&#1587;&#1578;&#1580;&#1608; &#1583;&#1585; &#1608;&#1576;&#8204;&#1587;&#1575;&#1610;&#1578;&#1616; &#1605;&#1572;&#1587;&#1587;&#1607;" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fa_list">
+
+<li class="fa">
+	<a class="0" title="&#1606;&#1582;&#1587;&#1578;" rel="dropmenu0_b" href="homecce4.html?l=fa">&#1606;&#1582;&#1587;&#1578;</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_article6795.html?type=cont.currentlang&amp;id=104413&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</A></div><div><A href="view_article6d2b.html?type=cont.currentlang&amp;id=103471&amp;l=fa">&#1581;&#1590;&#1585;&#1578; &#1608;&#1575;&#1604;&#1575; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></div><div><A href="view_articleb06f.html?type=cont.currentlang&amp;id=104448&amp;l=fa">&#1580;&#1575;&#1605;&#1593;&#1607;&#8204;&#1740; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;</A></div><div><A href="view_article506d.html?type=cont.currentlang&amp;id=104373&amp;l=fa">&#1588;&#1576;&#1705;&#1607;&#8204;&#1740; &#1578;&#1608;&#1587;&#1593;&#1607;&#8204;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="15 2 34" title="&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;" rel="dropmenu1_b" href="view_sorted_articles7192.html?type=static&amp;id=ResearchandPublications&amp;l=fa">&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></div><div><A href="view_article5d32.html?ContentID=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A></div><div><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A></div><div><A href="view_article8aae.html?ContentID=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></div><div><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A></div><div><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A></div><div><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A></div><div><A href="view_articleb430.html?ContentID=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A></div><div><A href="view_article2b6d.html?ContentID=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1740;&#1607;</A></div><div><A href="view_article5aa9.html?ContentID=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A></div><div><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="3" title="&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;" rel="dropmenu2_b" href="view_sorted_articles0fe6.html?type=static&amp;id=graduate_studies&amp;l=fa">&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article6d62.html?type=cont.currentlang&amp;id=104478&amp;l=fa">&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1610;&#1604;&#1740; &#1583;&#1585; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1593;&#1604;&#1608;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;</A></div><div><A href="view_article313f.html?type=cont.currentlang&amp;id=106627&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1740;&#1578; &#1605;&#1593;&#1604;&#1605; &#1583;&#1608;&#1585;&#1607;&#8204;&#1740; &#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1740;&#1740;</A></div><div><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A></div><div><A href="view_article7818.html?type=cont.currentlang&amp;id=105818&amp;l=fa">&#1587;&#1575;&#1740;&#1585; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="22" title="&#1570;&#1605;&#1608;&#1586;&#1588;" rel="dropmenu3_b" href="view_sorted_articles8ed3.html?type=static&amp;id=learning&amp;l=fa">&#1570;&#1605;&#1608;&#1586;&#1588;</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A></div><div><A href="view_articlee423.html?ContentID=104858&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A></div><div><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A></div><div><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A></div><div><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></div><div><A href="view_article5bd8.html?ContentID=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></div><div><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="5" title="&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;" rel="dropmenu4_b" href="view_sorted_articles900d.html?type=static&amp;id=library&amp;l=fa">&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_article0a46.html?type=cont.currentlang&amp;id=103462&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></div><div><A href="view_articlef688.html?type=cont.currentlang&amp;id=104503&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1670;&#1575;&#1662;&#1740;</A></div><div><A href="view_articledaae.html?type=cont.currentlang&amp;id=104538&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1589;&#1608;&#1578;&#1740; &#1608; &#1578;&#1589;&#1608;&#1740;&#1585;&#1740;</A></div><div><A href="view_articlece75.html?type=cont.currentlang&amp;id=114807&amp;l=fa">Electronic Resources</A></div><div><A href="view_article3a7d.html?type=cont.currentlang&amp;id=104728&amp;l=fa">&#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A></div><div><A href="view_articleeac8.html?type=cont.currentlang&amp;id=104748&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A></div><div><A href="view_sorted_articles06b6.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="7 20" title="&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;" rel="dropmenu5_b" href="view_sorted_articles1714.html?type=static&amp;id=newsevents&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A></div><div><A href="view_article1720.html?ContentID=104873&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;</A></div><div><A href="view_article2827.html?ContentID=104498&amp;l=fa">&#1582;&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "rtl" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only49a7.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D105491">&#1605;&#1578;&#1606; &#1578;&#1606;&#1607;&#1575;</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlefbd3.html?ContentID=105488">English<li><A href="view_article3732.html?ContentID=105489">Français</A></li><li><A href="view_article4bfd.html?ContentID=105490">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articlea246.html?ContentID=105492">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles961d.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1578;&#1575;&#1585;&#1740;&#1582;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb07c.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1606;&#1575;&#1605; &#1605;&#1572;&#1604;&#1601;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4aaa.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1593;&#1606;&#1608;&#1575;&#1606;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article1c79.html?type=cont.currentlang&amp;id=105758&amp;l=fa" >&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1578;&#1575;&#1586;&#1607;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article8a4a.html?type=cont.currentlang&amp;id=111218&amp;l=fa" >&#1587;&#1604;&#1587;&#1604;&#1607;&#8204;&#1740; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articleefa9.html?type=cont.currentlang&amp;id=104743&amp;l=fa" >&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1583;&#1585; &#1583;&#1587;&#1578; &#1578;&#1607;&#1610;&#1607;</A></p><p><A href="view_article5717.html?type=cont.currentlang&amp;id=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A></p><p><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A></p><p><A href="view_articlead33.html?type=cont.currentlang&amp;id=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></p><p><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A></p><p><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A></p><p><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A></p><p><A href="view_articlebda7.html?type=cont.currentlang&amp;id=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A></p><p><A href="view_article3ae5.html?type=cont.currentlang&amp;id=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1610;&#1607;</A></p><p><A href="view_article5271.html?type=cont.currentlang&amp;id=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A></p><p><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" href="javascript:mailpage()"><img border="0" alt="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" src="images/email.gif"/></a>  <a title="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" href="javascript:mailpage()">&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;</a></p>	
+
+<p><a title="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" href="javascript:window.print();"><img border="0" alt="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" src="images/print.gif"/></a>  <a title="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" href="javascript:window.print();">&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;</a></p>
+
+<p><a title="&#1575;&#1601;&#1586;&#1608;&#1606;&#1607;&#8204;&#1609; &#1580;&#1587;&#1578;&#1580;&#1608;&#1740; &#1601;&#1608;&#1585;&#1740;" href="view_articled5e0.html?ContentID=110810">&#1575;&#1601;&#1586;&#1608;&#1606;&#1607;&#8204;&#1609; &#1580;&#1587;&#1578;&#1580;&#1608;&#1740; &#1601;&#1608;&#1585;&#1740;</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">&#1593;&#1604;&#1575;&#1602;&#1605;&#1606;&#1583;&#1740;&#8204;&#1607;&#1575; &#1608; &#1576;&#1607; &#1575;&#1588;&#1578;&#1585;&#1575;&#1705;&#8204;&#1711;&#1584;&#1575;&#1585;&#1740;</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>&#1605;&#1593;&#1585;&#1601;&#1740; &#1570;&#1579;&#1575;&#1585;</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>&#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1610;&#1605;: &#1585;&#1587;&#1575;&#1604;&#1607;&#8204;&#1575;&#1740; &#1583;&#1585; &#1578;&#1601;&#1705;&#1585; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740; &#1575;&#1586; &#1602;&#1585;&#1608;&#1606; &#1605;&#1610;&#1575;&#1606;&#1607;</strong><strong><br/></strong><strong><DIV><A href="view_person968e.html?type=authors&amp;id=15">Dr Sayyad  Jalal Badakhchani</A></DIV></strong><br/><br/>&#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1601;&#1575;&#1585;&#1587;&#1740; &#1608; &#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1740; &#1575;&#1606;&#1711;&#1604;&#1740;&#1587;&#1740; &#1578;&#1575;&#1586;&#1607;&#8204;&#1575;&#1740; &#1575;&#1586; &#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605; &#1582;&#1608;&#1575;&#1580;&#1607; &#1606;&#1589;&#1740;&#1585;&#1575;&#1604;&#1583;&#1740;&#1606; &#1591;&#1608;&#1587;&#1740;&#1548;&nbsp; &#1587;&#1604;&#1587;&#1604;&#1607; &#1605;&#1578;&#1608;&#1606; &#1608; &#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1781;&#1548; &#1604;&#1606;&#1583;&#1606;: &#1570;&#1740;. &#1576;&#1740;. &#1578;&#1608;&#1585;&#1740;&#1587; &#1576;&#1575; &#1607;&#1605;&#1705;&#1575;&#1585;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;&#1548; &#1778;&#1776;&#1776;&#1781;&#1548;&nbsp;&nbsp;&#1778;&#1784;&#1783; (&#1575;&#1606;&#1711;&#1604;&#1740;&#1587;&#1740;) + &#1778;&#1778;&#1776; (&#1601;&#1575;&#1585;&#1587;&#1740;) &#1589;.<span><br/><br/><span>&#1777;&#1784;&#1782;&#1776;&#1782;&#1780;&#1780;&#1779;&#1782;&#1784;<span lang="FA" dir="rtl" style="FONT-SIZE: 12pt; FONT-FAMILY: ' mso-fareast-language: EN-US; mso-bidi-language: FA; Times: ; mso-fareast-font-family: ' mso-ansi-language: EN-US">&#1588;&#1575;&#1576;&#1705; (&#1580;&#1604;&#1583; &#1711;&#1575;&#1604;&#1610;&#1606;&#1711;&#1608;&#1585;):</span></span></span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="BACKGROUND: #ffffcc; WIDTH: 125px; HEIGHT: 230px" cellSpacing="0" cellPadding="0" align="left" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><A href="javascript:void(0)" onclick="LaunchPreviewFull('WebAssets/medium/Publication%20Content/web_paradise_submission-2005316193037_7055.jpg');" xmlns=""><IMG border="0" onError="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/web_paradise_submission-2005316193037_7055.jpg" align="left" alt="" style="padding: 0px;"></A></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">&#1582;&#1604;&#1575;&#1589;&#1607; </a></li><li><a href="javascript: showSection(&quot;contents&quot;)">&#1605;&#1581;&#1578;&#1608;&#1610;&#1575;&#1578;</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">&#1705;&#1578;&#1575;&#1576;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740;</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>&#1582;&#1604;&#1575;&#1589;&#1607; <br></strong><P align=justify>&#1582;&#1608;&#1575;&#1580;&#1607; &#1606;&#1589;&#1740;&#1585;&#1575;&#1604;&#1583;&#1740;&#1606; &#1591;&#1608;&#1587;&#1740;&#1548; &#1583;&#1575;&#1606;&#1588;&#1605;&#1606;&#1583; &#1608; &#1601;&#1740;&#1604;&#1587;&#1608;&#1601; &#1605;&#1588;&#1607;&#1608;&#1585; &#1602;&#1585;&#1606; &#1607;&#1601;&#1578;&#1605;/&#1587;&#1740;&#1586;&#1583;&#1607;&#1605;&#1548; &#1576;&#1587;&#1740;&#1575;&#1585;&#1740; &#1575;&#1586; &#1576;&#1607;&#1578;&#1585;&#1740;&#1606; &#1570;&#1579;&#1575;&#1585; &#1582;&#1608;&#1740;&#1588; &#1585;&#1575; &#1583;&#1585; &#1606;&#1580;&#1608;&#1605;&#1548; &#1585;&#1740;&#1575;&#1590;&#1740;&#1575;&#1578;&#1548; &#1601;&#1604;&#1587;&#1601;&#1607; &#1608; &#1601;&#1585;&#1608;&#1593; &#1605;&#1578;&#1593;&#1583;&#1583; &#1593;&#1604;&#1608;&#1605; &#1705;&#1575;&#1585;&#1576;&#1585;&#1583;&#1740; &#1583;&#1585; &#1578;&#1581;&#1578; &#1581;&#1605;&#1575;&#1740;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;&#1575;&#1606; &#1606;&#1586;&#1575;&#1585;&#1740; &#1575;&#1740;&#1585;&#1575;&#1606; &#1578;&#1571;&#1604;&#1740;&#1601; &#1606;&#1605;&#1608;&#1583;. &#1608;&#1740; &#1607;&#1605;&#1670;&#1606;&#1740;&#1606; &#1576;&#1607; &#1578;&#1571;&#1604;&#1740;&#1601; &#1578;&#1593;&#1583;&#1575;&#1583;&#1740; &#1575;&#1579;&#1585; &#1583;&#1585;&#1576;&#1575;&#1585;&#1607;&#8204;&#1740; &#1578;&#1601;&#1705;&#1585; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1586;&#1605;&#1575;&#1606; &#1582;&#1608;&#1740;&#1588; &#1662;&#1585;&#1583;&#1575;&#1582;&#1578; &#1705;&#1607; &#1586;&#1605;&#1740;&#1606;&#1607;&#8204;&#1607;&#1575;&#1740;&#1740; &#1606;&#1592;&#1740;&#1585; &#1575;&#1582;&#1604;&#1575;&#1602;&#1548; &#1605;&#1576;&#1583;&#1571; &#1608; &#1605;&#1593;&#1575;&#1583;&#1548; &#1705;&#1604;&#1575;&#1605; &#1608; &#1601;&#1604;&#1587;&#1601;&#1607; &#1583;&#1585; &#1576;&#1585;&#1605;&#1740;&#8204;&#1711;&#1740;&#1585;&#1583;.</P>
+<P align=justify>&#1575;&#1608;&#1604;&#1740;&#1606; &#1575;&#1579;&#1585; &#1591;&#1608;&#1587;&#1740; &#1705;&#1607; &#1607;&#1605;&#1585;&#1575;&#1607; &#1576;&#1575; &#1589;&#1616;&#1576;&#1594;&#1607;&#8204;&#1740; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1576;&#1608;&#1583; &#1575;&#1582;&#1604;&#1575;&#1602; &#1605;&#1581;&#1578;&#1588;&#1605;&#1740; &#1575;&#1587;&#1578;&#1548; &#1705;&#1607; &#1605;&#1580;&#1605;&#1608;&#1593;&#1607;&#8204;&#1575;&#1740; &#1588;&#1575;&#1605;&#1604; &#1576;&#1740;&#1588; &#1575;&#1586; &#1780;&#1776; &#1601;&#1589;&#1604; &#1575;&#1587;&#1578; &#1705;&#1607; &#1583;&#1585; &#1580;&#1606;&#1576;&#1607;&#8204;&#1607;&#1575;&#1740; &#1605;&#1582;&#1578;&#1604;&#1601; &#1587;&#1604;&#1608;&#1705; &#1575;&#1582;&#1604;&#1575;&#1602;&#1740;&#1548; &#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1602;&#1585;&#1570;&#1606;&#1548; &#1587;&#1606;&#1606; &#1606;&#1576;&#1608;&#1740;&#1548; &#1575;&#1581;&#1575;&#1583;&#1740;&#1579; &#1575;&#1574;&#1605;&#1607;&#8204;&#1740; &#1588;&#1740;&#1593;&#1607; &#1608; &#1583;&#1575;&#1593;&#1740;&#1575;&#1606; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;&#1548; &#1576;&#1607; &#1593;&#1604;&#1575;&#1608;&#1607;&#8204;&#1740; &#1711;&#1601;&#1578;&#1607;&#8204;&#1607;&#1575;&#1740; &#1575;&#1607;&#1604; &#1582;&#1585;&#1583; &#1608; &#1581;&#1705;&#1605;&#1578; &#1575;&#1586; &#1587;&#1575;&#1740;&#1585; &#1605;&#1584;&#1575;&#1607;&#1576; &#1606;&#1608;&#1588;&#1578;&#1607; &#1588;&#1583;&#1607; &#1575;&#1587;&#1578;. &#1662;&#1587; &#1575;&#1586; &#1575;&#1740;&#1606; &#1575;&#1579;&#1585;&#1548; &#1705;&#1578;&#1575;&#1576; &#1570;&#1594;&#1575;&#1586; &#1608; &#1575;&#1606;&#1580;&#1575;&#1605; &#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1585;&#1583; &#1705;&#1607; &#1578;&#1601;&#1589;&#1740;&#1604;&#1740; &#1575;&#1586; &#1605;&#1593;&#1575;&#1583;&#1588;&#1606;&#1575;&#1587;&#1740; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1578;&#1601;&#1587;&#1740;&#1585; &#1585;&#1608;&#1581;&#1575;&#1606;&#1740; &#1602;&#1585;&#1570;&#1606; &#1575;&#1587;&#1578;. &#1587;&#1662;&#1587; &#1608;&#1740; &#1578;&#1608;&#1604;&#1617;&#1575; &#1608; &#1578;&#1576;&#1585;&#1617;&#1575; &#1585;&#1575; &#1583;&#1585; &#1605;&#1581;&#1576;&#1578; &#1575;&#1605;&#1575;&#1605; &#1586;&#1605;&#1575;&#1606;&#1548; &#1608; &#1605;&#1591;&#1604;&#1608;&#1576; &#1575;&#1604;&#1605;&#1572;&#1605;&#1606;&#1740;&#1606; &#1585;&#1575; &#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1582;&#1589;&#1608;&#1589;&#1740;&#1575;&#1578; &#1605;&#1572;&#1605;&#1606; &#1581;&#1602;&#1740;&#1602;&#1740;&#1548; &#1576;&#1606;&#1575; &#1576;&#1585; &#1576;&#1585;&#1583;&#1575;&#1588;&#1578; &#1582;&#1608;&#1740;&#1588; &#1578;&#1571;&#1604;&#1740;&#1601; &#1606;&#1605;&#1608;&#1583;.</P>
+<P align=justify>&#1578;&#1605;&#1575;&#1605; &#1575;&#1740;&#1606; &#1570;&#1579;&#1575;&#1585; &#1576;&#1607; &#1593;&#1604;&#1575;&#1608;&#1607;&#8204;&#1740; &#1586;&#1606;&#1583;&#1711;&#1740;&#8204;&#1606;&#1575;&#1605;&#1607; &#1582;&#1608;&#1583; &#1606;&#1608;&#1588;&#1578; &#1591;&#1608;&#1587;&#1740;&#1548; &#1587;&#1740;&#1585; &#1608; &#1587;&#1604;&#1608;&#1705;&#1548; &#1583;&#1585; &#1602;&#1607;&#1587;&#1578;&#1575;&#1606; &#1608;&#1575;&#1602;&#1593; &#1583;&#1585; &#1580;&#1606;&#1608;&#1576; &#1588;&#1585;&#1602;&#1740; &#1582;&#1585;&#1575;&#1587;&#1575;&#1606; &#1575;&#1740;&#1585;&#1575;&#1606; &#1575;&#1605;&#1585;&#1608;&#1586; &#1606;&#1608;&#1588;&#1578;&#1607; &#1588;&#1583;&#1606;&#1583;. &#1591;&#1608;&#1587;&#1740; &#1583;&#1585; &#1587;&#1740; &#1587;&#1575;&#1604;&#1711;&#1740; &#1576;&#1607; &#1575;&#1604;&#1605;&#1608;&#1578; &#1585;&#1601;&#1578; &#1705;&#1607; &#1583;&#1585; &#1570;&#1606; &#1586;&#1605;&#1575;&#1606; &#1605;&#1585;&#1705;&#1586; &#1602;&#1583;&#1585;&#1578; &#1587;&#1740;&#1575;&#1587;&#1740; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;&#1575;&#1606; &#1606;&#1586;&#1575;&#1585;&#1740; &#1583;&#1585; &#1575;&#1740;&#1585;&#1575;&#1606; &#1576;&#1608;&#1583;&#1548; &#1608; &#1583;&#1585; &#1570;&#1606;&#8204;&#1580;&#1575; &#1608;&#1740; &#1576;&#1607; &#1578;&#1571;&#1604;&#1740;&#1601; &#1705;&#1575;&#1605;&#1604;&#8204;&#1578;&#1585;&#1740;&#1606; &#1575;&#1579;&#1585; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1582;&#1608;&#1740;&#1588;&#1548; &#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605; &#1605;&#1576;&#1575;&#1583;&#1585;&#1578; &#1606;&#1605;&#1608;&#1583;.</P>
+<P align=justify>&#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605; &#1705;&#1607; &#1575;&#1587;&#1575;&#1587; &#1570;&#1606; &#1587;&#1582;&#1606;&#1575;&#1606;&#1740; &#1575;&#1587;&#1578; &#1705;&#1607; &#1591;&#1608;&#1587;&#1740; &#1583;&#1585; &#1575;&#1604;&#1605;&#1608;&#1578; &#1575;&#1740;&#1585;&#1575;&#1606; &#1575;&#1740;&#1585;&#1575;&#1583; &#1606;&#1605;&#1608;&#1583;&#1607;&#1548; &#1585;&#1587;&#1575;&#1604;&#1607;&#8204;&#1575;&#1740; &#1575;&#1587;&#1578; &#1705;&#1607; &#1578;&#1593;&#1604;&#1740;&#1605;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1606;&#1586;&#1575;&#1585;&#1740; &#1583;&#1608;&#1585;&#1575;&#1606; &#1575;&#1604;&#1605;&#1608;&#1578; &#1585;&#1575; &#1583;&#1585; &#1670;&#1575;&#1585;&#1670;&#1608;&#1576;&#1740; &#1605;&#1606;&#1587;&#1580;&#1605; &#1576;&#1575;&#1586;&#1711;&#1608;&#1740;&#1740; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583;. &#1587;&#1662;&#1587; &#1575;&#1740;&#1606; &#1587;&#1582;&#1606;&#1575;&#1606; &#1578;&#1608;&#1587;&#1591; &#1588;&#1575;&#1593;&#1585; &#1608; &#1583;&#1575;&#1593;&#1740; &#1605;&#1588;&#1607;&#1608;&#1585; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1583;&#1608;&#1585;&#1575;&#1606; &#1575;&#1604;&#1605;&#1608;&#1578;&#1548; &#1581;&#1587;&#1606; &#1589;&#1604;&#1575;&#1581; &#1605;&#1606;&#1588;&#1740; &#1580;&#1605;&#1593;&#8204;&#1570;&#1608;&#1585;&#1740; &#1608; &#1583;&#1585; &#1705;&#1578;&#1575;&#1576;&#1740; &#1605;&#1705;&#1578;&#1608;&#1576; &#1711;&#1585;&#1583;&#1740;&#1583;.</P>
+<P align=justify>&#1705;&#1578;&#1575;&#1576; &#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605;&#1548; &#1705;&#1607; &#1605;&#1588;&#1578;&#1605;&#1604; &#1576;&#1585; &#1778;&#1783; &#1601;&#1589;&#1604; &#1740;&#1575; &#1578;&#1589;&#1608;&#1585; (&#1740;&#1593;&#1606;&#1740; &#1575;&#1606;&#1583;&#1740;&#1588;&#1607; &#1740;&#1575; &#1606;&#1592;&#1585;) &#1575;&#1587;&#1578;&#1548; &#1576;&#1607; &#1576;&#1740;&#1575;&#1606; &#1605;&#1608;&#1590;&#1608;&#1593;&#1575;&#1578; &#1605;&#1578;&#1593;&#1583;&#1583;&#1740; &#1606;&#1592;&#1740;&#1585; &#1582;&#1575;&#1604;&#1602; &#1608; &#1705;&#1740;&#1607;&#1575;&#1606;&#1548; &#1605;&#1575;&#1607;&#1740;&#1578; &#1608;&#1580;&#1608;&#1583; &#1575;&#1606;&#1587;&#1575;&#1606;&#1548; &#1575;&#1582;&#1604;&#1575;&#1602; &#1608; &#1585;&#1608;&#1575;&#1576;&#1591; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;&#1548; &#1583;&#1740;&#1606;&#1548; &#1605;&#1593;&#1575;&#1583;&#1588;&#1606;&#1575;&#1587;&#1740;&#1548; &#1606;&#1576;&#1608;&#1578; &#1608; &#1575;&#1605;&#1575;&#1605;&#1578; &#1605;&#1740;&#8204;&#1662;&#1585;&#1583;&#1575;&#1586;&#1583;. &#1576;&#1607; &#1593;&#1604;&#1575;&#1608;&#1607;&#1548; &#1576;&#1582;&#1588;&#8204;&#1607;&#1575;&#1740;&#1740; &#1575;&#1586; &#1575;&#1740;&#1606; &#1705;&#1578;&#1575;&#1576; &#1576;&#1607; &#1583;&#1585;&#1580;&#1575;&#1578; &#1593;&#1604;&#1605; &#1576;&#1588;&#1585;&#1548; &#1605;&#1575;&#1607;&#1740;&#1578; &#1606;&#1591;&#1602;&#1548; &#1575;&#1588;&#1705;&#1575;&#1604; &#1605;&#1578;&#1601;&#1575;&#1608;&#1578; &#1578;&#1587;&#1604;&#1740;&#1605;&#1548; &#1608; &#1575;&#1585;&#1578;&#1602;&#1575;&#1740; &#1606;&#1601;&#1587; &#1575;&#1586; &#1580;&#1587;&#1605;&#1575;&#1606;&#1740;&#1578; &#1576;&#1607; &#1585;&#1608;&#1581;&#1575;&#1606;&#1740;&#1578; &#1575;&#1582;&#1578;&#1589;&#1575;&#1589; &#1740;&#1575;&#1601;&#1578;&#1607; &#1575;&#1587;&#1578;.</P>
+<P align=justify>&#1575;&#1607;&#1605;&#1740;&#1578; &#1575;&#1740;&#1606; &#1705;&#1578;&#1575;&#1576; &#1606;&#1607; &#1578;&#1606;&#1607;&#1575; &#1576;&#1607; &#1582;&#1575;&#1591;&#1585; &#1570;&#1606; &#1575;&#1587;&#1578; &#1705;&#1607; &#1576;&#1607; &#1589;&#1608;&#1585;&#1578; &#1705;&#1575;&#1605;&#1604; &#1608; &#1578;&#1602;&#1585;&#1740;&#1576;&#1575;&#1611; &#1583;&#1575;&#1574;&#1585;&#1577;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1711;&#1608;&#1606;&#1607;&#1548; &#1607;&#1605;&#1585;&#1575;&#1607; &#1576;&#1575; &#1578;&#1581;&#1604;&#1740;&#1604;&#8204;&#1607;&#1575;&#1740; &#1705;&#1604;&#1575;&#1605;&#1740;&#1548; &#1601;&#1604;&#1587;&#1601;&#1740; &#1608; &#1593;&#1585;&#1601;&#1575;&#1606;&#1740; &#1576;&#1607; &#1578;&#1601;&#1705;&#1585; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1662;&#1585;&#1583;&#1575;&#1582;&#1578;&#1607; &#1575;&#1587;&#1578;&#1548; &#1576;&#1604;&#1705;&#1607; &#1576;&#1607; &#1582;&#1575;&#1591;&#1585; &#1605;&#1608;&#1602;&#1593;&#1740;&#1578; &#1570;&#1606; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1740;&#1711;&#1575;&#1606;&#1607; &#1575;&#1579;&#1585; &#1593;&#1602;&#1740;&#1583;&#1578;&#1740; &#1576;&#1586;&#1585;&#1711; &#1583;&#1608;&#1585;&#1575;&#1606; &#1570;&#1594;&#1575;&#1586;&#1740;&#1606; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;&#1575;&#1606; &#1606;&#1586;&#1575;&#1585;&#1740;&#1548; &#1705;&#1607; &#1575;&#1586; &#1581;&#1605;&#1604;&#1607; &#1605;&#1594;&#1608;&#1604; &#1576;&#1607; &#1575;&#1740;&#1585;&#1575;&#1606; (&#1583;&#1585; &#1575;&#1608;&#1575;&#1587;&#1591; &#1602;&#1585;&#1606; &#1607;&#1601;&#1578;&#1605;/&#1587;&#1740;&#1586;&#1583;&#1607;&#1605;) &#1583;&#1585; &#1575;&#1605;&#1575;&#1606; &#1605;&#1575;&#1606;&#1583;&#1607; &#1575;&#1587;&#1578; &#1606;&#1740;&#1586; &#1581;&#1575;&#1574;&#1586; &#1575;&#1607;&#1605;&#1740;&#1578; &#1575;&#1587;&#1578;.</P>
+<P align=justify>&#1575;&#1740;&#1606; &#1608;&#1740;&#1585;&#1575;&#1740;&#1588; &#1601;&#1575;&#1585;&#1587;&#1740; &#1608; &#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1740; &#1575;&#1606;&#1711;&#1604;&#1740;&#1587;&#1740; &#1578;&#1575;&#1586;&#1607; &#1575;&#1586; &#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605;&#1548; &#1578;&#1608;&#1587;&#1591; &#1583;&#1705;&#1578;&#1585; &#1587;&#1740;&#1583; &#1580;&#1604;&#1575;&#1604; &#1576;&#1583;&#1582;&#1588;&#1575;&#1606;&#1740;&#1548; &#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1670;&#1575;&#1662; &#1662;&#1740;&#1588;&#1740;&#1606; &#1608;. &#1575;&#1740;&#1608;&#1575;&#1606;&#1601; (&#1576;&#1605;&#1576;&#1574;&#1740;: &#1777;&#1785;&#1781;&#1776;)&#1548; &#1608; &#1670;&#1606;&#1583;&#1740;&#1606; &#1583;&#1587;&#1578;&#1606;&#1608;&#1588;&#1578;&#1607;&#8204;&#1740; &#1605;&#1588;&#1607;&#1608;&#1585; &#1608; &#1578;&#1575;&#1586;&#1607; &#1740;&#1575;&#1601;&#1578; &#1588;&#1583;&#1607; &#1575;&#1586; &#1575;&#1740;&#1606; &#1605;&#1578;&#1606; &#1705;&#1607; &#1583;&#1585; &#1605;&#1580;&#1605;&#1608;&#1593;&#1607; &#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607; &#1606;&#1711;&#1575;&#1607;&#1583;&#1575;&#1585;&#1740; &#1605;&#1740;&#8204;&#1588;&#1608;&#1606;&#1583; &#1605;&#1607;&#1740;&#1575; &#1711;&#1588;&#1578;&#1607; &#1575;&#1587;&#1578;. &#1607;&#1605;&#1670;&#1606;&#1740;&#1606; &#1575;&#1740;&#1606; &#1705;&#1578;&#1575;&#1576; &#1588;&#1575;&#1605;&#1604; &#1605;&#1602;&#1575;&#1604;&#1607;&#8204;&#1575;&#1740; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1605;&#1602;&#1583;&#1605;&#1607;&#1548; &#1705;&#1607; &#1578;&#1608;&#1587;&#1591; &#1662;&#1585;&#1608;&#1601;&#1587;&#1608;&#1585; &#1607;&#1585;&#1605;&#1606; &#1604;&#1606;&#1583;&#1608;&#1604;&#1578; &#1606;&#1608;&#1588;&#1578;&#1607; &#1588;&#1583;&#1607;&#1548; &#1608; &#1578;&#1601;&#1587;&#1740;&#1585;&#1740; &#1601;&#1604;&#1587;&#1601;&#1740; &#1606;&#1608;&#1588;&#1578;&#1607;&#8204;&#1740; &#1662;&#1585;&#1608;&#1601;&#1587;&#1608;&#1585; &#1705;&#1585;&#1740;&#1587;&#1578;&#1740;&#1606; &#1580;&#1575;&#1605;&#1576;&#1578; &#1606;&#1740;&#1586; &#1575;&#1587;&#1578;.</P><br><br></div><div id="pubsContents"><strong>&#1605;&#1581;&#1578;&#1608;&#1610;&#1575;&#1578;</strong><br><P>&#1601;&#1607;&#1585;&#1587;&#1578;</P>
+<P>&#1711;&#1588;&#1575;&#1740;&#1588;</P>
+<P>&#1605;&#1602;&#1583;&#1605;&#1607;&#1548; &#1607;&#1585;&#1605;&#1606; &#1604;&#1606;&#1583;&#1608;&#1604;&#1578;</P>
+<P>&#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605; (&#1605;&#1578;&#1606; &#1575;&#1606;&#1711;&#1604;&#1740;&#1587;&#1740;)</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;</P>
+<P>&#1583;&#1585; &#1585;&#1583;&#1617; &#1606;&#1592;&#1585; &#1570;&#1606; &#1705;&#1587; &#1705;&#1607; &#1575;&#1606;&#1705;&#1575;&#1585; &#1582;&#1575;&#1604;&#1602; &#1580;&#1604;&#1617; &#1608; &#1593;&#1604;&#1575; &#1705;&#1606;&#1583;&#1548; &#1740;&#1575; &#1711;&#1608;&#1740;&#1583; &#1705;&#1607; &#1582;&#1583;&#1575; &#1740;&#1575; &#1602;&#1583;&#1740;&#1605;&#1548; &#1583;&#1608; &#1575;&#1587;&#1578;&#1548; &#1608; &#1575;&#1740;&#1606;&#1705;&#1607; &#1575;&#1606;&#1587;&#1575;&#1606; &#1606;&#1605;&#1740;&#8204;&#1578;&#1608;&#1575;&#1606;&#1583; &#1581;&#1580;&#1617;&#1578;&#1740; &#1576;&#1585; &#1608;&#1580;&#1608;&#1583; &#1575;&#1608; &#1575;&#1602;&#1575;&#1605;&#1607; &#1705;&#1606;&#1583; [&#1777;-&#1785;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;</P>
+<P>&#1583;&#1585; &#1589;&#1583;&#1608;&#1585; &#1575;&#1588;&#1740;&#1575;&#1569; &#1575;&#1586; &#1576;&#1575;&#1585;&#1740; &#1608; &#1575;&#1605;&#1585; &#1605;&#1602;&#1583;&#1587; &#1575;&#1608;&#1548; &#1670;&#1606;&#1575;&#1606;&#8204;&#1705;&#1607; &#1583;&#1585; &#1605;&#1589;&#1581;&#1601; &#1575;&#1587;&#1578; [&#1777;&#1776;- &#1778;&#1785;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1779;</P>
+<P>&#1583;&#1585;&#1576;&#1575;&#1585;&#1607;&#8204;&#1740; &#1575;&#1740;&#1606; &#1605;&#1587;&#1571;&#1604;&#1607; &#1705;&#1607; &#171;&#1575;&#1586; &#1608;&#1575;&#1581;&#1583; &#1580;&#1586; &#1608;&#1575;&#1581;&#1583; &#1589;&#1575;&#1583;&#1585; &#1606;&#1588;&#1608;&#1583;&#187; [&#1779;&#1776;- &#1779;&#1782;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1780;</P>
+<P>&#1583;&#1585;&#1576;&#1575;&#1585;&#1607;&#8204;&#1740; &#1593;&#1602;&#1604; &#1575;&#1608;&#1604;&#1548; &#1593;&#1602;&#1604; &#1601;&#1593;&#1575;&#1604; &#1608; &#1593;&#1602;&#1604; &#1705;&#1604;&#1740;&#1548; &#1705;&#1607; &#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1587;&#1607;&#8204;&#1575;&#1606;&#1583; &#1608; &#1583;&#1585; &#1605;&#1593;&#1606;&#1740; &#1740;&#1705; [&#1779;&#1783;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1781;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1606;&#1601;&#1587; &#1705;&#1604;&#1740; [&#1779;&#1784;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1782;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1607;&#1740;&#1608;&#1604;&#1740; [&#1779;&#1785;- &#1780;&#1781;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1783;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1605;&#1575;&#1607;&#1740;&#1578; &#1705;&#1604;&#1740; &#1608; &#1580;&#1587;&#1605; &#1705;&#1604;&#1740; [&#1780;&#1782;- &#1781;&#1776;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1784;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1593;&#1604;&#1605; &#1606;&#1601;&#1587; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740; [&#1781;&#1777;- &#1782;&#1782;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1785;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1593;&#1604;&#1605; &#1593;&#1602;&#1604; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740; [&#1782;&#1783;- &#1783;&#1783;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1776;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1607;&#1583;&#1601; &#1575;&#1606;&#1590;&#1605;&#1575;&#1605; &#1606;&#1601;&#1587; &#1575;&#1588;&#1582;&#1575;&#1589; &#1576;&#1607; &#1576;&#1583;&#1606; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;&#1548; &#1608; &#1605;&#1582;&#1578;&#1589;&#1585;&#1740; &#1583;&#1585; &#1578;&#1585;&#1705;&#1740;&#1576; &#1580;&#1587;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740; [&#1783;&#1784;- &#1777;&#1776;&#1777;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1777;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1578;&#1601;&#1575;&#1608;&#1578; &#1575;&#1589;&#1604;&#1740; &#1575;&#1606;&#1608;&#1575;&#1593; &#1608; &#1593;&#1608;&#1575;&#1604;&#1605; &#1591;&#1576;&#1740;&#1593;&#1740;: &#1580;&#1608;&#1607;&#1585;&#1548; &#1606;&#1576;&#1575;&#1578;&#1548; &#1581;&#1740;&#1608;&#1575;&#1606; &#1608; &#1575;&#1606;&#1587;&#1575;&#1606; [&#1777;&#1776;&#1778;- &#1777;&#1776;&#1782;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1778;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1705;&#1605;&#1575;&#1604;&#1575;&#1578;&#1740; &#1705;&#1607; &#1589;&#1601;&#1578; &#1576;&#1607; &#1605;&#1608;&#1589;&#1608;&#1601; &#1575;&#1593;&#1591;&#1575; &#1605;&#1740;&#8204;&#1606;&#1605;&#1575;&#1740;&#1583; &#1608; &#1576;&#1575;&#1604;&#1593;&#1705;&#1587;&#1548; &#1576;&#1607; &#1575;&#1584;&#1606; &#1576;&#1575;&#1585;&#1740; &#1578;&#1593;&#1575;&#1604;&#1740; [&#1777;&#1776;&#1783;- &#1777;&#1776;&#1785;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1779;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1583;&#1585;&#1580;&#1575;&#1578; &#1593;&#1604;&#1605;: &#1590;&#1585;&#1608;&#1585;&#1740;&#1548; &#1602;&#1740;&#1575;&#1587;&#1740;&#1548; &#1578;&#1593;&#1604;&#1740;&#1605;&#1740; &#1608; &#1575;&#1604;&#1607;&#1575;&#1605;&#1740; (&#1604;&#1583;&#1615;&#1606;&#1617;&#1740;) [&#1777;&#1777;&#1776;- &#1777;&#1777;&#1779;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1780;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1582;&#1740;&#1585; &#1608;&#1588;&#1585;&#1617;&#1548; &#1608; &#1575;&#1740;&#1606;&#8204;&#1705;&#1607; &#1588;&#1585;&#1617; &#1583;&#1585; &#1605;&#1576;&#1583;&#1571; &#1608;&#1580;&#1608;&#1583;&#1740; &#1606;&#1583;&#1575;&#1585;&#1583;&#1548; &#1608; &#1578;&#1608;&#1590;&#1740;&#1581; &#1588;&#1585;&#1617;&#1740; &#1705;&#1607; &#1583;&#1585; &#1575;&#1740;&#1606; &#1580;&#1607;&#1575;&#1606; &#1605;&#1578;&#1589;&#1608;&#1617;&#1585; &#1711;&#1585;&#1583;&#1583; [&#1777;&#1777;&#1780;- &#1777;&#1779;&#1778;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1781;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1576;&#1607;&#1588;&#1578; &#1608; &#1580;&#1606;&#1617;&#1575;&#1578;&#1548; &#1580;&#1607;&#1606;&#1605; &#1608; &#1583;&#1585;&#1705;&#1575;&#1578;&#1548; &#1575;&#1606;&#1608;&#1575;&#1593; &#1583;&#1608;&#1586;&#1582; &#1608; &#1740;&#1575; &#1589;&#1585;&#1575;&#1591;&#8204;&#1607;&#1575; [&#1777;&#1779;&#1779;- &#1777;&#1782;&#1776;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1782;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1570;&#1583;&#1605; &#1608; &#1575;&#1576;&#1604;&#1740;&#1587; [&#1777;&#1782;&#1777;- &#1777;&#1784;&#1778;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1783;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1593;&#1604;&#1604; &#1575;&#1582;&#1578;&#1604;&#1575;&#1601;&#1575;&#1578; &#1711;&#1608;&#1606;&#1575;&#1711;&#1608;&#1606; &#1605;&#1608;&#1580;&#1608;&#1583; &#1583;&#1585; &#1605;&#1740;&#1575;&#1606; &#1587;&#1575;&#1705;&#1606;&#1575;&#1606; &#1593;&#1575;&#1604;&#1605;&#1548; &#1608; &#1605;&#1740;&#1575;&#1606; &#1605;&#1578;&#1575;&#1576;&#1593;&#1575;&#1606; &#1581;&#1602;&#1740;&#1602;&#1578; &#1608; &#1605;&#1578;&#1575;&#1576;&#1593;&#1575;&#1606; &#1590;&#1604;&#1575;&#1604;&#1578; [&#1777;&#1784;&#1779;- &#1778;&#1776;&#1783;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1784;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1602;&#1604;&#1617;&#1578; &#1605;&#1578;&#1575;&#1576;&#1593;&#1575;&#1606; &#1581;&#1602;&#1740;&#1602;&#1578; &#1608; &#1705;&#1579;&#1585;&#1578; &#1605;&#1578;&#1575;&#1576;&#1593;&#1575;&#1606; &#1590;&#1604;&#1575;&#1604;&#1578; [&#1778;&#1776;&#1784;- &#1778;&#1777;&#1780;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1777;&#1785;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1583;&#1740;&#1608;&#1575;&#1606;&#1548; &#1662;&#1585;&#1740;&#1575;&#1606; &#1608; &#1605;&#1604;&#1575;&#1574;&#1705;&#1607; [&#1778;&#1777;&#1781;- &#1778;&#1778;&#1776;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1776;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1575;&#1585;&#1578;&#1602;&#1575;&#1569; &#1575;&#1586; &#1580;&#1587;&#1605;&#1575;&#1606;&#1740;&#1578; &#1576;&#1607; &#1585;&#1608;&#1581;&#1575;&#1606;&#1740;&#1578;&#1548; &#1608; &#1575;&#1586; &#1585;&#1608;&#1581;&#1575;&#1606;&#1740;&#1578; &#1576;&#1607; &#1593;&#1602;&#1604;&#1575;&#1606;&#1740;&#1578; [&#1778;&#1778;&#1777;- &#1778;&#1778;&#1780;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1777;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1605;&#1576;&#1583;&#1571; &#1608; &#1605;&#1593;&#1575;&#1583;&#1548; &#1583;&#1606;&#1740;&#1575; &#1608; &#1570;&#1582;&#1585;&#1578;&#1548; &#1570;&#1605;&#1583;&#1606; &#1575;&#1606;&#1587;&#1575;&#1606; &#1576;&#1607; &#1575;&#1740;&#1606; &#1583;&#1606;&#1740;&#1575; &#1608; &#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1575;&#1608;&#1548; &#1608; &#1575;&#1740;&#1606;&#8204;&#1705;&#1607; &#1575;&#1586; &#1705;&#1580;&#1575; &#1570;&#1605;&#1583;&#1607; &#1575;&#1587;&#1578; &#1608; &#1670;&#1585;&#1575; &#1570;&#1605;&#1583;&#1607; &#1575;&#1587;&#1578; &#1608; &#1576;&#1607; &#1705;&#1580;&#1575; &#1605;&#1740;&#8204;&#1585;&#1608;&#1583;&#1548; &#1608; &#1576;&#1740;&#1575;&#1606; &#1581;&#1588;&#1585; &#1606;&#1601;&#1608;&#1587; &#1608; &#1575;&#1576;&#1583;&#1575;&#1606; [&#1778;&#1778;&#1781;- &#1778;&#1782;&#1780;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1778;</P>
+<P>&#1583;&#1585; &#1578;&#1607;&#1584;&#1740;&#1576; &#1575;&#1582;&#1604;&#1575;&#1602; [&#1778;&#1782;&#1781;- &#1778;&#1785;&#1785;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1779;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1575;&#1606;&#1608;&#1575;&#1593; &#1578;&#1587;&#1604;&#1740;&#1605; [&#1779;&#1776;&#1776;- &#1779;&#1777;&#1782;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1780;</P>
+<P>&#1583;&#1585; &#1606;&#1576;&#1608;&#1578; &#1608; &#1575;&#1605;&#1575;&#1605;&#1578;&#1548; &#1705;&#1607; &#1583;&#1585; &#1576;&#1581;&#1579; &#1606;&#1576;&#1608;&#1578; &#1576;&#1607; &#1576;&#1740;&#1575;&#1606; &#1605;&#1593;&#1580;&#1586;&#1575;&#1578;&#1548; &#1662;&#1740;&#1575;&#1605;&#1576;&#1585;&#1575;&#1606;&#1616; &#1705;&#1584;&#1617;&#1575;&#1576; &#1608; &#1580;&#1606;&#8204;&#1586;&#1583;&#1711;&#1575;&#1606;&#1548; &#1608; &#1583;&#1585; &#1576;&#1581;&#1579; &#1575;&#1605;&#1575;&#1605;&#1578; &#1576;&#1607; &#1578;&#1608;&#1590;&#1740;&#1581; &#1605;&#1578;&#1593;&#1604;&#1617;&#1605;&#1575;&#1606;&#1548; &#1605;&#1593;&#1604;&#1617;&#1605;&#1575;&#1606; &#1608; &#1581;&#1580;&#1617;&#1578;&#1575;&#1606; &#1582;&#1608;&#1575;&#1607;&#1740;&#1605; &#1662;&#1585;&#1583;&#1575;&#1582;&#1578; [&#1779;&#1777;&#1783;- &#1779;&#1784;&#1785;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1781;</P>
+<P>&#1583;&#1585; &#1605;&#1575;&#1607;&#1740;&#1578; &#1606;&#1591;&#1602;&#1548; &#1602;&#1608;&#1575;&#1740; &#1606;&#1575;&#1591;&#1602;&#1607; &#1608; &#1587;&#1575;&#1605;&#1593;&#1607;&#1548; &#1608; &#1587;&#1705;&#1608;&#1578; [&#1779;&#1785;&#1776;- &#1780;&#1776;&#1777;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1782;</P>
+<P>&#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1575;&#1583;&#1608;&#1575;&#1585; &#1588;&#1588;&#1711;&#1575;&#1606;&#1607;&#8204;&#1740; &#1575;&#1606;&#1576;&#1740;&#1575;&#1569;&#1616; &#1575;&#1608;&#1604;&#1740; &#1575;&#1604;&#1593;&#1592;&#1605;&#1548; &#1575;&#1586; &#1570;&#1583;&#1605; &#1578;&#1575; &#1605;&#1581;&#1605;&#1583;- &#1589;&#1604;&#1608;&#1575;&#1578; &#1575;&#1604;&#1604;&#1607; &#1593;&#1604;&#1740;&#1607;&#1605;- &#1608; &#1575;&#1605;&#1575;&#1605;&#1575;&#1606; &#1585;&#1575;&#1587;&#1578;&#1740;&#1606;- &#1593;&#1604;&#1740; &#1584;&#1705;&#1585;&#1607;&#1605; &#1575;&#1604;&#1587;&#1604;&#1575;&#1605;- &#1608; &#1592;&#1607;&#1608;&#1585; &#1602;&#1575;&#1574;&#1605; &#1602;&#1740;&#1575;&#1605;&#1578;&#1548; &#1608; &#1575;&#1593;&#1604;&#1575;&#1605; &#1602;&#1740;&#1575;&#1605; &#1602;&#1740;&#1575;&#1605;&#1578; [&#1780;&#1776;&#1778;- &#1780;&#1784;&#1778;]</P>
+<P>&#1578;&#1589;&#1608;&#1585; &#1778;&#1783;</P>
+<P>&#1583;&#1585; &#1585;&#1575;&#1576;&#1591;&#1607; &#1576;&#1575; &#1576;&#1578;&#8204;&#1662;&#1585;&#1587;&#1578;&#1575;&#1606; &#1608; &#1606;&#1602;&#1590; &#1583;&#1593;&#1575;&#1608;&#1740; &#1570;&#1606;&#1575;&#1606; [&#1780;&#1784;&#1779;- &#1781;&#1777;&#1784;]</P>
+<P>&#1662;&#1740;&#1608;&#1587;&#1578;</P>
+<P>&#1777;. &#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1605;&#1575;&#1607;&#1740;&#1578; &#1575;&#1578;&#1581;&#1575;&#1583; &#1585;&#1608;&#1581;&#1575;&#1606;&#1740; </P>
+<P>&#1778;. &#1583;&#1585; &#1576;&#1740;&#1575;&#1606; &#1583;&#1585;&#1580;&#1575;&#1578; &#1593;&#1604;&#1605; &#1585;&#1608;&#1581;&#1575;&#1606;&#1740;</P>
+<P>&#1662;&#1740;&#1608;&#1587;&#1578; &#1583;&#1608;&#1605;</P>
+<P>&#1578;&#1601;&#1587;&#1740;&#1585;&#1740; &#1601;&#1604;&#1587;&#1601;&#1740; &#1576;&#1607; &#1602;&#1604;&#1605; &#1705;&#1585;&#1740;&#1587;&#1578;&#1740;&#1606; &#1580;&#1575;&#1605;&#1576;&#1578;</P>
+<P>&#1740;&#1575;&#1583;&#1583;&#1575;&#1588;&#1578;&#8204;&#1607;&#1575;</P>
+<P>&#1705;&#1578;&#1575;&#1576;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740;</P>
+<P>&#1606;&#1605;&#1575;&#1740;&#1607;</P>
+<P>&#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1740;&#1605; (&#1605;&#1578;&#1606; &#1601;&#1575;&#1585;&#1587;&#1740;)</P><!-- #EndEditable --><br><br></div><div id="pubsBibliography"><strong>&#1705;&#1578;&#1575;&#1576;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740;</strong><br><P class=bodytext>Abu Ishaq Quhistani. <I>Haft bab, </I>ed. and tr. W. Ivanow. Bombay, 1959.</P>
+<P class=bodytext>&#8216;Ali b. Abi Talib. <I>Nahj al-balagha, </I>ed. Subihi al-Salih. Beirut, 1967.</P>
+<P class=bodytext>Amir-Moezzi, Mohammad &#8216;Ali. <I>The Divine Guide in Early Shi&#8216;ism: The Sources of Esotericism in Islam, </I>tr. David Streight. Albany, NY, 1994.</P>
+<P class=bodytext>Amuli, Ayatullah Hasanzada. <I>Aghaz wa Anjam. </I>Tehran, 1366 Sh./1987.</P>
+<P class=bodytext>Amuli, Sayyid Haydar. <I>Jami&#8216; al-asrar wa manba&#8216; al-anwar </I>, ed. H. Corbin and O. Yahia. Tehran-Paris, 1961.</P>
+<P class=bodytext>Badakhchani, Jalal Hosseini. &#8216;The Paradise of Submission: A Critical Edition and Study of &#8216;<I>Rawda-yi taslim</I>,&#8217; commonly known as &#8216;<I>Tasawwurat</I>,&#8217; by Khwaja Nasir al-Din Tusi. D.Phil. thesis, Oxford University, 1989.</P>
+<P class=bodytext>Badakhchani, Sayyid Suhrab Wali. Si <I>wa shish sahifa, </I>ed. H. Ujaqi. Tehran, 1961.</P>
+<P class=bodytext>Badakhshi, La&#8216;li. <I>Thamarat al-quds min shajarat al-uns, </I>ed. Kamal Haj-Sayyid-Jawadi. Tehran, 1376 Sh./1997.</P>
+<P class=bodytext>Bahar, Muhammad Taqi. <I>Sabk shinasi. </I>Tehran, 1337 Sh./1958.</P>
+<P class=bodytext>Bayani, Shirin. <I>Din wa dawlat dar Iran-i &#8216;ahd-Mughul. </I>Tehran, 1367 Sh./1988.</P>
+<P class=bodytext>al-Barqi, Muhammad b. Khalid. <I>Kitab al-mahasin, </I>ed. S.J. al-Din Muhaddith. Qumm, 1331 Sh./1952.</P>
+<P class=bodytext>al-Bukhari, Muhammad b. Isma&#8216;il. <I>al-Jami&#8216; al-Sahih. </I>Cairo, 1932.</P>
+<P class=bodytext>al-Bursi, Hafiz, Rajab. <I>Mashariq anwar al-yaqin fi asrar amir al-mu&#8217;minin. </I>Tehran, n.d.</P>
+<P class=bodytext>Chittick, William <I>C. The Psalms of Islam. </I>London, 1988.</P>
+<P class=bodytext>Chodkiewicz, Michel. <I>Un oc&#233;an sans rivage, Ibn Arabi, Le Livre et la Loi. </I>Paris, 1992.</P>
+<P class=bodytext>Corbin, Henry. <I>En Islam iranien, </I>vol. 4. Paris, 1972.</P>
+<P class=bodytext>-. <I>Spiritual Body and Celestial Earth: From Mazdean Iran to Shi&#8216;ite Iran</I>, tr. N. Pearson. Princeton, 1977.</P>
+<P class=bodytext>-. &#8216;Nasir-i Khusraw and Iranian Isma&#8216;ilism&#8217;, in R. N. Frye, ed. <I>The Cambridge History of Iran, </I>vol. 4. Cambridge, 1975, pp. 520-542.</P>
+<P class=bodytext>-. &#8216;The Isma&#8216;ili Response to the Polemic of Ghazali&#8217;, in <I>Isma&#8216;ili Contributions to Islamic Culture</I>, ed. S.H. Nasr. Tehran, 1977, pp. 69-98.</P>
+<P class=bodytext>-. <I>Face de Dieu, face de l'homme: herm&#233;neutique et Soufisme.</I> Paris, 1993.</P>
+<P class=bodytext>-. <I>Cyclical Time and Ismaili Gnosis</I>, tr. R. Manheim and James W. Morris. London, 1983.</P>
+<P class=bodytext>-. <I>History of Islamic Philosophy, </I>tr. L. Sherrard. Paris, 1993.</P>
+<P class=bodytext>Dabashi, Hamid. &#8216;The Philosopher/Vizier: Khwaja Nasir al-Din al-Tusi and the Ism&#8216;ailis,&#8217; in F. Daftary, ed., <I>Mediaeval Isma&#8216;ili History and Thought.</I>Cambridge, 1996, pp. 231-245.</P>
+<P class=bodytext>Dabashi, Hamid. &#8216;Khwaja Nasir al-Din al-Tusi: The Philosopher/Vizier and the Intellectual Climate of his Times,&#8217; in Seyyed Hossein Nasr and Oliver Leaman, ed., <I>History of Islamic Philosophy. </I>London, 1996, pp. 527-584.</P>
+<P class=bodytext>Daftary, Farhad. <I>The Isma&#8216;ilis: Their History and Doctrines. </I>Cambridge, 1990.</P>
+<P class=bodytext>-. <I>The Assassin Legends: Myths of the Isma&#8216;ilis. </I>London, 1994.</P>
+<P class=bodytext>-. &#8216;Hasan-i Sabbah and the Origins of the Nizari Isma&#8216;ili Movement,&#8217; in F. Daftary, ed., <I>Mediaeval Isma&#8216;ili History and Thought. </I>Cambridge, 1996, pp. 181-204.</P>
+<P class=bodytext>-. &#8216;Nasir al-Din al-Tusi and Ismailis of the Alamut Period,&#8217; in N. Pourjavady and Z.Vesel, ed., <I>Nasir al-Din Tusi, philosophe et savant du XIIIe si&#232;cle</I>. Tehran, 2000, p. 59-67.</P>
+<P class=bodytext>Fayd al-Kashani, Muhammad Muhsin b. Shah Murtada. <I>Kitab al-wafi</I>, ed. Abu al-Hasan Sha&#8216;rani. Tehran, 1375/1955.</P>
+<P class=bodytext>de Fouch&#233;cour, Charles Henri. <I>Moralia. Les notions morales dans la litt&#233;rature persane du IIIe/IVe au VIIe/XIIIe si&#232;cles</I>. Paris, 1968.</P>
+<P class=bodytext>Furuzanfar, Bad-l&#8216; al-Zaman. <I>Ahadith-i mathnawi. </I>Tehran, 1347 Sh./1969. <I>Ganjina-yi&#8216;irfan, </I>ed. H. Rabbani. Tehran, n.d.</P>
+<P class=bodytext>al-Ghazali, Abu Hamid Muhammad. <I>Fada&#8217;ih al-Ba.tiniyya wa fada&#8217;ih al-Mustazhiriyya, </I>ed. &#8216;A. Badawi. Cairo, 1964. English tr., Richard G. McCarthy, in <I>Freedom and Fullfilment. </I>Boston, MA, 1980, pp. 175-286.</P>
+<P class=bodytext>Hadot, Pierre. <I>La Citadelle int&#233;rieure. </I>Paris, 1992.</P>
+<P class=bodytext><I>Haft bab-i Baba Sayyidna</I>, ed. W. Ivanow, in <I>Two Early Ismaili Treatises</I>. Bombay, 1933, pp. 4-44; English tr. Hodgson, in <I>The Order of Assassins</I>, pp. 297-324.</P>
+<P class=bodytext>Hodgson, Marshall G.S. <I>The Order of Assassins: The Struggle of the Early Nizari Isma&#8216;ilis Against the Islamic World</I>. The Hague, 1955.</P>
+<P class=bodytext>-. &#8216;The Isma&#8216;ili State,&#8217; in <I>The Cambridge History of Iran</I>, Volume 5, <I>The Saljuq and Mongol Periods</I>, ed. J.A. Boyle. Cambridge, 1968, pp. 422-482.</P>
+<P class=bodytext>Ibn Hanbal, Ahmad b. Muhammad. <I>al-Musnad al-Imam Ahmad b. Hanbal</I>, ed. M.N. Albani. Cairo, 1986.</P>
+<P class=bodytext>Ibn Hisham. <I>al-Sira al-nabawiyya</I>, ed. Mustafa al-Babi al-Halabi. 2nd ed., Cairo, 1375/1995.</P>
+<P class=bodytext>Ibn Miskawayh. <I>Tadhib al-akhlaq wa-tathir al-&#8216;araq</I>, tr. M. Arkoun as Trait&#233; D&#8216;ethique. Damascus, 1969; 2nd ed., Damascus, 1988.</P>
+<P class=bodytext>Ibn Sina, Husayn b. <I>&#8216;Abd Allah. Kitab al-Isharat wa al-tanbihat</I>, ed. Sulayma Dunya. Cairo, 1957; Tehran, 1360 Sh./1981.</P>
+<P class=bodytext>-. <I>al-Mabda&#8217; wa al-ma&#8216;ad</I>, ed. A. Nurani. Tehran, 1363 Sh./1984.</P>
+<P class=bodytext>-. <I>Kitab al-Shifa</I>, ed. I. Madkur and A. 'Affifi. Cairo, 1956; ed. F. Rahman. London, 1959.</P>
+<P class=bodytext>Ibn al-Walid, &#8216;Ali b. Muhammad. <I>Taj al-&#8216;aqa&#8217;id wa ma&#8217;din al fawa&#8217;id</I>, ed. &#8216;Arif Tamir. Beirut, 1967.</P>
+<P class=bodytext>Idris &#8216;Imad al-Din b. al-Hasan. <I>Zahr al-ma&#8216;ani</I>, ed. Mustafa Ghalib. Beirut, 1991.</P>
+<P class=bodytext>Ikhwan al-Safa&#8217;. Rasa&#8217;il Ikhwan al-Safa&#8217;. Cairo, 1928. 4 vols.</P>
+<P class=bodytext>Ivanow, Wladimir. <I>Ibn Qaddah: The Alleged Founder of Ismailism</I>. Bombay, 1957.</P>
+<P class=bodytext>Jambet, Christian. <I>La Convocation d&#8217;Alam&#251;t</I>: see <I>Tusi, Rawdat al-taslim</I>.</P>
+<P class=bodytext>-. <I>La Grande r&#233;surrection d&#8217;Alam&#251;t</I>. Lagrasse, 1990.</P>
+<P class=bodytext>-. &#8216;Aper&#231;us philosophiques de la morale de Nasir al-din Tusi dans les Tasavvorat,&#8217; in <I>Pand-o Sokhan: M&#233;langes offerts &#224; Charles-Henri de Fouch&#233;cour</I>, ed. C. Balla&#255; et al. Tehran, 1995, pp. 117-131.</P>
+<P class=bodytext>Khayrkhwah-i Harati, Muhammad Rida b. Sultan Husayn. <I>Fasl dar bayan-i shinakht-i imam</I>, ed. W. Ivanow. 3rd ed., Tehran, 1960; English tr., <I>On the Recognition of the Imam</I>, tr. W. Ivanow. 2nd ed., Bombay, 1947.</P>
+<P class=bodytext>-. <I>Kalam-i pir: A Treatise on Ismaili Doctrine</I>, ed. and tr. W. Ivanow. Bombay, 1935.</P>
+<P class=bodytext>al-Kirmani, Hamid al-Din Ahmad. <I>Rahat al-&#8216;aql</I>, ed. M. Kamil Husayn and M. Mustafa Hilmi. Cairo, 1953.</P>
+<P class=bodytext>- <I>Kitab al-riyad</I>, ed. &#8216;A. Tamir. Beirut, 1960.</P>
+<P class=bodytext>Klibansky, Raymond, Erwin Panofsky and Fritz Saxl. <I>Saturne et la m&#233;lancolie</I>. Paris, 1989.</P>
+<P class=bodytext>al-Kulayni, Muhammad b. Ya&#8216;qub. <I>al-Usul min al-Kafi</I>. Arabic ed. and Persian tr., Muhammad Baqir Kamara&#8217;i. Tehran, 1392/1972.</P>
+<P class=bodytext>Labid b. Rabi&#8216;a al-&#8216;Amiri. <I>Sharh diwan Labid</I>, ed. Ihsan &#8216;Abbas. Kuwait, 1962. </P>
+<P class=bodytext>Landolt, Hermann. &#8216;Khwaja Nasir al-Din al-Tusi (597/1201-672/1274), Isma&#8216;ilism and Ishraqi Philosophy,&#8217; in N. Pourjavady and Z. Vesel, ed., <I>Nasir al-Din Tusi, philosophe et savant du XIIIe si&#232;cle</I>. Tehran, 2000, pp. 13-30.</P>
+<P class=bodytext>-. &#8216;Suhrawardi Between Philosophy, Sufism and Ismailism: A Re-appraisal,&#8217; <I>Daneshnameh</I>, 1 (2003), pp. 13-29.</P>
+<P class=bodytext>-. &#8216;Attar, Sufism and Isma&#8216;ilism,&#8217; in C. Shackle and L. Lewisohn, ed., <I>The Art of Spiritual Flight: Farid al-Din Attar and the Persian Sufi Tradition</I>. London, forthcoming.</P>
+<P class=bodytext>Lardreau, G. <I>La V&#233;racit&#233;, Essai d&#8217;une philosophie n&#233;gative</I>. Paris, 1993.</P>
+<P class=bodytext>Madelung, Wilferd. <I>The Succession to Muhammad: A Study of the Early Caliphate</I>. Cambridge, 1997.</P>
+<P class=bodytext>-. &#8216;Nasir ad-Din Tusi's Ethics Between Philosophy, Shi&#8216;ism, and Sufism,&#8217; in R.G. Hovannisian, ed., <I>Ethics in Islam</I>. Malibu, CA, 1985, pp. 85-101.</P>
+<P class=bodytext>-. <I>Religious Trends in Early Islamic Iran</I>. Albany, NY, 1988.</P>
+<P class=bodytext>-. &#8216;To See All Things Through the Sight of God: Nasir al-Din al-Tusi's Attitude to Sufism,&#8217; in N. Pourjavady and Z. Vesel, ed., <I>Nasir al-Din Tusi, philosophe et savant du XIIIe si&#232;cle</I>. Tehran, 2000, pp. 1-11.</P>
+<P class=bodytext>Mahmudi, Muhammad Baqir. <I>Nahj al-sa &#8216;ada fi mustadrak Nahj al-balagha</I>. Beirut, 1976.</P>
+<P class=bodytext>Majlisi, Muhammad Baqir. <I>Bihar al-anwar</I>. Tehran, 1956-1972.</P>
+<P class=bodytext>Marquet, Yves. <I>La Philosophie des Ikhwan al-Safa&#8217;</I>. Algiers, 1975.</P>
+<P class=bodytext>-. &#8216;Sabeens et Ihwan al-Safa&#8217;,&#8217; <I>Studia Islamica</I>, 24 (1966) pp. 35-80; 25 (1966), pp. 77-109.</P>
+<P class=bodytext>Massignon, Louis. <I>Salman Pak et les pr&#233;mices spirituelles de l&#8217;Islam ranien</I>. Tours, 1934.</P>
+<P class=bodytext>-. <I>The Passion of al-Hallaj</I>, trans. H. Mason. Princeton, NJ, 1982.</P>
+<P class=bodytext>Melikian-Chirvani, A.S. &#8216;Le Shah-Name, la gnose soufie et le pouvoir mongol,&#8217; <I>Journal Asiatique</I>, 272 (1984), pp. 329-331.</P>
+<P class=bodytext>Meskoob, Shahrokh. &#8216;Mansha&#8217; wa ma&#8216;na-yi &#8216;aql dar andisha-yi Nasir-i Khusraw,&#8217; <I>Iran Nameh</I>, 7 (1989) pp. 239-257, 405-429.</P>
+<P class=bodytext>Michot, Jean R. <I>La destin&#233;e de I&#8217;homme selon Avicenne</I>. Louvain, 1986.</P>
+<P class=bodytext>Mishkini, &#8216;Ali. <I>al-Hadi ila mawdu&#8216;at Nahj al-balagha</I>. Tehran, 1364 Sh./1985.</P>
+<P class=bodytext>Mitha, Farouk. <I>Al-Ghazali and the Ismailis: A Debate on Reason and Authority in Medieval Islam</I>. London, 2001.</P>
+<P class=bodytext>Momen, Moojan. <I>An Introduction to Shi&#8216;i Islam: The History and Doctrines of Twelver Shi&#8216;ism</I>. New Haven, CT, 1985.</P>
+<P class=bodytext>Mudarris Radawi, Muhammad. <I>Ahwal wa athar-i Abu Ja&#8216;far Muhammad b. Muhammad b. Hasan al-Tusi</I>. Tehran, 1354 Sh./1975.</P>
+<P class=bodytext>Mudarrisi Zanjani, Muhammad. <I>Sargudhasht wa &#8216;aqa&#8217;id-i falsafi-yi Khwaja Nasir al-Din Tusi.</I> Tehran, 1363 Sh./1984.</P>
+<P class=bodytext>Muslim b. al-Hajjaj al-Qushayri. <I>Sahih Muslim</I>. Cairo, 1375/1955. al-Muzaffar, Muhammad Rida. <I>&#8216;Aqa&#8217;id al-imamiyya</I>. Cairo, 1381/1961.</P>
+<P class=bodytext>Nasafi, &#8216;Aziz-i. <I>Rasa&#8217;il</I>, ed. M. Mol&#233; as Le Livre de 1&#8217;homme parfait. Tehran and Paris, 1962.</P>
+<P class=bodytext>Nasir al-Din Tusi, <I>philosophe et savant du XIIIe si&#232;cle</I>ed. N. Pourjavady and Z. Vesel. Tehran, 2000.</P>
+<P class=bodytext>Nasir-i Khusraw. <I>Diwan</I>, ed. Mujtaba Minuwi and Mahdi Muhaqqiq. Tehran, 1353 Sh./1974.</P>
+<P class=bodytext>-. <I>Kitab-i Jami&#8216; al-hikmatayn</I>, ed. H. Corbin and M. Mu&#8216;in. Tehran and Paris, 1953.</P>
+<P class=bodytext>-. <I>Gushayish va rahayish</I>, ed. and tr. by Faquir M. Hunzai as <I>Knowledge and Liberation: A Treatise on Philosophical Theology</I>. London, 1998.</P>
+<P class=bodytext>-. <I>Wajh-i din</I>, ed. M. Ghanizada and M. Qazvini. Berlin, 1343/1924; <I>Wajh-i din</I>, ed. G.R. A&#8216;wani. Tehran, 1977.</P>
+<P class=bodytext>Nasr, Sayyed Hossein. <I>An Introduction to Islamic Cosmological Doctrines</I>. London, 1978.</P>
+<P class=bodytext>-. and M. Aminrazavi, ed. <I>An Anthology of Philosophy in Persia</I>. Oxford, 2001.</P>
+<P class=bodytext>al-Nu&#8216;man b. Muhammad, al-Qadi Abu Hanifa. <I>Asas al-ta&#8217;wil</I>, ed. &#8216;Arif Tamir. Beirut, 1960.</P>
+<P class=bodytext>-. <I>Da&#8216;a&#8217;im al-Islam</I>, ed. A.A.A. Fyzee. Cairo, 1951-61; English tr. A.A.A. Fyzee, completely revised by I.K. Poonawala, <I>The Pillars of Islam</I>, vol. 1. New Delhi, 2002.</P>
+<P class=bodytext>-. <I>Kitab al-majalis wa al-musayarat</I>, ed. al-Habib al-Faqi et al. Tunis, 1978.</P>
+<P class=bodytext>-. <I>Sharh al-akhbar fi fada&#8217;il al-a&#8217;imma al-athar</I>, ed. M.H. Jalali. Qumm, 1414/1993.</P>
+<P class=bodytext>-. <I>Ta&#8217;wil al-da&#8216;a&#8217;im</I>, ed. M. Hasan al-A&#8216;zami. Cairo, 1967-72.</P>
+<P class=bodytext><I>Pandiyyat-i jawanmardi</I>, ed. and tr. W Ivanow. Leiden, 1953.</P>
+<P class=bodytext>P&#233;pin, J. &#8216;Remarques sur la th&#233;orie de 1&#8217;ex&#233;g&#232;se all&#233;gorique chez Philon,&#8217; in <I>Philon d&#8217;Alexandrie</I>. Paris, 1967, p. 133- 67.</P>
+<P class=bodytext>Pin&#232;s, Shlomo. &#8216;La longue r&#233;cension de la <I>Th&#233;ologie</I> d&#8217;Aristote dans ses rapports avec la doctrine isma&#233;lienne,&#8217; <I>Revue des &#233;tudes Islamiques</I>, 22 (1954), pp. 7-20.</P>
+<P class=bodytext>Poonawala, Ismail K. <I>Biobibliography of Isma&#8216;ili Literature</I>. Malibu, CA, 1977. Pourjavady, Nasrollah. &#8216;Irfan-i Khwaja Nasir dar <I>Awsaf al-ashraf</I> in <I>Nasir al-Din Tusi, philosophe et savant du XIIIe si&#232;cle</I>, Persian section, pp. 39-56.</P>
+<P class=bodytext>Ragep, F. Jamil. <I>Nasir al-Din Tusi&#8217;s Memoir on Astronomy: al-Tadhkira ft &#8216;ilm al-hay&#8217;a</I>. New York, 1993.</P>
+<P class=bodytext>-. &#8216;The Persian Context of the <I>Tusi Couple</I>,&#8217; in <I>Nasir al-Din Tusi: Philosophe et Savant</I>, pp. 113-130.</P>
+<P class=bodytext>al-Razi, Abu Hatim Ahmad b. Hamdan. <I>Kitab al-islah</I>, ed. Hasan Minuchihr and Mahdi Muhaqqiq. Tehran, 1998.</P>
+<P class=bodytext>Sadr al-Din Shirazi, Muhammad b. Ibrahim. <I>al-Hikmat al-muta&#8216;aliyya fi al-asfa al-&#8216;aqliyya al-arba&#8216;a</I>, ed. M. Rida al-Muzaffar. Qumm, 1379-83/1959-63</P>
+<P class=bodytext>-. <I>Mafatih al-ghayb</I>, Persian tr. M. Khwajawi. Tehran, 1404/1983.</P>
+<P class=bodytext>Sana&#8217;i Ghaznawi, Abu al-Majd Majdud. <I>Diwan</I>, ed. M. Mudarris Radawi. Tehran, 1952/1983.</P>
+<P class=bodytext>-. <I>Hadiqat al-haqiqa wa shari&#8216;at al-tariqa</I>, ed. M. Mudarris Radawi. Tehran, 1329 Sh./1950; ed. and English tr. J. Stephenson. New York, 1975.</P>
+<P class=bodytext>Schacht, Joseph. <I>An Introduction to Islamic Law</I>. Oxford, 1964.</P>
+<P class=bodytext>Shafi&#8216;i Kadkani, M.R. Taziyanaha-yi suluk. Tehran, 1372 Sh./1993.</P>
+<P class=bodytext>al-Shahrastani, Abu al-Fath Muhammad b. &#8216;Abd al-Karim. <I>Kitab al-Milal wa al-nihal</I>, ed. M.S. Kaylani. Beirut, 1965; ed. &#8216;A.M. Wakil. Cairo, 1968. Partial English tr. A.K. Kazi and J.G. Flynn, <I>Muslim Sects and Divisions</I>. London, 1984.</P>
+<P class=bodytext>-. <I>Mafatih al-asrar wa masabih al-abrar</I>. Tehran, 1368 Sh./1989.</P>
+<P class=bodytext>-. <I>Majlis-i maktub-i mun&#8216;aqid dar Khwarazm,</I> ed. and French trans. Diane Steigerwald as <I>Discours sur l&#8217;Ordre et la cr&#233;ation</I>. Saint-Nicolas, Quebec, 1998</P>
+<P class=bodytext>al-Sijistani, Abu Ya&#8216;qub Ishaq b. Ahmad. <I>Kitab al-iftikhar</I>, ed. M. Ghalib. Beirut, 1980</P>
+<P class=bodytext>Sijistani, Amir Igbal. <I>Chihil majlis</I>, ed. N.M. Hirawi. Tehran 1366/1987-8; German trans. H. Cordt, <I>Die sitzungen des &#8216;Ala&#8217; ad-dawla as-Simnani</I>. Zurich, 1977.</P>
+<P class=bodytext>Smet, Daniel de. <I>La Qui&#233;tude de l'intellect: Neoplatonisme et gnose isma&#233;lienne dans 1'oeuvre de Hamid ad-Din al-Kirmani </I>(Xe/ XIes). Louvain, 1995.</P>
+<P class=bodytext>al-Suhrawardi, Shihab al-Din Yahya. <I>Kitab Hikmat al-ishraq</I>, ed. H. Corbin. Tehran-Paris, 1976; French tr. H. Corbin, <I>Le livre de la sagesse orientale</I>. Paris, 1985.</P>
+<P class=bodytext>al-Suyuti, &#8216;Abd al-Rahman b. Abibakr (Jalal al-Din). <I>Jami&#8216; al-ahadith: al-jam&#8216; al-saqhir wa zwa&#8217;iduhu wa al-jami&#8216; al-kabir</I>, ed. Ahmad &#8216;Abd al-Jawad et al. Damascus, 1400/1979.</P>
+<P class=bodytext>al-Tabarsi, Fadl b. Hasan. <I>al-Ihtijaj</I>. Najaf, 1350/1931.</P>
+<P class=bodytext>-. Majma&#8216; al-bayan fi tafsir al-Qur&#8217;an. Mashhad, 1379/1976.</P>
+<P class=bodytext>al-Tahanawi, Muhammad A&#8216;la b. &#8216;Ali. <I>Kashshaf istilahat al funun</I>, ed. M. Wajih et al. Tehran, 1967, reprint.</P>
+<P class=bodytext>Tihrani, &#8216;Ali. <I>Mishkat al-anwar fi ghurar al-akhbar</I>, ed. Salih al-Ja&#8216;fari. Qumm, 1965.</P>
+<P class=bodytext>Tihrani, Muhammad Husayn. <I>Imam shinasi</I>. Tehran, 1405/1984.</P>
+<P class=bodytext>al-Tusi, Muhammad b. al-Hasan. <I>al-Nihaya fi mujarrad al fiqh wa al-fatawi</I>, ed. M.T. Danishpazhuh. Tehran, 1343 Sh./1964.</P>
+<P class=bodytext>Tusi, Nasir al-Din Muhammad b. Muhammad. <I>Aghaz wa anjam (Tadhkira)</I>, ed. Iraj Afshar. Tehran, 1335 Sh./1956; ed. Hasan-Zada Amuli, Tehran, 1376 Sh./1997.</P>
+<P class=bodytext>-. <I>Akhlaq-i muhtashimi</I>, ed. M.T. Danishpazhuh. Tehran, 1339 Sh./1960. </P>
+<P class=bodytext>-. <I>Akhlaq-i Nasiri</I>, ed. M. Minuwi and &#8216;A.R. Haydari. Tehran, 1356 Sh./1977; English tr. G.M. Wickens, <I>The Nasirean Ethics</I>, London, 1964.</P>
+<P class=bodytext>-. <I>Asas al-iqtibas</I>, ed. Mudarris Radawi. Tehran, 1326 Sh./1947.</P>
+<P class=bodytext>-. <I>Awsaf al-ashraf</I>, ed. N. Mayil Harawi. Mashhad, 1361 Sh./1982.</P>
+<P class=bodytext>-. <I>al-Kamal al-awwal wa al-kamal al-thani</I>, with <I>Talkhis al-muhassal</I>, ed. &#8216;A.A. Nurani. Tehran, 1359 Sh./1980.</P>
+<P class=bodytext>-. <I>Matlub al-mu&#8217;minin</I>, ed. W Ivanow, in <I>Two Early Ismaili Treatises</I>. Bombay, 1933, pp. 43-55.</P>
+<P class=bodytext>-. <I>Mujarat-i Tusi</I>, Ms. in the Library of The Institute of Ismaili Studies, London.</P>
+<P class=bodytext>-. <I>Rawdat al-taslim</I>, commonly called <I>Tasawwurat</I>, ed. and English tr. W Ivanow. Leiden, 1950; French tr. Christian Jambet as <I>La Convocation d&#8217;Alam&#251;t: Somme de philosophie isma&#233;lienne, Rawdat al-taslim</I> (<I>Le jardin de la vraie foi</I>). Lagrasse, 1996.</P>
+<P class=bodytext>-. <I>Risala fi al-&#8216;ilal wa al-ma&#8216;lulat</I>, with <I>Talkhis al-muhassal</I>, ed. &#8216;A. Nurani. Tehran, 1359/1980, pp. 509-515.</P>
+<P class=bodytext>-. <I>Risala-yi jabr wa ikhtiyar</I>, in <I>Majmu&#8216;a-yi rasa&#8217;il</I>, ed. M.T. Mudarris Radawi. Tehran, 1335 Sh./1956, pp. 8-27; English tr. in P. Morewedge, <I>The Metaphysics of Tusi</I>, part 2, pp. 1-46.</P>
+<P class=bodytext>-. <I>Sayr wa suluk</I>, ed. and English tr. S.J. Badakhchani as <I>Contemplation and Action: The Spiritual Autobiography of a Muslim Scholar</I>. London, 1998.</P>
+<P class=bodytext>-. <I>Sharh al-isharat wa al-tanbihat</I>. Tehran, 1378/1959.</P>
+<P class=bodytext>-. <I>Sudur al-kathra</I>, with <I>Talkhis al-muhassal</I>, ed. &#8216;A.A. Nurani. Tehran, 1359/1980, p. 516.</P>
+<P class=bodytext>-. <I>Talkhis al-muhassal</I>, ed. &#8216;A.A. Nurani. Tehran, 1359 Sh./1980.</P>
+<P class=bodytext>-. <I>Taqwim-i Ala&#8217;i</I>, in Mudarris Radawi, Ahwal wa athar, pp. 561-563.</P>
+<P class=bodytext>-. <I>Tawalla wa tabarra</I>, with <I>Akhlaq-i muhtashimi</I>, ed. M.T. Danishpazhuh, pp. 562-570.</P>
+<P class=bodytext>Ulmann, Manfred. <I>Islamic Medicine</I>. Edinburgh, 1978.</P>
+<P class=bodytext>Veccia Vaglieri, Laura. &#8216;Ghadir Khumm,&#8217; in <I>Encyclopaedia of Islam</I>, 2nd ed., vol. 2. pp. 993-994.</P>
+<P class=bodytext>Walker, Paul E. <I>Hamid al-Din al-Kirmani: Ismaili Thought in the Age of al-Hakim</I>. London, 1999.</P>
+<P class=bodytext>Walzer, Richard. <I>Greek into Arabic</I>. Oxford, 1962.</P>
+<P class=bodytext>Wensinck, A.J., ed. <I>al-Mu&#8216;jam al-mufahras li-alfaz al-hadith al-nabawi</I>. Leiden, 1943.</P>
+<P class=bodytext><I>Yadnama-yi Khwaja Nasir al-Din Tusi</I>. Tehran, 1336 Sh./1957.</P>
+<P class=bodytext>Zayn al-&#8216;Abidin, &#8216;Ali b. Husayn. <I>al-Sahifa al-kamila al-Sajjadiyya</I>, ed. Fayd al-Islam. Tehran, 1375/1955; English tr. W. Chittick, <I>The Psalms of Islam</I>. London, 1988.</P></div><p>&#1578;&#1575;&#1585;&#1610;&#1582; &#1575;&#1585;&#1587;&#1575;&#1604; &#1605;&#1591;&#1604;&#1576;: &#x0645;&#x0627;&#x0631;&#x0633; &#x06F2;&#x06F0;&#x06F0;&#x06F5;</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - &#1585;&#1608;&#1590;&#1607;&#8204;&#1740; &#1578;&#1587;&#1604;&#1610;&#1605;: &#1585;&#1587;&#1575;&#1604;&#1607;&#8204;&#1575;&#1740; &#1583;&#1585; &#1578;&#1601;&#1705;&#1585; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740; &#1575;&#1586; &#1602;&#1585;&#1608;&#1606; &#1605;&#1610;&#1575;&#1606;&#1607;</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 15 Dec 2015 14:14:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 15/12/2005&nbsp;15:48&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">&#1604;&#1740;&#1606;&#1705;&#8204;&#1607;&#1575;&#1740; &#1587;&#1585;&#1740;&#1593;</p>
+<p><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">&#1570;&#1711;&#1607;&#1740; &#1575;&#1587;&#1578;&#1582;&#1583;&#1575;&#1605;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">&#1605;&#1585;&#1705;&#1586; &#1588;&#1594;&#1604;&#1740; &#1588;&#1576;&#1705;&#1607;&#8204;&#1740; &#1578;&#1608;&#1587;&#1593;&#1607;&#8204;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></p><p><A href="contactcce4.html?l=fa">&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1578;&#1605;&#1575;&#1587;</A></p><p><A href="view_articlea912.html?ContentID=104023&amp;l=fa">&#1587;&#1572;&#1575;&#1604;&#1575;&#1578; &#1585;&#1575;&#1740;&#1580;</A></p><p><A href="view_sorted_articles06b6.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A></p><p><A href="glossary_listcce4.html?l=fa">&#1608;&#1575;&#1688;&#1607;&#8204;&#1606;&#1575;&#1605;&#1607;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></p><p><A href="view_article00af.html?ContentID=104443&amp;l=fa">&#1604;&#1740;&#1606;&#1705;&#8204;&#1607;&#1575;&#1740; &#1605;&#1601;&#1740;&#1583;</A></p><p><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>&#1583;&#1585;&#1711;&#1575;&#1607;&#8204;&#1607;&#1575;</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A></p><p><A href="view_sorted_articles6ac9.html?catid=160&amp;layout=children&amp;l=fa">&#1705;&#1575;&#1585;&#1705;&#1606;&#1575;&#1606;</A></p><p><A href="view_sorted_articles4fbc.html?catid=161&amp;layout=children&amp;l=fa">&#1583;&#1575;&#1606;&#1588;&#1580;&#1608;&#1740;&#1575;&#1606;</A></p><p><A href="view_sorted_articles9116.html?catid=165&amp;layout=children&amp;l=fa">&#1605;&#1583;&#1585;&#1587;&#1575;&#1606;  </A></p><p><A href="view_sorted_articles8cf7.html?catid=169&amp;layout=children&amp;l=fa">&#1576;&#1575;&#1586;&#1583;&#1740;&#1583;&#1705;&#1606;&#1606;&#1583;&#1711;&#1575;&#1606;</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles7192.html?type=static&amp;id=ResearchandPublications&amp;l=fa">&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</a></span><br />
+<div><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A><br/></div><div><A href="view_article5d32.html?ContentID=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A><br/></div><div><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A><br/></div><div><A href="view_article8aae.html?ContentID=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A><br/></div><div><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A><br/></div><div><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A><br/></div><div><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A><br/></div><div><A href="view_articleb430.html?ContentID=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A><br/></div><div><A href="view_article2b6d.html?ContentID=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1740;&#1607;</A><br/></div><div><A href="view_article5aa9.html?ContentID=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A><br/></div><div><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles0fe6.html?type=static&amp;id=graduate_studies&amp;l=fa">&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;</a></span><br />
+<div><A href="view_article6d62.html?type=cont.currentlang&amp;id=104478&amp;l=fa">&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1610;&#1604;&#1740; &#1583;&#1585; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1593;&#1604;&#1608;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;</A><br/></div><div><A href="view_article313f.html?type=cont.currentlang&amp;id=106627&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1740;&#1578; &#1605;&#1593;&#1604;&#1605; &#1583;&#1608;&#1585;&#1607;&#8204;&#1740; &#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1740;&#1740;</A><br/></div><div><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A><br/></div><div><A href="view_article7818.html?type=cont.currentlang&amp;id=105818&amp;l=fa">&#1587;&#1575;&#1740;&#1585; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8ed3.html?type=static&amp;id=learning&amp;l=fa">&#1570;&#1605;&#1608;&#1586;&#1588;</a></span><br />
+<div><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A><br/></div><div><A href="view_articlee423.html?ContentID=104858&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A><br/></div><div><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A><br/></div><div><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A><br/></div><div><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A><br/></div><div><A href="view_article5bd8.html?ContentID=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A><br/></div><div><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles900d.html?type=static&amp;id=library&amp;l=fa">&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;</a></span><br />
+<div><A href="view_article0a46.html?type=cont.currentlang&amp;id=103462&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div><A href="view_articlef688.html?type=cont.currentlang&amp;id=104503&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1670;&#1575;&#1662;&#1740;</A><br/></div><div><A href="view_articledaae.html?type=cont.currentlang&amp;id=104538&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1589;&#1608;&#1578;&#1740; &#1608; &#1578;&#1589;&#1608;&#1740;&#1585;&#1740;</A><br/></div><div><A href="view_articlece75.html?type=cont.currentlang&amp;id=114807&amp;l=fa">Electronic Resources</A><br/></div><div><A href="view_article3a7d.html?type=cont.currentlang&amp;id=104728&amp;l=fa">&#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A><br/></div><div><A href="view_articleeac8.html?type=cont.currentlang&amp;id=104748&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A><br/></div><div><A href="view_sorted_articles06b6.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articles1714.html?type=static&amp;id=newsevents&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;</a></span><br />
+<div><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A><br/></div><div><A href="view_article1720.html?ContentID=104873&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;</A><br/></div><div><A href="view_article2827.html?ContentID=104498&amp;l=fa">&#1582;&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_articleb886.html?type=static&amp;id=copyright&amp;l=fa">© &#1605;&#1572;&#1587;&#1617;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740; &#1778;&#1776;&#1777;&#1635;</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105491 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:43:41 GMT -->
+</HTML>

@@ -1,0 +1,88 @@
+﻿BODY {
+	FONT-SIZE: 14px
+}
+H1 {
+	FONT-SIZE: 22px;
+}
+H3 {
+	FONT-SIZE: 20px
+}
+#top .left {
+	FONT-SIZE: 11px
+}
+#top .right .top_search {
+	FONT-SIZE: 14px
+}
+#breadcrumb {
+	FONT-SIZE: 11px
+}
+#breadcrumb .right {
+	FONT-SIZE: 13px
+}
+#left_menu P {
+	LINE-HEIGHT: 12px; FONT-SIZE: 12px
+}
+#right_menu P {
+	LINE-HEIGHT: 12px; FONT-SIZE: 12px
+}
+#right_menu P.title_plain {
+	FONT-SIZE: 12px
+}
+#footer {
+	FONT-SIZE: 12px;
+	height: 350px;
+}
+#footer #links .title {
+	FONT-SIZE: 15px
+}
+#copyright {
+	FONT-SIZE: 13px;
+	background-color: #EDEDDB;
+}
+
+
+/*Job Vacancies styles*/
+
+table.tblStyle table
+{
+	font: 14px Arial,Helvetica,sans-serif;	
+}
+
+table.tblStyle TR
+{
+	font-size: 14px;	
+}
+
+table.tblStyle TD
+{
+	font-size: 14px;	
+}
+
+.headingStyle
+{
+	font-size: 14px;	
+}
+
+.vacDiv
+{
+	font-size: 14px;	
+}
+
+.formButton
+{
+	border: 1px solid #9999FF;
+	font-weight: normal;	
+	font: 14px Arial,Helvetica,sans-serif;
+	font-size: 14px;	
+	font-style: normal;		
+	background-repeat: repeat-x;
+	cursor:pointer;	
+}
+
+input.btn
+{   
+   font: 14px Arial,Helvetica,sans-serif;
+   font-size: 14px;
+   background-color:#fed;   
+   border: 1px solid #111;
+}

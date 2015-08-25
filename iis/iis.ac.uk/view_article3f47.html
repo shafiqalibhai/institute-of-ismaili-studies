@@ -1,0 +1,565 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113427 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:26 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 113427;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyfbd7.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D113427">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articleddf9.html?type=cont.currentlang&amp;id=110963&amp;l=en" >Objectives</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article9cda.html?type=cont.currentlang&amp;id=110968&amp;l=en" >Staff and Research</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article2212.html?type=cont.currentlang&amp;id=110973&amp;l=en" >Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article63e3.html?type=cont.currentlang&amp;id=111028&amp;l=en" >Seminars and Conferences</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4f22.html?type=cont.currentlang&amp;id=110978&amp;l=en" >Related Material</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<h3 xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">Fragmentation and Compilation: Abstracts</h3><DIV><STRONG><EM>Fragmentation and Compilation: The Making of Religious Texts in Islam</EM></STRONG></DIV>
+<DIV><STRONG><EM>A Comparison with Ancient Mesopotamia, Judaism and Christianity</EM></STRONG></DIV>
+<DIV>29-30 May 2012</DIV>
+<DIV>The Institute of Ismaili Studies, London</DIV>
+<DIV>2nd Floor, Room 2.1</DIV>
+<DIV>Convenor: Asma Hilali <BR><BR></DIV>
+<DIV align=center>
+<TABLE style="WIDTH: 380px; BORDER-COLLAPSE: collapse" cellSpacing=9 cellPadding=9>
+<TBODY>
+<TR>
+<TD style="BORDER-BOTTOM: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-RIGHT: gray 1px solid">
+<DIV align=left><A href="view_article3a2d.html?type=cont.currentlang&amp;id=113412">Workshop description</A><BR><A href="view_articled263.html?type=cont.currentlang&amp;id=113417">Workshop programme</A><BR><A href="view_articlea307.html?type=cont.currentlang&amp;id=113422">Biographies</A><BR><B>Abstracts</B></DIV></TD></TR></TBODY></TABLE></DIV><BR><BR>
+<DIV><B><I>Fragmentation and Compilation: The Human Free Will as an Example </I></B><B><I>in Hadith Literature</I></B></DIV>
+<DIV><B>Viviane Comerro-de Pr&#233;mare, Institut National de Langues et Civilisations Orientales, Paris </B></DIV><BR>
+<P>What can be said about the existence of evil in the world? And about justice of an almighty God? These questions arose among Muslim traditionists, who answered by taking a stand in the debate of the time about divine predestination and man&#8217;s free will. Some of them used biblical figures and in particular that of Ezra, known as &#8216;Uzayr in the Islamic tradition, to make him the first prophet to question God about predestination. This paper seeks to go beyond the anecdotal setting of the stories to reveal the implicit underlying theology, bearing in mind that this theology does not express itself in a speculative mode but in a narrative one, and that the answer is not always the same. </P>
+<P>These stories are presented in the form of a literary compilation of <I>hadith</I>s. One might consider that a <I>hadith</I> is an autonomous and meaningful textual unit and, as such, it should be transmitted more or less literally as part of an inherited tradition. Yet, this autonomous textual unit can take a different meaning when regarded as a part of a compilation. To illustrate this point, the paper analyses an example taken from one of the oldest collections of prophetic stories, the one by Wathima al-Farisi (d. 851 CE), in the section dedicated to the Prophet &#8216;Uzayr.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Practice &#8211; Teaching &#8211; Tradition: Constructing the Authority of Sunni Islamic Religious Texts</I></B></DIV>
+<DIV><B>Stefan Leder, Orient Institut Beirut </B></DIV><BR>
+<P>The transmission of utterances is a main instrument for constructing authority in <I>Sunni</I> Islamic religious texts. This paper discusses some implications of this conceptual framework with respect to notions of knowledge and authority. Looking into the process of tradition-building as it occurs in a side branch of <I>Sunni</I> teaching, we detect what seems to be at first glance a sequence of layers of redaction: a certain fluidity of textual appearance at an early stage, and a gradual fixation of the text in the course of more systematic scholarly transmission subsequently. However, this is not a general evolutionary development; fluidity of the authoritative texts used in quotation does not disappear with time, and both &#8216;layers&#8217; may coexist as they are related to different scholarly milieus. This paper observes that close-to-oral transmission occurs in connection with the formation of teachings still struggling for the recognition of certain practices. In contrast, canonisation tends to isolate the text (utterance) from its contested context and to turn it into a freely utilisable component of compilations. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>On the Consumption of Law in Modern Central Asia: Who Cares for Doctrinal Citations in the Fatwa</I></B><B>s<I>?</I></B></DIV>
+<DIV><B>Paolo Sartori, </B><B>Austrian Academy of Sciences, Vienna</B></DIV><BR>
+<P><I>Responsa </I>literature (<I>fatawa</I>) is commonly treated as a body of scholarship which reflects the hermeneutic task of the <I>mufti </I>alone. This approach to the study of <I>fatawa</I> depends, at least partly, on the influence that <I>adab al-mufti</I> literature had on the studies of Islamic law. Indeed Islamic legal theory distinguishes <I>responsa</I> from judgments (<I>ahkam</I>) since the former are mainly informative and communicative in nature (<I>akhbari</I>). On this ground, <I>mufti</I>s have been equated with transmitters of <I>hadith</I>s or translators. Prior to the Soviet period, <I>fatawa</I> were delivered in Central Asia (taken here as a case study) simply by answering &#8216;yes&#8217; or &#8216;no&#8217; to a question (<I>istifta&#8217;</I>) written in the vernacular language; the latter took the shape of a text (<I>matn</I>) in Persian or Chaghatay Turki, which was complemented by fragmented citations (<I>riwaya</I>) of doctrinal authorities in Arabic. The question was formulated in such a way as to lead the <I>mufti</I> to issue the answer desired by its applicant. In other words, the legal opinion, which the <I>mufti</I> could either accept or reject, was already embedded in the text of the question. The citations of doctrinal authorities served as evidence in support of the view expressed in the question. That is, the vernacular text should show conformity to the citations in Arabic. </P>
+<P>This paper applies an approach to the study of <I>fatawa</I> which treats the latter as legal speech acts. This entails close investigation of the authorial intentions behind the production of the texts. In the case of <I>fatawa</I>, this approach calls for recovering the agency of the applicants of the legal opinions (<I>mustafti</I>). The paper argues that, in modern Central Asia, legal questions and the opinions embedded therein were not always formulated in keeping with doctrinal references. By contrast, it appears that the demands of the <I>mustafti</I> could substantially affect the hermeneutic task of the <I>mufti</I>.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Citation, Appropriation and Re-Shaping in the Reception History of the Qur&#8217;an. </I></B><B>The Epistles of the Pure Brethren<I> (</I>Rasa&#8217;il Ikhwan al-Safa&#8217;<I>) as a Case in Point</I></B></DIV>
+<DIV><B>Omar Al&#237;-de-Unzaga, The Institute of Ismaili Studies, London</B></DIV><BR>
+<P>Citations from the Qur&#8217;an are one of the most distinctive characteristics of numerous genres in Islamic intellectual history. This paper explores the mechanisms that are in place when quotations from a Scripture are used in a text. In particular it focuses on the quotations of the Qur&#8217;an in the <I>Epistles of the Pure Brethren</I> (<I>Rasa&#8217;il Ikhwan al-Safa&#8217;</I>), as a representative of the intellectual production of what can be termed &#8216;humanistic&#8217; literature in the tenth century CE. However, while it is relatively simple to find how a Qur&#8217;an commentator (<I>mufassir</I>) interpreted a specific verse, it is much more complex and difficult to see the interpretive process that takes place through the phenomenon of citation. Citations are insertions of textual units originating in one text into a larger text, which serves as its new &#8216;home&#8217;. </P>
+<P>As such, the textual unit takes on a new life, and, in the new co-text, a new meaning. By their very nature, citations are fragmentary; this paper further explores whether the Qur&#8217;an is fragmentary or whether it has been made to appear as fragmentary by the very phenomenon of citations (and exegesis in general). The main point of the paper is to explore how citations of religious texts contribute to the re-shaping of their reception &#8211; once readers see the quotation of a Qur&#8217;anic verse as inserted into a work and incorporated into the argument, their reading of that verse in the &#8216;home&#8217; text (i.e. the Qur&#8217;an) will be coloured by the interpretation underlying and surrounding the quotation. In the case of the <I>Epistles</I>, this paper analyses certain examples of citation as appropriation.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Athens, Jerusalem, Mecca: The Patristic Crucible of the Abrahamic Religions</I></B></DIV>
+<DIV><B>Guy Stroumsa, University of Oxford </B></DIV><BR>
+<P>From Justin Martyr in the second century CE to John of Damascus in the eighth, six centuries of early Christian theological literature offer one of the most impressive literary monuments of late antiquity. From its first steps as a Jewish heresy and a persecuted <I>religio illicita</I>, through Constantinian triumphalism to its becoming, in the Near East, a religion of tolerated <I>dhimmi</I>s in the Islamic realm, early Christianity also offers the key to the crystallisation of what would become, with the emergence of Islam, &#8216;the Abrahamic religions.&#8217; This paper argues that it is with early Christianity that the main elements of the conflict regarding the inheritance of Abraham and his &#8216;true&#8217; religion were formed. In that sense, early Muslim thinkers applied to Christians the ways the Christians, who called themselves <I>verus Israel </I>(true Israel), had themselves employed towards the Jews. It is thanks to the Abrahamic moment of late antiquity that the cultural and religious ecosystem, which would extend in the Middle Ages from Baghdad to Cordoba, and beyond, was formed.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Conceptualising Books in Mesopotamia: The Composition of Extispicy Treatises in the Old-Babylonian Period</I></B></DIV>
+<DIV><B>Jean-Jacques Glassner, Centre Nationale de la Recherche Scientifique, Paris</B></DIV><BR>
+<P>From the eighteenth century BCE on, Mesopotamian diviners began to compose treatises in the field of extispicy (divination through the inspection of animal entrails). This scientific project, which seems to have begun during or around the reign of Hammurabi of Babylon (1792-1750 BCE), was not a short-lived movement. On the contrary, it was a long-lasting work which was carried out for several centuries and conducted with rigorous scientific methodology. Copying was not the sole task of the scribes; some of them composed books. This raises the question of how Mesopotamian scribes wrote books, and how they went from the act of copying to that of composing; from reproduction to creation. To try to answer this question, documents must be identified in which one can locate a project of creation. Such manuscripts, one expects, are constituted with files and more or less long excerpts or compilations. Many of these sources have disappeared and a systematic study of this preliminary work is therefore impossible. </P>
+<P>The process of using excerpts is an exact continuation of scholarly activity. Scribes might sometimes include collections of unconnected passages, such as some proverbs on tablets belonging to the first level of education or some excerpts of literary texts, each selected passage being separated from the others by a single or a double rule. The same method was in use in extispicy, which was a subject definitively not taught at school during the first level cycle.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Modelling the Paleo-Muslim Qur'an</I></B></DIV>
+<DIV><B>Aziz al-Azmeh, Central European University, Budapest</B></DIV><BR>
+<P>The paleo-Muslim Qur&#8217;an, as composed, recomposed, canonised and received in the last two decades of Prophet Muhammad&#8217;s lifetime and in the decades immediately following, presents an especially propitious instance that might be considered in the discussion of this workshop&#8217;s overarching theme, that of fragmentation and compilation. Fragmentary textual elements that eventually constituted the canonical &#8216;Uthmanic redaction, and other, &#8216;apocryphal&#8217; redactions as well, resulted from declamation, cantillation, repetition and reiteration, self-reflexive semantic and commentarial expansion, interpolation, occasional adaptation and reformulation, narrative and allusive reference to contemporary and non-contemporary events, and arguably intertextual references to both Qur&#8217;anic and extra-Qur&#8217;anic texts, in both written and the spoken media. The consideration of the physical state of the Qur&#8217;anic texts, both codicological and morphological, and of Qur&#8217;anic variants, allows for modelling these feedback processes of canonising composition and eventual redaction. <B></B></P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Typology of Variants in the</I></B><B><I> San&#8216;a</I></B><B><I> Palimpsest (Manuscript 27.1 Dar al-Mahtutat)</I></B></DIV>
+<DIV><B>Asma Hilali, The Institute of Ismaili Studies, London</B></DIV><BR>
+<P>One important issue which arises out of examining the oldest manuscript of the Qur&#8217;an (the San&#8216;a palimpsest) is that of Qur&#8217;anic variants. The variants can be discerned in fragments of the Qur&#8217;anic text, and sometimes have an impact on determining the meaning of the verses in question. This paper analyses the phenomena pertaining to these variants in the context of the history of transmission, and raises the following questions: Do the variants correspond to, or arise out of, a definitive system of composition? Is there a discernible relationship between the fragmented aspect of the manuscript and the system of variants? What does the system of variants tell us about the use of the manuscript? Can we consider the variants as constituting a specific and definable dimension of religious textual composition? My approach aims to go beyond the framework of the issue of the &#8216;Uthmanic or non-&#8216;Uthmanic Qur&#8217;an codex, by investigating the ways in which the processes of compilation and fragmentation might serve as keys for a better understanding of the different levels of meaning within religious texts; and by trying to ascertain the degree to which these levels of meaning might be related to the historical modalities of textual construction and re-construction. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Fragmentation and Compilation: Abstracts</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 10 May 2022 10:42:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 16/05/2012&nbsp;18:20&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113427 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:26 GMT -->
+</HTML>

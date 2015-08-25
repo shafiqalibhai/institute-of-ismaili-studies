@@ -1,0 +1,65 @@
+﻿.bluetabs {
+	BACKGROUND: #f2f0f0; CLEAR: both
+}
+.bluetabs UL {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none; MARGIN: 0px 0px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 13px arial; PADDING-TOP: 5px
+}
+.bluetabs LI {
+	MARGIN: 0px; DISPLAY: inline
+}
+.bluetabs LI.first {
+	MARGIN-LEFT: 20px
+}
+.bluetabs LI A {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #666; BORDER-TOP: 0px; BORDER-RIGHT: 0px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.bluetabs LI A:visited {
+	COLOR: #666
+}
+.bluetabs LI A:hover {
+	COLOR: #999
+}
+.bluetabs li a.selected {background: url(../MasterPages/Custom/IIS/images/menu_selected.html) repeat-x; padding:0 0 8px 0; color:#999;}
+/*IE only hack*/
+/** html .dropmenudiv_b a{ width: 100%;}*/
+.dropmenudiv_b {
+	Z-INDEX: 100; BORDER-BOTTOM: #999 0px solid; BORDER-LEFT: #999 1px solid; BACKGROUND-COLOR: white; WIDTH: 200px; FONT: 11px/13px Arial; VISIBILITY: hidden; BORDER-TOP: #999 0px solid; TOP: 0px; BORDER-RIGHT: #999 1px solid
+}
+.dropmenudiv_b A {
+	BORDER-BOTTOM: #999 1px dotted; BORDER-LEFT: #999 0px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; WIDTH: auto; PADDING-RIGHT: 4px; DISPLAY: block; COLOR: #666666; BORDER-TOP: #999 0px solid; BORDER-RIGHT: #999 0px solid; TEXT-DECORATION: none; PADDING-TOP: 4px
+	
+}
+.bluetabs {
+	
+}
+.bluetabs LI {
+	POSITION: relative; OVERFLOW: visible
+}
+BODY.rtl .bluetabs LI {
+	FLOAT: right
+}
+.dropmenudiv_b {
+	BORDER-BOTTOM: #999 1px solid; POSITION: absolute; TEXT-ALIGN: left; MARGIN-TOP: 5px; DISPLAY: none; BORDER-TOP-STYLE: none; VISIBILITY: visible; MARGIN-LEFT: 20px; TOP: 20px; RIGHT: auto; LEFT: 0px
+}
+.bluetabs LI.fr .dropmenudiv_b {
+	MARGIN-LEFT: 15px
+}
+.bluetabs LI.ru .dropmenudiv_b {
+	MARGIN-LEFT: 12px
+}
+* HTML .dropmenudiv_b {
+	MARGIN-TOP: 8px
+}
+BODY.rtl .dropmenudiv_b {
+	TEXT-ALIGN: right; MARGIN-TOP: 3px; MARGIN-LEFT: auto; RIGHT: 0px; MARGIN-RIGHT: 33px; LEFT: auto
+}
+.dropmenudiv_b A {
+	padding: 4px;
+    border-bottom: 1px dotted #999999;
+    border-left: 1px solid #999999;
+    border-top: 0px solid #999999;
+    border-right: 1px solid #999999;
+}
+.bluetabs .dropmenudiv_b A.last {
+	BORDER-BOTTOM: medium none
+}

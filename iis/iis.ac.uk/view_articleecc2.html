@@ -1,0 +1,553 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109977 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:55:31 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 109977;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlya4b1.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D109977">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></p><p><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Encyclopaedia Articles</H3><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">The Imamate in Ismailism</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim      Nanji</A></DIV><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <A onclick="return fnExtLinkWarning();" href="http://www.iranica.com/newsite/" target=_blank><EM>The Encyclopaedia Iranica</EM></A>, Columbia University, New York, Vol. XIV, pp. 210-212.<br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><P>In common with all major Shi&#8216;a groups, the Ismailis believe that the Imamate is a divinely sanctioned and guided institution, through whose agency Muslims are enabled to contextualise the practice of their faith and to understand fully the exoteric and esoteric dimensions of the Qur&#8217;an. The Imamate exists to complement prophethood and to ensure that the divine purpose is fulfilled on earth at all times and in all places. </P>
+<P><B>The Principle of the Imamate</B></P>
+<P>The historical underpinning for this vision of Islam is based on the cardinal principle of Shi&#8216;a belief that, after the death of Prophet Muhammad, his cousin and son-in-law, &#8216;Ali, became Imam following a specific designation (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItem39ca.html?type=glossary&amp;id=150'))">nass</A></U></I>)<I> </I>made by the Prophet, based on divine command, before his death. Shi&#8216;a historical understanding thus locates itself within a framework of interpretation supported by Qur&#8217;anic verses and Prophetic Hadith. The institution of the Imamate is to continue thereafter on a hereditary basis through Imam &#8216;Ali and his wife, Fatima, the Prophet&#8217;s daughter, succession being based on designation by the Imam of the time. Adherence to the doctrine of the Imamate as a pillar of faith meant not only acceptance of, but also devotion to, the legitimate successors of the Prophet. The Imamate is therefore linked to the concept of <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemd7a2.html?type=glossary&amp;id=48'))">wilaya</A></U></I>,<I> </I>devotion to the Imams. The two major branches of the Ismailis, the Nizaris and the Musta&#8216;lis, affirm a shared belief in the Imamate, but give allegiance to different lines of Imams. The Nizari Ismailis believe in the physical presence of a living Imam, who for them today is <U><A href="view_article6d2b.html?type=cont.currentlang&amp;id=103467">Prince Karim Aga Khan IV</A></U>, the 49th Imam in direct descent from the Prophet through Imam &#8216;Ali and Fatima. The Musta&#8216;lis believe that their 21st hidden Imam went into physical concealment around 524 AH/1130 CE; while the Imamate continues in his line, in his physical absence authority is fulfilled by a vicegerent who acts on his behalf. At present this role is held by the 52nd <I>da&#8216;i</I>, Sayyidna Burhan al-Din (b. 1333 AH/1915 CE) who leads the Da&#8217;udi Tayyibi Bohras, while a smaller Sulaymani Bohra community found in Yemen is headed by their 51st <I>da&#8216;i</I>,<I> </I>&#8216;Abdallah b. Muhammad (Daftary, pp. 353-57). </P>
+<P>One of the most systematic and succinct expositions of Ismaili ideas of the Imamate is to be found in a work of Qadi Nu&#8216;man (d. 363 AH/974 CE) called <I>Da&#8216;a&#8217;im al-islam. </I>Nu&#8216;man, a leading jurist of the Fatimid period of Ismaili history, played a key role in the formation and elaboration of several legal as well as theological works that were re&shy;garded as definitive in his time. <I>Wilaya</I>,<I> </I>as the basis for belief in the Imamate as defined by Qadi Nu&#8216;man, is the foremost among the pillars of Islam. However, prior to discussing the question of <I>wilaya</I>,<I> </I>he differentiates between <I>islam </I>(submission) and <I>iman </I>(faith), basing himself on a Qur&#8217;anic verse: &#8220;The desert Arabs say &#8216;we believe.&#8217; Say (to them) &#8216;You have no faith (<I>iman</I>)<I>.</I>&#8217; But rather they should say &#8216;we have submitted (<I>aslama</I>)&#8217;&#8217;&#8217;<I> </I>(Qur&#8217;an 49:14). From this he deduces that one can thus be a Muslim (<I>muslim</I>,<I> </I>i.e., a member of the religion of Islam) without necessarily being a <I>mu&#8217;min. </I>The latter implies belief in and devotion to the rightful Imam; this, in fact, constitutes true faith. The Shi&#8216;ite and Ismaili claim to <I>wilaya </I>is deduced by Nu&#8216;man on the basis of historical events revealing Imam &#8216;Ali&#8217;s close proximity to the Prophet, as well as his being the most worthy among the Companions to succeed the Prophet. Then follows a discussion of the indications of preference for Imam &#8216;Ali made by the Prophet throughout his life and confirmed in the declaration at Ghadir Khumm after the so-called Farewell Pilgrimage (<I>khutbat al-wida&#8216;</I>),<I> </I>&#8220;He whose <I>mawla </I>(trustee, helper, lord) I am, &#8216;Ali is his <I>mawla</I>,&#8221;<I> </I>According to this view, having been attached to the establishment of the Imamate, Imam &#8216;Ali was granted the authority to interpret the Holy Qur&#8217;an and to initiate change in society in accordance with these principles adapted to the context of the time. The importance of <I>wilaya </I>in Nu&#8216;man&#8217;s scheme lies in the fact that the Imam deserves the love and allegiance of the community, quite apart from whether, at a given time, the Imamate is a political office or not (Qadi Nu&#8216;man, <I>Da&#8216;a&#8217;im </I>I, pp. 14&shy;98; tr., I, pp. 18-122). </P>
+<P>Al-Nu&#8216;man then goes on to give the Ismaili concept far wider scope by relating it to Qur&#8217;anic analogies and Islamic tradition. He argues that the tradition of designating and establishing the succession has been adhered to throughout the history of the earlier prophets and quotes the specific Qur&#8217;anic instance where Jesus announced the coming of Prophet Muhammad; he also cites other cases of prophets who had designated their legatee (<I>wasi</I>). The Imamate therefore complements the cycle of prophethood (<I>nubuwwa</I>),<I> </I>sustaining the continuity of divine guidance until the Day of Judgment. In the Ismaili view, the function of prophethood to convey God&#8217;s message had ended, but the need for affirmation, interpretation, stewardship and spiritual leadership was not yet over: the Imamate fulfils this role. </P>
+<P>While the juridical view, as stated in the <I>Da&#8216;a&#8217;im</I>,<I> </I>establishes the foundational Qur&#8217;anic and historical basis for the Imamate, Ismaili thought also developed a philo&shy;sophical approach for this concept. Hamid al-Din Ahmad Kirmani (d. ca. 411 AH/1021 CE), the Ismaili philosopher and <I>da&#8216;i</I>,<I> </I>who lived during the reign of the Fatimid Imam-Caliph al-Hakim (r.386-411 AH/996-1021 CE), discusses the fusion of the philosophical basis of Imamate with its juridical aspects. For him, the essence of governing involves the organisation of human beings, with all the variety of individual opinions and prejudices they represent, into a divinely ordered pattern. If such a pattern were to become understood and then followed, society as a whole would reflect greater order and consequently greater happiness. According to Kirmani, therefore, the <I>Imam </I>interprets the elements of the divine revelation so that each has its proper place within the integrity of the whole, assuming thereby that human beings and society will find proper equilibrium in both material and spiritual matters. Justice (<I>&#8216;adl</I>)<I> </I>then comes to be conceived as this state of equilibrium, at the individual and social levels. In the general definitions given by al-Nu&#8216;man, as well as the philosophical exposition of Kirmani, a significant aspect of the Imamate links it to the achievement of justice in society, which in turn reflects the proper intellectual, spiritual, and social maturity of individuals in society. The concepts of <I>din </I>&#8220;religion&#8221; and <I>dunya </I>&#8220;the world,&#8221; are both elements in the proper ordering of society and the Imam&#8217;s guidance sustains a balance between the two dimensions of life (Walker, pp. 16-24, 62-79). </P>
+<P>A further philosophical discourse is represented in Persian Ismaili writings such as those of Nasir-i Khusraw (d. after 462 AH/1070 CE) and Nasir-al-Din Tusi (d. 672 AH/1274 CE), where, in connection with their discussion of the concept of higher truths (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItema8be.html?type=glossary&amp;id=256'))">haqa&#8217;iq</A></U></I>,<I> </I>sing. <I>haqiqa</I>),<I> </I>or according to their work, it was through teaching (<I>ta&#8216;lim</I>)<I> </I>from the Imam that knowledge (<I><U>&#8216;<A href="javascript:void(LaunchGlossary('GlossaryItem5e56.html?type=glossary&amp;id=229'))">ilm</A></U></I>),<I> </I>in the fullest sense of the word, could be attained. Such knowledge encompassed the dimension of <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem362c.html?type=glossary&amp;id=44'))">zahir</A></U></I>,<I> </I>exemplifying the outward expression of Islam and its practice (as in the <I>Da&#8216;a&#8217;im </I>of Qadi al-Nu&#8216;man) and the <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem6ca1.html?type=glossary&amp;id=310'))">batin</A></U></I>,<I> </I>as embodied in the inner meaning of the <I>haqa&#8217;iq </I>of revelation. The Imamate, through the symbolic interpretation (<I>ta&#8217;wil</I>)<I> </I>of the Qur&#8217;an, enabled an understanding of the metaphysical, philosophical and symbolic dimensions of the faith, which is a composite of shari&#8216;a and <I>haqiqa </I>(Hunsberger, pp. 72-90). </P>
+<P>Nasir-i Khusraw&#8217;s philosophical writings and his literary work, the <I>Divan </I>(collection of poems), as well as the devotional literature preserved in several vernacular languages in the Ismaili tradition, provide passages that illustrate how the Imamate is the gateway through whose intercession, an individual passes through the stages of knowledge that bring about attainment of spiritual goals and knowledge. In his work <I>Sayr wa suluk</I>,<I> </I>Tusi relates the concept of <I>ta&#8216;lim</I> to the instructional role of the Imamate. He states that after having reached a certain stage through action and individual intellectual effort, an individual becomes aware of the necessity of an authoritative teacher. He states: &#8220;Since the circumstances of this world are (always) changing, if at a certain time or under certain circumstances, the speaker of truth (<I>muhiqq</I>)<I> </I>shows himself to Mankind in a different form, expresses himself differently, manifests the truth differently, or institutes the divine law differently (from that of his predecessor), it will not mean that there is any difference in his truthfulness, because (in his essence) he is free from transformation and alteration. Transformation and alteration are the necessary attributes of this world&#8221; (Tusi, <I>Sayr</I>,<I> </I>text, pp. 4-18; tr., pp. 27-48). </P>
+<P>History in Ismaili thought, therefore, reflects varied patterns through which institutional order can be realised, according to the guidance of the Imam of the time. The dominant patterns of this process are characterised in the two eras that unfold over time and space: (1) periods of quiescence and interiorisation, when circumstances may limit a broader engagement with the world, and (2) a more enabling time when it is possible to engage intellectually and institutionally in the world. In historical and human terms, society during these eras reflects a model of history in which justice remains a constant goal and the function of the Imamate is to give that goal personal meaning and institutional expression and coherence, within the context of faith and reason, applied in diverse and changing circumstances. </P>
+<P>The metaphors that underpin this view of history can be considered as elements that give a permanent imprint to Ismaili understanding of the sacredness of spiritual authority and knowledge, and to the view that, even when the processes of history might appear to temporarily inhibit the fulfilment of justice, the idioms inherent in these symbols retain their universality. The metaphors connect the social world, in this sense, with the cosmic world and represent a quest for, and the hope of, attaining &#8220;higher stages of perfection,&#8221; inner and outer, through the Imamate. </P>
+<P><B>The Imamate in History</B></P>
+<P><I>The early Imams. </I>Following the death in 40 AH/661 CE of Imam &#8216;Ali, whom all Shi&#8216;a regard as the first Imam, the Ismailis acknowledge his son Imam Husayn as having inherited the full authority of Imamate. Although Imam &#8216;Ali&#8217;s eldest son Hasan is also acknowledged as a successor (in most Shi&#8216;i accounts), the Nizari Ismailis regard his role as having been custodial, until such time as Imam Husayn assumed the Imamate. Following Imam Husayn&#8217;s tragic death at Karbala in 61 AH/680 CE, he was succeeded by his son Imam &#8216;Ali Zayn-al &#8216;Abidin and then Imam Muhammad al-Baqir and Imam Ja&#8216;far al-Sadiq who died in 148 AH/765 CE. Though none of them exercised a political role, this early period is considered significant, as it is around the Imamate that the identity of the Shi&#8216;i as a group within the Muslim community comes to be consolidated.</P>
+<P><I>The Fatimid Caliph-Imams. </I>After the death of Imam Ja&#8216;far al-Sadiq, the Shi&#8216;i became eventually divided into two main groups. One accepted Imam Musa al-Kazim, one of Imam Ja&#8216;far&#8217;s sons, and these eventually came to be known as Imamis or Twelver Shi&#8216;i, and others acknowledged another son Imam Isma&#8216;il and his descendants. It is in this line that the Imamate appeared during the rise of the Fatimids, beginning with the public proclamation in 297 AH/909 CE of the Imamate of Imam-caliph &#8216;Abd-Allah b. Husayn al-Mahdi (r. 297-322 AH/909-34 CE), the first Fatimid caliph. The group of Imams prior to this, between Imam Isma&#8216;il and Imam-caliph al-Mahdi, are regarded as part of the period of public quiescence and concealment (<I>satr</I>),<I> </I>as they sought to escape persecution.</P>
+<P>The Imams of the Fatimid era are well known, and this period of Imamate reflects the flowering of intellectual, cultural, and economic life that became the hallmark of the vast Fatimid empire. The Ismaili Imams now ruled as Fatimid caliphs, and their authority was acknowledged in many parts of the Muslim world of the time. Ismaili communities flourished in the Middle East, Central Asia, Persia, South Asia, and North Africa (Daftary, pp. 152-222).</P>
+<P><I>The Imamate in Persia. </I>Following the death of the Fatimid Caliph-Imam al-Mustansir Bi&#8217;llah in 487 AH/1094 CE (r. 427-97 AH/1036-94 CE), the Ismailis became divided into two major groups, one acknowledged continuity of the Imamate in his son Imam Nizar (d. 488 AH/1095 CE), while others recognised a younger son, Imam al-Musta&#8216;li (r. 487-95 AH/1094-1101 CE). The latter group continued to follow Imam al-Musta&#8216;li&#8217;s son al-Amir (r. 495-524 AH/1101-30 CE). On al-Amir&#8217;s death in 524 AH/1130 CE, the majority of followers accepted his infant son al-Tayyib, but believed that he went into concealment and that subsequent Imams succeeding him remain hidden, awaiting manifestation at the end of time.</P>
+<P>The successors of Imam Nizar inaugurated the Nizari Ismaili Imamate and a state in Persia and Syria, with its main base in the fortress of Alamut. This period of the Imamate lasted until the Mongol invasion and destruction of the Ismaili state in 654 AH/1256 CE. The Imamate continued thereafter in various parts of Iran, with the Imams maintaining a discrete profile and providing continuity and guidance through their representatives to the scattered communities in Persia, Syria, and Central and South Asia (Daftary, pp. 386-429). </P>
+<P><I>The modern period. </I>The modern period, from the middle of the 19th century, is marked by the transition of the Imamate from Persia to India and then to Europe. It is largely dominated by the lives and activities of three Imams: Hasan &#8216;Ali Shah, Aga Khan I (d. 1881), <U><A href="view_person42de.html?type=auth&amp;id=71">Sir Sultan Mahomed Shah, Aga Khan III</A></U> (d. 1957), and the present Imam, Prince Karim Aga Khan IV (b. 1936). </P>
+<P>In its modern and contemporary context, the Imamate has been able to provide Ismaili communities with guidance and structures to contextualise and implement their faith in a changing world. Among the Nizari Ismailis, who have emerged in the last hundred years as a well -organised and coherent Muslim community, the Imamate has created new institutions for the governance, social development and religious continuity of the various worldwide communities, spread in some thirty countries. In addition, by creating a global network of institutions, under the umbrella of the <U><A onclick="return fnExtLinkWarning();" href="http://www.akdn.org/" target=_blank>Aga Khan Development Network</A></U> (AKDN), the Imam of the time, Prince Karim Aga Khan, building on the groundwork laid by his grand father, the previous Imam, has sought to realise the social conscience of Islam, through programmes that promote social, cultural, and educational development, encompassing some of the poorest areas of Africa and Asia, to serve significant populations, regardless of their origin, gender, or religion. In this way, the Imamate continues to provide guidance and support to Ismaili communities and the populations among whom they live (Daftary, pp. 504-48).<B></B></P>
+<P><B></B></P>
+<P><B>Bibliography</B></P>
+<P><I></I></P>
+<P>Mian Bhai Mulla Abdul Husain, <I>Gulzare Daudi for the Bohras of India: A Short Note on the Bohras of India</I>,<I> their 21 Imams and 51</I> <I>Dais</I>,<I> </I>Ahmedabad, 1920; repr., Surat, 1977.</P>
+<P>Aga Khan III [Sultan Mohammad Shah], <I>The Memoirs of Aga Khan: World Enough and Time</I>,<I> </I>London, 1954.</P>
+<P>Mohammad Ali Amir-Moezzi, <I>The Divine Guide in Early Shi&#8216;ism: The Sources of Esotericism in Islam</I>,<I> </I>tr. D. Streight, Albany, N.Y., 1994.</P>
+<P>Henry Corbin, <I>Cyclical Time and Ismaili Gnosis</I>,<I> </I>London, 1983. </P>
+<P><U><A href="view_person19c6.html?type=auth&amp;id=8">Farhad Daftary</A></U>, <I>The Isma&#8216;ilis: Their History and Doctrines</I>,<I> </I>Cambridge, 1990.</P>
+<P>Aziz Esmail, <I>A Scent of Sandalwood: Indo-Ismaili Religious Lyrics (Ginans)</I>,<I> </I>Richmond, Surrey, UK, 2002.</P>
+<P>Sumaiya Hamdani, <I>Between Revolution and State: Al-Nu&#8216;man and the Construction of Fatimid Legitimacy</I>,<I> </I>I. B. Tauris in association with The Institute of Ismaili Studies, 2006.</P>
+<P><U><A href="../www.iis.ac.uk/view_personcb0d.html?type=auth&amp;id=70">Alice C. Hunsberger</A></U>, <A href="view_article7b3b.html?type=cont.currentlang&amp;id=100693"><I><U>Nasir Khusraw</U></I><U>,<I> The Ruby of Badakhshan: A Portrait of the Persian Poet</I>,<I> Traveller and Philosopher</I></U></A>,<I> </I>London, 2000.</P>
+<P>Hamid-al-Din Ahmad Kirmani, <I>Rahat al-&#8216;aql</I>,<I> </I>ed. M. K. Hosayn and M. M. Helmi, Leiden, 1953. </P>
+<P><U><A href="view_person6412.html?type=auth&amp;id=54">Wilferd Madelung</A></U>, <I>The Succession to Muhammad: A Study of the Early Caliphate</I>,<I> </I>Cambridge, 1997.</P>
+<P>Azim Nanji, <I>The Nizari Isma&#8216;ili Tradition in the Indo-Pakistan Sub-continent</I>,<I> </I>Delmar, N.Y., 1978. </P>
+<P>Qadi Nu&#8216;man b. Mohammad, <I>Da&#8216;a&#8217;em al-eslam</I>,<I> </I>ed. A. A. Fyzee, Cairo, 1951-61; tr. A. A. A. Fyzee, <I>The Pillars of Islam</I>,<I> </I>rev. I. K. Poonawala, New Delhi, 2000-04.</P>
+<P>Nasir al-Din Tusi, <I>Rawzat al-taslim</I>,<I> ya tasawwurat</I>,<I> </I>ed. W. Ivanov, Tehran, 1984; ed. and tr. <U><A href="view_person968e.html?type=auth&amp;id=15">S. J. Badakhchani</A></U> as <I><U><A href="view_articlefbd3.html?type=cont.currentlang&amp;id=105488">Paradise of Submission</A></U></I>,<I> </I>London, 2005.</P>
+<P><I>_ _, Sayr wa soluk</I>,<I> </I>in <I>Majmu&#8216;a-ye rasa&#8217;el</I>,<I> </I>ed. M.T. Modarres-Razawi, Tehran, 1956, pp. 36-55; tr. S. J. Badakhchani as <I>Contemplation and Action: The Spiritual Autobiography of a Muslim Scholar</I>,<I> </I>London, 1998.</P>
+<P><U><A href="view_persone72a.html?type=auth&amp;id=21">Paul E. Walker</A></U>, <I>Hamid al-Din al-Kirmani: Ismaili Thought in the Age of al-Hakim</I>,<I> </I>London, 1999. </P><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Imamate in Ismailism</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sat, 13 Oct 2018 13:36:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 13/10/2008&nbsp;14:17&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109977 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:55:33 GMT -->
+</HTML>

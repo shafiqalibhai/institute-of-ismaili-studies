@@ -1,0 +1,687 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109422 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:50:22 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 109422;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute develops teaching and learning materials for students" height="115" width="779" class="banner" alt="The Institute develops teaching and learning materials for students" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning%202new.jpg');
+				var descriptions = new Array('The Institute develops teaching and learning materials for students','The Institute develops teaching and learning materials for students');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only2955.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D109422">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article7793.html?ContentID=109423">Français</A></li><li><A href="view_articlecf07.html?ContentID=109424">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articlebde4.html?ContentID=109425">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_articlee4b4.html?ContentID=109426">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Speeches of Aga Khan IV</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0" width="450" border="0"><tbody><tr><td><strong></strong><strong>Address by His Highness the Aga Khan to the School of International and Public Affairs, Columbia University</strong><br/><br/><DIV>His Highness the Aga Khan</DIV>
+<DIV>New York, USA</DIV>
+<DIV>May 15, 2006</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><A href="SiteAssets/pdf/Columbia%202006.pdf"><IMG height=25 hspace=5 src="WebAssets/site_images/images/pdf_icon.gif" width=25 border=0>Download PDF version of the speech</A> (94 KB)</DIV>
+<DIV>&nbsp;</DIV>
+<P>Bismillah-ir-Rahman-ir-Rahim<BR><BR>Dean Anderson,<BR>Faculty Members,<BR>Graduating Students and Parents,<BR>Distinguished Guests,<BR>Ladies and Gentlemen</P>
+<P><BR>I am deeply honoured to be here and deeply grateful for your invitation. This is a memorable day both in your personal lives and in the life of this School&#8212;and I am pleased to share in it. </P>
+<P>They say that a good graduation speaker is someone who can talk in someone else&#8217;s sleep. I hope we can break that pattern today. </P>
+<P>An opinion poll reported recently that what American graduates want as their graduation speaker more than anyone is &#8220;someone they could relate to&#8221;. But that test, says the poll, showed the most popular university speaker in recent years was the Sesame street character, Kermit the Frog. I found it a bit intimidating to wonder just where the Imam of the Shia Ismaili Muslims would rank on the &#8220;relating&#8221; scale in comparison to Kermit the Frog. </P>
+<P>Ceremonies of the sort we observe today are valuable because they help us to bridge the past and the future &#8211; to see ourselves as players in larger narratives. This School&#8217;s narrative is now sixty years old &#8211; embracing the whole of the postwar period. In that time you have dramatically broadened both the communities you serve and the programs through which you serve them. </P>
+<P>Your history reflects a continuing conviction that the challenges of our times are fundamentally global ones &#8211; calling both for multi-disciplinary and multi-national responses. </P>
+<P>Even as SIPA marks its 60th anniversary, I am approaching an anniversary of my own &#8211; the 50th anniversary next year of my role as Imam of the Shia Imami Ismaili Muslims. </P>
+<P>While I was educated in the West, my perspective over these fifty years has been profoundly shaped by the countries of South and Central Asia, the Middle East and Africa, where the Ismaili people live and where they are largely concentrated. For five decades, that has been my world &#8211; my virtually permanent preoccupation. And it is out of that experience that I speak today.</P>
+<P>For the developing world, the past half-century has been a time of recurring hope and frequent disappointment. Great waves of change have washed over the landscape &#8211; from the crumbling of colonial hegemonies in mid century to the recent collapse of communist empires. But too often, what rushed in to replace the old order were empty hopes&#8212;not only the false allure of state socialism, non-alignment, and single-party rule, but also the false glories of romantic nationalism and narrow tribalism, and the false dawn of runaway individualism. </P>
+<P>There have been welcome exceptions to this pattern, of course. But too often, one step forward has been accompanied by two steps back. Hope for the future has often meant hope for survival, not hope for progress. The old order yielded its place, but a new world was not ready to be born. </P>
+<P>Today, this sense of frustration is compounded &#8211; both in rich and poor nations &#8211; by a host of new challenges. They range from changing weather patterns to mutating viruses, from new digital and bio-genetic technologies to new patterns of family life and a new intermingling of cultures. </P>
+<P>As the world economy integrates, global migrations are reaching record levels. Immigrants now account for two thirds of the population growth in the 30 developed countries of the OECD. Once homogenous societies are becoming distinctly multi-cultural. </P>
+<P>Meanwhile, the gap widens between rich countries and poor. Populations explode and the environment deteriorates. The nation-state itself is newly challenged by the influence of non-state forces&#8212;including global crime and terrorism. </P>
+<P>Whenever I sit down with leading thinkers and policy makers &#8211; I come away with a haunting question. Why is it, given the scope of our collective learning &#8211; unprecedented in human history &#8211; that we have such difficulty in controlling these developments? Why is our growing intellectual mastery of the world so often accompanied in practice by a growing sense of drift?<BR><BR>My response to that question focuses increasingly on the fact that democratic institutions have not lived up to their potential. In both the developed and the developing world, the promise of democracy has too often been disappointed. </P>
+<P>For many centuries, enlightened people have argued that democracy was the key to social progress. But today, that contention is in dispute.</P>
+<P>In countries where I am directly involved, the 21st century has already experienced at least a half-dozen constitutional crises. The sad fact &#8211; hard to swallow and difficult to deny &#8211; is that nearly forty percent of UN member nations are now categorized not merely as failed states &#8211; but as &#8220;failed democracies.&#8221;</P>
+<P>Our central challenge in this new century &#8211; as leaders and future leaders of our world &#8211; is to renew the democratic promise. </P>
+<P>The saving grace which democratic systems are most likely to possess, after all, is that they are self-correcting. A system of public accountability still provides the best hope for change without violence. And that virtue alone redeems the entire concept. It explains Churchill&#8217;s famous view that democracy is the worst form of government, except for all others. </P>
+<P>Our challenge is not to find alternatives to democracy, but to find more and better ways to make democracy work.</P>
+<P>In responding to that challenge today, I would like to make four observations &#8211; four suggestions for addressing our democratic disappointments and advancing our democratic hopes. </P>
+<P>My comments involve, first, the need for greater flexibility in defining the paths to democracy; secondly, the need for greater diversity in the institutions which participate in democratic life; thirdly, the need to expand the public&#8217;s capacity for democracy; and finally, the need to strengthen public integrity-- on which democracy rests. Let me say a few words about each.</P>
+<P>My first concern is that we must define the paths to democracy more flexibly. We like to say that democracy involves a pluralistic approach to life &#8211; but too seldom do we take a pluralistic approach to democracy. Too often, we insist that democracies must all follow a similar script &#8211; evolving at a similar pace &#8211; without recognizing that different circumstances may call for different constructs. </P>
+<P>The ultimate recourse in any democracy must be to the concept of popular sovereignty. But within that concept there is room for variation. One size need not fit all &#8211; and trying to make one size fit all can be a recipe for failure. </P>
+<P>The world&#8217;s most successful democracies have had widely differing histories &#8211; each taking its own shape according to its own timetable. </P>
+<P>How is power best divided and balanced? How should secular and spiritual allegiances interact? How can traditional authority &#8211; even monarchical authority &#8211; relate to democratic frameworks? How is the integrity of minority cultures and faith systems best reconciled with majority rule?</P>
+<P>It is simplistic to wish that our democratic destinations should be similar &#8211; that they cannot be reached by many paths. The democratic spirit of freedom and flexibility must begin with our definitions of democracy itself.</P>
+<P>Even as we think more flexibly about democracy, we should also consider a second goal: diversifying the institutions of democratic life. </P>
+<P>One of the reasons that governments often fail is that we depend too much on them. We invest too many hopes in political promises and we entrust too many tasks to political regimes.</P>
+<P>Governments alone do not make democracy work. The most successful democracies are those in which the non-governmental institutions of &#8220;civil society&#8221; also play a vital role. </P>
+<P>Civil society is powered by private voluntary energies, but it is committed to the public good. It includes institutions of education, health, science and research. It embraces professional, commercial, labour, ethnic and arts organizations, and others devoted to religion, communication, and the environment. </P>
+<P>Sometimes, in our preoccupation with government, we discount the impact of civil society, including the potential of constructive NGO&#8217;s. But we can no longer afford that outlook. Meeting the realities of a complex world will require a strengthened array of civic institutions. They spur social progress &#8211; even when governments falter, and because they are so intimately connected to the public, they can predict new patterns and identify new problems with particular sensitivity. </P>
+<P>But such developments cannot be coerced. They require an encouraging, enabling environment, supported by a broad public enthusiasm for social goals. And let me be clear: I am here because I believe SIPA, with its annual outpouring of able graduates, can make an enormous worldwide contribution to such a response. </P>
+<P>The development of civil society can also help meet the rising challenge of cultural diversity. As communities become more pluralistic in fact, they must also become more pluralistic in spirit. A vibrant civil society can give diverse constituencies effective ways to express and preserve their distinct identities, even as they interact with new neighbours. </P>
+<P>We are often told that increased contact among cultures will inevitably produce a &#8220;Clash of Civilizations,&#8221; particularly between Islam and the West. Such predictions could become self-fulfilling prophecies if enough people believe them. But that need not, and must not, be the case. </P>
+<P>The true problem we face is what I would call a &#8220;Clash of Ignorance&#8221; &#8211; on both sides &#8211; one which neglects, for example, a long history of respect and cooperation between Islamic and Western peoples, and their respective civilisations. </P>
+<P>This is an appropriate place to recall how North American history was shaped over the centuries by diverse cultural groups. In the future as in the past, such diversity can be an engine of enormous creativity &#8211; if it is sustained by what I would call &#8220;a new cosmopolitan ethic&#8221;. To encourage that process, the Aga Khan Development Network has recently formed a partnership with the Government of Canada to create a new Global Centre for Pluralism in Ottawa. Drawing on both the Ismaili experience and the pluralistic model of Canada itself, the Centre recognizes that we cannot make the world safe for democracy unless we also make the world safe for diversity &#8211; and that strengthening can be achieved by the institutions of civil society. They can contribute significantly to that goal. </P>
+<P>My third point involves the public capacity for democratic government. This is a problem we too often treat with too much sentimentality, reluctant to acknowledge that democratic publics are not always all-wise. </P>
+<P>Inadequate public communication is part of the problem. Driven by short-term circulation and profit goals, media increasingly tell audiences what they want to hear rather than what they ought to hear. And what too many people want is not to be informed, but to be entertained. </P>
+<P>One result is the inadequacy of international news. I am told that world news now represents a substantially lower percentage of mainstream American news than it did a generation ago. Thanks to the Internet, specialists can get more information from more places than ever before. But for the general public, in America and elsewhere, global information has declined, while global involvements have expanded. </P>
+<P>If better communication is one part of the answer, better education is another. This means, above all, developing new curricula which will meet new demands &#8211; especially in developing countries. We must do more to prepare the leaders of the 21st century for economic life in a global marketplace, for cultural life in pluralistic societies, for political life in complex democracies. Our system of Aga Khan-sponsored universities and academies is working throughout the developing world to create new educational models. But the scale of our work only begins to address the enormity of the challenge. </P>
+<P>Improved communication and education can be helpful, but we also must be realistic about public capabilities. I believe, for example, that publics are too often asked to vote on issues that bewilder them. In recent months, both in Africa and in Asia &#8211; new national constitutions have been left to the mercies of mass public referenda &#8211; posing complex, theoretical issues well beyond the ability of politicians to explain, and publics to master. Nor is this matter unique to the developing world. We saw a similar pattern last year when the French public rejected a new European constitutional treaty that was 474 pages long. </P>
+<P>Democracies need to distinguish responsibly between the prerogatives of the people and the obligations of their leaders. And leaders must meet their obligations. When democracies fail, it is usually because publics have grown impatient with ineffectual leaders and governments.</P>
+<P>When parliaments lack the structure or expertise to grapple with complex problems &#8211; or when a system of checks and balances stymies action rather than refining it &#8211; then disenchanted publics will often turn to autocrats. The UN Development Program recently reported, for example, that 55 percent of those surveyed in 18 Latin American countries would support authoritarian rule if it brought economic progress. There, in too many cases progress and democracy have not gone hand in hand.</P>
+<P>The best way to redeem the concept of democracy around the world is to improve the results it delivers. Developed countries, rather than talking so much about democracy on the conceptual level, must do more &#8211; much more &#8211; to help democracy work on a practical level. Our goal must be &#8220;fully functioning democracies&#8221; &#8211; which bring genuine improvements in the quality of life for their peoples. We must not force publics to choose between democratic government and competent government.</P>
+<P>This brings me to my final topic: the need for a sense of greater public integrity.</P>
+<P>Expanding the number of people who share social power is only half the battle. The critical question is how such power is used. How can we inspire people to reach beyond rampant materialism, self-indulgent individualism, and unprincipled relativism. </P>
+<P>One answer is to augment our focus on personal prerogatives and individual rights, with an expanded concern for personal responsibilities and communal goals. A passion for justice, the quest for equality, a respect for tolerance, a dedication to human dignity &#8211; these are universal human values which are broadly shared across divisions of class, race, language, faith and geography. They constitute what classical philosophers &#8211; in the East and West alike &#8211; have described as human &#8220;virtue&#8221; &#8211; not merely the absence of negative restraints on individual freedom, but also a set of positive responsibilities, moral disciplines which prevent liberty from turning into license. </P>
+<P>Historically, one of the most powerful resources for any culture has been the sense that it is heading somewhere, that tomorrow will be better than today, that there is reason to embrace what I would call &#8220;a narrative of progress.&#8221; </P>
+<P>The right of individuals to look for a better quality of life within their own life-spans &#8211; and to build toward a better life for their children &#8211; these are personal aspirations which must become public values.</P>
+<P>But a healthy sense of public integrity, in my view, will be difficult to nurture over time without a strong religious underpinning. In the Islamic tradition, the conduct of one&#8217;s worldly life is inseparably intertwined with the concerns of one&#8217;s spiritual life &#8211; and one cannot talk about integrity without also talking about faith. </P>
+<P>For Islam, the importance of this intersection is an item of faith, such a profound melding of worldly concerns and spiritual ideals that one cannot imagine one without the other. The two belong together. They constitute &#8220;a way of life.&#8221;</P>
+<P>From that perspective, I would put high among our priorities, both within and outside the Islamic world, the need to renew our spiritual traditions. To be sure, religious freedom is a critical value in a pluralistic society. But if freedom of religion deteriorates into freedom from religion &#8211; then I fear we will soon be lost on a bleak and barren landscape &#8211; with no compass or roadmap, no sense of ultimate direction. </P>
+<P>I fully understand the West&#8217;s historic commitment to separating the secular from the religious. But for many non-Westerners, including most Muslims, the realms of faith and of worldly affairs cannot be antithetical. If &#8220;modernism&#8221; lacks a spiritual dimension, it will look like materialism. And if the modernizing influence of the West is insistently and exclusively a secularising influence, then much of the Islamic world will be somewhat distanced from it. </P>
+<P>A deeply rooted sense of public integrity means more than integrity in government, important as that must be. Ethical lapses in medicine and education, malfeasance in business and banking, dishonesty among journalists, scientists, engineers, or scholars &#8211; all of these weaknesses can undermine the most promising democracies. </P>
+<P>Let me finally emphasize my strong conviction that public integrity cannot grow out of authoritarian pronouncements. It must be rooted in the human heart and conscience. As the Holy Quran says: &#8220;There is no compulsion in religion&#8221;. The resurgence of spirituality &#8211; potentially such a positive force &#8211; can become a negative influence when it turns into self-righteousness and imposes itself on others. Like all of the world&#8217;s great religions, Islam warns against the danger of comparing oneself with God, and places primary emphasis on the qualities of generosity, mercy and humility. </P>
+<P>A central element in any religious outlook, it seems to me, is a sense of human limitation, a recognition of our own creature-hood &#8211; a posture of profound humility before the Divine. In that sensibility lies our best protection against divisive dogmatism and our best hope for creative pluralism. </P>
+<P>In conclusion, then, I would ask &#8211; as you move out from this University into a diverse and demanding world &#8211; that you think about four considerations for renewing the promise of democracy: defining democratic paths more flexibly; expanding the role of civil society; increasing public capacities for self-governance; and strengthening our commitment to public integrity. </P>
+<P>In all these ways, I believe we can help restore confidence in the promise of democratic life, affirming with pride our distinct cultural identities, while embracing with enthusiasm our new global potentials. </P>
+<P>To the graduants, my prayer is that God may guide you and accompany you as you fulfil your destinies.</P>
+<DIV>Thank You. </DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Address by His Highness the Aga Khan to the School of International and Public Affairs, Columbia University</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 20 May 2018 16:57:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 21/05/2008&nbsp;14:57&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=109422 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:50:22 GMT -->
+</HTML>

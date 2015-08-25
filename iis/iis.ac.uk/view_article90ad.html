@@ -1,0 +1,634 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=108839 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 01:08:02 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="&#1605;&#1593;&#1607;&#1583; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1573;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577;">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2rtl.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1rtl.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3rtl.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 108839;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="rtl" class="rtl ar">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="&#1605;&#1593;&#1607;&#1583; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1573;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577;" href="home.html">&#1605;&#1593;&#1607;&#1583; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1573;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577;</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="&#1576;&#1581;&#1579; &#1601;&#1610; &#1605;&#1608;&#1602;&#1593; &#1575;&#1604;&#1605;&#1593;&#1607;&#1583;" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "20";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="&#1605;&#1593;&#1607;&#1583; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1573;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577;" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations" height="115" width="779" class="banner" alt="IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations" src="WebAssets/Site_Images/header/Final%20Banner.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Final%20Banner.jpg','WebAssets/Site_Images/header/News%20%26%20Events.jpg');
+				var descriptions = new Array('IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations','IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="ar_list">
+
+<li class="ar">
+	<a class="0" title="&#1575;&#1604;&#1589;&#1601;&#1581;&#1577; &#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;" rel="dropmenu0_b" href="home57e5.html?l=ar">&#1575;&#1604;&#1589;&#1601;&#1581;&#1577; &#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlecbaf.html?type=cont.currentlang&amp;id=104413&amp;l=ar">&#1606;&#1592;&#1585;&#1577; &#1593;&#1575;&#1605;&#1577; &#1593;&#1606; &#1575;&#1604;&#1605;&#1593;&#1607;&#1583;</A></div><div><A href="view_articlee28c.html?type=cont.currentlang&amp;id=103471&amp;l=ar">&#1587;&#1605;&#1608; &#1575;&#1604;&#1570;&#1594;&#1575; &#1582;&#1575;&#1606;</A></div><div><A href="view_articleff67.html?type=cont.currentlang&amp;id=104448&amp;l=ar"> &#1575;&#1604;&#1580;&#1605;&#1575;&#1593;&#1577; &#1575;&#1604;&#1573;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577;</A></div><div><A href="view_articlec44c.html?type=cont.currentlang&amp;id=104373&amp;l=ar">&#1588;&#1576;&#1603;&#1577; &#1575;&#1604;&#1570;&#1594;&#1575; &#1582;&#1575;&#1606; &#1604;&#1604;&#1578;&#1606;&#1605;&#1610;&#1577;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="ar">
+	<a class="15 2 34" title="&#1575;&#1604;&#1576;&#1581;&#1579; &#1608; &#1575;&#1604;&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578;" rel="dropmenu1_b" href="view_sorted_articles5e5b.html?type=static&amp;id=ResearchandPublications&amp;l=ar">&#1575;&#1604;&#1576;&#1581;&#1579; &#1608; &#1575;&#1604;&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578;</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article10a6.html?type=cont.currentlang&amp;id=105873&amp;l=ar">&#1575;&#1604;&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578; &#1575;&#1604;&#1571;&#1603;&#1575;&#1583;&#1610;&#1605;&#1610;&#1577;</A></div><div><A href="view_article015f.html?ContentID=110958&amp;l=ar">&#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1602;&#1585;&#1570;&#1606;&#1610;&#1577;</A></div><div><A href="view_articleadab.html?type=cont.currentlang&amp;id=110983&amp;l=ar">&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1570;&#1587;&#1610;&#1575; &#1575;&#1604;&#1608;&#1587;&#1591;&#1609;</A></div><div><A href="view_article6af4.html?ContentID=104878&amp;l=ar">&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1571;&#1603;&#1575;&#1583;&#1610;&#1605;&#1610;&#1577;</A></div><div><A href="view_article9c15.html?type=cont.currentlang&amp;id=112305&amp;l=ar">&#1605;&#1587;&#1600;&#1575;&#1607;&#1605;&#1575;&#1578; &#1601;&#1610; &#1575;&#1604;&#1605;&#1608;&#1587;&#1608;&#1593;&#1575;&#1578;</A></div><div><A href="view_article0bfd.html?type=cont.currentlang&amp;id=104898&amp;l=ar">&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578; &#1605;&#1578;&#1585;&#1580;&#1605;&#1577;</A></div><div><A href="view_article47b5.html?type=cont.currentlang&amp;id=110775&amp;l=ar">&#1604;&#1602;&#1575;&#1569;&#1575;&#1578;  &#1605;&#1593; &#1575;&#1604;&#1605;&#1572;&#1604;&#1601;&#1610;&#1606;</A></div><div><A href="view_article00a2.html?ContentID=104298&amp;l=ar">&#1575;&#1604;&#1606;&#1583;&#1608;&#1575;&#1578; &#1608;&#1575;&#1604;&#1605;&#1572;&#1578;&#1605;&#1585;&#1575;&#1578; &#1608;&#1575;&#1604;&#1605;&#1581;&#1575;&#1590;&#1585;&#1575;&#1578; &#1575;&#1604;&#1593;&#1575;&#1605;&#1577;</A></div><div><A href="view_article4921.html?ContentID=104483&amp;l=ar">&#1576;&#1585;&#1575;&#1605;&#1580; &#1575;&#1604;&#1605;&#1606;&#1581;</A></div><div><A href="view_article03cf.html?ContentID=104398&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1575;&#1604;&#1586;&#1605;&#1575;&#1604;&#1577; &#1575;&#1604;&#1586;&#1575;&#1574;&#1585;&#1577;</A></div><div><A href="view_article72ba.html?type=cont.currentlang&amp;id=108962&amp;l=ar">&#1571;&#1583;&#1604;&#1577; &#1575;&#1604;&#1602;&#1585;&#1575;&#1569;&#1577;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="ar">
+	<a class="3" title="&#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1593;&#1604;&#1610;&#1575;" rel="dropmenu2_b" href="view_sorted_articles43c2.html?type=static&amp;id=graduate_studies&amp;l=ar">&#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1593;&#1604;&#1610;&#1575;</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article00b1.html?type=cont.currentlang&amp;id=104478&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1593;&#1604;&#1610;&#1575;</A></div><div><A href="view_articlecb51.html?type=cont.currentlang&amp;id=106627&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1578;&#1583;&#1585;&#1610;&#1576; &#1605;&#1593;&#1604;&#1605;&#1610; &#1575;&#1604;&#1579;&#1575;&#1606;&#1608;&#1610;</A></div><div><A href="view_sorted_articlesc8c1.html?catid=155&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1582;&#1585;&#1610;&#1580;&#1608;&#1606;</A></div><div><A href="view_articled0e8.html?type=cont.currentlang&amp;id=105818&amp;l=ar">&#1576;&#1585;&#1575;&#1605;&#1580; &#1571;&#1582;&#1585;&#1609;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="ar">
+	<a class="22" title="&#1575;&#1604;&#1578;&#1593;&#1604;&#1610;&#1605;" rel="dropmenu3_b" href="view_sorted_articles2911.html?type=static&amp;id=learning&amp;l=ar">&#1575;&#1604;&#1578;&#1593;&#1604;&#1610;&#1605;</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article8211.html?type=cont.currentlang&amp;id=104853&amp;l=ar">&#1605;&#1606;&#1575;&#1607;&#1580; &#1575;&#1604;&#1578;&#1593;&#1604;&#1610;&#1605;</A></div><div><A href="view_article90c7.html?ContentID=104858&amp;l=ar">&#1605;&#1608;&#1575;&#1583; &#1575;&#1604;&#1578;&#1593;&#1604;&#1605; &#1605;&#1583;&#1609; &#1575;&#1604;&#1581;&#1610;&#1575;&#1577;</A></div><div><A href="view_article3796.html?type=cont.currentlang&amp;id=104628&amp;l=ar">&#1582;&#1591;&#1576; &#1575;&#1604;&#1570;&#1594;&#1575; &#1582;&#1575;&#1606; &#1575;&#1604;&#1579;&#1575;&#1604;&#1579;</A></div><div><A href="view_article3b11.html?type=cont.currentlang&amp;id=104623&amp;l=ar">&#1582;&#1591;&#1576;: &#1575;&#1604;&#1570;&#1594;&#1575; &#1582;&#1575;&#1606; &#1575;&#1604;&#1585;&#1575;&#1576;&#1593;</A></div><div><A href="view_article2726.html?ContentID=110765&amp;l=ar">&#1605;&#1602;&#1575;&#1591;&#1593; &#1575;&#1604;&#1601;&#1610;&#1583;&#1610;&#1608;</A></div><div><A href="view_article03cd.html?ContentID=104553&amp;l=ar"> &#1602;&#1608;&#1575;&#1574;&#1605; &#1575;&#1604;&#1602;&#1585;&#1575;&#1569;&#1577;</A></div><div><A href="view_articleda0a.html?type=cont.currentlang&amp;id=104633&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1578;&#1583;&#1585;&#1610;&#1576; &#1575;&#1604;&#1605;&#1583;&#1585;&#1587;&#1610;&#1606;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="ar">
+	<a class="5" title="&#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;" rel="dropmenu4_b" href="view_sorted_articles78f8.html?type=static&amp;id=library&amp;l=ar">&#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articleea61.html?type=cont.currentlang&amp;id=103462&amp;l=ar">&#1606;&#1592;&#1585;&#1577; &#1593;&#1575;&#1605;&#1577; &#1593;&#1606; &#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=ar">&#1583;&#1604;&#1610;&#1604; &#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</A></div><div><A href="view_article1966.html?type=cont.currentlang&amp;id=104503&amp;l=ar">&#1575;&#1604;&#1605;&#1608;&#1575;&#1583; &#1575;&#1604;&#1605;&#1591;&#1576;&#1608;&#1593;&#1577;</A></div><div><A href="view_articlee2d7.html?type=cont.currentlang&amp;id=104538&amp;l=ar">&#1575;&#1604;&#1605;&#1608;&#1575;&#1583; &#1575;&#1604;&#1587;&#1605;&#1593;&#1610;&#1577; &#1608;&#1575;&#1604;&#1576;&#1589;&#1585;&#1610;&#1577;</A></div><div><A href="view_articledb12.html?type=cont.currentlang&amp;id=114807&amp;l=ar">Electronic Resources</A></div><div><A href="view_articled089.html?type=cont.currentlang&amp;id=104728&amp;l=ar">&#1575;&#1604;&#1605;&#1582;&#1591;&#1608;&#1591;&#1575;&#1578;</A></div><div><A href="view_article7554.html?type=cont.currentlang&amp;id=104748&amp;l=ar">&#1601;&#1607;&#1575;&#1585;&#1587; &#1575;&#1604;&#1605;&#1582;&#1591;&#1608;&#1591;&#1575;&#1578;</A></div><div><A href="view_sorted_articles580f.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=ar">&#1589;&#1575;&#1604;&#1577; &#1575;&#1604;&#1593;&#1585;&#1590;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="ar">
+	<a class="7 20" title="&#1575;&#1604;&#1571;&#1582;&#1576;&#1575;&#1585; &#1608;&#1575;&#1604;&#1571;&#1606;&#1588;&#1591;&#1577;" rel="dropmenu5_b" href="view_sorted_articles6633.html?type=static&amp;id=newsevents&amp;l=ar">&#1575;&#1604;&#1571;&#1582;&#1576;&#1575;&#1585; &#1608;&#1575;&#1604;&#1571;&#1606;&#1588;&#1591;&#1577;</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3298.html?ContentID=113797&amp;l=ar">&#1573;&#1590;&#1600;&#1575;&#1601;&#1575;&#1578; &#1593;&#1604;&#1609; &#1575;&#1604;&#1605;&#1608;&#1602;&#1593;</A></div><div><A href="view_article8a60.html?ContentID=104873&amp;l=ar">&#1575;&#1604;&#1606;&#1588;&#1575;&#1591;&#1575;&#1578; &#1575;&#1604;&#1602;&#1575;&#1583;&#1605;&#1577;</A></div><div><A href="view_article1600.html?ContentID=104498&amp;l=ar">&#1580;&#1583;&#1610;&#1583; &#1575;&#1604;&#1605;&#1593;&#1600;&#1607;&#1583;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "rtl" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only42ad.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D108839">&#1575;&#1592;&#1607;&#1575;&#1585; &#1575;&#1604;&#1606;&#1589; &#1601;&#1602;&#1591;</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article5ac9.html?ContentID=108837">English<li><A href="view_article1d1e.html?ContentID=108838">Français</A></li><li><A href="view_articlee9cb.html?ContentID=108840">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_article395d.html?ContentID=108841">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_sorted_articles6633.html?type=cat&amp;id=2&amp;t=midlist&amp;g=date&amp;l=ar">&#1570;&#1582;&#1585; &#1575;&#1604;&#1571;&#1582;&#1576;&#1575;&#1585;</A></p><p><A href="view_article2efd.html?type=cont.currentlang&amp;id=104873&amp;l=ar">&#1575;&#1604;&#1606;&#1588;&#1575;&#1591;&#1575;&#1578; &#1575;&#1604;&#1602;&#1575;&#1583;&#1605;&#1577;</A></p><p><A href="view_articlea982.html?type=cont.currentlang&amp;id=109162&amp;l=ar">&#1573;&#1590;&#1600;&#1575;&#1601;&#1575;&#1578; &#1593;&#1604;&#1609; &#1607;&#1584;&#1575; &#1575;&#1604;&#1605;&#1608;&#1602;&#1593;</A></p><p><A href="view_article308d.html?type=cont.currentlang&amp;id=104498&amp;l=ar">&#1580;&#1583;&#1610;&#1583; &#1575;&#1604;&#1605;&#1593;&#1600;&#1607;&#1583;</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="&#1571;&#1585;&#1587;&#1604; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;" href="javascript:mailpage()"><img border="0" alt="&#1571;&#1585;&#1587;&#1604; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;" src="images/email.gif"/></a>  <a title="&#1571;&#1585;&#1587;&#1604; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;" href="javascript:mailpage()">&#1571;&#1585;&#1587;&#1604; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;</a></p>	
+
+<p><a title="&#1573;&#1591;&#1576;&#1593; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;" href="javascript:window.print();"><img border="0" alt="&#1573;&#1591;&#1576;&#1593; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;" src="images/print.gif"/></a>  <a title="&#1573;&#1591;&#1576;&#1593; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;" href="javascript:window.print();">&#1573;&#1591;&#1576;&#1593; &#1607;&#1584;&#1607; &#1575;&#1604;&#1589;&#1601;&#1581;&#1577;</a></p>
+
+<p><a title="&#1605;&#1581;&#1585;&#1603; &#1575;&#1604;&#1576;&#1581;&#1579; &#1575;&#1604;&#1601;&#1608;&#1585;&#1610;" href="view_articled5e0.html?ContentID=110810">&#1605;&#1581;&#1585;&#1603; &#1575;&#1604;&#1576;&#1581;&#1579; &#1575;&#1604;&#1601;&#1608;&#1585;&#1610;</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">&#1575;&#1604;&#1605;&#1601;&#1590;&#1604;&#1577; &#1608;&#1575;&#1604;&#1605;&#1588;&#1575;&#1585;&#1603;&#1577;</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>News and Events</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table style="WIDTH: 445px" cellSpacing="0" cellPadding="0" background="#" border="0"><tbody><tr><td><div><strong>Valedictory Address by Salman Alibhai at the IIS Graduation Ceremony, London</strong><br/>September 2007</div><div><br/><IMG border="0" onError="ImageLoadFailed()" src="WebAssets/medium/News%20and%20Events/index.html" align="left" alt="" style="padding: 8px;" xmlns=""></div></td></tr><tr><td><div><br/><P>Prince Rahim, Prince Hussain, Princess Khaliya, Members of the Board of Governors, Distinguished Guests:</P>
+<P>Good Afternoon.</P>
+<P>I am honoured to have been chosen to speak to you this afternoon and feel privileged to be speaking in the presence of so many leaders of our community.</P>
+<P>I have many fond memories of the past three years at The Institute of Ismaili Studies. As I look now upon my fellow graduates, I feel it would be impossible to fully articulate all that we have collectively gained, and all the ways in which we have grown alongside one another over the past three years. I hope that drawing on some of my personal experiences will help to highlight some aspects of this deeply rewarding experience.</P>
+<P>I would like to begin by sending a note of thanks to two people in the audience today. My mother and father instilled in me from a very early age both a value for education and a desire for the pursuit of knowledge. As a young learner, the combination of my father&#8217;s ever expanding bookshelves, and the threatening look I got from my mother any time I brought home a grade less than an A, complemented one another rather successfully. For their support I could not be more grateful. </P>
+<P>My parents&#8217; perspective on education, as both a necessity and a joy to pursue, is an ethic which is also reflected in our Tariqah. One need only look to the modern institutions of the Ismaili Imamat in order to understand the emphasis which has been placed not only upon providing education &#8211; but on instilling a true desire for the pursuit of knowledge. Imam Sultan Muhammad Shah&#8217;s seminal involvements in the Aligarh movement in India and in the foundation of the East African Muslim Welfare League are some pertinent examples of this ethic. Today, the Aga Khan Academies, the University of Central Asia, the Aga Khan University, and The Institute of Ismaili Studies stand as institutions which embody this common ethic.</P>
+<P>I would like to explore today one issue relating to the pursuit of knowledge within these institutions and others. Specifically, I would like to suggest that while Islam enjoins upon us the quest for knowledge, the pursuit of academic knowledge about Islam for many Muslims comes with both joys and significant challenges. Indeed, though it is sometimes easy to overlook, the tension between the study of Islam and the belief in Islam, I think I can say, has at some point been on the mind of all the graduating students of this class. </P>
+<P>I recall a former professor at the Institute, who recently retired after a lengthy and distinguished academic career. Dr Alan Jones, a former Head of Arabic Studies at Oxford for nearly four decades, was a world-renowned authority in the study of Islam. One day a week, each of us was fortunate to have an Arabic lesson with him. He had an unparalleled knowledge of Arab literature, culture, and society, and was always open to answering questions, no matter how tangential to the grammar lesson of the day. </P>
+<P>As a non-Muslim, Dr Jones&#8217; attachment to the Qur&#8217;an was surprising to many of us. He recited the text with grace and beauty, briefly closing his eyes and nodding slightly in rhythm as he exhaled the sounds of the most melodic passages. One day in class after hearing such a recital we asked him how he could have such a reverence for the text of the Qur&#8217;an without being a Muslim. His answer was intriguing. He did not know if he believed in God, but he knew that Prophet Muhammad (peace be upon him) either had communicated with God, or otherwise had reached a spiritual state as high as any man could possibly reach of deeply and truly believing that he had communicated with God. Without either a real or believed-to-be-real divine inspiration, Dr Jones told us, a text as beautiful as the Qur&#8217;an could never have been produced. I highlight this example because it is indicative of the spiritual joys which can go alongside the academic study of Islam, and of the way in which the study of Islam can sometimes complement belief. </P>
+<P>Under the guidance of Dr Jones and others, we pursued a truly unique academic experience in our time at the Institute. We came to be introduced to the authoritative academic texts, written in English mainly by non-Muslims, which sought to understand and explain Islam and Muslims. Truly, we became experts in the field, able to converse in the language of the Western social sciences &#8211; philosophy, anthropology, sociology, psychology, linguistics and literature. Early on, however, we began to feel challenged by these thinkers, texts, and ideas &#8211; some of which questioned the very truth of the Islamic revelation. At some level these erudite texts challenged our faith.</P>
+<P>I recall conversations with my classmates, sometimes over tea and water pipes at the Arabic restaurants on Edgware Road, in which we shared our confusion, our doubts, and our fear. Even where our belief was strong, it was difficult to dismiss many of the ideas we studied which challenged Islam or our understanding of Islam - for they were ideas produced by renowned thinkers, grounded in great intellectual depth and reasoning. As we grew intellectually, however, and with the support of the watchful community at the Institute - Directors, Professors, Librarians, and various alumni - we came to see a way out. We came to realise that generations of Muslim thinkers &#8211; theologians, philosophers, poets, artists and scientists from the 7<SUP>th</SUP> century until the present day - had asked the same questions of their religion. As our understanding of Arabic, of the Qur&#8217;an and <I>Hadith</I>, of Islamic history and Muslim philosophy, of the Shi&#8216;a tradition, and of the Ismaili <I>tariqah</I> increased, we found ourselves increasingly equipped with the ability to grow both intellectually and spiritually, able to ask of ourselves difficult questions of faith and to search for answers, sometimes even finding these answers.</P>
+<P>And so we learnt that faith and intellect are not necessarily in contradiction. In fact, our intellectual and spiritual growth became symbiotic. So that, as I stand here today, and as I look at my fellow graduates of the class of 2007, I see a story of growth, of intellectual pursuit, and of spiritual conquest. And all of our struggles, to attain knowledge while retaining our faith, and to succeed academically while remaining spiritually intact - again I see in the wisdom of our <I>tariqah</I>, and in the words of Prophet Muhammad (peace be upon him), who according to a well-known <I>Hadith</I>, said: &#8220;Whoever treads a path seeking knowledge, Allah will make easy for him the path to paradise.&#8221;</P>
+<P>I would like to add one final note. This intellectual and spiritual journey was communal as well as individual. The class of 2007, like all graduating classes of the Institute, is a small but incredibly diverse one. We hail from half a dozen different countries, and between ten of us speak at least a dozen languages. Our upbringings, our educations, and our cultures, are vastly different. On our first days together almost three years ago, we grouped instantly into our respective nationalities. As I look now upon my graduating class, however, I no longer see upon first glance Canadians, Americans, Tajiks, Pakistanis, Indians and Iranians. I see individuals, to whom I have grown closer to than perhaps any other members of this community. Even as we embark on divergent paths in a multitude of arenas &#8211; as historians, theologians, economists, development experts, diplomats, educators, and lawyers - I have no doubt we will remain a close and united community.</P>
+<P>As a microcosm of the global Ismaili community, and perhaps even as a microcosm of the diverse global Muslim <I>umma</I>, our experience is truly an inspiring and optimistic one. What we have accomplished here, under the guidance of the Institute and more broadly under the vision of the Imamat, is something rather remarkable. The outcome of our three years here is the development of an approach to the understanding of Islam which is at once both intellectual and spiritual. In coming to this understanding, we also came together as a community, supporting and assisting one another at every turn. We thus stand before you as evidence of the progress achievable, and the opportunities on the horizon for the global Ismaili community and the Muslim <I>umma</I> at large - to continue moving forward in the modern world, capable of overcoming the challenges which may arise in the future through intellect and through brotherhood.</P>
+<P>Thank you.</P><BR></div></td></tr></tbody></table></p><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Valedictory Address by Salman Alibhai at the IIS Graduation Ceremony, London</TITLE><META HTTP-EQUIV="Expires" CONTENT="Wed, 13 Sep 2017 11:22:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 13/09/2007&nbsp;11:26&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">&#1585;&#1608;&#1575;&#1576;&#1591; &#1587;&#1585;&#1610;&#1593;&#1577;</p>
+<p><A href="view_article3298.html?ContentID=113797&amp;l=ar">&#1573;&#1590;&#1600;&#1575;&#1601;&#1575;&#1578; &#1593;&#1604;&#1609; &#1575;&#1604;&#1605;&#1608;&#1602;&#1593;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">&#1608;&#1592;&#1575;&#1574;&#1601; &#1588;&#1575;&#1594;&#1585;&#1577;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">&#1575;&#1604;&#1600;&#1605;&#1600;&#1585;&#1603;&#1600;&#1586; &#1575;&#1604;&#1605;&#1607;&#1606;&#1600;&#1610; &#1604;&#1588;&#1600;&#1576;&#1603;&#1577; &#1575;&#1604;&#1570;&#1594;&#1600;&#1575; &#1582;&#1600;&#1575;&#1606; &#1604;&#1604;&#1578;&#1606;&#1605;&#1610;&#1600;&#1577;</A></p><p><A href="contact57e5.html?l=ar">&#1605;&#1593;&#1604;&#1608;&#1605;&#1575;&#1578; &#1575;&#1604;&#1575;&#1578;&#1589;&#1575;&#1604;</A></p><p><A href="view_article55b2.html?ContentID=104023&amp;l=ar">&#1571;&#1587;&#1574;&#1604;&#1577; &#1605;&#1578;&#1583;&#1575;&#1608;&#1604;&#1577;</A></p><p><A href="view_sorted_articles580f.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=ar">&#1589;&#1575;&#1604;&#1577; &#1575;&#1604;&#1593;&#1585;&#1590;</A></p><p><A href="glossary_list57e5.html?l=ar">&#1605;&#1587;&#1585;&#1583; &#1575;&#1604;&#1603;&#1604;&#1605;&#1575;&#1578;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">&#1583;&#1604;&#1610;&#1604; &#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</A></p><p><A href="view_article82d2.html?ContentID=104443&amp;l=ar">&#1585;&#1608;&#1575;&#1576;&#1591; &#1605;&#1601;&#1610;&#1583;&#1577;</A></p><p><A href="view_article2726.html?ContentID=110765&amp;l=ar">&#1605;&#1602;&#1575;&#1591;&#1593; &#1575;&#1604;&#1601;&#1610;&#1583;&#1610;&#1608;</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>&#1576;&#1608;&#1575;&#1576;&#1575;&#1578;</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articlesc8c1.html?catid=155&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1582;&#1585;&#1610;&#1580;&#1608;&#1606;</A></p><p><A href="view_sorted_articlesb1a8.html?catid=160&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1605;&#1608;&#1592;&#1601;&#1608;&#1606;</A></p><p><A href="view_sorted_articlesc7d7.html?catid=161&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1591;&#1604;&#1575;&#1576;</A></p><p><A href="view_sorted_articles69ac.html?catid=165&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1605;&#1593;&#1604;&#1605;&#1608;&#1606;</A></p><p><A href="view_sorted_articles05f8.html?catid=169&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1586;&#1608;&#1575;&#1585;</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">&#1605;&#1593;&#1607;&#1583; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1573;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577;</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5e5b.html?type=static&amp;id=ResearchandPublications&amp;l=ar">&#1575;&#1604;&#1576;&#1581;&#1579; &#1608; &#1575;&#1604;&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578;</a></span><br />
+<div><A href="view_article10a6.html?type=cont.currentlang&amp;id=105873&amp;l=ar">&#1575;&#1604;&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578; &#1575;&#1604;&#1571;&#1603;&#1575;&#1583;&#1610;&#1605;&#1610;&#1577;</A><br/></div><div><A href="view_article015f.html?ContentID=110958&amp;l=ar">&#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1602;&#1585;&#1570;&#1606;&#1610;&#1577;</A><br/></div><div><A href="view_articleadab.html?type=cont.currentlang&amp;id=110983&amp;l=ar">&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1570;&#1587;&#1610;&#1575; &#1575;&#1604;&#1608;&#1587;&#1591;&#1609;</A><br/></div><div><A href="view_article6af4.html?ContentID=104878&amp;l=ar">&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1571;&#1603;&#1575;&#1583;&#1610;&#1605;&#1610;&#1577;</A><br/></div><div><A href="view_article9c15.html?type=cont.currentlang&amp;id=112305&amp;l=ar">&#1605;&#1587;&#1600;&#1575;&#1607;&#1605;&#1575;&#1578; &#1601;&#1610; &#1575;&#1604;&#1605;&#1608;&#1587;&#1608;&#1593;&#1575;&#1578;</A><br/></div><div><A href="view_article0bfd.html?type=cont.currentlang&amp;id=104898&amp;l=ar">&#1605;&#1606;&#1588;&#1608;&#1585;&#1575;&#1578; &#1605;&#1578;&#1585;&#1580;&#1605;&#1577;</A><br/></div><div><A href="view_article47b5.html?type=cont.currentlang&amp;id=110775&amp;l=ar">&#1604;&#1602;&#1575;&#1569;&#1575;&#1578;  &#1605;&#1593; &#1575;&#1604;&#1605;&#1572;&#1604;&#1601;&#1610;&#1606;</A><br/></div><div><A href="view_article00a2.html?ContentID=104298&amp;l=ar">&#1575;&#1604;&#1606;&#1583;&#1608;&#1575;&#1578; &#1608;&#1575;&#1604;&#1605;&#1572;&#1578;&#1605;&#1585;&#1575;&#1578; &#1608;&#1575;&#1604;&#1605;&#1581;&#1575;&#1590;&#1585;&#1575;&#1578; &#1575;&#1604;&#1593;&#1575;&#1605;&#1577;</A><br/></div><div><A href="view_article4921.html?ContentID=104483&amp;l=ar">&#1576;&#1585;&#1575;&#1605;&#1580; &#1575;&#1604;&#1605;&#1606;&#1581;</A><br/></div><div><A href="view_article03cf.html?ContentID=104398&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1575;&#1604;&#1586;&#1605;&#1575;&#1604;&#1577; &#1575;&#1604;&#1586;&#1575;&#1574;&#1585;&#1577;</A><br/></div><div><A href="view_article72ba.html?type=cont.currentlang&amp;id=108962&amp;l=ar">&#1571;&#1583;&#1604;&#1577; &#1575;&#1604;&#1602;&#1585;&#1575;&#1569;&#1577;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles43c2.html?type=static&amp;id=graduate_studies&amp;l=ar">&#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1593;&#1604;&#1610;&#1575;</a></span><br />
+<div><A href="view_article00b1.html?type=cont.currentlang&amp;id=104478&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1593;&#1604;&#1610;&#1575;</A><br/></div><div><A href="view_articlecb51.html?type=cont.currentlang&amp;id=106627&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1578;&#1583;&#1585;&#1610;&#1576; &#1605;&#1593;&#1604;&#1605;&#1610; &#1575;&#1604;&#1579;&#1575;&#1606;&#1608;&#1610;</A><br/></div><div><A href="view_sorted_articlesc8c1.html?catid=155&amp;layout=children&amp;l=ar">&#1575;&#1604;&#1582;&#1585;&#1610;&#1580;&#1608;&#1606;</A><br/></div><div><A href="view_articled0e8.html?type=cont.currentlang&amp;id=105818&amp;l=ar">&#1576;&#1585;&#1575;&#1605;&#1580; &#1571;&#1582;&#1585;&#1609;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles2911.html?type=static&amp;id=learning&amp;l=ar">&#1575;&#1604;&#1578;&#1593;&#1604;&#1610;&#1605;</a></span><br />
+<div><A href="view_article8211.html?type=cont.currentlang&amp;id=104853&amp;l=ar">&#1605;&#1606;&#1575;&#1607;&#1580; &#1575;&#1604;&#1578;&#1593;&#1604;&#1610;&#1605;</A><br/></div><div><A href="view_article90c7.html?ContentID=104858&amp;l=ar">&#1605;&#1608;&#1575;&#1583; &#1575;&#1604;&#1578;&#1593;&#1604;&#1605; &#1605;&#1583;&#1609; &#1575;&#1604;&#1581;&#1610;&#1575;&#1577;</A><br/></div><div><A href="view_article3796.html?type=cont.currentlang&amp;id=104628&amp;l=ar">&#1582;&#1591;&#1576; &#1575;&#1604;&#1570;&#1594;&#1575; &#1582;&#1575;&#1606; &#1575;&#1604;&#1579;&#1575;&#1604;&#1579;</A><br/></div><div><A href="view_article3b11.html?type=cont.currentlang&amp;id=104623&amp;l=ar">&#1582;&#1591;&#1576;: &#1575;&#1604;&#1570;&#1594;&#1575; &#1582;&#1575;&#1606; &#1575;&#1604;&#1585;&#1575;&#1576;&#1593;</A><br/></div><div><A href="view_article2726.html?ContentID=110765&amp;l=ar">&#1605;&#1602;&#1575;&#1591;&#1593; &#1575;&#1604;&#1601;&#1610;&#1583;&#1610;&#1608;</A><br/></div><div><A href="view_article03cd.html?ContentID=104553&amp;l=ar"> &#1602;&#1608;&#1575;&#1574;&#1605; &#1575;&#1604;&#1602;&#1585;&#1575;&#1569;&#1577;</A><br/></div><div><A href="view_articleda0a.html?type=cont.currentlang&amp;id=104633&amp;l=ar">&#1576;&#1585;&#1606;&#1575;&#1605;&#1580; &#1578;&#1583;&#1585;&#1610;&#1576; &#1575;&#1604;&#1605;&#1583;&#1585;&#1587;&#1610;&#1606;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles78f8.html?type=static&amp;id=library&amp;l=ar">&#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</a></span><br />
+<div><A href="view_articleea61.html?type=cont.currentlang&amp;id=103462&amp;l=ar">&#1606;&#1592;&#1585;&#1577; &#1593;&#1575;&#1605;&#1577; &#1593;&#1606; &#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=ar">&#1583;&#1604;&#1610;&#1604; &#1575;&#1604;&#1605;&#1603;&#1578;&#1576;&#1577;</A><br/></div><div><A href="view_article1966.html?type=cont.currentlang&amp;id=104503&amp;l=ar">&#1575;&#1604;&#1605;&#1608;&#1575;&#1583; &#1575;&#1604;&#1605;&#1591;&#1576;&#1608;&#1593;&#1577;</A><br/></div><div><A href="view_articlee2d7.html?type=cont.currentlang&amp;id=104538&amp;l=ar">&#1575;&#1604;&#1605;&#1608;&#1575;&#1583; &#1575;&#1604;&#1587;&#1605;&#1593;&#1610;&#1577; &#1608;&#1575;&#1604;&#1576;&#1589;&#1585;&#1610;&#1577;</A><br/></div><div><A href="view_articledb12.html?type=cont.currentlang&amp;id=114807&amp;l=ar">Electronic Resources</A><br/></div><div><A href="view_articled089.html?type=cont.currentlang&amp;id=104728&amp;l=ar">&#1575;&#1604;&#1605;&#1582;&#1591;&#1608;&#1591;&#1575;&#1578;</A><br/></div><div><A href="view_article7554.html?type=cont.currentlang&amp;id=104748&amp;l=ar">&#1601;&#1607;&#1575;&#1585;&#1587; &#1575;&#1604;&#1605;&#1582;&#1591;&#1608;&#1591;&#1575;&#1578;</A><br/></div><div><A href="view_sorted_articles580f.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=ar">&#1589;&#1575;&#1604;&#1577; &#1575;&#1604;&#1593;&#1585;&#1590;</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articles6633.html?type=static&amp;id=newsevents&amp;l=ar">&#1575;&#1604;&#1571;&#1582;&#1576;&#1575;&#1585; &#1608;&#1575;&#1604;&#1571;&#1606;&#1588;&#1591;&#1577;</a></span><br />
+<div><A href="view_article3298.html?ContentID=113797&amp;l=ar">&#1573;&#1590;&#1600;&#1575;&#1601;&#1575;&#1578; &#1593;&#1604;&#1609; &#1575;&#1604;&#1605;&#1608;&#1602;&#1593;</A><br/></div><div><A href="view_article8a60.html?ContentID=104873&amp;l=ar">&#1575;&#1604;&#1606;&#1588;&#1575;&#1591;&#1575;&#1578; &#1575;&#1604;&#1602;&#1575;&#1583;&#1605;&#1577;</A><br/></div><div><A href="view_article1600.html?ContentID=104498&amp;l=ar">&#1580;&#1583;&#1610;&#1583; &#1575;&#1604;&#1605;&#1593;&#1600;&#1607;&#1583;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article0450.html?type=static&amp;id=copyright&amp;l=ar">© &#1605;&#1593;&#1607;&#1583; &#1575;&#1604;&#1583;&#1585;&#1575;&#1587;&#1575;&#1578; &#1575;&#1604;&#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1610;&#1577; &#1778;&#1776;&#1777;&#1635;</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=108839 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 01:08:03 GMT -->
+</HTML>

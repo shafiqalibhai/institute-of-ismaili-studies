@@ -1,0 +1,647 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=114047 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:21 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 114047;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyfd78.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D114047">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Approaches to the Qur'an in Contemporary Iran</H3><table cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td><strong></strong><br/><br/><strong></strong><strong> September 2013</strong><br/><br/><DIV><A href="view_article5397.html?type=cont.currentlang&amp;id=114042">PROGRAMME</A> </DIV>
+<DIV><A href="view_article9056.html?type=cont.currentlang&amp;id=114072">BIOGRAPHIES</A></DIV>
+<DIV><A href="view_articlea1ad.html?type=cont.currentlang&amp;id=114037">CONFERENCE DESCRIPTION</A> </DIV>
+<P><B><I></I></B></P>
+<DIV><B>PAPER ABSTRACTS</B></DIV>
+<DIV><B><I></I></B></DIV>
+<DIV><B><I>The Religious Inspiration of the Saqqakhana Artistic School in 1960s Iran: A Spiritual Pop Art?</I></B></DIV>
+<P><B><I></I></B></P>
+<P><B>Alice Bombardier, Centre d&#8217;Analyse et d&#8217;Intervention Sociologiques&#8211;l&#8217;&#201;cole des Hautes &#201;tudes en Sciences Sociales (CADIS&#8211;EHESS) </B></P>
+<P>In the wake of the term <I>saqqakhana</I> (public fountain) coined by the art critic Karim Imami in 1962 to describe a particular art movement, Iranian painters and sculptors have incorporated objects of worship from Twelver Shi&#8216;i ritual and elements of popular religiosity into their art works.</P>
+<P>Artist Parwiz Tanawwuli, for instance, reported that when he visited the tomb of Shah &#703;Abd al-&#703;Azim in the city of Rayy with another artist, Charles Hossein Zenderoudi, in the the late 1950s, he was fascinated by the religious posters representing old seals and ancient talismanic images that hung in the surrounding shops. The simplicity of form, the purity of colours and the combination of patterns that characterised those traditional objects inspired Tanawwuli to start a collection which has been repeatedly displayed in exhibitions over the years. Some of the paintings by Zenderoudi are also displayed along with Tanawwuli&#8217;s religious images. </P>
+<P>In this paper, I will explore the origins of this predominant artistic trend of twentieth-century Iran, which was inspired, at its inception, less by the Qur&#8217;an than by popular religious culture. Indeed, according to Karim Imami, during the Third Tehran Biennial in 1962, these art works did not convey the solemn and scholarly air of Iranian mosques, but rather the intimate and familiaratmosphere of the <I>saqqakhana</I>. The growing use of calligraphy by the artists of this school today, however, suggests an inspiration closer to the visual codes of the Qur&#8217;an. Thus, I will analyse the links forged by these artists with religious texts, monuments or traditional representations. I will also examine how apt the expression &#8216;Spiritual Pop Art&#8217; &#8211; invented by Kamran Diba in <I>Contemporary Art of the Islamic World</I> (1982) &#8211; is in describing this artistic movement.</P>
+<P><B><I></I></B></P>
+<P><B><I>Methods of Qur&#8217;an Instruction in Today&#8217;s Iran</I></B></P>
+<P><B>Mohammad Mesbahi, The Islamic College</B></P>
+<P>An examination of the primary and secondary institutions of Islamic education in Iran shows that educators have often overlooked the results of research in their effort to improve learning. However, Islamic education in most Iranian schools has changed and continues to do so in this respect. This paper will examine the five new methods of Qur&#8217;anic instruction introduced in the early 1970s and currently in use in Iranian schools, coupled with improvements made more recently, with the view of exploring their adoption in the teaching of the Qur&#8217;an. </P>
+<P>The five pedagogical methods of &#8216;repetition&#8217;, &#8216;construction&#8217;, &#8216;asking questions&#8217;, &#8216;use of narratives&#8217; and &#8216;homogeneity&#8217; will be presented with examples from the Qur&#8217;an. This paper will also propose that a more recent method that has been introduced in Iranian schools called content analysis is potentially one of the most important in the teaching of Qur&#8217;anic Studies.</P>
+<P><B></B></P>
+<P><B></B></P>
+<P><B></B></P>
+<P><B>Qunut <I>with Rumi: The Neighbourliness of Prayer and Poetry in Iran</I></B></P>
+<P><B>Niloofar Haeri, Johns Hopkins University, Baltimore</B></P>
+<P>This paper is based on fieldwork that began in Tehran in 2009 and which continues to be carried out among a group of educated middle-class women mostly in their sixties. Their religiosity offers a series of interesting insights that have rarely been noted in the literature on Islam and its practices. The paper will begin with an ethnographic overview of the Qur&#8217;an classes that the members of this group have been holding on a weekly basis for many years, along with weekly sessions on Jalal al-Din Rumi, and then move on to the women&#8217;s description and experiences of their performance of ritual prayer. It will address such questions as: What are the kinds of discussions that come up in the Qur&#8217;an classes? What are the ramifications of the fact that participants read from bilingual Qur&#8217;ans in Persian and Arabic? </P>
+<P>In the second section, the paper will offer an ethnographic account of the ritual prayer as performed by these women. Since almost all of them pray at home, and rarely go to the mosque, this will be a description of private prayer. Because of the deep familiarity of these women with the Qur&#8217;an, many of them are able to select suras based on their particular needs and thoughts on any given occasion. It was in search of the features of their private prayer that I came across the different choices of religious or poetic phrases recited during their invocation (<I>qunut</I>). </P>
+<P>The presentation ends with a discussion of the <I>qunut</I> as one of a number of sites where the neighbourliness of prayer and poetry is in evidence. It will examine the question of how poetry affects the reception of the Qur&#8217;an and the recitation of the ritual prayer<I> </I>and supplications (<I>du&#703;a</I>).</P>
+<P><B><I></I></B></P>
+<P><B><I>Husayn Muhyi&#8217;l-Din Illahi Qumsha&#702;i&#8217;s </I></B><B>In the Company of the Qur&#8217;an<I> </I></B></P>
+<P><B>Leonard Lewisohn, University of Exeter</B></P>
+<P>In 2011, Iran&#8217;s leading mystical theologian Dr Husayn Muhyi&#8217;l-Din Illahi Qumsha&#702;i published a huge tome in Persian (935 pages long) entitled <I>In the Company of the Qur&#8217;an: 365 Days with the Qur&#8217;an. </I>This work of exegesis<I> </I>features selected verses from the Muslim scripture in the original Arabic, alongside Persian and English translations (Yusuf Ali) of the text, followed by several pages of commentary on the passages. </P>
+<P>Since its publication in a small print run of only 2,000 copies in 2011, in less than two years the book has undergone eleven editions and sold over 20,000 copies. To the masses of Iranian readers whose enthusiasm for <I>In the Company of the Qur&#8217;an</I> has turned it into a runaway bestseller, the work&#8217;s attraction results from a combination of factors. One factor is the author&#8217;s reputation, which precedes him. Qumsha&#702;i is a great orator and a household name in Iran, where he has spent a lifetime teaching Persian literature, Sufism and Qur&#8217;anic Studies. His frequent appearances on television and the eloquence of his public lectures often attract thousands of listeners. Another factor in the work&#8217;s appeal is that it uses the poetry of Rumi, Sa&#703;di, Shabistari, Hafiz and Jami to render original masterly commentaries on well-known beloved verses as well as lesser-known abstruse passages from the Qur&#8217;an. </P>
+<P>In my lecture I will translate and highlight select passages from <I>In the Company of the Qur&#8217;an </I>to show how and why a great thinker&#8217;s novel yet traditional engagement with Islam&#8217;s<I> studia humanitatis</I> and <I>studia adabiyya</I> has succeeded in making its ancient scripture attractive and comprehensible to a popular audience.</P>
+<P><EM></EM><STRONG><EM>Rational-Analytical Tafsir in Modern Iran: A Comparison between </EM>al-Mizan<EM> of &#703;Allama Tabataba&#702;i and the </EM>Tasnim<EM> of Ayatullah Jawadi Amuli</EM> </STRONG></P>
+<P><B>Seyfeddin Kara, Durham University</B></P>
+<P>The aim of this paper is to undertake a comparative study of the rational-analytical methodology of two prominent Iranian scholars and exegetes &#8211; &#703;Allama Tabataba&#702;i (1903&#8211;1981) and Ayatullah Jawadi Amuli. Tabataba&#702;i is known as one of the Twelver Shi&#8216;i scholars who has most deeply influenced the intellectual and religious landscape of modern Iran. He is the author of the <I>Tafsir</I> <I>al-Mizan</I>, a twenty-volume commentary of the Qur&#8217;an written in Arabic between 1954 and 1972. The book is one of the most significant Shi&#8216;i Qur&#8217;anic commentaries of the twentieth century, thanks to its unique approach to the interpretation of the Qur&#8217;an. </P>
+<P>Tabataba&#702;i&#8217;s heavy reliance on the rational-analytical method differentiates <I>al-Mizan</I> from many of the other exegeses of the Qur&#8217;an. His method is based on the examination of a particular verse through reference to other relevant verses in order to unveil its inner meaning. His methodology also involves the use of his own opinion, where the exegete does not deem it to be in contradiction to other verses of the Qur&#8217;an and traditions. </P>
+<P>Jawadi Amuli is one of the most prominent students of Tabataba&#702;i, whose private lectures he attended for twenty-five years. Ayatullah Amuli is currently one of the most respected Twelver Shi&#8216;i scholars in Iran and has considerable influence in the religious colleges of the city of Qum. He is also an influential political figure, as he led the Friday prayers in Qum until his resignation in 2009. Over the past decade, Jawadi Amuli has lectured in a nationally famous <I>tafsir</I> lecture series. The lessons are delivered to seminary students in Qum and are compiled as a written commentary on the Qur&#8217;an, entitled the <I>Tasnim</I>. Similar to his teacher, Jawadi Amuli employs a rational-analytical methodology in the twenty-five volumes of Qur&#8217;an exegesis that have been published so far. </P>
+<P><B><I>Striving beyond the Balance (</I></B><B>al-Mizan<I>): The Exegetical Uses of the Qur&#8217;an in the Tabataba&#702;i tariqa</I></B></P>
+<P><B>Sajjad Rizvi, University of Exeter</B></P>
+<P>While &#703;Allama Tabataba&#702;i&#8217;s major exegesis, <I>al-Mizan</I>, has been much lauded as perhaps the best comprehensive Shi&#8216;i exegesis of the twentieth century, in which his skills as philosopher, theologian and exegete are clearly on display, a more careful analysis of the text raises doubts about such an assessment. In the introduction to <I>al-Mizan</I>, one finds a clear disavowal of both mystical and philosophical exegesis, and an assertion that in our attempts to make sense of the text we often impose our categories and desires upon the scripture. </P>
+<P>My paper will attempt to answer two questions. First: What constitutes Tabataba&#702;i&#8217;s hermeneutics of the text in his non-exegetical works, and why does he wish to distance himself from philosophy whilst in other works insisting that the dictates of the faith are entirely compatible with, even identical to, the insights of philosophical theology (<I>hikma ilahiyya</I>)? Second: What does an analysis of the exegetical works of his disciples, such as Sayyid Muhammad Husayni Tihrani and others, tell us about modern attempts to evince mystical truths about the nature of reality? I hope to demonstrate that a careful textual examination allows us to offer an alternative reading of the discourse of mysticism and exegesis within the context of the Shi&#8216;i seminary in Iran. </P>
+<P><B><I></I></B></P>
+<P><B><I>Towards a New School of Qur&#8217;an Interpretation: The </I></B><B>Maktab-i tafkik</B><B><I> in Contemporary Iran</I></B></P>
+<P><B>Seyyed Mohammad Hadi Gerami, Imam Sadiq University, Tehran</B></P>
+<P>This paper provides a comprehensive account of Mirza Mahdi Isfahani&#8217;s (d. 1946) school of thought, which was characterised by an independent interpretive approach to the Qur&#8217;an, and it examines how such a school evolved. Mirza Mahdi Isfahani was the founder of the Shi&#8216;i <I>Maktab-i tafkik</I> (the &#8216;School of Distinction), an independent theological school based in Mashhad. </P>
+<P>He believed that the Islamic creed ought to be independent from philosophy and mysticism, hence the word <I>tafkik </I>(&#8216;distinction&#8217;)<I> </I>attached to his school of thought. In his reading of Islamic dogmatic systems, he emphasised<I> </I>that<I> </I>hadiths<I> </I>and Qur&#8217;anic verses were the most reliable primary sources for the justification of Islamic thought. </P>
+<P>The emergence of the <I>Maktab-i tafkik</I> has had a major impact on contemporary Twelver Shi&#8216;i thinkers, particularly in the seminaries of Khorasan. After Isfahani&#8217;s death, a number of his disciples, including scholars such as Mirza Jawad Aqa Tihrani (d. 1989), Ayatullah Hasan Ali Murwarid (d. 1425/2004), Ayatullah Shaykh Mahmud Halabi (d. 1998) and Ayatullah Muhammad Baqir Maliki Miyanaji (d. 1419/1998), continued to propagate their master&#8217;s teachings. </P>
+<P>Ayatullah Maliki Miyanaji&#8217;s <I>tafsir</I>, <I>Manahij al-Bayan</I>, is the most significant commentary of the Qur&#8217;an to have been produced by the <I>Maktab-i tafkik</I>. This paper also investigates whether Maliki Miyanaji attempted to establish an independent school of interpretation based upon his mentor&#8217;s teachings.</P>
+<P><I></I></P>
+<P><B><I>Should Husbands Discipline their Wives? Contemporary and Classical Iranian Interpretations of Q. 4:34</I></B></P>
+<P><B>Karen Bauer, The Institute of Ismaili Studies, London</B></P>
+<P>Q. 4:34 is one of the most controversial verses in the Qur&#8217;an today. It seems to speak of a hierarchical spousal relationship, in which a husband should pay his wife&#8217;s maintenance, a wife should obey her husband and a husband may discipline his wife if he fears her <I>nushuz</I> (recalcitrance). </P>
+<P>This paper outlines the content and method of contemporary Iranian approaches to Q. 4:34, and explores the relationship between contemporary and classical interpretations of the verse. I argue that no contemporary interpretation is an exact mirror of classical interpretations. </P>
+<P>Some contemporary interpreters agree with classical notions of a marital hierarchy, but the rationales behind the hierarchy have changed: they incorporate arguments that are said to be based in modern science. Other contemporary interpreters use modern scientific findings to argue <I>against</I> a marital hierarchy: they say that the verse was revealed in a specific set of historical circumstances that are not reflected in today&#8217;s world. Both groups draw on notions of common sense, fairness, justice and ethics. </P>
+<P>By exploring the boundaries of the ethical treatment of wives in both classical and contemporary Qur&#8217;an interpretation this paper sheds light on the mechanisms with which the Qur&#8217;an has been interpreted through time. </P>
+<P><B><I></I></B></P>
+<P><B><I>Ayatullah Bujnurdi and the New Jurisprudence</I></B></P>
+<P><B>Liyakat Takim, McMaster University</B></P>
+<P>This paper will examine the reinterpretation of Qur&#8217;anic laws in the seminaries in Iran by looking at the thought of Ayatullah Bujnurdi. </P>
+<P>The establishment of an Islamic Republic in Iran in 1979 gave fresh impetus to the examination of the hermeneutical strategies employed to interpret the Qur&#8217;an. This was because, for the first time, Shi&#8216;i jurists had to respond to the practical needs of a modern state. </P>
+<P>Some scholars argued that what was essential to a proper understanding of Islam was not the letter of the text but the spirit of the Qur&#8217;an and the Prophetic traditions. They maintained that there was no single valid interpretation of the Qur&#8217;an. </P>
+<P>Jurists who argue for the reformulation of Islamic laws maintain that the interpretations of Islamic revelation were interwoven with the specificities of those times and places; they believe that jurists can only pronounce general principles, not rulings that are to be enforced at all times and places. They also argue that hermeneutical principles allow for a different understanding of the Islamic message. </P>
+<P>For the reform-minded jurists, it is essential that Muslims continue to review and revise the law in keeping with the dictates of their changing circumstances. Since 1979, there has been a call for a radical rethinking of the religious tradition in Shi&#8216;i circles. Such formulations have emanated from within the religious seminaries.<B> </B>Scholars such as Ayatullah Sani&#703;i, Ayatullah Jannati, Ayatullah Mohagheg Damad, Hujjatulislam Muhsin Sa&#703;idzada and Mohsen Kadivar have called for a reevaluation of traditional juridical pronouncements on many issues. </P>
+<P>There is distinct evidence of a silent revolution within the seminaries in Qum. Reinterpretations include the reformulation of the <I>hudud</I> punishments (especially the punishment of stoning), women&#8217;s rights on guardianship (<I>wilaya</I>) of minors and women&#8217;s rights to unilateral divorce. In issuing juridical edicts, jurists have adhered to the ethical subtext of the Qur&#8217;an and shown the dissonance that exists between the Qur&#8217;anic ethos and the earlier juridical formulations that were premised primarily on traditions. The paper will also include observations on new Qur&#8217;anic interpretations based on my research work in the summer of 2011.</P>
+<P><B><I>Qur&#8217;anic Sanction and Sovereignty in Contemporary Iran</I></B></P>
+<P><B>Neguin Yavari, The New School for Social Research</B></P>
+<P>This paper will compare elaborations by some contemporary intellectuals on <I>amr bi&#8217;l-ma&#703;ruf </I>(enjoining the good)<I> </I>with the views of Ayatullah Khomeini and other Muslim intellectuals on the same subject in order to study the role of Qur&#8217;anic sanction in Iran&#8217;s contemporary political lexicon. </P>
+<P>In 2009, after the reformist faction lost the presidential elections, important theoreticians of the reformist camp have elaborated on the concept of <I>Amr bi&#8217;l-ma&#703;ruf wa nahy &#703;an al-munkar</I>. These works<I> </I>called for this salient command from traditionalist Muslim dogma to be revived in Iranian politics, upholding the view that the application of ethics and morality in governance was the solution to Iran&#8217;s political woes. This espousal of <I>amr bi&#8217;l-ma&#703;ruf</I> reflected an effort by the reformist camp to reclaim the mantle of traditional Islam &#8211; all in an attempt to make palatable their progressive political agenda. In that respect, they followed in the footsteps of Khomeini himself, who succeeded in crafting innovative and revolutionary doctrines &#8211; prime among them <I>wilayat-i faqih</I> &#8211; in the garb of tradition and custom. </P>
+<P>The Qur&#8217;an has emerged in the twenty-first century as the arbiter par excellence of the practice of politics in the Islamic world. As Reinhard Schulze has posited, Islamic political discourse of the late twentieth century has shed its utopian views and shuns Prophetic tradition (<I>sunna</I>) in favour of the hermeneutics of the Qur&#8217;an. The very secularisation of the sacral is in evidence when reformist intellectuals turn to the Qur&#8217;an to resolve contemporary political issues. As it is considered to be the constitution of the sovereign Islamic state, the Qur&#8217;an functions as <I>lex scripta</I>, and thus works to supplant the <I>shari&#703;a</I> itself. This new written law was engendered, interestingly, only after the very guardians of that <I>shari&#703;a</I>, the <I>&#703;</I><I>ulama&#702;</I>.assumed authority. </P>
+<P><B><I>The Soroushian Theory of Revelation: An Epistemological Assessment</I></B></P>
+<P><B>Yaser Mirdamadi, University of Edinburgh</B></P>
+<P>Although the divine character of the words and meaning of the Qur&#8217;an is currently held to be orthodox doctrine by the vast majority of Muslim scholars, it was not so during the first three centuries of Islam. Recently, some modern Muslim intellectuals have called this doctrine into question. Influenced by Muslim philosophy and mysticism as well as modern epistemology and the philosophy of science, the Iranian intellectual and philosopher Abdolkarim Soroush (b. 1945) has argued that the Qur&#8217;anic revelation was the result of a religious experience undergone by Muhammad. He therefore believes that the revelation is a human and accidental (&#703;<I>ara</I><I>di</I>) product rather than a divine and essential (<I>dhati</I>) one. Qur&#8217;anic revelation, according to him, is divine only in the sense that it is an outcome of the human encounter with the divine. </P>
+<P>This paper will first elucidate Soroush&#8217;s theory of revelation and show that his conception of revelation is similar to that of a minority of Mu&#703;tazilis. It will then look at the implications of the theory for the relationship between religion and science as well as for prophetology. Soroush uses the approach of critical realism to arrive at his theory of revelation, and the paper will show that this method is problematic for the interpretation of the Muslim revelation. However, the paper will also argue that Soroush&#8217;s theory has been successful in broadening the thinking and improving the tolerance of jurists in contemporary Iran.</P>
+<P><B><I></I></B></P>
+<P><B><I>From the Human Reading of Religion to the Prophetic Reading of the World: Muhammad Mujtahid Shabistari&#8217;s Hermeneutic Turn</I></B></P>
+<P><B>Mirjam K&#252;nkler, Princeton University</B></P>
+<P>Muhammad Mujtahid Shabistari (b. 1936) has publicly called for the acceptance of critical hermeneutic methodologies in the study of the Qur&#8217;an and <I>Sunna</I> and has started to re-read and analyse the Qur&#8217;an with tools developed in linguistic philosophy. The application of such an approach to the study of the religious sources, their evolution and redaction, Shabistari suggests, would not harm the appeal of revelation but, on the contrary, strengthen religious belief. </P>
+<P>This paper examines the secular hermeneutic Shabistari developed in his 2006 text <I>Qira&#702;at-i Nabawiaz Jahan </I>(&#8216;The Prophetic Reading of the World&#8217;) and the implications of this reading of the Qur&#8217;an for the nature of social order and political power. It also discusses the radical re-orientation Shabistari has undertaken with this view compared to earlier epistemological views expressed in <I>Naqdi bar Qira&#702;at-i Rasmi az Din </I>(&#8216;A Critique of the Official Reading of Religion&#8217;) and <I>Ta&#703;ammulati dar Qira&#702;at-i Insan az Din </I>(&#8216;Reflections on the Human Reading of Religion&#8217;).<B></B></P>
+<P><B><I></I></B></P>
+<P><B><I>The Qur&#8217;an and the Political Discourse of the &#703;Ulama&#702; During the Constitutional Movement in Iran</I></B><B><I></I></B></P>
+<P><B>Denis Hermann, Centre National de la Recherche Scientifique (CNRS)</B></P>
+<P>On 5 October 1906, the first parliament of the Muslim World was established in Iran, a few years before the reinstatement of constitutional and parliamentary rule in Istanbul in July 1908. The constitutional movement, which marked a turning point in the history of Iran, was a multi-ideological movement, where a broad range of people with varying ideas and ideals made public their vision for a new Iran through an array of publications. Among the ranks of these different actors, Twelver Shi&#8216;i clerics were certainly among the most active and influential. The <I>&#703;ulama&#702;</I> produced an important body of politico-theological literature in which they either supported or condemned the idea of a constitutionalist Iran. Within this literature, the Qur&#8217;an and other religious scriptural sources such as <I>hadith</I> played a central role. </P>
+<P>This paper will first examine how the pro- and anti-constitutionalists made general references to the Qu&#8217;ran in their treatises. Next, it will discuss the arguments of two specific clerics whose works drew extensively on the Qu&#8217;ran and Hadith &#8211; Shaykh Husayn Ahrumi Bushihri (d. 1922&#8211;3), the author of the <I>Ihya&#702; al-milla</I>, and Shaykh Abu&#8217;l-Hasan Najafi Marandi, author of the <I>Dala&#702;il bar barahin al-Furqan f&#299; butlan-i qawanin-i nawasikh-i muhkamat-i al-Qur&#702;an</I>. </P>
+<P><B><I>Modern Shi&#8216;i Authors on the Question of the Authenticity of the Text of the Qur&#8217;an (Nineteenth and Twentieth Centuries)</I></B></P>
+<P><B>Rainer Brunner, Centre National de la Recherche Scientifique (CNRS)</B></P>
+<P>Whether or not the established text of the Qur&#8217;an is genuine has always been a major question for Twelver Shi&#8216;i theologians, as it is claimed in numerous Shi&#8216;i <I>hadith</I>s that the compilers of the text deliberately omitted many allusions and explicit references to the <I>Ahl al-bayt</I> as Muhammad&#8217;s legitimate successors. </P>
+<P>In the course of the juristic evolution of Twelver Shi&#8216;ism, after the disappearance of the twelfth imam, this allegation was relegated to the background; however, the revival of Akhbari Shi&#8216;ism between the sixteenth and eighteenth centuries brought it back to the forefront. After the final victory of the rival Usuli current, the issue seemed to be solved for good when the Iranian scholar Husayn Taqi al-Nuri al-Tabrisi (d. 1902) compiled all known references to the classical conviction of the falsification (<I>tahrif</I>) of the Qur&#8217;an. Since then, the topic has figured prominently in (mostly polemical) debates between the Sunnis and Shi&#8216;is, and many modern Twelver Shi&#8216;i writers deem it necessary to provide explicit refutations of the early Shi&#8216;i doctrine in this regard. Most Qur&#8217;anic commentaries refer to it and, more often than not, the question of <I>tahrif</I> proper is combined with other controversial theological issues, such as abrogation (<I>naskh</I>) or the &#8216;changing will&#8217; of God (<I>bada&#703;</I>). </P>
+<P><B><I>&#8216;And they thought, as you thought, that God will by no means send anyone again&#8217; (Q. 72:7): A Re-Conception of the Islamic Doctrine of Finality </I></B><B></B></P>
+<P><B>Omid Ghaemmaghami, American University in Cairo</B><B></B></P>
+<P>The doctrine of the finality of Prophet Muhammad&#8217;s prophethood is one of the most fundamental tenets held by Muslims. Although recent scholarship has shown convincingly that this doctrine did not enjoy universal acceptance in early Islamic history, most exegetes of the Qur&#8217;an have contended, based on their reading of Q. 33:40, that divine revelation was completed by Prophet Muhammad, God&#8217;s final Prophet and Messenger. This status of Prophet Muhammad has often been exploited to undermine &#8211; if not openly condemn &#8211; post-Islamic claims to revelation. The most salient of such claims in the modern period was advanced by the nineteenth-century Iranian thinker Mirza Husayn Nuri, known as Baha&#702;ullah (d. 1892), the founder of the Baha&#702;i religion. </P>
+<P>This presentation will analyse hitherto neglected works of Baha&#702;ullah, such as his <I>Surat</I> <I>al-Sabr</I>, which offer not only a new exegesis of several Qur&#8217;anic verses but, more importantly, attempt to conceive a dialectic hermeneutic that fuses prophecy, revelation and resurrection. It was partly on this hermeneutic foundation that Baha&#702;ullah based his claim of post-Islamic revelation. </P>
+<P>I will begin by briefly examining the doctrine of finality as explicated by six prominent classical and contemporary Persian Qur&#8217;an commentators so that we may appreciate how Baha&#702;ullah&#8217;s break from this tradition was not only unique in the annals of Iranian Islam but also more challenging, intricate and multifaceted than what has thus far been understood.</P>
+<P><B><I></I></B></P>
+<P><B><I>Speaking the Secrets of Sanctity in the </I></B><B>Tafsir<I> </I></B><B><I>of Safi &#703;Ali Shah</I></B><B></B></P>
+<P><B>Nicholas Boylston, Georgetown University</B></P>
+<P>The <I>Tafsir-i Safi</I> is the first and most important known translation and commentary on the entire Qur&#8217;an in Persian rhyming couplets. It was written by the Ni&#703;matullahi master Safi &#703;Ali Shah (d. 1315/1898). However, despite its great significance, this work has not yet received the scholarly attention or recognition that it deserves. </P>
+<P>This paper will examine the <I>Tafsir-i Safi</I> within the social and historical context in which it was written: Qajar Iran and Ni&#703;matullahi Sufism. It will consider the unique characteristics of the translation and particularly the <I>tafsir</I>, and will cover such topics as the literary aspects of the work, the characteristics that indicate that the text is a unique example of Sufi <I>tafsir</I>, and the identification of the text as a work of Shi&#8216;i Sufism. In addition to highlighting the importance of the metaphysics of the school of Ibn &#703;Arabi within the work, the paper will also show the importance of Safi &#703;Ali Shah&#8217;s Twelver Shi&#8216;i identity and the way in which he negotiates a flexible yet assertive engagement with the Sunni tradition. </P>
+<P>The paper ends with a consideration of those passages in which Safi &#703;Ali Shah interrupts the <I>tafsir</I>, having been swept up by the mystical ecstasy. I suggest that these ecstatic passages, which reveal Safi &#703;Ali Shah&#8217;s views of his own work and indicate the states of consciousness in which he wrote it, provide the material for what may be termed a phenomenology of mystical exegesis.</P>
+<P><B><I></I></B></P>
+<P><B><I>Sufism, Exegesis and Society in Early Modern Iran: Sultan &#703;Ali Shah&#8217;s</I></B><B> Bayan al-sa&#703;ada <I>and the Status of Sufi Qur&#8217;anic Exegesis</I></B></P>
+<P><B>Alessandro Cancian, The Institute of Ismaili Studies</B></P>
+<P>This paper is a presentation of the main exegetical work, the <I>tafsir Bayan al-sa&#703;ada fi maqamat al-&#703;ibada</I>, of Sultan &#703;Ali Shah Gunabadi (d. 1909), the eponymous master of the Gunabadi branch of the Ni&#703;matullahi Sufi order.</P>
+<P>Sultan &#703;Ali Shah was a prolific writer whose exegetical activity was not limited to his <I>tafsir</I>. His hermeneutical principles are reflected throughout his literary productions, particularly in his <I>Sa&#703;adat-nama</I>, as well as his <I>Majma&#703; al-sa&#703;adat</I> and his fascinating commentary on the aphorisms of the mystical poet Baba Tahir, the <I>Tawdih</I>. </P>
+<P>The exegetical activity of Sultan &#703;Ali Shah influenced the successive intellectual output of the order and had an impact on mystical exegesis even outside of it. </P>
+<P>The <I>Bayan</I>, which<I> </I>combines features of the pre-Buwayhid, Hadith-based commentaries with those of the classical mystical <I>tafsir</I>s, is the master&#8217;s most important, influential and authoritative statement. Written in Arabic and circulated at a time when Iran was involved in the painful entrance into modernity that culminated in the Constitutional Revolution of 1906, the <I>Bayan</I> was really a compendium of its author&#8217;s doctrines, clad in the form of a Qur&#8217;anic commentary. Through its style and content, the <I>Bayan </I>builds a hermeneutic bridge between classical and modern Twelver Shi&#8216;i exegesis. Its style and content also represent the means through which the order sought to gain recognition among the mainstream <I>&#703;ulama</I>. This process was initiated by the second generation of Ni&#703;matullahi masters after the order&#8217;s return to Persia in the late eighteenth century. However, they were never able to fully overcome this centuries-old conflict over the religious legitimacy of Sufism.</P>
+<P><B><I></I></B></P>
+<P><B><EM>Defending the Qur&#8217;an in Qajar Iran: Husayn &#703;Ali Shah and his Refutation of Henry Martyn</EM></B></P>
+<P><B>Reza Tabandeh, University of Exeter</B></P>
+<P>This paper presents the views on the Qur&#8217;an of &#7716;usayn &#703;Ali Shah (d. 1818), the first Iranian to become master of the Ni&#703;matullahi order after the order&#8217;s return to its homeland from India. &#7716;usayn &#703;Ali Shah, who was a Sufi as well as a scholar, refrained from overtly propagating his doctrines out of caution, as he lived at a time when Sufis were persecuted for their beliefs. Hence, the only text written by him is a treatise refuting the work of the Protestant missionary Henry Martyn, who went to Persia to try to prove that the Qur&#8217;an was not a divine book but a man-made one. Husayn &#703;Ali Shah&#8217;s <I>risala</I>, entitled <I>Radd-i padri</I>,<I> </I>is of considerable importance as it was the first text written in refutation of Martyn and was, in a way, taken as a reference for later responses (<I>jawabiyya</I>). This kind of writing became a genre of Shi&#8216;i religious writing in its own right during the Qajar era. </P>
+<P>Husayn &#703;Ali Shah&#8217;s treatise takes the doctrine of the inseparability of all religious revelations to be a basic and irrefutable tenet. Consistent with a widely held Muslim approach, the treatise also speaks of the superiority of the Qur&#8217;an over other miracles among Abrahamic prophets. The originality of his approach, however, lies in his mystical approach to the matter, whereby he uses symbols and metaphors to refer to the sacred Book, in keeping with the Sufi tradition. In his discourse, Husayn &#703;Ali Shah combines Sufi and Shi&#8216;i hermeneutics, posing the centrality of the <I>wilaya</I> of &#703;Ali as a cornerstone in the mystical understanding of the Qur&#8217;an. </P>
+<P>This treatise has not been properly studied so far. The analysis of it here will introduce the academic community to Husayn &#703;Ali Shah&#8217;s view on the Qur&#8217;an and its interpretation, and thus contribute to the advancement of the knowledge of Shi&#8216;i Sufi approaches to the Qur&#8217;an. </P>
+<P><B><I>The Divine Word on the Screen: Religious Epics in Iranian Cinema</I></B></P>
+<P><B>Nacim Pak-Shiraz, University of Edinburgh</B></P>
+<P>The vast financial State support available for the production of religious films has led to the recent emergence of a cinematic genre in Iran that can loosely be referred to as religious epics. Whilst the genre has had a long history in Western cinema, it is a fairly recent occurrence within Iranian cinema. </P>
+<P>This paper aims to examine the emergence of religious epics within Iranian cinema and will specifically focus on the Qur&#8217;anic epic. Whilst much has been written on the Biblical epic within Western cinema, and particularly Hollywood cinema, no academic attention has been paid to films which derive their narratives from the Qur&#8217;an. Indeed, even the term Qur&#8217;anic epic does not exist as a conceptual category. Studies of the Qur&#8217;an so far have mainly focused on its textual analysis strictly within the theological and jurisprudential fields. However, none have looked at how cinema has been employed as a new medium for engaging with the Qur&#8217;an. This paper aims to initiate this debate within both film studies and Islamic studies. </P>
+<P>Within the Western context, the production of Biblical films almost immediately followed the birth of cinema. In Iranian cinema, however, the epic genre is a fairly late development. The new millennium has witnessed the production of several big budget films that derive their stories from the Qur&#8217;an, such as Shahriyar Bahrani&#8217;s <I>Saint Mary </I>(2002) and <I>Kingdom of Solomon</I> (2010), and Muhammad Rida Warzi&#8217;s <I>Abraham the Friend of God </I>(2005). This paper will use <I>Kingdom of Solomon </I>as a case study to examine the development of the Qur&#8217;anic epic genre. Even though the <I>Kingdom of Solomon</I> narrates the story of a pre-Islamic prophet, embedded within it is a Shi&#8216;i interpretation of the Qur&#8217;an, it retains a sense of universality and thus attempts to appeal to Muslims in the Muslim world and to western viewers as well. </P>
+<P><B><I>The Qur&#8217;an and Female Calligraphers in Iran</I></B></P>
+<P><B>Anna Vanzan, University of Milan </B></P>
+<P>&#8216;. . . and think that when I tried to elaborate upon calligraphy as a young painter in 1950s Iran I was told that <I>khattniwis</I> was a virus to kill!&#8217;</P>
+<P>These words belong to Mansura Husayni (1926&#8211;2012), one of the first Iranian artists to make extensive use of calligraphy in abstract painting from as early as the 1950s. In Iran (as well as in many other Islamic countries), calligraphy is enjoying a renaissance today. Many modern artists adopt traditional techniques mainly as a point of reference from which to embark on new explorations, and the sources of inspiration for the majority of them continue to be both Persian poetry and the Qur&#8217;an. </P>
+<P>As is common in many other artistic fields, in calligraphy there is an increasing female presence; at the moment there are at least 1,500 female calligraphers in the Islamic Republic of Iran. Some of them are exclusively involved in elaborating prayers and passages from the Qur&#8217;an and have gained public recognition in exhibitions sponsored by the government; others rely on a more variegated production. What, though, is the reason for the growing numbers of women entering the field of calligraphy which, in the past, was dominated by men? Is it simply their wish to spread a spiritual message? Is it due to their growing desire to be more visible in religious activities? Do female calligraphers believe that this presence will grant them more religious authority? This paper tries to answer these questions, partly relying on interviews conducted with Iranian female calligraphers.</P>
+<P><B><I>&#8216;I leave behind me two great things, the Book of God and my Family&#8217;: Comprehending the Qur&#8217;an within the Realm of the Ahl al-Bayt in Iranian Shi&#8216;i Lived Religion</I></B></P>
+<P><B>Ingvild Flaskerud, University of Oslo</B></P>
+<P>In this paper I will discuss how a contemporary network of Shi&#8216;i women in Shiraz engage with the Qur&#8217;an, and I will show how such engagement reflects Twelver Shi&#8216;ism as a &#8216;lived religion&#8217;. By lived religion, I here refer to how the sacred text, the Qur&#8217;an, is treated as a living text, in the sense that it is perceived as being able to protect and guide people in their everyday lives and to connect everyday life to a much broader perspective on life which encompasses the eschatological vision of Twelver Shi&#8216;ism.</P>
+<P>To this end, I discuss a celebration of Laylat al-Qadr and a number of Qur&#8217;an classes in which the women of this network participate. The performance of Laylat al-Qadr on 21 Ramadan is framed by two other liturgical settings, the fast and the mourning assembly commemorating imam &#703;Ali&#8217;s death. Oral <I>tafsir</I> and debates raised during Qur&#8217;an classes similarly refer to the lives of the Ahl al-Bayt in an attempt to apply the sacred word of God as guidance in everyday life. The ethnographic data thus offers examples of how the Qur&#8217;an in a Shi&#8216;i environment is being associated with the Ahl al-Bayt in order to serve as a guiding principle to the way of life of Iranian Muslims.</P>
+<P><B><I>The Qur&#8217;an as an Aesthetic Model in Music: The Case of Twentieth-Century Iran </I></B></P>
+<P><B>Giovanni De Zorzi, Ca&#8217; Foscari University of Venice</B></P>
+<P>In the tradition of Islam, the cantillation (<I>qira&#702;a</I>) of the Qur&#8217;an is not considered to be a form of music (<I>musiqi</I>) or singing (<I>sawt</I>, <I>ghina</I>) and it cannot be adapted to musical modes and rhythms, as was clearly stated by al-Ghazali (d. 506/1111). From a more global view, this problematic status is a common feature of various religions dealing with the recitation of a sacred text. </P>
+<P>This has led ethnomusicologists to coin the term &#8216;cantillation&#8217; in order to define a practice which lies somewhere between singing and recitation. Particularly in Persian music, the voice has a special role and it lies at the centre of the musical performance, regardless of the genre. The way the Qur&#8217;an is recited is closely linked with poetry and versification (<I>&#703;</I><I>arud</I>). The Qur&#8217;an is not poetry, but the rhymed nature of its <I>saj&#703;</I> and the duration values of the text influence its vocal performance. In the cantillation of the Qur&#8217;an, the use of pauses, silences and modulations, which are so pervasive in Iran and elsewhere, tends to create an aesthetic model that has influenced musicians and their performances. Such an influence is clearly detectable in the unmetred forms, both vocal (<I>awaz</I>) and instrumental (<I>taqsim</I>).</P>
+<P>Evidence of this influence is visible in classical music (<I>dastgahi, radifi</I>), as a number of great singers often had an upbringing in, and thus drew upon their experiences with, the cantillation of the Qur&#8217;an. In Persian culture, we should remember the examples of Iqbal Sultan Azar (1866&#8211;1971), Ghulam-Husayn Banan (1911&#8211;1986) and Muhammad-Rida Shajariyan (b. 1940); the latter is widely acclaimed as Iran&#8217;s greatest living classical singer and musician (<I>radif</I>). In this paper, I intend to show the connections between the cantillation of the Qur&#8217;an and twentieth-century Iranian classical singing. </P>
+<P><A href="view_article9056.html?type=cont.currentlang&amp;id=114072"><BR clear=all></A></P><BR></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - </TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 3 Jul 2023 10:11:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 16/09/2013&nbsp;14:28&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=114047 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:22 GMT -->
+</HTML>

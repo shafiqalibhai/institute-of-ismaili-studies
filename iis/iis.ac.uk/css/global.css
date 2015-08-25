@@ -1,0 +1,30 @@
+#JT_arrow_left {
+	BACKGROUND-IMAGE: url(../images/arrow_left.html); Z-INDEX: 101; POSITION: absolute; WIDTH: 10px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top; HEIGHT: 23px; TOP: -3px; LEFT: -12px
+}
+#JT_arrow_right {
+	BACKGROUND-IMAGE: url(../images/arrow_right.html); Z-INDEX: 101; POSITION: absolute; WIDTH: 11px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left top; HEIGHT: 23px; TOP: -2px
+}
+#JT {
+	Z-INDEX: 100; BORDER-BOTTOM: #cccccc 2px solid; POSITION: absolute; BORDER-LEFT: #cccccc 2px solid; BACKGROUND-COLOR: #fff; BORDER-TOP: #cccccc 2px solid; BORDER-RIGHT: #cccccc 2px solid
+}
+#JT_copy {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #333333; PADDING-TOP: 10px
+}
+.JT_loader {
+	BACKGROUND-IMAGE: url(../images/loader.html); WIDTH: 100%; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center center; HEIGHT: 12px
+}
+#JT_close_left {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #cccccc; PADDING-LEFT: 8px; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+#JT_close_right {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #cccccc; PADDING-LEFT: 8px; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+#JT_copy P {
+	MARGIN: 3px 0px
+}
+#JT_copy IMG {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 1px
+}
+.jTip {
+	CURSOR: help
+}

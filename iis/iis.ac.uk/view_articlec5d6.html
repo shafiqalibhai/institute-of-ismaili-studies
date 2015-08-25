@@ -1,0 +1,549 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110382 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:54:05 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 110382;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlye86c.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D110382">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></p><p><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Encyclopaedia Articles</H3><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">Dawr</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">This is an edited version of an article that was originally published in <I>The Encyclopaedia Iranica</I>, Vol. VII, Columbia University, New York, 1996. pp. 151-153.<BR><BR><IMG height=20 alt="" src="SiteAssets/pdf/pdf_icon.gif" width=20 align=left border=0><A href="WebAssets/Medium/Encyclopaedia%20Articles/Dawr%20-%20Farhad%20Daftary%20Final.pdf">Download PDF version of this article</A><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><P><U><A href="javascript:void(LaunchGlossary('GlossaryItemf957.html?type=glossary&amp;id=282'))">Dawr</A></U><B> </B>(Ar. and Pers.), period, era, or cycle of history, a term used by <U><A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Isma&#8216;ilis</A></U> in connection with their conceptions of time and the religious history of mankind. The early Isma&#8216;ilis conceived of time (<I>zaman</I>) as a progression of cycles or eras, <I>dawr</I>s (Ar. pl. <I>adwar</I>), with a beginning and an end. On the basis of their eclectic temporal vision, which reflected Greek, Judeo-Christian, and Gnostic influences, as well as the eschatological ideas of earlier <A href="javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))"><U>Shi</U><U>&#8216;i</U></A>, they worked out a view of history, or rather hierohistory, in terms of the eras (<I>dawr</I>s) of different prophets recognised in the Holy Qur&#8217;an. This prophetic interpretation of history was, moreover, combined with the Isma&#8216;ili doctrine of the <U><A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">Imamate</A></U>. </P>
+<P><B></B></P>
+<P>The Isma&#8216;ilis thus believed from early on that the hierohistory of mankind comprised seven prophetic eras (<I>dawr</I>s) of various durations, each inaugurated by the speaker-prophet or enunciator (<I>natiq</I>) of a revealed message that in its exoteric (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItem362c.html?type=glossary&amp;id=44'))">zahir</A></U></I>) aspect contained a religious law, or <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem1d00.html?type=glossary&amp;id=98'))">shari&#8216;a</A></U></I>. The <I>natiq</I>s of the first six eras were the Prophets Adam, Noah, Abraham, Moses, Jesus, and Muhmmad, respectively. Each was succeeded by a legatee (<I>wasi</I>), also called &#8220;foundation&#8221; (<I>asas</I>) or &#8220;silent one&#8221; (<I>samit</I>), who revealed to the elite the inner (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItem6ca1.html?type=glossary&amp;id=310'))">batin</A></U></I>) meanings of the message for his <I>dawr</I>. These inner meanings represented the unchangeable truths (<I>haqa&#8217;iq</I>) of Isma&#8216;ili gnosis. Each <I>wasi</I> was, in turn, succeeded by seven <U><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">Imams</A></U>, who guarded the true meaning of the message in both <I>zahir</I> and <I>batin</I> aspects. The seventh Imam of each <I>dawr</I> became the <I>natiq</I> of the following <I>dawr</I>, promulgating a new <I>shari&#8216;a </I>(<I>Firaq al-shi&#8216;a</I>, pp. 61-63; Qomi, pp. 83-85, Stern, pp. 49-55; <U><A href="view_personc758.html?type=user&amp;id=100136">Madelung</A></U>, pp. 48 ff.; Daftary, pp. 104-05, 136-40). This pattern would change only in the seventh and final <I>dawr</I> of hierohistory. </P>
+<P>In the sixth <I>dawr</I>, the era of Prophet Muhmmad and Islam, the seventh Imam was Muhmmad b. Esma&#8216;il b. Ja&#8216;far al-Sadiq, who had gone into hiding due to the prevailing circumstances. On his reappearance as the <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemdcf3.html?type=glossary&amp;id=137'))">qa&#8217;im</A></U></I> (restorer of justice on earth and true Islam), or <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem1fe4.html?type=glossary&amp;id=181'))">mahdi</A></U></I>, he would become the seventh <I>natiq</I>, ruling over the final, eschatological <I>dawr</I>. Imam Muhmmad b. Esma&#8216;il&#8217;s message would not entail a new law, however, but would consist of the full revelation of the esoteric truths (<I>haqa&#8217;iq</I>) concealed in all the previous messages, the immutable truths of all religions, which had previously been accessible only to the elite of mankind. In this final, messianic age there would be no need for exoteric religious laws. Imam Muhmmad b. Esma&#8216;il, the last of the <I>natiq</I>s and Imams, would rule in justice as the eschatological <I>qa&#8217;im</I> and would then bring to an end the physical world. His <I>dawr</I> would thus mark the end of time and human history (Ebn Hawshab, pp. 189, 191-92, 197 ff.; Ja&#8216;far b. Mansur al-Yaman, 1952, pp. 14 ff., 50, 97, 104, 109, 113-14, 132-33, 138, 150, 170; Abu Ya&#8216;qub, 1966, pp. 181-93 and 1980, pp. 47-56; Corbin, pp. 30 ff.; Halm, pp. 18-37; Walker, pp. 355-66). </P>
+<P>The whole cycle from Adam to the advent of the <I>qa&#8217;im</I> as the seventh <I>natiq</I> was also called the &#8220;era of concealment&#8221; (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItem9a0d.html?type=glossary&amp;id=281'))">dawr al-satr</A></U></I>), because the truths were concealed in the laws. By contrast, the seventh <I>dawr</I>, when the truths would be fully revealed to mankind, was designated the &#8220;era of revelation, or manifestation&#8221; (<I>dawr al-kashf</I>), an era of pure spiritual knowledge with no need for exoteric religious laws. The Isma&#8216;ilis also used the expression <I>dawr al-satr</I> in reference to a period when the Imams were hidden (<I>mastur</I>) from the eyes of their followers, in contradistinction to <I>dawr al-kashf</I>, when the Imams were manifest and accessible. This Isma&#8216;ili view of history was evidently first committed to writing in Persia and Transoxania by prominent early <I>da&#8216;i</I>s (missionaries) and authors there, notably Muhmmad b. Ahmad Nasafi (d. 332 AH/943-44 CE), whose major treatise <I>Kitab al-mahsul</I> has not survived, and Abu Hatim Razi (d. 322 AH/934 CE), whose ideas on the subject were primarily expounded in his <I>Kitab al-islah</I>, which is still unpublished. Both these early Isma&#8216;ili theologians envisaged hierohistory in terms of the scheme of seven prophetic eras, though they disagreed on some details. In fact, they became the protagonists in a scholarly debate over religious obligations and certain metaphysical issues, later joined by Nasafi&#8217;s disciple Abu Ya&#8216;qub al-Sijistani. Subsequently the <I>da&#8216;i</I> Hamid al-Din Kirmani acted as arbiter in this controversy (Kermani, pp. 176-212). Nasafi and Abu Hatim devoted much energy and imagination to accommodating other religions, notably those of the Zoroastrians and the Sabaeans, within their scheme of seven prophetic eras, assigning these religions to specific <I>dawr</I>s and <I>natiq</I>s. Abu Hatim also introduced the concept of an interim period (<I>dawr al-fatra</I>), marked by the absence of Imams and occurring at the end of each prophetic <I>dawr</I>, between the passing of the seventh Imam of that era and the advent of the <I>natiq</I> of the following era. According to him, the Zoroastrians belonged to the fourth era, the <I>dawr</I> of Moses, and Zoroaster himself had appeared during the interim period at the end of that <I>dawr</I> (pp. 52 ff., 59, 69 ff., 160 ff., 171-77; Abu Ya&#8216;qub, 1966, pp. 82-83; Corbin, pp. 187-93; Madelung, pp. 101-14; Stern, pp. 30-46; Daftary, pp. 234-39). </P>
+<P>The cyclical prophetic view of hierohistory elaborated by the early Isma&#8216;ilis was retained by the <U><A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A></U> Isma&#8216;ilis, who refined or modified certain aspects of it, especially in connection with the duration of the sixth <I>dawr</I>, the era of Islam; the number of Imams during that era; and the <I>qa&#8217;im</I> and his functions (see, e.g., Ja&#8216;far b. Mansur al-Yaman, 1984, pp. 21 ff., 57 ff., 67 ff., 101, 105, 109, 112, 164 ff., 201 ff., 217, 219, 229 ff.; al-Qadi al-Nu&#8216;man, pp. 40-368; Daftary, pp. 176-79, 218-20, 234). Some authors of the Fatimid period introduced new concepts into the cyclical scheme. The Persian Nasir Khusraw (394-ca. 471 AH/1004-ca. 1078 CE), for instance, distinguished between a grand cycle (<I>dawr-e mehin</I>), encompassing the entire sequence of the seven <I>natiq</I>s, and a small cycle (<I>dawr-e kehin</I>), coinciding with the latter part of the grand cycle and including the era of Islam and thereafter (pp. 62-64, 126-27, 157, 169-70, 245, 256, 331). </P>
+<P>Later Isma&#8216;ilis introduced further innovations into the earlier interpretation of hierohistory expressed in terms of the seven prophetic <I>dawr</I>s. On the basis of astronomical calculations, the Yamani Tayyebis conceived of a grand eon (<I>kawr a&#8216;zam</I>) comprised of countless cycles, each divided into seven <I>dawr</I>s, which would be consummated in the <I>qa&#8217;im</I> of the &#8220;great resurrection&#8221; (<I>qiamat al-qiama</I>). Furthermore, the grand eon was held to progress through successive cycles of concealment (<I>satr</I>) and revelation (<I>kashf </I>or <I>zuhur</I>), each composed of seven <I>dawr</I>s (see e.g. Hamedi, pp. 149 ff., 205-27, 232 ff., 258-72; Walid, pp. 100 ff., 121-28; Corbin, pp. 37-58; Daftary, pp. 140-41, 291 ff., 295). </P>
+<P>The <U><A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizari</A></U> Isma&#8216;ilis of the <U><A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A></U> period (487-654 AH/1094-1256 CE) in Persia followed a religious and political path of their own and, unlike the Tayyebi Isma&#8216;ilis, were not particularly concerned with the earlier cyclical view of history, though they generally adhered to the scheme of seven prophetic eras. However, in connection with elaborating their own doctrines, they allowed for transitory eras of resurrection (<I>qiyama</I>) during the <I>dawr</I> of the Prophet Muhmmad, who, like the five enunciating prophets before him, had initiated an era of concealment (<I>dawr al-satr</I>). In the era of Islam, and in special honour of Prophet Muhmmad&#8217;s greatness, there could be occasional anticipatory eras of resurrection, each offering a foretaste of the <I>qiyama </I>that was to occur at the end of Prophet Muhmmad&#8217;s era, ushering in the seventh and final millennium in the religious history of mankind. The condition of <I>qiyama</I> could in principle be granted at any time, to mankind as a whole or to the elite, by the current Nizari Imam, for every Imam was potentially also a <I>qa&#8217;im</I>. As a result, in the era of Prophet Muhmmad, human life could alternate, at the will of the Imam, between <I>dawr</I>s of <I>qiyama</I> and <I>satr</I>, the normal condition of human life. The Nizaris, however, interpreted the <I>qiyama</I> symbolically and spiritually as the manifestation of the unveiled truth in the person of the Nizari Imam, whereas <I>satr</I> meant concealment of the true spiritual reality of the Imam, when truth was again hidden in the <I>batin </I>of the laws, requiring the strictest observance of the <I>shari&#8216;a</I> and <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem7383.html?type=glossary&amp;id=71'))">taqiyya</A></U></I>, or precautionary dissimulation (Tusi, pp. 61-63, 83-84, 101-02, 110, 117-19, 128-49; Corbin, pp. 117 ff.; Hodgson, pp. 148 ff., 225-38; Daftary, pp. 386 ff., 404 ff., 410-11). </P>
+<P><B></B></P>
+<P>The cyclical view of time reflected the ethos and intellectual debates in the mediaeval period of Muslim history and, from the Alamut period, started to lose currency amongst the Ismailis and, more broadly, in Muslim thought. Very few and isolated references are found in Ismaili writings to these ideas from the 15th century (CE) onwards. In contemporary times, these notions do not find expression in Ismaili thought.</P>
+<P><B>Bibliography</B></P>
+<P>Abu Hatim Razi, <I>A&#8216;lam al-nubuwa</I>, ed. S. Sawi and Gh.-R. A&#8216;wani, Tehran, 1356 Sh./1977. </P>
+<P>Abu Ya&#8216;qub Sejestani, <I>Ithbat al-nubuwa</I>, ed. &#8216;A. Tamer, Beirut, 1966. </P>
+<P>&#8212; &#8212;, <I>Kitab al-iftikhar</I>, ed. M. Ghalib, Beirut, 1980. </P>
+<P>H. Corbin, <I>Cyclical Time and Ismaili Gnosis</I>, London, 1983. </P>
+<P><U></U></P>
+<P><U><A href="view_person19c6.html?type=auth&amp;id=8">F. Daftary</A></U>, <I>The Isma&#8216;ilis. Their History and Doctrines</I>, Cambridge, 1990. </P>
+<P>Ebn Hawshab Mansur al-Yaman, <I>Kitab al-rushd wa&#8217;l-hidaya</I>, ed. M. Kamel Hosayn, in W. Ivanow, ed., <I>Collectanea</I> I, Leiden, 1948. </P>
+<P>H. Halm, <I>Kosmologie und Heilslehre der fr&#252;hen Isma&#8216;iliya</I>, Wiesbaden, 1978. </P>
+<P>Ebrahim b. Hosayn Hamedi, <I>Kitab kanz al-walad</I>, ed. M. Ghalib, Wiesbaden, 1971. </P>
+<P>M. G. S. Hodgson, <I>The Order of Assassins</I>, the Hague, 1955. </P>
+<P>Ja&#8216;far b. Mansur al-Yaman, <I>Kitab al-kashf</I>, ed. R. Strothmann, London, 1952. </P>
+<P>&#8212; &#8212;, <I>Sara&#8217;ir wa asrar al-nutaqa&#8217;</I>, ed. M. Ghalib, Beirut, 1984.</P>
+<P>Hamid-al-Din Kermani, <I>Kitab al-riad</I>, ed. &#8216;A. Tamer, Beirut, 1960. </P>
+<P>W. Madelung, &#8220;Das Imamat in der fr&#252;hen ismailitischen Lehre,&#8221; <I>Der Islam</I> 37, 1961, pp. 43-135. </P>
+<P>Naser-e Khosrow Qobadiani, <I>Wajh-e din</I>, ed. Gh.-R. A&#8216;wani, Tehran, 1356 Sh./1977. </P>
+<P>Al-Qadi Abu Hanifa al-Nu&#8216;man b. Muhmmad, <I>Asas al-ta&#8217;wil</I>, ed. &#8216;A. Tamer, Beirut, 1960. </P>
+<P>Sa&#8216;d b. &#8216;Abd-Allah Qomi, <I>Kitab al-maqalat wa&#8217;l-feraq</I>, ed. M.-J. Mashkur, Tehran, 1342 Sh./1963. </P>
+<P>S. M. Stern, <I>Studies in Early Isma&#8216;ilism</I>, Jerusalem and Leiden, 1983. </P>
+<P>Nasir-al-Din Muhmmad Tusi, <I>Rawzat al-taslim</I>, ed. and tr. W. Ivanow, Leiden, 1950. </P>
+<P>Hosayn b. Ahmad Walid, <I>Resalat al-mabda&#8217; wa&#8217;l-ma&#8216;ad</I>, ed. H. Corbin in <I>Trilogie Isma&#233;lienne</I>, Tehran and Paris, 1340 Sh./1961, pp. 99-130. </P>
+<P>P. E. Walker, &#8220;Eternal Cosmos and the Womb of History. Time in Early Ismaili Thought,&#8221; <I>International Journal of Middle Eastern Studies</I> 9, 1978, pp. 355-66. </P><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Dawr</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 16 Jun 2019 16:48:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 05/07/2010&nbsp;17:22&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=110382 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:54:07 GMT -->
+</HTML>

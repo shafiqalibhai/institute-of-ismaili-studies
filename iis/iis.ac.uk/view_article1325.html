@@ -1,0 +1,669 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101186 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:13:33 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101186;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning.jpg','WebAssets/Site_Images/header/Learning_1.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only5591.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101186">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article8926.html?ContentID=101185">English<li><A href="view_articlecb47.html?ContentID=101188">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article5b77.html?ContentID=101191">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_article35d8.html?ContentID=103102">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></p><p><A href="view_sorted_articles21da.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=fr">Formation continue</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4c49.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=fr" >Par Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles72ab.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=fr" >Par Auteur</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles695b.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=fr" >Par Titre</A></p><p><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></p><p><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></p><p><A href="view_article7ecf.html?type=cont.currentlang&amp;id=104553&amp;l=fr">Liste de Lecture </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p><p><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Formation Continue</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Intellect et Religion, Est et Ouest</strong><br/><strong></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div><I><EM>The Ismaili United Kingdom,</EM> No. 45, Juillet 2002, pp. 52-54.</I> </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Résumé<br/></strong><P>La relation entre l'intellect et la religion a &#233;t&#233; une essentiellement harmonieuse dans le contexte de l'Islam. Malgr&#233; diverses discussions sur la place de l'intellect par rapport &#224; la religion, on ne voit pas ces deux &#233;l&#233;ments comme ponctu&#233;s par des oppositions l&#8217;un avec l&#8217;autre, de fa&#231;on radicale ou extr&#234;me. Ceci doit &#234;tre compar&#233; avec la situation philosophique qui a pr&#233;valu en Occident, depuis le mouvement des Lumi&#232;res du 18&#232;me si&#232;cle. La Religion est consid&#233;r&#233;e depuis, en grande partie, comme l'antith&#232;se de l'exploitation libre de l'intelligence, &#224; la suite de la s&#233;cularisation de la pens&#233;e et de la culture par la soci&#233;t&#233; occidentale. Dans cet essai, l'auteur aborde ce th&#232;me en r&#233;ponse &#224; des critiques exprim&#233;es au sein m&#234;me par des intellectuels Occidentaux ; et par r&#233;f&#233;rence aux perspectives de certains philosophes musulmans, pour lesquels il n'y a aucune contradiction entre l'intellect et la religion. </P></div><div> </div><div><STRONG>
+<P><B>Mots cl&#233;s</B></P></STRONG>
+<P>Intellect, la religion, la s&#233;cularisation, la philosophie, Les Lumi&#232;res, les sciences religieuses, la philosophie, le symbolisme, la foi, la science, l&#8217;histoire intellectuelle, l&#8217;histoire, Le Christianisme, le Catholicisme, l&#8217;Islam, Isaac Newton, Galil&#233;e, Copernic, Maitre Eckhart. </P>
+<P><A href="WebAssets/Large/Intellect%20and%20Religion-pdf.pdf" target=_blank><IMG border=0 hspace=5 src="images/pdf_icon.gif" width=25 height=25>T&#233;l&#233;charger la version PDF de cet article (155 KB)</A><BR><BR></P>
+<P>
+<TABLE class=bodytext width="100%" align=center>
+<TBODY>
+<TR>
+<TD align=center><I>
+<P><I><EM>Je parle d&#8217;attitudes dans notre culture, dans notre culture politique,</EM>dans notre culture juridique, et dans notre culture populaire; des attitudes qui sugg&#232;rent que la religion est d&#8217;une certaine fa&#231;on quelque chose qui n&#8217;est pas important &#8230;quelque chose que vous devrez laisser derri&#232;re vous quand nous entrez dans un d&#233;bat public s&#233;rieux ou dans le milieu du travail; quelque chose dont vous devez &#234;tre pr&#234;t &#224; vous s&#233;parer si vous souhaitez &#234;tre pris au s&#233;rieux.</I></P></I></TD></TR>
+<TR>
+<TD align=center><EM>Stephen Carter</EM>, <I>The Culture of Disbelief: How American Law and Politics Trivialize Religious Devotion</I> (La culture de l'incr&#233;dulit&#233;: Comment la loi am&#233;ricaine et la politique banalisent la d&#233;votion religieuse) (New York, 1993).</TD></TR></TBODY></TABLE></P>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG>Th&#233;orisation du R&#244;le de la Religion dans la Soci&#233;t&#233; Contemporaine </STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<P>Dans son livre &#224; succ&#232;s (bestseller), Stephen Carter, professeur de droit &#224; l'Universit&#233; de Yale, d&#233;plore la cristallisation, en Am&#233;rique, d&#8217;une culture dans laquelle la religion n'est plus intellectuellement respectable. Bien entendu, il n'est pas unique &#224; cet &#233;gard. Il y a et il y a toujours eu, des intellectuels en Occident qui s'opposent &#224; la s&#233;cularisation de la pens&#233;e et de la soci&#233;t&#233;, et qui ont critiqu&#233; les processus par lesquels le mat&#233;rialisme et la mondanit&#233; sont devenus les nouvelles formes de la tyrannie culturelle ; mais il est important de noter que d&#233;sormais, il y a des voix &#224; l&#8217;int&#233;rieur des bastions de la cr&#233;ation intellectuelle Occidentale qui demandent une r&#233;&#233;valuation de certaines des hypoth&#232;ses centrales qui sous-tendent la soci&#233;t&#233; occidentale moderne et, en particulier, les principes et la port&#233;e ou limites de la la&#239;cit&#233;. C'est-&#224;-dire, que des questions se posent pour savoir jusqu'o&#249; la la&#239;cit&#233; doit aller et s&#8217;il ne serait pas temps de d&#233;-s&#233;culariser certains domaines. Cette d&#233;-s&#233;cularisation peut aussi s&#8217;appeler une nouvelle sacralisation ; ou, comme l&#8217;a dit John Keane, professeur en sciences politiques &#224; l'Universit&#233; de Westminster &#224; Londres et l&#8217;un des principaux th&#233;oriciens de la soci&#233;t&#233; civile, un &#171; retour au sacr&#233;e &#187;. </P>
+<P>Carter fait r&#233;f&#233;rence &#224; plusieurs facteurs qu'il estime &#234;tre responsables de miner la cr&#233;dibilit&#233; intellectuelle et culturelle de la religion. Citons ici, les trois les plus importants : &#171;le mythe&#187; que les gens religieux sont des excentriques illumin&#233;s, irrationnels et enfantins; &#171;le mythe&#187; que la foi religieuse m&#232;ne &#224; la s&#233;dition politique; et l&#8217;hypoth&#232;se que la religion doit &#234;tre immat&#233;rielle parce qu&#8217;elle est inaccessible &#224; la science moderne</P>
+<DIV>Prenons l'id&#233;e de la s&#233;dition politique d'abord, il est clair que beaucoup de gens craignent que l'autorit&#233; de l'&#201;tat, dans l'Occident moderne, soit menac&#233;e par une religion qui veut s'imposer dans le domaine de la politique. Cette crainte compr&#233;hensible d&#233;coule de l'exp&#233;rience particuli&#232;re de l'Occident. Le principe de la s&#233;paration entre l'Eglise et l'Etat - la base de la doctrine politique la&#239;que r&#233;sulte d&#8217;une n&#233;cessit&#233; politique dans un contexte historique, domin&#233; par les guerres de religion et des pers&#233;cutions religieuses. Carter et d&#8217;autres comme lui ne veulent pas voir cet aspect de la la&#239;cit&#233; invers&#233;e ; la question pour eux est de ne pas laisser le pragmatisme politique s'&#233;tendre &#224; la s&#233;cularisation de la pens&#233;e et de la culture, et l'&#233;clipse de foi comme d&#8217;un &#233;l&#233;ment de l&#8217;identit&#233;, &#224; la fois personnelle et sociale. </DIV>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>Les Racines de l&#8217;Antagonisme entre la Religion et la Science</STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<P>Quant &#224; l'hypoth&#232;se que les croyants sont des &#8216;excentriques illumin&#233;s&#8217;, il faut comprendre pourquoi le si&#232;cle des Lumi&#232;res a &#233;t&#233; si oppos&#233;, non pas tant &#224; la religion en soi, mais &#224; la puissance monolithique de religion institutionnalis&#233;e, l'Eglise et ses dogmes. Dans les salons bourgeois du 18&#232;me si&#232;cle &#224; Paris, l'Eglise Catholique Romaine a &#233;t&#233; consid&#233;r&#233;e comme plus apte &#224; br&#251;ler les sorci&#232;res et les h&#233;r&#233;tiques qu&#8217;&#224; guider les &#226;mes vers le salut!</P>
+<DIV>Les arguments au vitriol de Voltaire, Diderot et autres penseurs contre la religion ne peuvent &#234;tre compris qu&#8217;&#224; la lumi&#232;re du troisi&#232;me des facteurs mentionn&#233;s ci-dessus: l'hypoth&#232;se selon laquelle la religion est n&#233;cessairement oppos&#233;e &#224; la raison et &#224; la science. Comment et pourquoi cette hypoth&#232;se a-t-elle pris racine? Il s'agit d'une question extr&#234;mement complexe et qui r&#233;siste &#224; toute explication unilat&#233;rale. N&#233;anmoins, il existe certains &#233;v&#233;nements cl&#233;s qui aident &#224; faire la lumi&#232;re sur les cha&#238;nes de causalit&#233; historiques, sur les tendances culturelles et intellectuelles d&#233;terminantes, faisant que le <I>zeitgeist</I> (l'air du temps) a produit l&#8217;&#233;v&#233;nement en question. Un tel &#233;v&#233;nement constitue un tournant particuli&#232;rement important dans le processus par lequel cette hypoth&#232;se devient quasi-axiomatique pour un esprit occidental : le proc&#232;s de l'astronome italien Galil&#233;e (d.1642).</DIV>
+<DIV>&nbsp;</DIV>
+<P><STRONG>La Science comme une Vision Distincte du Monde</STRONG></P>
+<P>La confirmation par Galil&#233;e, de l'observation empirique de la th&#233;orie de Copernic que la Terre tournait autour du soleil, avait &#233;t&#233; rejet&#233;e par l'&#233;glise non pas sur des motifs scientifiques mais th&#233;ologiques. Cette notion &#233;tait h&#233;r&#233;tique, Galil&#233;e en avait &#233;t&#233; inform&#233;, car il contredisait les mots de la Bible. Pour sa d&#233;fense, il avait plaid&#233; que &#171;la Bible nous disait comment aller au ciel, pas comment fonctionnaient les cieux &#187;. Mais la sentence de l'Inquisition avait &#233;t&#233; inflexible: &#171; il &#233;tait soup&#231;onn&#233; avec v&#233;h&#233;mence d'h&#233;r&#233;sie &#187;, &#224; savoir &#171;avoir cru en cette doctrine qui &#233;tait fausse et contraire &#224; l'Ecriture Sainte et Divine qui disait que le soleil &#233;tait le centre du monde et ne se d&#233;pla&#231;ait pas d'est en ouest mais de dire que c&#8217;est la terre qui se d&#233;pla&#231;ait, et qu&#8217;elle n'&#233;tait pas le centre du monde &#187;. On lui a dit que les sanctions, pour avoir soutenu cette croyance, ne serait pas appliqu&#233;es s'il &#233;tait pr&#234;t &#224; &#171; abjurer, maudire et d&#233;tester devant nous&#187; l'erreur et l'h&#233;r&#233;sie de cette th&#233;orie h&#233;liocentrique.</P>
+<P>Ainsi Galil&#233;e a &#233;t&#233; forc&#233; &#224; renoncer &#224; l&#8217;&#171; h&#233;r&#233;sie &#187; qu'il savait en fait &#234;tre une r&#233;alit&#233; empirique indubitable. Ce <I>mea culpa </I>forc&#233; - aussi absurde que non sinc&#232;re- a rejailli contre l'&#201;glise Catholique Romaine, donnant ainsi un coup fatal &#224; l'autorit&#233; dogmatique de la foi chr&#233;tienne, un coup qu&#8217;il subit encore de nos jours. Depuis l&#8217;&#233;poque de Galil&#233;e, la religion et la raison en sont venu &#224; &#234;tre consid&#233;r&#233;es, de plus en plus, comme deux fa&#231;ons incompatibles de regarder le monde. La r&#233;volution scientifique qui a suivi au18&#232;me si&#232;cle, personnifi&#233;e surtout par le grand savant anglais, Isaac Newton (d.1727), a &#233;t&#233; vue par les parties dominantes de l'intelligentsia comme le r&#233;sultat de la raison naturelle pour se lib&#233;rer des anneaux d'une religion qui a &#233;t&#233; &#224; la fois singuli&#232;re et d&#233;raisonnable. Il est difficile pour nous, aujourd&#8217;hui, de ressentir l'excitation g&#233;n&#233;r&#233;e par cette r&#233;volution. Le po&#232;te Alexander Pope (d. 1744) a tr&#232;s bien exprime l'esprit de l'&#233;poque dans son c&#233;l&#232;bre <I>Essay on Man</I> (essai sur l'homme), publi&#233; en 1733. Tout d'abord, concernant l'intol&#233;rance de la dogmatique chr&#233;tienne, il a &#233;crit:</P>
+<DIV align=center><I>Que les modes de foi cessent les combats in&#233;l&#233;gants contre les fanatiques. </I></DIV>
+<DIV align=center><I>Il ne peut pas &#234;tre mauvais celui dont la vie est droite.</I></DIV>
+<P>Deuxi&#232;mement, en ce qui concerne les merveilles de la science et la d&#233;couverte des lois jusqu'ici cach&#233; de la nature, il a d&#233;clar&#233; avec ces hyperboles:</P>
+<DIV align=center><I>La </I><I>Nature et les Lois de la Nature se cachaient dans la nuit la plus sombre. </I></DIV>
+<DIV align=center><I>Dieu a dit : Que Newton soit, et tout f&#251;t lumi&#232;re.</I></DIV>
+<DIV align=center><STRONG><EM></EM></STRONG>&nbsp;</DIV>
+<DIV>
+<P><STRONG>S&#233;cularisme et S&#233;cularisation</STRONG></P>
+<P>Maintenant, il est important de comprendre cette la&#239;cit&#233; non seulement comme une doctrine politique qui a surgi suite aux agissements d&#8217;une &#201;glise qui a outre pass&#233; politiquement, socialement et institutionnellement ses pr&#233;rogatives et qui a eu besoin d'&#234;tre remise &#224; sa place; mais il est aussi n&#233;cessaire de voir la relation entre la d&#233;sacralisation ou r&#233;duction de religion elle-m&#234;me, d'une part et la s&#233;cularisation de la pens&#233;e et de la culture, de l&#8217;autre.</P>
+<P>Comme l&#8217;a soulign&#233;, <A href="view_person3cc2.html?type=auth&amp;id=59">Henry Corbin</A>, la r&#233;volution Copernicienne en cosmologie pr&#233;suppose une r&#233;volution Copernicienne en th&#233;ologie. Les cieux, en haut, ne sont plus consid&#233;r&#233;s comme des symboles de la qu&#234;te de l&#8217;illumination de l'homme: les plan&#232;tes qui tournent ne sont d&#233;sormais plus que des objets inanim&#233;s marquant le temps, et non plus les images de l'&#233;ternit&#233; en mouvement. On peut ainsi appr&#233;cier la s&#233;cularisation du cosmos &#8212; la vision de la nature comme autant de faits empiriques ici-bas qui peuvent &#234;tre analys&#233;s et exploit&#233;es au profit de l'homme, plut&#244;t que comme des symboles et des signes &#224; contempler et &#224; int&#233;rioriser , on peut voir cette s&#233;cularisation comme l&#8217;expression d'une s&#233;cularisation de la religion elle-m&#234;me pr&#233;c&#233;dant, c'est-&#224;-dire la concomitance d'une diminution de la perception spirituelle, de la p&#233;n&#233;tration mystique, de l&#8217;&#233;sot&#233;rique en profondeur , en bref, l'&#233;rosion par des modes de pens&#233;e purement horizontaux de la dimension de la profondeur dans la religion.</P>
+<P>On peut mieux comprendre ce lien entre le r&#233;ductionnisme spirituel au sein de la religion et la s&#233;cularisation de la culture intellectuelle au sein de la soci&#233;t&#233; dans son ensemble en observant rapidement l&#8217;un des illustres repr&#233;sentants de la tradition &#233;sot&#233;rique dans le christianisme, Ma&#238;tre Eckhart. Ce grand mystique allemand du 14&#232;me si&#232;cle a eu des ennuis avec les autorit&#233;s de son &#233;poque, accus&#233; de &#171;se rapprocher &#187; de l&#8217;h&#233;r&#233;sie. Nous avons ici une pr&#233;figuration du proc&#232;s de Galil&#233;e, qui a eu lieu deux si&#232;cles plus tard. Malgr&#233; l'&#233;norme diff&#233;rence de perspective entre le mystique et le scientifique, le destin de ces deux personnes avait une caract&#233;ristique en commun : ils ont tous deux &#233;t&#233; confront&#233; &#224; une Eglise qui &#233;tait devenu dure, id&#233;ologique, et dogmatique ; une Eglise qui, surtout, &#233;tait devenu insensible au symbolisme. Les autorit&#233;s eccl&#233;siastiques ne pouvaient plus s'&#233;loigner de l'expression litt&#233;rale de la Bible : pour eux l'histoire de la cr&#233;ation dans la Gen&#232;se n'&#233;tait pas seulement la r&#233;v&#233;lation divine, mais &#233;galement un fait scientifique. Les &#8216;d&#233;couvertes &#8216;de Galil&#233;e se devaient d&#8217;&#234;tre, tout simplement, fausses, la force de cette hypoth&#232;se &#233;tant directement proportionnelle &#224; l'incapacit&#233; de l&#8217;Eglise &#224; 'interpr&#233;ter l'&#201;criture spirituellement Pour reprendre un terme tir&#233; du lexique islamique, l'Eglise avait perdu son sens du <A href="javascript:void(LaunchGlossary('GlossaryItemc06d.html?type=glossary&amp;id=80'))"><I>ta&#8217;wil</I></A>.<STRONG> </STRONG></P></DIV>
+<P><STRONG>La La&#239;cit&#233; en R&#233;action &#224; l&#8217;Eglise Catholique Romaine </STRONG></P>
+<P>Ainsi, la la&#239;cit&#233; est arriv&#233;e &#224; dominer les courants de la philosophie et de la pens&#233;e en g&#233;n&#233;ral, en Occident , en grande partie comme une r&#233;action &#224; un style particulier de religion et d'autorit&#233; religieuse ; C'est une Eglise qui a &#233;t&#233; irr&#233;m&#233;diablement compromise par son propre pass&#233; ; une Eglise qui est devenue elle-m&#234;me un &#233;tat virtuel, avec sa propre hi&#233;rarchie et ses groupes d'int&#233;r&#234;ts ; une Eglise qui a &#233;t&#233; d&#233;valoris&#233; par l&#8217;Inquisition et par des pers&#233;cutions du genre le plus odieux ; une Eglise qui, apr&#232;s la r&#233;forme, a &#233;t&#233; impliqu&#233;e dans une s&#233;rie de guerres de religion et de conflits sectaires paralysants ; et peut-&#234;tre le plus important de tous ,du point de vue de l'histoire intellectuelle, une Eglise dans laquelle la th&#233;ologie dogmatique a marginalis&#233; les points de vue &#233;thiques, spirituels et &#233;sot&#233;riques de la foi chr&#233;tienne et qui donc a vu sa base se vuln&#233;rabiliser par les d&#233;couvertes scientifiques. et &#233;tait donc vuln&#233;rables, &#224; sa base, par les d&#233;couvertes scientifiques.</P>
+<P>Ces derniers, je dirais, ont &#233;t&#233; les principaux facteurs responsables de la repr&#233;sentation de la religion comme l'antith&#232;se de la raison, et qui ont donc donn&#233; lieu aux tendances anti-chr&#233;tiennes radicales du Si&#232;cle des Lumi&#232;res, qui &#224; son tour, a &#233;t&#233; un des fondements de la culture la&#239;que et philosophique de la pens&#233;e occidentale, au sein duquel l'intellect et la religion semblaient avoir pris des chemins divergents et contradictoires.</P>
+<DIV>L'&#201;glise Catholique Romaine a, bien s&#251;r, beaucoup chang&#233;, &#224; l'&#232;re moderne, et &#224; son cr&#233;dit. Elle a reconnu ses erreurs du pass&#233; conduites en son nom. Les musulmans d'aujourd'hui ont beaucoup &#224; apprendre de ce processus. L'histoire de la mont&#233;e de la culture la&#239;que en Occident peut aussi alerter les musulmans, sur les dangers inh&#233;rents aux multiples tentatives de &#171; faire revivre &#187; ou &#171;r&#233;former &#187; l'Islam d&#8217;aujourd&#8217;hui. Malgr&#233; le fait d&#8217;&#234;tre apparemment oppos&#233;s &#224; la " la&#239;cit&#233; Occidentale ", de nombreux mouvements de renouveau prennent eux-m&#234;mes des orientations &#171; la&#239;ques &#187; et ce pour deux raisons principales. Tout d'abord, des efforts qui se concentrent exclusivement sur les relations de pouvoir, sur l'&#201;tat lui-m&#234;me, ou tout simplement sur l'expression sociale de la religion dans l'espace public, et qui peuvent &#234;tre consid&#233;r&#233;s comme autant des tendances &#171; la&#239;ques &#187; qui transportent le contenu spirituel de la religion dans le domaine &#233;tranger de l'agitation politique. Deuxi&#232;mement, la marginalisation d&#233;lib&#233;r&#233;e ou la r&#233;trogradation du symbolisme, de la p&#233;n&#233;tration mystique, de la profondeur spirituelle qui accompagne si souvent l'utilisation de la religion comme une arme politique, est &#233;galement une forme de la&#239;cisation, constituant l&#8217;image miroir d'un &#233;l&#233;ment cl&#233; du processus par lequel le monde occidental a succomb&#233; &#224; la polarisation entre la foi et l'intellect.</DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG>Le Challenge pour les Musulmans</STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>En d'autres termes, le d&#233;fi pour les musulmans d&#8217;aujourd&#8217;hui, qui aspirent &#224; raviver leur foi, est de percevoir les aspects les plus profonds de la religion avec la partie la plus &#233;lev&#233;e de l'intellect. Le contraire de ceci est de mettre l'accent sur les aspects les plus superficielles de la religion avec la partie la plus rudimentaire de l&#8217;intellect, ce qui se traduit par une fixation sur les formes externes de la religion, uniquement par la facult&#233; rationnelle, aid&#233;e par des sentiments passionn&#233;s, sinon enflamm&#233;es. D'autre part, il y a une solidarit&#233; entre l'aspect interne de la religion ( <I>batin</I> ) et l'aspect le plus intime de l'intellect, qui est, de l'intuition spirituelle capable de saisir les r&#233;alit&#233;s ultimes, et de fa&#231;onner ce monde en conformit&#233; avec ces r&#233;alit&#233;s, dans la connaissance claire et indubitable qu'aucune &#171;r&#233;forme&#187; vers l'ext&#233;rieur sociale ne saurait r&#233;ussir sans la "r&#233;forme" spirituelle et morale des &#226;mes individuelles, &#224; commencer par la sienne propre. </DIV>
+<DIV align=center><I></I>&nbsp;</DIV>
+<DIV align=center><I>Dieu ne modifie en rien un peuple,</I></DIV>
+<DIV align=center><I>Avant que celui ne change ce qui est en lui</I></DIV>
+<DIV align=center><I>(Qur&#8217;an, 13:11)</I></DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Intellect et Religion, Est et Ouest</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 28 Feb 2021 14:15:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 06/10/2011&nbsp;16:49&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101186 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:13:33 GMT -->
+</HTML>

@@ -1,0 +1,711 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=104714 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:13:32 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 104714;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only3d2f.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D104714">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article8a1d.html?ContentID=104713">English<li><A href="view_article5698.html?ContentID=104715">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></p><p><A href="view_sorted_articles21da.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=fr">Formation continue</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4c49.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=fr" >Par Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles72ab.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=fr" >Par Auteur</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles695b.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=fr" >Par Titre</A></p><p><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></p><p><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></p><p><A href="view_article7ecf.html?type=cont.currentlang&amp;id=104553&amp;l=fr">Liste de Lecture </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p><p><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Formation Continue</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>&#8216;Le Multiculturalisme et les d&#233;fis que cela pose &#224; l&#8217;&#233;ducation juridique et &#224; la R&#233;solution Alternative des Disputes: La situation des musulmans britanniques&#8217;</strong><br/><strong><DIV><A href="../www.iis.ac.uk/view_person0fc5.html?type=authors&amp;id=17">Mr Mohamed  Keshavjee - PhD (London)</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>Extrait d&#8217;un discours au D&#233;partement des Etudes sur la Paix, Universit&#233; de Bradford, le Royaume Uni, le 6 mai, 2004. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Papers/keshavjee01-200528151117_7055.jpg" xmlns=""></td></tr></tbody></table></p><div><strong>Résumé<br/></strong><BR>Quels d&#233;fis et opportunit&#233;s peut apporter la diff&#233;rence? Comment peut-on respecter la diversit&#233; de ses citoyens sans compromettre l&#8217;int&#233;grit&#233; de ses propres institutions? Explorant la jonction entre la population des musulmans britanniques et la complexit&#233; de la culture internationale et des syst&#232;mes l&#233;gaux, cet article s&#8217;interroge sur la contribution du citoyen d&#8217;un pays au bien-&#234;tre de celui-ci, dans son sens le plus large, et en m&#234;me temps soulever des questions sur la reconnaissance et la justice. Se basant sur son exp&#233;rience personnelle, l&#8217;auteur affirme que ce n&#8217;est plus un simple besoin de comprendre et de s&#8217;&#233;duquer sur ce qui nous entoure, c&#8217;est devenu une n&#233;cessite. L&#8217;immense diversit&#233; du monde Musulman: 1.3 milliard de personnes &#224; travers 57 pays, repr&#233;sente au moins sept &#233;coles principales de Loi, elles m&#234;mes reproduites &#224; un niveau moindre dans les fronti&#232;res du Royaume-Uni. Essayer de comprendre les lois qui gouvernent ces communaut&#233;s culturelles et religieuses est une tache complexe. Trouver des voies pour adapter et respecter les cultures des peuples et les syst&#232;mes l&#233;gaux, en m&#234;me temps, est un plus grand d&#233;fi. En &#233;tudiant des exemples de lois personnelles et familiales, de disputes commerciales, les l&#233;gislations environnementales et les trait&#233;s internationaux, l&#8217;auteur sugg&#232;re d&#8217;adresser les dossiers aussi complexes &#224; un seul organisme: la R&#233;solution Alternative des Disputes.</div><div> </div><div><P class=bodytext><A href="SiteAssets/pdf/multiculturalism.pdf"><IMG height=25 hspace=5 src="WebAssets/site_images/images/pdf_icon.gif" width=25 border=0>T&#233;l&#233;charger la version PDF de l&#8217;article (113 KB)</A></P>
+<P class=bodytext>Mesdames et Messieurs,</P>
+<P class=bodytext>Les Universit&#233;s sont des places importantes pour g&#233;n&#233;rer les nouvelles id&#233;es actuelles, je vous adresse aujourd&#8217;hui cette pens&#233;e, en r&#233;ponse &#224; l&#8217;aimable invitation qui m&#8217;a &#233;t&#233; envoy&#233;e par le professeur Tom Woodhouse. Je voudrais complimenter le D&#233;partement des Etudes sur la Paix pour son programme innovant, qui je crois, sera le premier de ce genre en Europe de l&#8217;Ouest. Dans ce contexte, je voudrais &#233;galement rendre un hommage au Dr Shaun Gregory, au Dr Phillip Lewis et au Dr Margaret Nunnerley pour leurs efforts &#224; diriger le D&#233;partement vers le d&#233;veloppement d&#8217;un centre d&#8217;&#233;tudes qui pourra aider &#224; b&#226;tir un pont sur le foss&#233; entre les traditions intellectuelles Islamiques et Occidentales, en vue d&#8217;adresser des probl&#232;mes humains contemporains, de mani&#232;re plus cr&#233;ative. Avec plus de 37 millions de musulmans vivant dans la sph&#232;re occidentale, vos efforts ne peuvent qu&#8217;aider &#224; b&#226;tir un pont sur le foss&#233; existant entre la communaut&#233; musulmane et les diverses soci&#233;t&#233;s dans lesquelles, elles vivent dans le monde Occidental. C&#8217;est l&#224; que le r&#244;le de l&#8217;actuelle r&#233;solution de conflits du globe prend toute son urgence, si nous voulons pr&#233;venir que l&#8217;intitul&#233; <A href="view_article45d2.html?type=cont.currentlang&amp;id=101122">&#8216;Clash of Civilisations&#8217;</A>, ne deviennent une proph&#233;tie qui se r&#233;alise toute seule comme cela semble malheureusement &#234;tre le cas chaque jour qui passe.</P>
+<P class=bodytext>De r&#233;centes discussions dans la presse relatent une controverse sur la multiculture comme &#233;tant un ph&#233;nom&#232;ne n&#233;gatif, et si cela m&#232;ne vers un apartheid culturel. Mon propre exemple prouve autre chose, mes identit&#233;s vari&#233;es, tout au long de ma vie, ont contribu&#233; positivement sur ma vision du monde et de ses probl&#232;mes. Ils ne m&#8217;ont pas men&#233; vers une compartimentation, mais, m&#8217;ont donn&#233; &#224; la place, une pluralit&#233; de langage dans laquelle je peux m&#8217;exprimer.</P>
+<P class=bodytext>Mon grand p&#232;re, un Indien musulman, n&#233; au Gujarat en Inde, a &#233;migr&#233; en Afrique du Sud en 1890, o&#249; il a commenc&#233; un petit commerce de d&#233;tail &#224; la fin du 19<SUP>i&#232;me</SUP> si&#232;cle. Notre famille est rest&#233;e en Afrique du Sud pendant pr&#232;s de 70 ans. J&#8217;ai d&#8217;abord &#233;t&#233; &#233;duqu&#233; en Afrique du Sud, plus tard au Kenya colonial. Puis, je suis venu en Grande Bretagne en 1960 pour &#233;tudier le droit dans la Cour d&#8217;un Tribunal. Apr&#232;s avoir &#233;t&#233; admis au Barreau &#224; Bar Grays Inn, je suis retourn&#233; au Kenya pour pratiquer le droit. En 1970, suite &#224; l&#8217;expulsion des asiatiques ougandais, je me suis retrouv&#233; au Canada, &#233;tudiant de nouveau le droit, et j&#8217;ai rejoins le Barreau de Ontario, o&#249; j&#8217;ai pratiqu&#233; pendant quelques ann&#233;es. Dans les ann&#233;es 1980, j&#8217;ai &#233;migr&#233; en Europe o&#249; j&#8217;ai abandonn&#233; la pratique formelle du droit, pour travailler avec une organisation internationale, d&#233;di&#233;e au d&#233;veloppement du Tiers Monde. Vers la fin des ann&#233;es 1990, 25 ans apr&#232;s avoir laiss&#233; les &#233;coles de droit, je suis retourn&#233; aux &#233;tudes de droit et ai fait mon LLM &#224; l&#8217;Universit&#233; de Londres. J&#8217;ai fait cela, non dans le but de pratiquer &#224; nouveau le droit, mais en vue de comprendre son r&#244;le dans la soci&#233;t&#233; humaine. Je ne veux pas &#234;tre accus&#233; d&#8217;&#234;tre trop pompeux, si je vous ai parl&#233; de ma formation l&#233;gale, c&#8217;est parce que je suis peut &#234;tre l&#8217;avocat le plus qualifi&#233; qu&#8217;aucun pays n&#8217;a <EM>jamais</EM> eu.</P>
+<DIV class=bodytext>Ce que je vous ai juste relat&#233;, refl&#232;te la r&#233;alit&#233; de notre soci&#233;t&#233; d&#8217;aujourd&#8217;hui. En F&#233;vrier de cette ann&#233;e, le Prince de Galles a pr&#233;sid&#233; &#224; la C&#233;r&#233;monie de Citoyennet&#233; &#224; la Brent Townhall, dans le Londres du nord - la premi&#232;re de ce genre tenue dans ce pays. Parmi les 19 personnes qui sont devenues citoyens de Grande Bretagne, trois &#233;taient Indiens, un Polonais, un Nouveau Z&#233;landais, un Australien, cinq Afghans, deux Kenyans, un Somalien, deux Sri Lankais, un N&#233;palais et un Sud Africain. Ils vivent tous dans un quartier qui est l&#8217;un des plus cosmopolites dans le monde et o&#249; plus de 130 langues sont parl&#233;s. Dans son discours, le Prince a souhait&#233; la bienvenue &#224; toutes ces personnes en mettant l&#8217;accent sur le fait: &#8216;qu&#8217;&#234;tre britannique est une b&#233;n&#233;diction et un privil&#232;ge pour nous tous. J&#8217;ai grand espoir que cette c&#233;r&#233;monie va ajouter quelque chose en plus &#224; l&#8217;importance d&#8217;acqu&#233;rir la citoyennet&#233; britannique et cela va renforcer votre conviction, si un quelconque renforcement est n&#233;cessaire, que vous appartenez &#224; ce pays et y &#234;tes r&#233;ellement les bienvenus.&#8217;</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Aujourd&#8217;hui, je veux explorer avec vous comment nous pouvons &#233;tendre ce sentiment &#8216;d&#8217;appartenance&#8217; et d&#8217;&#8216;accueil&#8217; &#224; diff&#233;rents groupes ethniques au-del&#224; de la C&#233;r&#233;monie de Citoyennet&#233;, pour que quelques unes des m&#233;moires historiques et narratives que beaucoup de personnes portent en elles, puissent faire partie et &#234;tre une pi&#232;ce de r&#233;pertoire d&#8217;exp&#233;rience dans cette r&#233;solution des conflits inter personnes. Par l&#224;, je ne veux pas plaider en bloc et sans discernement en faveur des lois constitu&#233;es de chaque groupe qui sont install&#233;s dans ce pays. Cela n&#8217;est pas possible et l&#8217;on peut tr&#232;s bien argumenter que cela n&#8217;est m&#234;me pas souhaitable. Ce pour quoi, je lance un appel, c&#8217;est une meilleure <EM>compr&#233;hension</EM> de ces lois, aussi bien que des normes de soci&#233;t&#233;s et de cultures avec lesquels vivent ces personnes, pour que ceux qui travaillent dans ce pays &#224; la r&#233;solution des conflits inter culturels, qu&#8217;ils soient avocats ou praticiens de <A onclick="return fnExtLinkWarning();" href="../www.iis.ac.uk/learning/life_long_learning/alternative_dispute_resolution/alternative_dispute_resolution.html" target=_blank><FONT color=#006633>ADR</FONT></A>, soient pleinement inform&#233;s de ces aspects de la vie de ces personnes et ce pour &#234;tre au plus pr&#232;s de leurs besoins. Dans le monde incroyablement interconnect&#233; d&#8217;aujourd&#8217;hui, une telle compr&#233;hension n&#8217;est pas seulement souhaitable mais, il est d&#8217;une extr&#234;me n&#233;cessit&#233; comme faisant parti du sens l&#233;gal et de l&#8217;&#233;ducation des ADR, pour donner au d&#233;veloppement naissant qui prend place sur le terrain tel le conflit des lois, les lois comparatives, la loi publique internationale, ARD, et la pratique et la th&#233;orie de la communication.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Maintenant, je voudrais vous parler des Musulmans en Grande Bretagne comme d&#8217;un exemple, et apr&#232;s une br&#232;ve esquisse de leur association dans ce pays, soulignons quelques uns des probl&#232;mes, et c&#8217;est mon sentiment, dont les gens de loi de ce pays devraient &#234;tre conscient, s&#8217;ils veulent rendre un service plus efficace &#224; leurs concitoyens. Ce type d&#8217; interrogations peut s&#8217;appliquer &#233;galement aux autres communaut&#233;s, quelles soient juives, catholiques, hindous, sikhs, bouddhistes et &#224; toute personne pratiquant une autre religion. Sous le principe d&#8217;une loi priv&#233;e internationale, les personnes g&#233;n&#233;ralement apportent leurs lois personnelles avec eux o&#249; qu&#8217;elles aillent et de nombreux syst&#232;mes l&#233;gaux reconnaissent le r&#233;alit&#233; de cela dans des cas ayant des connections multi &#233;tats. Cela se fait sous les principes de la Loi Priv&#233;e Internationale, plus connue comme la Loi des Conflits.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>La connexion des Musulmans avec les Britanniques remonte &#224; quelques 300 ans quand la Compagnie de l&#8217;Inde de Est recrutait les <EM>lascars</EM> de l&#8217;Assam, du Gujarat, du Bengale, de Sind et du Y&#233;men. Beaucoup de ces personnes se sont install&#233;es dans diff&#233;rents ports de ce pays, et, au 19<SUP>i&#232;me</SUP> si&#232;cle, quelques 3000 lascars visitaient r&#233;guli&#232;rement la Grande Bretagne tous les ans. Suite &#224; l&#8217;ouverture du canal de Suez en 1869, les marins, originaire du Y&#233;men, s&#8217;install&#232;rent en petites communaut&#233;s &#224; Cardiff, Liverpool, Londres, South Shields et Tyneside. Ces marins install&#232;rent des <EM>zawiyas</EM> &#8211; lieus de pri&#232;res et de congr&#233;gation, qui servent &#233;galement de place pour c&#233;l&#233;brer diff&#233;rents rites de passages. Vers la fin du 19<SUP>ieme</SUP> si&#232;cle, beaucoup de Musulmans de l&#8217;Empire Britannique du moment viennent &#233;tudier et s&#8217;&#233;tablir dans ce pays. Parmi ceux, tr&#232;s proches des Anglais il y avait son Altesse l&#8217; Aga Khan, Sir Sultan Muhammad Shah qui plus tard devient le Pr&#233;sident de la Ligue des Nations, l&#8217;Honorable Syed Ameer Ali &#8211;Premier Juriste et Conseiller Priv&#233; en Grande Bretagne, Abdullah Yusuf Ali, un des traducteurs de Saint Coran et Muhammad Marmaduke Pickthall. Vers 1890, Mohammad Ali Jinnah, le fondateur du Pakistan moderne, a lu des lois &#224; l&#8217;Honorable Soci&#233;t&#233; de Lincoln&#8217;s Inn, o&#249; aujourd&#8217;hui, il a le titre de Honorable Magistrat. En 1910, un groupe de Musulmans rencontre &#224; Londres sous l&#8217;autorit&#233; de son Altesse l&#8217;Aga Khan, <A href="view_person42de.html?type=auth&amp;id=71">Sir Sultan Muhammad Shah</A>, et leurs efforts ont permis, l&#8217;&#233;tablissement de la premi&#232;re mosqu&#233;e dans ce pays. Nous avons parmi nous aujourd&#8217;hui, la pr&#233;sence du distingu&#233; acad&#233;micien sur ce sujet, le Dr Philip Lewis, dont l&#8217;influant travail sur, <EM>Islamic Britain</EM>, se r&#233;f&#232;re &#224; ces d&#233;veloppements, tr&#232;s accessibles. En fait, son travail se r&#233;v&#232;le tr&#232;s pr&#233;cieux pour mon propre doctorat en R&#233;solution de Conflit, qui est en cours.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>La plus grande affluence de Musulmans en Grande Bretagne a pris place vers 1950 et a eu un &#233;lan suppl&#233;mentaire avec l&#8217;Acte des Immigrants du Commonwealth de 1962, associ&#233;e avec le d&#233;veloppement des pays du Subcontinent. Les Musulmans, qui &#224; l&#8217;origine venaient dans ce pays avec l&#8217;id&#233;e de retourner dans leurs pays d&#8217;origine, vers 1960, ont chang&#233; leurs vues et ont d&#233;cid&#233;, en r&#233;sultat &#224; ce d&#233;veloppement, de faire de la Grande Bretagne, leurs r&#233;sidence <EM>permanente</EM>, cr&#233;ant pour eux-m&#234;mes &#8216;un espace pour l&#8217;Islam&#8217; dans ce pays, sous forme de nouvelles institutions. Lors d&#8217;un r&#233;cent recensement, il a &#233;t&#233; estim&#233; qu&#8217;il y a aujourd&#8217;hui 1,8 millions de Musulmans en Grande Bretagne et il n&#8217; y a pas de doutes l&#224;-dessus, Bradford constitue aujourd&#8217;hui, l&#8217;une des plus grande concentration de Musulmans en Grande Bretagne.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Avec ce court rappel, il devient important pour quiconque impliqu&#233; dans la r&#233;solution de Conflit, que ce soit au niveau de la loi ou de la R&#233;solution Alternative de Dispute, d&#8217;avoir une id&#233;e de ce que les Musulmans ont apport&#233; &#224; ce pays, par le biais de leurs lois religieuses aussi bien que par leurs normes culturelles et leurs pratiques sociales. Ce n&#8217;est pas l&#8217;endroit pour un discours sur la Loi islamique, mais en bref rappel, il est important de dire, que le monde Musulman, comprenant quelques 1,3 milliard de personnes dans quelques 57 pays du Monde, n&#8217;est pas un monolithe. Il s&#8217;&#233;tend depuis les &#238;les tropicales de l&#8217;Indon&#233;sie jusqu&#8217;aux rivages d&#233;chiquet&#233;s de l&#8217;Atlantique, au Maroc. Cette approche g&#233;ographique, approximative, ne capture pas totalement la diversit&#233; des pays dans le monde dans lesquels vivent les Musulmans, incluant la p&#233;ninsule Arabique, le sous continent Indien, l&#8217;Asie de Sud Est, l&#8217; Europe Oriental, l&#8217;Asie Centrale, l&#8217;Afrique de l&#8217;Ouest et de nombreuses &#238;les tel que les Philippines, les Maldives, Sri Lanka et Maurice, sans mentionner les pays du monde Occidental. La Loi islamique, dans un sens ou dans un autre, influence leurs vies quotidiennes. Aujourd&#8217;hui, il y a sept &#233;coles de Loi classique islamique qui s&#8217;appliquent aux Musulmans. Il y a quatre &#233;coles <A onclick="return LaunchGlossary(this.href);" href="GlossaryItema9e4.html?type=glossary&amp;id=82" target=_blank>Sunni</A>, i.e. l&#8217;&#233;cole Hanafi, l&#8217;&#233;cole Hanbali, l&#8217;&#233;cole Maliki l, l&#8217;&#233;cole <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem96f5.html?type=glossary&amp;id=104" target=_blank>Shafi&#8216;i</A>, et trois &#233;coles <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem9930.html?type=glossary&amp;id=95" target=_blank>Shi&#8216;i</A>, la <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem0f94.html?type=glossary&amp;id=220" target=_blank>Ithna &#8216;Ashari</A>, la <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem85f0.html?type=glossary&amp;id=40" target=_blank>Zaydi</A> et l&#8217;&#233;cole <A onclick="return LaunchGlossary(this.href);" href="GlossaryItemd2ed.html?type=glossary&amp;id=224" target=_blank>Ismaili</A>.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Pour les Musulmans, le Saint Coran est la premi&#232;re source de loi par excellence, suivi par la <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem3269.html?type=glossary&amp;id=83" target=_blank><EM>sunna</EM></A> du Saint Proph&#232;te (que la paix de Allah soit sur lui). Sous les principes de m&#233;thodologie l&#233;gale, ces sources sont compl&#233;t&#233;es par la <EM>ijma&#8216;</EM> (consensus) et la <EM>qiyas</EM> (raisonnement par analogie). Pour un Musulman Shi&#8216;a, le r&#244;le de l&#8217;interpr&#233;tation appartient d'abord &#224; leurs <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem6461.html?type=glossary&amp;id=228" target=_blank><EM>imams</EM></A><EM> </EM>et l&#224; o&#249; cela s&#8217;applique, &#224; ceux qui sont responsable des interpr&#233;tations. Diff&#233;rentes communaut&#233;s sont arriv&#233;s avec leur propre entendement de, comment les principes &#233;nonc&#233;s dans le Coran et dans la <EM>sunna</EM> doivent &#234;tre appliqu&#233;s dans leurs vies de tous les jours, &#224; travers la m&#233;diation de la loi. Cette compr&#233;hension, connue sous le nom de <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem6cad.html?type=glossary&amp;id=267" target=_blank><EM>fiqh</EM></A>, constitue la jurisprudence, qui gouverne les diff&#233;rentes &#233;coles Musulmanes d&#8217;interpr&#233;tation.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Le Saint Coran Chapitre 4, verset 35, d&#233;clare:</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="10%"></TD>
+<TD>Si tu redoutes une br&#232;che entre eux [mari et femme], nomme deux arbitres, l&#8217;un de sa famille &#224; lui et l&#8217;autre de sa famille &#224; elle. S&#8217;ils souhaitent la paix, Allah va faire leurs conciliations. Car Allah poss&#232;de tout le savoir et &#224; la connaissance de toute chose.</TD>
+<TD width="10%"></TD></TR></TBODY></TABLE>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>Le Saint Coran, &#224; diff&#233;rents endroits, se r&#233;f&#232;re au principe de r&#233;solution &#224; l&#8217;amiable des disputes, appelant les parties en conflit &#224; pardonner car le pardon fait grandir et apporte &#224; celui qui pardonne un tr&#232;s grand b&#233;n&#233;fice spirituel. L&#8217;exemple du Saint Proph&#232;te (que la paix de Allah soit sur lui) porte un t&#233;moignage &#233;loquent sur son respect du concept de compromis, de r&#233;conciliation, et de pardon. Il y a une histoire qui raconte que: chaque jour, quand il allait &#224; son travail, il passait sous le balcon, d&#8217;une femme qui vidait sa poubelle sur lui, pour marquer son d&#233;dain. Le Proph&#232;te ne disait mot, mais continuait son chemin vers sa destination. Un jour, il prit la m&#234;me route et fut intrigu&#233; de noter que l&#8217;incident ne se reproduisait point. Il s&#8217;enqu&#238;t de la femme et il lui fut r&#233;pondu qu&#8217;elle &#233;tait malade. Il grimpa les escaliers de l&#8217;endroit o&#249; elle habitait et r&#233;alisa &#224; quel point elle &#233;tait malade, lui offrit &#224; boire de l&#8217;eau, la soigna et lui pardonna. L&#8217;histoire juridique islamique a de nombreux exemples d&#8217;une telle magnanimit&#233; du c&#339;ur et de compassion de l&#8217;esprit.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Aider &#224; r&#233;soudre les conflits en Islam a une tr&#232;s grande importance. Cela r&#233;sonne avec l&#8217;enseignement du Calife &#8216;Umar aussi bien qu&#8217;avec celui du calife-<EM>imam</EM> &#8216;Ali. Il est sur un pied d&#8217;&#233;galit&#233; avec la pri&#232;re et trouve une r&#233;sonance dans les pratiques des tribunaux musulman. D&#8217;apr&#232;s Richard Jennings, les tribunaux Ottoman Kaiseri avaient des fonctionnaires connus sous le nom de muslihun, d&#8217;apr&#232;s le mot <EM>sulh</EM> ou <EM>sullah</EM>, celui qui fait les n&#233;gociations. Souvent, ces <EM>muslihun</EM> ont r&#233;solu des disputes, et dans la meilleure tradition de philanthropie islamique et de compassion, ils l&#8217;ont fait de mani&#232;re anonyme, sans rechercher un quelconque cr&#233;dit, c&#233;l&#233;brit&#233;, ou accolade. Ces principes et pratiques, qui trouvent leurs sources dans la pens&#233;e juridique islamique, se retrouvent dans l&#8217;expression de la vie de beaucoup de soci&#233;t&#233;s musulmanes actuelles, aussi bien que dans les lois sur les personnes de diff&#233;rents pays musulmans, ou la r&#233;conciliation est un proc&#233;d&#233; obligatoire et l&#8217;un de ceux qui doit &#234;tre suivi avant qu&#8217;on ne puisse accorder un divorce juridique.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>D&#8217;un point de vue pratique alors, on doit comprendre quelles sont les diff&#233;rentes sortes de probl&#232;mes qu&#8217;un Musulmans doit affronter en terme de lois et de r&#233;solution de conflit quand il ou elle arrive fra&#238;chement dans ce pays. Cependant, cela n&#8217;est pas une liste exhaustive, il y a en premier, le fait que le mariage de la personne, c&#233;l&#233;br&#233; dans son pays d&#8217;origine, soit reconnu par les lois du Royaume-Uni. Autant ce n&#8217;est pas un probl&#232;me essentiel lors de son arriv&#233;e dans ce pays, mais il peut certainement le devenir dans le cas ou il ou elle souhaite divorcer, et qu&#8217;il ou elle veut invoquer l&#8217;assistance des tribunaux du Royaume-Uni. La deuxi&#232;me question &#224; se poser serait: est ce que la somme contractuelle mentionn&#233;e dans le contrat de mariage, connue comme <EM>mehr</EM>, est valable aux yeux des lois de ce pays? Et, si oui, serait ce <EM>applicable</EM>? L&#8217;autre question qui va jaillir est, que si le divorce est accord&#233; par les tribunaux du Royaume-Uni, le d&#233;cret sera t&#8217;il valable selon les lois du pays d&#8217;origine de la personne? Encore plus important, ce d&#233;cret sera t-il reconnu par sa communaut&#233; au Royaume comme &#233;tant un divorce &#8216;Islamique&#8217; en cas de remariage? Pour les Musulmans, qui ont v&#233;cu dans ce pays depuis un certain temps, la reconnaissance de leurs <EM>c&#233;r&#233;monies</EM> de mariage devient importante. Que dire sur des questions telles que <EM>iddat</EM> &#8211; cette p&#233;riode d&#8217;attente qui est obligatoire sous la loi islamique, avant qu&#8217;une femme ne puisse se remarier et pendant laquelle elle a le droit d&#8217;&#234;tre entretenue? Que pensez vous des principes des gardes pr&#233;ventives et d&#8217;entretien, et de l&#8217;adh&#233;sion au Trait&#233; International sur ces questions, sous le principe de la convention de La Hague de 1980 sur l&#8217;enl&#232;vement des enfants. Que se passe t-il si l&#8217;un des parti enl&#232;ve l&#8217;enfant de la juridiction et part vivre dans un autre pays, et ce en privant l&#8217;autre parti des droits de visite ou de garde?</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Quand la jurisprudence se prononce sur l&#8217;un de ces cas, j&#8217;admets que nous n&#8217;avons pas trop &#224; y aller. Par exemple, en ce qui concerne le <EM>mehr</EM>, le seul cas rapport&#233; dont je suis au fait est celui du cas de la division Queen Bench, cas de &#8216;Shahnaz versus Rizwan&#8217;, o&#249; la cour a trait&#233; la somme comme un montant contractuel et a d&#233;cr&#233;t&#233; son paiement comme &#233;tant une clause dans l&#8217;&#233;tablissement du contrat, prenant enti&#232;rement conscience du caract&#232;re changeant de la soci&#233;t&#233; britannique, o&#249; le multi culturisme &#233;tait d&#233;j&#224; une caract&#233;ristique importante. Depuis lors, il n&#8217;y a pas eu beaucoup d&#8217;autres cas rapport&#233;s, cela ne veut pas dire que cette probl&#233;matique n&#8217;en deviendra pas une lors d&#8217;un conflit entre personnes. En fait, un cas r&#233;cent, non rapport&#233;, connu sous le nom de &#8216;Ali et Ali&#8217; fut plaid&#233; pr&#232;s de quatre ans auparavant et la Cour avait octroy&#233;e &#224; l&#8217;&#233;pouse le paiement du <EM>mehr</EM> &#233;tabli dans le contrat, moins une livre. Pourquoi la femme a &#233;t&#233; priv&#233; de cette livre, est encore un myst&#232;re. Le fait que le Tribunal n&#8217;a pas souhait&#233; &#234;tre per&#231;u comme appliquant un trait de la loi musulmane mais &#224; la place, a pr&#233;f&#233;r&#233; donner le relief &#224; la base d&#8217;un principe de contrat, reste des sp&#233;culations l&#233;gales. Tout cet aspect de la loi m&#233;rite de plus grandes recherches, afin d&#8217;explorer surtout, la nature contractuelle des mariages musulmans et de leur intention l&#233;gales d&#8217;apr&#232;s l&#8217;injonction coranique qui dit &#8216;Donner aux femmes leur <EM>mehr</EM>&#8217;. Le caract&#232;re saint d&#8217;un contrat dans la loi islamique, et la dimension de la loi priv&#233;e internationale de cet &#233;l&#233;ment dans le contrat d&#8217;un mariage musulman, requiert de plus amples recherches. Je me suis souvent pos&#233; des questions: o&#249; un juriste anglais peut il s&#8217;adresser pour avoir des clarifications sur ce genre de questions?</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Au niveau de l&#8217;ADR - particuli&#232;rement en rapport avec l&#8217;arbitrage, et bien sur les contrats commerciaux &#8211; dans un monde globalis&#233;, une bonne connaissance de comment op&#232;rent les lois musulmanes, serait cruciale pour quiconque serait impliqu&#233; dans la banque, l&#8217;assurance des contrats de pr&#234;ts syndiqu&#233;s, des contrats d&#8217;agences et de distributions avec des institutions dans le monde Musulman. Il serait important pour les avocats de ces pays de savoir au moins, quelles sont les lois op&#233;rantes, et comment ces lois se r&#233;f&#232;rent aux constitutions de ces pays, ce qui souvent permet de retracer quelles sont les sources de ces lois, et ainsi en cas de conflit internes dans les lois, ils pourraient avoir conscience de comment le cas peut &#234;tre susceptible d&#8217;&#234;tre trait&#233;. A ce niveau, permettez moi de proposer, qu&#8217;une connaissance de la <A onclick="return LaunchGlossary(this.href);" href="GlossaryItem1d00.html?type=glossary&amp;id=98" target=_blank><EM>shari&#8216;a</EM></A> serait primordiale. Pour faire &#233;cho aux sentiments du Professeur William Ballantyne, un ami &#224; l&#8217;Ecole des Etudes Orientales et Africaines, tout le domaine de la shari&#8216;a n&#233;cessite une meilleure compr&#233;hension &#224; cause du monde interconnect&#233; d&#8217;aujourd&#8217;hui et une ignorance &#224; ce sujet pourrait &#234;tre pr&#233;judiciable.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Au niveau de l&#8217;arbitrage commerciale, il serait important de connaitre quels pays musulmans adh&#233;rent &#224; la convention de New York, et comment les principes d&#8217;arbitrage internationaux r&#233;unis dans les r&#232;glements l&#8217;UNCITRAL, les r&#232;gles de la chambre de commerce internationale, aussi bien que la convention de New York, fonctionnent dans la r&#233;alit&#233;, en juxtaposition &#233;troite avec la loi d'arbitrage et les principes suivis en Grande-Bretagne. Le cas s&#233;minal de l'arbitrage entre Aramco et l&#8217;Aminoil sur les contrats de concessions de p&#233;trole avec les diff&#233;rents pays arabes dans le dernier quart du 20<SUP>i&#232;me</SUP> si&#232;cle, r&#233;unissent quelques aper&#231;us fascinants qui attendent toujours d&#8217;&#234;tre trait&#233;s en profondeur. Ces recherches, sans aucun doute illumineraient toute cette zone d&#8217;&#233;tude.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Dans le domaine de la loi internationale, il serait important de savoir quelles restrictions ont &#233;t&#233; enregistr&#233;es par les pays musulmans aux divers trait&#233;s internationaux, comprendre si ce ph&#233;nom&#232;ne est particulier au Monde Musulman ou non aiderait &#224; &#233;clairer le discours et montrer le ph&#233;nom&#232;ne dans sa dimension internationale.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Dans le domaine de la loi environnementale, beaucoup de choses peuvent &#234;tre apprises par les injonctions du Coran qui impose &#224; chaque Musulman d&#8217;utiliser le patrimoine de la terre en tant qu&#8217;administrateur pour ne pas gaspiller, mais, au lieu de cela l&#8217;augmenter, pour l&#8217;usage de futures g&#233;n&#233;rations. Il serait instructif d&#8217;explorer comment ces principes s&#8217;appliquent dans la vie de tous les jours des musulmans et dans les lois et les cadres de normalisation de leurs pays.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Tournons nous maintenant vers le domaine de l&#8217;ADR, peut &#234;tre qu&#8217;une d&#233;finition courte et t&#233;l&#233;graphique de ce mouvement, maintenant dans le discours ne serait pas d&#233;cal&#233;e.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>La terme ADR, qu&#8217;un juriste cynique a intitul&#233; comme &#8216;baisse Alarmante Des Revenus&#8217; repr&#233;sente r&#233;ellement la R&#233;solution Alternative de Conflit. C&#8217;est un mouvement social qui a gagn&#233; de la force dans les ann&#233;es 60 aux Etats-Unis, d&#251; &#224; un certain nombre de raisons, l&#8217;une est le souci de l&#8217;acc&#232;s de la justice pour tous. D&#8217;une mani&#232;re primordiale, aujourd&#8217;hui, le souci semble se centrer sur l'incapacit&#233; des syst&#232;mes judiciaires civiles, du monde entier, &#224; traiter les nombreux cas qui leurs tombent dessus tous les ans. </DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Dans quelques pays, l&#8217;ADR, n&#8217;a rien de nouveau, bien que sous sa forme actuelle, elle semble &#234;tre un ph&#233;nom&#232;ne r&#233;cent, on la retrouve dans beaucoup de confessions et de cultures. En Islam, il est fait r&#233;f&#233;rence &#224; l&#8217;arbitrage du Saint Coran. La Torah et la Bible sont &#233;galement remplies de telles r&#233;f&#233;rences. Mais ces principes ne se limitent pas seulement aux confessions abrahamiques. On les retrouve &#233;galement dans les principes de l&#8217;Hindouisme, dans les cultures de la Chine ancienne, dans les traditions des soci&#233;t&#233;s africaines et dans les pratiques des diverses tribus de l&#8217;Am&#233;rique du Nord aussi bien que dans les Iles Polyn&#233;siennes. L&#8217;Etre Humain, depuis des si&#232;cles a pratiqu&#233; ce que l&#8217;on appelle aujourd&#8217;hui l&#8217;ADR.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Je me suis souvent r&#233;f&#233;r&#233; &#224; l&#8217;exemple du Mahatma Gandhi, qui &#233;tait d&#8217;abord all&#233; en Afrique du Sud en 1893, &#224; la requ&#234;te d&#8217;un marchand musulman gujar&#226;t&#238; de Porbandar en Inde. Gandhi fut commissionn&#233; pour aider &#224; monter un dossier juridique, mais apr&#232;s un court s&#233;jour dans le pays, et r&#233;alisant que son client avait un pass&#233; de marchand et que son adversaire &#233;tait de la m&#234;me communaut&#233;, il s&#8217;est bas&#233; sur son propre h&#233;ritage du syst&#232;me de <EM>panch&#226;yat</EM> de l&#8217;Inde et l&#8217;a combin&#233; avec les principes du r&#232;glement n&#233;goci&#233; inh&#233;rent &#224; la culture religieuse de son client. Il est parvenu &#224; r&#233;gler le cas en dehors de la cour et de ses proc&#233;d&#233;s. Pour le citer, &#8216;j&#8217;ai gagn&#233; mon &#226;me&#8217;. Cent ans, apr&#232;s le peuple de l&#8217;Afrique du Sud en appellent &#224; leurs dirigeants, F. W. De Klerk et Nelson Mandela, pour chercher des voies qui apporteront des solutions pacifiques pour sauver leur pays bien aim&#233; d&#8217;un carnage. J&#8217;ai souvent compar&#233; le Mahatma Gandhi et Nelson Mandela comme deux c&#244;t&#233;s de l&#8217;&#233;tag&#232;re de l&#8217;ADR en Afrique au 20<SUP>i&#232;me</SUP> si&#232;cle.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Fondamentalement, ce qui se dit est que, si deux ou plus de personnes sont impliqu&#233;s dans un conflit, c&#8217;est &#224; <EM>eux et eux seuls</EM>, de n&#233;gocier une solution avec l&#8217;aide d&#8217;un parti tiers pour les aider &#224; en faciliter les proc&#233;dures. C&#8217;est &#224; eux et eux seuls de surveiller son application. Le contr&#244;le de la question reste toujours aux mains des parties. Il y a cependant des variantes sur ce th&#232;me basic.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>J&#8217;ai le sentiment profond que la loi et l&#8217;ADR ne sont pas deux processus ind&#233;pendants, discrets et distincts, en d&#233;pit des diff&#233;rents principes solides mis en place que chacun d&#8217;eux &#233;pouse en tant que sa croyance fondamentale &#8211; la premi&#232;re &#233;tant en grande partie adversative et l&#8217;autre, visant &#224; &#233;tablir le consensus et donner aux parties, le droit de contr&#244;ler l&#8217;issue de leur accord et de diriger son application.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Les n&#233;gociations, comme l&#8217;ont toujours montr&#233; Mnookin et Kornhauser, prennent toujours place &#8216;&#224; l&#8217;ombre de la loi&#8217;. La loi est toujours mena&#231;ante dans le fond. On ne peut pas l&#8217;ignorer, mais on peut ne pas vouloir &#234;tre sur la voie de l&#8217;adversit&#233;. L&#8217;ADR est un processus <EM>volontaire</EM>. &#192; un moment quelconque, l&#8217;une ou l&#8217;autre des parties peut se retirer du processus et l&#224;, il restera toujours la voie l&#233;gale, heureusement ou autrement, qui restera la seule alternative. C&#8217;est l&#224; que l&#8217;on doit explorer d&#8217;avantage, voir si les proc&#233;dures de l&#8217;ADR sont suivies par les diff&#233;rentes communaut&#233;s musulmanes en Grande Bretagne et quelles lois constituent des points de r&#233;f&#233;rences o&#249; les politiques de n&#233;gociations prennent places. Est que ceux sont les lois religieuses, la loi coutumi&#232;re, la loi de la Grande Bretagne, ou dans les faits, les diff&#233;rentes lois des pays d&#8217;origine des parties? Cela peut &#234;tre un amalgame de tout cela. Et je suspecte que ce soit la loi; mais cela doit &#234;tre prouv&#233; de mani&#232;re empirique.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Il est &#233;galement important de savoir comment les communaut&#233;s musulmanes voient l&#8217;ADR sous sa forme actuelle en Grande-Bretagne. Et aussi pourquoi ils ne se servent pas des services disponibles, est ce que ces principes r&#233;sonnent avec leurs propres principes de r&#233;solutions de disputes? Si non, en quoi sont-ils diff&#233;rents?</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Les communaut&#233;s musulmanes en Grande Bretagne font face aujourd&#8217;hui &#224; quelques probl&#232;mes similaires &#224; ceux auxquels font face normalement des communaut&#233;s diasporiques dans d&#8217;autres parties du monde. Ce sont des probl&#232;mes de transmission inter g&#233;n&#233;rationnelle et l&#8217;impact, l&#8217;inculture sur des notions traditionnelles d&#8217;autorit&#233; et de responsabilit&#233;. Souvent, ces communaut&#233;s sont bloqu&#233;es &#224; l&#8217;id&#233;e d&#8217;amener leurs probl&#232;mes &#224; des personnes ext&#233;rieures &#224; leur pass&#233; culturel avec la peur d&#8217;&#234;tre jug&#233; de fa&#231;on injuste et sur des bases de normes et de coutumes, souvent diff&#233;rents des leurs. Parfois, les gens ont peur d&#8217;entrer dans un st&#233;r&#233;otype, qui indique, &#8216;nous connaissons les probl&#232;mes auxquels vous voulez faire face. En fait, nous l&#8217;avons m&#234;me pr&#233;vu, mais vous n&#8217;&#233;tiez pas pr&#234;ts &#224; faire face &#224; ces r&#233;alit&#233;s.&#8217; La culture actuelle d'islamophobie, malheureusement, n&#8217;aide pas. En fait, elle m&#232;ne &#224; une autre forme d&#8217;ali&#233;nation de ces communaut&#233;s par rapport &#224; la culture du pays d&#8217;accueil.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Souvent, la m&#233;diation culturelle n&#8217;est pas facile pour ces communaut&#233;s. Tous les jours dans leur vie, leurs enfants doivent se livrer &#224; la m&#233;diation diasporique. En tant que jeune m&#233;diateur musulman, ayant grandi dans ce pays, je dois &#234;tre apte &#224; l&#8217;appliquer. &#8216;Je dois op&#233;rer chaque jour dans trois cadres de vie psychologiques et mentaux diff&#233;rents les uns des autres: le monde de mes grands-parents; le monde de mes parents et le monde de mes semblables. Et &#224; chaque occasion, je dois &#234;tre conscient dans quel univers je suis en train d&#8217;op&#233;rer car les hi&#233;rarchies du lib&#233;ralisme et de l&#8217;autorit&#233; sont diff&#233;rentes dans chacun de ces contextes. Je sais que je jongle d&#8217;un cadre de vie &#224; l&#8217;autre au moins six fois par jour&#8217;.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Mon sentiment est, que la confiance r&#233;side au c&#339;ur des relations qui ont besoin d&#8217;&#234;tre renforc&#233;, si nous voulons que les Musulmans en Grande Bretagne accueillent chaleureusement l&#8217;ADR. La construction de la confiance prendra du temps &#224; se d&#233;velopper. Quelque soit l&#8217;institution qui souhaite travailler avec ces communaut&#233;s, elle devra prouver qu&#8217;elle est sensible culturellement &#224; ces aspects de leur vie et est capable de s&#8217;engager dans le processus de la construction de la confiance. Ces discours occasionnels qui exaltent les vertus de l&#8217;ADR, seuls, ne suffiront pas. Cela va n&#233;cessiter l&#8217;engagement des principaux d&#233;positaires des diverses communaut&#233;s en un effort <EM>prolong&#233;</EM> et <EM>soutenu</EM> de construction de confiance, autour d&#8217;une vraie compr&#233;hension et d&#8217;un &#233;change d&#8217;id&#233;e.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>L&#8217;ADR, tel que format&#233;e pour une r&#233;solution de probl&#232;mes, dans un contexte occidental et individualiste, ne peut &#234;tre facilement transpos&#233;e sur une communaut&#233; ou des communaut&#233;s qui sont pluralistes par nature et qui embrassent des valeurs communautaires et &#233;thiques. Dans de telles communaut&#233;s, les perceptions et les inqui&#233;tudes de la famille &#233;tendue, les a&#238;n&#233;s de la communaut&#233;, et en fait tout ce qui est connect&#233; &#224; la communaut&#233; doit &#234;tre pris en compte.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Dans nos propres programmes de formation de l&#8217;ADR, dans la communaut&#233; musulmane ismailie du monde entier, nous avons propos&#233; un concept de la &#8216;communaut&#233; sculpt&#233;e&#8217; dans lequel nous demandons,&nbsp;&#8216;qui dans la communaut&#233; est susceptible d'avoir un r&#233;el int&#233;r&#234;t dans les r&#233;sultats d&#8217;un conflit particulier?&#8217; Nous formons des petits groupes de ces personnes et leur demandons si les &#233;tapes du processus que nous suivons prennent en compte leurs divers soucis dans la communaut&#233;. &#201;videmment, nous faisons ceci avec le souci du maintien de la plus grande confidentialit&#233; des parties. Ce que nous avons trouv&#233;, est que ces groupes sont capables de cadrer leurs inqui&#233;tudes tr&#232;s succinctement et peuvent identifier clairement les inqui&#233;tudes et les questions appropri&#233;es. Souvent, ils proposent des approches innovantes et cr&#233;atrices, ce qui sont ancr&#233;es dans l&#8217;&#233;thique de la foi, et qui r&#233;sonnent aussi bien avec les parties qu&#8217;avec d&#8217;autres personnes dans la communaut&#233;.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>G&#233;n&#233;ralement, les soci&#233;t&#233;s musulmanes ont un grand sens des relations - un sens d&#8217;inter relations par lequel les gens sont entrelac&#233;s dans un r&#233;seau de rapports quotidiens.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Pour citer Michelle LeBaron, quand elle se r&#233;f&#232;re &#224; la r&#233;solution des disputes dans une culture collective:</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<TABLE class=bodytext width="100%">
+<TBODY>
+<TR>
+<TD width="10%"></TD>
+<TD>Chaque personne est l&#8217;&#233;quivalent d&#8217;un n&#339;ud dans un grand filet de p&#234;che avec ses n&#339;uds complexes et entrelac&#233;s. Chaque personne est reli&#233;e &#224; plusieurs autres. Quand tous les n&#339;uds sont fermement attach&#233;s les uns aux autres, le filet fait son travail efficacement. Si l&#8217;un des n&#339;uds est trop proche ou trop serr&#233;, le filet tout entier est d&#233;faillant. Chaque n&#339;ud, chaque relation, a un effet sur l&#8217;ensemble. S&#8217;il y a un trou ou un espace dans le filet, le filet n&#8217;est plus op&#233;rationnel... Les filets doivent &#234;tre v&#233;rifies souvent, &#234;tre soign&#233;s d&#233;licatement, et si des trous apparaissent, ils doivent &#234;tre r&#233;par&#233;s.</TD>
+<TD width="10%"></TD></TR></TBODY></TABLE>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Dans un tel r&#233;seau, on doit se demander, comment les conflits sont actuellement conceptualis&#233;s et comment leur r&#233;solution doit prendre place maintenant? Qui sont les principaux tenants et comment la prise d&#8217;une quelconque approche peut engager tous les acteurs n&#233;cessaires &#224; la r&#233;solution de ce probl&#232;me? Car si ces personnes ne font pas partie de la solution, ils vont continuer &#224; rester une partie du probl&#232;me.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Le conflit peut &#234;tre un ph&#233;nom&#232;ne de transformation qui peut guider vers une r&#233;g&#233;n&#233;ration spirituelle des parties Une R&#233;solution de Conflit Transformative peut &#234;tre un chemin pour y aller afin que cela puisse se faire, il faut que chaque cours enseign&#233; dans une universit&#233; comme la votre soit capable de donner aux candidats le panorama le plus large de l&#8217;Islam et des soci&#233;t&#233;s musulmanes.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>C&#8217;est ici qu&#8217;une bonne compr&#233;hension de la foi, sa diversit&#233;, dans son unit&#233; fondamentale et ses expressions plurielles dans l&#8217;interpr&#233;tation, philosophie, loi, art, litt&#233;rature, architecture, l&#8217;histoire et la musique devient importante.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Si votre Universit&#233; est engag&#233;e dans cette cause pour cr&#233;er une meilleure compr&#233;hension entre les cultures, en appliquant leur &#233;rudition &#233;thiquement, et en vue de d&#8217;apporter une compr&#233;hension authentique, je sens que cela apportera une contribution remarquable dans ce domaine, dans un si&#232;cle qui est malheureusement caract&#233;ris&#233; par des conflits rampants et des clashs du &#224; l&#8217;ignorance.</DIV>
+<DIV class=bodytext>&nbsp;</DIV>
+<DIV class=bodytext>Et c&#8217;est l&#224; que vous serez capable de faire la diff&#233;rence n&#233;cessaire et de remplir la promesse premi&#232;re de l&#8217;ADR comme d&#8217;un &#233;l&#233;ment de transformation dans l&#8217;&#233;volution humaine &#224; travers le traitement des conflits et leurs r&#233;solutions appropri&#233;es.</DIV>
+<P class=bodytext>Merci.</P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - &#8216;Le Multiculturalisme et les d&#233;fis que cela pose &#224; l&#8217;&#233;ducation juridique et &#224; la R&#233;solution Alternative des Disputes: La situation des musulmans britanniques&#8217;</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 12 May 2019 13:27:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 13/01/2010&nbsp;11:45&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=104714 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:13:32 GMT -->
+</HTML>

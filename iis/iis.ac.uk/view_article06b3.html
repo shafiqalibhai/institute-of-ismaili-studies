@@ -1,0 +1,649 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112442 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:09:29 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 112442;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" height="115" width="779" class="banner" alt="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" src="WebAssets/Site_Images/header/ResearchandPublication_2.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/ResearchandPublication_2.jpg','WebAssets/Site_Images/header/Research%20And%20Publications.jpg');
+				var descriptions = new Array('The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies','An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only1725.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D112442">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article7d55.html?ContentID=112443">Français</A></li><li><A href="view_article674b.html?ContentID=112444">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article49e3.html?ContentID=112445">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_articleb3c6.html?ContentID=112446">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Governing Diverse Communities: A Medieval Muslim Illustration</strong><br/><strong></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div><div><b><a href="../www.iis.ac.uk/view_persona642.html?Page=1&amp;PerPage=5&amp;type=auth&amp;id=5">Dr Shainool Jiwa</a></b></div>This is an edited version of an article which first appeared on 8<sup>th</sup> March 2011 in <i><a onclick="return fnExtLinkWarning();" href="http://www.theperspective.org/" target="_blank">The Perspective</a></i>, an article-based website providing a forum for the discussion of critical issues in the world of politics, culture and the arts. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Academic%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImagef2cd.html?path=/WebAssets/Large/Fatimid-Empire-10th-century-m_w2.gif&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"><img style="MARGIN: 10px" border="0" alt="The Mediterranean region during the reign of the Fatimid Imam-caliph al Mu'izz. Source:  Towards A Shi'i Mediterranean Empire translated by Dr Shainool Jiwa IIS Publication 2009" src="WebAssets/Small/Academic%20Articles/Fatimid%20Empire%2010th%20century.jpg" width="160" height="113"></a>The unfolding of the recent, people-led demonstrations across the Middle East brings to the fore the perennial question of what constitutes good governance and how the quest for good order is to be fulfilled. One way to respond to this question is to examine models of authority and leadership which Muslims themselves have crafted through the course of their millennial historical experience and to consider their relevance to the contemporary discourse on governance. This article focuses on illustrating one such model which the Fatimid dynasty, the founders of Cairo, instituted upon their arrival in Egypt in 969 CE. </p></div><div> </div><div><p><strong>Key words</strong></p>
+<p>Fatimid empire, Diversity, Governance, Imam-caliph al-Mu'izz, Imam-caliph al-Aziz, Egypt, Cairo, Egyptian Christianity,<a href="view_article9ddd.html?type=cont.currentlang&amp;id=110527">Towards a Shi&#8216;i Mediterranean Empire</a>, <a href="view_article6b33.html?type=cont.currentlang&amp;id=109217">Arts of the City Victorious</a></p>
+<p><a href="WebAssets/Large/SJ-Article.pdf"><img height="20" alt="" src="SiteAssets/pdf/pdf_icon.gif" width="20" align="left" border="0"> Download full version of the article in PDF format (304KB)</a><strong></strong> </p>
+<p><strong><u>History</u></strong> </p>
+<p>The raison d&#8217;&#234;tre of the Ismaili Fatimid caliphate (909-1171 CE) was the establishment of a state where all its subjects, regardless of their religious affiliations and ethnic origins were to be governed with righteousness and justice. These aspirations reflect the perennial human quest for good order which have underpinned the earliest formation of civilisations and continue to be among the most significant markers of successful governance today. So, what is distinctive about the Fatimids? One of its distinctive characteristics is the model of leadership and governance which they espoused and its durability over two and a half centuries in lands that were historically inhabited by diverse confessional communities, and which were in the main non-Shia and have remained so to this day. </p>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage3f05.html?path=/WebAssets/Large/Map%20of%20North%20Africa%20and%20south-west%20Asia.jpg&amp;caption=', 'ImagePopup', 'toolbar=no')" href="../cms.iis.ac.uk/default.html?Action=update&amp;ContentID=112442#"><img style="MARGIN: 10px 19px 5px 10px" height="115" alt="Map of North Africa and south-west Asia showing the Fatimid realm Source: Arts of the City Victorious IIS publication 2007" src="../cms.iis.ac.uk/WebAssets/Small/Academic%20Articles/Map%20of%20North%20Africa%20and%20south-west%20Asia%20s_w.jpg" width="160" border="0" ?="" 2007.="" victorious?="" city="" the="" of="" ?arts="" publication="" iis="" for="" commission="" on="" whiteman="" ian="" and="" collet="" pieter="" by="" drawn="" map="" realm.="" fatimid="" depicting="" asia="" south-west="" africa="" north=""></a>In claiming the leadership of the community, the Fatimids invoked the notion of supreme spiritual and temporal authority which they claimed to have inherited as the designated successors of Prophet Muhammad. Founding a state where the Fatimid sovereign would institute just governance and equitable social order had been the cornerstone of the Ismaili mission, which led to the establishment of the Fatimid state in North Africa in 909 CE. </p>
+<p>In governing North Africa for over half a century (909-969 CE), the Fatimids had to translate their utopian notions of righteous rule into a pragmatic model of governance over a populace that was religiously and ethnically varied, and among whom were elements who were ideologically antagonistic to their minority rule. The Fatimid conquest of Egypt in 969 CE, added to the complexity as Egypt&#8217;s populace had a relatively greater indigenous ethnic and religious diversity. The longevity of the Fatimid reign, which lasted two and a half centuries, and its notable periods of stability and prosperity indicate that the dynasty was, by and large, able to foster a viable model of governance. </p>
+<p><u><strong>Backdrop</strong></u></p>
+<p>It is under the Fatimid Caliphate that Egypt first became the centre of a Mediterranean empire in the 10<sup>th</sup> Century CE. Fatimid Cairo became its administrative hub and a thriving cosmopolitan metropolis. It was in this time that Egypt first gained political and religious independence from the loci of Muslim authority in the East, which had previously been asserted by the Umayyads in Syria (661-750 CE) and subsequently by the Abbasids in Iraq (750-1256 CE). The Fatimids established their autonomy over Egypt following political as well as social and economic strife in the region. </p>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage6b06.html?path=/WebAssets/Large/Plan-of-Cairo-in-the-Fatimid-Period-m_w.gif&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"><img style="MARGIN: 10px 10px 5px" height="160" alt="Plan of Cairo in the Fatimid period by Paul Ravaisse (1889) based on information provided by the 15th century historian al-Maqrizi Source: Arts of the City Victorious pp. 11  IIS publication 2007" src="../cms.iis.ac.uk/WebAssets/Small/Academic%20Articles/Plan%20of%20Cairo%20in%20the%20Fatimid%20Period%20s_w%202.jpg" width="123" border="0" ?="" 2007.="" victorious?="" city="" the="" of="" ?arts="" publication="" iis="" on="" by="" fatimid="" source:="" al-maqrizi.="" historian="" fifteenth-century="" provided="" information="" based="" (1889)="" ravaisse="" paul="" period="" in="" cairo=""></a>Restoration of social, economic and political order was among the primary features of the proclamation of security which the Fatimid sovereign, Imam-caliph al-Mu&#8217;izz li-Din Allah, vouchsafed upon the Fatimid conquest of Egypt (<i>Aman </i>document). It provided an instructive formulation of the Fatimid principles of governance. Invoking their claim to the universal imamate, it articulated the notion of protection as one that encompassed all their subjects, irrespective of their race, ethnicity or belief. It referenced this declaration to that of Prophet Muhammad and his provision of the protection over all the people of Medina, including its resident Jewish tribes, as recorded in the so-called Constitution of Medina. </p>
+<p>The guarantee of safety stipulated the relationship between the new caliph and his subjects. In principle, it outlined the essential responsibilities of good governance. It promised economic reforms through a variety of means, including the maintenance of coinage and the elimination of metal impurities from them; facilitation of trade through the upkeep of roads; curbing brigandage; ensuring that laws of inheritance adhered to scriptural and prophetic norms, and ensuring that the state would regulate financial legacies. Essentially, it provided a reiteration of the safety that a Muslim ruler was required to provide for his community:</p>
+<p>"I guarantee you God&#8217;s complete and universal safety, eternal and continuous, inclusive and perfect, renewed and confirmed through the days and recurring through the years, for your lives, your property, your families, your livestock, your estates and your quarters, and whatever you possess, be it modest or significant." <a title="" href="../cms.iis.ac.uk/js/editor/scripts/blank.gif#_ftn1" name="_ftnref1">[1]</a></p>
+<p>This explicit declaration of the role and responsibility of the sovereign and his administration in the restoration of stability and prosperity became the yardstick of the efficacy of the Fatimid model of governance. </p>
+<p><u><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage4cfd.html?path=/WebAssets/Medium/Introduction%20to%20Academic%20Articles/Genealogical%20table.jpg&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"></a></u></p>
+<p><u><strong>Governing Diverse Communities </strong></u></p>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImagecf04.html?path=/WebAssets/Large/Genealogical%20Table%20of%20Fatimid%20Imams%203.jpg&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"><img style="MARGIN: 10px 10px 5px" height="110" alt="Genealogical table of Fatimid imams" src="../cms.iis.ac.uk/WebAssets/Small/Academic%20Articles/Genealogical%20Table%20of%20Fatimid%20Imams.jpg" width="160" border="0" ?="" of="" publication="" iis="" fatimid="" source:="" 2008.="" history?="" illustrated="" an="" ismailis:="" ?the="" imams.="" table=""></a>While the provision of good governance provided the theoretical paradigm upon which the Fatimids legitimised their entry into Egypt, it is in the reign of Imam-caliph al-Aziz bi&#8217;llah (975-996), the first Fatimid sovereign to begin his reign in Egypt, that the precepts of governance stipulated in the <i>Aman</i> Document were translated into state policy and incorporated into its institutional infrastructure. A study of selective features of his reign consequently provides a valuable backdrop for examining the early Fatimid approach to the governance of the various confessional communities that comprised the rubric of Egyptian life. </p>
+<p><strong><u>The Judiciary</u></strong></p>
+<p>The judiciary in Imam-caliph al-Aziz&#8217;s reign provides an illustrative example of the negotiation between the Ismaili claim to supreme religious authority while maintaining the legal validity of the other Muslim schools of law, thus ensuring religious and social cohesion. On matters related to personal or family law, the jurists could pronounce judgement according to their preferred legal tradition, whether this was Sunni or Shi&#8216;i, but on matters related to social governance and public order, their pronouncements had to be based on the Fatimid legal code.</p>
+<p>The safeguarding of public order was also reinforced by ensuring that the most senior Fatimid officials personally administered the cases presented at the grievance courts. These sessions provided a formal mechanism for any subject to present a grievance against the state or its bureaucrats and to be vouchsafed justice on it from the highest officials of the Fatimid state. </p>
+<p><u><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage7c63.html?path=/WebAssets/Large/Wooden-Screen-from-church-of-St-Barbara-m_w.gif&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"></a></u></p>
+<p><u><strong>Involvement of Christians and Jews</strong></u></p>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage7c63.html?path=/WebAssets/Large/Wooden-Screen-from-church-of-St-Barbara-m_w.gif&amp;caption=', 'ImagePopup', 'toolbar=no')" href="../cms.iis.ac.uk/default.html?Action=update&amp;ContentID=112442#"><img style="MARGIN: 10px 10px 5px" height="120" alt="An example of Fatimid woodwork in a screen from church of St Barbara, Old Cairo Source: Arts of the City Victorious pp. 163 IIS publication 2007" src="../cms.iis.ac.uk/WebAssets/Large/Wooden%20Screen%20from%20church%20of%20St%20Barbara%20s_w.jpg" width="160" border="0" st="" ?="" 2007.="" victorious?="" city="" the="" of="" ?arts="" publication="" iis="" for="" and="" fatimid="" source:="" in="" cairo="" museum.="" coptic="" now="" is="" screen="" this="" jews.="" christians="" but="" muslims="" only="" not="" created="" woodwork="" shows="" which="" old="" barbara,="" church="" george="" chapel="" from=""></a>At this time, Egypt continued to possess sizeable and established indigenous Christian denominations, in particular, Copts, Melkites and Nestorians, as well as a number of Jewish communities including the Rabbanites and Qaraites. Over the centuries, their social and economic roles had become woven into the fabric of Egyptian society, particularly as seasoned bureaucrats and traders, medical professionals, gold and silversmiths, and money-lenders. The <i>Aman</i> declaration guaranteed that the customary regulations accorded to the People of the Book would be upheld. Imam-caliph Al-&#8216;Aziz is known to have provided state support for the renovation as well as the upkeep of Christian houses of worship. He is noted to have permitted the Copts, the largest indigenous Egyptian Christian community to rebuild the Church of St. Mercurius near Fustat, despite its reconstruction being challenged by some Muslims. </p>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage3804.html?path=/WebAssets/Large/Minbar-ordered-by-al--Afdal%2C-St-Catherine%27s-Monastery.gif&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"><img style="MARGIN: 10px 10px 5px" height="126" alt="Minbar in Egyptian Fatimid style found in St Catherine's Monastery, Sinai. Source: Arts of the City Victorious pp. 163 IIS publication 2007" src="../cms.iis.ac.uk/WebAssets/Small/Academic%20Articles/Minbar%20in%20Egyptian%20Fatimid%20style%20found%20in%20St%20Catherine%27s%20Monastery%2c%20Sinai%20s_w.jpg" width="160" border="0"></a>Imam-caliph Al-&#8216;Aziz also established familial relations with the Melkite Christian community, which had an established presence in Egypt and Syria. His life-long companion, the mother of the well-known Fatimid princess, Sitt al-Mulk, was a Melkite lady. Imam-caliph Al-&#8216;Aziz appointed her two brothers, Arsenius and Orestes, as Melkite Patriarchs over Alexandria and Jerusalem respectively. Towards the later part of his reign, in 384 AH / 994 CE, Imam-caliph al-&#8216;Aziz promoted the Christian bureaucrat &#8216;Isa b. Nestorius to assume responsibility for the overall administration of the state. &#8216;Isa, in turn, appointed the Jewish administrator, Manashsha b. Ibrahim, as the financial controller over Syria. The appointment of Christian and Jewish administrators to the senior most state positions demonstrated the Fatimid commitment to inclusive governance across their religious and ethnic populace. </p>
+<p><u><strong>Challenges related to Fatimid governance</strong></u></p>
+<p>The Fatimids faced challenges in instituting their governance over the religiously and socially stratified Egyptian society. This required them to develop a finely tuned balancing act in regulating their relationships with each of the significant communities. The sources reference specific incidents where different communities were held in check to ensure public order. The Fatimids also created legal and social frameworks that enabled people from various religious and ethnic communities to be involved in their administration. However, none of these communities were allowed to establish their total dominance. The appointment of a Jewish convert, Yaqub b. Killis to the post of Chief Minister in 368 AH by Imam-caliph al-Aziz is a case in point. The most famous of his chief ministers and arguably among the most competent administrators of his age, Yaqub was nonetheless temporarily dismissed from his post at the pinnacle of his power in 374 AH. He was arrested and imprisoned for actions that were considered to be a travesty of justice. While Yaqub was subsequently reinstated in his post and continued to occupy it until his death in 380 AH, his temporary banishment served as a salutary reminder to the Egyptian subjects of the imperative for the maintenance of just order. </p>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage0c37.html?path=/WebAssets/Small/Academic%20Articles/Decree-in-favour-of-Coptic-monks.gif&amp;caption=', 'ImagePopup', 'toolbar=no')" href="../cms.iis.ac.uk/default.html?Action=update&amp;ContentID=112442#"><img style="MARGIN: 10px 10px 5px" height="126" alt="A preserved decree by a later Fatimid Caliph al- Zahir in favour of Coptic monks 415/1024 Cairo, Coptic Museum Source: Arts of the City Victorious pp. 110 IIS Publication 2007" src="../cms.iis.ac.uk/WebAssets/Large/A%20preserved%20decree%20by%20Fatimid%20Caliph%20in%20favour%20of%20Coptic%20monks%20s_w.jpg" width="160" border="0" victorious?="" city="" the="" of="" ?arts="" publication="" iis="" by="" fatimid="" source:="" in="" coptic="" 2007.?="" museum="" cairo,="" 1024="" 415="" monks="" favour="" zahir="" al-="" caliph="" later="" a="" decree="" preserved=""></a>Fatimid rule in Egypt posed its own challenges. Yet, judged by the yardstick of history, it is remembered in subsequent Muslim Egyptian historiography as a period of relatively peaceful prosperity and inclusive governance. While the circumstances leading to the recent events in North Africa and the Middle East are significantly different to their medieval counterparts, nonetheless, they reflect the ongoing human quest to develop a sustainable model of inclusive and equitable governance; however these terms are defined in their contemporary contexts. </p>
+<div id="ftn1">
+<p><a title="" href="../cms.iis.ac.uk/js/editor/scripts/blank.gif#_ftnref1" name="_ftn1">[1]</a> Ibn Zulaq (d. 997 CE) as quoted by al-Maqrizi (d. 1449 CE) in his <i>Itti&#8216;az al-Hunafa</i>. For an annotated translation and analysis of the Aman Document see S Jiwa, "Inclusive Governance: A Fatimid Illustration," in A Sajoo ed. Companion to the Muslim World (London, 2009), pp. 157-175. </p>
+<div id="ftn1"><u></u></div>
+<p><a title="[Click here to view a larger image]" onclick="window.open('ViewContentImage3f05.html?path=/WebAssets/Large/Map%20of%20North%20Africa%20and%20south-west%20Asia.jpg&amp;caption=', 'ImagePopup', 'toolbar=no')" href="#"></a></p></div></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Governing Diverse Communities: A Medieval Muslim Illustration</TITLE><META HTTP-EQUIV="Expires" CONTENT="Thu, 14 Apr 2033 08:18:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 24/01/2014&nbsp;11:56&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112442 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:09:34 GMT -->
+</HTML>

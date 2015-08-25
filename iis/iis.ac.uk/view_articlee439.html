@@ -1,0 +1,787 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101199 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:46:57 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101199;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning.jpg','WebAssets/Site_Images/header/Learning_1.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only2b52.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101199">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article19e3.html?ContentID=101202">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>The Classification of the Sciences according to the Rasa&#8217;il Ikhwan al-Safa&#8217;</strong><br/><strong><DIV><A href="view_persondcf9.html?type=authors&amp;id=161">Professor Godefroid  De Callataÿ</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of a paper delivered at The Institute of Ismaili Studies London&nbsp;in 2003. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong>The <I>Rasa&#8217;il</I> Ikhwan al-Safa&#8217; (<I>Epistles of the Brethren of Purity</I>) is a unique work in Islamic history consisting of approximately fifty-two epistles (<I>rasa&#8217;il</I>) on a wide range of subjects. The authors of this encyclopaedic compendium, who are believed to have lived in Basra in Iraq in the course of the 10th century, are said to have some connections with the Ismaili movement. This article compares and comments on two systems of scientific classification put forward by the Ikhwan: the first of a hierarchical nature and the second as set out by the coterie of scholars in &#8216;Epistle VII&#8217;.</div><div> </div><div><DIV class=mainhead><A href="../www.iis.ac.uk/SiteAssets/pdf/rasail_ikhwan.pdf"><IMG height=25 alt="" src="WebAssets/Small/Academic%20Papers/pdf_icon.gif" width=25 border=0></A>&nbsp; <A href="../www.iis.ac.uk/SiteAssets/pdf/rasail_ikhwan.pdf">Download PDF version of article (154 KB)</A><BR></DIV>
+<DIV class=mainhead>&nbsp;</DIV>
+<DIV class=mainhead>&nbsp;</DIV>
+<DIV class=mainhead><STRONG>Key Words</STRONG><BR><I>Rasa&#8217;il</I> Ikhwan al-Safa&#8217;, Epistles of the Brethren of Purity, Ikhwan al-Safa&#8217;, encyclopaedia, science, philosophy, Basra, <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;a</A><BR><BR><STRONG>Table of contents</STRONG></DIV>
+<UL class=bullet_list>
+<LI><A title=#anchor1 href="#anchor1">Introduction</A> 
+<LI><A title=#anchor2 href="#anchor2">Two Types of Classification of Sciences in Rasa&#8217;il</A> 
+<LI><A title=#anchor3 href="#anchor3">The Science of Language</A> 
+<LI><A title=#anchor4 href="#anchor4">Religious and Conventional Sciences</A> 
+<LI><A title=#anchor5 href="#anchor5">Philosophical and Real Sciences</A> 
+<LI><A title=#anchor6 href="#anchor6">Ikhwan&#8217;s Division of Philosophy</A> 
+<LI><A title=#anchor7 href="#anchor7">A Comparison of the Two Classifications</A> 
+<LI><A title=#anchor8 href="#anchor8">Conclusion</A> 
+<LI><A title=#anchor9 href="#anchor9">Appendix</A> </LI></UL>
+<DIV class=sub_head><A id=anchor1 name=anchor1></A><B>Introduction</B></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>The work most commonly known as the <I>Rasa&#8217;il</I> Ikhwan al-Safa&#8217; (or <I>Epistles of the Brethren of Purity</I>) is a Gnostic and philosophical encyclopaedia which was written in Arabic during the classical age of Islam and whose nature, contents and purposes have no equivalent of any kind both inside and outside the Muslim world. Scholarship specifically devoted to this work has only started to develop in recent times, so that large parts of the encyclopaedia remain unexplored. To this day only one section out of the four that form the whole corpus has been edited on a scientific basis and a vast majority of epistles have never been properly translated into English or into any other European language.<BR><BR>It is now generally agreed that the authors of the <I>Epistles</I> were high-ranked men of learning from the Shi&#8216;a community, that they lived in Basra (Iraq) in the course of the 4th century of Islam (10th Century AD) and that they had at least some connections with the Ismaili movement. The encyclopaedia as we know it consists of 51 or 52 epistles, each one roughly dealing with one particular topic of human knowledge, to which one must add a &#8216;Concluding&#8217; or &#8216;Comprehensive Epistle&#8217; (<I>Risalat al-jami&#8216;a</I>) at the end of the corpus. The <I>Epistles</I> are visibly classified according to an order designed to follow a step-by-step progression towards the most difficult of human wisdom. The esoteric nature of certain parts of the encyclopaedia, especially the last part of it, is a remarkable peculiarity of the <I>Rasa&#8217;il</I>. Another very conspicuous feature of the corpus is the great diversity and considerable eclecticism of its sources, together with the almost unparalleled scope of the matters involved.<BR><BR>In recent times several important studies have been devoted to the sources and contents of the <I>Rasa&#8217;il</I> Ikhwan al-Safa&#8217;, most notably by Yves Marquet, Ian Richard Netton and Carmela Baffioni. We also find a few studies in which the Ikhwan&#8217;s way of classifying the sciences is briefly discussed or compared to other famous Muslim systems, such as those of al-Kindi (d. 873), al-Farabi (d. 950), Ibn Sina (d. 1037) or Ibn Khaldun (d. 1395). Yet, to the best of my knowledge, no significant attempt has been made so far so as to appraise the originality of the Brethren's own system. It is the aim of this paper to present some results of my current exploration of this topic.<BR><BR><A id=anchor2 name=anchor2></A><B>Two Types of Classification of Sciences in <I>Rasa&#8217;il</I></B></DIV>
+<DIV class=sub_head><STRONG><EM></EM></STRONG><BR>First of all, one must clarify which kind of classification we are talking about. For, on the one hand, there are those 51 or 52 epistles in the arrangement that has come down to us through the manuscript tradition and whose sequence may indeed qualify as a hierarchy of sciences in its own right. And then we have, on the other hand, the properly so called classification of sciences as the Brethren set it forth in Epistle VII, namely the one entitled &#8216;On the Scientific Arts and their Aim&#8217;. Indeed, the two lists differ from each other in several places and certain discrepancies are even so serious that they alone would seem to bear witness to a historical process of re-elaboration.<BR><BR>It seems appropriate to begin with the classification of sciences which the authors themselves outline in the second half of Epistle VII. For us, the most important part of this text is the overall presentation of the system, which begins with the following lines:</DIV>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="5%" height=114>&nbsp;</TD>
+<TD class=bodytext>We should like to mention the kinds of sciences and the species of those kinds, in such a way that this can be an indication of their objects to those who study the science and in such a way that those people can be rightly guided towards what they are looking at. For the appetite of the souls towards the various sciences and educational matters are like the passions of the bodies towards the types of nourishment that differ from one another in savour, in colour and in smell. </TD>
+<TD width="3%">&nbsp;</TD></TR></TBODY></TABLE>
+<P class=bodytext>These preliminary words look like an invitation to merely single out from the entire corpus of sciences one or two particular fields according to one&#8217;s tastes. They do not seem to presuppose, as such, any logical or rational sequence of the fields of knowledge that are to be mentioned next. In other terms, they could as well have been part of a typical piece of <A href="javascript:void(LaunchGlossary('GlossaryItemc4a7.html?type=glossary&amp;id=347'))">&#8216;adab</A> literature like the <I>Epistle on the Sciences</I> (<I>Risala fi&#8217;l-&#8216;ulum</I>) of Abu Hayyan al-Tawhidi (d. 1023), which is neither a systematic nor an exhaustive enumeration of sciences. But what comes next in Epistle VII clearly demonstrates that the Ikhwan had a well-organised construction in mind. The main structure is tripartite, as the text makes it plain:<BR><BR></P>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="5%" height=55>&nbsp;</TD>
+<TD class=bodytext>Know, my brother, that there are three kinds of sciences with which people are busy, namely: the propaedeutic sciences, the religious and conventional sciences, the philosophical and real sciences.</TD>
+<TD width="3%">&nbsp;</TD></TR></TBODY></TABLE>
+<DIV class=bodytext>The lines coming next are best displayed in the form of a table. <I>See </I><A title=#anchor9 href="#anchor9">Appendix, Table 1</A><A title=#anchor9 href="#anchor9">.</A><BR><BR>In the first place come the sciences which the Ikhwan call the propaedeutic (or disciplinary or training) sciences and which they define as &#8216;the sciences of education (<I>&#8216;adab</I>) which have been set up mainly for the quest of subsistence and for the goodness of the living in this world&#8217;. The Brethren do not despise them, as all these sciences prove to be useful in the terrestrial accomplishment of man, yet their very segregation from the rest makes them clearly felt as inferior to the sciences of the two other groups, whose purpose is not restricted to the life here below.<BR><BR>The Ikhwan were not the first thinkers to speak of propaedeutic or training sciences (<I><A href="javascript:void(LaunchGlossary('GlossaryItem5e56.html?type=glossary&amp;id=229'))">&#8216;ilm</A> al-riyadat</I>). In his <I>Epistle on the Number of Books by Aristotle</I>, al-Kindi uses exactly the same words, yet under his pen the expression unambiguously referred to the four mathematical sciences that make up the so-called &#8216;Pythagorean quadrivium&#8217;, namely, arithmetic, geometry, astronomy and music. From Plato at least, the importance of these four mathematical sciences as a prerequisite to any other studies had been endorsed in the West by such great authorities as Nicomachus of Gerasa, Boethius and Isidore of Seville, so as to become a commonplace of any discussion about philosophy and its divisions in the medieval schools of the twelfth and thirteenth centuries. This tradition of four liberal arts also went its way through Islam, as we can see from al-Kindi&#8217;s treatise on the number of Aristotle&#8217;s books but also from countless other evidence. The Pythagorean quadrivium was sometimes enlarged so as to include engineering and other &#8216;educational sciences&#8217; (<I>&#8216;ilm al-ta&#8216;lim</I>), as al-Farabi calls them in his famous <I>Enumeration of the Sciences</I>. Very often, though, it held its original structure without alteration, as for instance in Avicenna&#8217;s <I>Epistle on the Parts of Intellectual Sciences</I> (<I>Risala fi aqsam al-&#8216;ulum al-&#8216;aqliyya</I>). Anyway, what matters most to us here is to see that the Ikhwan al-Safa&#8217; do not range any science of the number among their disciplinary or training sciences. Rather, they choose to range the whole block of mathematics as a specific section of their ultimate group of sciences &#8211; the philosophical sciences &#8211; to which we shall return later in greater detail. As for the training sciences, their list does, indeed, include a section headed &#8216;calculations and operations&#8217;, but by it the Brethren no doubt refer to a very practical and strictly mundane use of numbers.<BR><BR><A id=anchor3 name=anchor3></A><B>The Science of Language</B></DIV>
+<DIV class=bodytext><STRONG></STRONG><BR>Let us now briefly consider the other sections of this first group. Writing and reading, grammar, poetry and prosody, all these parts of what we would call the science of language, could easily be justified here as other kinds of prerequisite learning. &#8216;In the beginning was the Verb&#8217;: so does it also seem to be the case with several Muslim classifications of sciences. The first chapter of al-Farabi&#8217;s <I>Enumeration of the Sciences</I> is the one devoted to the &#8216;Science of Language&#8217; (<I>&#8216;ilm al-lisan</I>). In a similar way, Ibn al-Nadim&#8217;s monumental <I>Fihrist</I>, which may stand as a catalogue of sciences of its own, starts with a section which &#8216;describes the languages of people, Arab and foreign, the characteristics of their methods of writing, their types of script and forms of calligraphy&#8217;. To see that the sciences of the language receive, in the <I>Rasa&#8217;il</I> as well, a place in the beginning is no surprise, then. What is more significant, once again, is to find that all those fields are contemplated in their everyday applications only. There is no need, I think, to justify the presence of disciplines like crafts, trades, cultivation, breeding and the like, which are all clear examples of matters &#8211; should we say &#8216;arts&#8217; or &#8216;sciences&#8217;? &#8211; whose interest does not overstep the bounds of this world. Yet the same must be said, we note, of the biographical and historical sciences, and even of magic, alchemy and the like, which are thus all regarded here as exclusively profane activities. In all, the group of propaedeutic sciences leaves us with the impression that it has been primarily set up so as to serve as a kind of lumber-room of mundane practices. But this could be regarded, after all, as a typical feature of <I>&#8216;adab</I> literature.<BR></DIV>
+<DIV class=sub_head><A id=anchor4 name=anchor4></A><B>Religious and Conventional Sciences</B></DIV><STRONG></STRONG>
+<DIV class=sub_head><BR>Passing to the second group of sciences, we first have to take notice of its heading and definition. The Brethren call this the group of religious and conventional sciences (<I>al-&#8216;ulum al-shar&#8216;iyyat al-wadi&#8216;iyya</I>), and then explain that these are the sciences that &#8216;have been set up for the healing of the souls and for the quest of the hereafter&#8217;. The notion that has to be emphasised here is certainly that of conventionality. The Ikhwan speak of sciences that &#8216;have been set up&#8217;, thus exactly as they had done previously with the training sciences. Obviously the religious sciences radically differ from those latter in that they concern, not this world, but the other one. Yet they do share with them the remarkable character of being conventional, that is, purposefully invented or created. The Ikhwan identify six categories of religious sciences and mention for each, the category of people in relation to it. We need not discuss at length about the science of revelation under its Qur&#8217;anic form (<A href="javascript:void(LaunchGlossary('GlossaryItemb2b2.html?type=glossary&amp;id=72'))">tanzil</A>) nor about that of &#8216;stories and traditions&#8217; (<I>riwayat wa akhbar</I>) and that of &#8216;jurisprudence&#8217; (<I><A href="javascript:void(LaunchGlossary('GlossaryItem6cad.html?type=glossary&amp;id=267'))">fiqh</A></I>), for all these branches are quite expected in this context. Worthier of noting, perhaps, is that theology (<I>kalam</I>) which is frequently associated with jurisprudence in many Muslim classifications, is not even named here. Instead, the mentioning of a science of interpretation (<A href="javascript:void(LaunchGlossary('GlossaryItemc06d.html?type=glossary&amp;id=80'))">ta&#8216;wil</A>), as a prerogative of the <I><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A></I>s and the successors of the prophets is, of course, a plain indication of the Ikhwan&#8217;s belonging to Shi&#8216;a Islam. Faithful to their eclecticism, the Ikhwan do not hesitate to mention &#8216;mysticism&#8217; (<I><A href="javascript:void(LaunchGlossary('GlossaryItem76f3.html?type=glossary&amp;id=67'))">tasawwuf</A></I>) and various types of ascetic practices &#8211; whether Muslim or not &#8211; as religious sciences too. The last science mentioned in this group is yet another science of interpretation, namely the interpretation of dreams. This is an art, or a science, which is legitimated in Islam by some prophetic traditions (<A href="javascript:void(LaunchGlossary('GlossaryItembd00.html?type=glossary&amp;id=258'))">hadith</A>), and even by such a famous Qur&#8217;anic passage as Sura Yusuf. As such, it is often mentioned in Muslim classifications of the sciences, as for instance in Ibn Khaldun&#8217;s <I>Muqaddima</I>, where it is also ranged among the religious sciences.<BR><BR><A id=anchor5 name=anchor5></A><B>Philosophical and Real Sciences</B></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>So, we finally arrive to the third group which the Brethren call the group of &#8216;philosophical and real sciences&#8217; (<I>al-falsafiyya al-haqiqa</I>) and which consists, as they write, of four species, namely the mathematical (<I>al-riyadiyyat</I>), the logical (<I>al-mantiqiyyat</I>), the physical (<I>al-tabi&#8216;iyyat</I>) and the divine sciences (<I>al-ilahiyyat</I>). For the present inquiry, this is also the most interesting part of the classification since, as the authors themselves point out in some places of their enumeration, the philosophical sciences are those for which they have composed individual epistles. In this respect, it also seems worthwhile quoting a few lines from the passage by which the Ikhwan assure the transition between the development on philosophical sciences and the final exhortation of the Epistle:</DIV>
+<TABLE width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="5%">&nbsp;</TD>
+<TD class=bodytext>We have produced one epistle for each section of those sciences we have mentioned [the context indicates that the Ikhwan refer to the group of philosophical sciences], and we have mentioned in them some of those meanings. We have concluded them with a general epistle [the <I>Risalat al-jami&#8216;a</I>], in order that it should become an incitement for the negligent people, a rectitude for the beginners, a desire for all those who study, a method for those who learn. Thanks to it, be happy, my brother, and offer this epistle to your brethren and friends, and make them longing for science, and urge them to renounce this world, and show them the way of the last Abode! </TD>
+<TD width="3%">&nbsp;</TD></TR></TBODY></TABLE>
+<DIV class=bodytext>With this last group of philosophical sciences we come to more familiar grounds. So familiar, it looks, that the Brethren did not even seek to define this last group nor tell their readers for which reasons these sciences simply exist. What we are to infer, still, is that the sciences of that group have not been set up, but that they exist <I>per se</I>. It is in that sense, to be sure, that the Ikhwan can claim them to be real. Just a bit of common sense would be enough, I think, to make up what is lacking: namely that, in spite of their difference of nature, the philosophical sciences and the religious sciences both have the same purpose or the same objective, which is the happiness of the soul in the world here-after. In a crucial passage from Epistle XXVIII, which is dedicated to the limits of human knowledge, the Ikhwan compare those different ways to reach a same goal to the various locations of the pilgrims converging towards the Sacred House of God.<BR><BR>Now let us proceed with the Ikhwan&#8217;s division of philosophy. As is well-known, Aristotle had distinguished physics, mathematics and metaphysics as the three parts of what he called theoretic philosophy, whose purpose is the study of intelligible beings. Physics, he said, deals with those objects which cannot exist nor being conceived of as separate from matter and motion. At a superior level of abstraction, mathematics is concerned with beings which can be rationally isolated from matter and motion, but which nevertheless require both so as to exist. The highest level of abstraction falls to metaphysics, which deals with those intelligible beings that are not only conceivable as separate from matter and motion, but which can also exist without them. The Aristotelian division of speculative philosophy was transmitted to the Western Middle Ages by Boethius who in his <I>De Trinitate</I> spoke of those three parts as &#8216;philosophia naturalis&#8217;, &#8216;mathematica&#8217; and &#8216;theologica&#8217;. In Islam, the threefold scheme was taken up by al-Kindi and his successors in the science of philosophy, the only point of discussion being the places in the sequence ascribed to physics and mathematics respectively. According to the ontological point of view, the sequence just mentioned should evidently be preferred. Yet from what has been said earlier we may also understand why the mathematical sciences, that is, ultimately, the Pythagorean quadrivium, could be regarded as a type of propaedeutic learning of its own.<BR><BR>This, we may note, seems to be the case of our text, where mathematics come before physics and metaphysics. With the Ikhwan, that other rational &#8211; and quite common &#8211; sequence is broken up by the incorporation of logic into the whole system. This is, however, nothing to be amazed at. In the footsteps of the Alexandrian commentators of Late Antiquity, the Arabs had for long been accustomed to regard the whole set of Aristotle's logical sciences as a prerequisite tool (Gr. <I>organon</I>) for the study of every rational science. As a result, logic and mathematics could both be viewed as necessary preliminaries to the general study of philosophy.</DIV>
+<DIV class=bodytext><BR><A id=anchor6 name=anchor6></A><B>Ikhwan&#8217;s Division of Philosophy</B></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>Now we may focus on the way the Ikhwan further divide the group of philosophical sciences. It would be interesting to quote <I>verbatim</I> the passage of Epistle VII in which the Ikhwan explain and comment on each one of these subdivisions. For the sake of brevity, I shall here restrict myself to present that part of the text in the form of a table. <A title=#anchor10 href="#anchor10">See Appendix, Table 2</A><A title=#anchor10 href="#anchor10">.</A><BR><BR>This table calls for a few explanations. Aristotle&#8217;s legacy is, of course, paramount. Not only the general structure, but even each part of entire sections such as logic or physics is purely Aristotelian in its very appellation. They will not retain our attention here. Nor shall I come back to the mathematical <I>quadrivium</I> of the first section, as I think enough of it has been said before. Definitely the most original section &#8211; and therefore the most interesting to look at &#8211; is the last one, which immediately strikes the reader with its non-Aristotelian elements. First of all, we learn that there is no such thing as one divine science, something to be validly compared with Aristotle&#8217;s &#8216;science of the beings as beings&#8217; or with the &#8216;philosophia prima&#8217; of medieval scholasticism. Instead, what we are faced with here is no less than five different disciplines, including politics and eschatology, which do not seem to have much in common at first sight. What is more perceptible, it would seem, is a kind of circular movement which has its origin in the most ineffable of beings &#8211; significantly enough the Ikhwan speak of the &#8216;knowledge&#8217; and not of the &#8216;science&#8217; of the Creator &#8211; which goes back to the same point &#8211; whence, the &#8216;Science of Return&#8217; &#8211; after a step-by-step descent through other divine entities such as the angels, the souls and the spirits which pervade the universe. As it looks, a very curious place has been devoted to politics in the continuation of the Neoplatonic theory of emanation, especially as the further subdivisions of that science appear to be, for the most part of it, completely out of place in this section of divine sciences. For one part, indeed, the last three subdivisions of politics, i.e. the public, the domestic and the private, appear to agree rather well with the three parts of Aristotle&#8217;s practical philosophy, that is, politics, economics and ethics respectively. But, then, why did the Ikhwan not simply choose to take up this Aristotelian scheme of practical philosophy as yet another group of sciences of its own? Yet, more puzzling still is to find that the two other subdivisions of politics, i.e. the prophetic and the royal, are part of philosophy at all, whereas they would seem to fit much more easily in the group of religious sciences as described just above in the same passage?<BR><BR>It is at this stage, I think, that we may bring forward the list of the 51 or 52 Epistles that make up the corpus of the Ikhwan as it has come down to us. <A title=#anchor11 href="#anchor11">Table 3 in the Appendix</A> displays the titles of sections and of individual epistles as they have been actually preserved in the manuscript tradition. As may be seen, some of these titles have a much flourished tone.</DIV>
+<DIV class=sub_head>&nbsp;</DIV>
+<DIV class=sub_head><A id=anchor7 name=anchor7></A><B>A Comparison of the Two Classifications</B></DIV>
+<DIV class=sub_head><STRONG></STRONG><BR>Let us now put face to face the two systems which the texts would seem to invite us to compare, namely the present list of titles and the group of philosophical and real sciences as described in Epistle VII. In the same way as this group of philosophical sciences, the whole corpus of the <I>Rasa&#8217;il</I> as we have it is divided into four main sections. So far, so good. But here come already the first discrepancies, as we can see at once that the main sections of the two systems do not exactly match one another. In spite of its title, Section I incorporates the logical sciences, thus appearing as a combination of the two first sections of the classification in Epistle VII. As a consequence of this blending, the group of physical sciences is shifted to Section II of our list. As for the last group, that of divine sciences, it appears to have been split up into two different sections, dealing respectively with &#8216;the sciences of the soul and of the intellect&#8217; and &#8216;the nomic, divine and legal sciences&#8217;. These are, to be sure, significant changes. But we immediately notice other differences, as, for instance, the great number of <I>rasa&#8217;il</I> whose titles do not frame with any of the subdivisions of Epistle VII.<BR><BR>In the introduction of his <I>La Philosophie des Ikhwan al-Safa&#8217;</I>, Yves Marquet attempted to find out, in various passages of the encyclopaedia, the evidence for concluding that &#8216;our Epistles keep the traces of a certain vagueness, both in the order of chapters, and in the number of Epistles in each section.&#8217; Bringing forward a certain number of indisputable indications from the text itself, the French scholar could draw the following inferences:</DIV>
+<OL class=bodytext>
+<LI>At the time when the first epistle of the group of physical sciences was written &#8211; that is, the one on matter, form, etc. &#8211; only five epistles of Section I, and seven of Section II had already been compiled. 
+<LI>Some epistles from Sections I and II were later modified, whether it be by amplification or by splitting of their contents. In a former state, there was, for instance, only one epistle on logic. 
+<LI>Each one of the four Sections was subsequently extended or completed with the incorporation of new epistles. </LI></OL>
+<DIV class=bodytext>Needless to say, the comparison of our two systems confirms each one of these points. The changes, already evident for the mathematical and the physical sections, tend to become even more prominent in proportion as we come closer to the end of the corpus. <BR><BR>This being said, it remains that the Ikhwan&#8217;s assertion that they have dedicated a specific epistle to each one of the subdivisions is, to a very large extent, valid. The encyclopaedia opens with the four sciences of the quadrivium (arithmetic in I, geometry in II, astronomy in III and music in V). The only peculiarity is that a <I>risala</I> on geography has now been intercalated between astronomy and music, but this is hardly surprising since geography may indeed be conceived of as a sort of natural appendix to astronomy. The titles of the five <I>rasa&#8217;il</I> on logic correspond, not to the five sciences mentioned in Epistle VII (that is, poetics, rhetorics, topics, analytics and sophistics), but rather to the famous <I>Book of Demonstration</I> &#8211; in other words, the &#8216;Second Analytics&#8217; (XIV) and to its four indispensable preliminaries, namely: the &#8216;Isagogue&#8217; (X), the &#8216;Categories&#8217; (XI) the &#8216;<I>Peri Hermeneias</I>&#8217; or &#8216;<I>De Interpretatione</I>&#8217; (XII) and the &#8216;First Analytics&#8217; (XIII). The section of natural sciences is, as we have said, the one for which the sequence has been best preserved. Each of the seven parts of physics is, indeed, the place for a specific <I>risala</I> (from XV to XXII), with only one intercalation to be mentioned, namely the one on the quiddity of nature in XXII.<BR><BR>Clearly the most remarkable feature of our comparison concerns the last section, where the variations can no longer be perceived as negligible. Thus, apart from the epistle on the spiritual beings which we may indeed find in XLIX, the only other science to be found as such in the encyclopaedia is the last one, the &#8216;Science of Return&#8217;, but we notice immediately that this <I>risala</I>, which is number XXXVIII, has been placed in the third, not the fourth section. As for the science of politics and its own subdivisions, it would certainly be a mistake to assimilate it too quickly to what the Ikhwan report in their epistle L, on the species of politics.<BR><BR>So, how could these seeming oddities be accounted for? Well, at the risk of being a bit disappointing I would argue that these are typically matters which are best left unsolved for the time being. Surely, one could put forward chronological reasons, and assume, for instance, that a certain lapse of time must have separated the writing of Epistle VII &#8211; with its systematic and carefully reflected classification of the sciences &#8211; and the overall compilation of the <I>Rasa&#8217;il</I>. Those who, like Marquet, favour a longer chronology could certainly pretend that the authors of Epistle VII and those who put the final touch to that global undertaking were possibly not the same Ikhwan al-Safa&#8217;. In the present state of our information, one could even surmise that the arrangement of the <I>Rasa&#8217;il</I> in the form as we know it should not be ascribed to the authors themselves, but to later partisans or scholars. Yet all this is largely conjectural, and bound to remain so until we get a much clearer picture of the social, historical and epistemological context in which our <I>Epistles</I> began to be produced, collected and dispatched. As for so many other vexed questions about the Ikhwan, this kind of speculation will have much to gain from the forthcoming edition, on a truly scientific basis, of all the <I>Rasa&#8217;il</I> Ikhwan al-Safa&#8217;.<BR><BR>At any rate, the perfect correspondence between the classification of Epistle VII and the sequence of <I>Epistles</I> making up the actual corpus should be considered an unrealistic expectation from the very moment one is willing to admit that the <I>Rasa&#8217;il</I> are but the most visible part of the undertaking. In many places, the Brethren refer or allude to their secret meetings known as <I>majalis al-&#8216;ilm</I> (literally, &#8216;sessions of science&#8217;) and make it very clear that the highest degrees of their teaching programme are not committed to writing. As Marquet rightly summarised in the book mentioned above, &#8216;the Epistles are at the same time the master&#8217;s book and the student&#8217;s handbook, yet a handbook which must be completed with some oral teaching&#8217;. In this regard, we may add, it is significant that the section of our encyclopaedia for which the discrepancies with the classification of Epistle VII are especially thick on the ground is precisely the last one and that containing the highest level of esotericism.<BR><BR><A id=anchor8 name=anchor8></A><B>Conclusion</B></DIV><STRONG></STRONG>
+<DIV class=bodytext><BR>For the time being, I should like to conclude this paper by emphasising only one point. It is customary to refer to the twofold division of the sciences in Islam: on the one hand, the conventional, religious and properly Islamic sciences; on the other hand, the rational, philosophical and foreign, that is, mainly, Greek sciences. This partition is possibly nowhere better evidenced than in al-Khwarizmi&#8217;s <I>Mafatih al-&#8216;ulum</I> (<I>The Keys to the Sciences</I>), where its author &#8211; not to be confused with the great scientist al-Khwarizmi &#8211; ranges all disciplines under two different headings, respectively &#8216;the religious sciences and the Arabic sciences connected with them&#8217; and &#8216;the non-Arab sciences, from the Greeks as well as from other nations&#8217;. In almost every subsequent discussion of the sciences, the same partition may be found again and again. Ibn Khaldun&#8217;s already mentioned <I>Muqaddima</I> provides us, indeed, with just one of the most famous examples of the distinction to be made between <I>al-&#8216;ulum al-naqliyya</I> (&#8216;the transmitted sciences&#8217;) and <I>al-&#8216;ulum al-&#8216;aqliyya</I> (&#8216;the intellectual sciences&#8217;). Internal evidence now enables us to date al-Khwarizmi&#8217;s <I>Keys to the Sciences</I> not earlier than the year AD 977, which means, most probably than it was written later than the <I>Rasa&#8217;il</I>. It is, of course, a pity that we do not have more of the works that al-Kindi and al-Farabi are said to have written about the classification of the sciences. Yet, it appears from their extant writings on the subject &#8211; let us first think of al-Kindi&#8217;s <I>Epistle on the Number of Books by Aristotle</I> or al-Farabi&#8217;s <I>Enumeration of the Sciences</I> &#8211; that neither of them had based the classification of the sciences on this partition. As mentioned in the beginning of this paper, my exploration of the classifications of sciences as reflected by Islamic encyclopaedias is far from being completed. Yet, in the present state of my investigation, I would certainly be inclined to credit the Ikhwan with a truly pioneering role in that respect.<BR><BR><A id=anchor9 name=anchor9></A><B>Appendix</B></DIV>
+<DIV class=bodytext><STRONG></STRONG><BR><B>Table 1: the general classification of the sciences according to Epistle VII</B><BR>I. The <I>propaedeutic</I> (sciences), that is, the sciences of education which have been set up mainly for the quest of subsistence and for the goodness of the living in this world, are of nine kinds:</DIV>
+<OL class=bodytext>
+<LI>writing and reading; 
+<LI>language and grammar; 
+<LI>calculation and operations; 
+<LI>poetic and prosody; 
+<LI>auguries and auspices, and the like; 
+<LI>magic, talismans, alchemy, tricks and the like; 
+<LI>professions and crafts; 
+<LI>sale and purchase, trades, cultivation and breeding; 
+<LI>biographies and histories. </LI></OL>
+<P class=bodytext>II. The <I>religious and conventional</I> (sciences), that is, the sciences which have been set up for the healing of the souls and for the quest of the hereafter, are of six kinds:</P>
+<OL class=bodytext>
+<LI>science of revelation; 
+<LI>science of interpretation; 
+<LI>narratives and reports; 
+<LI>jurisprudence, norms and laws; 
+<LI>recollection, exhortations, asceticism and mysticism; 
+<LI>interpretation of dreams. </LI></OL>
+<P class=bodytext>The learned in the science of revelation are those who read the Qur&#8217;an and know it by heart. The learned in the science of interpretation are the <I>imam</I>s and the successors of the prophets. The learned in the narratives are the specialists of the Tradition. The learned in the laws and the norms are the jurists. The learned in the recollection and the exhortations are the worshippers, ascetics, monks and the like. The learned in the interpretation of dreams are the interpreters.<BR><BR>III. The <I>philosophical sciences</I> are of four kinds:</P>
+<OL class=bodytext>
+<LI>mathematics; 
+<LI>logic; 
+<LI>natural sciences; 
+<LI>metaphysics. </LI></OL>
+<P class=bodytext><B><A id=anchor10 name=anchor10></A>Table 2: the division of the philosophical sciences according to Epistle VII</B><BR><BR>1. Mathematical sciences</P>
+<UL class=bodytext>
+<LI>arithmetic 
+<LI>geometry 
+<LI>astronomy 
+<LI>music </LI></UL>
+<P class=bodytext>2. Logical sciences</P>
+<UL class=bodytext>
+<LI>poetics 
+<LI>rhetorics 
+<LI>topics 
+<LI>analytics 
+<LI>sophistics </LI></UL>
+<P class=bodytext>3. Natural sciences</P>
+<UL class=bodytext>
+<LI>science of corporal principles 
+<LI>science of the heaven and the world 
+<LI>science of coming-to-be and passing-away 
+<LI>science of atmospheric events 
+<LI>science of minerals 
+<LI>science of plants 
+<LI>science of animals </LI></UL>
+<P class=bodytext>4. Divine sciences</P>
+<UL class=bodytext>
+<LI>knowledge of the Creator 
+<LI>science of spiritual beings 
+<LI>science of psychic beings 
+<LI>science of politics (with 5 subdivisions: prophetic, royal, public, domestic, private) 
+<LI>science of Return </LI></UL>
+<P class=bodytext><A id=anchor11 name=anchor11></A><B>Table 3: The list of titles of the Rasa&#8217;il</B></P>
+<P class=bodytext>Section I: the mathematical sciences (14 epistles)</P>
+<OL class=bodytext>
+<LI>Epistle I: On the number. 
+<LI>Epistle II: The epistle entitled <I>jumatriya</I>, dealing with geometry (<I>handasa</I>), and account of its quiddity. 
+<LI>Epistle III: The epistle entitled <I>asturunumiya</I>, dealing with the science of the stars and the composition of the spheres. 
+<LI>Epistle IV: On geography (<I>al-jughrafiya</I>). 
+<LI>Epistle V: On music (<I>al-musiqa</I>). 
+<LI>Epistle VI: On the arithmetical and geometrical proportions with respect to the refinement of the soul and the reforming of the characters. 
+<LI>Epistle VII: On the scientific arts and their aim. 
+<LI>Epistle VIII: On the practical arts and their aim. 
+<LI>Epistle IX: Where one accounts for characters, the causes of their difference and the [various] species of the evils which [strike] them; anecdotes drawn from the educational rules of the Prophets and cream of the morals of the sages. 
+<LI>Epistle X: On the Isagog&#232; (<I>isaghuji</I>). 
+<LI>Epistle XI: On the ten categories, that is, <I>qatighuriyas</I>. 
+<LI>Epistle XII: On the meaning of the <I>Peri Hermeneias</I> (<I>baramaniyas</I>). 
+<LI>Epistle XIII: On the meaning of the Analytics (<I>anulutiqa</I>). 
+<LI>Epistle XIV: On the meaning of the Second Analytics (<I>anulutiqa al-thaniya</I>). </LI></OL>
+<P class=bodytext>Section II: The sciences of the body and of nature (17 epistles) </P>
+<OL>
+<LI>Epistle XV: Where one accounts for the hyl&#232;, the form, the motion, the time and the place, together with the meanings of those (things) when they are linked to one another. 
+<LI>Epistle XVI: The epistle entitled &#8216;the heavens and the world&#8217;, with respect to the reforming of the soul and the refinement of the characters. 
+<LI>Epistle XVII: Where one accounts for the coming-to-be and the passing-away. 
+<LI>Epistle XVIII: On meteors. 
+<LI>Epistle XIX: Where one accounts for the coming-to-be of the minerals. 
+<LI>Epistle XX: On the quiddity of nature. 
+<LI>Epistle XXI: On the kinds of plants. 
+<LI>Epistle XXII: On the modalities of the coming-to-be of the animals and of their kinds. 
+<LI>Epistle XXIII: On the composition of the bodily system. 
+<LI>Epistle XXIV: On the sense and the sensible, with respect to the refinement of the soul and the reforming of the characters. 
+<LI>Epistle XXV: On the place where the drop of sperm falls into. 
+<LI>Epistle XXVI: On the claim of the sages that man is a &#8216;<I>micro cosmos</I>&#8217;. 
+<LI>Epistle XXVII: On the modalities of birth of the particular souls in the natural human bodily systems. 
+<LI>Epistle XXVIII: Where one accounts for the capacity of man to know, which limit he [can] arrive at, what he [can] grasp of the sciences, which end he arrives at and which nobility he raises to. 
+<LI>Epistle XXIX: On the wisdom of death and birth. 
+<LI>Epistle XXX: On what is particular to the pleasures; on the wisdom of birth and death and the quiddity of both. 
+<LI>Epistle XXXI: On the reasons of the difference in languages, graphical figures and expressions. </LI></OL>
+<DIV class=bodytext dir=ltr style="MARGIN-RIGHT: 0px">Section III: The sciences of the soul and of the intellect (10 epistles)</DIV>
+<OL>
+<LI class=bodytext dir=ltr style="MARGIN-RIGHT: 0px">Epistle XXXII: On the intellectual principles of the existing beings according to the Pythagoreans. 
+<LI>Epistle XXXIII: On the intellectual principles according to the Brethren of Purity. 
+<LI>Epistle XXXIV: On the meaning of the claim of the sages that the world is a &#8216;<I>macranthropos</I>&#8217;. 
+<LI>Epistle XXXV: On the intellect and the intelligible. 
+<LI>Epistle XXXVI: On revolutions and cycles. 
+<LI>Epistle XXXVII: On the quiddity of love. 
+<LI>Epistle XXXVIII: On resurrection and anastasis. 
+<LI>Epistle XXXIX: On the quantity of kinds of motions. 
+<LI>Epistle XL: On causes and effects. 
+<LI>Epistle XLI: On definitions and descriptions. </LI></OL>
+<P class=bodytext>Section IV: The nomic, divine and legal sciences (11 epistles)</P>
+<OL class=bodytext>
+<LI>Epistle XLII: On views and religions. 
+<LI>Epistle XLIII: On the quiddity of the Way (leading) to God &#8211; How Powerful and Lofty is He! 
+<LI>Epistle XLIV: Where one accounts for the belief of the Brethren of Purity and the doctrine of the divine men. 
+<LI>Epistle XLV: On the modalities of the relations of the Brethren of Purity, their mutual help and the authenticity of sympathy and affection (they have for one another), whether it be for the religion or for what is pertaining to this world. 
+<LI>Epistle XLVI: On the quiddity of faith and the characteristics of the believers who realise [those things]. 
+<LI>Epistle XLVII: On the quiddity of the divine <I>nomos</I>, the conditions of prophecy and the quantity of characteristics (the Prophets); on the doctrines of the divine men and of the men of God. 
+<LI>Epistle XLVIII: On the modalities of the call (to go) to God. 
+<LI>Epistle XLIX: On the modalities of states of the spiritual beings. 
+<LI>Epistle L: On the modalities of the species of politics and their quantity. 
+<LI>Epistle LI: On the modalities of the arrangement of the world as a whole. 
+<LI>Epistle LII: On the quiddity of magic, incantations and the evil eye. </LI></OL></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Classification of the Sciences according to the Rasa&#8217;il Ikhwan al-Safa&#8217;</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sat, 22 Jun 2019 13:14:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 24/06/2011&nbsp;12:28&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101199 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:46:57 GMT -->
+</HTML>

@@ -1,0 +1,550 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113587 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:56:07 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 113587;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyb283.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D113587">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></p><p><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Encyclopaedia Contributions</H3><strong xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">Zaydiyya</strong><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><DIV><A href="view_person6412.html?type=authors&amp;id=54">Professor Wilferd  Madelung</A></DIV><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><FONT face=Verdana>This is an edited version of an article that was originally published in </FONT><A href="http://www.brill.nl/publications/online-resources/encyclopaedia-islam-online"><I><FONT face=Verdana>The Encyclopaedia of Islam</FONT></I></A><FONT face=Verdana> (Second Edition), Volume XI, 2002, pp. 477-481, ed. P. Bearman, Th. Bianquis, C.E. Bosworth, E. van Donzel and W.P. Heinrichs, (E.J. Brill).</FONT><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><br xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><P><FONT face=Verdana><IMG style="MARGIN-RIGHT: 5px" border=0 alt="" src="WebAssets/Large/pdf_icon.gif" width=25 height=25></FONT><A href="WebAssets/Large/Zaydiyya_PDF.pdf"><FONT face=Verdana>Download the article in PDF format</FONT></A></P><BR>
+<P><U><A href="javascript:void(LaunchGlossary('GlossaryItem85f0.html?type=glossary&amp;id=40'))"><FONT face=Verdana>Zaydiyya</FONT></A></U><FONT face=Verdana> is a branch of the <U><A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi&#8216;a</A></U> arising out of the abortive revolt of Zayd b. &#8216;Ali b. al-Husayn in Kufa in 122 AH / 740 CE. During the preparations for the revolt, a part of the Kufan Shi&#8216;a withdrew their support from Zayd in protest against his refusal to condemn unconditionally the early caliphs preceding &#8216;Ali and backed Zayd&#8217;s nephew Ja&#8216;far al-Sadiq as their <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A></U></I>. This schism led to a lasting division of the Shi&#8216;a into a radical and a moderate wing in terms of their religious break with the <U><A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni</A></U> Muslim community. The Zaydiyya, as the moderates, did not classify the Sunni Muslims generally as infidels. In political terms, however, they were, in contrast to the radical but quietist <U><A href="javascript:void(LaunchGlossary('GlossaryItem649a.html?type=glossary&amp;id=226'))">Imamiyya</A></U>, militant, espousing revolt against the illegitimate Sunni rule as a religious duty.</FONT></P>
+<P><B><FONT face=Verdana>1. The early Kufan phase.</FONT></B></P>
+<P><FONT face=Verdana>The Zaydiyya was initially formed by the merger of two currents in Kufan Shi&#8216;ism, the Jarudiyya and the Batriyya. The Jarudiyya were named after Abu &#8217;l-Jarud Ziyad b. Mundhir, a former companion of Zayd&#8217;s brother Muhammad al-Baqir, who backed Zayd&#8217;s revolt when he was deserted by most of al-Baqir&#8217;s followers. They brought some of the radical elements of al-Baqir&#8217;s teaching into theZaydiyya. Thus they rejected the <U><A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">imamate</A></U> of the three </FONT><A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))"><FONT face=Verdana><U>caliph</U>s</FONT></A><FONT face=Verdana> preceding &#8216;Ali, holding that &#8216;Ali had been appointed by the Prophet as his legatee (<I>wasi</I>) and implicitly as his successor. Condemning the majority of the Companions and the Muslim community for their desertion of the rightful <I>imam</I>, they repudiated the legal tradition transmitted by the Sunni traditionists and upheld the transmission of the religious law by the Family of the Prophet as solely legitimate. In contrast to the Imamiyya, however, they did not confine legal teaching authority to their <I>imams </I>but accepted in principle the teaching of any member of the <I><U><A href="javascript:void(LaunchGlossary('GlossaryItemcb97.html?type=glossary&amp;id=341'))">ahl al-bayt</A></U> </I>qualified by religious learning. The Batriyya were at first a group of moderate Shi&#8216;is who were critical of some of al-Baqir&#8217;s teaching and failed to accept him as their <I>imam</I>. While considering&#8216;Ali as the most excellent of Muslims after the Prophet, they generally admitted the imamate of his predecessors since he had pledged allegiance to them. They did not concede any superior knowledge to the Family of the Prophet, but recognised the religious knowledge handed down in the Muslim community as valid and allowed the use of individual reasoning (<I><U><A href="javascript:void(LaunchGlossary('GlossaryIteme426.html?type=glossary&amp;id=380'))">ijtihad</A></U>, qiyas</I>) in establishing the law. The Batriyya were part of the general Kufan traditionalist movement. As Kufan traditionalism became absorbed by the Sunnis during the 3rd/9th century, the views of the Jarudiyya came to prevail among the Zaydiyya.</FONT></P>
+<P><FONT face=Verdana>The legitimate imamate was at first not confined to the descendants of &#8216;Ali. Before the fall of the </FONT><A href="javascript:void(LaunchGlossary('GlossaryItem9a83.html?type=glossary&amp;id=57'))"><FONT face=Verdana><U>Umayyad</U> <U>caliphate</U></FONT></A><FONT face=Verdana>, Kufan Zaydis backed &#8216;Abd Allah b. Mu&#8216;awiya, a descendant of &#8216;Ali&#8217;s brother Ja&#8216;far. In the 4th/10th century there was still a group of Zaydis known as Talibiyya who recognised all descendants of &#8216;Ali&#8217;s father Abu Talib as eligible for the imamate. The majority, however, considered only descendants of al-Hasan and al-Husayn as legitimate claimants. According to common Zaydi doctrine, the first three <I>imams</I>, &#8216;Ali, al-Hasan and al-Husayn, were <I>imams </I>by designation (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItem39ca.html?type=glossary&amp;id=150'))">nass</A></U></I>) of the Prophet. After al-Husayn, the imamate became legally established through armed rising (<I>khuruj</I>) and a formal summons (<I><U><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da&#8216;wa</A></U></I>) to allegiance by a qualified candidate. Among the qualifications, religious knowledge was emphasised. Many Zaydi <I>imams </I>throughout the centuries have been highly educated religious scholars and authors. They were, however, generally not considered as immune from error and sin (<I>ma&#8216;sum</I>), although some late Zaydis conceded such immunity to the first three <I>imams</I>.</FONT></P>
+<P><FONT face=Verdana>In theology, the Kufan Zaydiyya were determinist, strongly opposed to the Qadariyya and <U><A href="javascript:void(LaunchGlossary('GlossaryItem10d5.html?type=glossary&amp;id=155'))">Mu&#8216;tazila</A></U>, though also admitting some responsibility of man for his acts. They were anti-anthropomorphist, but upheld the reality of the attributes of God against their reduction to descriptions of the divine essence by the Mu&#8216;tazila. They rejected the doctrine of the created nature of the <U><A href="javascript:void(LaunchGlossary('GlossaryItemf3b2.html?type=glossary&amp;id=378'))">Qur&#8217;an</A></U>, but did not insist on belief in its coeternity with God. Against Murji&#8217;i doctrine, they taught that works were part of faith (<I>iman</I>)<I>. </I>Like the Ibadiyya, they classed the grave offender (<I>fasiq</I>) as an unbeliever by ingratitude (<I>kafir ni&#8216;ma</I>), not by polytheism (<I>shirk</I>) or by denial of God (<I>juhud</I>). Land under Sunni domination was an abode of unbelief by ingratitude (<I>dar kufr ni&#8216;ma</I>). As for the Ibadiyya, this justified their revolt against the established order while also allowing them to associate peacefully with other Muslims.</FONT></P>
+<P><FONT face=Verdana>In religious law, the Zaydiyya relied at first on the teaching of various &#8216;Alid authorities, among them Muhammad Baqir, Ja&#8216;far al-Sadiq, Zayd b. &#8216;Ali and Muhammad al-Nafs al-Zakiyya, and sometimes on the claim of a consensus of the Family of the Prophet. In the 3rd/9th<SUP> </SUP>century four legal schools emerged on the basis of the teaching of Ahmad b. &#8216;Isa b. Zayd, Qasim b. Ibrahim al-Rassi, al-Hasan b. Yahya b. al-Husayn b. Zayd and Muhammad b. Mansur Muradi. They are described by Abu &#8216;Abd Allah al-&#8216;Alawi (d. 445/1053) in his <I>Kitab al-Jami&#8216; al-kafi </I>as authoritative among the Kufan Zaydiyya in his time.</FONT></P>
+<P><FONT face=Verdana>Among the abortive revolts supported by Kufan Zaydis were those of Muhammad al-Nafs al-Zakiyya and his brother Ibrahim in 145/762-3, Husayn b. &#8216;Ali Sahib Fakhkh in 169/786, Yahyab. &#8216;Abd<I> </I>Allah in 176/792, Muhammad b. Ibrahim Tabataba in 199/814, Muhammad b. al-Qasim Sahib al-Talaqan in 219/834, and Yahya b. &#8216;Umar b. Yahya in 250/864. Thereafter, Zaydi activity successfully shifted to remote mountain regions south of the Caspian Sea and in Yemen, which tended to elude the control of the central government.</FONT></P>
+<P><B><FONT face=Verdana>2. The Caspian Zaydiyya.</FONT></B></P>
+<P><FONT face=Verdana>Zaydi Islam was first preached on a limited scale among the non-Muslim Daylamis by the &#8216;Alid rebel leader Yahya b. &#8216;Abd Allah and his Kufan supporters in 175/791-2. Much more effective was the missionary activity of some local followers of Qasim b. Ibrahim (d. 246/860) in western Tabaristan, the region of Ruyan, Kalar and Shalus. Al-Qasim&#8217;s teaching in theology represented a shift from early Kufan Zaydi doctrine to more anti-determinist and radically anti-anthropomorphist positions, dissociating God from evil acts and stressing the absolute dissimilarity of God to all creation. While distinct from contemporary Mu&#8216;tazili doctrine, it paved the way for the adoption of Mu&#8216;tazili theology among his later followers. His teaching in the religious law represented a Medinan moderate Shi&#8216;i tradition relatively independent of Kufan Zaydi school doctrine. In 250/864 the people of Ruyan revolted and invited the Hasanid al-Hasan b. Zayd from Rayy to lead them. Al-Hasan established the first Zaydi state, with the capital in Amul. He officially supported Shi&#8216;i ritual and law and Mu&#8216;tazili theology, and is known to have written books on law and the imamate. However, neither he nor his brother Muhammad, who succeeded him and ruled until 287/900, was recognised as <I>imam </I>by the later Zaydis, and his teaching was ignored by the school tradition.</FONT></P>
+<P><FONT face=Verdana>After the overthrow of Muhammad b. Zayd, the Husaynid Hasan b. &#8216;Ali al-Utrush al-Nasir li &#8217;l-Haqq was active in Gilakjan and Hawsam, converting the Daylamis north of the mountain range and the Gilis east of the Safid Rud. In 301/914 he conquered Amul and restored Zaydi rule in Tabaristan, reigning until his death in 304/917. Al-Nasir left numerous writings on law and theology and was generally recognised as an <I>imam</I>. His teaching differed to some extent from that of Qasim b. Ibrahim. In its basic theses his theology was similar to al-Qasim&#8217;s, but also polemically anti-Mu&#8216;tazili. In ritual and law he was closer than al-Qasim to the Kufan Zaydi tradition and often to Imami Shi&#8216;i doctrine. Thus he adopted the Imami law of inheritance, repudiating the privileged position accorded to the agnates in Sunni law, and the Imami prohibition of the irrevocable triple repudiation of the wife (<I>talaq al-bid&#8216;a</I>).</FONT></P>
+<P><FONT face=Verdana>The Caspian Zaydiyya was thereafter divided into two rival schools and communities, the Qasimiyya prevailing in western Tabaristan, Ruyan and the adjoining <U><A href="javascript:void(LaunchGlossary('GlossaryItem175f.html?type=glossary&amp;id=280'))">Daylam</A></U>, and the Nasiriyya among the eastern Gil and the interior Daylam. The Qasimiyya maintained close ties with the family of al-Qasim. His grandson Yahya b. al-Husayn al-Hadi ila &#8217;l-Haqq came to Amul during the reign of Muhammad b. Zayd, but aroused the suspicion of the latter by being addressed by some of his followers as <I>imam </I>and had to leave quickly. After he established Zaydi rule in Yemen, he was joined by groups of Zaydi volunteers from Tabaristan and Kalar. Al-Hadi&#8217;s works on religious law were immediately adopted by the Qasimiyya and commented upon by Caspian &#8216;Alid scholars. The close relationship between the Qasimiyya and the Yemeni Zaydiyya was to continue for a long time. The Nasiriyya tended to look to the descendants of al-Nasir li &#8217;l-Haqq for leadership. All of these were given the <I>laqab </I>al-Nasir, and al-Nasir li &#8217;l-Haqq&#8217;s tomb in Amul remained for centuries a place of pilgrimage for the Nasiriyya. However, only one of his descendants, Husayn b. Ja&#8216;far al-Nasir ruling in Hawsam (432-72/1040-80), gained recognition as a Zaydi <I>imam</I>. The antagonism between the two schools was initially intense until the Imam Abu &#8216;Abd Allah b. al-Da&#8216;i al-Mahdi li-Din Allah (d. 360/970) actively promoted the thesis that both school doctrines were equally valid.</FONT></P>
+<P><FONT face=Verdana>Conditions among the Caspian Zaydiyya, where often &#8216;Alids without the full qualifications for the imamate came to reign, or two or more &#8216;Alids contemporaneously gained local support, required recognition of a rank of legitimate ruler below that of <I>imam</I>. These were commonly called </FONT><A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))"><FONT face=Verdana><I><U>da&#8216;i</U></I>s</FONT></A><FONT face=Verdana><I> </I>&#8220;summoners&#8221;, and themselves frequently adopted titles composed with this term. Al-Hasan b. Zayd, his brother Muhammad, and al-Hasan b. al-Qasim, who succeeded al-Nasir li &#8217;l-Haqq, all took the title al-Da&#8216;i li &#8217;l-Haqq, while others claimed the title al-Da&#8216;i ila &#8217;l-Rida, <I>al-rida </I>referring to the expected <I>imam </I>of the Family of the Prophet. Other Zaydi &#8216;Alid rulers merely adopted the title <I>amir.</I></FONT></P>
+<P><FONT face=Verdana>In spite of their mutual recognition, the two Caspian Zaydi communities often backed different rulers. After the final fall of the Zaydi rule in Amul, Hawsam became the centre of learning of the Nasiriyya and the seat of an &#8216;Alid dynasty founded by Ja&#8216;far b. Muhammad al-Tha&#8217;ir fi &#8217;llah, grandson of a brother of al-Nasir li &#8217;l-Haqq. Although their reign in Hawsam was often disputed by descendants of al-Nasir and others, they regularly regained control of the town. When Hawsam was replaced by Lahijan as the chief town of eastern Gilan in the 6th/12th century, descendants of al-Tha&#8217;ir came to rule there. Among the Qasimiyya, Langa, located between Hawsam and Shalus, became the seat of several<I>imam</I>sduring the later 4th/10th and the 5th/11th centuries. Later, as much of the Zaydi territories in Ruyan and Daylaman came under the control of the Nizari Isma&#8216;ilis, some Qasimiyya <I>imam</I>s were active in eastern Gilan.</FONT></P>
+<P><FONT face=Verdana>Religious scholarship among the Qasimiyya reached a peak in the<I>imam</I>s<I> </I>Ahmad b. al-Husayn al-Mu&#8217;ayyad bi &#8217;llah (d. 411/1020), and his brother Abu Talib al-Natiq bi &#8217;l-Haqq (d.<I>ca.</I>424 AH/1033). Born in Amul, both studied for some time in Baghdad and then belonged to the circle of the Buyid vizier al-Sahib Ibn &#8216;Abbad, an active promoter of Mu&#8216;tazili theology and Shi&#8216;ism, and of the Mu&#8216;tazili chief <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem22e6.html?type=glossary&amp;id=139'))">qadi</A></U> &#8216;</I>Abd al-Jabbar in Rayy. Both wrote major legal works and commentaries in the Qasimiyya school tradition, though al-Mu&#8217;ayyad is sometimes considered the founder of a new school, the Mu&#8217;ayyadiyya. In theology they fully adopted the Basran Mu&#8216;tazili school doctrine represented by &#8216;Abd al-Jabbar. The close ties between Zaydiyyaand Mu&#8216;tazila at this time were reflected in the increasingly pro-&#8216;Alid tendency in the Mu&#8216;tazili doctrine on the imamate. Two Mu&#8216;tazili scholars and authors of the school of &#8216;Abd al-Jabbar, Abu &#8217;l-Qasim al-Busti and al-Muhsin b. Karama Hakim al-Jushami (d. 484/1101), became active Zaydis. The numerous works of the latter, in particular, became prestigious among theZaydiyya. Al-Mu&#8217;ayyad also wrote a treatise on <U><A href="javascript:void(LaunchGlossary('GlossaryItem972d.html?type=glossary&amp;id=89'))">Sufi</A></U> devotion, <I>Risalat Siyasat al-muridin</I>, which remained influential in defining the Zaydi attitude to Sufism. It praises the early Sufis from Fudayl b. &#8216;lyad to al-Junayd, endorsing the ascetic, penitential and devotional aspects of their practice, but denounces the delusions of the Sufis that induce them to engage in practices contrary to the religious law, such as listening to chants and dancing.</FONT></P>
+<P><FONT face=Verdana>In the course of the 6th/12th century, the CaspianZaydiyyadeclined substantially, partly because of the expansion of Isma&#8216;ilism which confined it to eastern Gilan and partly because of quarrels between &#8216;Alid pretenders backed by different factions. Little is known about developments in the following century and a half. In 769/1367-8 <U><A href="javascript:void(LaunchGlossary('GlossaryItemcf9f.html?type=glossary&amp;id=363'))">Sayyid</A></U> &#8216;Ali Kiya b. Amir Kiya, backed by Zaydi penitents (<I>ta&#8217;iban</I>), set out to conquer eastern Gilan. He gained recognition as<I>imam</I>by the Zaydi scholars of Ranikuh and Lahijan. His descendants ruled in Lahijan on the basis of dynastic succession as Zaydis until 933/1526-7, when Sultan Ahmad Khan, with most of his Zaydi subjects, converted to Imami Shi&#8216;ism. The survival of a tradition of Zaydi learning in eastern Gilan until that date is attested by a number of manuscripts of Zaydi texts written there in the last phase before the conversion.</FONT></P>
+<P><B><FONT face=Verdana>3. The Zaydiyya in Yemen.</FONT></B></P>
+<P><FONT face=Verdana>The Zaydi imamate in Yemen was founded in 284/897 by Qasim b. Ibrahim&#8217;s grandson al-Hadi ila &#8217;l-Haqq, who had been invited by local tribes in the hope that he would settle their feuds. Although Shi&#8216;i sentiments had been manifest in parts of Yemen since the rise of Islam, there is little evidence of specifically Zaydi activity before his arrival. Al-Hadi established his capital in Sa&#8216;da. He and his sons Muhammad al-Murtada (d. 310/922) and Ahmad al-Nasir li-Din Allah (d. 322/934), both of whom were consecutively recognised as <I>imam</I>s, were buried in the congregational mosque there, and Sa&#8216;da has ever remained the stronghold of Zaydi faith and learning in Yemen. Al-Hadi&#8217;s teaching in the religious law, laid down in his <I>Kitab al-Ahkam </I>and<I> Kitab al-Muntakhab</I>, was based on that of his grandfather al-Qasim, but adopted more Shi&#8216;i positions, for instance in prescribing the <I>hay&#8216;ala</I>, the Shi&#8216;i formula of the call to prayer. It has remained basic for the Hadawiyya legal school, the only one authoritative among the Zaydiyya in Yemen. In theology, his doctrine was close to the contemporary Baghdad school of the Mu&#8216;tazila, but he did not expressly state his agreement with it. Regarding the imamate, he upheld the Jarudi position, unambiguously condemning Abu Bakr and &#8216;Umar as usurpers.</FONT></P>
+<P><FONT face=Verdana>After Ahmad al-Nasir, the descendants of al-Hadi quarrelled among themselves and none gained recognition as <I>imam</I>. The imamate was restored by al-Mansur bi &#8217;llah al-Qasim al-&#8216;Iyani (388-93/999-1003), a descendant of al-Hadi&#8217;s uncle Muhammad b. al-Qasim. Al-Mansur&#8217;s son al-Husayn al-Mahdi li-Din Allah (401-4/1010-13) was also recognised as <I>imam</I>. His qualification of religious knowledge, however, was soon questioned. He defended himself, making extravagant claims that he equalled the Prophet in rank and that he was the Expected Mahdi. When he was killed in battle, his followers and his family asserted that he had not died and would return. Thus a sect arose, called the Husayniyya. Led by descendants of al-Mahdi&#8217;s brother Ja&#8216;far, the Husayniyya, having acquired and fortified the impregnable mountain stronghold of Shahara, became the main force of opposition to the Isma&#8216;ili rule of the Sulayhids in northern Yemen during the 5th/11th century.</FONT></P>
+<P><FONT face=Verdana>In the same period another Zaydi sect arose, the Mutarrifiyya, founded by Mutarrif b. Shihab (d. after 459/1067). Mutarrif explicitly based his religious teaching on the works of Qasim b. Ibrahim, al-Hadi, and the early Yemeni<I>imam</I>s, as well as on some statements ascribed to &#8216;Ali. He interpreted them, however, in an arbitrary manner, developing a theology and cosmology that deviated substantially from Mu&#8216;tazili doctrine. This brought him in conflict with the Basran Mu&#8216;tazili teaching espoused by the Caspian Qasimiyya <I>imam</I>s. The Mutarrifiyya also manifested distinct ascetic and pietist tendencies. On the basis of the doctrine of <I><U><A href="javascript:void(LaunchGlossary('GlossaryItem1dd0.html?type=glossary&amp;id=393'))">hijra</A></U></I>, the obligation to emigrate from the land of injustice, that had been taught by Qasim b. Ibrahim and other Zaydi authorities, they founded &#8220;abodes of emigration&#8221; where they congregated to engage in worship, ritual purification, ascetic practices and teaching. These <I>hijra</I>s, usually forming a protected enclave in tribal territory, became the prototype of the protected teaching centres called <EM>hijras</EM> common among the later Yemeni Zaydiyya in general.</FONT></P>
+<P><FONT face=Verdana>At first, during the Sulayhid age, the Mutarrifiyya could spread without strong opposition from the mainstream Zaydiyya. After the restoration of the imamate by Ahmad b. Sulayman al-Mutawakkil &#8216;ala &#8217;llah (532-66/1137-70), they came under increasing pressure. Al-Mutawwakkil favoured the unity of the Zaydiyya in and outside Yemen, equally recognising the Caspian and Yemeni<I>imam</I>s. He acknowledged the pro-Shi&#8216;i wing of the Mu&#8216;tazila as close allies, asserting that the founder of the Mu&#8216;tazila, Wasil b. &#8216;Ata&#8217;, had received his doctrine from the Family of the Prophet. He furthered the teaching of Caspian Zaydi scholars and of Yemeni scholars who had studied with Zaydi scholars in the Caspian region, Rayy and Kufa, and encouraged a massive transfer of Caspian Zaydi religious literature to Yemen. A leading part in this transfer and in spreading Caspian Zaydi and Mu&#8216;tazili teaching was played by the <I>qadi </I>Ja&#8216;far b. Abi Yahya Shams Din. Al-Mutawakkil severely criticised the Mutarrifiyya and the Husayniyya for splitting the unity of the Zaydiyya. The Imam al-Mansur bi &#8216;llah &#8216;Abd Allah b. Hamza (593-614/1197-1217), a strong supporter of Mu&#8216;tazili theology, declared the Mutarrifiyya dangerous heretics, persecuted them, and destroyed their <I>hijra</I>s. Both Husayniyya and Mutarrifiyya vanished during the 9th/15th century.</FONT></P>
+<P><FONT face=Verdana>The domination of Mu&#8216;tazili theology, as espoused by the school of <I>qadi </I>Ja&#8216;far, did not, however, remain unchallenged. The Sayyid Humaydan b. Yahya (early 7th/13th century) demonstrated in several of his treatises that the early Zaydi authorities, in particular Qasim b. Ibrahim and al-Nasir li &#8217;l-Haqq, had differed on many points with the Mu&#8216;tazila, while accusing the latter of heretical innovations in numerous details of their teaching. He ignored the Caspian Qasimiyya <I>imam</I>s and claimed, with tenuous arguments, that even al-Mansur &#8216;Abd Allah b. Hamza in reality did not support Mu&#8216;tazili theology.</FONT></P>
+<P><FONT face=Verdana>The teaching of the Imam al-Mu&#8217;ayyad bi &#8216;llah Yahya b. Hamza (719-47/1328-46), a prolific author, reflected a lack of sectarian zeal and openness to Sunni learning. He praised Abu Bakr, &#8216;Umar and &#8216;Uthman as early Companions of Muhammad on a par with &#8216;Ali. He adopted the Mu&#8216;tazili theology of the school of Abu &#8217;l-Husayn al-Basri which, in contrast to the school of <I>qadi</I> &#8216;Abd al-Jabbar, previously prevalent, recognised the reality of <I>karamat</I>, the miracles of Sufi saints. His book on religious ethics <I>Tasfiyat al-qulub min daran al-awzar wa &#8217;l-dhunub </I>was patterned on al-Ghazali&#8217;s <I>Ihya&#8217; &#8216;ulum al-din</I> andquoted widely from the sayings of the early Sufis. He sharply criticised al-Ghazali, however, for his approval of <I>sama&#8216;</I>, listening to music and singing by the Sufis.</FONT></P>
+<P><FONT face=Verdana>The spread of Sufi orders in the Sunni lowlands of Yemen during this period put pressure on the Zaydiyya to re-examine their attitude to Sufism. The militant anti-Shi&#8216;i stand of these orders made it difficult to come to terms with them. A Zaydi school of Sufism was founded, however, by &#8216;Ali b. &#8216;Abd Allah b. Abi &#8217;l-Khayr, an initiate of the Kurdish Sufi <I>Shaykh </I>al-Kurani, and his disciple Ibrahim al-Kayna&#8216;i (d. 793/1391). Al-Kayna&#8216;i was closely associated withthe Imam al-Nasir Salah al-Din Muhammad (783-93/1371-91), and was able to found Sufi communities and <I>hijra</I>s<I> </I>throughout northern Yemen. The majority of the <I>imam</I>s thereafter, however, were opposed to Sufism and denounced the Sufis for their unlawful practices and fanciful claims of inspiration.</FONT></P>
+<P><FONT face=Verdana>The stigmatising of Sufism as heretical reached a peak under the Imam al-Mansur al-Qasim b. Muhammad (1006-29/1598-1620), the founder of the Qasimi dynasty of <I>imams</I>. Al-Mansur&#8217;s anti-Sufi polemics were partly provoked by the strong support of the Sufi orders for the Ottoman Turkish occupiers of Yemen, against whom he fought a relentless war. He likened the Sufis to the Isma&#8216;ilis, who had long been the arch-enemies of theZaydiyya, describing them as Batiniyya whose basic thought was derived from Zoroastrianism and Mazdakism, and he singled out Ibn al-&#8216;Arabi for particular condemnation, calling him the chief of the Sufi incarnationists (<I>hululiyya</I>).</FONT></P>
+<P><FONT face=Verdana>Al-Mansur generally upheld the Shi&#8216;i foundation of the Zaydiyya by re-affirming the Jarudi position on the imamate. Inspired by Humaydan&#8217;s views, he stressed the differences between the teaching of theZaydiyyaand the Mu&#8216;tazila. While admitting that they agreed in their basic theological theses, he maintained that the early <EM>imams</EM> had confined their teaching to what could be safely established by reason, the unambiguous text of the Qur&#8217;an and the generally-accepted Sunna. They had not followed the Mu&#8216;tazila in their abstruse speculation and absurd fantasies.</FONT></P>
+<P><FONT face=Verdana>Descendants of al-Mansur reigned in Yemen until the fall of the imamate in 1382/1962. Whereas some of his early successors were learned men in the Zaydi tradition, the later <I>imam</I>s, while still claiming the title of <I>imam</I>, in fact ruled on the basis of dynastic succession. As the Zaydi <I>imam</I>s gained control of the more populous and prosperous lowlands of Yemen, they found it increasingly expedient to accommodate the religious views and sentiments of the majority of their subjects. Thus they came to favour the neo-Sunni school that first arose out of the teaching of the <EM>Sayyid </EM>Muhammad b. Ibrahim Wazir (d. 840/1436). Ibn Wazir, member of an &#8216;Alid family of distinguished Zaydi scholars, had accepted the Sunni canonical collections of <I>hadith </I>as unconditionally authoritative in religion. On this basis, he had systematically defended Sunni school doctrine and criticised the opposing Zaydi teaching in his voluminous <I>al-&#8216;Awasim wa &#8217;l-qawasim fi &#8217;l-dhabb &#8216;an sunnat Abi &#8217;l-Qasim</I>. He insisted, however, that he was not joining any Sunni school and was simply employing sound, independent <I>ijtihad. </I>Majorscholars and authors of his school were Salih b. Mahdi al-Maqbali (d. 1108/1696-7), Muhammad b. Isma&#8216;il al-Amir (d. 1182/1768-9) and Muhammad b. &#8216;Ali al-Shawkani (d. 1250/1834). The latter, <I>mufti </I>and chief judge under several<I>imam</I>s, vigorously attacked traditional Zaydis in his writings and, in his official position, persecuted some of their intransigent leaders. He gained wide recognition in the Sunni world and is considered one of the founders of Islamic modernism. In the Republic of Yemen, Zaydi (Hadawi) law, as expounded in the <I>Kitab al-Azhar fi fiqh al-a&#8217;imma al-athar </I>and its <I>Sharh </I>by Muhammad b. Yahya b. al-Murtada (d. 840/1437), is officially recognised as valid next to <U><A href="javascript:void(LaunchGlossary('GlossaryItem96f5.html?type=glossary&amp;id=104'))">Shafi&#8216;i</A></U> law. Official ideology, however, favours the neo-Sunni school and is putting the traditionalZaydiyyaon the defensive.</FONT></P>
+<P><B><FONT face=Verdana>Bibliography</FONT></B></P>
+<P><FONT face=Verdana>R. Strothmann, <I>Das Staatsrecht der Zaiditen</I>, Strassburg 1912.</FONT></P>
+<P><FONT face=Verdana>idem, <I>Kultus der Zaiditen</I>, Strassburg 1912.</FONT></P>
+<P><FONT face=Verdana>C. van Arendonk, <I>De opkomst van</I><I>het Zaidietische Imamaat in Yemen</I>, Leiden 1919, tr. J. Ryckmans, <I>Les d&#233;buts de l&#8217;Imamat Zaidite au Yemen</I>, Leiden 1960.</FONT></P>
+<P><FONT face=Verdana>W. Madelung, <I>Der Imam al-Qasim ibn Ibrahim und die Glaubenslehre der Zaiditen</I>, Berlin: Walter De Gruyter, 1965.</FONT></P>
+<P><FONT face=Verdana>idem,&#8216;Zaydi attitudes to Sufism&#8217;, <I>Islamic Mysticism Contested</I>, eds. De Jong and Bernd Radtke, Leiden: Brill, 1999.</FONT></P><FONT face=Verdana>Ahmad Husayni, <I>Mu&#8217;allafat al-Zaydiyya</I>, Qumm 1413/[1992-3].</FONT><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Zaydiyya</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 31 Jul 2022 13:42:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 31/07/2012&nbsp;14:26&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113587 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:56:09 GMT -->
+</HTML>

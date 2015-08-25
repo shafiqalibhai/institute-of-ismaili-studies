@@ -1,0 +1,635 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+<!-- Mirrored from iis.ac.uk/view_sorted_articles.asp?l=fr&lang=fr&catid=2&ordertype=date&orderby=ContentDate&dir=descending by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 21:30:47 GMT -->
+<HEAD>
+<title>L'Institut des Etudes Ismaili : Actualités</title>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili - Actualités">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+var _lngCatID = 2;
+$(document).ready(function() {
+$('#content a[xmlns\\:dt]').each(function() {
+    var link = $(this).attr('href');
+    if (link.indexOf('id=') > -1) {
+        if (link.substring(link.indexOf('id=') + 3, link.indexOf('id=') + 9).indexOf('%') != -1) {
+            var id = link.substring(link.indexOf('id=') + 3, link.indexOf('id=') + 10);
+            $(this).attr('href', $(this).attr('href').replace(id, id.replace('%', '')));
+        }
+    }
+});
+});
+</script>
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr">
+
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "20";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations" height="115" width="779" class="banner" alt="IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations" src="WebAssets/Site_Images/header/News%20%26%20Events.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/News%20%26%20Events.jpg','WebAssets/Site_Images/header/Final%20Banner.jpg');
+				var descriptions = new Array('IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations','IIS organises lectures, seminars, conferences and book launch events where prominent scholars deliver presentations');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	
+	
+    <div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlya2bf.html?s=%2Fview%5Fsorted%5Farticles%2Easp%3Fl%3Dfr%26lang%3Dfr%26catid%3D2%26ordertype%3Ddate%26orderby%3DContentDate%26dir%3Ddescending">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A class="aTool" href="view_sorted_articles200c.html?l=en&amp;lang=en&amp;catid=2&amp;ordertype=date&amp;orderby=ContentDate&amp;dir=descending">English</A></li><li><A class="aTool" href="view_sorted_articles3f7c.html?l=ar&amp;lang=ar&amp;catid=2&amp;ordertype=date&amp;orderby=ContentDate&amp;dir=descending">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A class="aTool" href="view_sorted_articlesf15a.html?l=fa&amp;lang=fa&amp;catid=2&amp;ordertype=date&amp;orderby=ContentDate&amp;dir=descending">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A class="aTool" href="view_sorted_articles97f1.html?l=ru&amp;lang=ru&amp;catid=2&amp;ordertype=date&amp;orderby=ContentDate&amp;dir=descending">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_articlee3a1.html?type=cont.currentlang&amp;id=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A href="view_article04d0.html?type=cont.currentlang&amp;id=104873&amp;l=fr">Evénements futurs</A></p><p><A href="view_article67fc.html?type=cont.currentlang&amp;id=104498&amp;l=fr">La Mis à jour de IIS</A></p><p><A href="home.html?type=2&amp;t=midlist&amp;g=date&amp;l=fr">2013 News Archive</A></p><p><A href="view_sorted_articles0e23.html?type=cat&amp;id=203&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2012</A></p><p><A href="view_sorted_articles021c.html?type=cat&amp;id=196&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2011</A></p><p><A href="view_sorted_articlesdef3.html?type=cat&amp;id=173&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2010</A></p><p><A href="view_sorted_articlesd424.html?type=cat&amp;id=147&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2009</A></p><p><A href="view_sorted_articles91e3.html?type=cat&amp;id=137&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2008</A></p><p><A href="view_sorted_articles9d1c.html?type=cat&amp;id=122&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2007 </A></p><p><A href="view_sorted_articlesad04.html?type=cat&amp;id=118&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2006</A></p><p><A href="view_sorted_articles1e8f.html?type=cat&amp;id=114&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2005</A></p><p><A href="view_sorted_articles94b4.html?type=cat&amp;id=44&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2004</A></p><p><A href="view_sorted_articles37a4.html?type=cat&amp;id=35&amp;t=short&amp;g=date&amp;l=fr">Archive d'actualités 2003</A></p><p><A href="view_sorted_articles1664.html?type=cat&amp;id=36&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2002</A></p><p><A href="view_sorted_articlese5eb.html?type=cat&amp;id=37&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2001</A></p><p><A href="view_sorted_articles85aa.html?type=cat&amp;id=38&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 2000</A></p><p><A href="view_sorted_articles7e59.html?type=cat&amp;id=39&amp;t=midlist&amp;g=date&amp;l=fr">Archive d'actualités 1999</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Actualités</H3>
+
+					<div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articleb51d.html?type=cont&amp;id=114478" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Wafi%20Momin-201443134552_7055.jpg"></A><strong>IIS &#233;tablit L'Unite des Collections Sp&#233;ciales isma&#233;liennes</strong> <br/><font color="#696969">Avril 2014</font><br/>L'IIS est heureux d'annoncer la mise en place / l'&#233;tablissement / la cr&#233;ation d' Unit&#233; Collections sp&#233;ciales d'isma&#233;liennes (ISCU), une unit&#233; de recherche ind&#233;pendante qui travaille sous la supervision de <U><A href="view_personed32.html?type=user&amp;id=100115">Dr Farhad Daftary</A></U>, le Co-Directeur d'IIS. <A href="view_articleb51d.html?type=cont&amp;id=114478" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article348e.html?type=cont&amp;id=114428" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/HSI%20s_w-2014319145347_7055.jpg"></A><strong>IIS publie le premier volume de la S&#233;rie Heritage chiite</strong> <br/><font color="#696969">Mars 2014</font><br/>L'IIS, en association avec I.B. Tauris, est heureux d'annoncer la publication<A href="view_article999f.html?type=cont.currentlang&amp;id=114267"><I> d'Une Histoire de Shi&#8216;i Islam</I> </A>par <U><A href="view_person19c6.html?type=auth&amp;id=8">Dr Farhad Daftary,</A></U> le livre inaugural de la nouvelle <A href="view_article0aca.html?type=cont.currentlang&amp;id=111218">S&#233;rie Heritage chiite</A> qui vient d'&#234;tre lanc&#233;. <A href="view_article348e.html?type=cont&amp;id=114428" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articleda6e.html?type=cont&amp;id=114408" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20and%20Events/Epistles%20s_w-2014311111035_7055.jpg"></A><strong>Le dernier volume dans les &#233;p&#238;tres de Fr&#232;res de la Puret&#233; de la s&#233;rie publi&#233;e</strong> <br/><font color="#696969">Mars 2014</font><br/>L'Institut des Etudes Ismaili est heureux d'annoncer la publication du prochain volume de la s&#233;rie dans les <U><A href="view_article3c4d.html?type=cont.currentlang&amp;id=112055">&#233;p&#238;tres de Fr&#232;res de la Puret&#233; (<I>Rasa'il Ikhwan al-Safa'</I>)</A></U>, intitul&#233; <U><EM><A href="view_article674a.html?type=cont.currentlang&amp;id=114272">Sur Sciences Naturelles: Une &#233;dition critique arabe et la Traduction en anglais d' &#233;p&#238;tres 15 et 21</A></EM></U>. <A href="view_articleda6e.html?type=cont&amp;id=114408" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articlecc65.html?type=cont&amp;id=114358" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/QS%20pub%20spotlight-201425124954_7055.jpg"></A><strong>IIS publie le Neuvi&#232;me Volume de la S&#233;rie d'Etudes du Coran</strong> <br/><font color="#696969">F&#233;vrier 2014</font><br/>L' IIS est heureux d'annoncer la publication <I>des Objectifs / de Buts, les M&#233;thodes et les Contextes de l'Ex&#233;g&#232;se du Coran ( 2</I><EM><I>&#232;me</I></EM><I>/<EM><I> </I></EM><EM><I>8&#232;me </I></EM><B>- </B>9<EM><I>&#232;me</I></EM>/15&#232;me si&#232;cle</I> ), &#233;dit&#233; par <U>Karen Bauer</U> , Chercheur Associ&#233; &#224; l' Unit&#233; des Etudes du Coran. <A href="view_articlecc65.html?type=cont&amp;id=114358" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article32d3.html?type=cont&amp;id=114278" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/alumnihead-20131218103649_7055.jpg"></A><strong>IIS Alumni &#233;lit / Les Anciennes &#233;l&#232;ves d'IIS &#233;lisent la Nouvelle Direction de nouveaux dirigeants</strong> <br/><font color="#696969">D&#233;cembre 2013</font><br/><a href="view_sorted_articles3007.html?catid=143&amp;layout=children&amp;l=en"><u>L'Association des anciens</u><u> &#233;l&#232;ves d'IIS</u></a> est heureuse d'annoncer la nomination de ses dirigeants &#233;lus pour les Groupes Chapitre asiatiques, europ&#233;ens et nord-am&#233;ricains. <A href="view_article32d3.html?type=cont&amp;id=114278" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article99ca.html?type=cont&amp;id=114213" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Alessandro%20Cancian%20Homepage%20Image%20s_w-2013117143525_7055.jpg"></A><strong>L'Institut des Etudes Ismaili, IIS organise un colloque sur Les Approches droit au Qur&#8217;an en Iran contemporain</strong> <br/><font color="#696969">Novembre 2013</font><br/>l'Unit&#233; des Etudes Qur&#8217;aniques &#224; l'IIS a organis&#233; <A href="view_article63e3.html?ContentID=111028"><U>un colloque international</U> </A>du 2 au 4 Septembre 2013 intitul&#233; <I>Approches</I><I> droit au Qur&#8217;an en Iran contemporain</I>. <A href="view_article99ca.html?type=cont&amp;id=114213" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article2c10-2.html?type=cont&amp;id=114183" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/04%20SPI%202013%20Group%20Photo%20s_w-20131016103824_7055.jpg"></A><strong>Le Programme d'Et&#233; d&#8217;IIS s'est tenu &#224; l'Universit&#233; de Cambridge</strong> <br/><font color="#696969">Octobre 2013</font><br/>La onzi&#232;me session annuelle d'&#233;t&#233; sur l'Islam s&#8217;est tenue au Clare College, &#224; l&#8217;Universit&#233; de Cambridge, du 11 au 18 ao&#251;t 2013. <A href="view_article2c10-2.html?type=cont&amp;id=114183" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articlecac0.html?type=cont&amp;id=114163" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Dr%20Miklos%20Sarkozy%20homepage%20image-2013101102154_7055.jpg"></A><strong>Les Erudits d&#8217;IIS pr&#233;sentent une Lecture Alternative &#224; la Qiyama dans l'Histoire Ismaili</strong> <br/><font color="#696969">Octobre 2013</font><br/><P><U><A href="view_person7276.html?type=user&amp;id=100594">Le Dr Miklos Sarkozy</A></U>, Chercheur Associ&#233; Invit&#233; au <U><A href="view_sorted_articlesec31.html?catid=86&amp;layout=children&amp;l=en">D&#233;partement de la Recherche Acad&#233;mique et Publications</A> </U>de l'Institut a &#233;t&#233; le principal intervenant du <U><A href="http://www.persianatesocieties.org/index.php/convention/asps-biennial-convention-sarajevo-2013" target=_blank>Sixi&#232;me Congr&#232;s de la Biennale de l'Association pour l'Etude des Soci&#233;t&#233;s Persianates</A></U>, qui s&#8217;est d&#233;roul&#233; &#224; Sarajevo du 2 au 6 septembre 2013.</P> <A href="view_articlecac0.html?type=cont&amp;id=114163" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article6431.html?type=cont&amp;id=114158" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/STEP%20Students%20homepage%20Image-201392585258_7055.jpg"></A><strong>IIS Accueille les Nouveaux Etudiants GPISH et STEP</strong> <br/><font color="#696969">Septembre 2013</font><br/>La nouvelle cohorte d'&#233;tudiants inscrits au Programme Du Second Cycle en &#201;tudes Islamiques et Humanit&#233;s (GPISH) et au Programme d&#8217;Enseignement pour les Enseignants du Secondaire (STEP) sont arriv&#233;s &#224; l'IIS et ont commenc&#233; leurs &#233;tudes. <A href="view_article6431.html?type=cont&amp;id=114158" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article2e14.html?type=cont&amp;id=114148" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Asian%20Alumni%20Chapter%20Group%20Meeting%20in%20Turkey%202013%20Group%20Photo%20s_w-2013917122650_7055.jpg"></A><strong>Les Anciens &#201;l&#232;ves Analysent l'Impact de la S&#233;cularisation sur les Communaut&#233;s de Foi</strong> <br/><font color="#696969">Septembre 2013</font><br/>Le Groupe Asiatique de l'Institut des Etudes Ismaili a organis&#233; son Assembl&#233;e G&#233;n&#233;rale Annuelle, &#224; Istanbul en Turquie , du 4 au 7 juillet 2013 <A href="view_article2e14.html?type=cont&amp;id=114148" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article4fa0.html?type=cont&amp;id=114133" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/A%20Rippin-20138299109_7055.jpg"></A><strong>Le Professeur Andrew Rippin int&#232;gre l&#8217;IIS comme Charg&#233; de Recherche Senior</strong> <br/><font color="#696969">Ao&#251;t 2013</font><br/><P>Le Professeur <U>Andrew Rippin</U> a integr&#233; l&#8217;Institut des Etudes Ismaili comme Chercheur &#224; l'Unit&#233; des <U>Etudes </U><U>Qur&#8217;aniques</U> au D&#233;partement de la Recherche Acad&#233;mique et des Publications.</P> <A href="view_article4fa0.html?type=cont&amp;id=114133" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article82a5.html?type=cont&amp;id=114128" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/chinese_3_homepage-201391292113_7055.jpg"></A><strong>Une D&#233;l&#233;gation de l'&#201;tat Chinois visite l&#8217;IIS et l&#8217;AKU-ISMC</strong> <br/><font color="#696969">Ao&#251;t 2013</font><br/><P><SPAN style="LINE-HEIGHT: 115%; FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 12pt; mso-fareast-font-family: SimSun; mso-font-kerning: .5pt; mso-ansi-language: EN-GB; mso-fareast-language: AR-SA; mso-bidi-language: AR-SA">Le 2 juillet 2013, une d&#233;l&#233;gation de l'Administration d'Etat pour les Affaires Religieuses de la Chine (SARA) a visit&#233; l'IIS et <U><A href="http://www.aku.edu/collegesschoolsandinstitutes/ismc/Pages/ismc-home.aspx">l&#8217;AKU-ISMC</A></U>.</SPAN></P> <A href="view_article82a5.html?type=cont&amp;id=114128" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articlec82e.html?type=cont&amp;id=114123" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/STEP%20Intern%20sw-2013814154716_7055.jpg"></A><strong>Le d&#233;partement d'&#233;tudes Curriculum lance le Programme STEP</strong> <br/><font color="#696969">Ao&#251;t 2013</font><br/>Le D&#233;partement du Programme d'Etudes (DCS ) &#224; l&#8217;Institut d&#8217;Etudes Isma&#233;liennes ( IIS) a lanc&#233; le premier cycle du programme de stage annuel pour les dipl&#244;m&#233;s du Programme d&#8217;Enseignement pour les Enseignants du Secondaire (STEP). <A href="view_articlec82e.html?type=cont&amp;id=114123" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articled80c.html?type=cont&amp;id=114088" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/MKeshavjee-201373112654_7055.jpg"></A><strong>IIS organise le lancement du livre &#224; Londres sur un sujet contemporain affronter les musulmans de la Diaspora</strong> <br/><font color="#696969">Juillet 2013</font><br/><P>L'Institut des Etudes Ismaili (IIS) a organis&#233; un lancement au Centre Ismailien a Londres, du livre intitul&#233;<I> </I><I>Islam</I><I>, la charia et Alternative Dispute Resolution-m&#233;canismes de recours juridique dans la communaut&#233; musulmane, </I>&#233;crit par Mohamed M Keshavjee, PhD (Londres) et Avocat au droit de le Soci&#233;t&#233; Honorable de Gray&#8217;s Inn. </P> <A href="view_articled80c.html?type=cont&amp;id=114088" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article8933.html?type=cont&amp;id=114078" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/CB%20s_w-2013724101948_7055.jpg"></A><strong>Le Professeur Carmela Baffioni int&#232;gre l&#8217;IIS comme Charg&#233; de Recherche Senior</strong> <br/><font color="#696969">Juillet 2013</font><br/>Le <U><A href="view_personf3e8.html?type=auth&amp;id=144">Professeur Carmela Baffioni</A></U> a rejoint L&#8217;Institut des Etudes Ismaili comme Charg&#233; de Recherche Senior, pour travailler plus sp&#233;cifiquement sur la s&#233;rie des publications des <A href="view_article3c4d.html?type=cont.currentlang&amp;id=112055"><I><U>Epistles of the Brethren of Purity</U></I> </A>(les Ep&#238;tres des Fr&#232;res de la Puret&#233;)<I>.</I> <A href="view_article8933.html?type=cont&amp;id=114078" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article3ef4.html?type=cont&amp;id=114053" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Shii%20Imamate%20news%20story-201373123211_7055.jpg"></A><strong>IIS Publie l&#8217;Edition Arabe et la Traduction Anglaise de Tathbit al-imama</strong> <br/><font color="#696969">Juillet 2013</font><br/>L'Institut des Etudes Ismaili est heureux d'annoncer la publication d'une &#233;dition en arabe et de la traduction en anglais de <I>Tathbit al-imama,</I> attribu&#233; au Calife-Imam Fatimide al-Mansur. <A href="view_article3ef4.html?type=cont&amp;id=114053" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article5199.html?type=cont&amp;id=114023" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20and%20Events/Founder%20of%20Cairo%20s_w-201362611627_7055.jpg"></A><strong>Une Nouvelle publication d&#8217;IIS sur l&#8217;Imam-calife fatimide al-Mu ' izz</strong> <br/><font color="#696969">Juin 2013</font><br/>L'Institut des Etudes Ismaili est heureux d'annoncer la publication d'une traduction en anglais du texte <I>&#8216;<A href="view_articlecffd.html?type=cont.currentlang&amp;id=109912">Uyun al-akhbar</A></I>, d&#8217;Idris ' Imad al-Din ' sur le quatri&#232;me Imam-calife fatimide, al-Mu ' izz li-Din Allah. <A href="view_article5199.html?type=cont&amp;id=114023" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article52d7.html?type=cont&amp;id=114013" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/QAA%20image%20s_w-2013620144413_7055.jpg"></A><strong>La Visite Annuelle de Contr&#244;le du QAA Montre de Louables Progr&#232;s</strong> <br/><font color="#696969">Juin 2013</font><br/>L'Institut des Etudes Ismaili (IIS) a &#233;t&#233; f&#233;licit&#233; par la <U><A onclick="return fnExtLinkWarning();" href="http://www.qaa.ac.uk/Pages/default.aspx" target=_blank>Quality Assurance Agency for Higher Education </A>(QAA</U>)(Agence Assurance Qualit&#233; pour l'Enseignement Sup&#233;rieur (QAA)), dans un rapport publi&#233; au mois de juin. <A href="view_article52d7.html?type=cont&amp;id=114013" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article5818.html?type=cont&amp;id=114003" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20and%20Events/OAU%20s_w-201361211446_7055.jpg"></A><strong>Des Chercheurs d&#8217;IIS ont fait une pr&#233;sentation &#224; la Conf&#233;rence en l&#8217;honneur du Professeur Ismail Poonawala</strong> <br/><font color="#696969">Juin 2013</font><br/>Le <A href="view_person8097.html?type=auth&amp;id=156">Dr Omar Al&#237;-de-Unzaga</A> et le <A href="view_person489e.html?type=user&amp;id=100455">Dr Daryoush Mohammad Poor</A> ont pr&#233;sent&#233; des &#233;crits honorant la carri&#232;re du Professeur Ismail Poonawala, lors d'une conf&#233;rence qui s'est tenue &#224; l'Universit&#233; de Californie-Los Angeles (UCLA) le 23 mai 2013. <A href="view_article5818.html?type=cont&amp;id=114003" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article1eb5.html?type=cont&amp;id=113998" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20and%20Events/Dr%20Farhad%20Daftary%20engages%20in%20an%20on-stage%20discussion%20with%20Dr%20Derryl%20MacLean%20in%20Vancouver%2c%20Canada%20s_w-20136512402_7055.jpg"></A><strong>Programmes de Lancement des livres d&#8217;IIS</strong> <br/><font color="#696969">Juin 2013</font><br/>Au cours du premier semestre 2013, des auteurs de r&#233;centes publications d&#8217;IIS ont particip&#233;s &#224; six &#233;v&#233;nements, ils ont visit&#233; le Tadjikistan, le Canada, la France, le Portugal et le Royaume-Uni. Parmi les 550 personnes qui ont particip&#233; &#224; ces &#233;v&#233;nements, il y a eu des universitaires, des dignitaires, des membres de la communaut&#233; Ismaili et autres personnes. <A href="view_article1eb5.html?type=cont&amp;id=113998" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article5b6d.html?type=cont&amp;id=113983" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/AKD_1-2013520145737_7055.jpg"></A><strong>Un Chercheur d&#8217;IIS Pr&#233;sente un Ecrit &#224; la Conf&#233;rence Sociologie Attrayante &#224; Londres</strong> <br/><font color="#696969">Mai 2013</font><br/>Le Dr Al-Karim Datoo, Coordinateur de la Recherche de l&#8217;Unit&#233; d&#8217;Etudes Communautaire &#224; l'IIS, a pr&#233;sent&#233; un &#233;crit intitul&#233;<I>&#8216;Sociological exploration of values in a globalising context</I>&#8217; &#171; Exploration sociologique des valeurs dans un contexte globalis&#233; &#187; &#224; la Conf&#233;rence annuelle "Sociologie Attrayante" de l'Association Sociologique Britannique le 5 avril 2013 &#224; Londres. <A href="view_article5b6d.html?type=cont&amp;id=113983" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article6079.html?type=cont&amp;id=113978" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Dr%20Miklos%20Sarkozy%20s_w-2013588191_7055.jpg"></A><strong>Le Dr. Miklos Sarkozy a rejoint l'IIS comme chercheur universitaire</strong> <br/><font color="#696969">Mai 2013</font><br/>Le Dr Miklos Sarkozy, professeur agr&#233;g&#233; de l'Universit&#233; Gaspar Karoli de l'Eglise R&#233;form&#233;e Hongroise a rejoint l'IIS comme chercheur universitaire jusqu'en d&#233;cembre <A href="view_article6079.html?type=cont&amp;id=113978" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articledd89.html?type=cont&amp;id=113953" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/STEP%20C4%20group%20photo%20s_w-2013430104810_7055.jpg"></A><strong>La Cohorte Quatre de STEP c&#233;l&#232;bre sa Graduation</strong> <br/><font color="#696969">Avril 2013</font><br/><P>La quatri&#232;me cohorte du Programme d&#8217;Education des Enseignants du Secondaire (STEP) de l'Institut a c&#233;l&#233;br&#233; son ach&#232;vement lors de la c&#233;l&#233;bration annuelle de remise de dipl&#244;me au Centre Ismaili de Londres le 6 avril 2013.</P> <A href="view_articledd89.html?type=cont&amp;id=113953" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article7b1a.html?type=cont&amp;id=113943" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/AOS_1_s_w-201342584529_7055.jpg"></A><strong>Des Chercheurs d&#8217;IIS Pr&#233;sentent des &#201;crits &#224; la R&#233;union de l'American Oriental Society</strong> <br/><font color="#696969">Avril 2013</font><br/><P>Quatre chercheurs de l'Unit&#233; des Etudes Quraniques d'IIS, Nuha Al-Sha'ar, Karen Bauer, Stephen Burge et Asma Hilali, ont pr&#233;sent&#233; des &#233;crits lors de la 223<SUP>eme</SUP> r&#233;union de American Oriental Society. La r&#233;union de cette ann&#233;e s'est tenue &#224; Portland, aux Etats Unis, du 15 au 18 mars 2013 et a &#233;t&#233; suivie par plus de 150 universitaires venus du monde entier.</P> <A href="view_article7b1a.html?type=cont&amp;id=113943" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article6e82.html?type=cont&amp;id=113898" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/short_history_chinese_s_w-2013314144818_7055.jpg"></A><strong>L&#8217;IIS publie la traduction chinoise de &#8216;Un R&#233;sum&#233; de l&#8217;Histoire des Ismailis&#8217;</strong> <br/><font color="#696969">Mars 2013</font><br/>L'Institut des Etudes Ismaili (IIS) est heureux d'annoncer la publication de la traduction en chinois de <I><A href="view_article5653.html?type=cont.currentlang&amp;id=100728">&#8216;Un R&#233;sum&#233; de l&#8217;Histoire des Ismailis: Les Traditions d&#8217;une Communaut&#233; Musulmane&#8217;</A></I> du Dr Daftary. Cette &#233;dition chinoise est traduite par Amier Saidula et publi&#233;e par Weber Publishing International LTD &#224; Taipei, Taiwan. <A href="view_article6e82.html?type=cont&amp;id=113898" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articlef222.html?type=cont&amp;id=113883" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Daniel%20Beben%20s_w-201337154645_7055.jpg"></A><strong>IIS Lance la S&#233;rie des Conf&#233;rences 2013</strong> <br/><font color="#696969">Mars 2013</font><br/>M. Daniel Beben de l'Universit&#233; d'Indiana, E.-U et M. Matthew Melvin-Koushki de l'Universit&#233; d'Oxford, R U, ont &#233;t&#233; les deux premiers intervenants, de la s&#233;rie de conf&#233;rences 2013 de l&#8217;IIS. <A href="view_articlef222.html?type=cont&amp;id=113883" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articleb41f.html?type=cont&amp;id=113873" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Faheem%20Hussain%20s_w-2013225162029_7055.jpg"></A><strong>Un Enseignant STEP Pr&#233;sente un article &#224; la Conf&#233;rence Annuelle de la Soci&#233;t&#233; de l&#8217;Histoire de l&#8217;Education</strong> <br/><font color="#696969">F&#233;vrier 2013</font><br/>Faheem Hussain, &#233;tudiant de la promotion 2012 du <A href="view_articlee46d.html?type=cont.currentlang&amp;id=106627">Programme d&#8217;Enseignement pour les Enseignants du Secondaire</A> (STEP), a pr&#233;sent&#233; un article, intitul&#233; <I>Manuels, Pouvoir et Soci&#233;t&#233;</I> &#224; la Conf&#233;rence Annuelle de la Soci&#233;t&#233; de l&#8217;Histoire de l&#8217;Eduction qui portait sur <I>Les Dirigeants, les Rebelles et les R&#233;formateurs,</I> et qui s&#8217;est tenue &#224; l&#8217;Universit&#233; de Winchester &#224; Exeter, Royaume-Uni, en d&#233;cembre 2012. <A href="view_articleb41f.html?type=cont&amp;id=113873" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article4fb6.html?type=cont&amp;id=113868" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Alumni%20group%20photo%20s_w-201322110338_7055.jpg"></A><strong>Des Anciens Etudiants, membres du Groupe Europ&#233;en, se sont rencontr&#233;s &#224; Istanbul</strong> <br/><font color="#696969">F&#233;vrier 2013</font><br/>Des Anciens Etudiants venant de l&#8217;Europe enti&#232;re se sont rencontr&#233;s &#224; Istanbul lors de leur r&#233;union annuelle, qui a eu lieu du 7 au 10 d&#233;cembre 2012. <A href="view_article4fb6.html?type=cont&amp;id=113868" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article2822.html?type=cont&amp;id=113863" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/ma-Yaser_1-2013213171937_7055.jpg"></A><strong>L&#8217;IIS attribue la Premi&#232;re Bourse Doctorale Mohammed Arkoun</strong> <br/><font color="#696969">F&#233;vrier 2013</font><br/>L&#8217;Institut des Etudes Ismailis (IIS) a le plaisir d&#8217;annoncer l&#8217;attribution de la premi&#232;re <U><A href="view_article1077.html?type=cont.currentlang&amp;id=113402">Bourse Doctorale Mohammed Arkoun</A> </U>&#224; Yaser Mirdamadi, qui poursuivra ses &#233;tudes en Doctorat, dans le D&#233;partement des Sciences Humaines et Sociales de l&#8217;Universit&#233; d&#8217;Edinbourg. Il a &#233;t&#233; choisi parmi 40 postulants issus de 11 pays diff&#233;rents. <A href="view_article2822.html?type=cont&amp;id=113863" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articlea135.html?type=cont&amp;id=113853" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/APP4_cover_s_w-20132610165_7055.jpg"></A><strong>L&#8217;IIS Publie le quatri&#232;me volume d&#8217;Une Anthologie de la Philosophie en Perse</strong> <br/><font color="#696969">F&#233;vrier 2013</font><br/>L&#8217;Institut des Etudes Ismailis (IIS) a le plaisir d&#8217;annoncer la publication <I><A href="view_article51ad.html?type=cont.currentlang&amp;id=113847">d&#8217;Une Anthologie de la Philosophie en Perse, Vol. 4: De l&#8217;Ecole de l&#8217;Illumination au Mysticisme Philosophique</A></I>. <A href="view_articlea135.html?type=cont&amp;id=113853" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article3e7f.html?type=cont&amp;id=113843" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Ismaili%20Jurisprudence%20news%20story%20s_w-201312913295_7055.jpg"></A><strong>Publication du Minhaj al-fara&#8217;id d&#8217;al-Qadi al Nu&#8217;man</strong> <br/><font color="#696969">Janvier 2013</font><br/>L&#8217;Institut des Etudes Ismailis a le plaisir d&#8217;annoncer la publication d&#8217;une &#233;dition critique traduite en anglais du <I>Minhaj al-fara&#8217;id </I>d&#8217;al-Qadi al-Nu&#8216;man. Ce livre, &#233;dit&#233; et traduit par le Professeur Agostino Cilardo, a &#233;t&#233; publi&#233; sous le titre, <I><A href="view_article8a9b.html?type=cont.currentlang&amp;id=113807">Historique de la Jurisprudence Ismaili: le Droit sous la r&#233;gence de l&#8217;Empire Fatimide</A></I>.<I> </I> <A href="view_article3e7f.html?type=cont&amp;id=113843" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_articlee439-2.html?type=cont&amp;id=113828" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Qaimiyat%20book%20cover%20s_w-201312213924_7055.jpg"></A><strong>Un Chercheur Associ&#233; &#224; l&#8217;IIS a re&#231;u un Certificat d'Honneur en Iran</strong> <br/><font color="#696969">Janvier 2013</font><br/>Le Dr <U><A href="view_person968e.html?type=auth&amp;id=15">Sayyad Jalal Badakhchani</A></U>, Chercheur Associ&#233; &#224; l&#8217;IIS, a r&#233;cemment re&#231;u un Certificat Honorifique de la part de &#8220;l&#8217;Heritage Foundation&#8221; et la Biblioth&#232;que Nationale d&#8217;Iran pour sa contribution &#224; la r&#233;introduction du texte Persan subsistant, le <I>Qa&#8217;imiyat<U>,</U></I> un recueil de po&#232;mes datant de la p&#233;riode Alamut dans l&#8217;histoire Ismaili. <A href="view_articlee439-2.html?type=cont&amp;id=113828" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article348e-2.html?type=cont&amp;id=113818" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Group%20Photo%20CASU%20seminar%20s_w-2013116174839_7055.jpg"></A><strong>L&#8217;IIS Comm&#233;more Plus d'un Si&#232;cle de Recherches sur les Ismailis en Russie</strong> <br/><font color="#696969">Janvier 2013</font><br/><U><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983">L'Unit&#233; des Etudes d&#8217;Asie Centrale</A></U> a organis&#233; un s&#233;minaire &#224; l'IIS, intitul&#233; <I>"Russie et Musulmans Ismaili: Plus d&#8217;un Si&#232;cle d'Apprentissage",</I> le 5 novembre 2012. Le s&#233;minaire a explor&#233; la contribution des recherches Russes aux &#233;tudes Ismailis et a comm&#233;mor&#233; le centenaire de la visite de <U><A href="view_person42de.html?type=auth&amp;id=71">Son Altesse Sir Sultan Mahomed Shah Khan III</A></U> en Russie. <A href="view_article348e-2.html?type=cont&amp;id=113818" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><A href="view_article5abf.html?type=cont&amp;id=113813" xmlns=""><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/Medium/News%20%26%20Events/Epistles%201-2%20News%20Story%20s_w-2013110144838_7055.jpg"></A><strong>Le Dernier volume de la S&#233;rie des Ep&#238;tres des Fr&#232;res de la Puret&#233; a &#233;t&#233; publi&#233;</strong> <br/><font color="#696969">Janvier 2013</font><br/>L&#8217;Institut des Etudes Ismaili &#224; le plaisir d&#8217;annoncer la publication du dernier volume de la s&#233;rie des <A href="view_article3c4d.html?type=cont.currentlang&amp;id=112055">Ep&#238;tres des Fr&#232;res de la Puret&#233; (<I>Rasa&#8217;il Ikhwan al-Safa&#8217;</I>)</A>, intitul&#233; <I><A href="view_article5cc9.html?type=cont.currentlang&amp;id=113782">Sur l'Arithm&#233;tique et la G&#233;om&#233;trie: une Edition Critique en langue Arabe et une Traduction Anglaise des Ep&#238;tres 1 &amp; 2</A></I>, &#233;dit&#233; et traduit par le <A href="view_person413a.html?type=auth&amp;id=164">Docteur Nader El-Bizri</A>. <A href="view_article5abf.html?type=cont&amp;id=113813" xmlns="">Plus</A></div><div class="listing" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"> </div>
+                	
+                	<P style="clear:both;"><A href="#">Haut de page</A></P>
+					
+			
+
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+		</div>
+	</div>
+
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_sorted_articles.asp?l=fr&lang=fr&catid=2&ordertype=date&orderby=ContentDate&dir=descending by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 21:31:16 GMT -->
+</HTML>
+

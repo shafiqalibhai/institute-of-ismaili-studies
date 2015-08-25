@@ -1,0 +1,638 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101275 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:39 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 101275;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="779" class="banner" alt="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" src="WebAssets/Site_Images/header/Research%20And%20Publications.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Research%20And%20Publications.jpg','WebAssets/Site_Images/header/ResearchandPublication_2.jpg');
+				var descriptions = new Array('An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat','The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only6825.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D101275">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb20b.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5400.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesccd1.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Academic Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Sectarian and National Movements in Iran, Khurasan and Transoxania During Umayyad and Early 'Abbasid Times</strong><br/><strong><DIV><A href="view_person19c6.html?type=authors&amp;id=8">Dr Farhad  Daftary</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>In <I>History of Civilizations of Central Asia,</I> vol. IV, part One, ed. M. S. Asimov and C. E. Bosworth. Paris: UNESCO Publishing, pp. 41-60. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong>This article discusses the history of opposition to existing rulers by various ethnic and religious groups throughout the Umayyad and Abbasid empires. Various Shia communities also offered a substantial amount of opposition to the Sunni establishment. Toward the end of the <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasid</A> reign, resurgence in Persian culture and language facilitated the establishment of decentralised, local, ruling dynasties throughout the Abbasid lands. Therefore, until the arrival of the Mongols, the Abbasid <A href="GlossaryIteme8b3.html?type=glossary&amp;id=298">caliphate</A> had to contend with uprisings and revolts, a number of which expressed strong local, cultural, and linguistic influence.</div><div> </div><div><P class=mainhead><STRONG>Keywords<BR></STRONG><BR>
+<P class=bodytext>Nationalism, Iran, Persia, Khurasan, Transoxania, Abbasid, Zoroastrian, <A href="javascript:void(LaunchGlossary('GlossaryItembbbe.html?type=glossary&amp;id=201'))">Kharijis</A>, Khurammis, Ismailis, Imamiyya, Khidash<BR><BR>
+<P class=bodytext><IMG height=25 src="images/pdf_icon.gif" width=25> <A href="SiteAssets/pdf/Daftary_Sectarian_National_Movements.pdf">Download PDF version of article (250 KB)</A><BR><BR><STRONG>Table of contents</STRONG> 
+<P class=bodytext>
+<UL>
+<LI><SPAN class=bodytext><A title=#anchor1 href="#anchor1">The Kharijite movement</A></SPAN> 
+<LI><SPAN class=bodytext><A title=#anchor2 href="#anchor2">Currents of Shi'ism: the Kaysaniyya and the Hashimiyya</A></SPAN> 
+<LI><SPAN class=bodytext><A title=#anchor3 href="#anchor3">Heterodox Muslim and neo-Mazdakite movements: al-Muqanna', Babak, and others</A></SPAN> 
+<LI><SPAN class=bodytext><A title=#anchor4 href="#anchor4">The later development of Shi'ism: the Twelvers, the Zaydis and the Ismailis</A></SPAN> 
+<LI class=bodytext><A title=#anchor5 href="#anchor5">The beginnings of the disinitgration of the 'Abbasid caliphate in the east</A> 
+<LI><SPAN class=bodytext><A title=#anchor6 href="#anchor6">Bibliography and References</A></SPAN> 
+<LI class=bodytext><A title=#anchor7 href="#anchor7">Notes</A> </LI></UL>
+<P class=bodytext>The protest movements touched upon in Chapter 1 (Part Two) will now be considered in greater detail. Islam heralded a new social order, under whose banner all believers belonging to different races or classes would theoretically enjoy equality. However, during the earlier centuries of Islam when the Islamic empire was really an 'Arab kingdom', the Iranians, Central Asians and other non-Arab peoples who had converted to Islam in growing numbers as <I><A href="javascript:void(LaunchGlossary('GlossaryItemc763.html?type=glossary&amp;id=176'))">mawali</A></I>, or 'clients' of an Arab lord or clan, had in practice acquired an inferior socio-economic and racial status compared to Arab Muslims, though the <I>mawali</I> themselves fared better than the empire's non-Muslim subjects, the <I>ahl al-dhimma</I> ('people of the book'). The <I>mawali</I>, for instance, paid special taxes, often similar to the <I>jizya</I> (poll tax) and the <I><A href="javascript:void(LaunchGlossary('GlossaryItem126d.html?type=glossary&amp;id=202'))">kharaj</A></I> (land tax) levied on the Zoroastrians and other non-Muslim subjects, taxes which were never paid by the Arab Muslims.<BR><BR>From an early date, the stage was thus set for prolonged antagonism between the Arab rulers and their Iranian and other non-Arab subjects in the eastern Islamic lands. Indeed, the superficially Islamised peoples of the Iranian lands - especially in the remote eastern provinces of Khurasan and Transoxania (called by the early Arab geographers and historians, <I>Ma wara' al-nahr</I>, or 'the land beyond the river [Oxus]'), situated far from the caliphal centres of power in Syria and Iraq - did not submit readily to Arab rule or even to Islam for quite some time. Different religio-political currents of thought and sectarian movements, often leading to popular insurrections, persisted until the early 'Abbasid and later times in Central Asia, Khurasan and other regions of the Iranian lands. They all expressed opposition to the established caliphate, while many of the region's movements manifested anti-Arab or even anti-Islamic sentiment, rooted in Zoroastrianism, Mazdakism and other Iranian traditions.<BR><BR><A name=anchor1></A><SPAN class=mainhead><STRONG>The Kharijite movement</STRONG></SPAN> <BR>It was under such circumstances that Kharijism found some early following in Iran. More importantly, the Iranian lands lent support to the 'Alid cause and to <A href="javascript:void(LaunchGlossary('GlossaryItem82e3.html?type=glossary&amp;id=94'))">Shi'ism</A>, which had itself originated as an Arab party opposed to the established caliphate. All the major branches of the <A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">Shi'ites</A>, namely the <A href="javascript:void(LaunchGlossary('GlossaryItem623e.html?type=glossary&amp;id=204'))">Kaysaniyya</A>, <A href="javascript:void(LaunchGlossary('GlossaryItem649a.html?type=glossary&amp;id=226'))">Imamiyya</A>, Zaydiyya and Ismailiyya, had acquired communities of followers by the ninth century in different parts of the Iranian lands. Other sectarian groups, engaging in armed revolts, were specific to Transoxania, Khurasan, Azerbaijan and a few other areas of Iran. The doctrines of these rather obscure groups, designated generically as the <A href="javascript:void(LaunchGlossary('GlossaryItema2e3.html?type=glossary&amp;id=195'))">Khurramiyya</A>, were based on syncretistic currents of thought which aimed to amalgamate indigenous Iranian religious traditions with aspects of Islamic teaching, while these Khurrami groups basically remained anti-Arab and anti-Muslim. The activities of many of these insurrectional groups, frequently supported by the peasantry, were also rooted in specific socio-economic grievances of the villages and the smallholders against the <I><A href="javascript:void(LaunchGlossary('GlossaryItembdb5.html?type=glossary&amp;id=277'))">dihqan</A>s</I> (large landowners) who had assimilated themselves more readiiy into the new Arabo-Islamic system, and often acted as the provincial caliphal agents as well. From the second half of the ninth century, when the <A href="javascript:void(LaunchGlossary('GlossaryItem9624.html?type=glossary&amp;id=24'))">Abbasids</A> began to lose their firm central control over the outlying lands of the caliphate, Iranian 'national' sentiment (if this rather modern concept may be applied in a mediaeval Islamic context) found more successful channels of expression in the activities of certain dynasties, starting with the Saffrarids, which successfully challenged the hegemony of the Abbasids and began to reassert Iranian identity and culture, especially in the Samanid period (see below).<BR><BR>There is little reliable information on most of these sectarian and revolutionary movements, mainly because very few contemporary sources, including the genuine literatures of the sectarians themselves, have survived from this early formative period in Islam. The later Muslim authors, including the historians and the early heresiographers such as al-Ash'ari (d.&nbsp;935), a1-Baghdadi (d.&nbsp;1037) and Ibn Hazm (d.&nbsp;1064), who wrote about several aspects of these religio-political movements, were mostly Sunnis defending the legitimacy of the historical caliphate and the orthodoxy of <A href="javascript:void(LaunchGlossary('GlossaryItema9e4.html?type=glossary&amp;id=82'))">Sunni </A>Islam. As a result, they treated all of these opposition movements ,as heterodoxies or heresies. On the other hand, al-Nawbakhti and al-Qummi, the earliest Shi'ite heresiographers who wrote during the final decades of the ninth century and were better informed than the Sunni authors about the internal divisions of Shi'ism, belonged to the Imami branch and as such were inclined to misrepresent or refute the claims of the other Shi'ite groups. Indeed, these groups and movements have to be studied mainly on the basis of hostile and ill-informed sources, which freely attribute strange extremist ideas and antinomian practices to the sectarians. As a result, some of the teachings of these sectarians, especially the doctrines of the Khurrami groups, may never be clarified. There are also disagreements among contemporary scholars regarding the precise social composition and economic bases of some of these sectarian movements, though much progress has been made in recent times. It is with these reservations in mind that we shall now take a closer look at the major sectarian movements of the Iranian lands, especially Khurasan, and Transoxania during the late Umayyad and early 'Abbasid periods.<BR><BR>Kharijism, the first schismatic movement in Islam, originated in Iraq in connection with the prolonged conflict between <A href="javascript:void(LaunchGlossary('GlossaryItembe59.html?type=glossary&amp;id=335'))">Ali b. Abi Talib</A> (656-61) and Mu'awiya (661-80). The Kharijite rebels formed a separate Muslim community and stressed Islamic egalitarianism in their doctrinal position, holding that any Muslim believer who was morally and religiously meritorious, including even a black slave, could be elected as the Imam, or leader, of the Muslim community. The egalitarianism of the Kharijites proved particularly appealing to the Persian and other <I>mawali</I>. Indeed, some of the anti-Arab sentiment of the Iranians found expression in their revolutionary movement, which was also opposed to the caliphates of the Umayyads and Abbasids. The fundamentalist Kharijite insistence on the correct Islamic conduct, however, led to a pronounced factionalism within the Kharijite community itself, resulting in numerous Kharijite branches and sub-sects.<BR><BR>From early Umayyad times, Iraqi Kharijites bean to seek refuge in Persia, spreading their doctrines in different regions of the Iranian lands, especially in Sistan where Kharijism remained the main sectarian movement for quite some time.<A title=#anchor7_1 href="#anchor7_1"><SUP>1</SUP></A> By the second civil war, Kharijism had become firmly established in Persia, where different Kharijite communities embarked on a prolonged programme of anti-caliphal insurrectional activities. <BR><BR>Initially, Kharijism in the Iranian lands was primarily related to the activities of the most radical Azariqa branch of the movement. The Azariqa, who held that the killing of the women and children of non-Kharijite Muslims was licit, had established several communities in <A href="javascript:void(LaunchGlossary('GlossaryItem4844.html?type=glossary&amp;id=271'))">Fars</A> and Kerman as early as 686. Later, the Kharijite movement was reorganised in Iran by Ibn Ajarrad, who may have been from Balkh. Little is known about the activities of Ibn Ajarrad, who founded the <A href="javascript:void(LaunchGlossary('GlossaryItem07de.html?type=glossary&amp;id=34'))">Ajarida</A> branch of Kharijism. Heresiographers name some fifteen sub-sects of the Ajarida, which were specific to Iran and were more moderate in their views and policies than the Azariqa.<A title=#anchor7_2 href="#anchor7_2"><SUP>2</SUP></A> The various Ajarida sub-sects were particularly active, from 724, in <A href="javascript:void(LaunchGlossary('GlossaryItem4888.html?type=glossary&amp;id=91'))">Sistan</A> and other eastern regions, where this form of Kharijism acquired some indigenous foundations. The Tha'aliba, one of the major sub-sects of the Ajarida, contributed to the revolutionary turmoil of Khurasan during the late Umayyad period, also lending temporary support there to Abu Muslim.<A title=#anchor7_3 href="#anchor7_3"><SUP>3</SUP></A> Subsequently, several Tha'aliba splinter groups survived for some time in and around Juzjan.<BR><BR>In the meantime, Sistan had continued to be the main Kharijite stronghold of the Ajarida in eastern Persia. It was in Sistan that in 795 the major Kharijite revolt of Hamza b. Adharak (or 'Abd Allah) al-Khariji unfolded.<A title=#anchor7_4 href="#anchor7_4"><SUP>4</SUP></A> Hamza, the descendant of a noble Persian <I>dihqan</I> and the founder of the Hamziyya sub-sect of the Ajarida, started his rebellious activities in Zarang, the capital of Sistan. Responding to the financial grievances of the Sistani villagers, Hamza successfully urged them not to pay the <I>kharaj</I> and other taxes due to the 'Abbasid <A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliph</A>; he also had a number of caliphal tax-collectors killed in the region. Hamza mobilised his followers into a large army and conducted anti-'Abbasid raids for some thirty years until his death in 828.<BR><BR>Hamza al-Khariji was succeeded by others in the leadership of his movement. The Hamziyya and other Ajarida sub-sects continued their rebellious activities in eastern Persia until around the middle of the ninth century, when Ya'qub b. Layth and his successor in the Saffarid dynasty broke the military power of the Kharijite rebels and ended their importance as a sectarian movement. Nevertheless, scattered Kharijite communities survived for about a century longer in Sistan, Khurasan and other eastern Iranian lands. The Ibadiyya - representing the moderate branch of Kharijism, which eventually found its largest popular following in eastern Arabia and among the Berbers of North Africa - also acquired some support in the east, mainly in Khurasan, during the late Umayyad and early 'Abbasid periods. However, these early Ibadi groups of the Iranian lands were oriented, unlike the Ajarida, towards Iraq; and they do not seem to have been involved in any rebellious activities.<BR><BR><A name=anchor2></A><STRONG>Currents of Shi'ism: the Kaysaniyya and the Hashimiyya</STRONG><BR>Of the various religio-political opposition movements in Islam, Shi'ism produced the most lasting impact on the sectarian topography of the Persian lands, although the supremacy of Sunni orthodoxy remained effectively unchallenged there through the 'Abbasid and later times. Shi'ism originated as an Arab party (<I><A href="javascript:void(LaunchGlossary('GlossaryItem9930.html?type=glossary&amp;id=95'))">shi'a</A></I>) opposed to the established caliphate. It upheld the rights of the Prophet's cousin and son-in-law, 'Ali b. Abi Talib, and then mainly those of the 'Alid members of the Prophet's family (<A href="javascript:void(LaunchGlossary('GlossaryItemcb97.html?type=glossary&amp;id=341'))">Ahl al-bayt</A>), to the leadership of the Muslim community. Representing a unified and exclusively Arab party during its first half century, Shi'ism entered a new phase of its formative period with the Kufan revolt of al-Mukhtar, which was launched in 685 on behalf of 'Ali's son Muhammad b. al-Hanafiyya. Al-Mukhtar's proclamation of this 'Alid as the Mahdi (the divinely guided saviour Imam who would establish justice on earth and deliver the oppressed from injustice) proved very appealing to the discontented <I>mawali</I>, who were drawn in increasing numbers into the Shi'ite movement. The <I>mawali</I>, especially the early <EM><A href="javascript:void(LaunchGlossary('GlossaryItem6a60.html?type=glossary&amp;id=262'))">ghulat</A></EM><EM> </EM>(extremists) among them, introduced many ideas rooted in their Irano-Zoroastrian and other non-Islamic traditions into Shi'ism, which left a lasting imprint on the movement's doctrinal development.<BR><BR>The Shi'ite movement of al-Mukhtar, which survived him and the demise of his revolt in 687, became generally known as the Kaysaniyya, accounting for the overwhelming majority of the Shi'ites until the success of the 'Abbasid revolution. When Ibn al-Hanafiyya died in 700, the Kaysaniyya split into several groups, each having its own Imam and developing its own doctrines. The bulk of the Kaysaniyya now acknowledged the <A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">Imamate</A> of Abu Hashim 'Abd Allah, the eldest son of Ibn al-Hanafiyya. This Kaysani majoritarian sub-sect, known as the <A href="javascript:void(LaunchGlossary('GlossaryItemd8da.html?type=glossary&amp;id=251'))">Hashimiyya</A>, was the earliest Shi'ite group whose teachings and revolutionary stance were disseminated in Persia, especially in Khurasan where it found adherents among the province's <I>mawali</I> as well as Arab settlers.<BR><BR>On Abu Hashim's death, the Hashimiyya themselves split into several groups. Two of these groups had a major impact on the Iranian lands. One of the main factions of the Hashimiyya recognised the Imamate of 'Abd Allah b. Mu'awiya, a great-grandson of 'Ali's brother, Ja'far b. Abi Talib. Ibn Mu'awiya acquired many followers in the western and southern parts of Persia after the collapse of his Kufan revolt in 744. Receiving broad popular support from the Persian <I>malawi</I>, Kharijites and other groups, Ibn Mu'awiya established himself at Istakhr, from where he ruled for a few years over Fars and other parts of Persia. Ibn Mu'awiya was eventually defeated by the Umayyads in 748; he then sought refuge in Khurasan and was killed in Abu Muslim's prison.<A title=#anchor7_5 href="#anchor7_5"><SUP>5</SUP></A><SUP> <BR></SUP><BR>The sectarian followers of Ibn Mu'awiya, known as the Harbiyya and later as the <A href="javascript:void(LaunchGlossary('GlossaryItemc89f.html?type=glossary&amp;id=213'))">janahiyya</A>, expounded many extremist and gnostic ideas, which have been attributed mainly to one 'Abd Allah b. al-Harb. The heresiographers, indeed, ascribe a prominent role to this enigmatic personality for introducing some key doctrines into Kaysani thought, including the pre-existence of souls as shadows (<I>azilla</I>), the transmigration of souls (<I><A href="javascript:void(LaunchGlossary('GlossaryItem008a.html?type=glossary&amp;id=73'))">tanasukh al-arwah</A></I>) and a cyclical history of eras (<I><A href="javascript:void(LaunchGlossary('GlossaryItem4383.html?type=glossary&amp;id=346'))">adwar</A></I>) and aeons (<I><A href="javascript:void(LaunchGlossary('GlossaryItem82e5.html?type=glossary&amp;id=337'))">akwar</A></I>). Some of the ideas of the Harbiyya-janahiyya were adopted by other early Shi'ite <I>ghulat</I> groups, and they were also expounded by some of the Khuramiyya groups.<A title=#anchor7_6 href="#anchor7_6"><SUP>6</SUP></A><SUP> </SUP>It is indeed possible that the Harbiyya-janahiyya supporters of Ibn Mu'awiya in western Iran may have been partially recruited from among the local neo-Mazdakites, who provided the backbone of the Khurramiyya movement in the Iranian lands.<BR>
+<P class=bodytext>In the meantime, the main faction of the Hashimiyya had recognised the 'Abbasid Muhammad b. 'Ali, the great-grandson of the Prophet's uncle al-'Abbas, as Abu Hashim's successor to the Imamate. They held that Abu Hashim had personally bequeathed his rights to the Imamate to this 'Abbasid relative. In this way, the Abbasids inherited the party and the propaganda organisation of the Hashimiyya, which became the main instrument of the 'Abbasid movement, and eventually of the overthrow of the Umayyads. The Hashimiyya-'Abbasiyya party, too, influenced the syncretic doctrines of the Iranian Khurramiyya, while the murder of Abu Muslim in 755 sparked off a long period of insurrectional activity by a host of Khurrami groups in Transoxania, Khurasan and other Iranian Lands.<BR><BR>
+<P class=mainhead><A name=anchor3></A><STRONG>Heterodox Muslim and neo-Mazdakite movements: al-Muqanna', Babak, and others<BR></STRONG>A few obscure sectarian movements, with possible Khurramiyya connections, sprang up in Khurasan in the milieu of the early 'Abbasid <EM><A href="javascript:void(LaunchGlossary('GlossaryItemf17e.html?type=glossary&amp;id=286'))">da'wa</A></EM> (missionary movement) during the final decades of the Umayyad period. Around 729 a <EM><A href="javascript:void(LaunchGlossary('GlossaryItem3b7d.html?type=glossary&amp;id=296'))">da'i</A></EM> (propagandist) named 'Ammar b. Yazid and nicknamed Khidash was sent to Nishapur and Merv to head a new 'Abbasid <I>da'wa</I> organisation in Khurasan. Khidash expounded extremist doctrines and was eventually repudiated by the 'Abbasid Imam, Muhammad b. 'Ali; he was arrested and executed in 736. However, Khidash had acquired followers of his own, known as the Khidashiyya, who held that the Imamate had passed to him from the time of his repudiation by the Abbasids; they also denied Khidash's death. Some heresiographers report that Khidash taught the doctrines of the Khurramiyya and also permitted promiscuity; and they, in fact, identify the Khidashiyya with the Khurramiyya of Khurasan.<A title=#anchor7_7 href="#anchor7_7"><SUP>7</SUP></A> The matter is unclear, but it is possible that some of the Khidashiyya may have been recruited from among the neo-Mazdakites of Khurasan. <BR><BR>There also appeared at this time the movement of Bihafarid the <A href="javascript:void(LaunchGlossary('GlossaryItem28c5.html?type=glossary&amp;id=182'))">Magian</A>, who was a native of Zuzan and had a Zoroastrian background. Setting himself up, possibly as a new prophet, at Khwaf to the south of Nishapur, Bihafarid rejected many of the practices of his contemporary Zoroastrians and preached syncretistic doctrines based on a type of 'reformed' Zoroastrianism and on certain aspects of Islam. He also revived Persian, and the sources attribute a book to him written in that language. His ideas and social programmes proved attractive to the peasantry, who rallied to his side, enabling Bihafarid to launch a revolt around 747 in northern Khurasan. Bihafarid's innovative ideas soon became intolerable to the leaders of the traditional Zoroastrian establishment, who complained about his heresy to Abu Muslim. They emphasised that Bihafarid was destroying both Zoroastrianism and Islam. Abu Muslim had Bihafarid captured in the mountains of Badhghis and brought to Nishapur, where he and many of his followers, known as the Bihafaridiyya, were put to death in 749. However, the Bihafaridiyya, who continued to expect Bihafarid's return, survived in Khurasan until at least the end of the tenth century.<A title=#anchor7_8 href="#anchor7_8"><SUP>8</SUP></A><SUP> </SUP><BR><BR>It was Abu Muslim al-Khurasani himself who had the greatest influence on a number of sects and their rebellions in the Persian lands which can be designated specifically as Khurramiyya or Khurramdiniyya. It did not take the Abbasids long after their victory to disclaim all connections with their Shi'ite and extremist Kaysani (Hashimiyya-'Abbasiyya) antecedents. Indeed, soon after establishing their own caliphate in 749, the Abbasids became upholders of Sunni orthodoxy, persecuting the Shi'ites and their 'Alid leaders. They also turned against those <I>da'is</I> and revolutionary commanders who had brought them to power, including especially Abu Muslim, the founder of the Khurasanian army and the chief architect of the 'Abbasid victory. The treacherous murder of Abu Muslim in 755, on the orders of the caliph al-Mansur, provided a unique impetus for the religio-political activities of a number of syncretic Khurrami sects.<BR><BR>Many aspects of these Khurrami sects and their rebellious activities, which unfolded during early 'Abbasid times in many parts of the Persian lands and in Transoxania, remain shrouded in obscurity. However, modern scholarship has generally corroborated the mediaeval Muslim authors' identification of the Khurramiyya of early Islamic times with the neo-Mazdakites - these were the remnants of the earlier Mazdakiyya who had supported the socio-religious revolutionary movement of Mazdak for reforming Zoroastrianism in Sasanian Iran during the reign of Kavad (488-551).<BR><BR>By early 'Abbasid times, there were still many Zoroastrian and neo-Mazdakite communities scattered throughout many parts of Central Asia and the Iranian lands, especially in the inaccessible mountain regions and the countryside of Khurasan, Tabaristan and Azerbaijan. A common feature of these dissident religious groups, comprised mainly of the peasantry and the lower social strata, was their anti-Arab feeling of Iranian 'national' sentiment. Thus they provided a suitable recruiting ground for all types of popular protest movements; and they were particularly recruited into the conglomeration of religio-political sects known as the Khurramiyya. The Khurrami groups were also receptive to syncretistic influences; and, in Islamic Iran and Central Asia, they were especially influenced by certain extremist and messianic doctrines caught by the Shi'ite <I>ghulat</I> belonging to the Harbiyya-janahiyya and Hashimiyya-'Abbasiyya parties of the Kaysaniyya. As a result, Islamic teachings of an extremist nature came to be fused with Iranian dualistic traditions and anti-Arab motifs, giving the Khurramiyya sectarian movement its distinctive (Irano-Islamic) syncretic nature. The protests of the Khurrami groups, which resisted assimilation into Sunni Islam, were also rooted in conflicts of class interests and in economic difficulties. The sectarians had particular grievances against the existing tax system, especially the assessment and collection of land taxes, as well as the local landowning class of <I>dihqans</I> who had assimilated more readily into the emerging Arabo-Islamic socio-economic system of the caliphate and often shared many of the privileges of the ruling class.<BR><BR>The widest allegiance among the (neo-Mazdakite) Khurrami communities of the Iranian lands and Transoxania was gained by Abu Muslim. He acquired followers of his own, known as the Abu Muslimiyya or Muslimiyya, who split into several groups over time. Abu Muslim evidently gained numerous neo-Mazdakite adherents during his lifetime; and many heresiographers indeed identify the Khurramiyya with the Abu Muslimiyya, who recognised Abu Muslim as their Imam, prophet, or even an incarnation of the divine spirit. As the symbol of Iranian self-assertion against Arab domination, Abu Muslim became the figurehead of the Khurramiyya and his murder led to extended Khurrami revolts.<A title=#anchor7_9 href="#anchor7_9"><SUP>9</SUP></A><SUP> </SUP><BR><BR>Khurasan was the first region of Khurrami revolts after Abu Muslim's murder; these revolts frequently involved the idea of avenging Abu Muslim's death. Some of the Abu Muslimiyya-Khurramiyya there now denied that their leader was dead and began to expect his return to establish justice in the world. Others affirmed his death and held that the Imamate had now passed from Abu Muslim to his daughter <A href="javascript:void(LaunchGlossary('GlossaryItemdc4d.html?type=glossary&amp;id=270'))">Fatima</A>. Later, Fatima's son Mutathar came to be recognised as the Imam and Mahdi by some of the Khurramiyya. In 755 the Zoroastrian Sunbadh (Sindbad), a former associate of Abu Muslim, launched the first of these popular Khurrami revolts against the Abbasids, as reported by many Muslim historians. Sunbadh led an army of Khurrami rebels from his base at Nishapur to Rayy, where his following increased substantially. He also received some support in Qumis and the Tabaristan highlands. This rebellion was suppressed after seventy days by an 'Abbasid army, but the Sunbadhiyya movement survived for some time.<BR><BR>According to the later Seljuq author Nizam al-Mulk, the Sunbadhiyya comprised Mazdakites, Zoroastrians and Shi'ites. He also implausibly reports that Sunbadh aimed to destroy the <A href="javascript:void(LaunchGlossary('GlossaryItem366a.html?type=glossary&amp;id=207'))">Ka'ba</A>. The sources attribute various anti-Islamic and anti-Arab motives to Sunbadh, who evidently predicted the end of the Arab empire, also holding that Abu Muslim would return together with Mazdak and the Mahdi. Sunbadh's revolt and movement, based on religious syncretism and the anti-Arab sentiment of the Iranians and receiving the popular support of the peasantry, set the basic pattern for the activities of other Khurrami groups.<BR><BR>From early on, Khurrami rebellious activities and syncretic doctrines spread from Khurasan to Transoeania. Is'haq the Turk, who may have been one of Abu Muslim's <I>da'is</I> operating among the Central Asian Turks, was the leader of the first of such sectarian movements in Transoxania which, like that of Sunbadh, bore the twin label of Abu Muslimiyya and Khurramiyya. He, too, predicted the return of both Abu Muslim and Zoroaster, and used religious syncretism to unify disparate anti-'Abbasid groups. Subsequently, Is'haq's movement acquired a militant character in Central Asia under the leadership of one Barazbanda.<BR><BR>Around the year 766 another anti-'Abbasid revolt of a sectarian nature, with obscure religious motives started on the eastern fringes of Khurasan. Led by one Ustadhsis (Ustadh Sis), who may have claimed prophethood, the revolt received its main support from the villagers. From its initial base in the mountainous district of Badhghis (now in north-western Afghanistan), where Ustadhsis was joined by some of the Bihafaridiyya, the insurrection spread rapidly to the regions of Herat and Sistan, receiving further reinforcement from the Sistan Kharijites. This revolt was repressed after a few years by the veteran 'Abbasid general Khazim b. Khuzayma, who killed some 70,000 of the rebels. Ustadhsis himself was captured in the mountains of Badhghis and sent to Baghdad, where he was executed on al-Mansur's order.<BR><BR>The most famous of these early anti-'Abbasid movements of the Khurramiyya in Khurasan and Transoxania was that of al-Muqanna', whose followers were commonly designated as the 'wearers of white' (see above, Chapter 1, Part Two). The fullest account of al-Muqanna' and his movement was given by Narshakhi, the renowned local historian of Bukhara. Suffice it to say that all the doctrines attributed to al-Muqanna' by the heresiographers and other Muslim authors (of course, these are universally hostile to him) are generally anti-Islamic. According to al-Biruni, al-Muqanna' even enjoined his followers to observe the laws and institutions of Mazdak. The movement of al-Muqanna' survived in Transoxania after the suppression of his revolt in 779, and the Mubayyida continued to await the return of al-Muqanna' until the twelfth century.<BR><BR>The Khurramiyya movement had adherents in other parts of the Iranian lands, outside Khurasan and Transoxania. In 778 the neo-Mazdakite Muhammira, or 'wearers of red', of Gurgan revolted, in alliance with the local Khurrami supporters of Abu Muslim, claiming that Abu Muslim was still alive. Led by a grandson of Abu Muslim, they advanced as far as Rayy before the rebellion was suppressed by an army dispatched by the governor of Tabaristan. Later, in the reign of Harun al-Rashid (786-809), the Khurramiyya launched insurrections in Isfahan and other localities in central Persia.<BR><BR>The activities of the Khurramiyya reached their peak in the movement of Babak al-Khurrami, whose procracted rebellion based in north-western Iran seriously threatened the stability of the 'Abbasid caliphate. As the leader of the Khurramiyya of Azerbaijan, succeeding Jawidan b. Shahrak, Babak consolidated his position in the mountainous district of Badhdh, which served as his headquarters. Babak then mobilised his largely rural Khurrami following into a formidable fighting force and started his revolt around the year 316. This revolt, lasting for more than twenty years, soon spread from Azerbaijan to the western and central parts of Iran. Numerous 'Abbasid campaigns against Babak proved futile, until success was attained by the general Afshin, appointed for this purpose in 835 as governor of Azerbaijan by the caliph al-Mu'tasim (833-42). In 837 Afshin finally seised Babak's fortress of Badhdh and repressed the rebellion. Babak himself was captured soon afterwards and sent to Samarra, where he was executed with extreme cruelty in 838. Little reliable information is available on Babak's specific teachings, which were allegedly anti-Arab and anti-Islamic. Some of the sources even report that Babak, too, was expected to restore the religion of Mazdak.<A title=#anchor7_10 href="#anchor7_10">10</A> Scattered groups of the Babakiyya survived, awaiting Babak's return, until after the tenth century.<BR><BR>Babak's rebellion was followed, in 839, by that of the Qarinid ruler of Tabaristan, Mazyar, a recent convert to Islam. Muslim sources accuse Mazyar of reverting to Zoroastrianism and of conspiring with Babak against Islam, while al-Baghdadi states that his rebel followers, the Mazyariyya, constitute a major branch of the Khurramiyya. However, Mazyar's anti-'Abbasid rebellion developed out of his financial conflicts with 'Abd Allah b. Tahir, the Tahirid governor of the east, although in his rebellious activities Mazyar relied increasingly on the support of the local Zoroastrian and neo-Mazdakite peasantry. Mazyar was defeated by the Tahirids and was then executed at Samarra in 840. Soon afterwards, Afshin, too, was accused of anti-Islamic and treacherous activities and was put to death on the order of al-Mu'tasim. The Muslim sources unjustifiably depict Babak, Mazyar and Afshin as the joint protagonists of a grand anti-Arab conspiracy.<BR><BR><A name=anchor4></A><STRONG>The later development of Shi'ism: the Twelvers, the Zaydis and the Ismailis</STRONG><BR>Even after the failure of the major Khurrami revolts of early 'Abbasid times, scattered Khurrami communities engaging in lesser and sporadic insurrections survived until later 'Abbasid times in various parts of Iran, especially in Azerbaijan, Tabaristan and Khurasan. It is possible that, during the ninth century, some of the Khurramiyya joined the revolutionary movement of the <A href="javascript:void(LaunchGlossary('GlossaryItemd2ed.html?type=glossary&amp;id=224'))">Ismailis</A>, particularly in Khurasan and Transoxania. Despite the claims of Nizam al-Mulk and other Sunni authors hostile towards the Ismailis, however, Ismailism should nor be viewed as a continuation of the neo-Mazdakite Khurramiyya, although the two movements shared a common enmity towards the Abbasids. Needless to say, as Shi'ite Muslims, the Ismailiyya could not subscribe to the anti-Arab, and more importantly, anti-Islamic teachings of the Khurramiyya.<BR><BR>Indeed, Shi'ism provided another type (like Kharijism, an Islamic type) of opposition to the established caliphate. By 760 the remnants of the radical Kaysaniyya, who had earlier been mainly aborted in the 'Abbasid <I>da'wa</I> (see Chapter 1), had either disintegrated or had joined the Imamiyya branch of Shi'ism, which had earlier been greatly overshadowed by the Kaysaniyya movement. The Imamiyya, who traced the Imamate through a husaynid Fatimid line of Imams in the progeny of <A href="javascript:void(LaunchGlossary('GlossaryItemfcde.html?type=glossary&amp;id=239'))">al-Husayn b. 'Ali</A>, began to acquire prominence under the leadership of the Imam Ja'far al-Sadiq (d.&nbsp;765), who firmly established Imami Shi'ism as a distinctive religious communiy on a quiescent basis.<BR><BR>Prescribing <I><A href="javascript:void(LaunchGlossary('GlossaryItem7383.html?type=glossary&amp;id=71'))">taqiyya</A></I> (the precautionary dissimulation of religious beliefs), Ja'far al-Sadiq further taught that the sinless and infallible Shi'ite Imam did not have to rise against the unjust rulers of the time, as believed by the early Kufan Shi'a and the contemporary Kaysaniyya and Zaydiyya, even though the caliphate too belonged by divine right to the Shi'ite Imam. Refrainment from all anti-regime activity became the hallmark of the politically moderate Imamiyya, later designated as the Ithna'Ashariyya or the Twelvers.<BR><BR>The legitimist Imamiyya branch of Shi'ism, with its anti-revolutionary quietism, had already spread from its original Kufan stronghold to the garrison town of Qum, in central Persia, in the time of Ja'far al-Sadiq, marking the initiation of the Imamiyya sectarian movement in the Iranian world. An Arab clan of the Kufan Asha'ira, or colonists, had settled in Qum in the late Umayyad period, and by the end of the eighth century the local descendants of these Asha'ira had become ardent Imami Shi'ites. Thus Imami Shi'ism was introduced to Persia by the Arab Asha'ira, who dominated the religious scene in Qum for some three centuries. Madelung has skilfully described the subsequent development of early Imami Shi'ism in the Iranian world.<A title=#anchor7_11 href="#anchor7_11"><SUP>11</SUP></A> Qum remained solidly Imami and became the chief centre of Imami traditionalism in the ninth century. Later, the theological school of Qum played an important role in the development of Twelver Shi'ism. Qum also influenced the development of Imami (Twelver) communities in other parts of central Persia during the ninth century, notably at Rayy, which remained the second most important Imami city there until the Mongol times.<BR><BR>In Khurasan, Imami Shi'ism spread during the ninth century. An Imami community already existed in Tus when 'Ali al-Rida, the eighth Imam of the Twelver Shi'a, died and was buried there in 818. The 'Abbasid caliph al-Ma'mun (813-33) had appointed 'Ali al-Rida as his heir apparent as part of his conciliatory policies towards the Shi'ites and the <A href="javascript:void(LaunchGlossary('GlossaryItem6502.html?type=glossary&amp;id=334'))">'Alids</A>. Moreover, Nishapur became one of the earliest centres of Imami thought in the eastern Iranian lands, due mainly to the activities of al-Fadl b. Shadhan, a learned Imam; traditionalist, jurist and theologian, who died around 873. In Transoxania, the Imamiyya were present from the later ninth century; and by the early tenth century, Imami thought of a somewhat independent nature was propagated in Central Asia, from Samarkand, by Muhammad b. Mas'ud al-Ayyashi.<BR><BR>The <A href="javascript:void(LaunchGlossary('GlossaryItemdeaa.html?type=glossary&amp;id=222'))">Ispahbadiyya</A> Bawandids of Tabaristan were the first Iranian dynasty to adhere to Imami Shi'ism from the middle of the eleventh century. However, the Iranian Imamiyya found greater protectors in the Buyids, who were originally Zaydis but in later times perhaps leaned towards Imami Shi'ism. By the end of the <A href="javascript:void(LaunchGlossary('GlossaryItem05c8.html?type=glossary&amp;id=301'))">Buyids</A>' tutelage of the Abbasids in the eleventh century, small Imami (Ithna 'Ashari) communities of minority status were widely dispersed throughout the Iranian lands and Central Asia. Mainstream Imami Shi'ism achieved its greatest success in the predominantly Sunni Iranian lands when, in 1501, it was imposed as the official creed on Safavid Iran, while Sunni orthodoxy continued to prevail in Central Asia. <BR><BR>The Zaydiyya, another major branch of Shi'ism, appeared as a sectarian movement in the Iranian world during early 'Abbasid times, though its impact there proved to be somewhat marginal. Zaydi Shi'ism arose from an anti-Umayyad revolt that Zayd b. 'Ali, an uncle of Ja'far al-Sadiq, had staged at Kufa in 740. The supporters of this abortive revolt, the earliest Zaydiyya, retained the politically militant but religiously moderate stance of the early Kufan Shi'a. Thus the Zaydiyya, by contrast to the Imamiyya, developed into a revolutionary movement and the pretenders to the Zaydi Imamate were expected to rise, sword in hand, against the illegitimate rulers of the time.<BR><BR>The earliest activities of the Zaydiyya in the eastern lands, including the insurrection of Zayd's son Yahya (d.&nbsp;43) in Khurasan, did not lead to any lasting sectarian results. The later spread of Zaydi Shi'ism in northern Iran was greatly helped by the emigration of a number of 'Alids to the coastal region along the southern shores of the Caspian Sea, where they sought refuge from 'Abbasid persecution both in the coastal lowlands and in the mountains. In early 'Abbasid times, Tabaristan (Mazandaran), the most populous of the Caspian provinces, was inhabited mainly by the daylamites, who had not yet converted to Islam. And it was in Ruyan and other areas of western Tabaristan that Zaydi Shi'ism, based on 'Alid rule and daylamite aspirations for autonomy, began to spread from around the middle of the ninth century. Many of this region's 'Alid rulers in time came to be acknowledged as Imams and <I>da'is</I> by the Caspian Zaydi community, which developed independently of the Zaydi community of Yemen, another major stronghold of Zaydism.<A title=#anchor7_12 href="#anchor7_12"><SUP>12</SUP></A> <BR><BR>In 864 the people of western Tabaristan revolted against the fiscal exactions of the Tahirid governors of the eastern lands, and they invited the hasanid al-Hasan b. Zayd (d.&nbsp;884) from Rayy, to become their leader. Al-Hasan soon seised all of Tabaristan and established Zaydi 'Alid rule in the Caspian provinces, adopting the tide of <I>al-da'i ila 'l-haqq</I> (He Who Summons to the Truth). The subsequent attempts of the Abbasids and the Tahirids to regain Tabaristan were repelled by al-Hasan with the local help of the daylamites. However, al-Hasan's brother and successor, Muhammad b. Zayd, was killed in 900 in a battle with the Sunni Samanids, who temporarily extended their rule over the region.<BR><BR>In 914 Zaydi 'Alid rule was restored in Tabaristan by the husaynid alhasan b. 'Ali al-Utrush, known as al-Nasir li 'l-haqq. Al-Nasir converted to Zaydism large numbers of people who had not yet even embraced Islam; and, with their support, he reconquered Tabaristan from the Samanids. Al-Nasir came to form a distinct community of the Caspian Zaydiyya, known as the Nasiriyya. These were separate from the Qasimiyya adherents of the school of the Medinan Zaydi Imam al-Qasim b. Ibrahim (d.&nbsp;860), whose teachings had earlier been transmitted to northern Iran. The division of the Caspian Zaydi community into the Gilite Nasiriyya and the daylamite Qasimiyya proved permanent, also splitting 'Alid rule into two branches there. The Iranian Zaydiyya had their golden age under the Buyids, who patronised the Zaydi 'Alids of the Caspian provinces. It was also under the Buyids that Rayy became an important centre of Zaydi learning. Zaydism does not seem to have had any lasting success in Central Asia, while in Khurasan it acquired some temporary support among the 'Alids of Bayhaq. Indeed, the Caspian provinces remained the main Iranian stronghold of Zaydi Shi'ism. By the early Safayid decades, the surviving Zaydi communities of that region, too, had all gone over to Twelver Shi'ism.<BR><BR>Ismailism, another major and revolutionary branch of the Shi'a, had a greater and more far-reaching impact on the Iranian lands than the Zaydiyya movement, though its success there was ultimately checked by Sunni orthodoxy assisted by the arrival of the all-conquering Mongols. The Ismailiyya, retrieving much of the revolutionary zeal of the earlier Kaysaniyya and Khurramiyya, split off from the rest of the Imamiyya on the question of the Imam Ja'far al-Sadiq's succession. Led by a line of Imams descended from al-Sadiq's eldest son Isma'il, the Ismaili <I>da'wa</I> was organised as a secret and revolutionary Shi'ite movement bent on uprooting the Abbasids.<BR><BR>The central leadership of the early Ismaili movement soon came to be based for a while in <A href="javascript:void(LaunchGlossary('GlossaryItem6838.html?type=glossary&amp;id=193'))">Khuzistan</A>, in south-western Iran, from where <I>da'is</I> were dispatched to various localities. The efforts of these central leaders to transform the original Ismaili splinter groups into a greatly expanded and united movement began to bear fruit around 873. It was at that time that numerous Ismaili <I>da'is</I> began to appear in many regions of the Arab and Iranian worlds; and their converts soon attracted the attention of the Abbasids and Muslim society at large as the Carmathians or Qaramita, named after Hamdan Qarmat, the chief local leader of the movement in southern Iraq. However, the name Qarmati came to be applied indiscriminately also to the Ismaili communities outside Iraq. At that time, the Ismaili <I>da'wa</I> was preached in the name of the absent Muhammad b. Isma'il b. Ja'far al-Sadiq, the seventh Ismaili Imami, whose return as the eschatological Mahdi was eagerly awaited.<BR><BR>The Ismaili <I>da'wa</I> was extended during the 870s to the Iranian lands. And there, the <I>da'wa</I> was initially established in <A href="javascript:void(LaunchGlossary('GlossaryItemff3b.html?type=glossary&amp;id=210'))">Jibal</A> or western Iran. Khalaf al-Hallaj, the first <I>da'i</I> of Jibal, set up his headquarters at Rayy, from where the <I>da'wa</I> spread to Qum, Kashan and other areas of central Iran under Khalaf's successors. Meanwhile, the <I>da'wa</I> had become active in Fars and southern Iran under the supervision of Hamdan Qarmat and his chief assistant, 'Abdan. The <I>da'wa</I> was officially taken to Khurasan during the first decade of the tenth century, although earlier it had been introduced there on the personal initiative of Ghiyath, one of the chief <I>da'is</I> of Jibal. Abu 'Abd Allah al-Khadim, the first chief <I>da'i</I> of Khurasan, established his regional headquarters at Nishapur. The third <I>da'i</I> of Khurasan, al-husayn b. 'Ali al-Marwazi, who had earlier been a prominent commander in the service of the <A href="javascript:void(LaunchGlossary('GlossaryItemeb5c.html?type=glossary&amp;id=109'))">Samanids</A>, transferred the regional seat of the <I>da''wa</I> to Merv al-Rudh, also spreading Ismailism to Talaqan. Herat, Gharchistan, Ghur and other eastern areas. Al-Marwazi's successor, Muhammad b. Ahmad al-Nasafi al-Nakjshabi, a native of the Central Asian district of Nakshab, settled in <A href="javascript:void(LaunchGlossary('GlossaryItem95b8.html?type=glossary&amp;id=302'))">Bukhara</A> and spread the <I>da'wa</I> throughout Transoxania, also penetrating briefly the inner circles of the Samarid court. Al-Nasafi, a brilliant philosopher, was also responsible for introducing a form of Neoplatonism into Qarmati-Ismaili thought.<A title=#anchor7_13 href="#anchor7_13"><SUP>13</SUP></A> <BR><BR>In the Iranian lands, the Ismaili <I>da'wa</I> was originally addressed to the rural population, and the first <I>da'is</I> in Jibal concentrated their efforts on the villagers around Rayy. By contrast to their positive response to the neo-Mazdakite Khurramiyya movement, however, the peasantry of the Iranian lands was not attracted in large numbers to the Shi'ite Islamic message of the Ismailis during the ninth century. The early realisation of the movement's failure to acquire a large popular following which could be led in open revolt against the local authorities, as had been the case in the Arab lands where villagers and tribesmen had converted to Ismailism in large numbers, led to a new <I>da'wa</I> policy for the Iranian world. According to this policy, implemented especially in Khurasan and Transoxania, the <I>da'is</I> henceforth directed their efforts towards the elite and the ruling classes. This policy, too, failed to have any lasting success, although Abu Hatim al-Razi (d.&nbsp;934), the fifth <I>da'i</I> of Jibal, did manage temporarily to win the allegiance of several amirs and rulers of Jibal and the Caspian region; and, in Khurasan and Transoxania, numerous notables were converted, including the commander al-Marwazi, who himself became a chief local <I>da'i</I> there. The brief success of this policy in Central Asia reached its climax in the conversion of the Samanid <EM><A href="javascript:void(LaunchGlossary('GlossaryIteme5bc.html?type=glossary&amp;id=333'))">amir</A></EM>, Nasr II (914-43), and his vizier through the efforts of the <I>da'i</I> al-Nasafi. This success could not be tolerated, however, by the Sunni <I>'ulama'</I> (religious scholars) and their Turkish military allies in the Samanid state. They reacted by deposing Nasr II, under whose son and successor, Nuh I (943-54), al-Nasafi and his chief associates were executed in 943 and their followers massacred. 
+<P class=bodytext>Meanwhile, the unified Ismaili movement had experienced a major schism in 899. It was at that time that the movement's central leader, 'Abd Allah ('Ubayd Allah) al-Mahdi, the future founder of the Fatimid caliphate, openly claimed the Ismaili Imamate for himself and his predecessors, the same central leaders who had organised and led the movement after Muhammad b. Isma'il. 'Abd Allah also explained that the movement had hitherto been spread on the basis of Muhammad b. Isma'il's role as Mahdi merely to protect the true identity of the central leaders who were continuously sought by the Abbasids. The declarations of 'Abd Allah split the movement into two factions. One faction, later designated as Fatimid Ismailis, accepted 'Abd Allah's claims, upholding continuity in the Ismaili mamate. A dissident faction, based in Bahrain and southern Iraq and lacking a united leadership, refused to recognise 'Abd Allah and his predecessors, as well as his successors on the Fatimid throne, as Imams; they retained their original belief in the role of Muhammad b. Isma'il as Mahdi. Henceforth, the term Qaramita came to be generally applied to these dissident sectarians, who never recognised the Fatimid caliphs as their Imams.<A title=#anchor7_14 href="#anchor7_14"><SUP>14</SUP></A> Within the Iranian lands, the Ismailis of Jibal mainly joined the Qarmati faction, which had adherents also in Azerbaijan and western Persia. In Khurasan and Transoxania, both wings came to be represented, though the <A href="javascript:void(LaunchGlossary('GlossaryItem23cf.html?type=glossary&amp;id=134'))">Qarmatis</A> predominated until the middle of the eleventh century. The <I>da'is</I> al-Razi and al-Nasafi, who engaged in a complex scholarly discourse, were Qarmatis. These <I>da'is</I> of the Iranian lands, and Abu Ya'qub al-Sijistani who later led the <I>da'wa</I> in Khurasan and his native Sistan, played an important part in developing the Ismaili-Qarmati thought of this early period, which left a lasting influence on the intellectual activities of the later Ismailis.<BR><BR>
+<P class=bodytext>By the final decades of the eleventh century, the <A href="javascript:void(LaunchGlossary('GlossaryItem23cf.html?type=glossary&amp;id=134'))">Qarmati</A> communities of the Iranian lands had either disintegrated or joined the Fatimid Ismaili <I>da'wa</I>. In 1094 the Persian Ismailis became the main supporters of the <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizariyya</A> branch of Ismailism, severing all ties with the Musta'liyya branch, which continued to be led by the Fatimid caliphs. The Nizari Ismailis of the Iranian lands were soon organised by hasan-i Sabbah into a revolutionary force with numerous inaccessible mountain strongholds, reminiscent of the strategy adopted by some of the earlier Khurrami groups. Being opposed to the alien rule of the Seljuq Turks, the Iranian <A href="javascript:void(LaunchGlossary('GlossaryItem1032.html?type=glossary&amp;id=147'))">Nizaris</A> launched an armed revolt against the Seljuq sultanate and succeeded in asserting their control over various parts of Iran, especially in daylaman and Kuhistan in south-eastern Khurasan, until they too, like the Abbasids, became victims of the Mongol invasions and irrevocably lost their political power in 1256.<BR><BR>
+<P class=mainhead><A name=anchor5></A><STRONG>The beginnings of the disintigration of the 'Abbasid caliphate in the east<BR></STRONG>Unlike the Hashimiyya-'Abbasiyya sectarian movement which succeeded in supplanting Umayyad rule, none of the other religio-political movements of the eighth and ninth centuries discussed here could successfully challenge the hegemony of the Abbasids in the eastern lands of the caliphate. Moreover, none of the early anti-'Abbasid insurrections resulted in the separation of any territory from the caliphal domains for any extended period of time. As a result, the territorial integrity of the 'Abbasid caliphate remained intact until after the middle of the ninth century. In the meantime, important developments were taking place, both at the centre of caliphate power in Iraq and in the provincial peripheries, which eventually brought about the fragmentation of the 'Abbasid caliphate. It was under such circumstances that independent dynasties, devoid of any specific religious affiliation, starting with the Saffarids, appeared in the eastern Iranian lands, also initiating the revival of Iranian sentiment and culture.<BR><BR>For almost seven decades after the establishment of the 'Abbasid dynasty, Iran was governed by various eastern governors appointed from Iraq. These governors remained unswervingly loyal to the caliph at Baghdad, citing his name on coins and in the <EM><A href="javascript:void(LaunchGlossary('GlossaryItemfa04.html?type=glossary&amp;id=194'))">khutba</A></EM> (Friday worship oration) and sending him taxes and tributes. Starting with the appointment in 821 of Tahir b. al-Husayn, four generations of the Tahirid family ruled for some fifty years from Khurasan as governors of the lands east of Iraq. Many Tahirids also held office in Iraq itself. Contrary to the views of some modern scholars, however, the Tahirids cannot be regarded as the first autonomous dynasty of the Iranian world in their time. As Bosworth has explained in many of his studies,<A title=#anchor7_15 href="#anchor7_15"><SUP>15</SUP></A> the Tahirids, too, remained loyal servants of the Abbasids, respecting the constitutional rights of the caliphate. They were also highly Arabised in culture and outlook, like many other landowning aristocratic Persians who had fully assimilated into the Arabo-Islamic culture of the period. Nevertheless, it may be admitted that the hereditary rule of the Tahirids, who were of Persian <I>dihqan</I> origins and tolerated the Persian language in their entourage, did at least indirectly encourage the resurgence of Persian language and culture in their entourage. It was an altogether different matter with the Saffarids, the next dynasty to appear on the political scene in the eastern Iranian world.<BR><BR>As a result of the problems created by the Turkish slave soldiers and their commanders who had come to play an increasingly important role in the central affairs of the caliphate, especially during the anarchy of the Samarra period, caliphal control over the outlying provinces had become seriously weakened by the middle of the ninth century. This allowed new political powers, based on military force, to assert themselves on the fringes of the caliphate. It was also at this time that Zaydi 'Alid rule was established in Tabaristan, and the Ismailis and the Zanj (black slaves) launched their insurrectional activities in Iraq itself. But the Saffarids, based in Sistan, were the first of such major military powers to appear in the Iranian world, establishing a dynasty and separating vast territories from the 'Abbasid domains. The disintegration of the 'Abbasid caliphate and the rise of independent dynasties, which revived Iranian 'national' sentiment, had now begun.<BR><BR>Ya'qub b. Layth (867-79), known as al-Saffar (The Coppersmith), who founded the Saffarid dynasty, was of plebeian origins and lacked specific religious convictions, though he was accused of Kharijite leanings; the later author Nizam al-Mulk depicts him also (on dubious grounds) as a crypto-Ismaili. He had gradually risen to a leading position in the <I>'<A href="javascript:void(LaunchGlossary('GlossaryItem5677.html?type=glossary&amp;id=320'))">ayyar</A>'</I> <A title=#anchor7_16 href="#anchor7_16"><SUP>16</SUP></A><SUP> </SUP>bands of Sistan, which drove out the Tahirid <I>amir</I>. In 861 Ya'qub himself was proclaimed <I>amir</I> of Sistan. He thereupon proceeded to consolidate his position within the province before conducting, a number of military campaigns in what is now Afghanistan and against the Kharijites. Subsequently, Ya'qub directed his attention against the caliphal territories in Iran. In 873 he entered Nishapur and ended Tahirid rule in Khurasan; then he seized Fars in 875 and came close to taking Baghdad itself. Ya'qub died in 879 in Khuzistan. Saffarid power reached its zenith under Ya'qub's brother and successor, 'Amr (879-900). 'Amr was eventually defeated, in 900, in Transoxania by the Samanids and sent to Iran where he was executed. Henceforth, the authority and the territories of the Saffarids diminished rapidly, eventually becoming largely restricted to Sistan.<BR><BR>Another development of great importance that occurred during the final decades of the ninth century was the revival of New Persian literature and culture, initiated through the efforts of Ya'qub b. Layth and his brother 'Amr, who had court poets composing Persian verse for the first time since the Arab invasion of Iran. Soon, the plebeian Saffarids were also equipped with a royal Iranian genealogy. The early Saffarids, indeed, pioneered the renaissance of a specifically Irano-Islamic culture based on the 'national' aspirations of the Islamised Iranians, who had continued to be aware of their Iranian identity and culture during the centuries of Arab domination.<A title=#anchor7_17 href="#anchor7_17"><SUP>17</SUP></A><SUP> <BR></SUP><BR>The Abbasids survived as the spiritual heads of the Islamic world, over which they no longer exercised any political control. The rise of the Buyids in western Iran and in Iraq, and their subsequent internal and dynastic strife, permitted the formation of a number of Turkish dynasties in the east; dynasties like the Ghaznavids, the Karakhanids and, most significantly, the Seljuqs, who now established their own rule over the Iranian lands. When the Seljuqs entered Baghdad in 1055, ostensibly to liberate the 'Abbasid caliph from the Shi'ite Buyids' tutelage, a new Turkish period had started in the Islamic history of the Iranian world. The Seljuqs became the new champions of Sunni orthodoxy and sought caliphal approval in order to legitimise their own rule. Thus the Abbasids were once again permitted to survive.<BR><BR>The appearance of Turkish dynasties in the eleventh century also checked the rapid resurgence of Persian culture. This renaissance had, however, become irrevocable by that time. Nasir-i Khusraw, the renowned Ismaili philosopherand <I>da'i</I> in Khurasan and Badakhshan during the late eleventh century composed all his works in Persian. He is also ranked among the foremost Persian poets. Moreover, the highly Islamised Iranian Nizaris of the <A href="javascript:void(LaunchGlossary('GlossaryItem9dbf.html?type=glossary&amp;id=336'))">Alamut</A> period from early in the 1090's adopted Persian as the language of their religious writings, an unprecedented choice for a mediaeval Shi'ite community. Indeed, the antecedents of the anti-Seljuq revolt of the Iranian Nizaris can be traced not only to the Shi'ite and anti-'Abbasid movement of the earlier Ismailis but also to the Iranian 'national' elements fostered by the Saffarids and other Iranian dynasties. The Turkish rulers themselves were soon influenced by aspects of Persian culture; thus the learned vizier Nizam al-Mulk composed his <I>Siyasat-nama</I> [Book of Statecraft] for the Great Seljuq sultan Malik Shah in Persian. The Seljuqs were superseded by other dynasties in the Iranian world, whereas the 'Abbasid caliphate enjoyed a revival of power and survived in Baghdad until 1253, mainly due to the importance of the caliph's moral authority for Sunni Muslims. Yet in the end, the Abbasids of Baghdad, too, succumbed to the all-conquering pagan Mongols.<BR><BR><A name=anchor6></A><STRONG>Bibliography and References<BR></STRONG>Amoretti, B. S. 1975. Sects and Heresies. In: <I>The Cambridge History of Iran</I>, Vol.&nbsp;4, pp.&nbsp;481-519.<BR>Anon, 1976 <I>Tarikh - i Sistan</I>, English tr. Milton R. Gold, <I>The Tarikh-e Sistan</I>, Rome.<BR>Al-Ash'ari. 1929-30. <I>Maqalat al-Islamiyyin</I>. Ed. H Ritter. Istanbul, 2 vols.<BR>Al-Bagdhadi. 1328/1910. <I>Al-Farq bayn al firaq</I>. Ed. M. Badr. Cairo. Partial English tr. A. S. Halkin. <I>Moslem Shisms and Sects</I>, Part 2. Tel Aviv, 1935.<BR>Bartold, W. 1968. <I>Turkestan down to the Mongol Invasion</I>, 3rd ed., with an additional ch. tr. T. Minorsky, ed. with further addenda and corrigenda by <A title=ContentLink.asp?type=auth&amp;id=33 href="view_personffaf.html?type=auth&amp;id=33">C. E. Bosworth</A>. London.<BR>Bosworth, C. E. 1968. <I>Sistan under the Arabs. From the Islamic Conquest to the Rise of the Saffarids</I> (30-250/651-864). Rome.<BR>----------.1975. The Tahirids and Saffarids. In: <I>The Cambridge History of Iran</I>, Vol.&nbsp;4, pp.&nbsp;90-135.<BR>----------.1977. <I>The Mediaeval History of Iran, Afghanistan and Central Asia</I>. London.<BR>----------.1978-9. The Interaction of Arabic and Persian Literature and Culture in the 10th and Early 11th Centuries. In: <I>al-Abhath</I>, Vol.&nbsp;27, pp.&nbsp;59-75, reprinted in <A title=ContentLink.asp?type=auth&amp;id=33 href="view_personffaf.html?type=auth&amp;id=33">C. E. Bosworth</A>, <I>Mediaeval Arabic Culture and Administration</I> (London, 1982), no. VIII.<BR>----------.1994. <I>The History of the Saffarids of Sistan and the Maliks of Nimruz</I> (247/861 to 949/1542-3) Costa Mesa, Calif./New York.<BR>Daftary, F. 1990. <I>The Ismailis. Their History and Doctrines</I>. Cambridge. 1993. <BR>---------. A Major Schism in the Early Ismaili Movement. <I>SI</I>, Vol.&nbsp;77, pp.&nbsp;123-39.<BR>Daniel, E. L. 1979. <I>The Political and Social History of Khurasan under Abbasid Rule</I>, 747-820 Minneapolis/Chicago.<BR><I>EI2</I>, arts. Isma'illiyya; Khurramiyya; Ma wara' al-nahr.<BR><I>EIr</I>, arts. 'Abbasid Caliphate in Iran; 'Alids of Tabarestan, Daylaman, and Gilan; Babak Korrami; Carmathians.<BR>Frye, R. N. 1975. <I>The Golden Age of Persia. The Arabs in the East</I>. London.<BR>Gardizi, 'Abd Al-Hayy B. Al-Dahhak. 1347/1968. <I>Zayn al-akhbar</I>. Ed. 'Abd al-Hayy Habibi. Tehran.<BR>Halm, H. 1982. <I>Die islamische Gnosis</I>. Zurich/Munich.<BR>Ibn Al-Nadi, Abu'l-Faraj Muhammad B. Ishaq Al-Warraq. 1973. Fihrist. Ed. M. R. Tajaddud, 2nd ed. Tehran.<BR>Madelung, W. 1965. <I>Der Imam al-Qasim ibn Ibrahim and die Geaubenslehre der Zaiditen</I>. Berlin.<BR>--------. 1988. <I>Religious Trends in Early Islamic Iran</I>. Albany, New York.<BR>Minorsky, V. 1932. <I>La domination des Dailamites</I>. Paris.<BR>Narshakhi. 1955. <I>Tarikh-i Bukhara</I>. English tr. and commentary R.&nbsp;N.&nbsp;Frye, <I>The History of Bukhara</I>. Cambridge, Mass.<BR>Al-Nashi' Al-Akbar. 1971. <I>Masa'il al-Imama</I>. Ed. J. van Ess. Beirut.<BR>Al-Nawbakhti. 1931. <I>Firaq al-Shi'a</I>. Ed. H. Ritter. Istanbul.<BR>Nizam Al-Mulk. 1978. <I>Siyar al-muluk (Siyasat-nama)</I>. English tr. H.&nbsp;Darke, <I>The Book of Government or Rules for Kings</I>, 2nd ed. London.<BR>Al-Qummi. 1963. <I>Al-Maqalat wa 'l-firaq</I>. Ed. M. J. Mashkur. Tehran.<BR>Al-Razi. 1988. <I>Kitab al-Zina</I>. Ed. 'A. Sallum al-Samarra'i in his <I>al-Ghuluww wa 'l-firaq al-ghaliya</I>, 3rd ed. Baghdad.<BR>Rypka, J., et al. 1968. <I>History of Iranian Literature</I>. Dordrecht.<BR>Sadighi, G. H. 1938 <I>Les Mouvements religieux iraniens au IIe siedle de l'hegire</I>. Paris<BR>Al-Shahrastani. <I>Al-Miwal wa 'l-nihal</I>. Partial English tr. A.&nbsp;K.&nbsp;Kazi and J. G. Flynn, <I>Muslim Sects and Divisions</I>. London, 1984. Partial French Tr. D. Gimaret and G. Monnot, <I>Livre de religions et des sects</I>. Paris, 1986.<BR>Sharon, M. 1983. <I>Black Banners from the East. The Establishment of the 'Abbasid State. Incubation of a Revolt</I>. Jerusalem/Leiden.<BR>Spuler, B. 1952. <I>Iran in fruh-islamischer Zeit. Politik, Kultur, Vervaltung und offentliches leben zwischen der arabischen und seldschukischen Erorberung 633 bis 1055</I>. Wiesbaden.<BR>Stern, S. M. 1960. The Early Ismaili Missionaries in North-West Persia and in Khurasan and Transoxania. BSOAS, Vol.&nbsp;23, pp.&nbsp;56-90.<BR>--------. 1971. Ya'qub the Coppersmith and Persian National Sentiment. In: <I>Iran and Islam, in Memory of the late Vladimir Minorsky</I>, pp.&nbsp;535-55. Ed. <A title=ContentLink.asp?type=auth&amp;id=33 href="view_personffaf.html?type=auth&amp;id=33">C. E. Bosworth</A>. Edinburgh.<BR>Al-Tabari, Abu Ja'far Muhammad B. Jarir. 1879-1901. <I>Tarikh al-Rusul wa'l-muluk</I>. Ed. M. J, de Goeje et al., Leiden. 15 vols. in 3&nbsp;series. English tr. by various scholars, <I>The History of al-Tabari</I>. Albany, New York, 1985-.<BR>Wellhausen, J. 1975. <I>The Religio-Political Factions in Early Islam</I>. English tr. R. C. Ostle and S. M. Walzer. Amsterdam.<BR>Yarshater, E. 1983. Mazdakism. In: <I>The Cambridge History of Iran</I>, Vol.&nbsp;3 (2), pp.&nbsp;991-1024.<BR>Zarrinkub, H. 1355/1976. <I>Tarikh-i IrAn ba'd az Islam</I>, 2nd ed. Tehran.<BR><BR>
+<P class=mainhead><A name=anchor7></A><STRONG>Notes</STRONG><BR><A name=anchor7_1></A>1. For an excellent survey of early Kharijism in Persia and the relevant sources, see Madelung, 1988 pp. 54-76.<BR><BR><A name=anchor7_2></A>2. See, for instance, al-Ash'ari, 1929-30, Vol. 1, pp. 93-100; al Baghdadi, 1935, pp. 72-82; al-Shahrestani, 1984, pp. 394-06.<BR><BR><A name=anchor7_3></A>3. Al-Tabari, 1879-1901. Vol. II, pp. 1989-97.<BR><BR><A name=anchor7_4></A>4. The fullest account of this Kharijite revolt is contained in the anonymous Tarikh-i Sistan [History of Sistan], 1976, pp. 123-43. See also Bosworth, 1968, pp. 87-104.<BR><BR><A name=anchor7_5></A>5. Al-Tabari, 1879-1901, Vol. II, pp. 1879-87.<BR><BR><A name=anchor7_6></A>6. Al-Nawbakhti, 1931, pp. 29 et seq.; al-Qummi, 1963, pp. 39 et seq.; al-Nashi', 1971, pp. 37 et seq.; al-Razi, 1988, p. 298; Halm, 1982, pp. 64 et seq., 240-74.<BR><BR><A name=anchor7_7></A>7. Al-Nashi', 1971, pp. 32-5; al-Tabari, 1879-1901, Vol. II, pp. 1588-9; Sharon, 1983, pp. 165-73, 181-6<BR><BR><A name=anchor7_8></A>8. Ibn al-Nadim, 1973, p. 407; Gardizi, 1347/1968, pp. 119-20; see Yusofi, 'Behafarid', in: Elr, 1990, Vol. IV, pp. 88-90, containing full bibliography<BR><BR><A name=anchor7_9></A>9. The classic treatment of the Khurrami sects and revolts remains that of the late Sadighi, 1938; see also Amoretti, 1975, especially pp. 481-519; Daniel, 1979, pp. 125-56; Madelung, 1988, pp. 1-2, 63-5.<BR><BR><A name=anchor7_10></A>10. Sadughi, 1938, pp. 229-80; Yusofi, 'Babak Korrami', in Elr, 1989, Vol. III, pp. 229-306, and full bibliography.<BR><BR><A name=anchor7_11></A>11. Madelung, 1988, pp. 77 et seq.<BR><BR><A name=anchor7_12></A>12. More than any other modern scholar, Madelung has investigated the Caspian Zaydi community in a number of studies; see Madelung, 1965, pp. 153-220; 1988, 86-92; Elr, 1980, pp. 181 et seq.<BR><BR><A name=anchor7_13></A>13. For the early history of the Ismaili movement in Iran and Central Asia, see Stern, 1960, pp. 56-90; Daftary, 1990, pp. 118 et seq., 131, 162-3, 165-9, 180, 192-4.<BR><BR><A name=anchor7_14></A>14. See Daftary, 1993, 'Carmathians', in Elr, 1990, Vol. IV, pp. 823 et seq.<BR><BR><A name=anchor7_15></A>15. For instance, Bosworth, 1975.<BR><BR><A name=anchor7_16></A>16. See Chapter 1, note 1.<BR><BR><A name=anchor7_17></A>17. See Spuler, 1952, pp. 225 et seq.; Stern, 1971, especially pp. 535-9; Bosworth, 1978-79, pp. 59-75, reprinted in 1982, article VIII; see also Rypka et al., 1968, pp. 126-71.</P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Sectarian and National Movements in Iran, Khurasan and Transoxania During Umayyad and Early 'Abbasid Times</TITLE><META HTTP-EQUIV="Expires" CONTENT="Mon, 30 Oct 2017 17:18:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 04/11/2008&nbsp;16:49&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=101275 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:10:46 GMT -->
+</HTML>

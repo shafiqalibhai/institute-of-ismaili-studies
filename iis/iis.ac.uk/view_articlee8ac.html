@@ -1,0 +1,771 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113802 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:48:15 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 113802;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyf218.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D113802">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></p><p><A href="view_sorted_articlesbd78.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=en">Lifelong Learning Articles</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesd3d8.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6493.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesea40.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=en" >by Title</A></p><p><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></p><p><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></p><p><A href="view_article7166.html?type=cont.currentlang&amp;id=104553&amp;l=en">Reading Lists</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p><p><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Eternal Cosmos and the Womb of History: Time in Early Ismaili Thought</strong><br/><strong><DIV><A href="view_persone72a.html?type=authors&amp;id=21">Professor Paul E Walker</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div>This is an edited version of an article that originally appeared in the <I>International Journal of Middle East Studies</I>,<I> </I>Vol. 9, No.3, Cambridge University Press, Oct 1978, pp 355-366. </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong><P>In this article the author grapples with theories of Time in Classical Theology. From this wide lens, he narrows the study down to how Time is presented generally in Muslim thought, and specifically in early Ismaili thought, drawing comparisons between Abu Bakr al-Razi, Abu Hatim al-Razi, Nasir-i Khusraw and Al-Sijistani. The author clearly identifies the roots of Time in Ismaili thought in Aristotle and Plotinus. <B><U></U></B></P></div><div> </div><div><P><IMG style="MARGIN-RIGHT: 5px" border=0 alt="" src="WebAssets/Large/pdf_icon.gif" width=25 height=25><A href="WebAssets/Large/Eternal%20Cosmos%20and%20the%20Womb%20of%20History_PDF.pdf">Download the PDF version of this article</A></P><BR>
+<P><B><U>Table of Contents:</U></B></P>
+<P><B><U></U></B></P>
+<OL type=1>
+<LI><A href="#toc1">The Problem Of Time</A> 
+<LI><A href="#toc2">The Ismaili Definition of Time and Eternity</A> 
+<LI><A href="#toc3">The Womb of History</A> </LI></OL>
+<P><B><I><U></U></I></B></P>
+<P><A name=toc1></A><B><U>The Problem Of Time</U></B></P>
+<P>One of the more serious and threatening, yet unsolved, problems in theology is uncertainty about the meaning of time. Clearly, the theologian of an omnipotent and absolute God must reconcile His transcendence with the human worshipper&#8217;s graphic and personal particularity. To come to terms with the matter of spatial dimension is, moreover, relatively easy when compared with the problem of the temporal dimension. Compounding the woes of the theologian (or perhaps causing them) is the abject poverty of all languages in proper terms for time and aspects of time.<A title="" href="#_ftn1" name=_ftnref1>[1]</A> In describing time, all theologians resort to the use of an artificial vocabulary - so unfortunate because it makes the communication of already unfamiliar ideas doubly difficult.</P>
+<P>Martin Nilsson, years ago, in a perceptive study of primitive time-reckoning<A title="" href="#_ftn2" name=_ftnref2>[2]</A> recognised this fact and discovered furthermore that for many societies even the most elemental concern with temporal orientation is either lacking or weakly developed. There are societies that do not &#8216;keep time&#8217;, to use a modern expression, at all. Not only are their languages nearly devoid of time words, but it would appear that they have almost no interest in temporality. Nilsson, whose study began as an attempt to explain ancient Greek concepts of time, reports that the most common method of reckoning time involves what he describes as counting <I>pars pro toto</I>. One does not count intervals of time, but rather periodically recurring things or events such as suns, moons, sleeps, winters. These events are the instants of a kind of subjective, biological, or natural time. It is the advent of the instant and of the thing which matters, not the exact length of the interval between each one. </P>
+<P>This is precisely what is involved in the Qur&#8217;anic doctrine of time. There, time is reduced to a series of liturgical &#8216;instants&#8217; which are discontinuously perceived and which must be experienced by two &#8216;witnesses of the instant&#8217;. A new moon, for example, on which so many ritual or legal observances depend, must actually be seen and cannot be calculated from theoretical tables. It is both possible and acceptable for two villages, sometimes only a mountain range apart, to count the days of a month differently. Significantly, among Muslim sects, it is only the Ismailis, whose theory of time and history we will shortly discuss, who allow an astronomical calculation of time.<A title="" href="#_ftn3" name=_ftnref3>[3]</A></P>
+<P>The notion of time as the repetition or the periodic recurrence of archetypal events is not, it would seem, so difficult or heavy a burden for theologies built upon it. As Mircea Eliade brilliantly explains in his <I>Myth of the Eternal Return</I>, this kind of temporal orientation allows each new moment of time to be a re-creation of the first instant and of the primordial first event, which determined the subsequent now repeated moment.<A title="" href="#_ftn4" name=_ftnref4>[4]</A> The function of this kind of time-reckoning is to heighten the subjective meaning of periodic events to the almost total exclusion of objective numeration, to emphasise the similarity of the ritual &#8216;instant&#8217; with its prototype, and to thereby annul the effect of change and temporality. The real length of the temporal interval between such events is unimportant. There is no space; only points. Thus, for the Muslim, history is not a &#8216;duration&#8217; but a &#8216;galaxy&#8217; of instants, all ultimately preparing for the one last, perfect hour (<I>sa&#8216;a</I>), the moment of judgment.<A title="" href="#_ftn5" name=_ftnref5>[5]</A> </P>
+<P>The timeless transcendency of the Divine easily encompasses this kind of &#8216;history&#8217; because it is not truly temporary. It has no duration. But this kind of time, a time without extension, did give way in many theologies to a more complex concept which involved the notion of a fixed and determined extension or interval of time within timeless eternity. It has become commonplace to recognise in antiquity two opposing views of this temporal extension of the historical process. One, said to be that of the Greeks, sees the intervals of time as forming a kind of circle in which events tend to repeat themselves. The other, said to have come from the Hebrews, sees historical time as the linear progression of unique, non-repeatable events. </P>
+<P>Momigliano has rightly pointed out in an essay entitled &#8216;Time in Ancient Historiography&#8217; that neither of these two notions was exclusively the property of either Greeks or Semites and, in fact, versions of both existed in various levels of both cultures.<A title="" href="#_ftn6" name=_ftnref6>[6]</A> Nevertheless, the conflict between the concept of time as a cycle that tends to return upon itself and of time as a line moving from one point in the remote past where it began toward another point totally unlike the first somewhere in the future where it will end is a useful standpoint from which to analyse the semicyclical, semilinear notions of time which are a fundamental part of the dogmas of communities like the Ismailis. Their thinking about time, in fact, probably derives from a combination of both Greek and Semitic sources. </P>
+<P>Judging from the persistent reappearance of the ideal of cyclical time in the doctrines of eschatologically oriented religions, one senses that some idea of the periodic repetition or renewal of time was even for them an important necessity. The theory of time, therefore, once possibly weakly developed, later assumes an increasingly complex yet more fundamental role in theology as the notion of what constitutes time and history expands. In the simplest terms what is added is the idea of limited time, that is, limited in relationship to the idea of an eternity or endless time. Some have referred to this as a kind of &#8216;retarded eternity&#8217;.<A title="" href="#_ftn7" name=_ftnref7>[7]</A></P>
+<P>It is relatively easy to see that God&#8217;s time is either not time at all, He being free from any thought of sequence, change, and difference, or that Divine time is a kind of infinite, limitless time without end or beginning. This latter idea, however, seems to be the same as the former, if one argues that the Absolute encompasses time as a whole, all at once. The notion of eternity and of timelessness may therefore be essential in absolute monotheism. It is an integral element of this kind of divinity. For this reason, time must be thought of as a piece of eternity, if it is possible at all to speak of eternity as having parts.</P>
+<P>Here, then, at least tentatively, is the major problem confronting theologians, like those of the Ismaili sect, who believe both in an absolute and eternal God and also in a fixed, semilinear history. They must first explain how things clearly of a temporary nature are related to a God totally unconnected with time. How is it, to put it simply, that the timeless, the eternal,<B> </B>encompasses limited parts, or that time is a part of eternity? </P>
+<P>Furthermore, after explaining the relationship of time to eternity, they then must give meaning and justification to that part of eternity which constitutes their own history. Unable to argue that each new instant is a new creation because they believe in the continuous duration of temporal process and in the necessity of history for human salvation, the Ismailis were forced to construct an explanation, a theory, of both time and history. For them, time could not be the vague, inaccurate passing of instants; it had to flow from a determined and meaningful past into a future pregnant with expectation. </P>
+<P><A name=toc2></A><B><U>The Ismaili Definition of Time and Eternity </U></B></P>
+<P>Only two major treatises on time survive from classical antiquity: one from Aristotle&#8217;s <I>Physics</I> and the other from Plotinus&#8217;s <I>Enneads</I>.<A title="" href="#_ftn8" name=_ftnref8>[8]</A> Although both largely agree in the comparing of time to a circle and in the idea that time has unrestricted perpetuity, there are subtle differences between them. Some of these bear directly on early Ismaili doctrines of time.</P>
+<P>Aristotle states clearly that time is the measure or number of motion according to prior and posterior. In this basic definition, he seems to ignore the idea of duration and to number only the instant. Because this definition did not go further, Aristotle opened himself, though somewhat unjustifiably, to two specific and telling criticisms. First, he seems to completely ignore the concept of time as an extension because his definition takes account of only the instant between two unspecified or undefined spaces. Second, it limits time to the measurement of motion only. It thereby raises such serious questions as, for example, whether time can measure the period of a body at rest. Perhaps I should also add here, parenthetically, that for Aristotle things with eternal being are not in time at all.</P>
+<P>Both of the weaknesses mentioned were later noted by Plotinus and by many others.<A title="" href="#_ftn9" name=_ftnref9>[9]</A> Crescas, for example, in his critique of Aristotle, carefully defines time in a way that explicitly recognises these two points. He says, &#8216;Time is the measure of the continuity of motion or of <I>rest between two</I> instants.&#8217;<A title="" href="#_ftn10" name=_ftnref10>[10]</A> Gersonides&#8217; definition, somewhat earlier than that of Crescas, is also close to the point. He argued that time &#8216;is the measure of motion as a whole according to the instants which form the boundaries of motion but not according to the instants which only distinguish the prior from the posterior&#8217;.<A title="" href="#_ftn11" name=_ftnref11>[11]</A> </P>
+<P>On the other hand, in<B> </B>fairness to Aristotle, it must be recognised that he had stated that &#8216;that which is bounded by instants appears to be time&#8217;. On the question of the relationship of time and motion and time and rest, he likewise admitted that we &#8216;measure motion by time&#8217; and also &#8216;time by motion, because they are bounded together&#8217;.<A title="" href="#_ftn12" name=_ftnref12>[12]</A> It is necessary to grasp the difficulties in Aristotle&#8217;s attempt to define time for it was, in part, his definition and its seeming restriction to a mechanical basis which the Neoplatonists, starting with Plotinus and including some Ismailis, rejected.</P>
+<P>Plotinus, in an extremely perceptive analysis of the subject of time and particularly of all theories that held time to be the measure of motion or to have dependence on motion in any way, denied for a variety of reasons, the validity of such connections. For him, time exists independent of motion itself and of the thing in motion. These things share in time but do not define it.</P>
+<P>Significantly, his own exploration of this subject began with an attempt to define what is meant by the term eternity. That, he concluded, is &#8216;the life which belongs to that which exists and is in being, all together and full, completely without extension or interval&#8217;.<A title="" href="#_ftn13" name=_ftnref13>[13]</A> Eternity is the life of that which is not &#8216;continually acquiring being&#8217; for it exists whole and complete all at once. There is no aspect of it of which it can be said that it &#8216;will be&#8217;. It is, in fact, identical with Intellect, the second hypostasis of the scheme which he followed and which the Ismaili theologians inherited. </P>
+<P>Time, then, belongs to that which is not always the same and about which we can say that it needs a time to come. No matter how perfect in other respects, some things are deficient in time. For Plotinus these things include even those measured by an unlimited time or a time without end. The motions of the spheres, which are perpetual, are nevertheless within time. For him they have temporal extension.<A title="" href="#_ftn14" name=_ftnref14>[14]</A></P>
+<P>In most Neoplatonic systems, including that of the Ismaili theologian al-Sijistani, discussed later, the eternal must be the origin of the temporal but only in the sense that the former is the<B> </B>&#8216;cause&#8217; of the latter. It should be clear that the cosmos is in a state of perpetually &#8216;coming-to-be&#8217;. The temporal allotment of the universe as a whole is unlimited.</P>
+<P>Turning now to Plotinus&#8217;s conception of partial time, it is important to see that, for him, time is not the same as &#8216;a certain length of time&#8217;. According to him, it is this latter thing which can be measured by motion. Moreover, rather than time measuring motion, it is motion that measures the length of a certain time. Time exists independent of motion and the heavenly circuit only shows time but is not time itself. For him, time is what he calls, after Plato, &#8216;an image of eternity&#8217;. It arises as the result of Soul&#8217;s attempt to grasp the timeless, undifferentiated wholeness of Intellect. </P>
+<P>Soul, always desiring something not present to it, moves to fulfill such desires. It moves in a continuous sequence in response to the eternal image of Intellect. The life of this movement is time itself. In the words of Plotinus, it &#8216;is the life of Soul in a movement of passage from one way of life to another&#8217;.<A title="" href="#_ftn15" name=_ftnref15>[15]</A> Time came into existence simultaneously with the universe when both were generated by this restless activity of Soul.</P>
+<P>Plotinus, by insisting that time is an extension belonging to Soul rather than to motion, elevated time well above Aristotle&#8217;s attempt to limit it to a kind of accident of the latter. In this, he found a large following among later scholars in the Arabic world. Basically, these differences revolved around the question of whether time is an extension or duration measured, in part, by motion, or whether time is only the measure of motion. </P>
+<P>The eclectic <I>Ikhwan al-Safa&#8217;</I> give both definitions. &#8216;It is said&#8217;, they report, &#8216;that time is the number of the repeated movements of the sphere; others say it is an extension counted by the movements of the sphere.&#8217;<A title="" href="#_ftn16" name=_ftnref16>[16]</A> The word employed here for extension, <I>mudda</I>, becomes a part of many subsequent theoretical explanations of time. It is employed by Saadia, al-Ghazali, Abu Bakr al-Razi, and others. Ibn Sina, in contrast, restricts the idea of time to that given by Aristotle&#8217;s definition.<A title="" href="#_ftn17" name=_ftnref17>[17]</A></P>
+<P>The problem of how to describe eternity and whether it is timeless on the one hand or a form of absolute time on the other (a problem implicitly raised by Plotinus) was to plague those who held time to be independent of and possibly superior to the movement of the spheres.<B> </B>Plotinus clearly separated time and eternity by making the latter timeless. In Islamic theology, the classic case of one who failed to specify this difference was Abu Bakr al-Razi. </P>
+<P>On this subject, he is reported to have said, &#8216;I hold that Time is both an absolute time and a limited time. Absolute time is duration (<I>mudda</I>) and perpetuity. It is eternal and it moves ceaselessly without stopping. The limited [form of time] is that which exists through the movement of the spheres and the course of the sun and planets.&#8217;<A title="" href="#_ftn18" name=_ftnref18>[18]</A> In this scheme there appear to be two divisions in time: one measurable and the other immeasurable. With Abu Bakr, however, there is a question of whether his &#8216;absolute time&#8217; includes not only the Plotinian restless extension of Soul but also all forms of eternity. Significantly, he uses the terms <I>dahr</I>, <I>sarmad</I>, <I>qadim</I>, and <I>abad </I>in reference to it, all of which are normally applied to true eternity.<B></B></P>
+<P>It was this doctrine (along with others) which drew a host of attackers upon Abu Bakr. In the forefront of his most vociferous opposition stood many of the major early Ismaili theologians. Though they did not agree completely amongst themselves, they were unanimous in condemning Abu Bakr&#8217;s doctrine of time.</P>
+<P>It is perhaps necessary here to explain the length of this preliminary discussion before arriving at the central concern of this article, namely, early Ismaili doctrines of time. All of the foregoing ideas were necessary as an introduction to Ismaili statements on time. Ismaili theologians were well acquainted with Aristotle&#8217;s definition of time. They knew of the arguments against it put forth by Plotinus, although it is unlikely that they knew of him by name; instead his ideas came to them from a variety of anonymous or falsely ascribed Neoplatonic sources. </P>
+<P>In the precious few early Ismaili texts that we now possess, the subject of time is treated as if the reader were also fully conversant with the various positions on the question of the meaning of time. References to time in these sources are nearly always brief and incomplete, and they presuppose familiarity with the subject.</P>
+<P>The first major Ismaili theologian whose writings are now extant was Abu Hatim al-Razi, fellow townsman of Abu Bakr. It was he who left us the clearest exposition of Abu Bakr&#8217;s theory of time. This, quoted in part above, is contained in Abu Hatim&#8217;s <I>A&#8216;lam al-Nubuwa</I>, and in it we find the first Ismaili rejection of this theory. </P>
+<P>In his own statement of time, Abu Hatim unfortunately takes up only a weak defence of Aristotle&#8217;s position. &#8216;We do not know&#8217;, he says &#8216;of a reality for time other than what we have mentioned in the way of the movements of the sphere and the sun, and of the number of the years, the months, the days, and the hours.&#8217;<A title="" href="#_ftn19" name=_ftnref19>[19]</A> </P>
+<P>In addition, he explicitly states that time was created along with the world and with the sphere. This is unfortunate because in another work, <I>Kitab al-Islah</I>, in an attempt to correct the doctrines of his fellow Ismaili Muhammad al-Nasafi, he argues that time is the same being as the Intellect. It, the Intellect, the <I>Ibdat</I>, and Perfection (all technical terms in the Ismaili version of Neoplatonism) are for him one and the same. Soul and Time, then, proceed simultaneously from Intellect according to him.<A title="" href="#_ftn20" name=_ftnref20>[20]</A> </P>
+<P>But, if this is so, how can he reconcile this &#8216;perfect&#8217; time with time which he mentioned in his debate with Abu Bakr and which is constituted by the motions of the sphere? Later, Nasir-i Khusraw, in his role as an Ismaili compiler and <I>da&#8216;i</I>, explained that &#8216;time is eternity measured by the movements of the heavens, whose name is day, night, month and year. Eternity is Time not measured, having neither beginning nor end.&#8217;<A title="" href="#_ftn21" name=_ftnref21>[21]</A></P>
+<P>The statements of these two Ismailis certainly agree, and it is difficult to see any real distinction between the &#8216;absolute time&#8217; of Abu Bakr al-Razi and the &#8216;perfect&#8217; time of Abu Hatim al-Razi, or the unmeasured, eternal time of Nasir-i Khusraw. Indeed, it is odd that Abu Hatim should have clearly placed time (<I>zaman</I>) in a position that a more cautious and perhaps more learned theologian might have avoided. The next two major figures in Ismaili doctrinal history took pains to point out his error and to chide him for making time an eternal and equating it with Intellect.<A title="" href="#_ftn22" name=_ftnref22>[22]</A> Significantly, as part of their criticism of him, they both argued that time is constituted only by the motions of the spheres.</P>
+<P>After Abu Hatim al-Razi, the next statement on time comes from Abu Ya&#8216;qub al-Sijistani, one of the two critics mentioned above. Al-Sijistani has left us several chapters on aspects of time in works other than his criticism of Abu Hatim&#8217;s <I>Al-Islah</I>. His discussion of the subject not only avoids the error of the two al-Razis, but in some respects returns to the more sober doctrines of Plotinus and the ancient Neoplatonists. Although he argued that time is an accident (&#8216;<I>arad</I>)<A title="" href="#_ftn23" name=_ftnref23>[23]</A> and that it is the measure of motion, in his doctrine of eternity he emphasised its true timelessness.</P>
+<P>In a chapter of his <I>al-Maqalid</I> (The Keys), al-Sijistani goes to some trouble to explain carefully three aspects of eternity (<I>dahr</I>). Just as time (<I>zaman</I>) has three &#8216;sides&#8217; (<I>jihat</I>), he says, namely, a past, a living, and an awaited, so too does eternity possess three states (<I>ahwal</I>). The first is what is with the <I>Mubdi&#8216; </I>(the Innovator, i.e., God) but there is no way for thought, imagination, speech, or expression to represent this or to understand it. It is called the <I>Azal</I> (Eternity Itself). The second state is what its innovating joins to the First Being (<I>Ays</I>). It is <I>azaliya</I> or eternity. </P>
+<P>The third state is what the Intellect, that is, the First Being or the Preceder, emanates upon its effect, or Soul, in order to establish by means of it the conditions of creation, that is, of the creation of the physical world. This is called the <I>azali</I> or the eternal. It represents Intellect as overseer of the lower world, and its absence, even for a moment, would mean annihilation. Thus, the eternal is absolutely essential for the existence of the world. The eternal Intellect, which has life, wisdom, and science, must by this overview shine its blessings on this world at every moment. &#8216;Nay,&#8217; he adds, it is &#8216;not in every moment but rather in every thousand times a thousand parts of the moment that it casts a thousand times a thousand glances on [the world].&#8217; &#8216;Otherwise,&#8217; he says &#8216;how could wondrous forms which differ in kind, shape, design and composition generate from the motion of a circle which has no life, no wisdom and no science or from lifeless elements which have no brilliance&#8217;?<A title="" href="#_ftn24" name=_ftnref24>[24]</A></P>
+<P>Eternity must be appreciated and put in its rightful place. Those who attribute it to the physical world fall into confusion and error. That which has difference in its dimensions and bodily parts or has parts or motions that are in mutual opposition cannot be associated with eternity. It is reserved for Intellect in which the beginning is the same as the end and the middle is the same as the sides and there is no difference in any dimension whatsoever.</P>
+<P>Clearly, al-Sijistani exiles time to a realm below Intellect and recognises the true timelessness of eternity. In his discussion of the various aspects of eternity, he finds a specific nomenclature appropriate to each feature of the realm of Intellect. The three divisions he mentions probably owe a great deal to proposition 53 of Proclus&#8217; <I>The Elements of Theology</I>. There, Proclus divides eternity into a participant, the participated, and the unparticipated. The first, he explains, is the eternal thing, the second is its eternity, and third is Eternity in itself.<A title="" href="#_ftn25" name=_ftnref25>[25]</A></P>
+<P>Proclus, whose discussion of time and eternity came in part from Plotinus, nevertheless added through clarification several interesting and useful points. </P>
+<P>He was apparently extremely concerned with explaining how the &#8216;self-constituted&#8217;, that is, the eternal, can have a temporal history. Accordingly, he recognised a distinction between temporal existence and temporal activity. The idea of the &#8216;self-constituted&#8217; excludes the former but not the latter. The human soul, for example, which Proclus and many other Neoplatonists hold to be eternal, can have a temporal activity.<A title="" href="#_ftn26" name=_ftnref26>[26]</A> It is this explanation of an eternal which can have temporal activity that seems to partly bridge the gap between time and eternity and to explain al-Sijistani&#8217;s idea of the <I>azali</I> which emanates from Intellect on the physical world.</P>
+<P>In the long run, however, another proposition in Proclus&#8217;s discussion of time may be even more useful. Proposition 55 declares: &#8216;Of things which exist in time, some have a perpetual duration, whilst others have a dated existence in a part of time.&#8217; Seeking a mean term between the eternal and &#8216;that which comes-to-be in a part of time&#8217;, he finds something which &#8216;comes-to-be&#8217; perpetually. This, unlike the eternal, is &#8216;diffused and unfolded in temporal extension&#8217; and is &#8216;composed of parts each of which exists separately in an order of succession&#8217;. This then, according to Proclus, is the link between the true eternal and measurable time. It is likewise his explanation of the temporal perpetuity of the cosmos.<A title="" href="#_ftn27" name=_ftnref27>[27]</A></P>
+<P>Thus, for Proclus, there are two kinds of time: one perpetual and one temporary. Neither of these seems foreign to the thought of Plotinus and also, it would appear, though this is more difficult to prove, a similar division of time is implied in the writings of al-Sijistani and other early Ismaili writers. In the <I>Maqalid</I>, there is a special chapter devoted to establishing the identity of what he calls the <I>daymumiya</I> (durative).<A title="" href="#_ftn28" name=_ftnref28>[28]</A> </P>
+<P>Unfortunately, this term is but poorly defined. His only goal is to prove that it is something other than eternity. He says that it is a characteristic of Soul&#8217;s activities in the same way that eternity is a characteristic of Intellectual emanations. The latter do not elapse because no period or duration is attached to them. The former, on the other hand, abide only as long as the period (<I>mudda</I>) of their function, and two durations may have different magnitudes: one larger and the other smaller. </P>
+<P>Soul, he notes helpfully, persists in its activity only as long as the period of its desire for what Intellect spreads before it in the way of emanations. But, it seems that, though al-Sijistani avoids admitting it, this process is perpetual. Soul&#8217;s activities, for example, have perpetual duration but not true eternity.</P>
+<P>At this point, it seems sufficiently clear that although we have identified two important aspects of al-Sijistani&#8217;s doctrine on time and eternity, and that both are of Neoplatonic provenance, he refuses to admit that either one is time. Unlike the two al-Razis, he holds that eternity is completely timeless, and unlike Plotinus, he seems at first not to classify Soul&#8217;s activity under time, having called it instead <I>daymumiya</I> (durative). In explaining that time (<I>zaman</I>) has no creative function but rather only that of change and transformation, he states clearly that, &#8216;in truth, time is the measure of motions.&#8217;<A title="" href="#_ftn29" name=_ftnref29>[29]</A> This seems like an affirmation of Aristotle&#8217;s idea of time until we realise that, for al-Sijistani, as for Plotinus before, Soul&#8217;s activity is motion. Soul&#8217;s <I>daymumiya</I>, its durative quality, is in time and is a kind of time. It is the &#8216;perpetually coming-to-be&#8217; described by Proclus.</P>
+<P>In sum, then, al-Sijistani sees time as a kind of perpetual change and transformation. It is that which partakes of temporal dimensions because it is never temporally complete. Nevertheless, despite the incomplete nature of particular time, the cosmos as a whole is eternal and it is clear that the Ismaili solution to the time-eternity problem is to argue that the individual human's life partakes of this perpetuity.</P>
+<P><A name=toc3></A><B><U>The Womb of History</U></B></P>
+<P><B></B></P>
+<P>Here, we must turn to another aspect of time, for it is in the Ismaili understanding of history that we find the real significance not of cosmic time but of human time. It must be kept in mind that for al-Sijistani, and Ismaili writers like him, it is the Soul that engenders time because it must move until its longings are fulfilled. History then is the record of the Soul&#8217;s quest for this unachieved perfection. Because each human soul is a part of universal Soul, this history is also the history of human achievement.<A title="" href="#_ftn30" name=_ftnref30>[30]</A></P>
+<P>Mankind, which was created all at once,<A title="" href="#_ftn31" name=_ftnref31>[31]</A> is in the process of seeking the benefits of Intellect in order that the collectivity of human souls may one day rise from temporal activity to intellectual eternity and thereby to salvation. Man is, above all, involved in a historical process; he belongs to a particular situation somewhere in the flow of history. To grasp his own individual role, it is imperative that he knows exactly where he is in time. At this point, one must also reckon with the Ismaili notion of prophecy. Because the prophet is the &#8216;deputy of the Intellect&#8217; in the lower world, it is he who causes the appearance there of &#8216;intellectual emanations&#8217;.<A title="" href="#_ftn32" name=_ftnref32>[32]</A> As explained by al-Sijistani, the prophets see (<I>&#8216;ayanu</I>) into the world of pure things (<I>al-&#8216;alam al-basit</I>)<A title="" href="#_ftn33" name=_ftnref33>[33]</A> and &#8216;they rise to that subtle world by means of their pure souls. </P>
+<P>They take from the spiritually subtle and luminous delights [there] that which they carry to the created world.&#8217;<A title="" href="#_ftn34" name=_ftnref34>[34]</A> The prophets and other members of the ecclesiastical hierarchy are charged with conveying the benefits emanating from Intellect to mankind, and therefore each individual man must understand which particular prophet governs his own time for it is from him that these blessings flow.</P>
+<P>It is interesting that such a pivotal role in the structure of human ontology should be recognised by the Ismailis as belonging to a whole series of individuals. Here, their concept of history and the importance they accord to it betrays itself. The prophet is a historical being and his function must be repeated in every historical era. &#8216;Each of the prophets&#8217;, says al-Sijistani, &#8216;differs in his rule and his law because of his time, his place and the people to whom he is sent.&#8217;<A title="" href="#_ftn35" name=_ftnref35>[35]</A> </P>
+<P>In fact the prophet is called by the Ismailis the &#8216;master of time&#8217; (<I>sahib al-zaman</I>) or the &#8216;decoration of time&#8217; (<I>zinat al-zaman</I>).<A title="" href="#_ftn36" name=_ftnref36>[36]</A> Time is a function of the appearance of prophets. The Christian era is measured from the time of Jesus; the Islamic era from Prophet Muhammad.</P>
+<P>This cycle of great prophets, that is, the lawgiving prophets, began with Adam who had no father and no mother.<A title="" href="#_ftn37" name=_ftnref37>[37]</A> </P>
+<P>He thus also began human history. In the scheme of al-Sijistani and most early Ismailis, it was Adam who inaugurated what they call the &#8216;period of concealment&#8217; (<I>dawr al-satr</I>), a time when appearance and reality are essentially different. As this &#8216;concealment&#8217; progresses chronologically, argue the Ismailis, the law of the founding prophet suffers from decay and the increasing ignorance of those who adhere to it. Periodically, a new lawgiver must arise and bestow a fresh law on those who will accept it. He begins a new cycle and is accordingly master of the time that follows.</P>
+<P>From the era of Adam, time now has moved in such cycles to the era of Prophet Muhammad. For the Ismailis this meant that six great prophets had come: Adam, Noah, Abraham, Moses, Jesus, and finally Prophet Muhammad. He is, as is commonly held by nearly all Muslims, including the Ismailis, the &#8216;seal&#8217; of the prophets. The future, however, will see the advent of a new stage of history with the beginning of the era of the Messiah, the Qa&#8217;im (said by a large number of early writers to be Muhammad ibn Isma&#8216;il ibn Ja&#8216;far al-Sadiq). It will be an era without law because, at that time, Truth will be manifest and unconcealed. It is what the [medieval] Ismailis call &#8216;openness&#8217; (<I>kashf</I>).</P>
+<P>While reading early Ismaili descriptions of the coming of this messianic era, it is hard not to sense their expectation that it is a heralding of the return to paradise and an end to history. Al-Sijistani gives us a most remarkable analogy of this fact. He compares the body of six great prophets to a human foetus in the womb. As there are six parts, he says, to embryonic growth before birth, so too are there six lawgiving prophets in the stages of human social development before mankind emerges from history.<A title="" href="#_ftn38" name=_ftnref38>[38]</A> Thus, in a sense, this image pictures mankind waiting now in a pregnant universe for the ultimate upheaval which will deliver him from the womb of history.</P>
+<P><B></B></P>
+<P>If the foregoing correctly explains the Ismaili concern for time, it is clear why they could not leave the counting of temporal periods and events to the uncertain observation of a new moon&#8217;s appearance. For them, each new moment was not the re-creation of the archetypal event, but was a step on the ladder of time leading to salvation and paradise. While the older, more traditional, Islamic conception essentially looks backward to the golden age <I>in</I> <I>illo tempore</I>, the Ismailis, at least the early ones, theoretically faced forward to the coming dawn of a new era.</P>
+<P>The major difficulty with this Ismaili image of history, that is, their vision of an upward helix of limited time, is that there cannot be a limited series of cycles with beginning and ending in an eternal cosmos or perpetual world, unless such a series is part of a larger repeating pattern. Their upward helix is not truly cyclical and hence cannot be the sole part of an eternity. To reconcile the eternal nature of the universe and the partial temporality of man, they must still recognise that a run of cycles without a beginning preceded Adam and that an endless series will follow their Messiah. </P>
+<P>The logical result of following the Neoplatonic premises regarding time eventually forced many later Ismailis to admit just this.<A title="" href="#_ftn39" name=_ftnref39>[39]</A> The early writers, however, apparently did not. For them, human history went from Adam to the Messiah and if there was to be more, they found no need to mention it. Having accepted &#8216;history&#8217; and the notion of time as an objective duration, they sought valiantly to fit both in the eternal cosmos of their theological predilections. </P>
+<P>At the same time, they tried to cling to their intimate involvement in the uniqueness of Qur&#8217;anic hierohistory. But the conflict and tension in these mutually irreconcilable visions inevitably surfaced. In the post-Fatimid period, many Ismailis, confronted not only by this problem but also by the not unrelated difficulty of explaining the various cycles of <I>imam</I>s, chose a doctrine of an endless series and the ongoing repetition of the Qur&#8217;anic pattern of Adam-initiated cycles. By doing so they unavoidably depreciated history and reduced the temporal urgency of the human situation. A major result was the loss of that vital sense of expectation which was so crucial in the success of the early Ismaili mission.</P>
+<DIV><BR clear=all>
+<HR align=left SIZE=1 width="33%">
+
+<DIV id=ftn1>
+<P><A title="" href="#_ftnref1" name=_ftn1>[1]</A> One example is the nearly universal lack of a proper word for the whole twenty-four hour period. The word <I>Nychthemeron</I>, which means exactly that, is rare and obscure. The English word &#8216;day&#8217;, applies, of course, to the hours of sunlight and only by extension to night time.</P></DIV>
+<DIV id=ftn2>
+<P><A title="" href="#_ftnref2" name=_ftn2>[2]</A> Martin P. Nilsson, <I>Primitive Time-Reckoning</I>: <I>A Study of the Origins and First Development of the Art of Counting Time among the Primitive and Early Cultural Peoples </I>(Lund: C. W. K. Gleerup, 1920).</P></DIV>
+<DIV id=ftn3>
+<P><A title="" href="#_ftnref3" name=_ftn3>[3]</A> See Louis Massignon, &#8216;Time in Islamic Thought&#8217;, <I>Papers from Eranos Yearbooks</I>, Vol. 3. <I>Man and Time</I>, Bollingen series XXX.3 (New York: Pantheon Books, 1957), pp. 108-109. </P></DIV>
+<DIV id=ftn4>
+<P><A title="" href="#_ftnref4" name=_ftn4>[4]</A> <I>Le Mythe de l&#8217;<A href="http://www.linternaute.com/dictionnaire/fr/definition/ebauche/">&#233;</A></I><I>ternel retour</I> (Paris, 1948); Eng. trans. Willard Trask, Bollingen series XLVI (Princeton, N.J.: Princeton University Press, I954). </P></DIV>
+<DIV id=ftn5>
+<P><A title="" href="#_ftnref5" name=_ftn5>[5]</A> Massignon, &#8216;Time in Islamic Thought&#8217;, p. 108.</P></DIV>
+<DIV id=ftn6>
+<P><A title="" href="#_ftnref6" name=_ftn6>[6]</A> Arnaldo Momigliano, &#8216;Time in Ancient Historiography&#8217;, <I>History and Theory</I>, Beiheft 6, <I>History and the Concept of Time</I> (Middletown: Wesleyan University Press, I966), pp. 1-23. </P></DIV>
+<DIV id=ftn7>
+<P><A title="" href="#_ftnref7" name=_ftn7>[7]</A> Henry Corbin, &#8216;Cyclical Time in Mazdaism and Ismailism&#8217;, <I>Papers from Eranos Yearbooks</I>, vol. 3, <I>Man and Time</I>, pp. 144 ff.</P></DIV>
+<DIV id=ftn8>
+<P><A title="" href="#_ftnref8" name=_ftn8>[8]</A><B> </B><I>Physics</I> IV. 10-14. 2I7<I>b</I>-224<I>a</I>, and <I>Enneads</I> III. vii.<B></B></P></DIV>
+<DIV id=ftn9>
+<P><A title="" href="#_ftnref9" name=_ftn9>[9]</A> The most interesting and perceptive discussion of Aristotle&#8217;s attempt to define time and the problems it caused Arab and Jewish philosophers is to be found in Harry Austryn Wolfson&#8217;s <I>Crescas&#8217; Critique of Aristotle</I> (Cambridge, Mass: Harvard University Press, I929 and 1957), pp. 93-98, 283-91, and 633-664. What follows here owes a great deal to Wolfson&#8217;s brief but complete notes on the philosopher&#8217;s definitions of time.</P></DIV>
+<DIV id=ftn10>
+<P><A title="" href="#_ftnref10" name=_ftn10>[10]</A> <I>Ibid</I>., pp. 289 and 65I ff. </P></DIV>
+<DIV id=ftn11>
+<P><A title="" href="#_ftnref11" name=_ftn11>[11]</A> <I>Ibid</I>., p. 653.</P></DIV>
+<DIV id=ftn12>
+<P><A title="" href="#_ftnref12" name=_ftn12>[12]</A> See the discussion, <I>ibid</I>., pp. 646 ff.</P></DIV>
+<DIV id=ftn13>
+<P><A title="" href="#_ftnref13" name=_ftn13>[13]</A> <I>Enneads</I>, III, vii, 3.</P></DIV>
+<DIV id=ftn14>
+<P><A title="" href="#_ftnref14" name=_ftn14>[14]</A> <I>Enneads</I>, III, vii, 7.</P></DIV>
+<DIV id=ftn15>
+<P><A title="" href="#_ftnref15" name=_ftn15>[15]</A> <I>Ibid</I>., III, vii, 11.</P></DIV>
+<DIV id=ftn16>
+<P><A title="" href="#_ftnref16" name=_ftn16>[16]</A> <I>Rasa&#8217;il Ikhwan al-Safa&#8217;</I>, vol. II (Beirut, 1957), p. I7. Cf. Wolfson, <I>Crescas&#8217; Critique</I>, pp. 635 and 655, and the commentary by S. M. Stern in <I>Isaac Israeli</I> (Oxford: Clarendon Press, I958), pp. 74-76. </P></DIV>
+<DIV id=ftn17>
+<P><A title="" href="#_ftnref17" name=_ftn17>[17]</A> See <I>ibid</I>., pp. 75-76, and particularly Wolfson, <I>Crescas&#8217; Critique</I>, pp. 638-640.The term <I>mudda</I>, &#8216;extension&#8217;, translates the Neoplatonic term <I>diastyma</I> used, for example, by Plotinus. In view of Aristotle&#8217;s failure to mention the concept of extension, it assumes extra importance.</P></DIV>
+<DIV id=ftn18>
+<P><A title="" href="#_ftnref18" name=_ftn18>[18]</A> Abu Bakr Muhammad ibn Zakariya al-Razi, <I>Rasa&#8217;il Falsafiya</I>, ed. Paul Kraus (Cairo, 1939), p. 304. This statement is there quoted from Abu Hatim al-Razi's <I>A&#8216;lam al-Nubuwa</I>.</P></DIV>
+<DIV id=ftn19>
+<P><A title="" href="#_ftnref19" name=_ftn19>[19]</A> <I>Rasa&#8216;il Falsafiya,</I> p. 304.</P></DIV>
+<DIV id=ftn20>
+<P><A title="" href="#_ftnref20" name=_ftn20>[20]</A> <I>Kitab al-Islah</I>, MS, Library of Dr. Abbas Hamdani, f. 11 <I>a</I>.</P></DIV>
+<DIV id=ftn21>
+<P><A title="" href="#_ftnref21" name=_ftn21>[21]</A> <I>Jami&#8216; al-Hikmatayn</I>, ed. Henry Corbin (Tehran: Institut Franco-Iranien, 1953), p. 118.</P></DIV>
+<DIV id=ftn22>
+<P><A title="" href="#_ftnref22" name=_ftn22>[22]</A> See especially the remarks and notes of Hamid al-Din al-Kirmani in his <I>al-Riyad</I>, ed. &#8216;Arif Tamir (Beirut, Dar al-Thaqafa, 1960), pp. 67, and 98-99.</P></DIV>
+<DIV id=ftn23>
+<P><A title="" href="#_ftnref23" name=_ftn23>[23]</A> <I>al-Maqalid</I>, MS, Library of Dr. Abbas Hamdani, p. 102.</P></DIV>
+<DIV id=ftn24>
+<P><A title="" href="#_ftnref24" name=_ftn24>[24]</A> <I>al-Maqalid</I>, <I>iqlid </I>21, pp. 82-84.<B></B></P></DIV>
+<DIV id=ftn25>
+<P><A title="" href="#_ftnref25" name=_ftn25>[25]</A> Ed. E. R. Dodds, 2nd ed. (Oxford: Clarendon Press, 1963), pp. 50-53 and commentary, pp. 228-229.</P></DIV>
+<DIV id=ftn26>
+<P><A title="" href="#_ftnref26" name=_ftn26>[26]</A> <I>Elements of Theology</I>, props. 45-51. See particularly Dodds&#8217;s commentary on props.50 and 51, pp. 226-227.</P></DIV>
+<DIV id=ftn27>
+<P><A title="" href="#_ftnref27" name=_ftn27>[27]</A> <I>Elements of Theology,</I> pp. 52-54, 229-230.</P></DIV>
+<DIV id=ftn28>
+<P><A title="" href="#_ftnref28" name=_ftn28>[28]</A> <I>al-Maqalid, iqlid</I> 35, pp. 124-127. </P></DIV>
+<DIV id=ftn29>
+<P><A title="" href="#_ftnref29" name=_ftn29>[29]</A> <I>Ibid., iqlid</I> 41.</P></DIV>
+<DIV id=ftn30>
+<P><A title="" href="#_ftnref30" name=_ftn30>[30]</A> See, in general, Paul Walker, &#8216;An Early Ismaili Interpretation of Man, History and Salvation&#8217;, <I>Ohio Journal of Religious Studies</I>, 3 (1975), 29-35.</P></DIV>
+<DIV id=ftn31>
+<P><A title="" href="#_ftnref31" name=_ftn31>[31]</A> al-Sijistani, for example, ridicules the idea of human generation from a primal pair. Like the cosmos, mankind was created <I>daf&#8216;atan</I> <I>wahidatan</I>. See his <I>al-Yamabi</I>&#8216;, ed. Henry Corbin in <I>Trilogie Ismaelienne</I> (Tehran: Institut Franco-Iranien, I961), text, p. 56.</P></DIV>
+<DIV id=ftn32>
+<P><A title="" href="#_ftnref32" name=_ftn32>[32]</A> See his <I>Ithbat al-Nubuwat</I>, ed. &#8216;Arif Tamir (Beirut: Imprimerie Catholique, 1966), p. 169.</P></DIV>
+<DIV id=ftn33>
+<P><A title="" href="#_ftnref33" name=_ftn33>[33]</A> <I>Ibid.</I>, p. 149. </P>
+<DIV id=ftn34>
+<P><A title="" href="#_ftnref34" name=_ftn34>[34]</A> <I>Ibid.</I>, p. 144.</P></DIV>
+<DIV id=ftn35>
+<P><A title="" href="#_ftnref35" name=_ftn35>[35]</A> <I>Ibid.</I>, p. 162. </P></DIV>
+<DIV id=ftn36>
+<P><A title="" href="#_ftnref36" name=_ftn36>[36]</A> <I>Ibid.</I>, p. 104.</P></DIV>
+<DIV id=ftn37>
+<P><A title="" href="#_ftnref37" name=_ftn37>[37]</A> Ibid., p. 188.</P></DIV>
+<DIV id=ftn38>
+<P><A title="" href="#_ftnref38" name=_ftn38>[38]</A> <I>Ithbat al-Nubuwat</I>, p. 168.<B></B></P></DIV>
+<DIV id=ftn39>
+<P><A title="" href="#_ftnref39" name=_ftn39>[39]</A> On this development and the doctrines connected with it, see Corbin,&#8216;Cyclical Time in Mazdaism and Ismailism&#8217;.</P></DIV></DIV></DIV></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Eternal Cosmos and the Womb of History: Time in Early Ismaili Thought</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sat, 7 Jan 2023 10:18:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 07/01/2013&nbsp;10:30&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113802 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:48:15 GMT -->
+</HTML>

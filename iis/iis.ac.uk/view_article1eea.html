@@ -1,0 +1,662 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100552 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:47:12 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2rtl.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1rtl.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3rtl.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 100552;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="rtl" class="rtl fa">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" href="home.html">&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="&#1580;&#1587;&#1578;&#1580;&#1608; &#1583;&#1585; &#1608;&#1576;&#8204;&#1587;&#1575;&#1610;&#1578;&#1616; &#1605;&#1572;&#1587;&#1587;&#1607;" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fa_list">
+
+<li class="fa">
+	<a class="0" title="&#1606;&#1582;&#1587;&#1578;" rel="dropmenu0_b" href="homecce4.html?l=fa">&#1606;&#1582;&#1587;&#1578;</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_article6795.html?type=cont.currentlang&amp;id=104413&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</A></div><div><A href="view_article6d2b.html?type=cont.currentlang&amp;id=103471&amp;l=fa">&#1581;&#1590;&#1585;&#1578; &#1608;&#1575;&#1604;&#1575; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></div><div><A href="view_articleb06f.html?type=cont.currentlang&amp;id=104448&amp;l=fa">&#1580;&#1575;&#1605;&#1593;&#1607;&#8204;&#1740; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740;</A></div><div><A href="view_article506d.html?type=cont.currentlang&amp;id=104373&amp;l=fa">&#1588;&#1576;&#1705;&#1607;&#8204;&#1740; &#1578;&#1608;&#1587;&#1593;&#1607;&#8204;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="15 2 34" title="&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;" rel="dropmenu1_b" href="view_sorted_articles7192.html?type=static&amp;id=ResearchandPublications&amp;l=fa">&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></div><div><A href="view_article5d32.html?ContentID=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A></div><div><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A></div><div><A href="view_article8aae.html?ContentID=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></div><div><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A></div><div><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A></div><div><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A></div><div><A href="view_articleb430.html?ContentID=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A></div><div><A href="view_article2b6d.html?ContentID=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1740;&#1607;</A></div><div><A href="view_article5aa9.html?ContentID=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A></div><div><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="3" title="&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;" rel="dropmenu2_b" href="view_sorted_articles0fe6.html?type=static&amp;id=graduate_studies&amp;l=fa">&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article6d62.html?type=cont.currentlang&amp;id=104478&amp;l=fa">&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1610;&#1604;&#1740; &#1583;&#1585; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1593;&#1604;&#1608;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;</A></div><div><A href="view_article313f.html?type=cont.currentlang&amp;id=106627&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1740;&#1578; &#1605;&#1593;&#1604;&#1605; &#1583;&#1608;&#1585;&#1607;&#8204;&#1740; &#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1740;&#1740;</A></div><div><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A></div><div><A href="view_article7818.html?type=cont.currentlang&amp;id=105818&amp;l=fa">&#1587;&#1575;&#1740;&#1585; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="22" title="&#1570;&#1605;&#1608;&#1586;&#1588;" rel="dropmenu3_b" href="view_sorted_articles8ed3.html?type=static&amp;id=learning&amp;l=fa">&#1570;&#1605;&#1608;&#1586;&#1588;</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A></div><div><A href="view_articlee423.html?ContentID=104858&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A></div><div><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A></div><div><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A></div><div><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></div><div><A href="view_article5bd8.html?ContentID=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></div><div><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="5" title="&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;" rel="dropmenu4_b" href="view_sorted_articles900d.html?type=static&amp;id=library&amp;l=fa">&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_article0a46.html?type=cont.currentlang&amp;id=103462&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></div><div><A href="view_articlef688.html?type=cont.currentlang&amp;id=104503&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1670;&#1575;&#1662;&#1740;</A></div><div><A href="view_articledaae.html?type=cont.currentlang&amp;id=104538&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1589;&#1608;&#1578;&#1740; &#1608; &#1578;&#1589;&#1608;&#1740;&#1585;&#1740;</A></div><div><A href="view_articlece75.html?type=cont.currentlang&amp;id=114807&amp;l=fa">Electronic Resources</A></div><div><A href="view_article3a7d.html?type=cont.currentlang&amp;id=104728&amp;l=fa">&#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A></div><div><A href="view_articleeac8.html?type=cont.currentlang&amp;id=104748&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A></div><div><A href="view_sorted_articles06b6.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fa">
+	<a class="7 20" title="&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;" rel="dropmenu5_b" href="view_sorted_articles1714.html?type=static&amp;id=newsevents&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A></div><div><A href="view_article1720.html?ContentID=104873&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;</A></div><div><A href="view_article2827.html?ContentID=104498&amp;l=fa">&#1582;&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "rtl" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only3299.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D100552">&#1605;&#1578;&#1606; &#1578;&#1606;&#1607;&#1575;</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlef0ef.html?ContentID=100546">English</ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles961d.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1578;&#1575;&#1585;&#1740;&#1582;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesb07c.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1606;&#1575;&#1605; &#1605;&#1572;&#1604;&#1601;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4aaa.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=fa" >&#1576;&#1585; &#1575;&#1587;&#1575;&#1587; &#1593;&#1606;&#1608;&#1575;&#1606;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article1c79.html?type=cont.currentlang&amp;id=105758&amp;l=fa" >&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1578;&#1575;&#1586;&#1607;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article8a4a.html?type=cont.currentlang&amp;id=111218&amp;l=fa" >&#1587;&#1604;&#1587;&#1604;&#1607;&#8204;&#1740; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articleefa9.html?type=cont.currentlang&amp;id=104743&amp;l=fa" >&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1583;&#1585; &#1583;&#1587;&#1578; &#1578;&#1607;&#1610;&#1607;</A></p><p><A href="view_article5717.html?type=cont.currentlang&amp;id=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A></p><p><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A></p><p><A href="view_articlead33.html?type=cont.currentlang&amp;id=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A></p><p><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A></p><p><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A></p><p><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A></p><p><A href="view_articlebda7.html?type=cont.currentlang&amp;id=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A></p><p><A href="view_article3ae5.html?type=cont.currentlang&amp;id=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1610;&#1607;</A></p><p><A href="view_article5271.html?type=cont.currentlang&amp;id=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A></p><p><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" href="javascript:mailpage()"><img border="0" alt="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" src="images/email.gif"/></a>  <a title="&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;" href="javascript:mailpage()">&#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607; &#1585;&#1575; &#1576;&#1585;&#1575;&#1740; &#1583;&#1740;&#1711;&#1585;&#1575;&#1606; &#1576;&#1601;&#1585;&#1587;&#1578;&#1740;&#1583;</a></p>	
+
+<p><a title="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" href="javascript:window.print();"><img border="0" alt="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" src="images/print.gif"/></a>  <a title="&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;" href="javascript:window.print();">&#1670;&#1575;&#1662; &#1605;&#1591;&#1604;&#1576; &#1575;&#1740;&#1606; &#1589;&#1601;&#1581;&#1607;</a></p>
+
+<p><a title="&#1575;&#1601;&#1586;&#1608;&#1606;&#1607;&#8204;&#1609; &#1580;&#1587;&#1578;&#1580;&#1608;&#1740; &#1601;&#1608;&#1585;&#1740;" href="view_articled5e0.html?ContentID=110810">&#1575;&#1601;&#1586;&#1608;&#1606;&#1607;&#8204;&#1609; &#1580;&#1587;&#1578;&#1580;&#1608;&#1740; &#1601;&#1608;&#1585;&#1740;</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">&#1593;&#1604;&#1575;&#1602;&#1605;&#1606;&#1583;&#1740;&#8204;&#1607;&#1575; &#1608; &#1576;&#1607; &#1575;&#1588;&#1578;&#1585;&#1575;&#1705;&#8204;&#1711;&#1584;&#1575;&#1585;&#1740;</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>&#1605;&#1593;&#1585;&#1601;&#1740; &#1570;&#1579;&#1575;&#1585;</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>&#1586;&#1740;&#1576;&#1575;&#1740;&#1740; &#1608; &#1575;&#1587;&#1604;&#1575;&#1605;: &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1583;&#1585; &#1607;&#1606;&#1585; &#1608; &#1605;&#1593;&#1605;&#1575;&#1585;&#1740; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740;</strong><strong><br/></strong><strong><DIV><A href="view_personefa4.html?type=authors&amp;id=56">Dr Valérie Gonzalez</A></DIV></strong><br/><br/>&#1604;&#1606;&#1583;&#1606;: &#1570;&#1740;.&#1576;&#1740;. &#1578;&#1608;&#1585;&#1610;&#1587;&#1548; &#1576;&#1575; &#1607;&#1605;&#1705;&#1575;&#1585;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;&#1548; &#1778;&#1776;&#1776;&#1777;&#1548;&nbsp;&#1777;&#1782;&#1776; &#1589;.<span><br/><br/><span>&#1777;&#1784;&#1782;&#1776;&#1782;&#1780;&#1782;&#1785;&#1777;&#1779;<span lang="FA" dir="rtl" style="FONT-SIZE: 12pt; FONT-FAMILY: ' mso-fareast-language: EN-US; mso-bidi-language: FA; Times: ; mso-fareast-font-family: ' mso-ansi-language: EN-US">&#1588;&#1575;&#1576;&#1705; (&#1580;&#1604;&#1583; &#1711;&#1575;&#1604;&#1610;&#1606;&#1711;&#1608;&#1585;):</span></span></span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="BACKGROUND: #ffffcc; WIDTH: 125px; HEIGHT: 230px" cellSpacing="0" cellPadding="0" align="left" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><A href="javascript:void(0)" onclick="LaunchPreviewFull('WebAssets/medium/Publications/gonzalez_cover-2004112115928_7055.jpg');" xmlns=""><IMG border="0" onError="ImageLoadFailed()" src="WebAssets/medium/Publications/gonzalez_cover-2004112115928_7055.jpg" align="left" alt="" style="padding: 0px;"></A></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">&#1582;&#1604;&#1575;&#1589;&#1607; </a></li><li><a href="javascript: showSection(&quot;contents&quot;)">&#1605;&#1581;&#1578;&#1608;&#1610;&#1575;&#1578;</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">&#1705;&#1578;&#1575;&#1576;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740;</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>&#1582;&#1604;&#1575;&#1589;&#1607; <br></strong><P align=justify>&#1578;&#1589;&#1608;&#1740;&#1585;&#1607;&#1575;&#1740; &#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;&#8204;&#1575;&#1740; &#1575;&#1740;&#1606; &#1705;&#1578;&#1575;&#1576;&#1548; &#1576;&#1607; &#1607;&#1605;&#1585;&#1575;&#1607; &#1593;&#1705;&#1587;&#8204;&#1607;&#1575;&#1740; &#1575;&#1590;&#1575;&#1601;&#1740; &#1711;&#1585;&#1601;&#1578;&#1607; &#1588;&#1583;&#1607; &#1578;&#1608;&#1587;&#1591; &#1606;&#1608;&#1740;&#1587;&#1606;&#1583;&#1607; &#1608; &#1576;&#1585;&#1711;&#1585;&#1601;&#1578;&#1607; &#1575;&#1586; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1601;&#1585;&#1607;&#1606;&#1711;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;.</P>
+<P align=justify>&#1705;&#1578;&#1575;&#1576; &#1575;&#1587;&#1604;&#1575;&#1605; &#1608; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#1548; &#1705;&#1607; &#1605;&#1576;&#1578;&#1606;&#1740; &#1576;&#1585; &#1587;&#1604;&#1587;&#1604;&#1607;&#8204;&#1575;&#1740; &#1575;&#1586; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1583;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1740;&#1604;&#1740; &#1583;&#1585; &#1605;&#1575;&#1607; &#1605;&#1740; &#1777;&#1785;&#1785;&#1785; &#1575;&#1587;&#1578;&#1548; &#1576;&#1607; &#1705;&#1575;&#1608;&#1588; &#1583;&#1585; &#1575;&#1576;&#1593;&#1575;&#1583; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1582;&#1578;&#1740; &#1607;&#1606;&#1585; &#1605;&#1608;&#1580;&#1608;&#1583; &#1583;&#1585; &#1605;&#1578;&#1606; &#1578;&#1605;&#1583;&#1606; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1605;&#1740;&#8204;&#1662;&#1585;&#1583;&#1575;&#1586;&#1583;. &#1576;&#1575; &#1578;&#1605;&#1585;&#1705;&#1586; &#1576;&#1585; &#1581;&#1608;&#1586;&#1607;&#8204;&#1740; &#1662;&#1583;&#1740;&#1583;&#1575;&#1585;&#1588;&#1606;&#1575;&#1587;&#1740; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1582;&#1578;&#1740; &#1608; &#1578;&#1608;&#1604;&#1740;&#1583; &#1607;&#1606;&#1585;&#1740;&#1548; &#1711;&#1608;&#1606;&#1586;&#1575;&#1604;&#1586; &#1576;&#1607; &#1576;&#1585;&#1585;&#1587;&#1740; &#1606;&#1592;&#1585;&#1740;&#1607;&#8204;&#1740; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1608; &#1705;&#1575;&#1585;&#1576;&#1585;&#1583; &#1570;&#1606; &#1605;&#1740;&#8204;&#1662;&#1585;&#1583;&#1575;&#1586;&#1583;. &#1575;&#1740;&#1606; &#1705;&#1578;&#1575;&#1576;&#1548; &#1705;&#1607; &#1575;&#1586; &#1570;&#1606; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#171;&#1606;&#1605;&#1575;&#1583;&#1740; &#1575;&#1586; &#1593;&#1589;&#1585;&#1740; &#1580;&#1583;&#1740;&#1583; &#1583;&#1585; &#1593;&#1585;&#1589;&#1607;&#8204;&#1740; &#1607;&#1606;&#1585; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740;&#187; &#1740;&#1575;&#1583; &#1588;&#1583;&#1607; &#1575;&#1587;&#1578;&#1548; &#1578;&#1606;&#1575;&#1602;&#1590;&#8204;&#1607;&#1575;&#1740; &#1575;&#1608;&#1604;&#1740;&#1607;&#8204; &#1585;&#1575; &#1705;&#1607; &#1605;&#1578;&#1583;&#1608;&#1604;&#1608;&#1688;&#1740;&#8204;&#1607;&#1575;&#1740; &#171;&#1594;&#1585;&#1576;&#1740;&#187; &#1585;&#1575; &#1575;&#1586; &#1583;&#1575;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#171;&#1575;&#1587;&#1604;&#1575;&#1605;&#1740;&#187; &#1580;&#1583;&#1575; &#1605;&#1740;&#8204;&#1705;&#1585;&#1583;&#1606;&#1583;&#1548; &#1575;&#1586; &#1605;&#1740;&#1575;&#1606; &#1576;&#1585; &#1605;&#1740;&#8204;&#1583;&#1575;&#1585;&#1583; &#1608; &#1578;&#1601;&#1705;&#1585; &#1601;&#1740;&#1604;&#1587;&#1608;&#1601;&#1575;&#1606; &#1605;&#1582;&#1578;&#1604;&#1601;&#1740; &#1575;&#1586; &#1575;&#1576;&#1606;&#8204;&#1587;&#1740;&#1606;&#1575; &#1711;&#1585;&#1601;&#1578;&#1607; &#1578;&#1575; &#1575;&#1576;&#1606; &#1581;&#1586;&#1605; &#1608; &#1608;&#1740;&#1578;&#1711;&#1606;&#1588;&#1578;&#1575;&#1740;&#1606;&#1548; &#1607;&#1608;&#1587;&#1585;&#1604; &#1608; &#1583;&#1585;&#1740;&#1583;&#1575; &#1608; &#1575;&#1601;&#1585;&#1575;&#1583; &#1583;&#1740;&#1711;&#1585; &#1585;&#1575; &#1576;&#1575; &#1607;&#1605; &#1578;&#1604;&#1601;&#1740;&#1602; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583;.</P>
+<P align=justify>&#1578;&#1575; &#1607;&#1606;&#1711;&#1575;&#1605; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585; &#1575;&#1582;&#1740;&#1585; &#1575;&#1579;&#1585; &#1605;&#1581;&#1602;&#1602; &#1575;&#1587;&#1662;&#1575;&#1606;&#1740;&#1575;&#1740;&#1740; &#1582;&#1608;&#1586;&#1607; &#1605;&#1740;&#1711;&#1604; &#1662;&#1608;&#1585;&#1578;&#1575; &#1608;&#1740;&#1604;&#1670;&#1586; (Historia del pensamiento est&#233;tico &#225;rabe, al-Andalus y la est&#233;tica &#225;rabe cl&#225;sica &#1548; &#1605;&#1575;&#1583;&#1585;&#1740;&#1583;: &#1570;&#1705;&#1575;&#1604; &#1777;&#1785;&#1785;&#1783;)&#1548; &#1576;&#1587;&#1740;&#1575;&#1585;&#1740; &#1576;&#1585; &#1575;&#1740;&#1606; &#1578;&#1589;&#1608;&#1585; &#1576;&#1608;&#1583;&#1606;&#1583; &#1705;&#1607; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1588;&#1575;&#1582;&#1607;&#8204;&#1575;&#1740; &#1575;&#1586; &#1575;&#1606;&#1583;&#1740;&#1588;&#1607;&#8204;&#1740; &#1601;&#1604;&#1587;&#1601;&#1740; &#1583;&#1585; &#1575;&#1587;&#1604;&#1575;&#1605; &#1608;&#1580;&#1608;&#1583; &#1606;&#1583;&#1575;&#1588;&#1578;&#1607; &#1575;&#1587;&#1578;. &#1575;&#1586; &#1591;&#1585;&#1740;&#1602; &#1605;&#1580;&#1605;&#1608;&#1593;&#1607;&#8204;&#1575;&#1740; &#1575;&#1586; &#1662;&#1606;&#1580; &#1580;&#1587;&#1578;&#1575;&#1585;&#1548; &#1608;&#1575;&#1604;&#1585;&#1740; &#1711;&#1608;&#1606;&#1586;&#1575;&#1604;&#1586; &#1576;&#1575; &#1578;&#1705;&#1740;&#1607; &#1576;&#1585; &#1578;&#1581;&#1602;&#1740;&#1602; &#1608;&#1740;&#1604;&#1670;&#1586;&#1548; &#1606;&#1588;&#1575;&#1606; &#1605;&#1740;&#8204;&#1583;&#1607;&#1583; &#1705;&#1607; &#1670;&#1711;&#1608;&#1606;&#1607; &#1607;&#1606;&#1585; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740;&#1548; &#1705;&#1607; &#1576;&#1607; &#1591;&#1608;&#1585; &#1587;&#1606;&#1578;&#1740; &#1575;&#1586; &#1605;&#1606;&#1592;&#1585;&#1607;&#1575;&#1740; &#1578;&#1575;&#1585;&#1740;&#1582;&#1740;&#1548; &#1580;&#1575;&#1605;&#1593;&#1607;&#8204;&#1588;&#1606;&#1575;&#1582;&#1578;&#1740; &#1608; &#1578;&#1608;&#1589;&#1740;&#1601;&#1740; &#1576;&#1585;&#1585;&#1587;&#1740; &#1605;&#1740;&#8204;&#1588;&#1608;&#1583;&#1548; &#1605;&#1740;&#8204;&#1578;&#1608;&#1575;&#1606; &#1576;&#1575; &#1705;&#1575;&#1585;&#1576;&#1585;&#1583; &#1606;&#1592;&#1585;&#1740;&#1607;&#8204;&#1740; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1608; &#1711;&#1601;&#1578;&#1605;&#1575;&#1606; &#1662;&#1583;&#1740;&#1583;&#1575;&#1585;&#1588;&#1606;&#1575;&#1587;&#1575;&#1606;&#1607; &#1594;&#1606;&#1575; &#1662;&#1740;&#1583;&#1575; &#1705;&#1606;&#1583;.</P>
+<P align=justify>&#1606;&#1582;&#1587;&#1578;&#1740;&#1606; &#1601;&#1589;&#1604; &#1705;&#1578;&#1575;&#1576; &#1711;&#1608;&#1606;&#1586;&#1575;&#1604;&#1586; &#1670;&#1606;&#1583;&#1740;&#1606; &#1580;&#1606;&#1576;&#1607; &#1575;&#1586; &#1605;&#1601;&#1607;&#1608;&#1605; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740; &#1608; &#1605;&#1578;&#1590;&#1575;&#1583; &#1602;&#1591;&#1576;&#1740; &#1570;&#1606;&#1548; &#1740;&#1593;&#1606;&#1740; &#1586;&#1588;&#1578;&#1740; &#1585;&#1575; &#1583;&#1585; &#1575;&#1606;&#1583;&#1740;&#1588;&#1607;&#8204;&#1740; &#1705;&#1604;&#1575;&#1587;&#1740;&#1705; &#1593;&#1585;&#1576;&#1740; &#1576;&#1585;&#1585;&#1587;&#1740; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583;. &#1576;&#1575; &#1705;&#1606;&#1575;&#1585; &#1607;&#1605; &#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1583;&#1606; &#1608;&#1578;&#1581;&#1604;&#1740;&#1604; &#1606;&#1608;&#1588;&#1578;&#1607;&#8204;&#1607;&#1575;&#1740; &#1575;&#1576;&#1606; &#1581;&#1586;&#1605; (&#1608;. &#1780;&#1781;&#1782;/&#1777;&#1776;&#1782;&#1780;) &#1705;&#1607; &#1606;&#1605;&#1608;&#1606;&#1607;&#8204;&#1740; &#1578;&#1601;&#1587;&#1740;&#1585; &#1592;&#1575;&#1607;&#1585;&#1740; &#1740;&#1575; &#1578;&#1581;&#1578;&#8204;&#1575;&#1604;&#1604;&#1601;&#1592;&#1740; &#1575;&#1586; &#1605;&#1578;&#1606; &#1605;&#1602;&#1583;&#1587; &#1575;&#1587;&#1578;&#1548; &#1587;&#1582;&#1606;&#1575;&#1606; &#1575;&#1576;&#1606;&#8204;&#1587;&#1740;&#1606;&#1575; (&#1578;&#1608;&#1604;&#1583; &#1779;&#1783;&#1776;/&#1785;&#1784;&#1776;) &#1740;&#1705;&#1740; &#1575;&#1586; &#1605;&#1607;&#1605;&#8204;&#1578;&#1585;&#1740;&#1606; &#1588;&#1575;&#1585;&#1581;&#1575;&#1606; &#1605;&#1575;&#1576;&#1593;&#1583;&#8204;&#1575;&#1604;&#1591;&#1576;&#1740;&#1593;&#1607;&#8204;&#1740; &#1575;&#1601;&#1604;&#1575;&#1591;&#1608;&#1606;&#1740; &#1583;&#1585; &#1580;&#1607;&#1575;&#1606; &#1575;&#1587;&#1604;&#1575;&#1605;&#1548; &#1608; &#1583;&#1608; &#1570;&#1585;&#1575;&#1740; &#1601;&#1740;&#1604;&#1587;&#1608;&#1601; &#171;&#1582;&#1585;&#1583;&#1711;&#1585;&#1575;&#187;: &#1575;&#1576;&#1606; &#1585;&#1588;&#1583; (&#1608;. &#1781;&#1785;&#1781;/&#1777;&#1777;&#1785;&#1784;) &#1608; &#1575;&#1576;&#1606; &#1575;&#1604;&#1607;&#1740;&#1579;&#1605; (&#1608;. &#1780;&#1779;&#1776;/&#1777;&#1776;&#1779;&#1785;)&#1548; &#1606;&#1608;&#1740;&#1587;&#1606;&#1583;&#1607; &#1575;&#1583;&#1593;&#1575; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583; &#1705;&#1607; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1588;&#1575;&#1582;&#1607;&#8204;&#1575;&#1740; &#1575;&#1586; &#1601;&#1604;&#1587;&#1601;&#1607; &#1662;&#1575;&#1740;&#1607;&#8204;&#1575;&#1588; &#1583;&#1585; &#1575;&#1606;&#1583;&#1740;&#1588;&#1607;&#8204;&#1740; &#1602;&#1585;&#1608;&#1606; &#1605;&#1740;&#1575;&#1606;&#1740; &#1580;&#1607;&#1575;&#1606; &#1575;&#1587;&#1604;&#1575;&#1605; &#1575;&#1587;&#1578;.</P>
+<DIV align=justify>&#171;&#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1605;&#1579;&#1604; &#1587;&#1604;&#1740;&#1605;&#1575;&#1606;&#1740; &#1583;&#1585; &#1602;&#1585;&#1570;&#1606;&#187;&#1548; &#1705;&#1607; &#1582;&#1604;&#1575;&#1589;&#1607;&#8204;&#1575;&#1740; &#1575;&#1586; &#1705;&#1578;&#1575;&#1576; &#1711;&#1608;&#1606;&#1586;&#1575;&#1604;&#1586; &#1576;&#1607; &#1606;&#1575;&#1605; Le Pi&#232;ge de Salomon, Le Pens&#233;e de l&#8217;art dans le Coran &#1575;&#1587;&#1578;&#1548; &#1576;&#1607; &#1705;&#1575;&#1608;&#1588; &#1583;&#1585; &#1587;&#1608;&#1585;&#1607;&#8204;&#1740; &#1606;&#1605;&#1604; (&#1602;&#1585;&#1570;&#1606;&#1548; &#1587;&#1608;&#1585;&#1607;&#8204;&#1740; &#1778;&#1783;&#1548; &#1570;&#1740;&#1575;&#1578; &#1777;&#1781; &#1578;&#1575; &#1780;&#1780;)&#8204; &#1605;&#1740;&#8204;&#1662;&#1585;&#1583;&#1575;&#1586;&#1583; &#1608; &#1578;&#1608;&#1589;&#1740;&#1601; &#1570;&#1606; &#1575;&#1586; &#1583;&#1740;&#1583;&#1575;&#1585; &#1605;&#1604;&#1705;&#1607;&#8204;&#1740; &#1587;&#1576;&#1575; &#1575;&#1586; &#1583;&#1585;&#1576;&#1575;&#1585; &#1662;&#1740;&#1575;&#1605;&#1576;&#1585; &#1587;&#1604;&#1740;&#1605;&#1575;&#1606; &#1662;&#1575;&#1583;&#1588;&#1575;&#1607;&#1548; &#1705;&#1607; &#1607;&#1606;&#1711;&#1575;&#1605; &#1583;&#1593;&#1608;&#1578; &#1576;&#1607; &#1608;&#1585;&#1608;&#1583; &#1576;&#1607; &#1602;&#1589;&#1585; &#1575;&#1608; &#1588;&#1740;&#1588;&#1607; &#1740;&#1575; &#1705;&#1585;&#1740;&#1587;&#1578;&#1575;&#1604; (&#1589;&#1585;&#1581;) &#1705;&#1601; &#1605;&#1705;&#1575;&#1606; &#1585;&#1575; &#1576;&#1575; &#1570;&#1576; &#1575;&#1588;&#1578;&#1576;&#1575;&#1607; &#1605;&#1740;&#8204;&#1711;&#1740;&#1585;&#1583;. &#1711;&#1608;&#1606;&#1586;&#1575;&#1604;&#1586; &#1705;&#1607; &#1605;&#1583;&#1593;&#1740; &#1575;&#1587;&#1578; &#1605;&#1601;&#1607;&#1608;&#1605;&#1740; &#1602;&#1585;&#1570;&#1606;&#1740; &#1575;&#1586; &#1570;&#1711;&#1575;&#1607;&#1740; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1582;&#1578;&#1740; &#1575;&#1586; &#1591;&#1585;&#1740;&#1602; &#1578;&#1588;&#1576;&#1740;&#1607; &#1582;&#1591;&#1575;&#1740; &#1576;&#1575;&#1589;&#1585;&#1607;&#8204;&#1575;&#1740; &#1705;&#1607; &#1576;&#1604;&#1602;&#1740;&#1587; &#1605;&#1585;&#1578;&#1705;&#1576; &#1588;&#1583;&#1607; &#1575;&#1587;&#1578; &#1608;&#1580;&#1608;&#1583; &#1583;&#1575;&#1585;&#1583;&#1548; &#1670;&#1575;&#1604;&#1588; &#1607;&#1606;&#1585;&#1740; &#1575;&#1604;&#1711;&#1608;&#1576;&#1585;&#1583;&#1575;&#1585;&#1740; &#1608; &#1576;&#1585;&#1711;&#1585;&#1601;&#1578;&#1606; &#1570;&#1606; &#1576;&#1607; &#1605;&#1606;&#1586;&#1604;&#1607;&#8204;&#1740; &#1740;&#1705; &#1606;&#1592;&#1575;&#1605; &#1575;&#1585;&#1586;&#1588;&#1740; &#1608; &#1575;&#1579;&#1585; &#1670;&#1607;&#1575;&#1585;&#1670;&#1608;&#1576;&#1740; &#1608; &#1662;&#1575;&#1585;&#1575;&#1583;&#1575;&#1740;&#1605;&#1740; &#1570;&#1606; &#1576;&#1585; &#1607;&#1606;&#1585; &#1608; &#1605;&#1593;&#1605;&#1575;&#1585;&#1740; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1585;&#1575; &#1591;&#1585;&#1581; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583;.</DIV>
+<DIV align=justify>&nbsp;</DIV>
+<DIV align=left>
+<TABLE align=center>
+<TBODY>
+<TR>
+<TD>
+<DIV align=right>&#1576;&#1575;&#1585;&#1711;&#1575;&#1607; &#1588;&#1740;&#1585;&#1607;&#1575;&#1548; &#1575;&#1604;&#1581;&#1605;&#1585;&#1575;&#1569;(&#1593;&#1705;&#1587;: &#1662;&#1740;&#1578;&#1585; &#1587;&#1606;&#1583;&#1585;&#1586;)</DIV>
+<P align=right>&#1575;&#1586; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740; &#1608; &#1575;&#1587;&#1604;&#1575;&#1605;</P></TD>
+<TD>
+<P class=bodytext align=center><I><IMG height=218 src="WebAssets/site_images/alhambra_lions_court-2.jpg" width=300></I></P></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>&nbsp;</DIV>
+<DIV align=center>&nbsp;</DIV>
+<DIV align=justify>&#1583;&#1608; &#1605;&#1602;&#1575;&#1604;&#1607;&#8204;&#1575;&#1740; &#1705;&#1607; &#1583;&#1585; &#1575;&#1583;&#1575;&#1605;&#1607; &#1605;&#1740;&#8204;&#1570;&#1740;&#1606;&#1583; &#1575;&#1576;&#1593;&#1575;&#1583;&#1740; &#1575;&#1586; &#1605;&#1580;&#1605;&#1608;&#1593;&#1607;&#8204;&#1740; &#1602;&#1589;&#1585; &#1606;&#1589;&#1740;&#1585;&#1740; &#1575;&#1604;&#1581;&#1605;&#1585;&#1575;&#1569; &#1585;&#1575; &#1576;&#1585;&#1585;&#1587;&#1740; &#1605;&#1740;&#8204;&#1705;&#1606;&#1606;&#1583;. &#1606;&#1582;&#1587;&#1578;&#1740;&#1606; &#1601;&#1589;&#1604; &#1575;&#1586; &#1575;&#1740;&#1606; &#1583;&#1608;&#1548; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#171;&#1578;&#1575;&#1604;&#1575;&#1585; &#1587;&#1601;&#1740;&#1585;&#1575;&#1606;&#187; &#1583;&#1585; &#1583;&#1585; &#1662;&#1585;&#1578;&#1608; &#1662;&#1583;&#1740;&#1583;&#1575;&#1585;&#1588;&#1606;&#1575;&#1587;&#1740; &#1608; &#1605;&#1582;&#1589;&#1608;&#1589;&#1575;&#1611; &#1605;&#1601;&#1575;&#1607;&#1740;&#1605; &#1576;&#1575;&#1586;&#1606;&#1605;&#1575;&#1740;&#1740; &#1608; &#1705;&#1575;&#1585;&#1576;&#1585;&#1583; &#1578;&#1588;&#1576;&#1740;&#1607;&#8204; &#1576;&#1589;&#1585;&#1740; &#1585;&#1575; &#1576;&#1585;&#1585;&#1587;&#1740; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583; &#1608; &#1587;&#1662;&#1587; &#1601;&#1589;&#1604;&#1740; &#1605;&#1740;&#8204;&#1570;&#1740;&#1583; &#1705;&#1607; &#1575;&#1582;&#1578;&#1589;&#1575;&#1589; &#1583;&#1575;&#1585;&#1583; &#1576;&#1607; &#1607;&#1606;&#1583;&#1587;&#1607; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1605;&#1608;&#1590;&#1608;&#1593; &#1607;&#1606;&#1585;&#1740; &#1583;&#1585; &#1601;&#1585;&#1607;&#1606;&#1711; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1576;&#1607; &#1591;&#1608;&#1585; &#1575;&#1593;&#1605; &#1608; &#1575;&#1604;&#1581;&#1605;&#1585;&#1575;&#1569; &#1576;&#1607; &#1591;&#1608;&#1585; &#1575;&#1582;&#1589;.</DIV>
+<P class=bodytext align=center>
+<TABLE>
+<TBODY>
+<TR>
+<TD>
+<P class=caption><IMG height=180 src="WebAssets/site_images/alhambra_detail-2.jpg" width=300><BR><BR></P></TD>
+<TD>
+<P class=caption>&#1580;&#1586;&#1740;&#1740;&#1575;&#1578; &#1576;&#1575;&#1585;&#1711;&#1575;&#1607; &#1605;&#1608;&#1585;&#1583;&#1548; &#1575;&#1604;&#1581;&#1605;&#1585;&#1575;&#1569; (&#1593;&#1705;&#1587;: &#1662;&#1740;&#1578;&#1585; &#1587;&#1606;&#1583;&#1585;&#1586;)</P>
+<P align=right>&#1575;&#1586; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740; &#1608; &#1575;&#1587;&#1604;&#1575;&#1605;</P></TD></TR></TBODY></TABLE></P>
+<P class=bodytext align=justify>&#1601;&#1589;&#1604; &#1606;&#1607;&#1575;&#1740;&#1740; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740; &#1608; &#1575;&#1587;&#1604;&#1575;&#1605; &#1576;&#1607; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;&#8204;&#1740; &#1705;&#1578;&#1740;&#1576;&#1607;&#8204;&#1607;&#1575; &#1575;&#1586; &#1605;&#1606;&#1592;&#1585; &#1662;&#1585;&#1587;&#1588; &#1705;&#1604;&#1740; &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1575;&#1586; &#1605;&#1593;&#1606;&#1575; &#1583;&#1585; &#1570;&#1601;&#1585;&#1740;&#1606;&#1588; &#1607;&#1606;&#1585;&#1740; &#1578;&#1605;&#1583;&#1606; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1575;&#1582;&#1578;&#1589;&#1575;&#1589; &#1583;&#1575;&#1585;&#1583; &#1608; &#1601;&#1581;&#1608;&#1575;&#1740; &#1705;&#1578;&#1740;&#1576;&#1607;&#8204;&#1607;&#1575; &#1585;&#1575; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1585;&#1587;&#1575;&#1606;&#1607;&#8204;&#1575;&#1740; &#1576;&#1589;&#1585;&#1740; &#1576;&#1585;&#1585;&#1587;&#1740; &#1605;&#1740;&#8204;&#1705;&#1606;&#1583; &#1578;&#1575; &#1576;&#1607; &#1593;&#1606;&#1608;&#1575;&#1606; &#1582;&#1608;&#1588;&#1606;&#1608;&#1740;&#1587;&#1740;&#1548; &#1578;&#1586;&#1740;&#1740;&#1606; &#1606;&#1605;&#1575;&#1583;&#1740;&#1606; &#1608; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1589;&#1585;&#1601; &#1580;&#1583;&#1575;&#1740; &#1575;&#1586; &#1662;&#1740;&#1585;&#1575;&#1605;&#1608;&#1606;&#8204;&#1588;&#1575;&#1606;.</P>
+<P align=justify>&#1575;&#1740;&#1606; &#1575;&#1579;&#1585; &#1705;&#1607; &#1705;&#1578;&#1575;&#1576;&#1740; &#1575;&#1587;&#1578; &#1705;&#1607; &#1583;&#1585; &#1607;&#1606;&#1585; &#1608; &#1605;&#1593;&#1605;&#1575;&#1585;&#1740; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1576;&#1607; &#1582;&#1608;&#1576;&#1740; &#1575;&#1586; &#1570;&#1606; &#1575;&#1587;&#1578;&#1602;&#1576;&#1575;&#1604; &#1588;&#1583;&#1607; &#1575;&#1587;&#1578;&#1548; &#1576;&#1585;&#1575;&#1740; &#1607;&#1606;&#1585;&#1605;&#1606;&#1583;&#1575;&#1606;&#1548; &#1605;&#1581;&#1602;&#1602;&#1740;&#1606; &#1608; &#1583;&#1575;&#1606;&#1588;&#1580;&#1608;&#1740;&#1575;&#1606; &#1578;&#1575;&#1585;&#1740;&#1582; &#1593;&#1602;&#1604;&#1575;&#1606;&#1740; &#1608; &#1601;&#1604;&#1587;&#1601;&#1607; &#1608; &#1607;&#1605;&#1670;&#1606;&#1740;&#1606; &#1575;&#1601;&#1585;&#1575;&#1583; &#1593;&#1604;&#1575;&#1602;&#1607;&#8204;&#1605;&#1606;&#1583; &#1576;&#1607; &#1578;&#1608;&#1604;&#1740;&#1583;&#1548; &#1578;&#1580;&#1585;&#1576;&#1607; &#1608; &#1605;&#1593;&#1606;&#1575;&#1740; &#1607;&#1606;&#1585;&#1740; &#1583;&#1585; &#1580;&#1607;&#1575;&#1606; &#1575;&#1587;&#1604;&#1575;&#1605; &#1580;&#1584;&#1575;&#1576; &#1582;&#1608;&#1575;&#1607;&#1583; &#1576;&#1608;&#1583;.</P><br><br></div><div id="pubsContents"><strong>&#1605;&#1581;&#1578;&#1608;&#1610;&#1575;&#1578;</strong><br><P class=bodytext><I>List of Illustrations</I><BR><BR>
+<P class=bodytext><I>Foreword</I> by S. Nomanul Haq<BR><BR>
+<P class=bodytext><I>Preface</I><BR><BR>
+<P class=bodytext>Introduction<BR><BR>
+<P class=bodytext>1. Beauty and the Aesthetic Experience in Classical Arabic Thought<BR><BR>
+<P class=bodytext>2. The Aesthetics of the Solomonic Parable in the Qur&#8217;an<BR><BR>
+<P class=bodytext>3. Understanding the Comares Hall in the Light of Phenomenology<BR><BR>
+<P class=bodytext>4. Abstraction, Kinetics and Metaphor: the &#8216;Geometries&#8217; of the Alhambra<BR><BR>
+<P class=bodytext>5. The Signifying Aesthetic System of Inscriptions in Islamic Art<BR><BR>
+<P class=bodytext><I>Notes</I><BR><BR>
+<P class=bodytext><I>Bibliography</I><BR><BR>
+<P class=bodytext><I>Index</I> <BR><BR></P><br><br></div><div id="pubsBibliography"><strong>&#1705;&#1578;&#1575;&#1576;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740;</strong><br><P class=bodytext>Arkoun, Mohammed. <I>Lectures du Coran</I>. Paris, 1982.<BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>Essais sur la pens&#233;e Islamique</I>. Paris, 1984.<BR><BR>
+<P class=bodytext>Atanasiu, Vlad. <I>De la fr&#233;quence des lettres et de son influence en calligraphy arabe</I>. Paris, 1999.<BR><BR>
+<P class=bodytext>Audi, Robert, ed.<I>The Cambridge Dictionary of Philosophy</I>;. Cambridge, Mass., 1997.<BR><BR>
+<P class=bodytext>Bachelard, Gaston. <I>La Po&#233;tique de l'espace</I>. Paris, 1978. English tr., Maria Jolas,<I>The Poetics of Space</I>. Boston, 1964.<BR><BR>
+<P class=bodytext>Badawi, Abderrahman. <I>La Transmission de la philosophie grecque au monde arabe</I>. Paris, 1958.<BR><BR>
+<P class=bodytext>&#8211;&#8211; <I>Histoire de la philosophie en Islam, Les Philosophes purs</I>. Vol. II. Paris, 1972.<BR><BR>
+<P class=bodytext>Baggi, Serpil. &#8216;A New Theme of the Shirazi Frontispiece Miniatures: The Divan of Solomon&#8217;, <I>Muqarnas</I>, 12 (1995), pp.101&#8211;111.<BR><BR>
+<P class=bodytext>Bahnassi, Afif. <I>Dictionnaire trilingue des termes d&#8217;art, fran&#231;ais&#8211;anglais&#8211;arabe</I>. Beirut, 1981.<BR><BR>
+<P class=bodytext>Bakhtiar, Laleh. <I>Sufi Expressions of the Mystic Quest</I>. London, 1976.<BR><BR>
+<P class=bodytext>Barnes, Jonathan, ed. <I>The Complete Works of Aristotle</I>, revised tr. 2 vols. Princeton, N.J., 1991.<BR><BR>
+<P class=bodytext>Baxandall, Michael. <I>;Patterns of Intention</I>. Yale, C.T., 1985.<BR><BR>
+<P class=bodytext>Boi, Luciano. <I>Le Probl&#232;me math&#233;matique de l'espace, une qu&#234;te de l'intelligible</I>. Berlin and Heidelberg, 1995.<BR><BR>
+<P class=bodytext>Brenner, William H. <I>Wittgenstein&#8217;s Philosophical Investigations</I>. Albany, N.Y., 1999.<BR><BR>
+<P class=bodytext>Brosh, Na&#8217;ama and Rachel Milstein. <I>Biblical Stories in Islamic Paintings</I>. Jerusalem, 1991.<BR><BR>
+<P class=bodytext>al&#8211;Bukhari, Muhammad b. Isma&#8216;il. <I>Les Traditions Islamiques</I>. Paris, 1984.<BR><BR>
+<P class=bodytext>Burckhardt, Titus. <I>L&#8217;Art de l&#8217;Islam, langage et signification</I>. Paris, 1985.<BR><BR>
+<P class=bodytext>Cabanelas, Dario Rodriguez. &#8216;La antigua polichrom&#236;a del techo de Comares en la Alhambra&#8217;, <I>;al&#8211;Andalus</I>, 35 (1970), pp.423&#8211;451.<BR><BR>
+<P class=bodytext>Chabbi, Jacqueline. <I>Le Seigneur des tribus, l&#8217;Islam de Mahomet</I>. Paris, 1997.<BR><BR>
+<P class=bodytext>Chmelnizkij, Sergei. &#8216;Methods of Constructing Geometric Ornamental Systems in the Cupola of the Alhambra&#8217;, <I>;Muqarnas</I>, 6 (1989), pp.43&#8211;49.<BR><BR>
+<P class=bodytext>Cl&#233;venot, Dominique. <I>Une &#233;sth&#233;tique du voile, essai sur l&#8217;art arabo&#8211;islamique</I>. Paris, 1994.<BR><BR>
+<P class=bodytext>Cleyet&#8211;Michaud, Marius. <I>Le Nombre d&#8217;or</I>. Paris, 1973.<BR><BR>
+<P class=bodytext>Cohen, Laurent. <I>Le Roi Salomon</I>. Paris, 1997.<BR><BR>
+<P class=bodytext>Danto, Arthur. <I>The Transfiguration of the Commonplace</I>. Cambridge, Mass., 1981. French tr., Claude Hary&#8211;Schaeffer, <I>La Transfiguration du banal</I>. Paris, 1989.<BR><BR>
+<P class=bodytext>Davenport, Anne. &#8216;The Catholics, the Cathars, and the Concept of Infinity&#8217;, <I>Isis</I>, 98 (1997), pp.263&#8211;295.<BR><BR>
+<P class=bodytext>de Bruyne, Edgar. <I>Etudes d&#8217;esth&#233;tique m&#233;di&#233;vale</I>. 2 vols. 2nd ed., Paris, 1998.<BR><BR>
+<P class=bodytext>de Libera, Alain. <I>Averro&#232;s, l&#8217;intelligence et la pens&#233;e, Sur le</I> De Anima. Paris, 1998.<BR><BR>
+<P class=bodytext>Derrida, Jacques. <I>Edmund Husserl&#8217;s Origin of Geometry: An Introduction</I>, tr., John P. Leavey. Lincoln and London, 1989.<BR><BR>
+<P class=bodytext>Dodd, Erika and Sheila Khairallah. <I>The Image of the Word</I>. Beirut, 1981.<BR><BR>
+<P class=bodytext>Eco, Umberto. <I>The Aesthetics of Thomas Aquinas</I>. Cambridge, Mass., 1988.<BR><BR>
+<P class=bodytext>Ettinghausen, Richard. <I>La Peinture arabe</I>. Geneva, 1962.<BR><BR>
+<P class=bodytext>Fernandez Puertas, Antonio. <I>The Alhambra: From the Ninth Century to Yusuf I</I>. London, 1997.<BR><BR>
+<P class=bodytext>Fried, Michael. <I>Three American Painters</I>. Cambridge, Mass., 1965.<BR><BR>
+<P class=bodytext>Frye, Northrop. <I>Le Grand code</I>. Paris, 1984.<BR><BR>
+<P class=bodytext>Garcia Gomez, Emilio. <I>Poemas &#224;rabes en los muros y fuentes de la Alhambra</I>. Madrid, 1985.<BR><BR>
+<P class=bodytext>al&#8211;Ghazali. <I>Le Tabernacle des lumi&#232;res, Mishkat al&#8211;anwar</I>, tr. Ren&#233; Deladri&#232;re. Paris, 1981.<BR><BR>
+<P class=bodytext>Golferich, Macario. <I>La Alhambra</I>. Barcelona, 1929.<BR><BR>
+<P class=bodytext>Golombek, Lisa. &#8216;Plaited Kufic on Samanid Epigraphy Pottery&#8217;, <I>Ars Orientalis</I>, 6 (1966), pp.107&#8211;133.<BR><BR>
+<P class=bodytext>&#8211;&#8211; &#8216;The Draped Universe of Islam&#8217;, in Priscilla P. Soucek, ed., <I>Content and Context of Visual Arts in the Islamic World</I>. Pennsylvania and London, 1988. pp. 25&#8211;38.<BR><BR>
+<P class=bodytext>Gonzalez, Val&#233;rie. <I>Emaux d&#8217;al&#8211;Andalus et du Maghreb</I>. Aix&#8211;en&#8211;Provence, 1994.<BR><BR>
+<P class=bodytext>&#8211;&#8211; &#8216;The Aesthetics of Islamic Art: Toward a Methodology of Research&#8217;, <I>al&#8211;Usur al&#8211;wus&#241;a, The Bulletin of Middle East Medievalists</I>, 7 (1995), pp.28&#8211;29.<BR><BR>
+<P class=bodytext>&#8211;&#8211; &#8216;R&#233;flexions esth&#233;tiques sur l&#8217;approche de l&#8217;image dans l&#8217;art Islamique&#8217;, in Clement Beaug&#233;, ed., <I>La Question de l&#8217;image dans le monde arabe</I>. Paris, 1995. pp.69&#8211;78.<BR><BR>
+<P class=bodytext>&#8211;&#8211; &#8216;G&#252;lru Necipoglu, The Topkapi Scroll: Geometry and Ornament in Islamic Architecture&#8217;, in <I>Bulletin Critique des Annales Islamologiques</I>, 16 (1997), [pp.??]<BR><BR>
+<P class=bodytext>&#8211;&#8211; <I>Le Pi&#232;ge de Salomon, la pens&#233;e de l&#8217;art dans le Coran</I>. Paris, 2000.<BR><BR>
+<P class=bodytext>Goodman, Nelson. <I>Languages of Art, An Approach to a Theory of Symbols</I>, 2nd ed. Indianapolis, 1976. French trans. and annotation, Jacques Morizot, <I>Langages de l&#8217;art</I>. N&#238;mes, 1990.<BR><BR>
+<P class=bodytext>Grabar, Oleg. <I>The Alhambra</I>. Sebastopol, Calif., 1992.<BR><BR>
+<P class=bodytext>&#8211;&#8211;<I>The Shape of the Holy: Early Islamic Jerusalem</I>. Princeton, N.J., 1996.<BR><BR>
+<P class=bodytext>&#8211;&#8211; &#8216;A Paradise of Reflections&#8217;, <I>Times Literary Supplement</I> (7 November, 1997), pp.12&#8211;13.<BR><BR>
+<P class=bodytext>Grube, Ernst J. <I>The Nasser D. Khalili Collection of Islamic Art: Cobalt and Lustre</I>, vol. IX. London, 1994.<BR><BR>
+<P class=bodytext>Husserl, Edmund. <I>Cartesian Meditations: An Introduction to Phenomenology</I>. The Hague, 1970.<BR><BR>
+<P class=bodytext>Ibn Hazm. <I>Tawk al&#8211;hamama</I>. English tr., A.J. Arberry, <I>The Ring of the Dove</I>. London, 1953.<BR><BR>
+<P class=bodytext>Ibn Rushd (Averro&#235;s). <I>Paraphrases in Libros Rhetoricum Aristotelis</I>, ed. &#8216;Abderrahman Badawi.<BR><BR>
+<P class=bodytext>Cairo, 1960. Ibn Rushd (Averro&#235;s). <I>Talkhis kitab al&#8211;hass wa&#8217;l&#8211;mahsus, in Aristutalis fi&#8216;l&#8211;nafs</I>, ed. &#8216;Abderrahman Badawi. Kuwait&#8211;Beirut, 1980.<BR><BR>
+<P class=bodytext>Ibn Sina (Avicenna). <I>Kitab al&#8211;naja</I>, ed. Majid Fakhri, Beirut, 1985.<BR><BR>
+<P class=bodytext>Jachimowicz, Edith. '&#8216;slamic Cosmology&#8217;, in Carmen Blacker and Michael Loewe, ed., <I>Ancient Cosmologies</I>. London, 1975, pp.143&#8211;171.<BR><BR>
+<P class=bodytext>Jimenez, Marc. <I>Qu&#8217;est&#8211;ce que l&#8217;esth&#233;tique?</I> Paris, 1997.<BR><BR>
+<P class=bodytext>Kheirandish, Elaheh. <I>The Arabic Version of Euclid&#8217;s Optics (Kitab Uqlis fi Ikhtilaf al&#8211;Manazir)</I>. 2 vols. Cambridge, 1999.<BR><BR>
+<P class=bodytext>Lassner, Jacob. <I>Demonizing the Queen of Sheba: Boundaries of Gender and Culture in Postbiblical Judaism and Medieval Islam</I>. Chicago and London, 1993.<BR><BR>
+<P class=bodytext>Lentz, Thomas W. and Glenn D. Lowry. <I>Timur and the Princely Vision: Persian Art and Culture in the Fifteenth Century</I>. Washington D.C., 1989.<BR><BR>
+<P class=bodytext>Linberg, D. C. &#8216;Alhazen&#8217;s Theory of Vision and its Reception in the West&#8217;, <I>Isis</I>, 58 (1967), pp.321&#8211;341.<BR><BR>
+<P class=bodytext>&#8211;&#8211; <I>Theories of Vision from al&#8211;Kindi to Kepler</I>. Chicago, 1976.<BR><BR>
+<P class=bodytext>Machamer, Peter K. and Robert G. Turnbull, ed. <I>Studies in Perception: Interrelations in the History of Philosophy and Science</I>. Columbus, 1978.<BR><BR>
+<P class=bodytext>Merleau&#8211;Ponty, Maurice. <I>Ph&#233;nom&#233;nologie de la perception</I>. Paris, 1945.<BR><BR>
+<P class=bodytext>Murdoch, John. &#8216;Infinity and Continuity., in Norman Kretzmann, Anthony Kenny, Jan Pinborg, ed., <I>The Cambridge History of Later Medieval Philosophy</I>. Cambridge, 1982, pp.564&#8211;591.<BR><BR>
+<P class=bodytext>Necipoglu, G&#252;lru. <I>The Topkapi Scroll: Geometry and Ornament in Islamic Architecture</I>. Santa Monica, Calif., 1995.<BR><BR>
+<P class=bodytext>Nequam, Alexander. <I>Speculum speculationum</I>. Oxford, 1988.<BR><BR>
+<P class=bodytext>Nykl, Alois R. &#8216;Inscripciones &#224;rabes de la Alhambra y del Generalife&#8217;, <I>al&#8211;Andalus</I>, 4 (1936), pp.174&#8211;203.<BR><BR>
+<P class=bodytext><I>Opticae Thesaurus, Alhazen Arabis libri septem nuncprimum editi. Eiusdem Liber de Crepusculis et Nubium ascensionibus. Item Vitellionis Thuringopoli Libri X</I>, ed., F. Basilea Risner, 1572; ed., D. C. Linberg. New York, 1972.<BR><BR>
+<P class=bodytext>Ozdural, Alpay. &#8216;Omar Khayyam, Mathematicians and <I>Conversazioni</I> with Artisans&#8217;, <I>Journal of the Society of Architectural Historians</I>, 54 (1994), pp.54&#8211;71.<BR><BR>
+<P class=bodytext>Panofsky, Erwin. <I>Meaning in the Visual Arts</I>. Chicago, 1982.<BR><BR>
+<P class=bodytext>Perez Sordo, Maria Teresa and Pablo Nestares Pleguezuelo. <I>Tramas geom&#233;tricas en la decorac&#236;on cer&#224;mica de la Alhambra</I>. Granada, 1990.<BR><BR>
+<P class=bodytext>Petrosyan, Yuri A. <I>Pages of Perfection, Islamic Paintings and Calligraphy from the Russian Academy of Sciences, St Petersburg</I>. Lugano, 1995. <BR><BR>
+<P class=bodytext>Popper, Frank. <I>L&#8217;Art cin&#233;tique</I>. Paris, 1970.<BR><BR>
+<P class=bodytext>Puerta Vilchez, Jos&#233; Miguel. <I>Historia del pensamiento est&#233;tico &#224;rabe, al&#8211;Andalus y la est&#233;tica &#224;rabe cl&#224;sica</I>. Madrid, 1997.<BR><BR>
+<P class=bodytext>Qur&#8217;an. tr., Ahmed &#8216;Ali. Princeton, N.J., 1994.<BR><BR>
+<P class=bodytext>Raspail, Thierry. <I>Edward Ruscha</I>. Lyon, 1985.<BR><BR>
+<P class=bodytext>Renard, John. <I>Seven Doors to Islam: Spirituality and the Religious Life of Muslims</I>. Berkeley, Calif., 1996.<BR><BR>
+<P class=bodytext>Richard, Francis. <I>Splendeurs persanes, manuscrits du XIIe au XVIIe si&#232;cle</I>. Paris, 1997.<BR><BR>
+<P class=bodytext>Ricoeur, Paul. <I>La M&#233;taphore vive</I>. Paris, 1994.<BR><BR>
+<P class=bodytext>Rosenthal, Mark. <I>Abstraction in the Twentieth Century: Total Risk, Freedom, Discipline</I>. New York, 1996.<BR><BR>
+<P class=bodytext>Rubiera, Maria Jesus. <I>La arquitectura en la literatura &#224;rabe, Datos para una est&#233;tica del placer</I>. Madrid, 1988.<BR><BR>
+<P class=bodytext>Russell, Bertrand. <I>The Analysis of Mind</I>. London, 1921.<BR><BR>
+<P class=bodytext>&#8211;&#8211; <I>Our Knowledge of the External World</I>. London, 1922.<BR><BR>
+<P class=bodytext>Sabra, Abdelhamid I. &#8216;Sensation and Inference in Alhazen&#8217;s Theory of Perceptual Vision&#8217;, in Peter K. Machamer and Robert G. Turnbull, ed., <I>Studies in Perception: Interrelations in the History of Philosophy and Science</I>. Columbus, Ohio, 1978, pp.160&#8211;185.<BR><BR>
+<P class=bodytext>&#8211;&#8211; <I>The Optics of Ibn al&#8211;Haytham</I>, vols. I&#8211;III. Kuwait, 1983; London, 1989.<BR><BR>
+<P class=bodytext>el&#8211;Said, Issam. <I>Islamic Art and Architecture, The System of Geometric Design</I>, ed., Tarek al&#8211;Bouri and Keith Critchlow. London, 1993.<BR><BR>
+<P class=bodytext>Saison, Maryvonne. &#8216;Le Tournant esth&#233;tique de la ph&#233;nom&#233;nologie&#8217;, <I>Revue d&#8217;esth&#233;tique, Esth&#233;tique et ph&#233;nom&#233;nologie</I>, 36 (1999), pp.125&#8211;140.<BR><BR>
+<P class=bodytext>Schimmel, Annemarie.<I>Calligraphy and Islamic Culture</I>. London, 1990.<BR><BR>
+<P class=bodytext>Schwarzbaum, Haim. <I>Biblical and Extra&#8211;Biblical Legends in Islamic Folk Literature</I>. Waldorf&#8211;Hessen, 1982.<BR><BR>
+<P class=bodytext>Seligsohn, Max. &#8216;Solomon in Rabbinical Literature and Legend&#8217;, in <I>Jewish Encyclopaedia</I>. New York and London, 1905. Vol. II, pp.438&#8211;444.<BR><BR>
+<P class=bodytext>Serres, Michel. <I>Les Origines de la g&#233;om&#233;trie</I>. Paris, 1993.<BR><BR>
+<P class=bodytext>Sidersky, David. <I>Les Origines des l&#233;gendes musulmanes dans le Coran et dans la vie des proph&#232;tes</I>. Paris, 1933.<BR><BR>
+<P class=bodytext>Sluga, Hans and David G. Stern, ed. <I>The Cambridge Companion to Wittgenstein</I>. Cambridge, 1996.<BR><BR>
+<P class=bodytext>Soucek, Priscilla P. &#8216;The Temple of Solomon in Islamic Legend and Art&#8217;, in Joseph Gutmann, ed., <I>The Temple of Solomon</I>. Montana, 1976. pp.73&#8211;123.<BR><BR>
+<P class=bodytext>&#8211;&#8211; &#8216;Solomon&#8217;s Throne/Solomon&#8217;s Bath: Model or Metaphor?&#8217;, <I>Ars Orientalis</I>, 23 (1993), p.118.<BR><BR>
+<P class=bodytext>Soudavar, Abolala. <I>Art of the Persian Court</I>. New York, 1992.<BR><BR>
+<P class=bodytext>Sourdel, Dominique and Janine. <I>Dictionnaire historique de l&#8217;Islam</I>. Paris, 1996.<BR><BR>
+<P class=bodytext>Titley, Norah M. <I>Persian Miniature Painting</I>. London, 1983.<BR><BR>
+<P class=bodytext>Vanel, Herv&#233;. &#8216;Rothko artiste du yo&#8211;yo&#8217;, <I>L'&#339;il</I>, 502 (1999), pp.39&#8211;40.<BR><BR>
+<P class=bodytext>Various. <I>L&#8217;Art au regard de la ph&#233;nom&#233;nologie</I>. Toulouse, 1994.<BR><BR>
+<P class=bodytext>Wansbrough, John E. <I>Qur&#8217;anic Studies: Sources and Methods of Scriptural Interpretation</I>. Oxford, 1977.<BR><BR>
+<P class=bodytext>Welch, Stuart Cary, et al. <I>Treasures of Islam</I>. Geneva, 1985.<BR><BR>
+<P class=bodytext>Wittgenstein, Ludwig. <I>The Blue and Brown Books</I>. 2nd ed., Oxford, 1960.<BR><BR>
+<P class=bodytext>Wittgenstein, Ludwig. <I>Tractatus logico&#8211;philosophicus, suivi de Investigations philosophiques</I>, French tr., Pierre Klossowski. Paris, 1961.<BR><BR>
+<P class=bodytext>Wittgenstein, Ludwig. <I>Philosophical Investigations</I>, English tr., Gertrude E.M. Anscombe, Oxford, 1972.<BR><BR>
+<P class=bodytext>Wittgenstein, Ludwig. <I>Tractatus logico&#8211;philosophicus</I>, English tr., Charles K. Ogden. New York, 1999.<BR><BR><!&#8211;&#8211; #EndEditable &#8211;&#8211;></P></div><p>&#1578;&#1575;&#1585;&#1610;&#1582; &#1575;&#1585;&#1587;&#1575;&#1604; &#1605;&#1591;&#1604;&#1576;: &#x0698;&#x0648;&#x0626;&#x06CC;&#x0647; &#x06F2;&#x06F0;&#x06F0;&#x06F1;</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - &#1586;&#1740;&#1576;&#1575;&#1740;&#1740; &#1608; &#1575;&#1587;&#1604;&#1575;&#1605;: &#1586;&#1740;&#1576;&#1575;&#1740;&#1740;&#8204;&#1588;&#1606;&#1575;&#1587;&#1740; &#1583;&#1585; &#1607;&#1606;&#1585; &#1608; &#1605;&#1593;&#1605;&#1575;&#1585;&#1740; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740;</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 15 Dec 2015 14:07:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 15/12/2005&nbsp;15:52&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">&#1604;&#1740;&#1606;&#1705;&#8204;&#1607;&#1575;&#1740; &#1587;&#1585;&#1740;&#1593;</p>
+<p><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">&#1570;&#1711;&#1607;&#1740; &#1575;&#1587;&#1578;&#1582;&#1583;&#1575;&#1605;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">&#1605;&#1585;&#1705;&#1586; &#1588;&#1594;&#1604;&#1740; &#1588;&#1576;&#1705;&#1607;&#8204;&#1740; &#1578;&#1608;&#1587;&#1593;&#1607;&#8204;&#1740; &#1570;&#1602;&#1575;&#1582;&#1575;&#1606;</A></p><p><A href="contactcce4.html?l=fa">&#1575;&#1591;&#1604;&#1575;&#1593;&#1575;&#1578; &#1578;&#1605;&#1575;&#1587;</A></p><p><A href="view_articlea912.html?ContentID=104023&amp;l=fa">&#1587;&#1572;&#1575;&#1604;&#1575;&#1578; &#1585;&#1575;&#1740;&#1580;</A></p><p><A href="view_sorted_articles06b6.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A></p><p><A href="glossary_listcce4.html?l=fa">&#1608;&#1575;&#1688;&#1607;&#8204;&#1606;&#1575;&#1605;&#1607;</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A></p><p><A href="view_article00af.html?ContentID=104443&amp;l=fa">&#1604;&#1740;&#1606;&#1705;&#8204;&#1607;&#1575;&#1740; &#1605;&#1601;&#1740;&#1583;</A></p><p><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>&#1583;&#1585;&#1711;&#1575;&#1607;&#8204;&#1607;&#1575;</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A></p><p><A href="view_sorted_articles6ac9.html?catid=160&amp;layout=children&amp;l=fa">&#1705;&#1575;&#1585;&#1705;&#1606;&#1575;&#1606;</A></p><p><A href="view_sorted_articles4fbc.html?catid=161&amp;layout=children&amp;l=fa">&#1583;&#1575;&#1606;&#1588;&#1580;&#1608;&#1740;&#1575;&#1606;</A></p><p><A href="view_sorted_articles9116.html?catid=165&amp;layout=children&amp;l=fa">&#1605;&#1583;&#1585;&#1587;&#1575;&#1606;  </A></p><p><A href="view_sorted_articles8cf7.html?catid=169&amp;layout=children&amp;l=fa">&#1576;&#1575;&#1586;&#1583;&#1740;&#1583;&#1705;&#1606;&#1606;&#1583;&#1711;&#1575;&#1606;</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">&#1605;&#1572;&#1587;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740;</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles7192.html?type=static&amp;id=ResearchandPublications&amp;l=fa">&#1578;&#1581;&#1602;&#1740;&#1602;&#1575;&#1578; &#1608; &#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578;</a></span><br />
+<div><A href="view_article8990.html?type=cont.currentlang&amp;id=105873&amp;l=fa">&#1575;&#1606;&#1578;&#1588;&#1575;&#1585;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A><br/></div><div><A href="view_article5d32.html?ContentID=110958&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1602;&#1585;&#1570;&#1606;&#1740;</A><br/></div><div><A href="view_articlee401.html?type=cont.currentlang&amp;id=110983&amp;l=fa">&#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1570;&#1587;&#1740;&#1575;&#1740; &#1605;&#1740;&#1575;&#1606;&#1607;</A><br/></div><div><A href="view_article8aae.html?ContentID=104878&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1593;&#1604;&#1605;&#1740;</A><br/></div><div><A href="view_article91ca.html?type=cont.currentlang&amp;id=112305&amp;l=fa">&#8204;&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1583;&#1585; &#1583;&#1575;&#1740;&#1585;&#1577;&#8204;&#1575;&#1604;&#1605;&#1593;&#1575;&#1585;&#1601;&#8204;&#1607;&#1575;</A><br/></div><div><A href="view_articlee3ed.html?type=cont.currentlang&amp;id=104898&amp;l=fa">&#1578;&#1585;&#1580;&#1605;&#1607;&#8204;&#1607;&#1575;</A><br/></div><div><A href="view_article620a.html?type=cont.currentlang&amp;id=110775&amp;l=fa">&#1605;&#1589;&#1575;&#1581;&#1576;&#1607; &#1576;&#1575; &#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1711;&#1575;&#1606;</A><br/></div><div><A href="view_articleb430.html?ContentID=104298&amp;l=fa">&#1587;&#1740;&#1605;&#1606;&#1575;&#1585;&#8204;&#1607;&#1575; &#1608; &#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;&#1740; &#1593;&#1605;&#1608;&#1605;&#1740;</A><br/></div><div><A href="view_article2b6d.html?ContentID=104483&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;&#1740; &#1576;&#1608;&#1585;&#1587;&#1740;&#1607;</A><br/></div><div><A href="view_article5aa9.html?ContentID=104398&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1581;&#1602;&#1602;&#1575;&#1606; &#1605;&#1610;&#1607;&#1605;&#1575;&#1606;</A><br/></div><div><A href="view_article313a.html?type=cont.currentlang&amp;id=108962&amp;l=fa">&#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1607;&#1575;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles0fe6.html?type=static&amp;id=graduate_studies&amp;l=fa">&#1578;&#1581;&#1589;&#1740;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1740;&#1604;&#1740;</a></span><br />
+<div><A href="view_article6d62.html?type=cont.currentlang&amp;id=104478&amp;l=fa">&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1578; &#1578;&#1705;&#1605;&#1610;&#1604;&#1740; &#1583;&#1585; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1604;&#1575;&#1605;&#1740; &#1608; &#1593;&#1604;&#1608;&#1605; &#1575;&#1606;&#1587;&#1575;&#1606;&#1740;</A><br/></div><div><A href="view_article313f.html?type=cont.currentlang&amp;id=106627&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1740;&#1578; &#1605;&#1593;&#1604;&#1605; &#1583;&#1608;&#1585;&#1607;&#8204;&#1740; &#1585;&#1575;&#1607;&#1606;&#1605;&#1575;&#1740;&#1740;</A><br/></div><div><A href="view_sorted_articles42f9.html?catid=155&amp;layout=children&amp;l=fa">&#1601;&#1575;&#1585;&#1594; &#1575;&#1604;&#1578;&#1581;&#1589;&#1610;&#1604;&#1575;&#1606;</A><br/></div><div><A href="view_article7818.html?type=cont.currentlang&amp;id=105818&amp;l=fa">&#1587;&#1575;&#1740;&#1585; &#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1607;&#1575;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8ed3.html?type=static&amp;id=learning&amp;l=fa">&#1570;&#1605;&#1608;&#1586;&#1588;</a></span><br />
+<div><A href="view_articlea941.html?type=cont.currentlang&amp;id=104853&amp;l=fa">&#1605;&#1608;&#1575;&#1583; &#1570;&#1605;&#1608;&#1586;&#1588;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605;</A><br/></div><div><A href="view_articlee423.html?ContentID=104858&amp;l=fa">&#1605;&#1602;&#1575;&#1604;&#1575;&#1578; &#1570;&#1605;&#1608;&#1586;&#1588; &#1605;&#1575;&#1583;&#1575;&#1605;&#8204;&#1575;&#1604;&#1593;&#1605;&#1585;</A><br/></div><div><A href="view_article2383.html?type=cont.currentlang&amp;id=104628&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1587;&#1608;&#1605;</A><br/></div><div><A href="view_article2c10.html?type=cont.currentlang&amp;id=104623&amp;l=fa">&#1587;&#1582;&#1606;&#1585;&#1575;&#1606;&#1740;&#8204;&#1607;&#1575;: &#1570;&#1602;&#1575;&#1582;&#1575;&#1606; &#1670;&#1607;&#1575;&#1585;&#1605;</A><br/></div><div><A href="view_article95f1.html?ContentID=110765&amp;l=fa">&#1608;&#1740;&#1583;&#1574;&#1608;</A><br/></div><div><A href="view_article5bd8.html?ContentID=104553&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1605;&#1591;&#1575;&#1604;&#1593;&#1607;</A><br/></div><div><A href="view_article162c.html?type=cont.currentlang&amp;id=104633&amp;l=fa">&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1578;&#1585;&#1576;&#1610;&#1578; &#1605;&#1583;&#1585;&#1587;&#1575;&#1606; &#1581;&#1585;&#1601;&#1607;&#8204;&#1575;&#1740;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles900d.html?type=static&amp;id=library&amp;l=fa">&#1705;&#1578;&#1575;&#1576;&#1582;&#1575;&#1606;&#1607;</a></span><br />
+<div><A href="view_article0a46.html?type=cont.currentlang&amp;id=103462&amp;l=fa">&#1605;&#1585;&#1608;&#1585;&#1740; &#1576;&#1585; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1705;&#1578;&#1575;&#1576;&#8204;&#1607;&#1575;&#1740; &#1705;&#1578;&#1575;&#1576;&#8204;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div><A href="view_articlef688.html?type=cont.currentlang&amp;id=104503&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1670;&#1575;&#1662;&#1740;</A><br/></div><div><A href="view_articledaae.html?type=cont.currentlang&amp;id=104538&amp;l=fa">&#1570;&#1579;&#1575;&#1585; &#1589;&#1608;&#1578;&#1740; &#1608; &#1578;&#1589;&#1608;&#1740;&#1585;&#1740;</A><br/></div><div><A href="view_articlece75.html?type=cont.currentlang&amp;id=114807&amp;l=fa">Electronic Resources</A><br/></div><div><A href="view_article3a7d.html?type=cont.currentlang&amp;id=104728&amp;l=fa">&#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A><br/></div><div><A href="view_articleeac8.html?type=cont.currentlang&amp;id=104748&amp;l=fa">&#1601;&#1607;&#1585;&#1587;&#1578; &#1606;&#1587;&#1582;&#1607;&#8204;&#1607;&#1575;&#1740; &#1582;&#1591;&#1740;</A><br/></div><div><A href="view_sorted_articles06b6.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fa">&#1606;&#1711;&#1575;&#1585;&#1582;&#1575;&#1606;&#1607;</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articles1714.html?type=static&amp;id=newsevents&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1608; &#1585;&#1608;&#1740;&#1583;&#1575;&#1583;&#1607;&#1575;</a></span><br />
+<div><A href="view_article1bba.html?ContentID=113797&amp;l=fa">&#1575;&#1601;&#1586;&#1608;&#1583;&#1607;&#8204;&#1607;&#1575;&#1740; &#1578;&#1575;&#1586;&#1607; &#1576;&#1607; &#1587;&#1575;&#1610;&#1578;</A><br/></div><div><A href="view_article1720.html?ContentID=104873&amp;l=fa">&#1575;&#1582;&#1576;&#1575;&#1585; &#1605;&#1572;&#1587;&#1587;&#1607;</A><br/></div><div><A href="view_article2827.html?ContentID=104498&amp;l=fa">&#1582;&#1576;&#1585;&#1606;&#1575;&#1605;&#1607;&#8204;&#1740; &#1605;&#1572;&#1587;&#1587;&#1607;</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_articleb886.html?type=static&amp;id=copyright&amp;l=fa">© &#1605;&#1572;&#1587;&#1617;&#1587;&#1607;&#8204;&#1740; &#1605;&#1591;&#1575;&#1604;&#1593;&#1575;&#1578; &#1575;&#1587;&#1605;&#1575;&#1593;&#1610;&#1604;&#1740; &#1778;&#1776;&#1777;&#1635;</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=100552 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:47:14 GMT -->
+</HTML>

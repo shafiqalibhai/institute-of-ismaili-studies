@@ -1,0 +1,644 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105719 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:15:52 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 105719;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "4";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="Images from the primary level Ta‘lim Curriculum developed by the IIS" height="115" width="779" class="banner" alt="Images from the primary level Ta‘lim Curriculum developed by the IIS" src="WebAssets/Site_Images/header/Learning_1.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 8
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/Learning_1.jpg','WebAssets/Site_Images/header/Learning.jpg');
+				var descriptions = new Array('Images from the primary level Ta‘lim Curriculum developed by the IIS','Images from the primary level Ta‘lim Curriculum developed by the IIS');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyeacb.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D105719">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articlee61f.html?ContentID=105718">English<li><A href="view_articleb32e.html?ContentID=105722">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></p><p><A href="view_sorted_articles21da.asp?catid=89&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;&amp;l=fr">Formation continue</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles4c49.html?catid=6&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=fr" >Par Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles72ab.html?type=cat&amp;id=6&amp;t=list&amp;g=author&amp;l=fr" >Par Auteur</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles695b.html?type=cat&amp;id=6&amp;t=list&amp;g=title&amp;l=fr" >Par Titre</A></p><p><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></p><p><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></p><p><A href="view_article7ecf.html?type=cont.currentlang&amp;id=104553&amp;l=fr">Liste de Lecture </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p><p><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Lifelong Learning: Articles</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Imagination Civile apr&#232;s le 11 septembre, 2001</strong><br/><strong></strong><strong></strong></p><p><table cellSpacing="0" cellPadding="0" background="#" border="0"><tbody><tr><td><div> </div></td><td> <IMG border="0" onError="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning_%20Articles/index.html" align="left" alt="" style="padding: 0px;" xmlns=""></td></tr></tbody></table></p><div><strong>Abstract<br/></strong>N/A</div><div> </div><div><DIV dir=ltr><IMG height=25 alt="" src="../cms.iis.ac.uk/WebAssets/Small/Academic%20Papers/pdf_icon.gif" width=25 align=absMiddle border=0>&nbsp;<A href="../cms.iis.ac.uk/SiteAssets/pdf/civil_imagination%5b1%5d.pdf">Download PDF version of article (30 KB)</A></DIV>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<DIV>&nbsp;</DIV>
+<DIV><EM><I>&#8216;&#8217;Je lis d&#232;s fois que l&#8217;Islam est en conflit avec la d&#233;mocratie. Cependant </I><I>Je dois vous dire qu&#8217;en tant que Musulman, Je suis un d&#233;mocrate, non pas </I><I>&#224; cause des pens&#233;es grecques ou fran&#231;aises, mais principalement &#224; cause de </I><I>principes qui retournent 1400 ans en arri&#232;re, tout de suite apr&#232;s le d&#233;c&#232;s </I><I>du Proph&#232;te Mohammad (Que la paix soit avec lui). En ce temps l&#224;, les </I><I>Musulmans d&#233;battaient de la meilleure fa&#231;on d&#8217;instaurer les pr&#233;misses </I><I>qu&#8217;ils avaient &#233;tablies pour &#234;tre apte au leadership&#8230; Ces principes sont </I><I>compatibles avec les mod&#232;les de d&#233;mocratie qui existent &#224; travers le </I><I>monde, aujourd&#8217;hui.</I></DIV>
+<DIV align=right><I>Son Altesse l&#8217;Aga Khan</I></DIV>
+<DIV align=right><I>Not&#233; chez l&#8217;Ambassadeur d&#8217;Allemagne, Berlin, le 6 septembre 2004</I></EM><EM><BR></DIV></EM></BLOCKQUOTE>
+<P>C&#8217;est une des ironies de notre temps qu&#8217;un consensus global sur l&#8217;administration sociale, le pluralisme et les r&#232;gles de loi comme piliers d&#8217;une vie d&#233;mocratique m&#251;re, n&#8217;a jamais &#233;t&#233; aussi solide &#8211; et pourtant atteindre ces objectifs semble plus difficile aujourd&#8217;hui qu&#8217;&#224; la fin de la Guerre Froide. Les traditions religieuses qui devraient enrichir la qu&#234;te d&#8217;une vie int&#232;gre, responsable et &#233;thique, ont trop souvent &#233;t&#233; &#233;cart&#233;es par la politique de l&#8217;exclusion, l&#8217;in&#233;galit&#233; et la violence. Et non seulement dans le monde en voie de d&#233;veloppement, o&#249; la plupart des 1.3 milliards de Musulmans vit. A l&#8217;Ouest &#233;galement, apparemment, des soci&#233;t&#233;s lib&#233;rales ont fr&#233;quemment &#233;chou&#233; &#224; maintenir leurs traditions &#8211; en particulier depuis le 11 septembre 2001.</P>
+<P>Notre optimisme collectif d&#8217;il y a une d&#233;cade sur l&#8217;&#233;mergence d&#8217;un &#233;thos partag&#233;, de civilit&#233; et de gouvernance d&#233;mocratique, semble na&#239;f. Le conflit civil s&#233;vit et les menaces &#233;galement s&#8217;intensifient &#8211; tandis que la promesse de globalisation, comme un chemin vers un cadre de cr&#233;ativit&#233; et de paix entre les personnes et les cultures, semble toujours &#233;vasive. Est-ce que l&#8217;Internet et la t&#233;l&#233;vision sont des porteurs de connaissances vitaux pour l&#8217;action civile et la solidarit&#233;, ou des sites de d&#233;stabilisation et de division entre (et dans) les soci&#233;t&#233;s? Est-ce que le r&#234;ve d&#8217;un monde sans fronti&#232;res est-il en train de tourner au vinaigre, comme les fronti&#232;res deviennent les otages de la parano&#239;a des obscures menaces contre la s&#233;curit&#233; nationale?</P>
+<P>L&#8217;un dans l&#8217;autre, il y a un r&#233;el danger qu&#8217;un nouveau pessimisme prenne la place du vieil optimisme, nous dirigeant vers des chemins de soci&#233;t&#233;s, qui sont des forteresses d&#8217;incivilit&#233;. Apr&#232;s tout, il y a eu la vision obscure dessin&#233;e par certains auteurs connus &#8211; Georges Orwell, Franz Kafka, William Golding, Aldous Huxley, Arthur Miller et Margaret Atwood. - Cela est repris en &#233;cho par l&#8217;auteur libanais Amin Maalouf et par un pr&#233;sentateur du r&#233;alisateur iranien prim&#233; qui a d&#233;tourn&#233; la c&#233;l&#233;bration de la remise des prix sur l&#8217;innocence de l&#8217;enfance et la beaut&#233; des paysages en faveur des lamentations sur les fl&#233;aux sociaux qui auraient pu empoisonner le plus riche des h&#233;ritages civiles. </P>
+<P>Ensuite, &#224; nouveau, qui a dit que la gouvernance pluraliste &#8211; un &#233;thos d&#8217;int&#233;grit&#233;, de participation, et de respect pour les r&#232;gles de loi &#8211; &#233;tait facile? Pour toutes nos illusion &#224; cet &#233;gard, au sujet de l&#8217;humanisme lib&#233;ral comme enfant de la modernit&#233;, un regard rapide sur nos notes est difficilement rassurant: deux guerres mondiales, les g&#233;nocides au Cambodge, en Bosnie et au Rwanda, et des innombrables conflits civils sur chaque continent. Est il &#233;tonnant que plusieurs historiens consid&#232;rent le 20<SUP>i&#232;me</SUP> si&#232;cle comme le plus sanglant sur les rapports? Certainement un tel &#233;chec de pluralisme dans le 21<SUP>i&#232;me</SUP> si&#232;cle repr&#233;sentera un co&#251;t humain trop important &#224; consid&#233;rer.</P><EM><STRONG>
+<P><B>Faire de la place pour le changement</B></P></STRONG></EM>
+<P>&#8216;&#8217;Les soci&#233;t&#233;s pluralistes ne sont pas des accidents de l&#8217;histoire.&#8217;&#8217; Son Altesse l&#8217;Aga Khan l&#8217;a observ&#233; &#224; l&#8217;Institut Nobel de Oslo en avril 2005.&#8217;&#8217; Ils sont les produits d&#8217;une &#233;ducation &#233;clair&#233;e et un investissement constant des gouvernements et de toutes les soci&#233;t&#233;s civiles reconnaissant et vantant la diversit&#233; des habitants du monde.&#8217;&#8217;</P>
+<P>Pour g&#233;n&#233;rer un tel pluralisme &#8211; une diversit&#233; qui n&#8217;est pas seulement cosmopolite mais &#233;galement engag&#233;e plut&#244;t que passive- plusieurs vecteurs cl&#233;s doivent entrer en jeu. On d&#233;finit g&#233;n&#233;ralement la soci&#233;t&#233; civile comme l&#8217;espace public qui fait le lien entre l&#8217;Etat et l&#8217;individu, couvert par le parapluie des r&#232;gles de loi. Les organisations et mouvements de citoyens, les m&#233;dias, les syndicats et les associations de professionnels poussent dans cet espace. Mais comment peuvent ils g&#233;n&#233;rer le pluralisme, au lieu de se fragmenter en factions guerri&#232;res?</P>
+<P>Trois importantes caract&#233;ristiques distinguent une transition positive. Premi&#232;rement, un engagement &#224; la<I> civilit&#233;</I> &#8211; pas seulement la <I>politesse</I>, mais un d&#233;sir d&#8217;attachement &#224; l&#8217;ensemble de la soci&#233;t&#233; plut&#244;t que, juste un appui pour &#234;tre utile aux affaires limit&#233;es du moment. Une conscience sociale qui r&#233;siste &#224; la tentation de favoriser son int&#233;r&#234;t personnel, ou &#224; l&#8217;adage &#8216; enfant, parent et famille&#8217;, est la force conductrice derri&#232;re la civilit&#233;. Cette m&#234;me conscience insiste sur le fait que les conflits d&#8217;int&#233;r&#234;ts soient r&#233;solus par le dialogue: le recours &#224; la violence est la d&#233;n&#233;gation ultime d&#8217;un &#233;thos civil. </P>
+<P>Deuxi&#232;mement, l&#8217;&#233;nergie cr&#233;ative pour<I> institutionnaliser</I> s&#8217;&#233;value en action. La &#8216;&#8217;r&#232;gle de loi,&#8217;&#8217; par exemple, est la notion de justice, cr&#233;&#233;e dans une institution qui aura la stabilit&#233;, la continuit&#233; et (quand elle r&#233;ussit) la l&#233;gitimit&#233;. Aussi, la notion du droit de chaque citoyen &#224; l&#8217;information est institutionnalis&#233; par une presse libre qui est r&#233;ceptive &#224; l&#8217;int&#233;r&#234;t du public, et rend le pouvoir, responsable. De telles institutions, lorsqu&#8217;elles sont choisies librement, font de la civilit&#233; une proposition attrayante et ch&#233;rissent la diversit&#233; des citoyens et des communaut&#233;s qu&#8217;elles servent.</P>
+<P>Finalement, il est pressant d&#8217;&#233;largir le bien-&#234;tre &#233;conomique, pour que l&#8217;int&#233;gration soit authentique. Alors que de grandes &#233;chelles de pauvret&#233; et de privation sont particuli&#232;rement communes dans le monde en d&#233;veloppement, les soci&#233;t&#233;s affluentes de l&#8217;Am&#233;rique du Nord et de l&#8217;Europe de l&#8217;Ouest ne sont pas immunis&#233;es contre le fl&#233;au de l&#8217;exclusion, notamment lorsqu&#8217;il s&#8217;agit des minorit&#233;s culturelles. L&#8217;injustice &#233;conomique est la plus paralysante de tous les vecteurs. Comme le laur&#233;at du Nobel, John Kenneth Galbraith le dit, &#8216;&#8217; Rien ne renie de fa&#231;on aussi claire les libert&#233;s de l&#8217;individu que l&#8217;absence de l&#8217;argent.&#8217;&#8217;</P><STRONG><EM>
+<P><B>R&#233;aliser la Vision</B></EM></STRONG></P>
+<P>Mais comment pouvons nous cultiver la civilit&#233;, les institutions et la justice &#233;conomique baignant au milieu de tant de conflits mondiaux? Clairement les valeurs &#233;thiques que nous attachons aux h&#233;ritages musulmans, plus particuli&#232;rement celles de la justice sociale, de la solidarit&#233; et de l&#8217;int&#233;grit&#233;, nous serviraient bien. Cependant qu&#8217;est ce qui tourne les valeurs normatives en exp&#233;rience v&#233;cue?</P>
+<P>C&#8217;est l&#224; que les &#233;ducateurs, les auteurs, les artistes, les artisans et le public intellectuel jouent un r&#244;le crucial. Ils forment notre <I>imaginaire</I> social de la mani&#232;re dont nous nous repr&#233;sentons le monde dans lequel nous habitons. Les images publiques que nous avons en commun reposent sur la fa&#231;on dont nous comprenons les id&#233;es telles que &#8216;&#8217;d&#233;mocratie,&#8217;&#8217; &#8216;&#8217;justice&#8217;&#8217; et &#8216;&#8217;religion&#8217;&#8217; &#8211; et agissons <I>conform&#233;ment</I>. Comme notre capital imaginaire change, les pratiques de d&#233;mocratie, de justice et de religion, en rapport, &#233;voluent aussi. C&#8217;est dans ce sens que le po&#232;te Shelley a jug&#233; les &#233;crivains d&#8217;&#234;tre des &#8216;&#8217;l&#233;gislateurs m&#233;connaissant le monde.&#8217;&#8217;</P>
+<P>Lorsque Orhan Pamuk parle de l&#8217;histoire sur le pluralisme artistique &#224; Ottoman Istanbul (Mon Nom est Red, 2001), et une autre sur les voiles dans la Turquie moderne (Snow, 2004), devenue un best-seller, ces r&#233;cits ont fa&#231;onn&#233; ce qu&#8217;il appelle &#8216;&#8217;les paysages de notre pens&#233;e.&#8217;&#8217; C&#8217;est ce que Azar Nafisi est parvenu &#224; faire entre ceux qui confrontent leurs personnalit&#233;s dans son brillant livre, <I>Lire Lolita &#224; T&#233;h&#233;ran (2003)</I>. Nafisi c&#233;l&#232;bre l&#8217;imagination litt&#233;raire comme indispensable pour une culture moderne d&#233;mocratique, une forme non seulement individuelle mais aussi collective, de l&#8217;identit&#233; civique.</P>
+<P>C&#8217;est ce que l&#8217;architecture publique peut &#233;galement r&#233;aliser de son mieux. Le parc Al Azhar du Trust Aga Khan pour la Culture, pr&#232;s de <I>Darb al-Ahmar</I>, au Caire, par exemple, non seulement sert les besoins pratiques des visiteurs, mais aussi fa&#231;onne une m&#233;moire culturelle tr&#232;s &#233;tendue et un sentiment d&#8217;appartenance civique. Il le fait en r&#233;habilitant l&#8217;ancien mur de la ville et les espaces de vie urbaine d&#233;grad&#233;s, les transformant en d&#8217;agr&#233;ables belv&#233;d&#232;res pour les citoyens de tous &#226;ges. Hassan Fathy, lui-m&#234;me, Egyptien, a d&#233;montr&#233; cela durant la remarquable &#232;re de construction dans le 20<SUP>i&#232;me</SUP> si&#232;cle, en int&#233;grant une &#8216;&#8217;architecture pour les pauvres&#8217;&#8217; qui insiste sur la dignit&#233; sociale de la maison.</P>
+<P>Or consid&#233;rer la dualit&#233; du r&#244;le des jardins publics comme espaces cultivant la tranquillit&#233; communale, et aussi comme c&#233;l&#233;brations terrestres du divin parmi les civilisations Musulmanes depuis l&#8217;Andalousie &#224; l&#8217;Inde Mongole A vrai dire, le Coran offre plus de cent vingt r&#233;f&#233;rences &#224; l&#8217;id&#233;e de <I>Jannat al-firdaus</I> ou jardins du paradis, allant de paisibles retraites aux abris s&#251;rs. Ces images ont nourri des si&#232;cles d&#8217;art Musulman, de narrations et de mod&#232;les.</P>
+<P>Encore une fois, le r&#233;cit graphique de l&#8217;Arche de No&#233; et le d&#233;luge du Coran et de la bible a &#233;t&#233; sans aucun doute &#233;voqu&#233; dans plusieurs esprits quand la furie du tsunami de l&#8217;Oc&#233;an Indien a englouti une communaut&#233; enti&#232;re, en d&#233;cembre dernier. </P>
+<P>Pour certains cela est arriv&#233; par la &#8216;&#8217;rage divine,&#8217;&#8217;, pour d&#8217;autres &#224; cause de &#8216;&#8217;l&#8217;absence divine.&#8217;&#8217; Les narrations culturelles sont filtr&#233;es par nos ressources intuitives et rationnelles - nos imaginations. Le message primordial dans le r&#233;cit de l&#8217;Arche de No&#233; en est certainement un de r&#233;demption. L&#8217;extraordinaire empathie de millions de citoyens ordinaires &#224; travers le monde pour les victimes du tsunami a entra&#238;n&#233; les gouvernements pour agir avec g&#233;n&#233;rosit&#233;; si cela avait continu&#233;, cela aurait procur&#233; une Arche r&#233;demptrice pour les victimes en vie.</P>
+<P>Les imaginations sociales ne connaissent pas de fronti&#232;res. Elles sont locales et globales, redessinant les traditions dans lesquelles les valeurs estim&#233;es naissent. Attar, Rumi et Ibn Tufayl le savaient, comme &#233;galement les musiciens, les peintres et les n&#233;gociants qui ont voyag&#233; sur les sentiers transculturels de la route m&#233;di&#233;vale du coton. Parmi leurs cr&#233;atifs h&#233;ritiers aujourd&#8217;hui, on retrouve Saadi Youssef et Naguib Mahfouz, Abbas Kiarostami et Samira Makhmalbaf, Khaled Hosseini et M.G. Vassanji, tous ceux qui ont sculpt&#233; les paysages de nos pens&#233;es et influenc&#233; la fa&#231;on dont nous percevons le monde. Cette imagination civile est l&#224; o&#249; un &#233;thos de pluralisme en fin de compte prend racine, contre la mar&#233;e extr&#234;me du chauvinisme. </P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Imagination Civile apr&#232;s le 11 septembre, 2001</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 23 Jan 2018 13:01:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 03/03/2008&nbsp;17:44&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=105719 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 07 Jun 2015 00:15:53 GMT -->
+</HTML>

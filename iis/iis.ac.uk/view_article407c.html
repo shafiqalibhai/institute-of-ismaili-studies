@@ -1,0 +1,683 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113028 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:55:52 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="L'Institut des Etudes Ismaili">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 113028;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr fr">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="L'Institut des Etudes Ismaili" href="home.html">L'Institut des Etudes Ismaili</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Recherche  sur le site web de IIS " onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="L'Institut des Etudes Ismaili" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+			
+				
+			<div id="BackGroundDiv">				
+				<img id="BannerImage" title="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" height="115" width="779" class="banner" alt="The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies" src="WebAssets/Site_Images/header/ResearchandPublication_2.jpg"/>
+			</div>
+
+			
+			
+			
+			<script type="text/javascript">
+				
+				var timeDelay = 10
+				timeDelay *= 1000;
+				
+				var currentImageNo = 0;
+				var images = new Array('WebAssets/Site_Images/header/ResearchandPublication_2.jpg','WebAssets/Site_Images/header/Research%20And%20Publications.jpg');
+				var descriptions = new Array('The Institute publishes a range of publications on Islamic, Shi‘i and Ismaili studies','An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat');
+			
+				function CycleImages() {
+					setInterval("SlideShow()", timeDelay);
+				}
+				
+				function SlideShow() {
+					currentImageNo++;
+					
+					if (currentImageNo == images.length) {
+						currentImageNo = 0;
+					}						
+						
+					var bannerImage = document.getElementById('BannerImage');
+					
+					bannerImage.title = descriptions[currentImageNo];	
+					bannerImage.alt = descriptions[currentImageNo];	
+					
+					//bannerImage.src = images[currentImageNo];	
+					FadeInImage('BannerImage', images[currentImageNo], 'BackGroundDiv');						
+				}
+			
+				CycleImages();
+			</script>
+			
+			
+			<script type="text/javascript">
+				// Opacity and Fade in script.
+				// Script copyright (C) 2008 http://www.cryer.co.uk/.
+				// Script is free to use provided this copyright header is included.
+				function SetOpacity(object,opacityPct)
+				{
+				  // IE.
+				  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+				  // Old mozilla and firefox
+				  object.style.MozOpacity = opacityPct/100;
+				  // Everything else.
+				  object.style.opacity = opacityPct/100;
+				}
+				function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+				{
+				  var element=document.getElementById(id);
+				  var opacity = element.style.opacity * 100;
+				  var msNow = (new Date()).getTime();
+				  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+				  if (opacity<0) 
+					SetOpacity(element,0)
+				  else if (opacity>100)
+					SetOpacity(element,100)
+				  else
+				  {
+					SetOpacity(element,opacity);
+					element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+				  }
+				}
+				function FadeIn(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+				}
+				function FadeOut(id)
+				{
+				  var element=document.getElementById(id);
+				  if (element.timer) window.clearTimeout(element.timer); 
+				  var startMS = (new Date()).getTime();
+				  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",100,0)",1);
+				}
+				function FadeInImage(foregroundID,newImage,backgroundID)
+				{
+				  var foreground=document.getElementById(foregroundID);
+				  if (backgroundID)
+				  {
+					var background=document.getElementById(backgroundID);
+					if (background)
+					{
+					  background.style.backgroundImage = 'url(' + foreground.src + ')';
+					  background.style.backgroundRepeat = 'no-repeat';		
+					}
+				  }
+				  SetOpacity(foreground,0);
+				  foreground.src = newImage;
+				  if (foreground.timer) window.clearTimeout(foreground.timer); 
+				  var startMS = (new Date()).getTime();
+				  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',1000," + startMS + ",0,100)",10);
+				}
+			</script>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="fr_list">
+
+<li class="fr">
+	<a class="0" title="Accueil" rel="dropmenu0_b" href="home0ee9.html?l=fr">Accueil</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articlea4ce.html?type=cont.currentlang&amp;id=104413&amp;l=fr">Un Aperçu d'IIS</A></div><div><A href="view_article6a17.html?type=cont.currentlang&amp;id=103471&amp;l=fr">Son Altesse l’Aga Khan </A></div><div><A href="view_article0b99.html?type=cont.currentlang&amp;id=104448&amp;l=fr">La Communauté Ismailie</A></div><div><A href="view_article8a8d.html?type=cont.currentlang&amp;id=104373&amp;l=fr">Reseau de Developpement Aga Khan</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="15 2 34" title="Recherches et Publications" rel="dropmenu1_b" href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="3" title="Études Supérieures" rel="dropmenu2_b" href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="22" title="Étude" rel="dropmenu3_b" href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="5" title="Bibliothèque" rel="dropmenu4_b" href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="fr">
+	<a class="7 20" title="Actualités et Evénements" rel="dropmenu5_b" href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_onlyc2e2.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D113028">Texte seul</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_articled02c.html?ContentID=113027">English<li><A href="view_articlecff6.html?ContentID=113029">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_articleb1cb.html?ContentID=113030">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A></p><p><A href="view_articleb827.html?type=cont.currentlang&amp;id=110958&amp;l=fr">Etudes Qur'aniques</A></p><p><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A></p><p><A href="view_article4bc1.html?type=cont.currentlang&amp;id=104878&amp;l=fr">Articles académiques</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlese13e.html?catid=94&amp;orderby=DateofArticle&amp;ordertype=date&amp;dir=descending&amp;l=fr" >Par Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesc4a4.html?type=cat&amp;id=94&amp;t=short&amp;g=author&amp;l=fr" >Par Auteur</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles6e1f.html?type=cat&amp;id=94&amp;t=short&amp;g=title&amp;l=fr" >Par Titre</A></p><p><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A></p><p><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A></p><p><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A></p><p><A href="view_articlef9b5.html?type=cont.currentlang&amp;id=104298&amp;l=fr">Séminaires et Conférences publiques</A></p><p><A href="view_article7db1.html?type=cont.currentlang&amp;id=104483&amp;l=fr">Programmes de Bourse</A></p><p><A href="view_articlee442.html?type=cont.currentlang&amp;id=104398&amp;l=fr">Chercheurs associés sous-contrat</A></p><p><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Envoyer par email cette page   " href="javascript:mailpage()"><img border="0" alt="Envoyer par email cette page   " src="images/email.gif"/></a>  <a title="Envoyer par email cette page   " href="javascript:mailpage()">Envoyer par email cette page   </a></p>	
+
+<p><a title="Imprimer cette page" href="javascript:window.print();"><img border="0" alt="Imprimer cette page" src="images/print.gif"/></a>  <a title="Imprimer cette page" href="javascript:window.print();">Imprimer cette page</a></p>
+
+<p><a title="Connexion pour une Recherche Instantanée" href="view_articled5e0.html?ContentID=110810">Connexion pour une Recherche Instantanée</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Marque Page et Partage </a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Articles academiques</H3><p xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><table cellSpacing="0" cellPadding="0"><tbody><tr><td><p><strong>Loi Divine / Commandement Divin: La Raison de l'Ethique dans les Traditions Occidentales &#8211; Perspectives Musulmanes</strong><br/><strong><DIV><A href="../www.iis.ac.uk/view_persone2be.html?type=authors&amp;id=19">Professor Azim  Nanji</A></DIV></strong><strong></strong></p><p><table border="0" cellSpacing="0" cellPadding="0" background="#"><tbody><tr><td><div><P>Il s'agit d&#8217;une version d'un article publi&#233; dans Studies in Christian Ethics, Vol. 23, no 1 en f&#233;vrier 2010 par <A onclick="return fnExtLinkWarning();" href="http://www.sagepublications.com/" target=_blank>SAGE Publications Ltd</A>. L'article a &#233;t&#233; pr&#233;par&#233; &#224; partir d'une conf&#233;rence pl&#233;ni&#232;re pr&#233;sent&#233;e &#224; la Conf&#233;rence annuelle de la Soci&#233;t&#233; pour l'Etude de l'Ethique Chr&#233;tienne &#224; Westcott House, Cambridge, en Septembre 2009.</P> </div></td><td> <IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/large/Lifelong%20Learning_%20Articles/index.html" xmlns=""></td></tr></tbody></table></p><div><strong>Résumé<br/></strong><BR>
+<DIV>Cet article postule que les racines &#233;thiques de la tradition occidentale pr&#233;moderne ne sont pas seulement fond&#233;es sur des normes bibliques. L'auteur explore les origines et les racines de l'&#233;thique musulmane depuis la r&#233;v&#233;lation jusqu&#8217;&#224; l'&#233;laboration du droit musulman, sugg&#233;rant un lien solide entre les valeurs occidentales et musulmanes, bas&#233; sur des liens d&#233;velopp&#233;s &#224; l'&#233;poque m&#233;di&#233;vale, &#224; travers l&#8217;appropriation Latine des &#233;tudes arabes de la philosophie Classique. L'article retrace &#233;galement la n&#233;cessit&#233; d&#8217;adresser les pr&#233;occupations communes et contemporaines, telles que la pauvret&#233;, gr&#226;ce &#224; une position &#233;thique partag&#233;e.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><A href="WebAssets/Large/Divine%20Law%20Divine%20Command_Azim%20Nanji_FR_PDF.pdf"><IMG border=0 alt="" src="../cms.iis.ac.uk/WebAssets/Large/pdf%20logo.jpg" width=31 height=29>&nbsp;T&#233;l&#233;charger la version pdf de l&#8217;article </A></DIV></div><div> </div><div><BR>
+<P><B></P>
+<P><B>Loi Divine /Commandement Divin: La Raison de l'Ethique dans les Traditions Occidentales &#8211; Perspectives Musulmanes</B></B></P>
+<P>L&#8217;hypoth&#232;se commune sur les racines &#233;thiques de la tradition occidentale pr&#233;moderne est qu'elles d&#233;rivent principalement des normes bibliques et des traditions &#233;thiques de l'Antiquit&#233; classique. Toutefois, une telle opinion n&#233;glige le r&#244;le important de sa connexion avec l'Islam, qui, dans sa p&#233;riode formative, s&#8217;est engag&#233;e avec les ressources intellectuelles et culturelles de l'Antiquit&#233; et a op&#233;r&#233; comme un pont pour la transmission de la philosophie Grecque &#224; l&#8217;Europe m&#233;di&#233;vale, &#224; travers des traductions latines de textes Arabes. La civilisation Islamique, qui repr&#233;sente un m&#233;lange de traditions, a nourri, r&#233;vis&#233; et &#233;tendu ce patrimoine de pens&#233;es philosophiques et &#233;thiques, inspir&#233; par la compr&#233;hension musulmane et les interpr&#233;tations du Qur&#8217;an.</P>
+<P>Le Latin et, dans une certaine mesure, les traductions H&#233;bra&#239;ques depuis l&#8217;Arabe ont &#233;t&#233; nombreuses; gr&#226;ce &#224; elles, les penseurs Chr&#233;tiens et Juifs, de Thomas d&#8217;Aquin &#224; Ma&#239;monide, ont d&#233;couvert les &#339;uvres importantes des philosophes Grecs. La notion d'une tradition purement occidentale, doit donc &#234;tre r&#233;vis&#233;e &#224; la lumi&#232;re de cette image cosmopolite de recherches et de connaissances qui transcendent les fronti&#232;res culturelles et religieuses.</P>
+<P><B>R&#233;v&#233;lation et Proph&#233;tie</B></P>
+<P><B></B></P>
+<P>Les Musulmans se consid&#232;rent comme &#233;tant les derniers dans la lign&#233;e d&#8217;une famille de tradition de foi r&#233;v&#233;l&#233;e, dont le message provient d'un seul Dieu, le cr&#233;ateur et le pourvoyeur de toute la cr&#233;ation :</P>
+<P><I>L&#8217;Orient et l&#8217;Occident appartiennent &#224; Dieu.</I></P>
+<P><I>Quel que soit le Cot&#233; vers lequel vous vous tournez, la face de Dieu est l&#224;.</I></P>
+<P><I>-Dieu est pr&#233;sent partout et il sait &#8211;</I></P>
+<P><I></I>(Qur&#8217;an 2:115).</P>
+<P>Les r&#233;v&#233;lations transmises au Proph&#232;te Muhammad, &#224; travers l'inspiration divine, sont consid&#233;r&#233;es par les musulmans comme inscrites dans le Qur&#8217;an, litt&#233;ralement &#171; r&#233;citation &#187;. Le concept islamique de la r&#233;v&#233;lation englobe les r&#233;v&#233;lations pr&#233;c&#233;dentes :</P>
+<P><I>Nous t&#8217;avons inspir&#233; [Muhammad] comme Nous avons inspir&#233; No&#233; et les proph&#232;tes venus apr&#232;s lui, comme Nous avions inspire Abraham, Isma&#235;l, Isaac, Jacob, Les Tribus; J&#233;sus, Job, Jonas, Aaron et Salomon; et Nous avions donn&#233; des Psaumes &#224; David. Nous avons inspir&#233; les proph&#232;tes: dont nous t&#8217;avons d&#233;j&#224; racont&#233; l&#8217;histoire et les proph&#232;tes dont nous ne t&#8217;avons pas racont&#233; l&#8217;histoire </I>(Qur&#8217;an 4:163&#8211;4).<I></I></P>
+<P>Ainsi, le Proph&#232;te Muhammad peut &#234;tre situ&#233; dans la lign&#233;e des figures proph&#233;tiques qui, tout en cherchant &#224; r&#233;former leurs soci&#233;t&#233;s respectives, ont &#233;t&#233; inspir&#233;s par une exp&#233;rience transcendantale. </P>
+<P>La r&#233;alit&#233; exp&#233;riment&#233;e par le Proph&#232;te Muhammad, qui l&#8217;a inspir&#233;e lors de ses communications avec ses concitoyens Mecquois, ne peux &#234;tre con&#231;ue, selon le Qur&#8217;an, que d&#233;tach&#233;e de la r&#233;alit&#233; quotidienne de la vie soci&#233;tale. En fait la &#171; r&#233;v&#233;lation &#187; a pris imm&#233;diatement de l&#8217;importance parce qu'elle a parl&#233; de la n&#233;cessit&#233; de transformer le monde moral et social de l'&#233;poque.</P>
+<P>Les r&#233;v&#233;lations qui vinrent au Proph&#232;te Muhammad, sous forme d'inspiration divine, ont &#233;t&#233; g&#233;n&#233;ralement accept&#233;es par les musulmans comme &#233;tant inclues dans le Qur&#8217;an. Le Qur&#8217;an signifie litt&#233;ralement &#171; r&#233;citation ou lecture &#187;, et c'est sous cette forme r&#233;cit&#233;e que le Proph&#232;te l&#8217;a communiqu&#233;e &#224; ses disciples. La R&#233;v&#233;lation a &#233;t&#233; faite au Proph&#232;te Muhammad sur une p&#233;riode de vingt-deux ans sous formes d&#8217;exp&#233;riences puissantes, et traumatisantes. Le processus de la r&#233;v&#233;lation s&#8217;est aussi bien fait &#224; travers des visions que de l&#8217;audition.</P>
+<P>Le moyen de transmission de la r&#233;v&#233;lation est d&#233;crit comme &#171; Esprit de Saintet&#233; &#187; (Qu&#8217;ran 16:102). L'ange Gabriel a agi comme m&#233;diateur de la r&#233;v&#233;lation. Les signes d'Allah sont symboliquement d&#233;crits comme un &#171; symbole sur l'horizon lumineux &#187; (Qur&#8217;an 81:20) qui a r&#233;v&#233;l&#233; au Proph&#232;te Muhammad le message. C'est de cette fa&#231;on que la conception Qur&#8217;anique de la r&#233;v&#233;lation a inclus une &#171; gen&#232;se &#187; (<I>tanzil</I>), un processus universel duquel proviennent toutes les r&#233;v&#233;lations ant&#233;rieures de ce monde, consign&#233;es au fil du temps par les fid&#232;les afin de constituer des formes sp&#233;cifiques sous forme de texte ou de livre (<I>kitab</I>). Ils ont tous, y compris le Qur&#8217;an, une source originale, d&#233;nomm&#233;e <I>al Uum al Kitab</I> (la M&#232;re du Livre) (Qur&#8217;an 43:1&#8211;5). </P>
+<P>Toutes les r&#233;v&#233;lations se sont donc inscrites dans une seule source primaire transcendante, qui, &#224; travers l&#8217;inspiration s&#8217;est articul&#233;e &#224; l'humanit&#233;. L&#8217;exp&#233;rience de la r&#233;v&#233;lation du Proph&#232;te Muhammad a reli&#233; le monde de la transcendance avec les affaires humaines, en soulignant la souverainet&#233; de Dieu, et la r&#233;alit&#233; immat&#233;rielle le monde et l'id&#233;e de la responsabilit&#233; des actions humaines. Il y a donc une interaction dynamique entre ce qui peut &#234;tre consid&#233;r&#233; comme le domaine de la foi (<I>din</I>) et celui des affaires humaines (<I>dunya</I>), soulignant la compr&#233;hension g&#233;n&#233;rale musulmane d'une relation circulaire entre les aspects spirituels et mat&#233;riels de la vie. Le Qur&#8217;an en arabe repr&#233;sente l'aboutissement de ce processus, r&#233;v&#233;l&#233; &#224; des intervalles et &#224; des moments appropri&#233;s, au cours des vingt-trois ann&#233;es de la vie du Proph&#232;te Muhammad.</P>
+<P>Il a communiqu&#233; les r&#233;v&#233;lations &#224; ses disciples qui les ont m&#233;moris&#233;s pendant que des scribes les ont mis par &#233;crit sous sa supervision. Certaines personnes en sont venues &#224; &#234;tre connues pour leur aptitude &#224; r&#233;citer et &#224; leur capacit&#233; &#224; m&#233;moriser le texte.</P>
+<P>A la mort du Proph&#232;te Muhammad en 632 CE, le Qur&#8217;an existait donc &#224; la fois comme un discours oral et un &#233;crit. Apr&#232;s sa mort, un texte complet a &#233;t&#233; compil&#233; afin qu'il n'y ait aucune diff&#233;rence dans son contenu et aucun risque d'avoir des &#233;critures sacr&#233;es profan&#233;es. Les musulmans pensent que le texte Qur&#8217;anique s&#8217;est donc conserv&#233;, inchang&#233;, syst&#233;matis&#233; et arrang&#233; comme un texte &#233;crit, bas&#233; sur les instructions du Proph&#232;te Muhammad et contenant le message complet qui s&#8217;est r&#233;v&#233;l&#233; &#224; lui.</P>
+<P>Les &#233;rudits musulmans tendent &#224; parler de deux phases historiques dans la vie du Proph&#232;te Muhammad ainsi que dans la r&#233;v&#233;lation ; la phase de la Mecque et la phase de M&#233;dine. C'est &#224; M&#233;dine que la communaut&#233; a eut la libert&#233;, sous les directives du Proph&#232;te, de s'organiser et de mettre en &#339;uvre pleinement les commandes divines dans la vie de la communaut&#233;. </P>
+<P>C'est dans ce contexte que l&#8217;on retrouve des r&#233;v&#233;lations li&#233;es &#224; la vie familiale, aux activit&#233;s &#233;conomiques, aux relations avec les autres communaut&#233;s de foi ainsi que l'opposition et le conflit avec les forces Mecquoises qui ont essay&#233; de d&#233;truire la communaut&#233;. Des chercheurs plus tardifs ont d&#233;sign&#233;es ces conditions comme celles ayant donn&#233; lieu &#224; des r&#233;v&#233;lations sp&#233;cifiques (<I>asbab al nuzul</I>). C'est de cette fa&#231;on que l'inspiration &#233;thique et spirituelle de la p&#233;riode premi&#232;re de la r&#233;v&#233;lation s&#8217;est r&#233;alis&#233;e dans les conditions concr&#232;tes rencontr&#233;es par la communaut&#233;, alors qu&#8217;elle tentait de s'&#233;tablir.</P>
+<P><B>L'Humanit&#233; et les Choix Moraux.</B></P>
+<P><B></B></P>
+<P>Alors que la volont&#233; de Dieu est r&#233;v&#233;l&#233;e dans le Qu&#8217;ran et compl&#233;t&#233;e par la pratique du Proph&#232;te, connue sous le nom de Sunna, les musulmans sont &#233;galement exhort&#233;s &#224; utiliser la raison pour la compr&#233;hension des r&#233;v&#233;lations et de r&#233;fl&#233;chir aux choix humain. Dans le r&#233;cit de la cr&#233;ation de l'humanit&#233;, tel que racont&#233; dans le Qur&#8217;an, Adam est model&#233; en argile, anim&#233; par l'esprit divin et dot&#233; de la capacit&#233; &#224; &#171; nommer les choses &#187; (Qur&#8217;an 2:31). Cela sugg&#232;re un &#234;tre stratifi&#233; et multidimensionnel, dont les orientations mat&#233;rielles, spirituelles et intellectuelles sont combin&#233;es</P>
+<P>On se r&#233;f&#232;re &#224; Adam comme &#224; un <I>Khalifah</I> (calife) ou &#224; un vice-g&#233;rant, ayant la garde de la terre et guid&#233; par Dieu pour cr&#233;er les conditions qui vont permettre &#224; la vie d&#8217;&#234;tre v&#233;cue dans la dignit&#233; et en accord avec la moral et l&#8217;&#233;thique. L&#8217;&#234;tre humain, au sens large, a donc un statut sp&#233;cial, voir privil&#233;gi&#233;, dans la cr&#233;ation selon le Qur&#8217;an (95:4) et porte en lui la responsabilit&#233; des choix qui sont faits, comme l'illustre l'histoire de la cr&#233;ation.</P>
+<P>La notion de responsabilit&#233; se rapporte &#233;galement &#224; la croyance en une vie ci-apr&#232;s et en la notion d'un jour du Jugement. Les &#233;rudits Musulmans de l'&#233;poque ont donc exerc&#233; leur raison et leur jugement pour d&#233;velopper les moyens de comprendre les principes et les valeurs de l'Islam. Ces m&#233;thodes et leurs applications ont vari&#233;s, mais ont ancr&#233; des croyances et des pratiques comme une synth&#232;se entre la r&#233;v&#233;lation et la raison.</P>
+<P>Comme l'Islam s&#8217;est propag&#233; dans diverses parties du monde, les musulmans ont cherch&#233; &#224; faire adopter dans diff&#233;rentes r&#233;gions ce qu'ils consid&#233;raient comme &#233;tant les valeurs inspirantes de l'exp&#233;rience originale. Cela a conduit &#224; un processus par lequel des disciplines telles que le droit, la th&#233;ologie et les interpr&#233;tations Quraniques se sont formalis&#233;s et les musulmans se sont &#233;galement engag&#233;s avec d'autres traditions intellectuelles et questions importantes de l'&#233;poque. Les &#233;crits musulmans sur l'&#233;thique n'ont pas fait une dichotomie dans les actions humaines, mais ont plut&#244;t cherch&#233; &#224; les harmoniser dans une vision int&#233;gr&#233;e. </P>
+<P>Ainsi, &#234;tre &#171; Musulman &#187; (c'est-&#224;-dire, en accord avec la volont&#233; de Dieu) englobe dans son engagement, la dimension mat&#233;rielle et spirituelle de la vie et un engagement &#224; la r&#233;alisation d&#8217;un &#233;quilibre entre les deux dimensions de croyance et de foi et les contextes et conditions de la vie quotidienne. </P>
+<P>Ce processus en cours s&#8217;est d&#233;velopp&#233; diff&#233;remment selon les contextes historiques et g&#233;ographiques changeants et les communaut&#233;s musulmanes naissantes dans diff&#233;rentes r&#233;gions du monde. Cela a dessin&#233; la diversit&#233; que l'on a retrouv&#233;e ainsi que la pluralit&#233; des syst&#232;mes qui se sont d&#233;velopp&#233;s au fil du temps. Les civilisations musulmanes, d&#233;velopp&#233;es dans les diff&#233;rentes parties du monde, ont provoqu&#233;es tout au long des p&#233;riodes m&#233;di&#233;vales et pr&#233; modernes des avanc&#233;es notables dans la philosophie, les sciences et les arts et ont &#233;tabli des &#233;changes et un commerce &#224; une &#233;chelle vaste. </P>
+<P>Cela repr&#233;sente un aspect important de l'engagement continu des musulmans avec le processus plus large de soci&#233;t&#233;s</P>
+<P>Selon le r&#233;cit Qur&#8217;anique de la cr&#233;ation, l'humanit&#233; a &#233;t&#233; dot&#233;e de la capacit&#233; de distinguer entre le bien et le mal. Dieu a &#233;galement donn&#233; des conseils par l'interm&#233;diaire de ses messagers afin que le &#171; crit&#232;re &#187; qui permette de reconna&#238;tre et d'agir conform&#233;ment &#224; la voie droite soit clair. Dans l'un des chapitres du Qur&#8217;an, intitul&#233; le Crit&#232;re (<I>Furqan</I> : sourate 25), la r&#233;v&#233;lation &#8211;&#224; toute l'humanit&#233; &#8211; devient le point de r&#233;f&#233;rence permettant de distinguer le bien du mal. Le m&#234;me chapitre poursuit en citant des exemples des pr&#233;c&#233;dant proph&#232;tes bibliques et de leur r&#244;le de m&#233;diateurs de la parole de Dieu pour leurs soci&#233;t&#233;s respectives. Comme le juda&#239;sme et le christianisme, les d&#233;buts de l'Islam sont donc enracin&#233;s dans l'id&#233;e du commandement divin comme la base pour l'&#233;tablissement d'un ordre moral par le biais des tentatives humains.</P>
+<P>Lorsqu'il appara&#238;t ailleurs dans le Qur&#8217;an, ce m&#234;me terme indique &#233;galement le concept d'une moralit&#233; qui pr&#233;sente l'humanit&#233; avec une distinction entre le bien et le mal. En ancrant un code moral dans la volont&#233; divine, l'occasion est offerte aux &#234;tres humains de r&#233;pondre en cr&#233;ant une conscience rationnelle qui maintient la validit&#233; de la r&#233;v&#233;lation. C'est ainsi qu'une base plus large est possible pour l'action humaine, si la rationalit&#233; en vient &#224; &#234;tre appliquer comme le r&#233;sultat de la r&#233;v&#233;lation des crit&#232;res &#233;labor&#233;s pour englober l'ensemble des d&#233;cisions et des actions humaines. Ces th&#232;mes sont mis en avant dans le Qur&#8217;an &#224; travers le r&#233;cit de la cr&#233;ation et de la disgr&#226;ce d'Adam.</P>
+<P>Adam, le premier homme, a &#233;t&#233; distingu&#233; des anges, invit&#233;s &#224; s'incliner devant lui en raison de sa capacit&#233; attribu&#233;e divinement &#224; &#171; nommer les choses&#187;, c&#8217;est-&#224;-dire , &#224; concevoir des connaissances pouvant &#234;tre d&#233;crites sur un plan linguistique et ainsi codifi&#233;es, une capacit&#233; non accessible aux anges, qui sont consid&#233;r&#233;s comme des &#234;tres unidimensionnels. Cette capacit&#233; cr&#233;ative porte avec elle, cependant, une obligation &#224; ne pas d&#233;passer les limites de jeu.</P>
+<P>Satan, dans le Qur&#8217;an, a incarn&#233; les exc&#232;s parce qu'il a d&#233;sob&#233;i.</P>
+<P>Le commandement de Dieu &#224; honorer et &#224; s&#8217;incliner devant Adam, l&#8217;a priv&#233; ainsi de sa propre nature et de ses limites inn&#233;es. En son temps, Adam ne parvient pas trop &#224; vivre dans les limites fix&#233;es par Dieu et perd son statut honorable, mais sans aucune connotation qui implique une doctrine du p&#233;ch&#233; originel. C&#8217;est cela qu&#8217;il devra r&#233;cup&#233;rer par la suite en luttant et en surmonter ses indiscr&#233;tions sur la terre, qui sera la nouvelle ar&#232;ne de sa vie ,et qui tiendra compte de ses choix et de ses actions. </P>
+<P>En fin de compte il r&#233;cup&#232;re son ancien statut, attestant de la capacit&#233; &#224; reprendre le vrai cours de l'action par l'interm&#233;diaire de la prise de conscience de son erreur. L&#8217;histoire d'Adam refl&#232;te donc tout le potentiel du bon et du mauvais qui a &#233;t&#233; b&#226;ti dans la condition humaine et, dans la saga du d&#233;roulement de la r&#233;ponse humaine &#224; une r&#233;v&#233;lation divine continue dans l'histoire. En outre, il incarne la lutte continue au sein de l'humanit&#233; afin de d&#233;couvrir l'&#233;quilibre permettant une action &#233;quilibr&#233;e et la soumission au crit&#232;re divin.</P>
+<P><B></B></P>
+<P><B>R&#233;v&#233;lation, Raison et Loi</B></P>
+<P>Le droit a &#233;t&#233; un sujet d'importance et de signification central dans la pens&#233;e et la pratique musulmane. Les &#233;rudits musulmans ont construit sur le vocabulaire et la dimension juridique des prescriptions et des normes &#233;thiques Quraniques afin de cr&#233;er une culture juridique influente qui est souvent consid&#233;r&#233;e comme l&#8217;une des plus grandes r&#233;ussites des civilisations musulmanes. </P>
+<P>Il est important de comprendre l'&#233;volution historique du droit dans l'Islam, pour aider &#224; dissiper deux hypoth&#232;ses fausses. La premi&#232;re est que le droit musulman est un syst&#232;me fixe et immuable du septi&#232;me si&#232;cle et la seconde est qu&#8217;il est tr&#232;s restrictif, m&#233;di&#233;val dans ses perspectives, et antith&#233;tique aux besoins de la soci&#233;t&#233; moderne.</P>
+<P>Le terme utilis&#233; pour d&#233;signer le droit musulman est la <I>Shari ' a</I>. La connotation derri&#232;re ce concept est que Dieu a incit&#233; les &#234;tres humains &#224; suivre une voie divine, mais qu'un tel chemin avait d&#233;j&#224; &#233;t&#233; r&#233;v&#233;l&#233; &#224; d'autres dans le pass&#233;. Le Qur&#8217;an est explicit&#233; par ces mots:</P>
+<P><I>Nous avons donn&#233; &#224; chacun d&#8217;entre eux, une r&#232;gle et une Loi.</I></P>
+<P><I>Si dieu l&#8217;avait voulu, il aurait fait de vous une seule communaut&#233;.</I></P>
+<P><I>Mais il a voulu vous &#233;prouver par le don qu&#8217;il vous a fait .Cherchez &#224; vous surpasser les uns les autres dans les bonnes actions .Votre retour &#224; tous se fera vers Dieu;il vous &#233;clairera , alors , au sujet de vos diff&#233;rends .</I></P>
+<P><I></I>(Qur&#8217;an 5:48).</P>
+<P>Les &#233;coles de droit musulmans se sont d&#233;velopp&#233;es &#224; travers les si&#232;cles en r&#233;ponse aux questions qui ont surgi dans la communaut&#233; musulmane ou <I>Ummah</I> qui s&#8217;est &#233;largie et a rencontr&#233; les autres peuples et cultures avec des syst&#232;mes &#233;tablis de croyances et de lois. Il y a eu au fil du temps une m&#233;thodologie d'analyse et d'application gr&#226;ce auxquelles des r&#233;ponses ont pu &#234;tre obtenues. La m&#233;thodologie est connue sous le nom de <I>fiqh</I> (science de la jurisprudence), ses principes fondamentaux sont appel&#233;s <I>Usul al-fiqh</I>, et le corps de la Loi, qu'il produit est appel&#233; collectivement la <B><I>Shari ' a</I></B>. Dans un certain sens, cependant, la <B><I>Shari ' a</I></B><I> </I>englobe plus que la compr&#233;hension de la somme totale de sa jurisprudence. Il s'agit de normes, constituant un guide pour vivre en accord avec les pr&#233;ceptes &#233;thiques.</P>
+<P>Les diff&#233;rentes &#233;coles de jurisprudence ont &#233;merg&#233; autour des centres g&#233;ographiques de l'empire Islamique et en dehors des diff&#233;rences sectaires, pour atteindre une syst&#233;matisation qui a eu de nombreuses caract&#233;ristiques communes. Ces &#233;coles ont tent&#233; de cr&#233;er des proc&#233;dures pour encadrer les actions humaines, et leur classification en termes juridiques et &#233;thiques. Ces cat&#233;gories, d&#233;finies juridiquement, ont assimil&#233;es des lois coutumi&#232;res traditionnellement &#233;tablies, non &#233;cart&#233;es lors du processus de conversion. </P>
+<P>Cependant, parmi les musulmans modernes il existe des diff&#233;rences significatives comme il y en avait parmi les sp&#233;cialistes dans le pass&#233;, sur la fa&#231;on dont certaines de ces cat&#233;gories doivent &#234;tre interpr&#233;t&#233;es afin de tenir compte des conditions contemporaines de la vie dans les diff&#233;rentes parties du monde. Les &#233;rudits musulmans dans l'&#233;laboration de la <B><I>Shari ' a</I></B> ont cherch&#233; &#224; l&#8217;enraciner dans le Qur&#8217;an et dans l'exemple et les actions du Proph&#232;te Muhammad, mais c'est aux &#234;tres humains, &#224; travers l'exercice du raisonnement moral et des outils rationnels, de d&#233;couvrir et d&#233;velopper les d&#233;tails de la Loi. En fait, c&#8217;est la croissance rapide des terres musulmanes dans les premiers si&#232;cles de l'histoire de l'Islam qui ont fourni l&#8217;&#233;lan pour veiller &#224; ce qu'une culture juridique commune constitue le fondement de la croissance rapide des territoires musulmans. La diff&#233;rence d'approches a contribu&#233; &#224; cr&#233;er une tradition juridique pluraliste parmi les musulmans, avec un accent sur la m&#233;thodologie utilis&#233;e pour d&#233;river les diff&#233;rents syst&#232;mes juridiques.</P>
+<P>Les quatre grandes &#233;coles Sunnites [de la jurisprudence] sont <I>Hanbali</I>, <I>Maliki</I>, <B><I>Shafi'i</I> </B>et <I>Hanafi</I>, ainsi appel&#233;es d&#8217;apr&#232;s leurs chercheurs fondateurs. Elles existent dans les diff&#233;rentes parties du monde Sunnite et tout en diff&#233;rant par certains d&#233;tails, elles partagent un cadre commun. Le Shiisme, dont l'&#233;cole juridique s&#8217;est appel&#233;e <I>Ja'fari</I>, a &#233;t&#233; bas&#233;e sur la syst&#233;matisation faites par les Imams Jafar al Sadiq (CE d. 765) et Muhammad al Baqir (CE d. 743), elle donne plus d'importance au r&#244;le de l'Imam pour guider le d&#233;veloppement juridique et regarder le processus du raisonnement <I>(ijtihad</I>) comme un &#233;l&#233;ment indispensable de la Loi. (Le terme Imam signifie &#224; l'origine &#171; mod&#232;le &#187; ou &#171; exemple &#187;. Voir le Qur&#8217;an 2:118, 17:73, 36:11, 15:79, 25:74). Dans le Shiisme, l'Imam est un chef religieux, un descendant du Proph&#232;te par sa fille Fatima mari&#233;e &#224; son cousin l&#8217;Imam Ali, et dot&#233; d'une autorit&#233; spirituelle, la position est h&#233;r&#233;ditaire et repose sur une d&#233;signation divine.</P>
+<P>Les exp&#233;riences musulmanes sugg&#232;rent que l'un des objectifs de la Loi a &#233;t&#233; de cr&#233;er des syst&#232;mes formalis&#233;es qui pourraient s&#8217;appliquer &#224; l'ensemble de la soci&#233;t&#233;, tout en reconnaissant la pluralit&#233;, des diff&#233;rentes communaut&#233;s qui coexistent en suivant diff&#233;rentes traditions. Cette pluralit&#233; refl&#232;te la diversit&#233; dans le contexte des cultures de l'humanit&#233;, et bien qu'elles incarnent des valeurs universelles, bas&#233;s sur les r&#233;v&#233;lations, elles ont &#233;volu&#233; dans diff&#233;rentes soci&#233;t&#233;s qui ont adapt&#233; ces valeurs &#224; de circonstances particuli&#232;res et des conditions historiques. Cela n'a pas emp&#234;ch&#233;, toutefois, certains &#233;rudits de prendre de temps en temps des approches plus rigides sur comment la loi devrait &#234;tre mise en &#339;uvre. Les soci&#233;t&#233;s telles que l'Indon&#233;sie ou diff&#233;rents pays africains, qui ont d&#8217;importantes populations musulmanes, ont int&#233;gr&#233; des pratiques indig&#232;nes &#224; leurs soci&#233;t&#233;s, aux traditions du droit musulman, et ont ajout&#233;s &#224; ceux-ci, &#224; l'&#233;poque moderne, les codes civils de la tradition juridique occidentale. En g&#233;n&#233;ral, une grande diversit&#233; existe dans le monde musulman pour ce qui est des codes juridiques et, presque dans chacun d'entre eux, divers syst&#232;mes coexistent, car les codes juridiques continuent de s'adapter &#224; la vie contemporaine.</P>
+<P><B>La loi et le Contexte Changeant </B></P>
+<P>Le processus du d&#233;veloppement communautaire dans l'exp&#233;rience musulmane donne &#224; penser que le changement ne peut se produire uniquement que lorsque les gens sont capables de cr&#233;er des institutions qui sont valid&#233;es sur le plan culturel en s&#8217;appuyant sur la bonne volont&#233; et le soutien de toutes les circonscriptions impliqu&#233;es. L&#224; o&#249; la pauvret&#233; et le sous-d&#233;veloppement, par exemple, sont solidement ancr&#233;s, les collectivit&#233;s perdent souvent la motivation et les moyens de changer leur situation. Le Qur&#8217;an stipule que &#171; <I>Dieu ne modifie rien en un peuple avant que celui-ci ne change ce qui est en lui </I>&#187; (Qur&#8217;an 13:11) </P>
+<P>La Foi, tout en fonctionnant pour donner de l'espoir, doit &#234;tre compl&#233;t&#233;e par et traduite en actions sociales o&#249; ceux qui profitent au final ont la possibilit&#233; de devenir les acteurs et &#234;tre capables de percevoir le changement affectant non seulement leur vie &#233;conomique mais &#233;galement comme un &#233;l&#233;ment qui approfondit et renforce leur sentiment d'identit&#233; et leurs valeurs religieuses.</P>
+<P>Pour cette raison, la langue du Qur&#8217;an qui r&#233;pond aux questions sur la pauvret&#233; parle en m&#234;me temps des questions ayant des implications juridiques, &#233;conomiques et sociales. La communaut&#233; et ses dirigeants doivent &#234;tre consid&#233;r&#233;s comme des gardiens de ces valeurs et ont la responsabilit&#233; de veiller &#224; ce que l'&#201;tat et les principaux segments de la soci&#233;t&#233; supervisent les besoins des pauvres. Cette compassion et ces soins de la part des dirigeants de l'&#201;tat, tels que pr&#233;conis&#233;s par plusieurs penseurs et dirigeants musulmans, sont consid&#233;r&#233;s par eux comme une cl&#233; pour favoriser un ordre juste et b&#233;n&#233;fique dans leurs soci&#233;t&#233;s.</P>
+<P>Cependant, dans le contexte d'urgence de notre &#233;poque, pour traiter des questions sur la pauvret&#233;, les musulmans doivent &#233;galement travailler avec les autres pour promouvoir des conditions favorables dans les parties les plus pauvres du monde, parce qu'il y a maintenant un langage universel et sa compr&#233;hension pour promouvoir et inciter une action &#233;thique &#224; tous les partis concern&#233;s. &#192; cet &#233;gard, les musulmans ont souvent cherch&#233; l'inspiration dans un chapitre du Qur&#8217;an intitul&#233; &#8216;<B>Al-Balad'</B> (Qur&#8217;an 90), qui peut &#234;tre traduit par &#171; Ville &#187;, &#171; communaut&#233; &#187;, &#171; village &#187;, &#171; place &#187; et m&#234;me par extension, &#171; la terre &#187;.</P>
+<P>Les versets adress&#233;s au Proph&#232;te t&#233;moignent de son droit d'&#234;tre un individu libre dans cet espace, li&#233; &#224; lui comme un enfant &#224; son parent (comme l&#8217;h&#233;ritier et le gardien). La r&#233;v&#233;lation lui rappelle que les &#234;tres humains sont cr&#233;&#233;s pour &#234;tre en &#233;tat de lutte, mais qu'ils ont ce pouvoir de choix offert par Dieu. Parmi ces choix, les versets attestent que le chemin d'acc&#232;s le plus difficile est celui qui consiste &#224;: &#171;racheter des captifs, nourrir en un jour de famine un proche parent orphelin, un pauvre dans le d&#233;nuement. (Qur&#8217;an 90:13).</P>
+<P>Ceux qui choisissent cette voie sont appel&#233;s &#171; les Compagnons de la Main Droite, &#187; dignes de leur statut exalt&#233; parce qu'ils incarnent, dans leurs actions, les qualit&#233;s de compassion et d&#8217;entraide &#187;. Parmi les &#233;crits &#233;thiques de l'un des premiers philosophes musulmans, al-Farabi (d. 970 CE), il y a un ouvrage intitul&#233; <I>La Cit&#233; de l&#8217;Excellence</I>. L'excellence dans ces villes, selon al-Farabi, repose sur la connexion &#233;quilibr&#233;e entre les vertus des citoyens, la nature des dirigeants et une moralit&#233; qui ne devrait ne pas &#234;tre bas&#233;e sur l'&#233;volution du hasard ou de la chance mais qui doit r&#233;sulter tout simplement des conditions de survie et de la stabilit&#233; politique. </P>
+<P>Les r&#233;ponses au bonheur humain impliquent les dimensions civiles, politiques, sociales, &#233;thiques et religieuses d&#8217;al-Farabi. Elles font toutes parties d&#8217;un univers moral d'excellence et, si cela est recherch&#233; comme le but supr&#234;me de chacun de ces royaumes, alors les conditions de la ville excellente deviennent possibles.</P>
+<P>Dans un monde o&#249; les mots comme &#171; crise &#187;, &#171; conflit &#187; et &#171; famine &#187; deviennent trop communs, il est peut &#234;tre utile de se rappeler que l'id&#233;al de la ville excellente doit &#234;tre r&#233;alis&#233; dans le <I>balad</I>, ce monde r&#233;el, qui est le notre , et que comme citoyens , nous sommes engag&#233;s au choix difficile de l'excellence gr&#226;ce &#224; un engagement &#233;thique partag&#233;, afin d'all&#233;ger les conditions de conflits et souffrance provoqu&#233;es par les d&#233;fis mondiaux de notre temps.</P></div></td></tr></tbody></table></p><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Loi Divine / Commandement Divin: La Raison de l'Ethique dans les Traditions Occidentales - Perspectives Musulmanes</TITLE><META HTTP-EQUIV="Expires" CONTENT="Tue, 19 Oct 2021 17:30:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 07/03/2012&nbsp;15:59&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Liens Rapides </p>
+<p><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Offres d'emploi</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">Centre de Carriere AKDN</A></p><p><A href="contact0ee9.html?l=fr">Contactez-Nous</A></p><p><A href="view_article5516.html?ContentID=104023&amp;l=fr">Questions fréquemment posées</A></p><p><A href="view_sorted_articles3493.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=fr">Galerie</A></p><p><A href="glossary_list0ee9.html?l=fr">Glossaire</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Catalogue de la Bibliothèque</A></p><p><A href="view_article5b45.html?ContentID=104443&amp;l=fr">Liens Utiles </A></p><p><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Entrée</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A></p><p><A href="view_sorted_articles3099.html?catid=160&amp;layout=children&amp;l=fr">Administration</A></p><p><A href="view_sorted_articlese61c.html?catid=161&amp;layout=children&amp;l=fr">Etudiants</A></p><p><A href="view_sorted_articles27cd.html?catid=165&amp;layout=children&amp;l=fr">Enseignants</A></p><p><A href="view_sorted_articlesbafc.html?catid=169&amp;layout=children&amp;l=fr">Visiteurs </A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">L'Institut des Etudes Ismaili</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articles5b99.html?type=static&amp;id=ResearchandPublications&amp;l=fr">Recherches et Publications</a></span><br />
+<div><A href="view_articleb2c8.html?type=cont.currentlang&amp;id=105873&amp;l=fr">Publications Académiques</A><br/></div><div><A href="view_article65d0.html?ContentID=110958&amp;l=fr">Etudes Qur'aniques</A><br/></div><div><A href="view_article73e1.html?type=cont.currentlang&amp;id=110983&amp;l=fr">Etudes Asie Centrale</A><br/></div><div><A href="view_article508a.html?ContentID=104878&amp;l=fr">Articles académiques</A><br/></div><div><A href="view_article7888.html?type=cont.currentlang&amp;id=112305&amp;l=fr">Contributions de l'Encyclopedie</A><br/></div><div><A href="view_article0e65.html?type=cont.currentlang&amp;id=104898&amp;l=fr">Traductions</A><br/></div><div><A href="view_article0c83.html?type=cont.currentlang&amp;id=110775&amp;l=fr">Interview d'auteurs</A><br/></div><div><A href="view_articlea799.html?ContentID=104298&amp;l=fr">Séminaires et Conférences publiques</A><br/></div><div><A href="view_article5a15.html?ContentID=104483&amp;l=fr">Programme de Bourses</A><br/></div><div><A href="view_article721b.html?ContentID=104398&amp;l=fr">Chercheurs associés sous-contrat</A><br/></div><div><A href="view_article6518.html?type=cont.currentlang&amp;id=108962&amp;l=fr">Guides de lecture</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesac6e.html?type=static&amp;id=graduate_studies&amp;l=fr">Études Supérieures</a></span><br />
+<div><A href="view_articleddd5.html?type=cont.currentlang&amp;id=104478&amp;l=fr">GPISH</A><br/></div><div><A href="view_articleb74e.html?type=cont.currentlang&amp;id=106627&amp;l=fr">STEP</A><br/></div><div><A href="view_sorted_articles4439.html?catid=155&amp;layout=children&amp;l=fr">Anciens Étudiants</A><br/></div><div><A href="view_article4f07.html?type=cont.currentlang&amp;id=105818&amp;l=fr">Programmes Préparatoires</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlese1c6.html?type=static&amp;id=learning&amp;l=fr">Étude</a></span><br />
+<div><A href="view_article2137.html?type=cont.currentlang&amp;id=104853&amp;l=fr">Curriculum Ta’lim</A><br/></div><div><A href="view_article231d.html?ContentID=104858&amp;l=fr">Formation continue</A><br/></div><div><A href="view_article7fc9.html?type=cont.currentlang&amp;id=104628&amp;l=fr">Discours: l'Aga Khan III</A><br/></div><div><A href="view_article71fc.html?type=cont.currentlang&amp;id=104623&amp;l=fr">Discours: l'Aga Khan IV</A><br/></div><div><A href="view_article51bb.html?ContentID=110765&amp;l=fr">Vidéos</A><br/></div><div><A href="view_articlee352.html?ContentID=104553&amp;l=fr">Liste de Lecture </A><br/></div><div><A href="view_articlea11d.html?type=cont.currentlang&amp;id=104633&amp;l=fr">Programme PTE</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles8992.html?type=static&amp;id=library&amp;l=fr">Bibliothèque</a></span><br />
+<div><A href="view_articlea322.html?type=cont.currentlang&amp;id=103462&amp;l=fr">Présentation générale de la Bibliothèque </A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=fr">Catalogue de la Bibliothèque</A><br/></div><div><A href="view_article0f03.html?type=cont.currentlang&amp;id=104503&amp;l=fr">Matériaux Imprimés</A><br/></div><div><A href="view_article8cca.html?type=cont.currentlang&amp;id=104538&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_article387d.html?type=cont.currentlang&amp;id=114807&amp;l=fr">Electronic Resources</A><br/></div><div><A href="view_article07c5.html?type=cont.currentlang&amp;id=104728&amp;l=fr">Manuscrits</A><br/></div><div><A href="view_article71a8.html?type=cont.currentlang&amp;id=104748&amp;l=fr">Matériaux Audiovisuels</A><br/></div><div><A href="view_sorted_articles3493.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=fr">Galerie</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesc4a3.html?type=static&amp;id=newsevents&amp;l=fr">Actualités et Evénements</a></span><br />
+<div><A href="view_article3174.html?ContentID=113797&amp;l=fr">Mises à jour Récentes du Site</A><br/></div><div><A href="view_articleb673.html?ContentID=104873&amp;l=fr">Evénements futurs</A><br/></div><div><A href="view_articled638.html?ContentID=104498&amp;l=fr">La Mis à jour de IIS</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article9031.html?type=static&amp;id=copyright&amp;l=fr">L'Institut des Etudes Ismaili, 2014</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113028 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:55:55 GMT -->
+</HTML>

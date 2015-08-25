@@ -1,0 +1,41 @@
+/* */
+BODY, TD, DIV,  SELECT, INPUT, TEXTAREA
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+}
+
+FORM
+{
+	display: inline;
+}
+
+#divRoot
+{
+	margin-top: 2px;
+	display: none;
+	width: 686px;
+	border: 5px solid #009966;
+	align: center;
+}
+
+#divHeader
+{
+	width: 686px;
+	padding: 4px;
+}
+
+#divBody
+{
+	width: 676px;
+	padding: 4px;
+}
+
+.divTxtHeading
+{
+	margin: 0px;
+	padding: 3px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	background-color: #009966;
+}

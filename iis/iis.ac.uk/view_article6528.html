@@ -1,0 +1,2848 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112305 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:34:14 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 112305;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only76e8.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D112305">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></p><p><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<h3 xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">Encyclopaedia Contributions: List</h3>
+<SCRIPT type=text/javascript>
+function _TF_trimWhitespace(txt) {
+ var strTmp = txt;
+ //trimming from the front
+ for (counter=0; counter<strTmp.length; counter++)
+  if (strTmp.charAt(counter) != " ")
+   break;
+ //trimming from the back
+ strTmp = strTmp.substring(counter,strTmp.length);
+ counter = strTmp.length - 1;
+ for (counter; counter>=0; counter--)
+  if (strTmp.charAt(counter) != " ")
+   break;
+ return strTmp.substring(0, counter+1);
+}
+function _TF_showAll(tb) {
+ for (i=0;i<tb.rows.length;i++)
+ {
+  tb.rows[i].style.display = "";
+ }
+}
+function _TF_shouldShow(type, con, cell) {
+ var toshow=true;
+ if (type != null) type = type.toLowerCase();
+ switch (type)
+ {
+     case "checkbox": //condition is for checkbox
+         //so lets find out if the cell contains a checkbox
+         var aInputs = cell.all.tags("INPUT");  //check for input tags
+         for (var i=0;i<aInputs.length;i++)
+         { //and look for the first checked item
+             if (aInputs[i].type == "checkbox") 
+             {
+                 toshow = (con.toLowerCase() == (aInputs[i].checked?"true":"false"));
+                 if (toshow) break;
+             }
+         }
+     break
+  case "item":
+   var strarray = cell.innerHTML.split(",");
+   innershow = false;
+   for (var ss=0;ss<strarray.length;ss++){
+    if (con==_TF_trimWhitespace(strarray[ss])){
+     innershow=true;
+     break;
+    }
+   }
+   if (innershow == false)
+    toshow=false;
+  break
+  case "full":
+   if (cell.innerHTML!=con)
+    toshow = false;
+  break
+  case "substring":
+   if (cell.innerHTML.indexOf(con)<0)
+    toshow = false;
+  break
+  default: //is "substring1" search
+   if (cell.innerHTML.indexOf(con)!=0) //pattern must start from 1st char
+    toshow = false;
+   if (con.charAt(con.length-1) == " ")
+   { //last char is a space, so lets do a full search as well
+    if (_TF_trimWhitespace(con) != cell.innerHTML)
+     toshow = false;
+    else
+     toshow = true;
+   }
+  break
+ }
+ return toshow;
+}
+function _TF_filterTable(tb, conditions) {
+ //given an array of conditions, lets search the table
+ for (var i=0;i<tb.rows.length;i++)
+ {
+  var show = true;
+  var rw = tb.rows[i];
+  for (j=0;j<rw.cells.length;j++)
+  {
+   var cl = rw.cells[j];
+   for (var k=0;k<conditions.length;k++)
+   {
+    var colKey = cl.getAttribute("TF_colKey");
+    if (colKey == null) //attribute not found
+     continue; //so lets not search on this cell.
+    if (conditions[k].name.toUpperCase() == colKey.toUpperCase())
+    {
+     var tbVal = cl.innerHTML;
+     var conVals = conditions[k].value;
+     if (conditions[k].single) //single value
+     { 
+         show = _TF_shouldShow(conditions[k].type, conditions[k].value, cl);
+                    } else { //multiple values
+      for (var l=0;l<conditions[k].value.length;l++)
+      {
+       innershow = _TF_shouldShow(conditions[k].type, conditions[k].value[l], cl);
+       if (innershow == true) break;
+      }
+      if (innershow == false)
+       show = false;
+     }
+    }
+   }
+   //if any condition has failed, then we stop the matching (due to AND behaviour)
+   if (show == false)
+    break;
+  }
+  if (show == true)
+   tb.rows[i].style.display = "";
+  else
+   tb.rows[i].style.display = "none";
+ }
+}
+/** PUBLIC FUNCTIONS **/
+//main function
+function TF_filterTable(tb, frm) {
+ var conditions = new Array();
+ if (frm.style.display == "none") //filtering is off
+  return _TF_showAll(tb);
+ //go thru each type of input elements to figure out the filter conditions
+// var inputs = frm.tags("INPUT");
+var inputs = frm.getElementsByTagName("INPUT");
+ for (var i=0;i<inputs.length;i++)
+ { //looping thru all INPUT elements
+  if (inputs[i].getAttribute("TF_colKey") == null) //attribute not found
+   continue; //we assume that this input field is not for us
+  switch (inputs[i].type)
+  {
+   case "text":
+   case "hidden":
+    if(inputs[i].value != "")
+    {
+     index = conditions.length;
+     conditions[index] = new Object;
+     conditions[index].name = inputs[i].getAttribute("TF_colKey");
+     conditions[index].type = inputs[i].getAttribute("TF_searchType");
+     conditions[index].value = inputs[i].value;
+     conditions[index].single = true;
+    }
+   break
+            case "checkbox":
+                if(inputs[i].isDisabled == false)
+                {
+                    index = conditions.length;
+                    conditions[index] = new Object;
+                    conditions[index].name = inputs[i].getAttribute("TF_colKey");
+                    conditions[index].type = "checkbox";
+     conditions[index].value = inputs[i].checked?"true":"false";
+                    conditions[index].single = true;
+                }
+   break
+  }
+ }
+// var inputs = frm.tags("SELECT");
+var inputs = frm.getElementsByTagName("SELECT");
+ //able to do multiple selection box
+ for (var i=0;i<inputs.length;i++)
+ { //looping thru all SELECT elements
+  if (inputs[i].getAttribute("TF_colKey") == null) //attribute not found
+   continue; //we assume that this input field is not for us
+  var opts = inputs[i].options;
+  var optsSelected = new Array();
+  for (intLoop=0; intLoop<opts.length; intLoop++)
+  { //looping thru all OPTIONS elements
+   if (opts[intLoop].selected && (opts[intLoop].getAttribute("TF_not_used") == null))
+   {
+    index = optsSelected.length;
+    optsSelected[index] = opts[intLoop].value;
+   }
+  }
+  if (optsSelected.length > 0) //has selected items
+  {
+   index = conditions.length;
+   conditions[index] = new Object;
+   conditions[index].name = inputs[i].getAttribute("TF_colKey");
+   conditions[index].type = inputs[i].getAttribute("TF_searchType");
+   conditions[index].value = optsSelected;
+   conditions[index].single = false;
+  }
+ }
+ //ok, now that we have all the conditions, lets do the filtering proper
+ _TF_filterTable(tb, conditions);
+}
+function TF_enableFilter(tb, frm, val) {
+ if (val.checked) //filtering is on
+ {
+  frm.style.display = "";
+ } else { //filtering is off
+  frm.style.display = "none";
+ }
+ //refresh the table
+ TF_filterTable(tb, frm);
+}
+function _TF_get_value(input) {
+ switch (input.type)
+ {
+  case "text":
+    return input.value;
+  break
+  case "select-one":
+   if (input.selectedIndex > -1) //has value
+    return input.options(input.selectedIndex).value;
+   else
+    return "";
+  break;
+ }
+}
+//util function that concat two input fields and set the result in the third
+function TF_concat_and_set(salText, salSelect, salHidden) {
+ var valLeft = _TF_get_value(salText);
+ var valRight = _TF_get_value(salSelect);
+ salHidden.value = valLeft + valRight;
+}
+//util function that helps to check/uncheck rows in a table
+function TF_check_uncheck_all_rows(tbl, bState, iColIdx, iRowStart) {
+    for (var i=iRowStart;i<tbl.rows.length;i++)
+    {
+        var aInputs = tbl.rows[i].cells[iColIdx].all.tags("INPUT"); //check for input tags
+        for (j=0;j<aInputs.length;j++)
+        { //and look for the first checked item
+            if (aInputs[j].type == "checkbox") 
+            {
+                aInputs[j].checked = bState;
+                break;
+            }
+        }
+    }
+}
+</SCRIPT>
+Over the last several years, the Institute's faculty and academic staff have made about 300 contributions to a wide range of encyclopaedias in a series of languages. A complete list of these encyclopaedia contributions is available in this page from which some articles have been published on the IIS website and can be accessed online. <BR><BR>
+<FORM onsubmit="TF_filterTable(dataTable, filter);return false" onreset=_TF_showAll(dataTable) name=filter><FONT color=#808000>SEARCH OPTIONS:</FONT><BR>
+<DIV style="BORDER-BOTTOM: #808000 1px solid; BORDER-LEFT: #808000 1px solid; BORDER-TOP: #808000 1px solid; BORDER-RIGHT: #808000 1px solid" title="Search options">
+<TABLE>
+<TBODY>
+<TR>
+<TD colSpan=2><FONT color=#347c2c>Encyclopaedia:</FONT><BR><SELECT onchange="TF_filterTable(dataTable, filter)" TF_colKey="Encyclopaedia"> <OPTION selected value="" TF_not_used>All Encyclopaedias</OPTION> <OPTION value="Biographical Dictionary">Biographical Dictionary, London (2010)</OPTION> <OPTION value="Biographical Encylopaedia of Islamic Philosophy (2006)">Biographical Encylopaedia of Islamic Philosophy (2006)</OPTION> <OPTION value="Bol'shia Rossi&#238;skaia entsiklopediia, Moscow (2008)">Bol'shia Rossi&#238;skaia entsiklopediia, Moscow (2008)</OPTION> <OPTION value="Christian-Muslim Relations. A Bibliographical History, Vol 2 (2010)">Christian-Muslim Relations. A Bibliographical History, Vol 2 (2010)</OPTION> <OPTION value="Encyclopaedia Iranica, New York">Encyclopaedia Iranica, New York</OPTION> <OPTION value="Encyclopaedia Islamica, London (2008)">Encyclopaedia Islamica, London (2008)</OPTION> <OPTION value="Encyclopedia of African History, New York (2005)">Encyclopedia of African History, New York (2005)</OPTION> <OPTION value="Encyclopaedia Islamica, London (2008)">Encyclopaedia Islamica, London (2008)</OPTION> <OPTION value="Encyclopaedia of Asian Philosophy, London (2001)">Encyclopaedia of Asian Philosophy, London (2001)</OPTION> <OPTION value="Encyclopaedia of Death and Dying, London (2005)">Encyclopaedia of Death and Dying, London (2005)</OPTION> <OPTION value="Danishnamah-yi Qur'an wa Qur'an-pazhuhi, Khuramshahi, Tehran (1999)">Danishnamah-yi Qur'an wa Qur'an-pazhuhi, Khuramshahi, Tehran (1999)</OPTION> <OPTION value="Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</OPTION> <OPTION value="Encyclopedia of Islam, (2nd ed.), Supplement, Leiden (2004)">Encyclopedia of Islam, (2nd ed.), Supplement, Leiden (2004)</OPTION> <OPTION value="Encyclopaedia of Islam (3rd ed.), Leiden (2007)">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</OPTION><OPTION value="Encyclopaedia of Islam and the Muslim World, New York (2004)">Encyclopaedia of Islam and the Muslim World, New York (2004)</OPTION> <OPTION value="Encyclopedia of Islamic Political Thought, Princeton (2009)">Encyclopedia of Islamic Political Thought, Princeton (2009)</OPTION><OPTION value="Encyclopaedia of Modern Asia, New York (2002)">Encyclopaedia of Modern Asia, New York (2002)</OPTION><OPTION value="Encyclopedia of Muslim American History, New York (2009)">Encyclopedia of Muslim American History, New York (2009)</OPTION><OPTION value="Encyclopedia of the Peoples of Africa and the Middle East (2009)">Encyclopedia of the Peoples of Africa and the Middle East (2009)</OPTION> <OPTION value="Danishnamah-yi Zaban wa Adab-i Farsi, Sa'adat, Tehran (2005)">Danishnamah-yi Zaban wa Adab-i Farsi, Sa'adat, Tehran (2005)</OPTION> <OPTION value="Encyclopedia of Philosophy (2nd ed.), New York (2006)">Encyclopedia of Philosophy (2nd ed.), New York (2006)</OPTION><OPTION value="Encyclopaedia of the Qur'an, Leiden (2007)">Encyclopaedia of the Qur'an, Leiden (2007)</OPTION><OPTION value="Encyclopedia of Religion (2nd ed.), New York (2005)">Encyclopedia of Religion (2nd ed.), New York (2005)</OPTION><OPTION value="Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)">Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)</OPTION> <OPTION value="Danishnamah-yi Jahan-i Islam,  Tehran (1990 &#8211; )">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</OPTION> <OPTION value="Encyclopedia of the World's Minorities, New York (2005)">Encyclopedia of the World's Minorities, New York (2005)</OPTION><OPTION value="Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</OPTION> <OPTION value="Historical Atlas of Islam, Cambridge, MA (2004)">Historical Atlas of Islam, Cambridge, MA (2004)</OPTION><OPTION value="Holy People of the World: A Cross-Cultural Encyclopedia (2004)">Holy People of the World: A Cross-Cultural Encyclopedia (2004)</OPTION><OPTION value="The Internet Encyclopaedia of Philosophy">The Internet Encyclopaedia of Philosophy</OPTION><OPTION value="Medieval Islamic Civilization: An Encyclopedia, New York (2006)">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</OPTION> <OPTION value="Medieval Warfare and Military Technology: An Encyclopedia, Oxford (2009)">Medieval Warfare &amp; Military Technology: An Encyclopedia, Oxford (2009)</OPTION><OPTION value="The Oxford Dictionary of Islam, Oxford (2003)">The Oxford Dictionary of Islam, Oxford (2003)</OPTION><OPTION value="Oxford Encyclopaedia of the Islamic World, New York (2009)">Oxford Encyclopaedia of the Islamic World, New York (2009)</OPTION><OPTION value="Princeton Encyclopedia of Islamic Political Thought, Princeton (2010)">Princeton Encyclopedia of Islamic Political Thought, Princeton (2010)</OPTION><OPTION value="The Qur'an: An Encyclopedia, London (2007)">The Qur'an: An Encyclopedia, London (2007)</OPTION><OPTION value="Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)">Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)</OPTION><OPTION value="T&#252;rkiye Diyanet Vakfi Islam Ansiklopedisi, Istanbul (2009)">T&#252;rkiye Diyanet Vakfi Islam Ansiklopedisi, Istanbul (2009)</OPTION> <OPTION value="Warfare in the Islamic World: Encyclopedia (2010)">Warfare in the Islamic World: Encyclopedia (2010)</OPTION></SELECT> </TD></TR>
+<TR>
+<TD><FONT color=#347c2c>Author:</FONT> <SELECT onchange="TF_filterTable(dataTable, filter)" TF_colKey="Author"> <OPTION selected value="" TF_not_used>All</OPTION> <OPTION value="Ali Asani">Ali Asani</OPTION> <OPTION value="Ali Qutbuddin">Ali Qutbuddin</OPTION> <OPTION value="Alice Hunsberger">Alice Hunsberger</OPTION> <OPTION value="Arzina Lalani">Arzina Lalani</OPTION> <OPTION value="Azim Nanji">Azim Nanji</OPTION> <OPTION value="Azim Nanji, Zulfikar Hirji">Azim Nanji, Zulfikar Hirji</OPTION> <OPTION value="Eric Ormsby">Eric Ormsby</OPTION> <OPTION value="Fahmida Suleman">Fahmida Suleman</OPTION> <OPTION value="Faquir M Hunzai">Faquir M Hunzai</OPTION> <OPTION value="Farhad Daftary">Farhad Daftary</OPTION> <OPTION value="Farhad Daftary, L Dodykhudoeva">Farhad Daftary, L Dodykhudoeva</OPTION> <OPTION value="Farhad Daftary, Azim Nanji">Farhad Daftary, Azim Nanji</OPTION> <OPTION value="Farhad Daftary, Faquir M Hunzai">Farhad Daftary, Faquir M Hunzai</OPTION> <OPTION value="Farhad Daftary, J H Kramers">Farhad Daftary, J H Kramers</OPTION> <OPTION value="Farhad Daftary, Marshall G S Hodgson">Farhad Daftary, Marshall G S Hodgson</OPTION> <OPTION value="Gabrielle van den Berg">Gabrielle van den Berg</OPTION> <OPTION value="Gurdofarid Miskinzoda">Gurdofarid Miskinzoda</OPTION> <OPTION value="Hamid Haji">Hamid Haji</OPTION> <OPTION value="Hermann Landolt">Hermann Landolt</OPTION> <OPTION value="Isabel Miller">Isabel Miller</OPTION> <OPTION value="Ismail K Poonawala">Ismail K Poonawala</OPTION> <OPTION value="Jalal Badakhchani">Jalal Badakhchani</OPTION> <OPTION value="Josef Meri">Josef Meri</OPTION> <OPTION value="Leonard Lewisohn">Leonard Lewisohn</OPTION> <OPTION value="Leonard Lewisohn, W Hanaway">Leonard Lewisohn, W Hanaway</OPTION> <OPTION value="Marjan Afsharian">Marjan Afsharian</OPTION> <OPTION value="Marjan Afsharian, Reza Shah-Kazemi">Marjan Afsharian, Reza Shah-Kazemi</OPTION> <OPTION value="Mohammed Arkoun">Mohammed Arkoun</OPTION> <OPTION value="Nacim Pak">Nacim Pak</OPTION> <OPTION value="Nader El-Bizri">Nader El-Bizri</OPTION> <OPTION value="Omar Ali-de-Unzaga">Omar Ali-de-Unzaga</OPTION> <OPTION value="Orkhan Mir-Kasimov">Orkhan Mir-Kasimov</OPTION> <OPTION value="Paul E Walker">Paul E Walker</OPTION> <OPTION value="Peter Wiley">Peter Wiley</OPTION> <OPTION value="Reza Shah-Kazemi">Reza Shah-Kazemi</OPTION> <OPTION value="Rizwan Mawani">Rizwan Mawani</OPTION> <OPTION value="Sajjad H Rizvi">Sajjad H Rizvi</OPTION> <OPTION value="Samira Sheikh">Samira Sheikh</OPTION> <OPTION value="Sarfaroz Niyozov">Sarfaroz Niyozov</OPTION> <OPTION value="Sergei Andreyev">Sergei Andreyev</OPTION> <OPTION value="Suha Taji-Farouki">Suha Taji-Farouki</OPTION> <OPTION value="Suha Taji-Farouki, Y Choueiri">Suha Taji-Farouki, Y Choueiri</OPTION> <OPTION value="Toby Mayer">Toby Mayer</OPTION> <OPTION value="Verena Klemm">Verena Klemm</OPTION> <OPTION value="Wilferd Madelung">Wilferd Madelung</OPTION> <OPTION value="Zulfikar Hirji">Zulfikar Hirji</OPTION></SELECT> </TD>
+<TD><FONT color=#347c2c>Language:&nbsp;</FONT>&nbsp;<SELECT onchange="TF_filterTable(dataTable, filter)" TF_colKey="Language"> <OPTION selected value="" TF_not_used>All</OPTION> <OPTION value=English>English</OPTION> <OPTION value=Farsi>Farsi</OPTION> <OPTION value=Russian>Russian</OPTION> <OPTION value=Turkish>Turkish</OPTION></SELECT> </TD></TR>
+<TR>
+<TD><FONT color=#347c2c>Entry:</FONT> <INPUT title="This search is case-sensitive" onkeyup="TF_filterTable(dataTable, filter)" size=37 TF_colKey="Entry" TF_searchType="substring1"> </TD>
+<TD><FONT color=#347c2c>Full text:</FONT> <SELECT onchange="TF_filterTable(dataTable, filter)" TF_colKey="available"> <OPTION selected value="" TF_not_used>All</OPTION> <OPTION value=Yes>Available</OPTION> <OPTION value=No>Not available</OPTION></SELECT> </TD></TR></TBODY></TABLE></DIV></FORM>
+<TABLE id=dataTable width="98%">
+<TBODY>
+<TR>
+<TD style="DISPLAY: none">available</TD>
+<TD width="50%"><B>Entry<B></B></B></TD>
+<TD style="DISPLAY: none">Entry</TD>
+<TD><B>Author</B></TD>
+<TD style="DISPLAY: none"></TD>
+<TD><B>Language</B></TD></TR>
+<TR>
+<TD colSpan=6>
+<DIV style="BORDER-BOTTOM: #808000 1px solid; BORDER-LEFT: #808000 1px solid; BORDER-TOP: #808000 1px solid; BORDER-RIGHT: #808000 1px solid"></DIV></TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Abd Allah b. Maymun al-Qaddah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Abd Allah b. Maymun al-Qaddah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Islamica, London (2008)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Abd Allah b. Maymun al-Qaddah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Abd Allah b. Maymun al-Qaddah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Abd al-Nabi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Abd al-Nabi</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Islamica, London (2008)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Abd al-Quddus Ganguhi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Abd al-Quddus Ganguhi</TD>
+<TD TF_colKey="Author">Marjan Afsharian, Reza Shah-Kazemi</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Islamica, London (2008)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Abd al-Qadir al-Jaza'iri</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Abd al-Qadir al-Jaza'iri</TD>
+<TD TF_colKey="Author">Reza Shah-Kazemi</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Islamica, London (2008)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Abu 'Asd Allah al-Shi'i</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Abu 'Asd Allah al-Shi'i</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Abu Hatim al-Razi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Abu Hatim al-Razi</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Abu Ya'qub al-Sijistani</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Abu Ya'qub al-Sijistani</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articled771.html?type=cont.currentlang&amp;id=104768">Abu Ya&#8216;qub Sijistani</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Abu Ya&#8216;qub Sijistani</TD>
+<TD TF_colKey="Author">Paul E Walker</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Internet Encyclopaedia of Philosophy</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ahmadabad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ahmadabad</TD>
+<TD TF_colKey="Author">Samira Sheikh</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlea1f9.html?type=cont.currentlang&amp;id=109617">Aga Khan</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aga Khan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aga Khan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Muslim American History, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aga Khan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Oxford Encyclopaedia of the Islamic World, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aga Khan Award for Architecture</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan Award for Architecture</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aga Khan Foundation</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan Foundation</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Oxford Encyclopaedia of the Islamic World, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aga Khan: Office</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aga Khan: Office</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islamic Political Thought, Princeton (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ahl al-kisa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ahl al-kisa</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ahmad al-Ghazali</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ahmad al-Ghazali</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Philosophy (2nd ed.), New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article9a7d.html?type=cont.currentlang&amp;id=109577">Akhlaq</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Akhlaq</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Ala al-Din Muhammad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Ala al-Din Muhammad</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Ala al-Din Muhammad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Ala al-Din Muhammad</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Holy People of the World: A Cross-Cultural Encyclopedia (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Alamut</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Alamut</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article16a7.html?type=cont.currentlang&amp;id=104828">Alamut</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Alamut</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Ali b. Hanzala</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Ali b. Hanzala</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>'Alids</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Alids</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ali ibn Abi Talib</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ali ibn Abi Talib</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Qur'an: An Encyclopedia, London (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ali b. Abi Talib</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ali b. Abi Talib</TD>
+<TD TF_colKey="Author">Reza Shah-Kazemi</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Aminji b. Jalal</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Aminji b. Jalal</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Anjedan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Anjedan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article4dcf.html?type=cont.currentlang&amp;id=104773">Anjoman-e Esma'ili</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Anjoman-e Esma'ili</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Assassins</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Assassins</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Assassins</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Assassins</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Assassins</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Assassins</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Oxford Encyclopaedia of the Islamic World, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Assassins</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Assassins</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Warfare and Military Technology: An Encyclopedia, Oxford (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article1807.html?type=cont.currentlang&amp;id=106852">Assassins: Ismaili</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Assassins: Ismaili</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article39c2.html?type=cont.currentlang&amp;id=113527">'Ayn al-Qudat al-Hamadani</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">'Ayn al-Qudat al-Hamadani</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (3rd ed.), Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article3235.html?type=cont.currentlang&amp;id=106557">al-Azhar</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Azhar</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Bab, Bab al-abwab</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Bab, Bab al-abwab</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Badakhshani, Sayyid Suhrab</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Badakhshani, Sayyid Suhrab</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Badakhshani, Sayyid Suhrab</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Badakhshani, Sayyid Suhrab</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Badakhshani, Suhrab</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Badakhshani, Suhrab</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Batiniyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Batiniyya</TD>
+<TD TF_colKey="Author">Paul E Walker</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Batiniyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Batiniyya</TD>
+<TD TF_colKey="Author">Farhad Daftary, Marshall G S Hodgson</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Batiniyya va Qur`an</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Batiniyya va Qur`an</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Qur'an wa Qur'an-pazhuhi, Khuramshahi, Tehran (1999)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Byazid Bistami</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Byazid Bistami</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Bharuchi, Hasan ibn Nuh</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Bharuchi, Hasan ibn Nuh</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Birjandi, Ra'is Hasan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Birjandi, Ra'is Hasan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Bohra</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Bohra</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Bohra</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Bohra</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articleba4d.html?type=cont.currentlang&amp;id=106577">Brethren of Purity</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Brethren of Purity</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Burhanpuri, Qutb al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Burhanpuri, Qutb al-Din</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Buzurg-Umid, Kiya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Buzurg-Umid, Kiya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Buzurg-Umid, Kiya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Buzurg-Umid, Kiya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Caliphate</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Caliphate</TD>
+<TD TF_colKey="Author">Eric Ormsby</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlea4ad.html?type=cont.currentlang&amp;id=108782">Carmatians</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Carmatians</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Central Asia to 1700</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Central Asia to 1700</TD>
+<TD TF_colKey="Author">Sarfaroz Niyozov</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Historical Atlas of Islam, Cambridge, MA (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Contemporary Critical Practices and the Qur'an</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Contemporary Critical Practices and the Qur'an</TD>
+<TD TF_colKey="Author">Mohammed Arkoun</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of the Qur'an, Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Cosmology and Cosmogony: In Isma'ilism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Cosmology and Cosmogony: In Isma'ilism</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article111f.html?type=cont.currentlang&amp;id=104778">Da'i</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Da'i</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Da'i</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Da'i</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Daudi Bohra Community</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Daudi Bohra Community</TD>
+<TD TF_colKey="Author">Ali Qutbuddin</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Muslim American History, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlec5d6.html?type=cont.currentlang&amp;id=110382">Dawr</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Dawr</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlec1df.html?type=cont.currentlang&amp;id=105953">Dezkuh</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Dezkuh</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Druzes</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Druzes</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Egypt: Fatimids, Later: 1073-1171</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Egypt: Fatimids, Later: 1073-1171</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of African History, New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Eschatology in Ismaili Thought</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Eschatology in Ismaili Thought</TD>
+<TD TF_colKey="Author">Walker, Paul E.</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Death and Dying, London (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Esma'il b. Ja'far al-Sadeq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Esma'il b. Ja'far al-Sadeq</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Farid al-Din Attar</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Farid al-Din Attar</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Farisi, Kamal al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Farisi, Kamal al-Din</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Fatimid Dynasty</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Fatimid Dynasty</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Oxford Encyclopaedia of the Islamic World, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Fatimid Dynasty (909-1171)</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Fatimid Dynasty (909-1171)</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islamic Political Thought, Princeton (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Fatimid Empire 909-1171</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Fatimid Empire 909-1171</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Historical Atlas of Islam, Cambridge, MA (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article8fc8.html?type=cont.currentlang&amp;id=106321">Fatimids</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Fatimids</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Fatimids</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Fatimids</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Fatimids</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Fatimids</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Feda'i</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Feda'i</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlef423.html?type=cont.currentlang&amp;id=104783">Feda'i Khorasani</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Feda'i Khorasani</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Flashpoints in Southeast Asia, 1950-present</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Flashpoints in Southeast Asia, 1950-present</TD>
+<TD TF_colKey="Author">Zulfikar Hirji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Historical Atlas of Islam, Cambridge, MA (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article7f71.html?type=cont.currentlang&amp;id=104788">Free Will: In Isma'ili Shi'ism</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Free Will: In Isma'ili Shi'ism</TD>
+<TD TF_colKey="Author">Farhad Daftary, Faquir M Hunzai</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Gazali and the Batenis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Gazali and the Batenis</TD>
+<TD TF_colKey="Author">Wilfred Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlef0e2.html?type=cont.currentlang&amp;id=104793">Gerdkuh</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Gerdkuh</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Gifts and Gift Giving</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Gifts and Gift Giving</TD>
+<TD TF_colKey="Author">Fahmida Suleman</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article0ffc.html?type=cont.currentlang&amp;id=105058">Ginans</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ginans</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hadith: In Isma'ilism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hadith: In Isma'ilism</TD>
+<TD TF_colKey="Author">Ismail K Poonawala</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlec643.html?type=cont.currentlang&amp;id=104798">Hakem be-Amr Allah</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hakem be-Amr Allah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hakim, al-, Fatimid caliph</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hakim, al-, Fatimid caliph</TD>
+<TD TF_colKey="Author">Paul E Walker</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Hakim bi-Amr Allah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Hakim bi-Amr Allah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hal&#238;lull&#226;h Kirm&#226;r&#251;</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hal&#238;lull&#226;h Kirm&#226;r&#251;</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">T&#252;rkiye Diyanet Vakfi Islam Ansiklopedisi, Istanbul (2009)</TD>
+<TD TF_colKey="Language">Turkish</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hamdan Qarmat</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hamdan Qarmat</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article891f.html?type=cont.currentlang&amp;id=111830">Hamdan Qarmat</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hamdan Qarmat</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hamid al-Din al-Kirmani</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hamid al-Din al-Kirmani</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hamid al-Din Kirmani</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hamid al-Din Kirmani</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlef11d.html?type=cont.currentlang&amp;id=104803">Hamid al-Din Kirmani</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hamid al-Din Kirmani</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Internet Encyclopaedia of Philosophy</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Hamidi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Hamidi</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Harawi, Ali b. Abi Bakr</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Harawi, Ali b. Abi Bakr</TD>
+<TD TF_colKey="Author">Josef Meri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article1be4.html?type=cont.currentlang&amp;id=110457">Hasan II</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan II</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hasan Junpuri</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan Junpuri</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hasan-i Sabbah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan-i Sabbah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hasan-i Sabbah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan-i Sabbah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hasan-i Sabbah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan-i Sabbah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hasan-i Sabbah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan-i Sabbah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article3818.html?type=cont.currentlang&amp;id=110462">Hasan Sabbah</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan Sabbah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD><A href="view_articleefe3.html?ContentID=113962">Husayn B. 'Ali</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hasan b. 'Ali</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hashashin</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hashashin</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hayran Lucknawi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hayran Lucknawi</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Heirati Tuni</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Heirati Tuni</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hizb al-Tahrir al-Islami</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hizb al-Tahrir al-Islami</TD>
+<TD TF_colKey="Author">Suha Taji-Farouki</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Oxford Encyclopaedia of the Islamic World, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Historiography: In Isma&#8216;ilism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Historiography: In Isma&#8216;ilism</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Homam al-Din Tabrizi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Homam al-Din Tabrizi</TD>
+<TD TF_colKey="Author">Leonard Lewisohn, W Hanaway</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hosayn Karbala'i</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hosayn Karbala'i</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Huduri</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Huduri</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Hujjat: Among the Ismailis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Hujjat: Among the Ismailis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Husayn ibn 'Ali</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Husayn ibn 'Ali</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article164a.html?type=cont.currentlang&amp;id=112115">Husayni, Shah Tahir</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Husayni, Shah Tahir</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ibn al-Haytham</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ibn al-Haytham</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlefb71.html?type=cont.currentlang&amp;id=106752">Ibn al-Haytham or Alhazen</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ibn al-Haytham or Alhazen</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ibn Qurra</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ibn Qurra</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ibn Sina or Avicenna</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ibn Sina or Avicenna</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article26a7.html?type=cont.currentlang&amp;id=112130">Ibn Sina or Avicenna</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ibn Sina or Avicenna</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Idris b. Hasan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Idris b. Hasan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Idris 'Imad al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Idris 'Imad al-Din</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ikhwan al-Safa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ikhwan al-Safa</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article5bd1.html?type=cont.currentlang&amp;id=112557">Ikhwan al-Safa</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ikhwan al-Safa</TD>
+<TD TF_colKey="Author">Omar Ali-de-Unzaga</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Christian-Muslim Relations. A Bibliographical History, Vol 2 (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ikhwan al-Safa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ikhwan al-Safa</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Philosophy (2nd ed.), New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ikhwan al-Safa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ikhwan al-Safa</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ikhwan al-Safa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ikhwan al-Safa</TD>
+<TD TF_colKey="Author">Omar Ali-de-Unzaga</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Princeton Encyclopedia of Islamic Political Thought, Princeton (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Illuminationism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Illuminationism</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article4753.html?type=cont.currentlang&amp;id=108787">Illuminationism</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Illuminationism</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article757b.html?type=cont.currentlang&amp;id=106817">Imam Husayn Ibn 'Ali</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Imam Husayn Ibn 'Ali</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Imam-Imama</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Imam-Imama</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Qur'an: An Encyclopedia, London (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Imamate</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Imamate</TD>
+<TD TF_colKey="Author">Eric Ormsby</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Imamate: Ismai&#8216;lism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Imamate: Ismai&#8216;lism</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Imambargah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Imambargah</TD>
+<TD TF_colKey="Author">Rizwan Mawani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Muslim American History, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Islam in the Indian Ocean before 1500</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Islam in the Indian Ocean before 1500</TD>
+<TD TF_colKey="Author">Zulfikar Hirji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Historical Atlas of Islam, Cambridge, MA (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'il b. Ja'far al-Sadiq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'il b. Ja'far al-Sadiq</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ili Philosophy</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ili Philosophy</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Asian Philosophy, London (2001)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlec287.html?type=cont.currentlang&amp;id=104808">Isma'ili Philosophy</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ili Philosophy</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Internet Encyclopaedia of Philosophy</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of the Peoples of Africa and the Middle East (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of the World's Minorities, New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article1dee.html?type=cont.currentlang&amp;id=106552">Isma'ilis</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Warfare in the Islamic World: Encyclopedia (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article09a6.html?type=cont.currentlang&amp;id=110257">Isma'ilism: History</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: History</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article6d89.html?type=cont.currentlang&amp;id=110517">Isma'ilism: Isma'ili Historiography</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: Isma'ili Historiography</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlebb9d.html?type=cont.currentlang&amp;id=110062">Isma'ilism: Isma'ili Studies</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: Isma'ili Studies</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilism: Isma'ili Jurisprudence</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: Isma'ili Jurisprudence</TD>
+<TD TF_colKey="Author">Ismail K Poonawala</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article3607.html?type=cont.currentlang&amp;id=109967">Isma'ilism: Isma'ili Arabic and Persian Literature</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: Isma'ili Arabic and Persian Literature</TD>
+<TD TF_colKey="Author">Ismail K Poonawala</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ilism: In Ginanic Literature</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: In Ginanic Literature</TD>
+<TD TF_colKey="Author">Ali Asani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article1285.html?type=cont.currentlang&amp;id=110057">Isma'ilism: Modern Isma'ili Communities</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: Modern Isma'ili Communities</TD>
+<TD TF_colKey="Author">Azim Nanji, Zulfikar Hirji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlec834.html?type=cont.currentlang&amp;id=109917">Isma'ilism: Nizari Isma'ili Monuments</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: Nizari Isma'ili Monuments</TD>
+<TD TF_colKey="Author">Peter Wiley</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articleecc2.html?type=cont.currentlang&amp;id=109977">Isma'ilism: The Imamate in Isma'ilism</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ilism: The Imamate in Isma'ilism</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'ili Traditions in Central Asia</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ili Traditions in Central Asia</TD>
+<TD TF_colKey="Author">Sergei Andreyev</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Modern Asia, New York (2002)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article44ab.html?type=cont.currentlang&amp;id=104823">Isma'ili Traditions in South Asia</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'ili Traditions in South Asia</TD>
+<TD TF_colKey="Author">Farhad Daftary, Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Modern Asia, New York (2002)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ismaility</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ismaility</TD>
+<TD TF_colKey="Author">Farhad Daftary, L Dodykhudoeva</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Bol'shia Rossi&#238;skaia entsiklopediia, Moscow (2008)</TD>
+<TD TF_colKey="Language">Russian</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'iliyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'iliyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Zaban wa Adab-i Farsi, Sa'adat, Tehran (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma'iliyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'iliyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Isma&#8216;iliyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Isma'iliyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article578e.html?type=cont.currentlang&amp;id=111193">Ivanow, Wladimir</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ivanow, Wladimir</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ivanow, Wladimir</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ivanow, Wladimir</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ja'far al-Sadiq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ja'far al-Sadiq</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ja'far al-Sadiq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ja'far al-Sadiq</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ja'far al-Sadiq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ja'far al-Sadiq</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ja'far b. Mansur al-Yaman</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ja'far b. Mansur al-Yaman</TD>
+<TD TF_colKey="Author">Hamid Haji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Jalal al-Din Hasan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Jalal al-Din Hasan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Jalal al-Din Hasan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Jalal al-Din Hasan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Jalal al-Din Hasan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Jalal al-Din Hasan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Holy People of the World: A Cross-Cultural Encyclopedia (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Jami' al-hikmatayn</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Jami' al-hikmatayn</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Jami' al-hikmatayn</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Jami' al-Hikmatayn</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Javdan-nama</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Javdan-nama</TD>
+<TD TF_colKey="Author">Orkhan Mir-Kasimov</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Jawhar b. 'Abd Allah al-Siqilli</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Jawhar b. 'Abd Allah al-Siqilli</TD>
+<TD TF_colKey="Author">Hamid Haji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Judgement</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Judgement</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of the Qur'an, Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ka'ba, or Kaaba</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ka'ba, or Kaaba</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article9b29.html?type=cont.currentlang&amp;id=106572">Ka'ba</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ka'ba</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article1d24.html?type=cont.currentlang&amp;id=111860">Kahak</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kahak</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Kalila wa Dimna</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kalila wa Dimna</TD>
+<TD TF_colKey="Author">Fahmida Suleman</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Karbala</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Karbala</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Kermani, Hamid al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kermani, Hamid al-Din</TD>
+<TD TF_colKey="Author">Paul E Walker</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article5bcc.html?type=cont.currentlang&amp;id=113452">Khaki Khorasani</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khaki Khorasani</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article9ced.html?type=cont.currentlang&amp;id=104833">Khanaqah</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khanaqah</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Khattabiyah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khattabiyah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Oxford Encyclopaedia of the Islamic World, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article2d7e.html?type=cont.currentlang&amp;id=112090">Khayrkhah Harati</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khayrkhah Harati</TD>
+<TD TF_colKey="Author">Jalal Badakhchani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Khayrkhwah-i Harati</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khayrkhwah-i Harati</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islam, (2nd ed.), Supplement, Leiden (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Khawj b. Malak Kapadwanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khawj b. Malak Kapadwanji</TD>
+<TD TF_colKey="Author">Ali Qutbuddin</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articleaeb7.html?type=cont.currentlang&amp;id=109502">Khoja</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khoja</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Khojki Script</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Khojki Script</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Kirm&#226;n&#238;, Ham&#238;d&#252;ddin</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kirm&#226;n&#238;, Ham&#238;d&#252;ddin</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">T&#252;rkiye Diyanet Vakfi Islam Ansiklopedisi, Istanbul (2009)</TD>
+<TD TF_colKey="Language">Turkish</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Kiyani, Sayyed Nadir</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kiyani, Sayyed Nadir</TD>
+<TD TF_colKey="Author">Jalal Badakhchani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Kufa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kufa</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article6e56.html?type=cont.currentlang&amp;id=106857">Kufa</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Kufa</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Mahdi li-Din Allah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Mahdi li-Din Allah</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Mansur, al-</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Mansur, al-</TD>
+<TD TF_colKey="Author">Hamid Haji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Holy People of the World: A Cross-Cultural Encyclopedia (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Marvels</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Marvels</TD>
+<TD TF_colKey="Author">Alice Hunsberger</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of the Qur'an, Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Mosques and Islamic Centers</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Mosques and Islamic Centers</TD>
+<TD TF_colKey="Author">Rizwan Mawani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Muslim American History, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muslim Cinema</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muslim Cinema</TD>
+<TD TF_colKey="Author">Nacim Pak</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Historical Atlas of Islam, Cambridge, MA (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muslim Wake Up</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muslim Wake Up</TD>
+<TD TF_colKey="Author">Rizwan Mawani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Muslim American History, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Mu'ayyad fi al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Mu'ayyad fi al-Din</TD>
+<TD TF_colKey="Author">Verena Klemm</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muhammad III, 'Ala al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammad III, 'Ala al-Din</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muhammad b. Isma'il b. Ja'far al-Sadiq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammad b. Isma'il b. Ja'far al-Sadiq</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islam, (2nd ed.), Supplement, Leiden (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muhammad al-Baqir</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammad al-Baqir</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article3cf9.html?type=cont.currentlang&amp;id=106867">Muhammad al-Baqir</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammad al-Baqir</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muhammad b. Isma'il</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammad b. Isma'il</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muhammed b. Ism&#226;il el-Mekt&#252;m</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammed b. Ism&#226;il el-Mekt&#252;m</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">T&#252;rkiye Diyanet Vakfi Islam Ansiklopedisi, Istanbul (2009)</TD>
+<TD TF_colKey="Language">Turkish</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Muhammad, Prophet</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Muhammad, Prophet</TD>
+<TD TF_colKey="Author">Gurdofarid Miskinzoda</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Musta&#8216;lawiyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Musta&#8216;lawiyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Musta&#8216;li bi-llah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Musta&#8216;li bi-llah</TD>
+<TD TF_colKey="Author">Hamid Haji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nasafi, 'Aziz b. Mohammad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nasafi, 'Aziz b. Mohammad</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nasir al-Din Tusi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nasir al-Din Tusi</TD>
+<TD TF_colKey="Author">Jalal Badakhchani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article7b30.html?type=cont.currentlang&amp;id=104813">Nasir al-Din Tusi</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nasir al-Din Tusi</TD>
+<TD TF_colKey="Author">Jalal Badakhchani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Internet Encyclopaedia of Philosophy</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article5b9d.html?type=cont.currentlang&amp;id=104818">Nasir Khusraw</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nasir Khusraw</TD>
+<TD TF_colKey="Author">Alice Hunsberger</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Internet Encyclopaedia of Philosophy</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nass</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nass</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Qur'an: An Encyclopedia, London (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Naysaburi, Ahmad ibn Ibrahim</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Naysaburi, Ahmad ibn Ibrahim</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articledd12.html?type=cont.currentlang&amp;id=109487">Nizari</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nizari</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nizaris</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nizaris</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islamic Political Thought, Princeton (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nizaris</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nizaris</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nizariyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nizariyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article1a11.html?type=cont.currentlang&amp;id=112135">al-Nu'man, al-Qadi</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Nu'man, al-Qadi</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Nu'man b. Muhammad, Qadi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Nu'man b. Muhammad, Qadi</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Nu&#8216;man b. Muhammad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Nu&#8216;man b. Muhammad</TD>
+<TD TF_colKey="Author">Ismail K Poonawala</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nur al-Din Muhammad II</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nur al-Din Muhammad II</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Nur al-Din Muhammad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Nur al-Din Muhammad</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Optics</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Optics</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article41e5.html?type=cont.currentlang&amp;id=106792">Optics</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Optics</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Optics</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Optics</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pandiyat-i javanmardi</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pandiyat-i javanmardi</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pilgrimage</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pilgrimage</TD>
+<TD TF_colKey="Author">Josef Meri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pir: Mazd-i Isma&#8216;iliyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pir: Mazd-i Isma&#8216;iliyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pir Sadr al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pir Sadr al-Din</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pir Sadr al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pir Sadr al-Din</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pir Shams</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pir Shams</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pir Shams al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pir Shams al-Din</TD>
+<TD TF_colKey="Author">Azim Nanji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Pishawari</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Pishawari</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Zaban wa Adab-i Farsi dar Shibh-i Qarrah (2008)</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Plato, Platonism and Neoplatonism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Plato, Platonism and Neoplatonism</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Prayer</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Prayer</TD>
+<TD TF_colKey="Author">Rizwan Mawani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Muslim American History, New York (2009)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Qaddah, Abd Allah b. Maymun</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Qaddah, Abd Allah b. Maymun</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Qadi al-Nu'man</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Qadi al-Nu'man</TD>
+<TD TF_colKey="Author">Hamid Haji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Qarmatians</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Qarmatians</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Warfare in the Islamic World: Encyclopedia (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Qarmatis</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Qarmatis</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article0145.html?type=cont.currentlang&amp;id=111865">Quhistani, Abu Ishaq</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Quhistani, Abu Ishaq</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Quhistani, Abu Ishaq</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Quhistani, Abu Ishaq</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Quran</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Quran</TD>
+<TD TF_colKey="Author">Toby Mayer</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Sciences and Religions (2nd ed.), New York (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Rashid al-Din Sinan</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Rashid al-Din Sinan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Dictionary, London (2010)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article9b2c.html?type=cont.currentlang&amp;id=104843">Rashid al-Din Sinan</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Rashid al-Din Sinan</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>R&#226;s&#238;d&#252;dd&#238;n Sin&#226;n el-Ism&#226;ili</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">R&#226;s&#238;d&#252;dd&#238;n Sin&#226;n el-Ism&#226;ili</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">T&#252;rkiye Diyanet Vakfi Islam Ansiklopedisi, Istanbul (2009)</TD>
+<TD TF_colKey="Language">Turkish</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Rawda-yi taslim</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Rawda-yi taslim</TD>
+<TD TF_colKey="Author">Jalal Badakhchani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ritual and the Qur'an</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ritual and the Qur'an</TD>
+<TD TF_colKey="Author">Josef Meri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of the Qur'an, Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Rukn al-Din Khurshah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Rukn al-Din Khurshah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Sabbah, Hasan or Hasan-i Sabbah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sabbah, Hasan or Hasan-i Sabbah</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Sabiq va Tali</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sabiq va Tali</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articleefc7.html?type=cont.currentlang&amp;id=108767">Salamiyya</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Salamiyya</TD>
+<TD TF_colKey="Author">Farhad Daftary, J H Kramers</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article67ba.html?type=cont.currentlang&amp;id=108642">Satr</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Satr</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islam, (2nd ed.), Supplement, Leiden (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Sayrafi, Muhammad b. Badr</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sayrafi, Muhammad b. Badr</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Sayyid Qutb</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sayyid Qutb</TD>
+<TD TF_colKey="Author">Suha Taji-Farouki, Y Choueiri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Religion (2nd ed.), New York (2005)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shabistari, Mahmud</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shabistari, Mahmud</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Holy People of the World: A Cross-Cultural Encyclopedia (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shah Tahir</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shah Tahir</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article56b6.html?type=cont.currentlang&amp;id=111940">Shabistari, Mahmud</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shabistari, Mahmud</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shams al-Din Muhammad</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shams al-Din Muhammad</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shi'a</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shi'a</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of the Qur'an, Leiden (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shi'a</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shi'a</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Qur'an: An Encyclopedia, London (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shi'a: Isma'ili</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shi'a: Isma'ili</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam and the Muslim World, New York (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Shihab al-Din al-Husayni</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shihab al-Din al-Husayni</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlea044.html?type=cont.currentlang&amp;id=104838">Shughni-Rushani Language</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Shughni-Rushani Language</TD>
+<TD TF_colKey="Author">Gabrielle van den Berg</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Sijistani, Abu Ya&#8216;qub</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Sijistani, Abu Ya&#8216;qub</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Simnani, 'Ala al-Dawla</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Simnani, 'Ala al-Dawla</TD>
+<TD TF_colKey="Author">Hermann Landolt</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Sinan, Rashid al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sinan, Rashid al-Din</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article9b2c.html?type=cont.currentlang&amp;id=104843">Sinan, Rashid al-Din</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sinan, Rashid al-Din</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Oxford Dictionary of Islam, Oxford (2003)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Spread of Islam, Islamic Law, and Arabic Language</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Spread of Islam, Islamic Law, and Arabic Language</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Historical Atlas of Islam, Cambridge, MA (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Sufism</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Sufism</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Philosophy (2nd ed.), New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articleb55c.html?type=cont.currentlang&amp;id=108772">Takwa</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Takwa</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ta'lim</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ta'lim</TD>
+<TD TF_colKey="Author">Jalal Badakhchani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Taqiyya, Ismaili</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Taqiyya, Isma'ili</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Taqwa</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Taqwa</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopedia of Islam, (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Tarikh-nigari: Isma'iliyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Tarikh-nigari: Isma'iliyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ta'rikh-nizari: Isma'ili</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ta'rikh-nizari: Isma'ili</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Tasawwuf</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Tasawwuf</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Tawakkul</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Tawakkul</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Ta'wil, Isma'ili</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Ta'wil, Isma'ili</TD>
+<TD TF_colKey="Author">Paul E Walker</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>al-Tayyibiyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">al-Tayyibiyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Tayyibiyya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Tayyibiyya</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Thabit b. Qutna</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Thabit b. Qutna</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Thana ullah Panipatti</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Thana ullah Panipatti</TD>
+<TD TF_colKey="Author">Marjan Afsharian</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Dayirat al-Ma'arif-i Buzurg-i Islami, Tehran (1989 - )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article3239.html?type=cont.currentlang&amp;id=106316">The Institute of Ismaili Studies</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">The Institute of Ismaili Studies</TD>
+<TD TF_colKey="Author">Paul E Walker</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia Iranica, New York</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Time, Concepts of</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Time, Concepts of</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article494a.html?type=cont.currentlang&amp;id=112195">Time, Concepts of</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Time, Concepts of</TD>
+<TD TF_colKey="Author">Nader El-Bizri</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Timurids</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Timurids</TD>
+<TD TF_colKey="Author">Isabel Miller</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_articlea464.html?type=cont.currentlang&amp;id=108792">Timurids</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Timurids</TD>
+<TD TF_colKey="Author">Isabel Miller</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Medieval Islamic Civilization: An Encyclopedia, New York (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Tusi, Nasir al-Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Tusi, Nasir al-Din</TD>
+<TD TF_colKey="Author">Sajjad H Rizvi</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Biographical Encylopaedia of Islamic Philosophy (2006)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Umm al-Kitab: 2. Amongst the Shi'a</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Umm al-Kitab: 2. Amongst the Shi'a</TD>
+<TD TF_colKey="Author">Farhad Daftary</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Wadjd</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Wadjd</TD>
+<TD TF_colKey="Author">Leonard Lewisohn</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Wajh-i Din</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Wajh-i Din</TD>
+<TD TF_colKey="Author">Faquir M Hunzai</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Danishnamah-yi Jahan-i Islam, Tehran (1990 &#8211; )</TD>
+<TD TF_colKey="Language">Farsi</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Wali-Walaya-Wilaya</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Wali-Walaya-Wilaya</TD>
+<TD TF_colKey="Author">Arzina Lalani</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">The Qur'an: An Encyclopedia, London (2007)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Yahya b. 'Abd Allah</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Yahya b. 'Abd Allah</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Zahir, al-</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Zahir, al-</TD>
+<TD TF_colKey="Author">Hamid Haji</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Holy People of the World: A Cross-Cultural Encyclopedia (2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">No</TD>
+<TD>Zayd b. 'Ali</TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Zayd b. 'Ali</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR>
+<TR>
+<TD style="DISPLAY: none" TF_colKey="available">Yes</TD>
+<TD><A href="view_article0b45.html?type=cont.currentlang&amp;id=113587">Zaydiyya</A></TD>
+<TD style="DISPLAY: none" TF_colKey="Entry">Zaydiyya</TD>
+<TD TF_colKey="Author">Wilferd Madelung</TD>
+<TD style="DISPLAY: none" TF_colKey="Encyclopaedia">Encyclopaedia of Islam (2nd ed.), Leiden (1960-2004)</TD>
+<TD TF_colKey="Language">English</TD></TR></TBODY></TABLE>
+<P></P>
+<P></P>
+<P></P><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Encyclopaedia Contributions: List</TITLE><META HTTP-EQUIV="Expires" CONTENT="Thu, 4 Mar 2021 20:09:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 18/02/2014&nbsp;13:58&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=112305 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 20:34:46 GMT -->
+</HTML>

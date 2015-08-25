@@ -1,0 +1,818 @@
+﻿.divMainHeaderStrip
+{
+	height: 42px;
+	width:100%;
+    background-color: #0F4B8F;
+    border-bottom: solid 1px #D2D2D2; 
+	position:relative;
+	padding-bottom:2px;
+	padding-top:2px;
+	color:White;
+}
+
+div.divLeftFrameHeader
+{
+	vertical-align:middle;
+	height:70px;
+}
+
+div.divLeftFrameItem
+{
+	padding-left:8px;
+	padding-right:2px;
+	padding-top:4px;
+	padding-bottom:1px;
+	vertical-align:top;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+div.divLeftFrameContent
+{
+	padding-left:8px;
+	padding-right:2px;
+	padding-top:1px;
+	padding-bottom:5px;
+	vertical-align:top;
+}
+
+div.divSubHeaderStrip
+{
+	height:25px;
+	margin-top: 5px;
+    background-color: #0F4B8F;
+    color:white;
+    border-top: solid 1px #D2D2D2; 
+    border-bottom: solid 1px #D2D2D2; 
+	border-left: solid 1px #D2D2D2; 
+	border-right: solid 1px #D2D2D2;
+}
+
+div.divPageContent
+{
+	border-bottom: solid 1px #D2D2D2; 
+	border-left: solid 1px #D2D2D2; 
+	border-right: solid 1px #D2D2D2;
+	position:relative;
+}
+
+div.divListBoxContent
+{
+	border-bottom: solid 1px #7F9DB9;
+	border-top: solid 1px #7F9DB9;  
+	border-left: solid 1px #7F9DB9; 
+	border-right: solid 1px #7F9DB9;
+	position:relative;
+}
+
+div.ChartpageContent
+{
+	position:relative;
+	padding-left:16px;
+}
+
+a.acrLeftFrameLinks
+{
+	text-decoration: none;
+	color: Black;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:normal;
+}
+
+a.acrCommunityName
+{
+	text-decoration: none;
+	font-size:8pt;
+	font-family:Verdana;
+}
+
+a.acrNavigationLink
+{
+    text-decoration : underline;
+    color :White ;
+    font-size:8pt;
+    font-family:Verdana;
+}
+
+a.acrNormal
+{
+	text-decoration:none;
+	color:#004990;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:normal;
+}
+
+a.acrEmphasized
+{
+	text-decoration:none;
+	color:#004990;
+	font-size:10pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+td.tclwelcomeHeader
+{
+	background-color:#0F4B8F;
+	height:20px;
+	color:white;
+	font-size:8pt;
+	font-weight:normal;
+	vertical-align:middle;
+	font-family:Verdana;	
+}
+
+td.tclCurveDefaultTab a
+{
+	color:Black;
+	font-weight:normal;  
+}
+
+td.tclCurveDefaultTab
+{
+	max-width:120px;
+	width:120px;
+	padding-left:4px;
+	padding-right:2px;
+	margin-top:3px;
+	vertical-align:middle;
+	background-color:#EFEFEF;	
+	height:20px;
+	border-top: solid 1px #A8A8A8; 
+	cursor:pointer;
+	overflow:visible;
+	white-space:nowrap;
+}
+
+td.tclCurveSelectedTab a
+{
+	color:White;
+	font-weight:bold;
+}
+
+td.tclCurveSelectedTab
+{
+	max-width:120px;
+	width:120px;
+	padding-left:4px;
+	padding-right:2px;
+	margin-top:3px;
+	vertical-align:middle;
+	background-color:#0F4B8F;
+	height:20px;	
+	border-bottom: solid 1px #0F4B8F;
+	cursor:pointer;
+	overflow:visible;
+	white-space:nowrap;
+}
+
+hr.hrlSeparator
+{
+	color: #D2D2D2; 
+	height: 1px;
+}
+
+th.thdListViewHeader
+{
+	text-align:left;
+	font-weight:bold;
+	background-color:Silver;
+	color:White;
+	height:18px;
+	font-size:9pt;
+}
+
+td.tclListViewNormal
+{
+	height:18px;
+	white-space:nowrap;
+	padding-right:7px;
+}
+
+img.imgNormal
+{
+	vertical-align:middle;
+	text-align:center;
+	padding-right:5px;
+	cursor:pointer;
+	border-style:none;
+}
+
+img.imgBtn
+{
+	cursor:pointer;
+}
+
+.PaddingRight 
+{
+	padding-right:10px;
+}
+
+.PaddingLeft
+{
+	padding-left:10px;
+}
+
+.PaddedRightAlignedText
+{
+	text-align: right;
+	padding-right: 10px;
+}
+
+/* Font style used */
+
+.NormalFont
+{
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:normal;
+}
+
+.EmphasizedLink
+{
+	color:#004990;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+.EmphasizedFont
+{
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+.PageTitleFont
+{
+	font-size:12pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+.PageSubTitleFont
+{
+	font-size:9pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+.PageNavigationFont
+{
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+	padding-left: 6px;
+}
+
+.PageHelpFont
+{
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:normal;
+	color:White;
+}	     
+
+.SectionHeaderFont
+{
+    font-size:9pt;
+	font-family:Verdana;
+	font-weight:bold;	 
+}	
+
+.HeaderFont
+{
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+}
+
+.BigStrongFont
+{
+	font-size:14pt;
+	font-family:Verdana;
+}
+
+.ScreenGroupName
+{
+	font-size:10pt;
+	font-family:Verdana;
+	font-weight:bolder;
+}
+
+.AdminPageSectionNames
+{
+	font-size:10pt;
+	font-family:Verdana;
+	font-weight:bold;
+	color:#004990;
+}
+
+td.CurveClass
+{
+	height:20px;
+	background-color:#FEFEFE;
+	FILTER: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#DDDDDD, endColorstr=#ffffff);
+    border-top: solid 1px #D2D2D2; 
+	border-bottom: solid 1px #D2D2D2;
+}
+
+.border 
+{
+    border: solid 1px #D2D2D2;
+}
+
+.borderTop 
+{
+    border-top: solid 1px #D2D2D2;
+    border-left: solid 1px #D2D2D2;
+    border-right: solid 1px #D2D2D2;
+}
+
+.borderBottom 
+{
+    border-bottom: solid 1px #D2D2D2;
+    border-left: solid 1px #D2D2D2;
+    border-right: solid 1px #D2D2D2;
+}
+
+table.tdAdministrationElement
+{
+    height:100%; 
+    width:100%;
+    margin:10px 0px 10px 0px;
+    border-width:0px;
+}
+
+.FixedWidth
+{
+	width:15%;
+}
+
+.BorderLeft
+{
+	padding-left:10px;
+	border-left: solid 1px #D2D2D2;
+}
+.ui-dialog-container
+{   
+    border-width:0px;
+}
+
+.ui-dialog-content
+{
+    background-color:White;
+    margin-right:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+
+.ui-resizable-handle
+{
+	width:2px;
+	background-color:WindowFrame;
+}
+
+.ui-dialog-titlebar-close
+{
+	position:absolute;
+	right:9px;
+	top:8px;
+	color:CaptionText;
+	text-decoration:none;
+	font-size:11pt;
+	font-weight:bold;
+	/*background-image:*/
+}
+
+.ui-dialog-titlebar
+{
+	background-color:ActiveCaption;
+	padding-top:10px;
+	height:21px;
+	cursor:move;
+}
+
+.ui-dialog-title
+{
+	font-family: Verdana;
+	font-size:9pt;
+	font-weight:bold;
+	color:White;
+	margin-left:9px;
+}
+
+.ConfigPageButton
+{
+	width:63px;
+}
+
+input 
+{
+    font-family:Verdana;
+    font-size:8pt;
+    font-weight:normal;
+}
+
+img.Administration
+{
+	vertical-align:middle;
+	  
+}
+
+img.Shortcut
+{
+	vertical-align:middle;
+	width:16px;
+	padding-right:6px;  
+}
+
+dt.dtScreenName
+{
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:bold;
+	color:#004990;
+}
+
+dd.ddScreenDesc
+{
+	padding:0;
+	margin:0;
+	padding-left:20px; 
+	padding-bottom:5px;
+}
+
+.ScreenGroupClass
+{
+	padding-left:18px;
+	padding-right:2px;
+	padding-top:4px;
+	height:20px;
+	position: relative;
+	background-color:#FEFEFE;
+	FILTER: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#DDDDDD, endColorstr=#ffffff);
+    border-top: solid 1px #D2D2D2; 
+    border-left: solid 1px #D2D2D2; 
+	border-right: solid 1px #D2D2D2;
+	border-bottom: solid 1px #D2D2D2;
+}
+
+/* This class is being used by the buttons used for moving items between listboxes  */
+.MoveItemButtons
+{
+	font-size: 8pt;
+	font-family:Verdana;
+	font-weight:normal;
+	width: 30px;
+}
+
+.NoMessageText
+{
+	color:gray;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:normal;
+	padding-bottom:5px;
+}
+
+.RepeaterAlternateRowStyle
+{
+	
+	background-color:#F2F2F2;
+}
+
+.GridViewHeaderStyle 
+{
+	background-color:Silver;
+	font-family:Verdana;
+	font-size:9pt;
+	color:white;
+	text-align:left;
+	height:18px;
+	font-weight:bold;
+}
+
+.GridViewContentStyle 
+{
+	font-family:Verdana;
+	font-size:9pt;
+	color:black;
+	text-align:left;
+	height:18px;
+}
+
+.BlackOverlay
+ {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index:1001;
+}
+  
+.GridPaddingLeft
+{
+	padding-left:3px;
+}
+
+.GridPaddingRight
+{
+	padding-left:3px;
+}
+
+.MenuContentLeft
+{
+	background-color:Silver;
+}  
+
+.MenuContentRight
+{
+	background-color:White;
+}  
+
+.MenuContentHighLighted
+{
+	background-color:ButtonShadow;
+	cursor:pointer;  
+}
+
+.MenuBorder
+{
+	border-top:solid 1px #D2D2D2;
+	border-bottom:solid 1px #D2D2D2;
+	border-right:solid 1px #D2D2D2;
+	border-left:solid 1px #D2D2D2; 
+}
+
+a.showMenuHeader
+{
+	text-decoration: none;
+	color: White;
+}
+
+a.showMenuHeader:hover
+{
+	text-decoration:underline;
+}
+
+.showMenuImage
+{
+	cursor:pointer;
+}
+
+tr.MenuEnableRow
+{
+	color:Black;
+	cursor:pointer;  
+}  
+
+tr.MenuDisableRow
+{
+	color:Silver;
+	cursor:default;  
+}  
+
+.statusMenuImage
+{
+	border:0px;
+}
+
+.thdManageListViewHeader
+{
+	text-align:left;
+	font-weight:bold;
+	color:black;
+	height:18px;
+	font-size:8pt;
+}
+
+.RadioGroup
+{
+	position:relative;
+	left:-8px;
+}
+
+.CheckboxGroup
+{
+	position:relative;
+	left:-4px;
+}
+
+.SubScreenText
+{
+	text-decoration:none;
+	font-size:8pt;
+	font-family:Verdana;
+	color:Black;
+}
+
+body.logonBody
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* prepares the background image to full capacity of the viewing area */div.divBg
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* places the content ontop of the background image */div.divContent
+{
+    position: relative;
+    z-index: 1;
+}
+
+.loginTitle
+{
+	color:#ffffff;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	padding-left:3px;
+}
+.CompLogo
+{
+	padding:20px 10px 10px 10px;
+	vertical-align:top;
+}
+.ProdLogo
+{
+	padding:10px;
+	vertical-align:top;
+}
+td.SeperatorCell
+{
+	width:100%;
+	border-bottom: #d2d2d2 1px solid;
+	height:1px;
+}
+td.LicenceOwnedBy
+{
+	padding:10px 10px 10px 10px;
+	vertical-align:middle;
+	width:100%;
+}
+.CompInfo
+{
+	overflow:auto;
+	text-align:left;
+	border:solid 1px #d2d2d2;
+	padding:10px 25px 10px 25px;
+	width:95%;
+}
+td.CompInfoContainer
+{
+	padding:10px 25px 10px 25px;
+}
+td.LicenceWarningCell
+{
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-left:10px;
+	width:100%;
+	text-decoration : underline;
+}
+td.WarningContent
+{
+	padding:2px 0px 25px 25px;
+}
+a.UnderlineLink
+{
+    text-decoration : underline;
+    color : #004990;
+    font-size:8pt;
+    font-family:Verdana;
+}
+td.LinksContainer
+{
+	padding-bottom:20px;
+}
+.labelText
+{
+	color:#ffffff;
+	font-family:Tahoma;
+	font-size:11px;
+}
+.linkText
+{
+	color:#ffffff;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.strikeThrough
+{
+	text-decoration:line-through;
+}
+
+/* Tool bar related CSS */
+
+a.acrToolBarNormal, a.acrToolBarNormal:hover, a.acrToolBarNormal:visited, a.acrToolBarNormal:link, a.acrToolBarNormal:alink,a.acrToolBarNormal:active
+{
+	text-decoration:none;
+	color:Black;
+	font-size:8pt;
+	font-family:Verdana;
+	font-weight:normal;
+}
+
+.ButtonRowHighLighted
+{
+	background-color:#3366FF;
+	cursor:pointer;  
+}
+
+.ButtonRow
+{
+	cursor:none;  
+}
+
+.ToolBarSeperator
+{
+	padding-top:3px;
+	border-top: solid 1px #D2D2D2;
+}  
+
+.ToolBarMenu
+{
+	background-color:white;
+	border:solid 1px #C6D6E7
+}
+/* End of tool bar related CSS */
+
+/* IE 6 message related CSS */
+.IE6MessageContainer
+{
+	border:1px solid #003399; 
+	margin:8px 0;
+	background-color:#FFF9A8 ;
+	color:#000;
+	position: absolute ;
+	bottom: 0px;
+	right: 10px;
+}
+
+.IE6MessageContainer h4{margin:8px; padding:0;}
+.IE6MessageContainer p{margin:8px; padding:0;}
+.IE6MessageContainer img{padding-left: 8px;display:block;}
+
+/* End of IE 6 message related CSS */
+
+.LicenseViolationpanelImage
+{
+	background-image:url('Images/EnterpriseLicenceViolation.png');
+	background-repeat:no-repeat;
+}
+
+.licenceViolationlinkText
+{
+	color:#ffffff;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.LicenceViolationWarningCell
+{
+	color:#ffffff;
+	padding-left:10px;
+	width:100%;
+	text-decoration : underline;
+}
+    .LanguageSelection
+    {
+        position:absolute 
+    }
+    
+    .LanguageSelection li
+    {
+    	list-style-type:none;
+    }
+    .LanguageSelection li a
+    {
+    	color: #004990;
+    	font-family: Arial;
+    	font-size:12px;
+    	text-decoration:none;
+    }
+.SessionTimeoutErrorMessage
+{
+	color:#ff0000;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	text-align:left;
+	width:100%;
+}

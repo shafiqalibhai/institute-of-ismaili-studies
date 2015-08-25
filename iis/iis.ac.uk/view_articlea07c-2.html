@@ -1,0 +1,810 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=111203 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:47:56 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 111203;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only4213.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D111203">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"><li class="first"><A href="view_article046c.html?ContentID=111204">Français</A></li><li><A href="view_articled8dc.html?ContentID=111205">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</A></li><li><A href="view_article94f3.html?ContentID=111206">&#1601;&#1575;&#1585;&#1587;&#1740;</A></li><li><A href="view_article4066.html?ContentID=111207">&#80;&#121;&#99;&#99;&#107;&#117;&#250;</A></li></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles8b8c.html?type=cat&amp;id=4&amp;t=short&amp;g=date&amp;l=en" >by Date</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articlesa07a.html?type=cat&amp;id=4&amp;t=short&amp;g=author&amp;l=en" >by Author</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_sorted_articles5166.html?type=cat&amp;id=4&amp;t=short&amp;g=title&amp;l=en" >by Title</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article73bb.html?type=cont.currentlang&amp;id=105758&amp;l=en" >New Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article0aca.html?type=cont.currentlang&amp;id=111218&amp;l=en" >Publication Series</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4cbe.html?type=cont.currentlang&amp;id=104743&amp;l=en" >Forthcoming Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<H3>Publication Content</H3><table style="WIDTH: 450px; HEIGHT: 260px" cellSpacing="0" cellPadding="0" width="450" background="#" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml"><tbody><tr><td background="#" vAlign="top"><strong>Degrees of Excellence: A Fatimid Treatise on Leadership in Islam</strong><strong><br/></strong><strong></strong><br/><br/><DIV><A onclick="return fnExtLinkWarning();" href="http://www.ibtauris.com/Books/Humanities/Philosophy/Non-Western philosophy/Oriental  Indian philosophy/Degrees of Excellence A Fatimid Treatise on Leadership in Islam.aspx?menuitem=%7B4E1A96F7-4C59-4FB5-9190-B19209543299%7D" target=_blank>I.B. Tauris</A> in association with The Institute of Ismaili Studies</DIV>
+<DIV>&nbsp;</DIV><A href="view_articlebdba.html?type=cont.currentlang&amp;id=104893">Ismaili Texts and Translation Series</A> No. 8 
+<DIV>
+<P>New Arabic Edition &amp; English Translation</P></DIV><span><br/><br/>ISBN (Hardback): 9781845111458</span></td><td background="#" align="middle" vAlign="top"><div align="center"><table style="HEIGHT: 230px" cellSpacing="5" cellPadding="5" width="125" align="center" bgColor="#ffffcc" background="#" border="0"><tbody><tr><td height="150" background="#"><div align="center"><IMG border="0" onerror="ImageLoadFailed()" src="WebAssets/medium/Publication%20Content/Degrees%20-%20publication%20page-2010251247_7055.jpg" align="left" alt="" style="padding: 0px;" xmlns=""></div></td></tr><tr><td><ul><li><a href="javascript: showSection(&quot;synopsis&quot;)">Synopsis</a></li><li><a href="javascript: showSection(&quot;contents&quot;)">Contents</a></li><li><a href="javascript: showSection(&quot;bibliography&quot;)">Bibliography</a></li></ul></td></tr></tbody></table></div></td></tr></tbody></table><table cellSpacing="0" cellPadding="0" width="450" border="0" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes"><tbody><tr><td><div id="pubsSynopsis"><strong>Synopsis<br></strong><DIV><IMG height=17 alt="" src="WebAssets/Large/googlebooks.jpg" width=17 align=baseline border=0><A title="of Excellence: A Fatimid Treatise on Leadership in Islam" onclick="return fnExtLinkWarning();" href="http://books.google.co.uk/books?id=oZ4cAAAACAAJ&amp;dq=Degrees%20of%20Excellence:%20A%20Fatimid%20Treatise%20on%20Leadership%20in%20Islam&amp;cd=1" target=_blank> Publication page on Google Books</A></DIV><BR>
+<DIV><SPAN style="FONT-SIZE: 11pt; COLOR: #1f497d; FONT-FAMILY: 'Calibri','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><U></U></SPAN></DIV>
+<DIV><I></I></DIV>
+<DIV><I>Degrees of Excellence</I> is a bilingual work of decisive importance to the philosophical curriculum of medieval Muslim thought. It introduces the first book-length study of <U><A href="view_article8a77.html?type=cont.currentlang&amp;id=105293">Ahmad b. Ibrahim al-Naysaburi</A></U>, a hitherto unknown scholar of the early fifth/eleventh century, who writes the most elaborate and erudite philosophical justification of the <U><A href="javascript:void(LaunchGlossary('GlossaryItemcdcf.html?type=glossary&amp;id=227'))">Imamate</A></U>. He writes in a manner that is both logical and structured yet comparatively less complex and intricate than other such texts of the period. A distinguished scholar from the <U><A href="javascript:void(LaunchGlossary('GlossaryItem7739.html?type=glossary&amp;id=269'))">Fatimid</A></U> period, al-Naysaburi came from Nishapur, noted particularly for its erudition and use of rationalistic philosophy. Although he has several works to his credit, it is the <I>Kitab</I> <I>Ithbat al-Imama</I> that allows us to capture and understand not only the significance of his own thought, but also the beliefs of his age. <BR><BR>Instead of basing his work exclusively on the Holy Qur&#8217;an and the traditions, al-Naysaburi applies intellectual tools to explain and expound his theology by presenting a range of arguments, foremost amongst which is the theory of &#8216;degrees of excellence&#8217;. As such, he argues that God created each genera and species with a unique capacity and distinct advantage not existing in others. While each category has its own differences and disparities, there are at the same time paradigms of perfect examples in each variety. Using examples from the ten Aristotelian categories and other natural metaphors from mineral, plant, tree and animal kingdoms, he reveals in a corresponding manner how the Imam stands at the zenith of humanity. <BR><BR>The <I>Kitab</I> <I>Ithbat al-Imama </I>provides an unparalleled insight into the intricacies of the <U><A href="javascript:void(LaunchGlossary('GlossaryItem6461.html?type=glossary&amp;id=228'))">imam</A></U>-<U><A href="javascript:void(LaunchGlossary('GlossaryItemb108.html?type=glossary&amp;id=299'))">caliph</A></U> al-Hakim&#8217;s rule (386-411/996-1021), not only adding considerably to our understanding of that period, but also dispelling the erroneous accusations against this caliph. Besides being annotated and contextualised, the work itself has a fluent and accessible introduction in which Dr Lalani introduces the author and his works, describes the contents of work<I>, </I>and elaborates several themes within the text. There is a specific section on the theme of &#8216;degrees of excellence&#8217; and, for the specialist, a description of the Arabic manuscripts used alongside notes to the translation.<BR><BR>Amongst the highlights of the work is an explanation of how and why leadership is to be seen everywhere in the world and how, in order to guide humanity, the imam must always be present in the world, describing what is exclusive about him and why he is a necessity innately as well as intellectually. An example in question is paragraph [45]:<BR>&#8220;Further, we say that there are disparities (<I>tafawut</I>) and differences in degrees of excellence (<I>tafadul</I>) in the organs of the body; the foremost and the best among them is the head. It is in the head that the face [is situated] by which each human being is recognized and distinguished from others. Among the internal organs, the best one is the brain, which is their chief, being the source of the intellect. So likewise the Imam has a position in the world similar to the head and in relation to the organs, similar to the brain. Around him revolve all affairs of the creation just as all actions pertaining to the body revolve around the brain. Amongst the faculties in man and the spirits, the best is the intellect, and the Imam is the Universal Intellect (<I>&#8216;aql al-kulli</I>) in the world from and in whom all people of the world become united.&#8221;<BR><BR><I>Degrees of Excellence</I> is an invaluable source on classical Fatimid thought and will prove essential reading for students of Islamic history, philosophy and theology besides serving as a useful reference for modern Shi&#8217;i communities of all persuasions.</DIV><br><br></div><div id="pubsContents"><strong>Contents</strong><br><TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD width=470><EM>Preface and Acknowledgements </EM></TD>
+<TD width=51>xiii<I></I></TD></TR>
+<TR>
+<TD width=470></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470>Introduction </TD>
+<TD width=51>1</TD></TR>
+<TR>
+<TD width=470></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470>The Author and his Works</TD>
+<TD width=51>4</TD></TR>
+<TR>
+<TD width=470>The Contents of <I>Kitab ithbat al-imama </I></TD>
+<TD width=51>9</TD></TR>
+<TR>
+<TD width=470></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470>Themes in the Text</TD>
+<TD width=51>12</TD></TR>
+<TR>
+<TD width=470>Degrees of Excellence </TD>
+<TD width=51>17</TD></TR>
+<TR>
+<TD width=470>Description of the Arabic Manuscripts </TD>
+<TD width=51>26</TD></TR>
+<TR>
+<TD width=470></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470>Notes on the Translation </TD>
+<TD width=51>27</TD></TR>
+<TR>
+<TD width=470>Translation of <I>Kitab ithbat al-imama</I><B>:</B></TD>
+<TD width=51><B></B></TD></TR>
+<TR>
+<TD width=470></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470>Book on Affirming the Imamate</TD>
+<TD width=51>29</TD></TR>
+<TR>
+<TD width=470><I></I></TD>
+<TD width=51><I></I></TD></TR>
+<TR>
+<TD width=470><EM>Select Bibliography</EM></TD>
+<TD width=51>96</TD></TR>
+<TR>
+<TD width=470><EM>English Index </EM></TD>
+<TD width=51>108</TD></TR>
+<TR>
+<TD width=470></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470><EM>Arabic Index</EM></TD>
+<TD width=51></TD></TR>
+<TR>
+<TD width=470><EM>Arabic Text</EM></TD>
+<TD width=51></TD></TR></TBODY></TABLE><br><br></div><div id="pubsBibliography"><strong>Bibliography</strong><br><P><B>Primary Sources: Manuscripts of al-Naysaburi</B></P>
+<P align=center><B></B></P>
+<P>al-Naysaburi, Ahmad b. Ibrahim. <I>Kitab ithbat al-imama</I>. Fyzee collection.</P>
+<P>Ms. (R) 56 C.1. Library of The Institute of Ismaili Studies.</P>
+<P>The following variants of al-Naysaburi&#8217;s above work used in this study are also housed at the Institute&#8217;s Library:</P>
+<P>&#8212;&#8212; The Ismaili Society of Bombay, Ms. 91 (Ar.)</P>
+<P>&#8212;&#8212; Zahid &#8216;Ali Collection, Ms. 11 23 (Ar I, ZA)</P>
+<P>&#8212;&#8212; Zahid &#8216;Ali Collection, Ms. 1212 (Ar I, ZA)</P>
+<P>&#8212;&#8212; Ms 92 (Ar.), [copied in 1317/1899]</P>
+<P>&#8212;&#8212; Ms 93 (Ar), [copied in 1313/1895]</P>
+<P>&#8212;&#8212; Ms 94 (Ar.), [no date]</P>
+<P>&#8212;&#8212; Ms 911 (Supp.Ar.), [copied in 1355/1936]</P>
+<P>&#8212;&#8212; Ms 946 (Supp.Ar.), [copied in 1310/1892]</P>
+<P>&#8212;&#8212; Ms 1047 (Ar I), [no date]</P>
+<P>&#8212;&#8212; <I>Kitab istitar al-imam wa tafarruq al-du&#8217;at fi&#8217;l-jaza&#8217;ir li-</I><I>t</I><I>alabi-hi </I>(with Muhammad al-Yamani&#8217;s <I>Sirat al-</I><I>h</I><I>ajib</I>), Ms 1008 (Ar I). Library of The Institute of Ismaili Studies, ed. W. Ivanow in <I>Bulletin of the Faculty of Arts, Egyptian University, </I>vol. 4, 1936, Cairo, 1939), pp. 89&#8211;133; English tr. W. Ivanow, in his <I>Ismaili Tradition Concerning the Rise of the Fatimids</I>. London, etc., 1942, pp. 157&#8211;183.</P>
+<P>&#8212;&#8212; <I>Risala al-mujaza al-kafiya fi adab al-du&#8217;at </I>in Hasan al-Bharuchi&#8217;s <I>Kitab al-a</I><I>z</I><I>har</I>, II, 100&#8211;162, cited in Poonawala&#8217;s <I>Biobibliography, </I>pp. 91&#8211;92 <I>.</I>Ms. 705 (Ar I). Library of The Institute of Ismaili Studies. This <I>risala </I>is also available in Hatim al-Hamidi&#8217;s <I>Tu</I><I>h</I><I>fat al-qulub </I>and cited in Poonawala, p. 405.</P>
+<P>&#8212;&#8212; <I>Kitab al-taw</I><I>h</I><I>id</I>, preserved in a collection of manuscripts from Syria, Ms. 154/994, p. 1. See Delia Cortese, <I>Ismaili and Other Arabic Manuscripts: A Descriptive Catalogue of Manuscripts in the Library of The Institute of Ismaili Studies</I>. London, 2000, pp. 94 and 96.</P>
+<P><B></B></P>
+<P><B>Other Manuscripts</B></P>
+<P><B></B></P>
+<P>al-Mu&#8217;ayyad fi&#8217;l-Din al-Shirazi [attr.]. <I>al-Ibtida&#8217; wa al-intiha&#8217;</I>, copied in 14th/20th century. Ms 1250 (Ar1, ZA). Library of The Institute of Ismaili Studies.</P>
+<P>Ja&#8217;far b. Mansur al-Yaman, Abu&#8217;l-Qasim. <I>Kitab al-shawahid wa&#8217;l-bayan fi ithbat amir al-mu&#8217;minin wa&#8217;l-a&#8217;imma</I>. Ms.734. Library of The Institute of Ismaili Studies. See Adam Gacek, C<I>atalogue of Arabic Manuscripts in the Library of The Institute of Ismaili Studies </I>(London, 1984), vol. 1,</P>
+<P>pp. 11 8&#8211;11 9.</P>
+<P><B>Published Primary Sources</B></P>
+<P><B></B></P>
+<P>&#8216;Abd al-Jabbar, Qadi. <I>al-Mughni fi abwab al-taw</I><I>h</I><I>id wa&#8217;l-&#8217;adl, </I>ed., &#8216;Abd al-Halim Mahmud et. al., vol. 20, Cairo, n.d.</P>
+<P>Abu&#8217;l-Fawaris Ahmad b. Ya&#8217;qub. <I>al-Risala fi&#8217;l-imama</I>, ed. and tr., Sami N. Makarem as <I>The Political Doctrine of the Isma&#8217;ilis. </I>Delmar, NY, 1977.</P>
+<P>al-Baghdadi, Abu Mansur &#8216;Abd al-Qahir. <I>al-Farq bayn al-firaq</I>, ed. M. Badr, Cairo, 1328/1910. English trans. <I>Moslem Schisms and Sects</I>, part I, tr. K.C.Seelye. New York, 1929; part II, tr. A.S. Halkin. Tel Aviv, 1935.</P>
+<P>al-Dhahabi, Muhammad. <I>Ta&#8217;rikh al-Islam, </I>ed. <I>&#8216;</I>A. Tadmuri. Beirut, 1987&#8211; 1994.</P>
+<P>al-Farabi, Abu Nasr. <I>Alfarabi&#8217;s Philosophy of Plato and Aristotle</I>, tr. Muhsin Mahdi. Ithaca, NY, 1963.</P>
+<P>&#8212;&#8212; <I>Ta</I><I>hs</I><I>il al-sa&#8217;ada</I>, ed. Ja&#8217;far Al Yasin. Beirut, 1983.</P>
+<P>&#8212;&#8212; <I>Al-Farabi on the Perfect State: Abu Na</I><I>s</I><I>r al-Farabi&#8217;s Mabadi&#8217; ara&#8217; ahl-almadinah al-fa</I><I>d</I><I>ilah</I>, ed. and tr. Richard Walzer. Oxford, 1985.</P>
+<P>Ibn Abi&#8217;l-Hadid. <I>Shar</I><I>h</I><I> nahj al-balagha</I>, ed. M.A. Ibrahim. Cairo, 1961.</P>
+<P>Ibn al-Athir, &#8216;Izz al-Din. <I>al-Kamil fi&#8217;l-ta&#8217;rikh</I>, ed. C.J. Tornberg. Leiden, 1851&#8211;76; repr. Beirut, 1965&#8211;1967.</P>
+<P>Ibn al-Dawadari, Abu Bakr b. &#8216;Abd Allah. <I>Kanz al-durar wa jami&#8217; al-ghurar, </I>part 6, <I>al-Durra al-mu</I><I>d</I><I>iyya fi akhbar al-dawla al-Fa</I><I>t</I><I>imiyya</I>, ed. S. al- Munajjid. Cairo, 1961.</P>
+<P>Ibn al-Haytham, Abu &#8216;Abd Allah Ja&#8217;far. <I>Kitab al-muna</I><I>z</I><I>arat</I>, ed. and tr. Wilferd Madelung and Paul E. Walker as <I>The Advent of the Fatimids: AContemporary Shi&#8217;i Witness</I>. London, 2000. </P>
+<P>Ibn Khallikan, Abu&#8217;l-&#8217;Abbas Ahmad. <I>Wafayat al-a&#8217;yan</I>, ed. Ihsan &#8216;Abbas. Beirut, 1968&#8211;1972.</P>
+<P>Ibn Manzur, Muhammad b. al-Mukarram. <I>Lisan al-&#8217;Arab</I>. Beirut 1955&#8211;1957.</P>
+<P>Ibn al-Nadim, Abu&#8217;l-Faraj Muhammad. <I>Kitab al-fihrist</I>. Cairo, n.d.; English trans., <I>The Fihrist of al-Nadim</I>, tr. Bayard Dodge. New York, 1970, 2 vols.</P>
+<P>Ibn al-Qalanisi, Abu Ya&#8217;la Hamza. <I>Dhayl ta&#8217;rikh Dimashq, </I>ed. H.F. Amedroz. Leiden, 1908.</P>
+<P>Ibn Taghribirdi, Abu&#8217;l-Mahasin Yusuf. <I>al-Nujum al-</I><I>z</I><I>ahira fi muluk Mi</I><I>s</I><I>r wa&#8217;l-Qahira</I>. Cairo, 1348&#8211;1391/1929&#8211;1972.</P>
+<P>Ibn al-Tuwayr, Abu Muhammad al-Murtada. <I>Nuzhat al-muqlatayn fi akhbar al-dawlatayn</I>, ed. Ayman F. Sayyid. Beirut, 1992.</P>
+<P>Idris &#8216;Imad al-Din b. al-Hasan. &#8216;<I>Uyun al-akhbar wa-funun al-athar</I>, vols. 4&#8211;6, ed. Mustafa Ghalib. Beirut, 1973&#8211;1978. </P>
+<P>Ja&#8217;far b. Mansur al-Yaman, Abu&#8217;l-Qasim. <I>Kitab al-kashf, </I>ed. R. Strothmann. London, etc., 1952.</P>
+<P>&#8212;&#8212; <I>Kitab &#8216;alim wa&#8217;l-ghulam</I>, ed. and tr. James W. Morris as <I>The Master and the Disciple</I>. London, 2001</P>
+<P>al-Kirmani, Hamid al-Din Ahmad. <I>Kitab al-riya</I><I>d</I>. ed. &#8216;Arif Tamir. Beirut, 1960.</P>
+<P>&#8212;&#8212; <I>Ra</I><I>h</I><I>at al-&#8217;aql</I>. ed. M. Kamil Husayn and M. Mustafa Hilmi. Leiden and Cairo, 1953; ed. Mustafa Ghalib, Beirut, 1967. </P>
+<P>&#8212;&#8212; <I>Majmu&#8217;at rasa&#8217;il al-Kirmani, </I>ed. Mustafa Ghalib. Beirut, 1983.</P>
+<P>&#8212;&#8212; <I>al-Ma</I><I>s</I><I>abi</I><I>h</I><I> fi ithbat al-imama</I>, ed. and tr. Paul E. Walker as <I>Master of the Age: An Islamic Treatise on the Necessity of the Imamate</I>. London, 2007.</P>
+<P>al-Kulayni, Muhammad b. Ya&#8217;qub. <I>al-U</I><I>s</I><I>ul min al-kafi</I>. Tehran, 1388/1968.</P>
+<P>al-Majdu&#8217;, Isma&#8217;il b. &#8216;Abd al-Rasul. <I>Fahrasat al-kutub wa&#8217;l-rasa&#8217;il</I>, ed. &#8216;Ali Naqi Munzawi. Tehran, 1345Sh./1966.</P>
+<P>al-Majlisi, Muhammad Baqir. <I>Bi</I><I>h</I><I>ar al-anwar</I>. Tehran, n.d. </P>
+<P>al-Maqrizi, Taqi al-Din Ahmad b. &#8216;Ali. <I>Kitab al-mawa&#8217;i</I><I>z</I><I> wa&#8217;l-i&#8217;tibar bi-dhikr al-khi</I><I>t</I><I>a</I><I>t</I><I> wa&#8217;l-athar. (al-Khi</I><I>t</I><I>a</I><I>t</I><I>). </I>Bulaq, 1270/1853&#8211;1854.</P>
+<P>&#8212;&#8212; <I>Itti&#8217;a</I><I>z</I><I> al-</I><I>h</I><I>unafa&#8217; bi-akhbar al-a&#8217;imma al-Fa</I><I>t</I><I>imiyyin al-khulafa&#8217;, </I>vol. 1, ed. Jamal al-Din al-Shayyal, vols. 2&#8211;3, ed. Muhammad Hilmi M. Ahmad. Cairo, 1967&#8211;1973.</P>
+<P>al-Mawardi, &#8216;Ali b. Muhammad. <I>al-A</I><I>h</I><I>kam al-Sul</I><I>t</I><I>aniyya wa&#8217;l-walayat aldiniyya, </I>Cairo, 1936; 3rd edition, Egypt, 1393/1973. English trans., <I>The Ordinances of the Government</I>, tr. Wafaa H. Wahba. Reading, 1996.</P>
+<P>al-Musabbihi, al-Mukhtar &#8216;Izz al-Mulk. <I>al-Juz&#8217; al-arba&#8217;un min akhbar Mi</I><I>s</I><I>r. </I>Part 1 (historical), ed. Ayman F. Sayyid and Th. Bianquis. Cairo, 1978.</P>
+<P>Muslim b. al-Hajjaj. <I>S</I><I>a</I><I>h</I><I>i</I><I>h</I><I> Muslim</I>, ed. H.M. al-Mas&#8217;udi. Cairo, 1349/1930.</P>
+<P>al-Nawbakhti, al-Hasan. <I>Kitab firaq al-Shi&#8217;a, </I>ed. H. Ritter. Istanbul, 1931.</P>
+<P>al-Naysaburi, Ahmad b. Ibrahim. <I>Kitab ithbat al-imama</I>, ed. Mustafa Ghalib. Beirut, 1984.</P>
+<P>al-Nuwayri, Shihab al-Din Ahmad. <I>Nihayat al-arab fi funun al-adab</I>, vol. 25, ed. M.J.&#8217;A. al-Hini and &#8216;Abd al-&#8217;Aziz al-Ahwani. Cairo, 1984.</P>
+<P>al-Nu&#8217;man b. Muhammad, al-Qadi Abu Hanifa. <I>Da&#8217;a&#8217;im al-Islam</I>, ed. A.A.A. Fyzee, 2 vols. Cairo, 1951&#8211;1961. English trans., A.A.A. Fyzee, revised and annotated by Ismail K. Poonawala as <I>The Pillars of Islam</I>. New Delhi, 2002&#8211;2004.</P>
+<P>&#8212;&#8212; <I>Asas al-ta&#8217;wil</I>, ed. &#8216;Arif Tamir. Beirut, 1960.</P>
+<P>&#8212;&#8212; <I>Shar</I><I>h</I><I> al-akhbar fi fa</I><I>d</I><I>a&#8217;il al-a&#8217;imma al-a</I><I>t</I><I>har</I>, ed. S.M. Husayni al-Jalali, 2nd ed. Qumm, 1414/1993.</P>
+<P>&#8212;&#8212; <I>Iftitah al-da&#8217;wa</I>, tr. Hamid Haji as <I>Founding the Fatimid State: The Rise of an Early Islamic Empire</I>. London, 2006.</P>
+<P>al-Qummi, &#8216;Ali b. Ibrahim. <I>Tafsir al-Qummi, </I>ed. Tayyib al-Musawi al-Jaza&#8217;iri. Beirut, 1968.</P>
+<P>al-Qummi, Sa&#8217;d b. &#8216;Abd Allah. <I>Kitab al-maqalat wa&#8217;l-firaq</I>, ed. M.J. Mashkur. Tehran, 1342Sh./1963.</P>
+<P><I>Rasa&#8217;il Ikhwan al-</I><I>S</I><I>afa&#8217; wa-khullan al-wafa&#8217;</I>, ed. B. al-Bustani. Beirut, 1957. </P>
+<P>al-Razi, Abu Hatim. <I>A&#8217;lam al-nubuwwa</I>, ed. by Salah al-Sawy and G. A&#8217;wani. Tehran, 1356Sh./1977.</P>
+<P>&#8212;&#8212; <I>Kitab al-i</I><I>s</I><I>la</I><I>h</I>, ed. H. Minuchihr and M. Muhaqqiq. Tehran, 1377Sh./1998.</P>
+<P>&#8212;&#8212; <I>Kitab al-zina</I>, part 3, ed. &#8216;Abd Allah S. al-Samarra&#8217;i, in his <I>al-Ghuluww wa&#8217;l-firaq al-ghaliya. </I>Baghdad, 1988.</P>
+<P>al-Saffar, Abu Ja&#8217;far Muhammad. <I>Ba</I><I>s</I><I>a&#8217;ir al-darajat, </I>ed. Mirza M. Kuchabaghi. Tabriz, 1380/1960.</P>
+<P>al-Shafi&#8217;i. <I>Kitab al-umm</I>, ed. M. Zuhri al-Najjar. Beirut, 1393/1974. </P>
+<P>al-Shahrastani, Abu&#8217;l-Fath Muhammad. <I>Mafati</I><I>h</I><I> al-asrar wa ma</I><I>s</I><I>abi</I><I>h</I><I> alabrar </I>(<I>Tafsir al-Shahrastani</I>), vol. 1, ed. M. &#8216;Ali Adharshab. Tehran, 1376Sh./1997.</P>
+<P>al-Shayyal, Jamal al-Din, ed. <I>Majmu&#8217;at al-watha&#8217;iq al-Fa</I><I>t</I><I>imiyya. </I>Cairo, 1958.</P>
+<P>al-Sijistani, Abu Ya&#8217;qub Ishaq. <I>Kitab al-yanabi&#8217;, </I>ed. and partial French trans. by H. Corbin in his <I>Trilogue Isma&#233;lienne</I>. Tehran and Paris, 1961; tr. Paul E. Walker in his <I>The Wellsprings of Wisdom: A Study of</I></P>
+<P><I></I></P>
+<P><I>al-Sijistani&#8217;s </I>Kitab al-yanabi<I>&#8217;</I>. Salt Lake City, UT, 1994. </P>
+<P>&#8212;&#8212; <I>Kitab ithbat al-nubuwwa</I>, ed. &#8216;Arif Tamir. Beirut, 1966.</P>
+<P>&#8212;&#8212; <I>Kitab al-iftikhar</I>, ed. Mustafa Ghalib. Beirut, 1980; ed. I.K. Poonawala. Beirut, 2000.</P>
+<P>&#8212;&#8212; <I>Kashf al-ma</I><I>h</I><I>jub</I>, ed. H. Corbin. Tehran and Paris, 1949; partial English trans. by H. Landolt, in S.H. Nasr and M. Aminrazavi, ed. <I>An Anthology of Philosophy in Persia. </I>Oxford, 2001, vol. 2, pp. 71&#8211;124.</P>
+<P>al-Ya&#8217;qubi, Ahmad b. Ibn Wadih. <I>Ta&#8217;rikh</I>, ed. vols. 1 and 2. Beirut, n.d.</P>
+<P><B>Secondary Sources</B></P>
+<P><B></B></P>
+<P>Afsaruddin, Asma. <I>Excellence and Precedence: Medieval Islamic Discourse on Legitimate Leadership</I>. Leiden, 2002.</P>
+<P>al-Amini, Muhammad Hadi. <I>al-Ghadir</I>. Najaf 1972; Tehran, 1396/1976.</P>
+<P>Amir-Moezzi, M.A. <I>The Divine Guide in Early Shi&#8217;ism</I>, tr. David Streight. Albany, NY, 1994.</P>
+<P>Arjomand, Said Amir. &#8216;The Crisis of the Imamate and the Institution of Occultation in Twelver Shi&#8217;ism: A Sociohistorical Perspective&#8217; in Etan Kohlberg, ed., <I>Shi&#8217;ism, </I>pp. 109&#8211;133.</P>
+<P>Assaad, Sadik A. <I>The Reign of al-Hakim bi Amr Allah </I>(<I>386/996&#8211;411/1021</I>): <I>A Political Study</I>. Beirut, 1974.</P>
+<P>Ayoub, M.M. <I>The Qur&#8217;an and its Interpreters</I>. Albany, 1984.</P>
+<P>Bar-Asher, Meir M. <I>Scripture and Exegesis in Early Imami Shiism</I>. Leiden, 1999.</P>
+<P>Bianquis, Thierry. &#8216;Al H&#8217;akim bi Amr Allah ou la folie de l&#8217;unit&#233; chez un souverain Fat&#8217;imide&#8217;, <I>Les Africains</I>, 11 (1978), pp. 107&#8211;133.</P>
+<P>Bosworth, Clifford E. <I>The Ghaznavids: Their Empire in Afghanistan and Eastern Iran </I>994&#8211;1040. 2nd edition, Beirut, 1973.</P>
+<P>&#8212;&#8212; &#8216;Marwan b. al-Hakam&#8217;, <I>EI2</I>, vol. 6, pp. 621&#8211;623.</P>
+<P>Brett, Michael. &#8216;The Mim, the &#8216;Ayn, and the Making of Isma&#8217;ilism&#8217;, <I>Bulletin of the School of Oriental and African Studies</I>, 57 (1994), pp. 25&#8211;39.</P>
+<P>&#8212;&#8212; &#8216;The Realm of the Imam: The Fatimids in the Tenth Century&#8217;, <I>Bulletin of the School of Oriental and African Studies</I>, 59 (1996), pp. 431&#8211;449.</P>
+<P>Bruijn, J.T.P. de. &#8216;al-Kirmani&#8217;, in <I>EI2</I>, vol. 5, pp. 166&#8211;167.</P>
+<P>Bryer, David R.W. &#8216;The Origins of the Druze Religion&#8217;, <I>Der Islam</I>, 52 (1975), pp. 47&#8211;84, 239&#8211;262; 53 (1976), pp. 5&#8211;27.</P>
+<P>Bulliet, Richard W. <I>The Patricians of Nishapur: A Study in Medieval Islamic Social History</I>. Cambridge, MA, 1972.</P>
+<P>Canard, Marius. &#8216;Da&#8217;wa&#8217;, <I>EI2</I>, vol. 2, pp. 168&#8211;170.</P>
+<P>&#8212;&#8212; &#8216;Fatimids&#8217;, <I>EI2</I>, vol. 2, pp. 850&#8211;862. </P>
+<P>Corbin, Henry. &#8216;Divine Epiphany and Spiritual Birth in Ismailian Gnosis&#8217;, in <I>Man and Transformation: Papers from the Eranos Yearbooks</I>, vol. 5. Princeton, NJ, 1964, pp. 69&#8211;160; reprinted in Henry Corbin, <I>Cyclical Time and Ismaili Gnosis</I>, tr. Ralph Manheim and James W. Morris. London, 1983, pp. 59&#8211;150<I>.</I></P>
+<P><I></I></P>
+<P>&#8212;&#8212; <I>History of Islamic Philosophy</I>, tr. L Sherrard with Philip Sherrard&#8217;s assistance. London, 1993.</P>
+<P>Cortese, Delia. <I>Ismaili and Other Arabic Manuscripts: A Descriptive Catalogue of Manuscripts in the Library of The Institute of Ismaili Studies</I>. London, 2000.</P>
+<P>&#8212;&#8212; <I>Arabic Ismaili Manuscripts: The Zahid &#8216;Ali Collection in the Library of the Institute of Ismaili Studies</I>. London, 2003.</P>
+<P>Crone, Patricia. <I>Medieval Islamic Political Thought. </I>Edinburgh, 2004. </P>
+<P>Daftary, Farhad. <I>The Isma&#8217;ilis: Their History and Doctrines</I>. Cambridge, 1990; 2nd ed., Cambridge, 2007.</P>
+<P>&#8212;&#8212; <I>A Short History of the Ismailis: Traditions of a Muslim Community</I>. Edinburgh, 1998.</P>
+<P>&#8212;&#8212; <I>Ismaili Literature</I>. London, 2004.</P>
+<P>&#8212;&#8212; &#8216;The Earliest Isma&#8217;ilis&#8217;, <I>Arabica</I>, 38 (1991), pp. 214&#8211;245.</P>
+<P>&#8212;&#8212; &#8216;Diversity in Islam: Communities of Interpretation&#8217;, in Azim A. Nanji, ed., <I>The Muslim Almanac. </I>Detroit, 1996, pp. 161&#8211;173.</P>
+<P>&#8212;&#8212; ed., <I>Mediaeval Isma&#8217;ili History and Thought</I>. Cambridge, 1996.</P>
+<P>&#8212;&#8212; The Ismaili <I>Da&#8217;wa </I>outside the Fatimid <I>Dawla</I>&#8217;, in <I>L&#8217;&#201;gypte Fatimide, Son </I><I>art et son histoire</I>, ed. Marianne Barrucand. Paris, 1999, pp. 29&#8211;43.</P>
+<P>&#8212;&#8212; &#8216;Intellectual Life among the Ismailis: An Overview&#8217;, in F. Daftary, ed., <I>Intellectual Traditions in Islam</I>. London, 2000, pp. 87&#8211;111 .</P>
+<P>&#8212;&#8212; &#8216;The Medieval Ismailis of the Iranian Lands&#8217;, in Carole Hillenbrand, ed., <I>Studies in Honour of Clifford Edmund Bosworth</I>, Vol. II, <I>The Sultan&#8217;s Turret: Studies in Persian and Turkish Culture</I>. Leiden, 2000, pp. 43&#8211;81.</P>
+<P>Daiber, Hans. &#8216;Abu Hatim ar-Razi (10th century A.D.) on the Unity and Diversity of Religions&#8217; in J. Gort et al., ed., <I>Dialogue and Syncretism: An Interdisciplinary Approach</I>. Grand Rapids, MI, 1989, pp. 87&#8211;104.</P>
+<P>Sayyid, Ayman F. <I>al-Dawla al-Fatimiyya fi Misr: Tafsir jadid. </I>Cairo, 1413/1992; 2nd ed., Cairo, 2000.</P>
+<P>Fyzee, Asaf Ali Asghar. &#8216;A Collection of Fatimid Manuscripts&#8217;, in N.N. Gidwani, ed., <I>Comparative Librarianship: Essays in Honour of Professor D. N. Marshall</I>. Delhi, 1973, pp. 209&#8211;220.</P>
+<P>Gacek, Adam. <I>Catalogue of Arabic Manuscripts in the Library of The Institute of Ismaili Studies</I>. London, 1984&#8211;1985.</P>
+<P>Ghalib, Mustafa. <I>al-Imama wa qa&#8217;im al-qiyama</I>. Beirut, 1981.</P>
+<P>&#8212;&#8212; <I>Mafatih al-ma&#8217;rifa</I>. Beirut, 1402/1982.</P>
+<P>Goldstein, Bernard R. &#8216;A Treatise on Number Theory from a Tenth Century Arabic Source,&#8217; <I>Centaurus </I>10 (1964), pp. 135&#8211;160. Reprinted as &#8216;A Theory on Numbers&#8217;, in S.H. Nasr and M. Aminrazavi, eds., <I>An Anthology of Philosophy in Persia, Volume 2, Ismaili Thought in the Classical Age, From Jabir ibn Hayyan to Nasir al-Din Tusi</I>. London, 2008, pp. 235&#8211;256.</P>
+<P>Goriawala, Mu&#8217;izz. <I>A Descriptive Catalogue of the Fyzee Collection of Ismaili Manuscripts</I>. Bombay, 1965.</P>
+<P>Haji, Hamid. <I>A Distinguished Da&#8217;i under the Shade of the Fatimids: Hamid al-Din al-Kirmani </I>(d. c. 411 /1020) <I>and his Epistles</I>. London, 1419/1998.</P>
+<P>Hajjar, Sami G. and Brzezinski, Steven J. &#8216;The Nizari Ismaili Imam and Plato&#8217;s Philosopher King&#8217;, <I>Islamic Studies</I>, 16 (1977), pp. 303&#8211;316.</P>
+<P>Halm, Heinz. <I>Kosmologie und Heilslehre der fr&#252;hen Isma&#8217;iliya: Eine Studie zur islamischen Gnosis</I>. Wiesbaden, 1978.</P>
+<P>&#8212;&#8212; <I>Das Reich des Mahdi Der Aufstieg der Fatimiden, </I>Munich, 1991; English trans. M. Bonner, <I>The Empire of the Mahdi: The Rise of the Fatimids</I>. Leiden, 1996.</P>
+<P>&#8212;&#8212; <I>The Fatimids and their Traditions of Learning</I>. London, 1997.</P>
+<P>&#8212;&#8212; &#8216;Der Treuh&#228;nder Gottes: Die Edikte des Kalifen al-Hakim&#8217;, <I>Der Islam</I>, 63 (1986), pp. 11 &#8211;72.</P>
+<P>&#8212;&#8212; &#8216;The Cosmology of the Pre-Fatimid Isma&#8217;iliyya&#8217;, in F. Daftary, ed., <I>Mediaeval Isma&#8217;ili History and Thought</I>. Cambridge, 1996, pp. 75&#8211;83.</P>
+<P>&#8212;&#8212; &#8216;The Isma&#8217;ili Oath of Allegiance (<I>&#8216;ahd</I>) and the &#8216;Sessions of Wisdom&#8217; (<I>majalis al-hikma</I>) in Fatimid Times&#8217;, in F. Daftary, ed., <I>Mediaeval Isma&#8217;ili History and Thought</I>. Cambridge, 1996, pp. 91&#8211;11 5.</P>
+<P>&#8212;&#8212; &#8216;Abu Hatem Razi&#8217;, <I>Encyclopaedia Iranica, </I>vol. 1, p. 315. </P>
+<P>Hamdani, Abbas. &#8216;The Da&#8217;i Hatim Ibn Ibrahim al-Hamidi (d. 596/11 99) and his Book <I>Tuhfat al-Qulub</I>&#8217;, <I>Oriens</I>, 23&#8211;24 (1970&#8211;71), pp. 258&#8211;300.</P>
+<P>&#8212;&#8212; &#8216;Evolution of the Organisational Structure of the Fatimi Da&#8217;wah: The Yemani and Persian Contribution&#8217;, <I>Arabian Studies</I>, 3 (1976), pp. 85&#8211;11 4.</P>
+<P>&#8212;&#8212; &#8216;Shades of Shi&#8217;ism in the Tracts of the Brethren of Purity&#8217;, in Peter Slater and Donald Wiebe, eds., <I>Traditions in Contact and Change</I>. Waterloo, ON, 1983, pp. 447&#8211;460, 726&#8211;728.</P>
+<P>&#8212;&#8212; &#8216;Fatimid History and Historians&#8217;, in M.J.L. Young et al., ed., <I>Religion, Learning and Science in the &#8216;Abbasid Period</I>. Cambridge, 1990, pp. 234&#8211;247, 535&#8211;536.</P>
+<P>&#8212;&#8212; &#8216;A Critique of Paul Casanova&#8217;s Dating of the <I>Rasa&#8217;il Ikhwan al-Safa&#8217;</I>&#8217; in F. Daftary, ed. <I>Mediaeval Isma&#8217;ili History and Thought</I>. Cambridge, 1996, pp. 145&#8211;152.</P>
+<P>Hasan, Hasan Ibrahim and Taha Ahmad Sharaf. <I>al-Mu&#8217;izz li-Din Allah al- Fatimi. </I>Cairo, 1948; 2nd ed., Cairo, 1963.</P>
+<P>Hodgson, Marshall G.S. &#8216;al-Darazi and Hamza in the Origin of the Druze Religion&#8217;, <I>Journal of the American Oriental Society</I>, 82 (1962), pp. 5&#8211;20.</P>
+<P>&#8212;&#8212; &#8216;Hudjdja: In Shi&#8217;i Terminology&#8217;, <I>EI2</I>, vol. 3, pp. 544&#8211;545.</P>
+<P>Husayn, Muhammad Kamil. <I>Ta&#8217;ifat al-Duruz</I>. Cairo, 1962.</P>
+<P>&#8216;Inan, Muhammad &#8216;Abd Allah. <I>al-Hakim bi-Amr Allah wa-asrar al-da&#8217;wa al-Fatimiyya</I>. 2nd ed., Cairo, 1959.</P>
+<P>Ivanow, Wladimir. <I>Ismaili Tradition Concerning the Rise of the Fatimids</I>. London, etc., 1942.</P>
+<P>&#8212;&#8212; <I>The Alleged Founder of Ismailism</I>. Bombay, 1946.</P>
+<P>&#8212;&#8212; &#8216;The Organization of the Fatimid Propaganda&#8217;, <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>, NS, 15 (1939), pp. 1&#8211;35.</P>
+<P>&#8212;&#8212; &#8216;Ismailis and Qarmatians&#8217;, <I>Journal of the Bombay Branch of the Royal Asiatic Society</I>, NS, 16 (1940), pp. 43&#8211;85.</P>
+<P>Jiwa, Shainool. &#8216;Fatimid-Buyid Diplomacy during the Reign of al-&#8217;Aziz Billah (365/975&#8211;386/996)&#8217;, <I>Journal of Islamic Studies</I>, 3 (1992), pp. 57&#8211;71.</P>
+<P>Kikuchi, Tatsuya. &#8216;Hamid al-Din al-Kirmani&#8217;s Theory of Intellect&#8217;, <I>Bulletin of the Society for Near Eastern Studies in Japan</I>, 38 (1995), pp. 45&#8211;60.</P>
+<P>Klemm, Verena. <I>Die Mission des fatimidischen Agenten al-Mu&#8217;ayyad fi d-din in &#352;iraz</I>. Frankfurt, 1989.</P>
+<P>&#8212;&#8212; <I>Memoirs of a Mission: The Ismaili Scholar, Statesman and Poet al- Mu&#8217;ayyad fi&#8217;l-Din al-Shirazi</I>. London, 2003.</P>
+<P>Knapp, Bettina L. &#8216;The Kaliph Hakim and History as a Cyclical Happening&#8217;, <I>Nineteenth-Century French Studies</I>, 5 (1976&#8211;77), pp. 79&#8211;93.</P>
+<P>Le Strange, Guy. <I>The Lands of the Eastern Caliphate</I>. London, 1966.</P>
+<P>Lev, Yaacov. &#8216;The Fatimid Imposition of Isma&#8217;ilism on Egypt (358&#8211;386/969&#8211;996)&#8217;, <I>Zeitschrift der Deutschen Morgenl&#228;ndischen Gessellschaft</I>, 138 (1988), pp. 313&#8211;325.</P>
+<P>Lalani, Arzina R., <I>Early Shi&#8217;i Thought: The Teachings of Imam Muhammad al-Baqir. </I>London, 2000. Persian tr. F. Badrei, Tehran, 2002. Arabic tr. S. Kassir. London, 2003.</P>
+<P>&#8212;&#8212; &#8216;Ja&#8217;far al-Sadiq,&#8217; in <I>Encyclopaedia of Religion</I>, ed. Lindsay Jones, 2<SUP>nd</SUP> edition, Detroit, 2005, vol. 7, pp. 4760&#8211;4762.</P>
+<P>&#8212;&#8212; &#8216;&#8216;Ali ibn Abi Talib&#8217;, pp. 28&#8211;32; &#8216;Imam-imama&#8217;, pp. 289&#8211;294; &#8216;Shi&#8217;a&#8217;, pp. 586&#8211;592; &#8216;Nass&#8217;, pp. 448&#8211;451; &#8216;Wali-walaya-wilaya&#8217;, pp. 682&#8211;686, in <I>The Qur&#8217;an: an Encyclopaedia</I>, ed. Oliver Leaman, London and New York, 2006.</P>
+<P>&#8212;&#8212; &#8216;Ahmad b. Ibrahim al-Naysaburi&#8217;, in <I>Biographical Dictionary of Islamic Philosophy, </I>ed. Oliver Leaman, London and New York, 2006. vol. 2, pp. 158&#8211;160.</P>
+<P>Madelung, Wilferd. <I>Der Imam al-Qasim ibn Ibrahim und die Glaubenslehre der Zaiditen</I>. Berlin, 1965.</P>
+<P>&#8212;&#8212; &#8216;Das Imamat in der fr&#252;hen ismailitischen Lehre<I>&#8217;, Der Islam</I>, 37 (1961), pp. 43&#8211;135.</P>
+<P>&#8212;&#8212; &#8216;Aspects of Isma&#8217;ili Theology: The Prophetic Chain and the God Beyond Being&#8217;, in S.H. Nasr, ed., <I>Isma&#8217;ili Contributions to Islamic Culture</I>. Tehran, 1398/1977, pp. 53&#8211;65.</P>
+<P>&#8212;&#8212; &#8216;The Shiite and Kharijite Contribution to Pre-Ash&#8217;arite <I>Kalam</I>&#8217;, in Parviz Morewedge. ed., <I>Islamic Philosophical Theology, </I>Albany, NY, 1979, pp. 120&#8211;139.</P>
+<P>&#8212;&#8212; &#8216;Imamism and Mu&#8217;tazilite Theology&#8217;, in his <I>Religious Schools and Sects in Medieval Islam</I>. London, 1985.</P>
+<P>&#8212;&#8212; &#8216;The Fatimids and the Qarmatis of Bahrayn&#8217;, in Farhad Daftary, ed., <I>Mediaeval Isma&#8217;ili History and Thought. </I>London, 1996, pp. 21&#8211;73.</P>
+<P>&#8212;&#8212; <I>The Succession to Muhammad: A Study of the Early Caliphate. </I>Cambridge, 1997.</P>
+<P>&#8212;&#8212; &#8216;A Treatise on the Imamate of the Fatimid Caliph al-Mansur Bi-Allah&#8217;, in Chase Robinson, ed., <I>Texts, Documents and Artefacts: Islamic Studies in Honour of D.S. Richards. </I>Leiden and Boston, 2003, pp. 69&#8211;77.</P>
+<P>&#8212;&#8212; &#8216;Cosmogony and Cosmology: vi. in Isma&#8217;ilism&#8217;, <I>Encyclopaedia Iranica</I>, vol. 6, pp. 322&#8211;326.</P>
+<P>&#8212;&#8212; &#8216;Imama&#8217;, in <I>EI2</I>, vol. 3, pp. 11 63&#8211;11 69.</P>
+<P>&#8212;&#8212; &#8216;Isma&#8217;iliyya&#8217;, in <I>EI2</I>, vol. 4, pp. 198&#8211;206.</P>
+<P>&#8212;&#8212; &#8216;Madjlis: In Isma&#8217;ili Usage&#8217;, in <I>EI2</I>, vol. 5, p. 1033.</P>
+<P>&#8212;&#8212; &#8216;Shi&#8217;a&#8217;, in <I>EI2</I>, vol. 9, pp. 420&#8211;424.</P>
+<P>Majid, &#8216;Abd al-Mun&#8217;im. <I>al-Hakim bi-Amr Allah al-khalifa al-muftara &#8216;alayh. </I>Cairo, 1959.</P>
+<P>Makarem, Sami Nasib. <I>The Doctrine of the Ismailis</I>. Beirut, 1972.</P>
+<P>&#8212;&#8212; <I>The Druze Faith</I>. Delmar, NY, 1974.</P>
+<P>&#8212;&#8212; &#8216;The Philosophical Significance of the Imam in Isma&#8217;ilism&#8217;, <I>Studia Islamica</I>, 27 (1967), pp. 41&#8211;53.</P>
+<P>&#8212;&#8212; &#8216;The Hidden Imams of the Isma&#8217;ilis&#8217;, <I>Al-Abhath</I>, 22 (1969), pp. 23&#8211;37.</P>
+<P>&#8212;&#8212; &#8216;Al-Hakim bi-Amrillah&#8217;s Appointment of his Successors&#8217;, <I>Al-Abhath</I>, 23 (1970), pp. 319&#8211;324.</P>
+<P>&#8212;&#8212; &#8216;Isma&#8217;ili and Druze Cosmogony in Relation to Plotinus and Aristotle&#8217; in Michael E. Marmura, ed., <I>Islamic Theology and Philosophy: Studies in Honor of George F. Hourani</I>. Albany, NY, 1984, pp. 81&#8211;91. Mattock, J.N. &#8216;Makulat&#8217;, in <I>EI2</I>, vol. 6, pp. 203&#8211;205.</P>
+<P>Momen, Moojan. <I>An Introduction to Shi&#8217;i Islam. </I>New Haven, 1985.</P>
+<P>Nanji, Azim. &#8216;Transcendence and Distinction: Metaphoric Process in Isma&#8217;ili Muslim Thought&#8217;, in D. B. Burrell and B. McGinn, ed., <I>God and Creation: An Ecumenical Symposium</I>. Notre Dame, IN, 1990, pp. 304&#8211;315.</P>
+<P>&#8212;&#8212; &#8216;Isma&#8217;ili Philosophy&#8217;, in S.H. Nasr and O. Leaman, ed., <I>History of Islamic Philosophy</I>. London, 1996, vol. 1, pp. 144&#8211;154.</P>
+<P>&#8212;&#8212; &#8216;Portraits of Self and Others: Isma&#8217;ili Perspectives on the History of Religions&#8217;, in F. Daftary ed., <I>Mediaeval Isma&#8217;ili History and Thought</I>. Cambridge, 1996, pp. 153&#8211;160.</P>
+<P>Nasr, S. Hossein, ed. <I>Isma&#8217;ili Contributions to Islamic Culture</I>. Tehran, 1398/1977.</P>
+<P>Nasr, S. Hossein and M. Aminrazavi, ed. <I>An Anthology of Philosophy in Persia, Volume 2: Ismaili Thought in the Classical Age, From Jabir ibn Hayyan to Nasir al-Din Tusi</I>. London, 2008.</P>
+<P>Nomoto, Shin. &#8216;Early Isma&#8217;ili Thought on Prophecy according to <I>Kitab al-Islah </I>by Abu Hatim al-Razi (d. ca. 322/934&#8211;5)&#8217;, PhD dissertation, McGill University, 1999.</P>
+<P>&#8212;&#8212; &#8216;An Isma&#8217;ili Thinker on the Prophets in the Cosmic Correspondence: Translation of the <I>Kitab al-Islah </I>by Abu Hatim al-Razi I&#8217;, <I>Reports of the Keio Institute of Cultural and Linguistic Studies</I>, 34 (2002), pp. 97&#8211;152.</P>
+<P>Peterson, Daniel C. &#8216;Hamid al-Din al-Kirmani on Creation&#8217;, in Ahmad Hasnawi et al., eds., <I>Perspectives Arabes et m&#233;di&#233;vales sur la tradition scientifique et philosophique Grecque</I>. Louvain and Paris, 1997, pp. 555&#8211;567.</P>
+<P>Poonawala, Ismail K. <I>Biobibliography of Isma&#8217;ili Literature</I>. Malibu, CA, 1977.</P>
+<P>&#8212;&#8212; &#8216;Al-Sijistani and his <I>Kitab al-Maqalid</I>&#8217;, in Donald P. Little, ed., <I>Essays on Islamic Civilization Presented to Niyazi Berkes</I>. Leiden, 1976, pp. 274&#8211;283.</P>
+<P>&#8212;&#8212; &#8216;Isma&#8217;ili <I>ta&#8217;wil </I>of the Qur&#8217;an&#8217;, in Andrew Rippin, ed. <I>Approaches to the History of the Interpretation of the Qur&#8217;an</I>. Oxford, 1988, pp. 199&#8211;222. </P>
+<P>al-Qadi, Wadad. &#8216;An Early Fatimid Political Document&#8217;, <I>Studia Islamica</I>, 48 (1978), pp. 71&#8211;108.</P>
+<P>Ritter, Carl F. &#8216;The Early Fatimid Mosque of al-Hakim, 990&#8211;1010&#8217;, <I>Oriental Art</I>, 27 (1981), pp. 303&#8211;315. </P>
+<P>Sanders, Paula. &#8216;The Fatimid State, 969&#8211;11 71&#8217;, in M.W. Daly, ed., <I>The Cambridge History of Egypt</I>: vol. 1, <I>Islamic Egypt</I>, 640&#8211;1517, ed. Carl F. Petry. Cambridge, 1998, pp. 151&#8211;174, 560&#8211;561.</P>
+<P>&#8212;&#8212; &#8216;Fatimids&#8217;, in <I>Dictionary of the Middle Ages</I>. New York, 1985, vol. 5, pp. 24&#8211;30.</P>
+<P>al-Shayyal, Jamal al-Din. &#8216;The Fatimid Documents as a Source for the History of the Fatimids and their Institutions&#8217;, <I>Bulletin of the Faculty of Arts, Alexandria University, </I>8 (1954), pp. 3&#8211;12.</P>
+<P>Siorvanes L., <I>Proclus: Neoplatonic Philosophy and Science</I>. New Haven and London, 1996.</P>
+<P>Smoor, Pieter. &#8216;Fatimids&#8217;, in <I>Encyclopaedia of Arabic Literature</I>, ed. J.S. Meisami and P. Starkey. London, 1968, vol. 1, pp. 224&#8211;226.</P>
+<P>Sourdel, Dominique. &#8216;Dar al-Hikma&#8217;, in <I>EI2</I>, vol. 2, pp. 126&#8211;127. </P>
+<P>Stern, Samuel M. <I>Fatimid Decrees: Original Documents from the Fatimid Chancery</I>. London, 1964.</P>
+<P>&#8212;&#8212; <I>Studies in Early Isma&#8217;ilism</I>. Leiden and Jerusalem, 1983.</P>
+<P>&#8212;&#8212; &#8216;Heterodox Isma&#8217;ilism at the Time of al-Mu&#8217;izz&#8217;, <I>Bulletin of the School of Oriental and African Studies</I>, 17 (1955), pp. 10&#8211;33. Reprinted in Stern, <I>Studies in Early Isma&#8217;ilism</I>, pp. 257&#8211;288.</P>
+<P>&#8212;&#8212; &#8216;Abu&#8217;l-Qasim al-Busti and his Refutation of Isma&#8217;ilism&#8217;, <I>Journal of the Royal Asiatic Society </I>(1961), pp. 14&#8211;35. Reprinted in Stern, <I>Studies in Early Isma&#8217;ilism</I>, pp. 299&#8211;320.</P>
+<P>&#8212;&#8212; &#8216;Cairo as the Centre of the Isma&#8217;ili Movement&#8217;, in <I>Colloque international </I><I>sur l&#8217;histoire du Caire</I>. Cairo, 1972, pp. 437&#8211;450. Reprinted in Stern, <I>Studies in Early Isma&#8217;ilism</I>, pp. 234&#8211;256.</P>
+<P>&#8212;&#8212; &#8216;The Earliest Cosmological Doctrines of Isma&#8217;ilism&#8217;, in Stern, <I>Studies in Early Isma&#8217;ilism</I>, pp. 3&#8211;29.</P>
+<P>Surur, Muhammad Jamal al-Din. <I>al-Dawla al-Fatimiyya fi Misr</I>. Cairo, 1965&#8211;1966.</P>
+<P>Tamir, &#8216;Arif. <I>al-Hakim bi-Amr Allah, khalifa wa imam wa muslih</I>. Beirut, 1402/1982.</P>
+<P>&#8212;&#8212; <I>al-Imama fi&#8217;l-Islam</I>. Beirut, n.d. [1964]; 2nd ed., Beirut, 1419/1998.</P>
+<P>Tritton, Arthur S. &#8216;Theology and Philosophy of the Isma&#8217;ilis&#8217;, <I>Journal of the Royal Asiatic Society </I>(1958), pp. 178&#8211;188.</P>
+<P>Vadet, J.C. &#8216;Ibn Mas&#8217;ud&#8217;, <I>EI2</I>, vol. 3, pp. 873&#8211;875.</P>
+<P>van Ess, Josef. <I>Chiliastische Erwartungen und die Versuchung der G&#246;ttlichkeit. Der Khalif al-Hakim (386&#8211;411</I>). Heidelberg, 1977.</P>
+<P>Vatikiotis, Panayiotis J. &#8216;Al-Hakim bi-Amrillah: The God-King Idea Realised&#8217;, <I>Islamic Culture</I>, 29 (1955), pp. 1&#8211;8. </P>
+<P>Walker, Paul E. <I>Early Philosophical Shiism: The Ismaili Neoplatonism of Abu Ya&#8217;qub al-Sijistani</I>. Cambridge, 1993.</P>
+<P>&#8212;&#8212; <I>Hamid al-Din al-Kirmani: Ismaili Thought in the Age of al-Hakim</I>. London, 1999.</P>
+<P>&#8212;&#8212; <I>Exploring an Islamic Empire: Fatimid History and its Sources. </I>London, 2002.</P>
+<P>&#8212;&#8212; &#8216;An Isma&#8217;ili Answer to the Problem of Worshiping the Unknowable, Neoplatonic God&#8217;, </P>
+<P><I>American Journal of Arabic Studies</I>, 2 (1974), pp. 7&#8211;21.</P>
+<P>&#8212;&#8212; &#8216;The Ismaili <I>Da&#8217;wa </I>in the Reign of the Fatimid Caliph al-Hakim&#8217;, <I>Journal of the American Research Center in Egypt</I>, 30 (1993), pp. 161&#8211;182.</P>
+<P>&#8212;&#8212; &#8216;The Isma&#8217;ili Da&#8217;wa and the Fatimid Caliphate&#8217;, in M.W. Daly, ed., <I>The Cambridge History of Egypt</I>: Volume 1, <I>Islamic Egypt</I>, <I>640&#8211;1517</I>, ed. Carl F. Petry. Cambridge, 1998, pp. 120&#8211;150, 557&#8211;560.</P>
+<P>Watt, W. Montgomery. <I>The Formative Period of Islamic Thought</I>. Edinburgh, 1973.</P>
+<P>Wensinck, A.J. <I>Concordance et indices de la tradition musulmane</I>. Leiden, 1936&#8211;1969.</P>
+<P>&#8212;&#8212; <I>A Handbook of Early Muhammadan Tradition</I>. Leiden, 1971. </P>
+<P>Wilkinson, John Craven. <I>The Imamate Tradition of Oman</I>. Cambridge, 1987.</P>
+<P>Zimmermann, Fritz. &#8216;The Origins of the So-called <I>Theology of Aristotle&#8217;</I>, in <I>Pseudo-Aristotle in the </I></P>
+<P><I>Middle Ages: The Theology and Other Texts</I>, ed. J. Kraye, W.F. Ryan and C.B. Schmitt. London, 1986. pp. 11 0&#8211;240.</P></div><p>Content Date: May 2010</p></td></tr></tbody></table><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - Degrees of Excellence: A Fatimid Treatise on Leadership in Islam</TITLE><META HTTP-EQUIV="Expires" CONTENT="Wed, 12 Jul 2023 12:04:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 12/07/2013&nbsp;12:07&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=111203 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 23:47:56 GMT -->
+</HTML>

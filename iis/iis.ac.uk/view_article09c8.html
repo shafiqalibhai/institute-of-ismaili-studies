@@ -1,0 +1,623 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113312 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:28 GMT -->
+<HEAD>
+
+<META name="keywords" content="aga khan, his highness the aga khan, hazar imam, mowla bapa, hazar-e imam, hazar-e-imam, shah karim, community, ismaili, ismailis, imam, islam, shia, imam, imamat, imamate, aga khan iv, news related to his highness the aga khan, news, events, activities, 2000, 2001, 2002">
+<META name="description" content="The Institute of Ismaili Studies">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<META name="generator" content="the institute of ismaili studies">
+<meta name="robots" content="noindex"></meta>
+
+<link href="css/iis.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<style type="text/css">
+	@import url(css/iis-ie.css);
+</style>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+	@import url(css/iis-ie6.css);
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+a:hover
+{
+	border-bottom: inherit !important;
+}
+</style>
+
+<![endif]-->
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<LINK rel="stylesheet" type="text/css" href="css/size2ltr.css" title="size_2">
+<LINK rel="stylesheet" type="text/css" href="css/size1ltr.css" title="size_1" disabled>
+<LINK rel="stylesheet" type="text/css" href="css/size3ltr.css" title="size_3" disabled>
+<link href="rss.xml" type="application/rss+xml" rel="alternate" title="IIS RSS Feed" />
+
+<link href="css/bluetabs.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" src="include/main_menu.js"></script>
+
+<SCRIPT language="javascript" src="js/general.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/windows.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/set_defaults.js"></SCRIPT>
+<SCRIPT language="javascript" src="js/ismaili_studies.js"></SCRIPT>
+
+<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8219856-1']);
+  _gaq.push(['_setDomainName', 'iis.ac.uk']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function()
+	{
+		// reset all old links to use the class system that prettyPhoto hooks into
+		var r, a;
+
+		$("a[onclick*='LaunchPreviewFull']").fixLinks();
+		$("a[onclick*='fnViewContentImage']").fixLinks2();
+		$("a[onclick*='ViewContentImage.asp']").fixLinks3();
+		$("a[onclick*='return PopupLink']").fixLinks4();
+
+
+		//ViewContentImage.asp?path=WebAssets/Large/Gallery/kirman1.jpg&caption=The%20scribe%20has%20used%20different%20inks%20to%20delineate%20the%20headings%20and%20text.%20The%20title%20is%20written%20in%20red%2C%20with%20the%20subsection%20title%20in%20green%2C%20followed%20by%20the%20text%20in%20black.%20
+
+
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+	(function($)
+	{
+		$.fn.fixLinks = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /LaunchPreviewFull\(["'](.*)['"]\)/;
+				m = r.exec(s);
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks2 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				s = String($(this).attr('onclick'));
+				r = /fnViewContentImage\(["'](.*)['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+	})(jQuery);
+
+	(function($)
+	{
+		$.fn.fixLinks3 = function()
+		{
+			$(this).each(function()
+			{
+				var r, m, s;
+				//
+				s = String($(this).attr('onclick'));
+				r = /window.open\(["']ViewContentImage\.asp\?path=(.*)&caption=.*['"]\)/;
+				m = r.exec(s)
+				$(this).removeAttr('onclick');
+				$(this).removeAttr('title');
+				$(this).attr('href', m[1]);
+				$(this).attr('rel', 'prettyPhoto');
+				$(this).attr('title', $(this).children('img').attr('alt'));
+				$(this).children('img').attr('alt', '');
+			});
+		};
+		})(jQuery);
+
+		(function($) {
+			$.fn.fixLinks4 = function() {
+				$(this).each(function() {
+					var r, m, s;
+					s = String($(this).attr('href'));
+					r = /ViewContentImage\.asp\?path=(.*)&caption=(.*)/;
+					m = r.exec(s);
+					$(this).removeAttr('onclick');
+					$(this).attr('href', m[1]);
+					$(this).attr('rel', 'prettyPhoto');
+					$(this).attr('title', unescape(m[2]));
+					$(this).children('img').attr('alt', '');
+				});
+			};
+		})(jQuery);
+
+</script>
+
+<script src="js/jtip.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+//.load("elements", "1", {packages: "transliteration"});
+</script>
+<script type="text/javascript" src="http://www.google.com/coop/cse/t13n?form=cse-search-box&amp;t13n_langs=en"></script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+
+
+
+
+
+<SCRIPT type="text/javascript">
+<!--
+// store details about the content to allow direct access in JS
+
+var _lngContentID = 113312;
+//-->
+</SCRIPT>
+
+</HEAD>
+<BODY onload="" dir="ltr" class="ltr en">
+	
+	<div id="top">	
+		<span id="iisTitle" class="left" style="display:inline">
+		<a title="The Institute of Ismaili Studies" href="home.html">The Institute of Ismaili Studies</a>
+		</span>
+				
+<form class="right" action="http://iis.ac.uk/searchResults.asp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="005462578309701098770:_qygld4lghm" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" class="top_search" id="textfield" value="Search The IIS Website" onFocus="checkTextInput('textfield')" onBlur="checkTextInput('textfield')" />
+	<input type="image" class="go_button" alt="" src="images/go.gif" onClick="return ($('#textfield').attr('value') != '')"/>
+  </div>
+</form>
+
+	</div><a style="font-size: 0; line-height: 0"name="top"></a>
+
+	
+	
+	
+	
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        $("a > img").parent().addClass("nounderline");
+		$("a[href*=http]").bind('click', function() {
+			if ($(this).attr('href').indexOf(window.location.host) == -1) {
+				this.target = "_blank";
+				return true;
+//				return confirm('Warning: The selected link will take you out of the IIS site.\r\n\r\nDo you wish to continue?');
+			}
+		});
+    });
+	function mailpage(){
+		location.href= "mailto:?subject=" + document.title + "&body=" + document.title + " - " + location.href;
+	}
+	$(document).ready(function() {
+		var catID = "34";
+		if (catID === "") {
+			catID = 0;
+		}
+		var set = false;
+		$('#bluemenu ul li a[class~=' + catID + ']').each(function (i, item) {
+				$(item).addClass('selected');
+				set = true;
+		});
+		if (set == false) {
+			$('.0').addClass('selected');
+		}
+		
+		var element = $('#bluemenu ul li a[class~=selected]');
+				
+		if (element.text() != '' && element.attr('href').indexOf('home.html') == -1) {		
+			$('#breadcrumb .left').append(' / <a href="' + element.attr('href') + '">' + element.text() + '</a>');
+		}
+		
+		var found = false;
+		var current = null;
+		$('#left_menu p').each(function () {
+			if ($(this).css('margin-left') == '20px') {
+				current = $(this);
+				found = true;
+			}
+			if (!found) {
+				current = $(this).children('a');
+			}
+		});
+		
+		if (found) {		
+			$('#breadcrumb .left').append(' / <a href="' + current.attr('href') + '">' + current.text() + '</a>');
+			}
+		
+		if (document.title.indexOf('-') != -1) {
+			var length = document.title.indexOf("-");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		} else if (document.title.indexOf(':') != -1) {
+			var length = document.title.indexOf(":");
+			if (length > 1) {
+				$('#breadcrumb .left').append(' / ' + document.title.substring(length + 2));
+			}
+		}
+	});
+</script>
+	
+	<div id="logotype">
+		<div id="logoHeader">
+		<img height="56" width="59" class="iis_logo" alt="" src="images/iis_logo.gif"/><br/>
+		<img height="21" width="297" class="iis_brand" alt="The Institute of Ismaili Studies" src="images/the_institute_of_ismaili_studies.gif"/>
+		</div>			
+
+		<!--***** Christopher Smith 14/10/2010 *****-->		
+					
+			<img title="An illuminated folio from the 19th century North African manuscript of al-Jazuli’s Dala’il al-khayrat" height="115" width="778" class="banner" alt="The Institute of Ismaili Studies" src="SiteAssets/header/Research%20and%20Publications.jpg"/>
+					
+		<!--<font size="4">## include\Code Lib\FrontendRoutines.asp <br />CatID =  </font>-->			
+		<!--***** Christopher Smith 14/10/2010 *****-->
+		
+	</div>
+	
+	<div id="top_navigation">
+
+		
+
+
+
+    <div id="top_nav">
+<div class="bluetabs" id="bluemenu">
+
+<ul class="en_list">
+
+<li class="en">
+	<a class="0" title="Home" rel="dropmenu0_b" href="homed8cc.html?l=en">Home</a>
+	<div class="dropmenudiv_b" id="Div1">
+	<div><A href="view_articled4ad.html?type=cont.currentlang&amp;id=104413&amp;l=en">IIS Overview</A></div><div><A href="view_articlec06c.html?type=cont.currentlang&amp;id=103471&amp;l=en">His Highness the <br/>Aga Khan</A></div><div><A href="view_article8b52.html?type=cont.currentlang&amp;id=104448&amp;l=en">The Ismaili Community</A></div><div><A href="view_article0bcf.html?type=cont.currentlang&amp;id=104373&amp;l=en">The Aga Khan Development Network</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="15 2 34" title="Research & Publications" rel="dropmenu1_b" href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a>
+	<div class="dropmenudiv_b" id="dropmenu1_b">
+	<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="3" title="Graduate Studies" rel="dropmenu2_b" href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a>
+	<div class="dropmenudiv_b" id="dropmenu2_b">
+	<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="22" title="Learning" rel="dropmenu3_b" href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a>
+	<div class="dropmenudiv_b" id="dropmenu3_b">
+	<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="5" title="Library" rel="dropmenu4_b" href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a>
+	<div class="dropmenudiv_b" id="dropmenu4_b">
+	<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+<li class="en">
+	<a class="7 20" title="News & Events" rel="dropmenu5_b" href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a>
+	<div class="dropmenudiv_b" id="dropmenu5_b">
+	<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A></div><div class="extra-line"><br></div>
+	</div>
+</li>
+
+
+
+</ul>
+</div>
+
+
+</div>
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+	$(document).ready(function() { 
+	$('#logoHeader img').click(function () { 
+      location.href = "index.html";
+    }).css("cursor", "pointer");
+	var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+	var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+	var ie7 = (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.indexOf("MSIE 7.0") != -1);
+	var rtl = "ltr" == "rtl";
+	if (jQuery.browser.msie && ((ie55) && rtl))
+	{
+		return;
+	}
+	MainMenu.init({ root: "bluemenu" });
+	//tabdropdown.init("bluemenu");
+
+});
+</script>
+    <!-- InstanceEndEditable -->
+
+
+	</div>
+	<div id="breadcrumb">
+        <span class="crumb">
+        <!--#START-FullTextOnly--><p><A href="text_only7634.html?s=%2Fview%5Farticle%2Easp%3FContentID%3D113312">Text Only</A></p><!--#END-FullTextOnly-->
+        </span>
+        <!--<span class="right">-->
+<ul class="language_change"></ul>
+        <!--<a href="#" title="Français">Fran&ccedil;ais</a>&nbsp;|&nbsp;<a href="#" title="????????">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1617;&#1577;</a>&nbsp;|&nbsp;<a href="#" title="?????">&#1601;&#1575;&#1585;&#1587;&#1740; </a>|&nbsp;<a href="#" title="Pycckuú">Pyccku&uacute;</a>-->
+        <!--</span>-->
+    </div>
+	<div id="wrapper">
+		<div id="centre">
+			
+			<div id="left_menu">
+			<p><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A></p><p><A href="view_article548d.html?type=cont.currentlang&amp;id=110958&amp;l=en">Qur'anic Studies</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_articleddf9.html?type=cont.currentlang&amp;id=110963&amp;l=en" >Objectives</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article9cda.html?type=cont.currentlang&amp;id=110968&amp;l=en" >Staff and Research</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article2212.html?type=cont.currentlang&amp;id=110973&amp;l=en" >Publications</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article63e3.html?type=cont.currentlang&amp;id=111028&amp;l=en" >Seminars and Conferences</A></p><p style="margin-left: 20px;margin-right: 20px"><A href="view_article4f22.html?type=cont.currentlang&amp;id=110978&amp;l=en" >Related Material</A></p><p><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A></p><p><A href="view_articleb8b7.html?type=cont.currentlang&amp;id=104878&amp;l=en">Academic Articles</A></p><p><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A></p><p><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A></p><p><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A></p><p><A href="view_article628f.html?type=cont.currentlang&amp;id=104298&amp;l=en">Seminars &amp; Public Lectures</A></p><p><A href="view_article8619.html?type=cont.currentlang&amp;id=104483&amp;l=en">Scholarship Programmes</A></p><p><A href="view_article356a.html?type=cont.currentlang&amp;id=104398&amp;l=en">Visiting Fellowship Programme</A></p><p><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A></p><!--#START-FullTextOnly--><p class="top_padding"><SPAN style="font-size: 12px"><A href="javascript:void(0)" onclick="changeSheets(1)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 16px"><A href="javascript:void(0)" onclick="changeSheets(2)">A</A>&nbsp;&nbsp;</SPAN><SPAN style="font-size: 20px"><A href="javascript:void(0)" onclick="changeSheets(3)">A</A>&nbsp;&nbsp;</SPAN></p><!--#END-FullTextOnly-->
+	<script>
+	
+	//Check whether a selected stylesheet has been set in a cookie
+	var ca = document.cookie.split(';');
+	var cssName = 'stylesheet';
+	var intSs = 0;
+	for(var i=0; i < ca.length; i++)
+	{
+		var c = ca[i];
+		while (c.charAt(0)==' ') 
+			c = c.substring(1,c.length);		
+		
+		if (c.indexOf(cssName) == 0) 
+			intSs = c.substring(cssName.length + 1,c.length);
+	}
+	
+	if (intSs != 0 && !isNaN(intSs))
+		changeSheets(intSs);
+	
+	</script>
+	<p><img alt="RSS" class="rss" src="images/rss.gif"/>&nbsp;&nbsp;<a title="Rss" target="_blank" href="rss.xml">RSS</a></p>
+	<p><a title="Email this page" href="javascript:mailpage()"><img border="0" alt="Email this page" src="images/email.gif"/></a>  <a title="Email this page" href="javascript:mailpage()">Email this page</a></p>	
+
+<p><a title="Print this Page" href="javascript:window.print();"><img border="0" alt="Print this Page" src="images/print.gif"/></a>  <a title="Print this Page" href="javascript:window.print();">Print this Page</a></p>
+
+<p><a title="Instant Search Plug-in" href="view_articled5e0.html?ContentID=110810">Instant Search Plug-in</a></p>
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+addthis_pub = 'iis.ac.uk';
+addthis_brand = 'IIS';
+addthis_options = 'favorites, digg, delicious, linkedin, facebook, google, twitter, more'; 
+</script><!--
+<p>
+<a onclick="return addthis_sendto()" onmouseout="addthis_close()" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ae0b3ec6647ffb5">Bookmark and Share</a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ae0b3ec6647ffb5"></script>
+</p>-->
+<!-- AddThis Button END -->
+			</div>
+			<div id="content">
+			<h3 xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes" xmlns="http://www.w3.org/1999/xhtml">The Qur'an and Adab: Abstracts</h3><DIV><STRONG>The Qur&#8217;an And <EM>Adab</EM> Traditions</STRONG> </DIV>
+<DIV>The Institute of Ismaili Studies, London </DIV>
+<DIV>24 &#8211; 26 April 2012</DIV>
+<DIV>&nbsp;</DIV>
+<DIV align=center>
+<TABLE style="WIDTH: 380px; BORDER-COLLAPSE: collapse" cellSpacing=9 cellPadding=9>
+<TBODY>
+<TR>
+<TD style="BORDER-BOTTOM: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-TOP: gray 1px solid; BORDER-RIGHT: gray 1px solid">
+<DIV align=left><A href="view_articled826.html?type=cont.currentlang&amp;id=113297">Conference description</A><BR><A href="view_article9350.html?type=cont.currentlang&amp;id=113302">Conference programme</A><BR><A href="view_articlebb13.html?type=cont.currentlang&amp;id=113307">Biographies</A><BR><STRONG>Abstracts</STRONG></DIV></TD></TR></TBODY></TABLE></DIV><BR>
+<DIV><B><I></I></B></DIV>
+<DIV><B><I>Adab between Belles-lettres and the Qur&#8217;an: Redefining and Expanding the Boundaries</I></B></DIV>
+<DIV><B>Nuha al-Sha&#8216;ar, The Institute of Ismaili Studies, London </B></DIV>
+<P>The term <I>adab</I> has been a subject for debate and discussion in modern scholarship. This paper aims to visit and reflect on this concept by rethinking the definition of <I>adab</I> through its relationship with the Qur&#8217;an. The paper also explores the etymological origin and the lexical understanding of the term as it occurs in medieval Arabic lexicological dictionaries and classical sources. This is in order to be able to determine a notion of the formation and evolution of the term. In doing so, the paper will show that the Qur&#8217;an was an integral element in this formation. </P>
+<P>The paper further highlights the history of the various uses of the term <I>adab</I>, particularly the application of <I>adab</I> as essential for character formation and the cultivation of virtues, and as such, as a moral code for observing &#8216;rules of behaviour&#8217; that would lead to happiness in this life and the hereafter. The paper will show how the process of the creation of meanings and themes of <I>adab</I> works seems to have been shaped by the ethical world of the Qur&#8217;an. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>The Qur&#8217;an and the Pre-modern Arabic System of Adab</I></B></DIV>
+<DIV><B>Sarah Bin Tyeer, </B><B>School of Oriental and African Studies, University of London </B></DIV>
+<P>This paper aims to examine the influence of the Qur&#8217;an on the system of <I>adab</I>. By referring to it as a system, the existence of the components of <I>adab</I>, specifically in pre-modern Arabic prose will be highlighted. This system includes: a) the approaches to literary appropriations; b) the dynamics of narrative equilibrium; c) and the artistic language of these literary works and its reference system. Sarah Bin Tyeer will refer to the <I>Thousand and One Nights</I>, the <I>Maqamat</I> of Badi al-Zaman al-Hamadhani (d.1007 CE) and <I>Hikayat Abi&#8217;l-Qasim al-Baghdadi</I> by Muhammad Abu&#8217;l-Mutahhar al-Azdi (d.1001 CE), both works that belong to different categories of the &#8216;established&#8217; popular versus canonical literature. </P>
+<P>While these two literary strands (popular and canonical) when viewed in combination seem challenging to be grouped in the same category under <I>adab</I>, they do offer a wider platform of expression in terms of content, technique and form with respect to the components of the system of <I>adab</I> itself. The differentiation between them, thus, is of minor significance as far as the discussion of the system of <I>adab</I> as such is concerned. </P>
+<P>This paper shows that investigating the centrality of the Qur&#8217;an to the system of pre-modern <I>adab</I> offers an enhanced understanding of these literary texts and often dispels some of the conventional interpretative habits that enshroud them.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Between the Qur&#8217;an, Prose and Poetry: al-Tha&#8216;alibi on the Registers of Speech </I></B></DIV>
+<DIV><B>Bilal Orfali, American University of Beirut</B></DIV>
+<P><I>Al-Iqtibas min al-Qur&#8217;an</I> by the renowned litterateur Abu Mansur al-Tha&#8216;alibi (d.1030 CE) concerns the topic of quotation from, paraphrase of and reference to the Qur&#8217;an in literary contexts. The work and its subject matter have so far been overlooked in modern scholarship. This research hopes to remediate this neglect by drawing attention to this early work, and the implicit connection between Qur&#8217;an and <I>adab</I> that it addresses. </P>
+<P>This paper will situate the book within Tha&#8216;alibi&#8217;s theories concerning the art of <I>nathr al-nazm wa-hall al-&#8217;aqd</I> (prosification, lit. untying the poetry/the knot). Tha&#8216;alibi authored several books on the technical aspects of transforming a literary speech from one register to another. Judging from the totality of Tha&#8216;alibi&#8217;s corpus of works, this paper proposes that he conceives of speech in four main registers: prose, ornate prose (<I>saj&#8216;</I>), poetry, and Qur&#8217;an. He also suggests that a litterateur can transform speech from one register to another. In his <I>Nathr al-nazm</I> and <I>Sihr al-balagha</I>, Tha&#8216;alibi analyses and demonstrates rhetorical exercises recasting poetic verses in elegant ornate prose, while in his unpublished <I>Saj&#8216; al-manthur</I> (MSS Topkap&#305; Ahmet III Kitaplar&#305; 2337/2, Yeni Cami 1188, Universite Arapca Yazmalar 741/1, Bayezid Umumi 3207/1), he demonstrates the shift from prose and poetry to ornate prose. In <I>al-Iqtibas min al-Qur&#8217;an,</I> Tha&#8216;alibi describes techniques for transforming verses from the Qur&#8217;an, the divine form of speech, into human speech, prose, ornate prose, and poetry.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Major Techniques of Quoting the Qur&#8217;an: al-</I><I>Tha&#8216;alibi&#8217;s al-Iqtibas min al-Qur&#8217;an </I></B></DIV>
+<DIV><B>Maurice Pomerantz, New York University</B></DIV>
+<P>This paper will focus on <I>al-Iqtibas</I> <I>min al-Qur&#8217;an</I> of Abu Mansur al-Tha&#8216;alibi (d.1030 CE) as a work of literary criticism in its own right by examining the work&#8217;s structure, organisation, and content. The following questions are raised: What oral and written sources did Tha&#8216;alibi use and whom does he quote in this work? Is there an internal logic to this work? Does Tha&#8216;alibi have a coherent agenda? Does his work respond to that of previous scholars?</P>
+<P>The paper provides an outline of the book&#8217;s content, presenting the major techniques of quoting the Qur&#8217;an with examples in English translation, and highlighting Tha&#8216;alibi&#8217;s contribution to the topic of &#8216;quoting the Qur&#8217;an&#8217;. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>The Qur&#8217;an and the Character of Classical Arabic Poetry </I></B></DIV>
+<DIV><B>Ghassan El Masri, Dahlem Humanities Centre, Berlin</B></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>The research presented here will explore the nature of the relationship between the Qur&#8217;an and the early collections of classical Arabic poetry before and after the coming of Islam, taking <I>al-Mu&#8216;allaqat</I> and <I>al-Mufaddaliyyat </I>as a case study. This paper presents some remarks on the literary aspects of the relationship between the Qur&#8217;an and poetry based on a study of the theme of &#8216;time&#8217; (<I>al-dahr</I>) and its contribution to the poet&#8217;s <I>aporeia</I> in classical Arabic poetry and its subsequent echoes in the Qur&#8217;an<I>. </I></DIV>
+<P><I></I></P>
+<P>The claim is that time and its effect on human destiny and moral choice were very common and<I> </I>recurrent elements in the classical <I>qasida</I>. In the same way, temporal and eschatological notions are present in almost every <I>sura</I> of the Qur&#8217;an and constitute one of the central pillars of its discourse. As such, time and its influence on human life were central themes in both the Qur&#8217;an and classical poetry, and a comparative study of their function in the two corpora reveals that the thematic intersections joining the two are richer and more elaborate than generally thought. </P>
+<P>The paper proposes that it might be reasonable to claim that the Qur&#8217;an, especially in many of its Meccan <I>suras</I>, treats the same <I>aporeia</I> that perplexed the poet, using a shared repertoire of images, tropes and topoi. The purpose of the study is to add to an understanding of the Qur&#8217;an&#8217;s position in the poetic landscape of Arabia, and more importantly offer the scholar of classical Arabic a key to reading the Qur&#8217;an in its historical context <I>qua</I> Arabic literature.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Abbasid Poets and the Qur&#8217;an</I></B></DIV>
+<DIV><B>Beatrice Gruendler, Yale University, Connecticut</B></DIV>
+<P>While not a frequent element in the records (<I>akhbar</I>) about early Abbasid poets preserved in the <I>adab</I> literature, the Qur&#8217;an makes occasional appearances in them. None of those belong to the more common and schematised <I>akhbar</I> types, and they may therefore speak more truly to the sensibilities of the time. Often the mention of the Qur&#8217;an is in some ways related to the poet&#8217;s piety and probity. Thus the poet Aban al-Lahiqi (d. <I>c</I>. 815 CE) is accused of being Jewish, as he supposedly owns no Qur&#8217;an codex (<I>mushaf</I>) nor memorises enough Qur&#8217;anic verses to pray, while he has volumes of the Torah (<I>asfar al-tawrat</I>) at home and boasts of memorising them.</P>
+<P>Elsewhere, the legal status and respect enjoyed by Qur&#8217;an readers made them the negotiators in a poetic joust between Muslim b. al-Walid (d.823 CE) and his opponent al-Hakam b. Qunbur (<I>fl</I>. beg. Eighth century CE). When the two poets dragged the Quraysh and the Ansar into their flytings and debated their relative merits in the triumph of Islam, the shaykhs of the Ansar took Qur&#8217;an reciters along with them to visit Ibn Qunbur (who supported the Quraysh) and reprimand him for not ending the blasphemous exchange. </P>
+<P>Here poetry met with its boundaries: satire was not to encroach upon Prophet Muhammad&#8217;s Companions. But this taboo was also utilised by a poet for his own protection. When a Bedouin he had insulted asked the poet Di&#8217;bil al-Khuza&#8217;i (d.859 CE or 860 CE) for his tribal affiliation, he averted counter-satire and placed himself off limits by giving a false &#8216;Alid affiliation and bolstering the claim with Qur&#8217;anic <I>suras</I>.</P>
+<P>Less expected is the role of the Qur&#8217;an as a counterweight to poetry. Here the Islamic scripture is treated as a mere specimen of literature and placed on the same level with it. For instance, following the recitation of <I>Surat al-Naba&#8217;</I> (Q. 78), Abu&#8217;l-&#8216;Atahiya (d.825 CE) composed a <I>qasida</I>, probably on the theme of asceticism (<I>zuhd</I>), which he declared to be superior to this <I>sura</I>, much to the chagrin of an attending preacher. </P>
+<P>The more irreverent Bashshar frequently mocked rituals and compared Qur&#8217;anic <I>suras</I> to earthy situations, often frivolously. But the same poet also criticised a client of the caliph al-Mahdi for what he considered to be a far-fetched exegesis of the Qur&#8217;an, and the caliph, who summoned both contenders, took the poet&#8217;s side. Finally, Ibn al-Mu&#8217;tazz invoked the Qur&#8217;an to call for an unprejudiced approach to poetic criticism. Both as demarcator of religious boundaries and as an exemplary specimen of literature, the Qur&#8217;an was at close quarters with poetry in early Abbasid times. Soon thereafter this connection would be theorised in the <I>i&#8216;jaz</I> literature in a way that made the Qur&#8217;an the first motive for the study of rhetoric.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Al-Ma&#8216;arri's al-Fusul wa'l-ghayat and the Qur'an: Issues of Prosody and the Use of the Qur&#8217;an</I></B></DIV>
+<DIV><B>Devin J. Stewart, Emory University, Georgia</B></DIV>
+<P>Abu&#8217;l-&#8216;Ala&#8217; al-Ma&#8216;arri's (d.1058 CE) <I>al-Fusul wa&#8217;l-ghayat fi tamjid Allah wa&#8217;l-mawa&#8216;iz</I> [rendered by P. Smoor in <I>EI</I><SUP>2 </SUP>as &#8216;Chapters and endings about the glorification of God, and admonitions&#8217;] has been recognised since the middle ages as a potential <I>mu&#8216;arada</I> (imitation) of the Qur&#8217;an, whether one defines this as an attempt to outdo the sacred text, a parody, or an emulation. That it was viewed as such is confirmed by the title <I>al-Fusul wa&#8217;l-ghayat fi muhadhat/mu&#8216;aradat al-suwar wa&#8217;l-ayat</I> (<I>Chapters and Endings, on the Emulation of Suras and Verses</I>), which was assigned to the work by al-Bakharzi, al-Badi&#8216;i, al-Dhahabi, and Hajji Khalifa. </P>
+<P>The work consists of a series of chapters defined by rhyme letter, which each contain a series of paragraphs of complex rhymed prose with the rhyme scheme <I>aaa....bb</I>, where a varying number of cola in mono-rhyme (<I>aaaa...</I>) are followed by a closing rhymed prose bicola rhyming in <I>-bb</I>. The next paragraph has rhyme scheme <I>ccc...bb</I>, the next <I>ddd...bb</I>, and so on in the chapter devoted to the rhyme-letter <I>b</I>. The chapters run through the letters of the Arabic alphabet, all the paragraphs or units of text in each chapter ending in bicola of one particular rhyme-letter. </P>
+<P>The text was studied by German scholars in the early twentieth century, including Fischer, who, though he did not have the entire text, decided that the <I>Fusul</I> was not a parody. By this it appears that he meant that the author did not have parodic intent, or mean to best the Qur&#8217;an. Nevertheless, the work shows some obvious formal and stylistic similarities with the Qur&#8217;an, not to mention some overlap in its expression of religious content. Now that the full text is available, this paper will re-examines the assessments of A. Fischer (1942), R. Hartmann (1944), and Taha Husayn (<I>Ma&#8216;a Abi al-&#8216;Ala&#8217; fi sijnih</I>, 1963). </P>
+<P>In addition, the present study will focus on the form of <I>al-Fusul wa&#8217;l-ghayat</I>, examining in particular its rhyme and prosody, undertaking to compare and contrast its formal features with those of Qur&#8217;anic <I>saj&#8216;</I>. This promises to yield some new results that Fischer was unable to arrive at, due to significant advances in the understanding of the prosody of <I>saj&#8216; </I>since that time. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Qur'anic Exegesis as Belles-Lettres: the Case of the Epistles of the Pure Brethren (Rasa'il Ikhwan al-Safa&#8216;) </I></B></DIV>
+<DIV><B>Omar Ali-de-Unzaga, The Institute of Ismaili Studies, London</B></DIV>
+<P>The <I>Epistles of the Pure Brethren</I> (<I>Rasa&#8217;il Ikhwan al-Safa&#8217;</I>) have long been recognised as being an important work in the history of both Arabic literature and Islamic thought. Less attention has been given to the work&#8217;s exegetical content. The <I>Epistles</I> contain around 1,400 citations from the Qur&#8217;an, as well as other Qur&#8217;anic material such as phrases, echoes and allusions, which are often interpreted either explicitly or implicitly and are an essential component for understanding the thought of the authors. This thought is the result of a complex system that comprised numerous components derived from various traditions: philosophical, scriptural and otherwise. As a work that can be considered as part of the <I>adab</I> tradition, the <I>Epistles</I> help us dispel the understanding of <I>adab</I> as &#8216;secular&#8217; literature as opposed to &#8216;religious&#8217; literature. </P>
+<P>Since the concept of <I>adab</I> is multifaceted and polysemous, it can be understood a) in its literary aspect; b) in its educational or didactic aspect; and c) in its ethical and intellectual aspect. All three of these aspects are present in the <I>Epistles</I>: a) they contain material that can easily be identified as literature: there are numerous stories that are now part of the patrimony of Arabic prose. </P>
+<P>Among these is the celebrated Debate between Man and the Animals before the King of the Jinn; b) the <I>Epistles</I> are in essence an educational curriculum for the youth, meant to contain knowledge necessary for the fourth/tenth-century cultured individual; c) finally, the <I>Epistles</I> are fundamentally an intellectual project built on a syncretic and cosmopolitan outlook. As with other <I>adab</I> works, this project incorporates interpretations of the Qur&#8217;an and other revealed scriptures which are not always explicit. This paper argues that the <I>Epistles </I>contain at their core a largely exegetical enterprise. In that regard, the <I>Epistles </I>may be seen as representatives of the complexity of fourth/tenth century literature (understood in the wide sense of the word).</P>
+<P>The Debate between Man and the Animals contains the third highest number of Qur&#8217;anic citations (more than 100) among all the <I>Epistles</I>. This paper focuses on the exegesis of the Qur&#8217;an embedded in the Debate. It explores the techniques used to transform exegesis into the shape of a fable, and how exegesis of the Qur&#8217;an is embedded in the mouth of the characters dialogues (especially those of the mule, the ant and the king of the <I>jinn</I>). This exegesis implies a sharp critique of Abbasid society and its religious establishment. The paper will thus expand our understanding of what exegesis is, what forms it can take, and what purposes it may serve.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Futuh Historiography as Adab Literature? The Use of Qu&#8217;ranic Material in the Futuh al-Sham of al-Azdi (d. c. 791 CE)</I></B></DIV>
+<DIV><B>Jens Scheiner, Georg-August-Universit&#228;t, G&#246;ttingen</B></DIV>
+<P><I>God has made a promise to those among you who believe and do good deeds: He will make them successors to the land, as He did with those who came before them</I> (Q. 24:55). This verse is quoted in a letter supposedly written by the first caliph, Abu Bakr, who goes on to quote another sura: <I>Fighting is ordained for you, though you dislike it</I> (Q. 2:216). After these quotations he instructs Khalid b. al-Walid and the Muslims who were with him: &#8216;Therefore carry out God&#8217;s promise to you and obey him in what he determined for you!&#8217; This letter was transmitted by Abu Ismail Muhammad b. Abd Allah al-Azdi (d. <I>c</I>. 791 CE) in his history about the conquests of Syria (<I>Futuh al-Sham</I>). This and similar letters by Abu Bakr transmitted in this work has led Lawrence Conrad to see in the <I>Futuh al-Sham</I> a &#8216;kerygmatic history&#8217; (Conrad, <I>Heraclius</I>, 2002). </P>
+<P>This notion of <I>heilsgeschichte</I> is more developed in Azdi&#8217;s historical work, which stems from the middle of the eighth century CE (Conrad 1987, Scheiner 2007), than in the later historical literature. It is therefore worth studying how this kerygmatic effect is achieved. The first part of this paper argues that much of it is due to numerous direct quotations from and indirect allusions to the Qur&#8217;an. The paper further investigates the extent to which Azdi made use of Qur&#8217;anic material and which techniques he employed in this process and shows to what degree the Qur&#8217;an influenced the scope, themes and structure of the <I>Futuh al-Sham</I> as an example for the relationship between Qur&#8217;anic material and historical works.</P>
+<P>Based on these findings the paper examines to what extent the <I>Futuh al-Sham</I>as an example of historiographical literature can be considered a work of <I>adab.</I> </P>
+<P>Questions posed include: Does the style and/or the material included in the work allow it to be characterised as belonging to the <I>adab</I> genre? Is the reception of Qur&#8217;anic material in Azdi&#8217;s work similar to that in other <I>adab</I> works? Was the <I>Futuh al-Sham</I> written in connection with the caliphal court as many other <I>adab</I> works were? Answering these questions helps to determine the boundaries between genres in early Islamic literature and therefore lead to a new understanding of the relationship between historiographical and <I>adab</I> literature.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I><EM>Qur&#8217;an Citation in Early Arabic Oration (</EM>khutba<I>): Mnemonic, Liturgical, and Evidentiary Functions</I></I></B></DIV>
+<DIV><B>Tahera Qutbuddin, University of Chicago</B><B> </B></DIV>
+<P>Arabic speeches and sermons ascribed to Muslim orators from the seventh and early eighth centuries CE display a complex usage of Qur&#8217;anic material, including a diffuse infusion of structures, themes, images, and vocabulary, as well as verbatim citation of verses. This paper analyses the functions of Qur&#8217;anic quotation in early Arabic <I>khu</I><I>tbas</I>, dividing them into three categories: mnemonic, liturgical, and testimonial, all three functions operating simultaneously. It shows that these functions are grounded in the orality-based culture of the early Arabian Muslims, rooted in the dynamic interface of religion, politics, and literature in this society, and intrinsically related to the orator&#8217;s goal of persuasion.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>&#8216;He who has been given wisdom has received abundant good&#8217;: The Reception of the Qur&#8217;an in Arabic and Persian Mirrors for Princes</I></B></DIV>
+<DIV><B>Louise Marlow, Wellesley College, Massachusetts</B></DIV>
+<P>Strongly associated with rulers, their viziers, and the culture of the courts, the &#8216;mirror for princes&#8217; is generally considered a &#8216;secular&#8217; genre; yet authors&#8217; integration of Qur&#8217;anic texts, stories and concepts into their writings shaped the content, qualities and effect of medieval Arabic and Persian advice literature in numerous ways. The unparalleled dissemination of the Qur&#8217;anic text, familiar to wide audiences across diverse societies and cultures, produced rich opportunities for creative engagement with the sacred text. </P>
+<P>Authors&#8217; varied methods of integrating Qur&#8217;anic materials into their writings, especially their consideration of the sacred text in conjunction with diverse wisdom literatures, reflect a reception of the Qur&#8217;anic text that extends beyond the boundaries of formal exegesis. By direct quotations and unannounced allusions, authors of advice literature were able to connect the realms of past and present, divine and human, sacred and &#8216;profane&#8217;. In short, the many and varied significances of the Qur&#8217;anic materials in advisory writings, explored in this paper with reference to examples of eleventh-century advice literature in Arabic and Persian, suggest the limits of imposing modern divisions between &#8216;sacred&#8217; and &#8216;secular&#8217; on medieval texts.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>The Qur&#8217;an and Mirrors for Princes: Reading the Work of Tahir b. al-Husayn (r. 159-207/775-822)</I></B><B></B></DIV>
+<DIV><B>Eisa Ali Alakoub</B><B>, University of Aleppo</B></DIV>
+<P>The paper explores the influence of the Qur&#8217;an on the genre that is known in Arabic literature as <I>adab al-siyasa al-mulukiyya</I>, &#8216;mirror for princes,&#8217; which offers advice to viziers and rulers on how best to govern. Specifically, the paper focuses on how the Qur&#8217;an shaped the ethical world of the testament written by Tahir b. al-Husayn (r. 775-822 CE)<I> </I>to his son &#8216;Abd al-Allah b. Tahir, who in 821 CE was appointed by Caliph al-Ma&#8217;mun b. Harun al-Rashid as the Abbasid governor of al-Raqqa and Egypt. In this testament, Tahir provides his son &#8216;Abd al-Allah with general rules on how to apply God&#8217;s commands and imitate His qualities in order to become a good ruler. </P>
+<P>The paper underlines two levels on which the Qur&#8217;an influenced the scope of the testament. These are, firstly, the process of the creation of meaning and the assimilation of the Qur&#8217;anic meanings by the author, and secondly, the influence on the testament of the Qur&#8217;an&#8217;s language, style, and structural units. The paper concludes by highlighting three forms of Qur&#8217;anic influence on the testament: the presence of the Qur&#8217;anic spirit in the semantic and lexical level of the testament, <I>al-iqtibas al-mutasarraf f&#299;h li&#8217;l-madlulat al-Qur&#8217;ani</I> (modified allusions to Qur&#8217;anic meanings and themes), and literal quotations which provide supporting evidence to consolidate a point. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>The Place of the Qur&#8217;an in &#8216;The Sermons and Exhortations&#8217; of Abu &#8216;Ubayd (d. 224/838)</I></B></DIV>
+<DIV><B>Andrew Rippin, University of Victoria, British Columbia</B></DIV>
+<P><I>Al-Khutab wa&#8217;l-mawa&#8216;iz</I>, attributed to the prolific philologist, hadith transmitter, theologian and jurist Abu &#8216;Ubayd al-Qasim b. Sallam (d.838 CE), contains 145 reports of admonitions attributed to Prophet Muhammad, Abu Bakr, &#8216;Umar and a selection of eight prophets of the past. </P>
+<P>While the composition of the book does raise a number of issues regarding the absence of an author&#8217;s voice in the work, the reports themselves disclose a variety of approaches towards the integration of the Qur&#8217;an within material that serves as the basis of several future genres of literature, including <I>qisas al-anbiya&#8217; </I>and <I>fada&#8217;il</I>. The figure of Abraham as it emerges in the work is especially revealing and may speak to the development of a firm picture of Abraham as the &#8216;first Muslim&#8217;. </P>
+<P>That, combined with reports that include the citation of supposed quotations from earlier scriptures and others that display penchant for creating &#8216;lists&#8217;, results in a work that appears to invoke the existence of a generic prophetic ethos that Muslims are assumed to share with Jews and Christians. The integration of the Qur&#8217;an within the work therefore may be seen to provide a glimpse of the development of Muslim identity outside the strictly exegetical, theological and legal genres of literature.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>&#8216;Serving from Afar&#8217; - the Adab of Interpreting the Qur&#8217;an in Islamic Mysticism</I></B></DIV>
+<DIV><B>Steffen Stelzer, American University of Cairo</B></DIV>
+<P>If the word &#8216;<I>adab&#8217;</I> describes a certain manner of acting, and if it is important that the best way of acting in a certain situation be known, then there must be a scene that describes this <I>adab</I> in the most concise way. This paper poses the question: is there in texts of Islamic mysticism a description of a scene that can be called &#8216;the scene of interpretation&#8217;, and does it involve the requirement of a certain behaviour?</P>
+<P>The inquiry revolves around two scenes: one, described by Rumi in his <I>Fihi ma fihi</I>, as &#8216;serving the Qur&#8217;an from afar&#8217;, the other, described by Ibn &#8216;Arabi as &#8216;sitting at the door&#8217;. In the end, it appears that both scenes belong to one &#8216;drama&#8217;, the drama of servanthood that is at the heart of Islam.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Al-Kharraz&#8217;s Mystical Reading of Prophetic Stories in the Qur&#8217;an </I></B></DIV>
+<DIV><B>Nada Saab, Lebanese American University, Beirut</B></DIV>
+<P>The Qur&#8217;an recollected and contemplated lies at the centre of Sufi experience. Sufi authors contend that such processes of internalisation of the Qur&#8217;an leads the mystic seeker towards a unitive experience with the Divine which, they believe, is the inner doctrine of Islam. As early as the ninth century CE, Sufis had argued that being in proximity (<I>qurb</I>) with God is the ultimate goal of existence and was ordained in pre-eternity. It will be fulfilled wholly by the few who were elected by God through His generous grace (<I>karam</I>). </P>
+<P>Abu Sa&#8216;id Ahmad b. &#8216;Isa al-Kharraz (d.899 CE) was a leading figure of the Sufi circles of Baghdad in the ninth century. His mystical theory emancipates the knowledge of God from any mediation as God directly reveals His knowledge in the heart of the Sufi. He, and other contemporary Sufis, embraced the Qur&#8217;anic verse: <I>And (remember) when thy Lord brought forth from the Children of Adam, from their reins, their seed, and made them testify of themselves, (saying): Am I not your Lord? They said: Yea, verily. We testify</I> (Q. 7:172). This verse was considered proof of the Divine knowledge that the <I>awliya&#8217;</I> are endowed with, a knowledge which is embodied in their anamnesis of the first covenant between man and God before creation. These few elect were slowly but steadily being endowed with miracles to legitimise their status as the emerging moral elite. Such elevated status of the <I>awliya&#8217;</I> naturally placed them equal to prophets in their spiritual stature.</P>
+<P>This paper addresses al-Kharraz&#8217;s argumentation of the status of prophets and <I>awliya&#8217;</I>. His mystical interpretation of the ascension of Prophet Muhammad portrays the latter as an agonised mystic on the path to reaching certitude. The paper will also study al-Kharraz&#8217;s reading of prophetic stories in the Qur&#8217;an, specifically the story of Musa and al-Khadir where their companionship clearly draws parallels with Sufi rules of companionship. </P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR>
+<DIV><B><I>Speaking through the Qur&#8217;an: The hermeneutical interpretations of &#8216;Ayn al-Qudat Hamadani (d. 1099 CE)</I></B></DIV>
+<DIV><B>Daryoush Mohammad Poor, The Institute of Ismaili Studies, London</B></DIV>
+<P>It has been and still is the usual practice of theologians, Sufis and various classical scholars of Islamic sciences to widely employ verses of the Qur&#8217;an for articulating their viewpoints. This paper will focus on the famous Sufi philosopher &#8216;Ayn al-Qudat Hamadani (d.1099 CE), who employs Qur&#8217;anic language through a combination of his own literary style and a hermeneutical approach to the Qur&#8217;an. This is seen not only in terms of the frequency of Qur&#8217;anic verses which appear in his most famous works, the <I>Tamhidat </I>and the <I>Maktubat</I>, but also in his methodology and use of rhetoric. As well as being firmly grounded in Sufism, Hamadani&#8217;s open and intimate connections with followers of other schools, notably the Ismailis, further enrich his mystical interpretations of the Qur&#8217;an. </P>
+<P>Thus Hamadani thinks in Qur&#8217;anic terms, he speaks through the Qur&#8217;an and he breathes a very living tradition of the Sufis closely connected with Qur&#8217;an teachings. In this sense, his writings should not only be viewed as classical Sufi texts. Rather, his work is an esoteric exegesis of the Qur&#8217;an which is rendered in a quite unorthodox way. One can argue that it is a fine example of a Sufi commentary on the Qur&#8217;an with flashes of brilliance and innovations which have been almost entirely ignored in the genre of Qur&#8217;anic studies to date. </P>
+<P>Hamadani&#8217;s literary style is the other important aspect of the above-mentioned works. This literary style is deeply influenced by the Qur&#8217;anic literature, to the extent that in places it becomes difficult to distinguish between his own words and the Qur&#8217;anic text. This intermingling and intertwining of the Qur&#8217;anic message and the literary and mystical productions of Hamadani is one of the most prominent qualities of his work.</P><BR>
+<P align=right><A href="#">Top of Page</A></P><BR><!-- START - Content META data --><TITLE>The Institute of Ismaili Studies - The Qur'an and Adab: Abstracts</TITLE><META HTTP-EQUIV="Expires" CONTENT="Sun, 27 Mar 2022 13:13:00 GMT"><!-- END - Content META data -->
+			
+			<DIV align="right" style="color: #006633; font-size: 8pt;">
+				Last updated: 03/12/2012&nbsp;10:48&nbsp;
+			</DIV>
+			</div>
+			<div id="right_menu">
+			
+<div id="right_menu">
+        <!-- InstanceBeginEditable name="right_menu" -->
+            <p class="title_plain">Quick Links</p>
+<p><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://www.iis-careers.org.uk/">Job Vacancies</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://sh.webhire.com/Public/736/">AKDN Career Centre</A></p><p><A href="contactd8cc.html?l=en">Contact Us</A></p><p><A href="view_articlebfe5.html?ContentID=104023&amp;l=en">FAQs</A></p><p><A href="view_sorted_articles13e1.html?catid=41&amp;orderby=ContentDate&amp;ordertype=date&amp;dir=descending&amp;l=en">Gallery</A></p><p><A href="glossary_listd8cc.html?l=en">Glossary</A></p><p><A target="_blank" onClick="return fnExtLinkWarning()" href="http://iis.sirsidynix.net.uk/">Library Catalogue</A></p><p><A href="view_articleb891.html?ContentID=104443&amp;l=en">Useful Links</A></p><p><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A></p>
+<p> </p>
+<p class="title_plain"><img border="0" class="no_padding" alt="Gateways" src="images/alumni.gif"/>Gateways</p>
+<div id="clear"> </div>
+<p><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A></p><p><A href="view_sorted_articlesac43.html?catid=160&amp;layout=children&amp;l=en">Staff</A></p><p><A href="view_sorted_articles2399.html?catid=161&amp;layout=children&amp;l=en">Students</A></p><p><A href="view_sorted_articles704c.html?catid=165&amp;layout=children&amp;l=en">Teachers</A></p><p><A href="view_sorted_articles3325.html?catid=169&amp;layout=children&amp;l=en">Visitors</A></p>
+
+
+
+<p> </p>
+
+
+<br/>
+        <!-- InstanceEndEditable --> 
+        </div>
+
+			</div>
+
+		</div>
+	</div>
+<div id="spacing">&nbsp;</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div id="footer_top">
+    <span class="logo"><img src="images/small_iis.jpg" width="15" height="16" alt="The Institute of Ismaili Studies" /></span>
+    <span class="text">The Institute of Ismaili Studies</span>
+
+    </div>
+
+    <div id="links">  
+    <span class="linkList linkListFirst">
+<span class="title"><a href="view_sorted_articlesec31.html?type=static&amp;id=ResearchandPublications&amp;l=en">Research & Publications</a></span><br />
+<div><A href="view_article39d5.html?type=cont.currentlang&amp;id=105873&amp;l=en">Academic Publications</A><br/></div><div><A href="view_articlebc6d.html?ContentID=110958&amp;l=en">Qur'anic Studies</A><br/></div><div><A href="view_articledc7f.html?type=cont.currentlang&amp;id=110983&amp;l=en">Central Asian Studies</A><br/></div><div><A href="view_article17ed.html?ContentID=104878&amp;l=en">Academic Articles</A><br/></div><div><A href="view_article6528.html?type=cont.currentlang&amp;id=112305&amp;l=en">Encyclopaedia Contributions</A><br/></div><div><A href="view_article9065.html?type=cont.currentlang&amp;id=104898&amp;l=en">Translations</A><br/></div><div><A href="view_articleda65.html?type=cont.currentlang&amp;id=110775&amp;l=en">Author Interviews</A><br/></div><div><A href="view_article9a5c.html?ContentID=104298&amp;l=en">Seminars &amp; Public Lectures</A><br/></div><div><A href="view_articled7ec.html?ContentID=104483&amp;l=en">Scholarship Programme</A><br/></div><div><A href="view_article9001.html?ContentID=104398&amp;l=en">Visiting Fellowship Programme</A><br/></div><div><A href="view_articleb874.html?type=cont.currentlang&amp;id=108962&amp;l=en">Reading Guides</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesd83a.html?type=static&amp;id=graduate_studies&amp;l=en">Graduate Studies</a></span><br />
+<div><A href="view_article0234.html?type=cont.currentlang&amp;id=104478&amp;l=en">GPISH</A><br/></div><div><A href="view_articlef849.html?type=cont.currentlang&amp;id=106627&amp;l=en">STEP</A><br/></div><div><A href="view_sorted_articles582b.html?catid=155&amp;layout=children&amp;l=en">Alumni</A><br/></div><div><A href="view_article3932.html?type=cont.currentlang&amp;id=105818&amp;l=en">Other Programmes</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articles94ba.html?type=static&amp;id=learning&amp;l=en">Learning</a></span><br />
+<div><A href="view_article72af.html?type=cont.currentlang&amp;id=104853&amp;l=en">Ta'lim Curriculum</A><br/></div><div><A href="view_article1e1a.html?ContentID=104858&amp;l=en">Lifelong Learning Articles</A><br/></div><div><A href="view_article07a4.html?type=cont.currentlang&amp;id=104628&amp;l=en">Speeches: Aga Khan III</A><br/></div><div><A href="view_articleab36.html?type=cont.currentlang&amp;id=104623&amp;l=en">Speeches: Aga Khan IV</A><br/></div><div><A href="view_article7024.html?ContentID=110765&amp;l=en">Videos</A><br/></div><div><A href="view_article5223.html?ContentID=104553&amp;l=en">Reading Lists</A><br/></div><div><A href="view_articlecfa8.html?type=cont.currentlang&amp;id=104633&amp;l=en">PTE Programme</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+<span class="linkList">
+<span class="title"><a href="view_sorted_articlesc36e.html?type=static&amp;id=library&amp;l=en">Library</a></span><br />
+<div><A href="view_articlecd7b.html?type=cont.currentlang&amp;id=103462&amp;l=en">Library Overview</A><br/></div><div><A href="http://iis.sirsidynix.net.uk/?l=en">Library Catalogue</A><br/></div><div><A href="view_article1c08.html?type=cont.currentlang&amp;id=104503&amp;l=en">Printed Materials</A><br/></div><div><A href="view_article012f.html?type=cont.currentlang&amp;id=104538&amp;l=en">Audiovisual Materials</A><br/></div><div><A href="view_article74d7.html?type=cont.currentlang&amp;id=114807&amp;l=en">Electronic Resources</A><br/></div><div><A href="view_article0f5d.html?type=cont.currentlang&amp;id=104728&amp;l=en">Manuscripts</A><br/></div><div><A href="view_article2447.html?type=cont.currentlang&amp;id=104748&amp;l=en">Collection Catalogues</A><br/></div><div><A href="view_sorted_articles13e1.html?type=cat&amp;id=41&amp;t=midlist&amp;g=date&amp;l=en">Gallery</A><br/></div><div class="extra-line"><br></div>
+
+</span>
+
+<span class="linkList linkListLast">
+<span class="title"><a href="view_sorted_articlesfd11.html?type=static&amp;id=newsevents&amp;l=en">News & Events</a></span><br />
+<div><A href="view_article9aab.html?ContentID=113797&amp;l=en">Additions to the Site</A><br/></div><div><A href="view_article1a2e.html?ContentID=104873&amp;l=en">Forthcoming Events</A><br/></div><div><A href="view_article44f8.html?ContentID=104498&amp;l=en">IIS Update</A><br/></div><div class="extra-line"><br></div>
+</span>
+
+    </div>
+</div>
+
+<div id="copyright">
+<A href="view_article105b.html?type=static&amp;id=copyright&amp;l=en"> The Institute of Ismaili Studies, 2013</A>
+</div>
+<a href="http://shafiq.in/" style="display:none;">Shafiq Alibhai</a>
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-8219856-1");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+</BODY>
+
+<!-- Mirrored from iis.ac.uk/view_article.asp?ContentID=113312 by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 06 Jun 2015 22:05:28 GMT -->
+</HTML>

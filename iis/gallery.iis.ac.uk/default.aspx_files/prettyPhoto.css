@@ -1,0 +1,348 @@
+﻿DIV.light_rounded .pp_top .pp_left {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -88px -53px
+}
+DIV.light_rounded .pp_top .pp_middle {
+	BACKGROUND: #fff
+}
+DIV.light_rounded .pp_top .pp_right {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -110px -53px
+}
+DIV.light_rounded .pp_content {
+	BACKGROUND-COLOR: #fff
+}
+DIV.light_rounded .pp_content A.pp_next:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/btnNext.html) no-repeat right center; CURSOR: pointer
+}
+DIV.light_rounded .pp_content A.pp_previous:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/btnPrevious.html) no-repeat left center; CURSOR: pointer
+}
+DIV.light_rounded .pp_content A.pp_expand {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -31px -26px; CURSOR: pointer
+}
+DIV.light_rounded .pp_content A.pp_expand:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -31px -47px; CURSOR: pointer
+}
+DIV.light_rounded .pp_content A.pp_contract {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat 0px -26px; CURSOR: pointer
+}
+DIV.light_rounded .pp_content A.pp_contract:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat 0px -47px; CURSOR: pointer
+}
+DIV.light_rounded .pp_content A.pp_close {
+	WIDTH: 75px; BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -1px -1px; HEIGHT: 22px; CURSOR: pointer
+}
+DIV.light_rounded .pp_content .pp_details .pp_nav A.pp_arrow_previous {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat 0px -71px
+}
+DIV.light_rounded .pp_content .pp_details .pp_nav A.disabled.pp_arrow_previous {
+	BACKGROUND-POSITION: 0px -87px; CURSOR: default
+}
+DIV.light_rounded .pp_content .pp_details .pp_nav A.pp_arrow_next {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -22px -71px
+}
+DIV.light_rounded .pp_content .pp_details .pp_nav A.disabled.pp_arrow_next {
+	BACKGROUND-POSITION: -22px -87px; CURSOR: default
+}
+DIV.light_rounded .pp_bottom .pp_left {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -88px -80px
+}
+DIV.light_rounded .pp_bottom .pp_middle {
+	BACKGROUND: #fff
+}
+DIV.light_rounded .pp_bottom .pp_right {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/sprite.html) no-repeat -110px -80px
+}
+DIV.light_rounded .pp_loaderIcon {
+	BACKGROUND: url(../images/prettyPhoto/light_rounded/loader.html) no-repeat center center
+}
+DIV.dark_rounded .pp_top .pp_left {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -88px -53px
+}
+DIV.dark_rounded .pp_top .pp_middle {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/contentPattern.html) left top
+}
+DIV.dark_rounded .pp_top .pp_right {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -110px -53px
+}
+DIV.dark_rounded .pp_content {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/contentPattern.html) left top
+}
+DIV.dark_rounded .pp_content A.pp_next:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/btnNext.html) no-repeat right center; CURSOR: pointer
+}
+DIV.dark_rounded .pp_content A.pp_previous:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/btnPrevious.html) no-repeat left center; CURSOR: pointer
+}
+DIV.dark_rounded .pp_content A.pp_expand {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -31px -26px; CURSOR: pointer
+}
+DIV.dark_rounded .pp_content A.pp_expand:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -31px -47px; CURSOR: pointer
+}
+DIV.dark_rounded .pp_content A.pp_contract {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat 0px -26px; CURSOR: pointer
+}
+DIV.dark_rounded .pp_content A.pp_contract:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat 0px -47px; CURSOR: pointer
+}
+DIV.dark_rounded .pp_content A.pp_close {
+	WIDTH: 75px; BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -1px -1px; HEIGHT: 22px; CURSOR: pointer
+}
+DIV.dark_rounded .currentTextHolder {
+	COLOR: #c4c4c4
+}
+DIV.dark_rounded P.pp_description {
+	COLOR: #fff
+}
+DIV.dark_rounded .pp_content .pp_details .pp_nav A.pp_arrow_previous {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat 0px -71px
+}
+DIV.dark_rounded .pp_content .pp_details .pp_nav A.disabled.pp_arrow_previous {
+	BACKGROUND-POSITION: 0px -87px; CURSOR: default
+}
+DIV.dark_rounded .pp_content .pp_details .pp_nav A.pp_arrow_next {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -22px -71px
+}
+DIV.dark_rounded .pp_content .pp_details .pp_nav A.disabled.pp_arrow_next {
+	BACKGROUND-POSITION: -22px -87px; CURSOR: default
+}
+DIV.dark_rounded .pp_bottom .pp_left {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -88px -80px
+}
+DIV.dark_rounded .pp_bottom .pp_middle {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/contentPattern.html) left top
+}
+DIV.dark_rounded .pp_bottom .pp_right {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/sprite.html) no-repeat -110px -80px
+}
+DIV.dark_rounded .pp_loaderIcon {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/loader.html) no-repeat center center
+}
+DIV.dark_square .pp_top .pp_left {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .pp_top .pp_middle {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .pp_top .pp_right {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .pp_bottom .pp_left {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .pp_bottom .pp_middle {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .pp_bottom .pp_right {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .pp_content {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/contentPattern.html) left top
+}
+DIV.dark_square .currentTextHolder {
+	COLOR: #c4c4c4
+}
+DIV.dark_square P.pp_description {
+	COLOR: #fff
+}
+DIV.dark_square .pp_loaderIcon {
+	BACKGROUND: url(../images/prettyPhoto/dark_rounded/loader.html) no-repeat center center
+}
+DIV.dark_square .pp_content A.pp_expand {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat -31px -26px; CURSOR: pointer
+}
+DIV.dark_square .pp_content A.pp_expand:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat -31px -47px; CURSOR: pointer
+}
+DIV.dark_square .pp_content A.pp_contract {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat 0px -26px; CURSOR: pointer
+}
+DIV.dark_square .pp_content A.pp_contract:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat 0px -47px; CURSOR: pointer
+}
+DIV.dark_square .pp_content A.pp_close {
+	WIDTH: 75px; BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat -1px -1px; HEIGHT: 22px; CURSOR: pointer
+}
+DIV.dark_square .pp_content .pp_details .pp_nav A.pp_arrow_previous {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat 0px -71px
+}
+DIV.dark_square .pp_content .pp_details .pp_nav A.disabled.pp_arrow_previous {
+	BACKGROUND-POSITION: 0px -87px; CURSOR: default
+}
+DIV.dark_square .pp_content .pp_details .pp_nav A.pp_arrow_next {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/sprite.html) no-repeat -22px -71px
+}
+DIV.dark_square .pp_content .pp_details .pp_nav A.disabled.pp_arrow_next {
+	BACKGROUND-POSITION: -22px -87px; CURSOR: default
+}
+DIV.dark_square .pp_content A.pp_next:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/btnNext.html) no-repeat right center; CURSOR: pointer
+}
+DIV.dark_square .pp_content A.pp_previous:hover {
+	BACKGROUND: url(../images/prettyPhoto/dark_square/btnPrevious.html) no-repeat left center; CURSOR: pointer
+}
+DIV.light_square .pp_top .pp_left {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_top .pp_middle {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_top .pp_right {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_bottom .pp_left {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_bottom .pp_middle {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_bottom .pp_right {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_content {
+	BACKGROUND: #fff
+}
+DIV.light_square .pp_content A.pp_expand {
+	BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat -31px -26px; CURSOR: pointer
+}
+DIV.light_square .pp_content A.pp_expand:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat -31px -47px; CURSOR: pointer
+}
+DIV.light_square .pp_content A.pp_contract {
+	BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat 0px -26px; CURSOR: pointer
+}
+DIV.light_square .pp_content A.pp_contract:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat 0px -47px; CURSOR: pointer
+}
+DIV.light_square .pp_content A.pp_close {
+	WIDTH: 75px; BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat -1px -1px; HEIGHT: 22px; CURSOR: pointer
+}
+DIV.light_square .pp_content .pp_details .pp_nav A.pp_arrow_previous {
+	BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat 0px -71px
+}
+DIV.light_square .pp_content .pp_details .pp_nav A.disabled.pp_arrow_previous {
+	BACKGROUND-POSITION: 0px -87px; CURSOR: default
+}
+DIV.light_square .pp_content .pp_details .pp_nav A.pp_arrow_next {
+	BACKGROUND: url(../images/prettyPhoto/light_square/sprite.html) no-repeat -22px -71px
+}
+DIV.light_square .pp_content .pp_details .pp_nav A.disabled.pp_arrow_next {
+	BACKGROUND-POSITION: -22px -87px; CURSOR: default
+}
+DIV.light_square .pp_content A.pp_next:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_square/btnNext.html) no-repeat right center; CURSOR: pointer
+}
+DIV.light_square .pp_content A.pp_previous:hover {
+	BACKGROUND: url(../images/prettyPhoto/light_square/btnPrevious.html) no-repeat left center; CURSOR: pointer
+}
+DIV.pp_pic_holder A:focus {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+DIV.pp_overlay {
+	Z-INDEX: 9500; POSITION: absolute; WIDTH: 100%; BACKGROUND: #000; TOP: 0px; LEFT: 0px
+}
+DIV.pp_pic_holder {
+	Z-INDEX: 10000; POSITION: absolute; WIDTH: 100px
+}
+DIV.pp_pic_holder .pp_top {
+	POSITION: relative; HEIGHT: 20px
+}
+* HTML DIV.pp_pic_holder .pp_top {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 0px
+}
+DIV.pp_pic_holder .pp_top .pp_left {
+	POSITION: absolute; WIDTH: 20px; HEIGHT: 20px; LEFT: 0px
+}
+DIV.pp_pic_holder .pp_top .pp_middle {
+	POSITION: absolute; HEIGHT: 20px; RIGHT: 20px; LEFT: 20px
+}
+* HTML DIV.pp_pic_holder .pp_top .pp_middle {
+	POSITION: static; LEFT: 0px
+}
+DIV.pp_pic_holder .pp_top .pp_right {
+	POSITION: absolute; WIDTH: 20px; HEIGHT: 20px; TOP: 0px; RIGHT: 0px; LEFT: auto
+}
+DIV.pp_pic_holder .pp_content {
+	POSITION: relative; TEXT-ALIGN: left; WIDTH: 100%; HEIGHT: 40px
+}
+DIV.pp_pic_holder .pp_content .pp_details {
+	MARGIN: 10px 15px 2px 20px; DISPLAY: none
+}
+DIV.pp_pic_holder .pp_content .pp_details P.pp_description {
+	MARGIN: 0px; DISPLAY: none; FLOAT: left
+}
+DIV.pp_pic_holder .pp_content .pp_details .pp_nav {
+	MARGIN: 3px 0px 0px; FLOAT: left
+}
+DIV.pp_pic_holder .pp_content .pp_details .pp_nav P {
+	MARGIN: 2px 4px; FLOAT: left
+}
+DIV.pp_pic_holder .pp_content .pp_details .pp_nav A.pp_arrow_previous {
+	MARGIN-TOP: 3px; TEXT-INDENT: -10000px; WIDTH: 14px; DISPLAY: block; FLOAT: left; HEIGHT: 15px; OVERFLOW: hidden
+}
+DIV.pp_pic_holder .pp_content .pp_details .pp_nav A.pp_arrow_next {
+	MARGIN-TOP: 3px; TEXT-INDENT: -10000px; WIDTH: 14px; DISPLAY: block; FLOAT: left; HEIGHT: 15px; OVERFLOW: hidden
+}
+DIV.pp_pic_holder .pp_content DIV.pp_hoverContainer {
+	Z-INDEX: 2000; POSITION: absolute; WIDTH: 100%; TOP: 0px; LEFT: 0px
+}
+DIV.pp_pic_holder .pp_content A.pp_next {
+	TEXT-INDENT: -10000px; WIDTH: 49%; DISPLAY: block; BACKGROUND: url(../images/prettyPhoto/light_rounded/btnNext.html) no-repeat 10000px 10000px; FLOAT: right; HEIGHT: 100%
+}
+DIV.pp_pic_holder .pp_content A.pp_previous {
+	TEXT-INDENT: -10000px; WIDTH: 49%; DISPLAY: block; BACKGROUND: url(../images/prettyPhoto/light_rounded/btnNext.html) no-repeat 10000px 10000px; FLOAT: left; HEIGHT: 100%
+}
+DIV.pp_pic_holder .pp_content A.pp_expand {
+	Z-INDEX: 20000; POSITION: absolute; TEXT-INDENT: -10000px; WIDTH: 20px; DISPLAY: none; HEIGHT: 20px; TOP: 10px; CURSOR: pointer; RIGHT: 30px
+}
+DIV.pp_pic_holder .pp_content A.pp_contract {
+	Z-INDEX: 20000; POSITION: absolute; TEXT-INDENT: -10000px; WIDTH: 20px; DISPLAY: none; HEIGHT: 20px; TOP: 10px; CURSOR: pointer; RIGHT: 30px
+}
+DIV.pp_pic_holder .pp_content A.pp_close {
+	TEXT-INDENT: -10000px; DISPLAY: block; FLOAT: right
+}
+DIV.pp_pic_holder .pp_bottom {
+	POSITION: relative; HEIGHT: 20px
+}
+* HTML DIV.pp_pic_holder .pp_bottom {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 0px
+}
+DIV.pp_pic_holder .pp_bottom .pp_left {
+	POSITION: absolute; WIDTH: 20px; HEIGHT: 20px; LEFT: 0px
+}
+DIV.pp_pic_holder .pp_bottom .pp_middle {
+	POSITION: absolute; HEIGHT: 20px; RIGHT: 20px; LEFT: 20px
+}
+* HTML DIV.pp_pic_holder .pp_bottom .pp_middle {
+	POSITION: static; LEFT: 0px
+}
+DIV.pp_pic_holder .pp_bottom .pp_right {
+	POSITION: absolute; WIDTH: 20px; HEIGHT: 20px; TOP: 0px; RIGHT: 0px; LEFT: auto
+}
+DIV.pp_pic_holder .pp_loaderIcon {
+	POSITION: absolute; MARGIN: -12px 0px 0px -12px; WIDTH: 24px; DISPLAY: none; HEIGHT: 24px; TOP: 50%; LEFT: 50%
+}
+DIV.pp_pic_holder #pp_full_res {
+	TEXT-ALIGN: center; MARGIN: 0px auto; WIDTH: 100%; DISPLAY: block
+}
+DIV.pp_pic_holder #pp_full_res OBJECT {
+	VISIBILITY: hidden
+}
+DIV.pp_pic_holder #pp_full_res EMBED {
+	VISIBILITY: hidden
+}
+DIV.ppt {
+	Z-INDEX: 9999; POSITION: absolute; DISPLAY: none; COLOR: #fff; FONT-SIZE: 17px; TOP: 0px; LEFT: 0px
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.clearfix {
+	DISPLAY: inline-block
+}
+* HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}
